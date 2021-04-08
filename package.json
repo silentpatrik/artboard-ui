@@ -1,19 +1,16 @@
 {
   "name": "artboard-ui",
-  "version": "3.1.0",
+  "version": "3.2.0",
   "description": "Artboard UI Components",
   "author": "Artboard Studio",
   "license": "MIT",
   "main": "./index.js",
   "private": true,
-  "peerDependencies": {
-    "react": "latest",
+  "dependencies": {
     "react-color": "^2.19.3",
     "react-custom-scrollbars": "4.2.1",
-    "react-dom": "latest",
     "react-sortable-tree": "2.3.0",
     "react-tippy": "^1.4.0",
     "uuid": "8.3.2"
-  },
-  "dependencies": {}
+  }
 }
