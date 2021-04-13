@@ -401,6 +401,24 @@ const Divider = ({
   });
 };
 
+function _extends() {
+  _extends = Object.assign || function (target) {
+    for (var i = 1; i < arguments.length; i++) {
+      var source = arguments[i];
+
+      for (var key in source) {
+        if (Object.prototype.hasOwnProperty.call(source, key)) {
+          target[key] = source[key];
+        }
+      }
+    }
+
+    return target;
+  };
+
+  return _extends.apply(this, arguments);
+}
+
 const SearchIcon = ({
   width = 11,
   height = 12
@@ -1759,11 +1777,12 @@ const Row = ({
     onClick: () => onClick(item)
   }, item.label)), /*#__PURE__*/React__default['default'].createElement("div", {
     className: itemDetails
-  }, item.value === 'textStyle' && /*#__PURE__*/React__default['default'].createElement(TextStyle, {
+  }, item.value === 'textStyle' && /*#__PURE__*/React__default['default'].createElement(TextStyle, _extends({
     key,
-    item,
+    item
+  }, {
     onChangeValue: onClick
-  }))));
+  })))));
 };
 
 const TextStyle = ({
@@ -1938,37 +1957,42 @@ const AddMenu = ({
   }, /*#__PURE__*/React__default['default'].createElement(CrossIcon, null)), /*#__PURE__*/React__default['default'].createElement(IconButton, {
     className: searchIcon,
     onClick: () => setIsSearch(true)
-  }, /*#__PURE__*/React__default['default'].createElement(SearchIcon, null)))), /*#__PURE__*/React__default['default'].createElement(Mockup, {
+  }, /*#__PURE__*/React__default['default'].createElement(SearchIcon, null)))), /*#__PURE__*/React__default['default'].createElement(Mockup, _extends({
     onChangeValue: val => {
       console.log(val);
-    },
+    }
+  }, {
     activeMenu,
     setActiveMenu,
     setBreadcrumb,
     breadcrumb
-  }), /*#__PURE__*/React__default['default'].createElement(StockPhotos, {
+  })), /*#__PURE__*/React__default['default'].createElement(StockPhotos, _extends({
     onChangeValue: val => {
       console.log(val);
-    },
+    }
+  }, {
     activeMenu,
     setActiveMenu
-  }), /*#__PURE__*/React__default['default'].createElement(Illustrations, {
+  })), /*#__PURE__*/React__default['default'].createElement(Illustrations, _extends({
     onChangeValue: val => {
       console.log(val);
-    },
+    }
+  }, {
     activeMenu,
     setActiveMenu
-  }), /*#__PURE__*/React__default['default'].createElement(Filters, {
+  })), /*#__PURE__*/React__default['default'].createElement(Filters, _extends({
     onChangeValue: val => {
       console.log(val);
-    },
+    }
+  }, {
     activeMenu
-  }), /*#__PURE__*/React__default['default'].createElement(ArtboardsItems, {
+  })), /*#__PURE__*/React__default['default'].createElement(ArtboardsItems, _extends({
     onChangeValue: val => {
       console.log(val);
-    },
+    }
+  }, {
     activeMenu
-  }), !activeMenu.action && /*#__PURE__*/React__default['default'].createElement("div", {
+  })), !activeMenu.action && /*#__PURE__*/React__default['default'].createElement("div", {
     className: items
   }, itemsDate.map((item, key) => /*#__PURE__*/React__default['default'].createElement(ItemMenu, {
     item: item,
@@ -2262,24 +2286,6 @@ const BrushesMenu = ({
     className: title
   }, item.title))));
 };
-
-function _extends() {
-  _extends = Object.assign || function (target) {
-    for (var i = 1; i < arguments.length; i++) {
-      var source = arguments[i];
-
-      for (var key in source) {
-        if (Object.prototype.hasOwnProperty.call(source, key)) {
-          target[key] = source[key];
-        }
-      }
-    }
-
-    return target;
-  };
-
-  return _extends.apply(this, arguments);
-}
 
 var css_248z$r = ".options-module_options__3naya {\n  display: flex;\n  flex-direction: column;\n  align-items: center;\n  padding: 8px 0;\n  background: #ffffff;\n  box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.06), 0px 0.5px 1px rgba(0, 0, 0, 0.24);\n  border-radius: 8px;\n  list-style: none;\n  min-width: 180px; }\n  .options-module_options__3naya * {\n    font-family: Aktiv Grotesk, sans-serif;\n    box-sizing: border-box;\n    cursor: pointer;\n    user-select: none; }\n  .options-module_options__3naya li {\n    display: flex;\n    flex-direction: column;\n    justify-content: center;\n    font-size: 11px;\n    color: #31363a;\n    width: 172px;\n    height: 24px;\n    display: flex; }\n    .options-module_options__3naya li.options-module_divider__2ZPvS {\n      height: 1px;\n      border-radius: 2px;\n      background-color: #e8ebed;\n      border: 0;\n      margin: 4px 8px; }\n    .options-module_options__3naya li .options-module_row__1VVDG {\n      width: 172px;\n      height: 24px;\n      text-align: left;\n      user-select: none;\n      display: flex;\n      justify-content: space-between;\n      box-sizing: border-box;\n      padding: 4px 8px; }\n      .options-module_options__3naya li .options-module_row__1VVDG span {\n        display: flex;\n        align-items: center; }\n        .options-module_options__3naya li .options-module_row__1VVDG span.options-module_shortcut__waK7U {\n          color: #999999; }\n      .options-module_options__3naya li .options-module_row__1VVDG svg {\n        stroke: #31363a;\n        margin: 4px; }\n      .options-module_options__3naya li .options-module_row__1VVDG.options-module_normal__3q3Ji:hover {\n        color: #ffffff;\n        background: #3399ff;\n        border-radius: 4px; }\n        .options-module_options__3naya li .options-module_row__1VVDG.options-module_normal__3q3Ji:hover svg {\n          stroke: #ffffff; }\n        .options-module_options__3naya li .options-module_row__1VVDG.options-module_normal__3q3Ji:hover .options-module_shortcut__waK7U {\n          color: #ffffff; }\n      .options-module_options__3naya li .options-module_row__1VVDG .options-module_component__uQHAr {\n        box-sizing: border-box; }\n      .options-module_options__3naya li .options-module_row__1VVDG:focus {\n        outline: none; }\n    .options-module_options__3naya li hr {\n      width: 172px;\n      height: 1px;\n      border-radius: 2px;\n      background-color: #e8ebed;\n      border: 0;\n      margin: 4px 8px; }\n    .options-module_options__3naya li:hover ul {\n      display: block; }\n  .options-module_options__3naya ul {\n    display: none;\n    position: absolute;\n    right: -194px;\n    z-index: 1; }\n";
 var style$o = {"options":"options-module_options__3naya","divider":"options-module_divider__2ZPvS","row":"options-module_row__1VVDG","shortcut":"options-module_shortcut__waK7U","normal":"options-module_normal__3q3Ji","component":"options-module_component__uQHAr"};
