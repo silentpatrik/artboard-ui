@@ -2819,7 +2819,7 @@ const ArtboardIcon = ({
     fillRule: "evenodd",
     clipRule: "evenodd",
     d: "M2.5 0a.5.5 0 01.5.5V2h6V.5a.5.5 0 011 0V2h1.5a.5.5 0 010 1H10v6h1.5a.5.5 0 010 1H10v1.5a.5.5 0 01-1 0V10H3v1.5a.5.5 0 01-1 0V10H.5a.5.5 0 010-1H2V3H.5a.5.5 0 010-1H2V.5a.5.5 0 01.5-.5zM9 9V3H3v6h6z",
-    fill: "#999"
+    fill: "#333"
   }));
 };
 const VideoIcon = ({
