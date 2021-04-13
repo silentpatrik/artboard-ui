@@ -2285,7 +2285,7 @@ const BrushesMenu = ({
   const [activeItem, setActiveItem] = React$1.useState(setValue);
   return /*#__PURE__*/React__default['default'].createElement("div", {
     className: brushMenu,
-    styles: styles
+    style: styles
   }, shapeMenuItem.map((item, key) => /*#__PURE__*/React__default['default'].createElement("div", {
     className: `${itemWrapper} ${activeItem === item.title ? active : ''}`,
     key: key,
