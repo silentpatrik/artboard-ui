@@ -2085,13 +2085,27 @@ const StarIcon = ({
   fill: "transparent"
 }));
 
-var css_248z$t = ".shape-menu-module_shapeMenu__2O5hG {\n  width: 103px;\n  position: absolute;\n  background: #ffffff;\n  box-shadow: 0px 0.5px 1px rgba(0, 4, 8, 0.12), 0px 8px 16px -8px rgba(0, 4, 8, 0.08);\n  border-radius: 8px;\n  display: flex;\n  flex-direction: column;\n  justify-content: center;\n  align-items: center;\n  padding: 4px 0;\n  z-index: 1;\n  left: 44px;\n  top: -8px; }\n  .shape-menu-module_shapeMenu__2O5hG * {\n    font-family: Aktiv Grotesk, sans-serif;\n    box-sizing: border-box;\n    cursor: pointer;\n    user-select: none; }\n  .shape-menu-module_shapeMenu__2O5hG .shape-menu-module_itemWrapper__duGfK {\n    width: 95px;\n    height: 32px;\n    display: flex;\n    justify-content: left;\n    align-items: center; }\n    .shape-menu-module_shapeMenu__2O5hG .shape-menu-module_itemWrapper__duGfK .shape-menu-module_icon__2MFdP {\n      width: 32px;\n      height: 32px;\n      display: flex;\n      align-items: center;\n      justify-content: center; }\n    .shape-menu-module_shapeMenu__2O5hG .shape-menu-module_itemWrapper__duGfK .shape-menu-module_title__2Gh1X {\n      font-size: 11px;\n      color: #333333; }\n    .shape-menu-module_shapeMenu__2O5hG .shape-menu-module_itemWrapper__duGfK:hover {\n      background: #f5f5f5;\n      border-radius: 6px; }\n";
-var style$q = {"shapeMenu":"shape-menu-module_shapeMenu__2O5hG","itemWrapper":"shape-menu-module_itemWrapper__duGfK","icon":"shape-menu-module_icon__2MFdP","title":"shape-menu-module_title__2Gh1X"};
+var css_248z$t = ".shape-menu-module_shapeMenu__2O5hG {\n  width: 103px;\n  position: absolute;\n  background: #ffffff;\n  box-shadow: 0px 0.5px 1px rgba(0, 4, 8, 0.12), 0px 8px 16px -8px rgba(0, 4, 8, 0.08);\n  border-radius: 8px;\n  display: flex;\n  flex-direction: column;\n  justify-content: center;\n  align-items: center;\n  padding: 4px 0;\n  z-index: 1;\n  left: 44px;\n  top: -8px; }\n  .shape-menu-module_shapeMenu__2O5hG * {\n    font-family: Aktiv Grotesk, sans-serif;\n    box-sizing: border-box;\n    cursor: pointer;\n    user-select: none; }\n  .shape-menu-module_shapeMenu__2O5hG .shape-menu-module_itemWrapper__duGfK {\n    width: 95px;\n    height: 32px;\n    display: flex;\n    justify-content: left;\n    align-items: center; }\n    .shape-menu-module_shapeMenu__2O5hG .shape-menu-module_itemWrapper__duGfK .shape-menu-module_icon__2MFdP {\n      width: 32px;\n      height: 32px;\n      display: flex;\n      align-items: center;\n      justify-content: center; }\n    .shape-menu-module_shapeMenu__2O5hG .shape-menu-module_itemWrapper__duGfK .shape-menu-module_title__2Gh1X {\n      font-size: 11px;\n      color: #333333; }\n    .shape-menu-module_shapeMenu__2O5hG .shape-menu-module_itemWrapper__duGfK.shape-menu-module_active__2ay5j, .shape-menu-module_shapeMenu__2O5hG .shape-menu-module_itemWrapper__duGfK:hover {\n      background: #f5f5f5;\n      border-radius: 6px; }\n";
+var style$q = {"shapeMenu":"shape-menu-module_shapeMenu__2O5hG","itemWrapper":"shape-menu-module_itemWrapper__duGfK","icon":"shape-menu-module_icon__2MFdP","title":"shape-menu-module_title__2Gh1X","active":"shape-menu-module_active__2ay5j"};
 styleInject(css_248z$t);
 
+const shapeMenuItem$1 = [{
+  icon: /*#__PURE__*/React__default['default'].createElement(RectangleIcon$1, null),
+  title: 'Rectangle'
+}, {
+  icon: /*#__PURE__*/React__default['default'].createElement(EllipseIcon, null),
+  title: 'Ellipse'
+}, {
+  icon: /*#__PURE__*/React__default['default'].createElement(PolygonIcon, null),
+  title: 'Polygon'
+}, {
+  icon: /*#__PURE__*/React__default['default'].createElement(StarIcon, null),
+  title: 'Star'
+}];
 const ShapeMenu = ({
-  onChange,
-  setValue
+  onChange = () => {},
+  setValue = shapeMenuItem$1[0].title,
+  styles
 }) => {
   const {
     shapeMenu,
@@ -2100,25 +2114,17 @@ const ShapeMenu = ({
     title,
     active
   } = style$q;
-  const shapeMenuItem = [{
-    icon: /*#__PURE__*/React__default['default'].createElement(RectangleIcon$1, null),
-    title: 'Rectangle'
-  }, {
-    icon: /*#__PURE__*/React__default['default'].createElement(EllipseIcon, null),
-    title: 'Ellipse'
-  }, {
-    icon: /*#__PURE__*/React__default['default'].createElement(PolygonIcon, null),
-    title: 'Polygon'
-  }, {
-    icon: /*#__PURE__*/React__default['default'].createElement(StarIcon, null),
-    title: 'Star'
-  }];
+  const [activeItem, setActiveItem] = React$1.useState(setValue);
   return /*#__PURE__*/React__default['default'].createElement("div", {
-    className: shapeMenu
-  }, shapeMenuItem.map((item, key) => /*#__PURE__*/React__default['default'].createElement("div", {
-    className: `${itemWrapper} ${setValue === item.title ? active : ''}`,
+    className: shapeMenu,
+    style: styles
+  }, shapeMenuItem$1.map((item, key) => /*#__PURE__*/React__default['default'].createElement("div", {
+    className: `${itemWrapper} ${activeItem === item.title ? active : ''}`,
     key: key,
-    onClick: () => onChange(item.title)
+    onClick: () => {
+      onChange(item.title);
+      setActiveItem(item.title);
+    }
   }, /*#__PURE__*/React__default['default'].createElement("div", {
     className: icon
   }, item.icon), /*#__PURE__*/React__default['default'].createElement("div", {
@@ -2247,13 +2253,27 @@ const SprayBrushIcon = ({
   }));
 };
 
-var css_248z$s = ".brushes-menu-module_brushMenu__23bMK {\n  width: 120px;\n  position: absolute;\n  background: #ffffff;\n  box-shadow: 0px 0.5px 1px rgba(0, 4, 8, 0.12), 0px 8px 16px -8px rgba(0, 4, 8, 0.08);\n  border-radius: 8px;\n  display: flex;\n  flex-direction: column;\n  justify-content: center;\n  align-items: center;\n  padding: 4px 0;\n  z-index: 1;\n  left: 44px;\n  top: -8px; }\n  .brushes-menu-module_brushMenu__23bMK * {\n    font-family: Aktiv Grotesk, sans-serif;\n    box-sizing: border-box;\n    cursor: pointer;\n    user-select: none; }\n  .brushes-menu-module_brushMenu__23bMK .brushes-menu-module_itemWrapper__1ZLHc {\n    width: 112px;\n    height: 32px;\n    display: flex;\n    justify-content: left;\n    align-items: center; }\n    .brushes-menu-module_brushMenu__23bMK .brushes-menu-module_itemWrapper__1ZLHc .brushes-menu-module_icon__STFEG {\n      width: 32px;\n      height: 32px;\n      display: flex;\n      align-items: center;\n      justify-content: center; }\n    .brushes-menu-module_brushMenu__23bMK .brushes-menu-module_itemWrapper__1ZLHc .brushes-menu-module_title__2Xqq6 {\n      font-size: 11px;\n      color: #333333; }\n    .brushes-menu-module_brushMenu__23bMK .brushes-menu-module_itemWrapper__1ZLHc:hover {\n      background: #f5f5f5;\n      border-radius: 6px; }\n";
-var style$p = {"brushMenu":"brushes-menu-module_brushMenu__23bMK","itemWrapper":"brushes-menu-module_itemWrapper__1ZLHc","icon":"brushes-menu-module_icon__STFEG","title":"brushes-menu-module_title__2Xqq6"};
+var css_248z$s = ".brushes-menu-module_brushMenu__23bMK {\n  width: 120px;\n  position: absolute;\n  background: #ffffff;\n  box-shadow: 0px 0.5px 1px rgba(0, 4, 8, 0.12), 0px 8px 16px -8px rgba(0, 4, 8, 0.08);\n  border-radius: 8px;\n  display: flex;\n  flex-direction: column;\n  justify-content: center;\n  align-items: center;\n  padding: 4px 0;\n  z-index: 1;\n  left: 44px;\n  top: -8px; }\n  .brushes-menu-module_brushMenu__23bMK * {\n    font-family: Aktiv Grotesk, sans-serif;\n    box-sizing: border-box;\n    cursor: pointer;\n    user-select: none; }\n  .brushes-menu-module_brushMenu__23bMK .brushes-menu-module_itemWrapper__1ZLHc {\n    width: 112px;\n    height: 32px;\n    display: flex;\n    justify-content: left;\n    align-items: center; }\n    .brushes-menu-module_brushMenu__23bMK .brushes-menu-module_itemWrapper__1ZLHc .brushes-menu-module_icon__STFEG {\n      width: 32px;\n      height: 32px;\n      display: flex;\n      align-items: center;\n      justify-content: center; }\n    .brushes-menu-module_brushMenu__23bMK .brushes-menu-module_itemWrapper__1ZLHc .brushes-menu-module_title__2Xqq6 {\n      font-size: 11px;\n      color: #333333; }\n    .brushes-menu-module_brushMenu__23bMK .brushes-menu-module_itemWrapper__1ZLHc.brushes-menu-module_active__E5ZLB, .brushes-menu-module_brushMenu__23bMK .brushes-menu-module_itemWrapper__1ZLHc:hover {\n      background: #f5f5f5;\n      border-radius: 6px; }\n";
+var style$p = {"brushMenu":"brushes-menu-module_brushMenu__23bMK","itemWrapper":"brushes-menu-module_itemWrapper__1ZLHc","icon":"brushes-menu-module_icon__STFEG","title":"brushes-menu-module_title__2Xqq6","active":"brushes-menu-module_active__E5ZLB"};
 styleInject(css_248z$s);
 
+const shapeMenuItem = [{
+  icon: /*#__PURE__*/React__default['default'].createElement(BrushIcon, null),
+  title: 'Normal Brush'
+}, {
+  icon: /*#__PURE__*/React__default['default'].createElement(CrayonBrushIcon, null),
+  title: 'Crayon Brush'
+}, {
+  icon: /*#__PURE__*/React__default['default'].createElement(InkBrushIcon, null),
+  title: 'Ink Brush'
+}, {
+  icon: /*#__PURE__*/React__default['default'].createElement(SprayBrushIcon, null),
+  title: 'Spray Brush'
+}];
 const BrushesMenu = ({
-  onChange,
-  setValue
+  onChange = () => {},
+  setValue = shapeMenuItem[0].title,
+  styles
 }) => {
   const {
     brushMenu,
@@ -2262,25 +2282,17 @@ const BrushesMenu = ({
     title,
     active
   } = style$p;
-  const shapeMenuItem = [{
-    icon: /*#__PURE__*/React__default['default'].createElement(BrushIcon, null),
-    title: 'Normal Brush'
-  }, {
-    icon: /*#__PURE__*/React__default['default'].createElement(CrayonBrushIcon, null),
-    title: 'Crayon Brush'
-  }, {
-    icon: /*#__PURE__*/React__default['default'].createElement(InkBrushIcon, null),
-    title: 'Ink Brush'
-  }, {
-    icon: /*#__PURE__*/React__default['default'].createElement(SprayBrushIcon, null),
-    title: 'Spray Brush'
-  }];
+  const [activeItem, setActiveItem] = React$1.useState(setValue);
   return /*#__PURE__*/React__default['default'].createElement("div", {
-    className: brushMenu
+    className: brushMenu,
+    styles: styles
   }, shapeMenuItem.map((item, key) => /*#__PURE__*/React__default['default'].createElement("div", {
-    className: `${itemWrapper} ${setValue === item.title ? active : ''}`,
+    className: `${itemWrapper} ${activeItem === item.title ? active : ''}`,
     key: key,
-    onClick: () => onChange(item.title)
+    onClick: () => {
+      onChange(item.title);
+      setActiveItem(item.title);
+    }
   }, /*#__PURE__*/React__default['default'].createElement("div", {
     className: icon
   }, item.icon), /*#__PURE__*/React__default['default'].createElement("div", {
