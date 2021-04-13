@@ -5,6 +5,7 @@ Object.defineProperty(exports, '__esModule', { value: true });
 var React$1 = require('react');
 var uuid = require('uuid');
 var Scrollbars = require('react-custom-scrollbars');
+var reactTippy = require('react-tippy');
 require('react-tippy/dist/tippy.css');
 var SortableTree = require('react-sortable-tree');
 require('react-sortable-tree/style.css');
@@ -1001,7 +1002,7 @@ const Tooltips = ({
   } = style$x;
   return /*#__PURE__*/React.createElement("div", {
     className: `${tooltip}`
-  }, /*#__PURE__*/React.createElement(Tooltip, {
+  }, /*#__PURE__*/React.createElement(reactTippy.Tooltip, {
     title: title,
     position: position,
     trigger: trigger,
