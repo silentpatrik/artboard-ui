@@ -4862,6 +4862,11 @@ const Properties = ({
     }
   }, [yChanged, y]);
   React$1.useEffect(() => {
+    onChange({
+      position: parseFloat(position)
+    });
+  }, [position]);
+  React$1.useEffect(() => {
     if (wChanged) {
       let _res;
 
