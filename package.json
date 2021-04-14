@@ -12,5 +12,9 @@
     "react-sortable-tree": "2.3.0",
     "react-tippy": "^1.4.0",
     "uuid": "8.3.2"
+  },
+  "peerDependencies": {
+    "react": ">=17.0.1",
+    "react-dom": ">=17.0.1"
   }
 }
