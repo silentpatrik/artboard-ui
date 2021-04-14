@@ -4951,33 +4951,28 @@ const Properties = ({
     label: "X",
     value: x,
     setValue: setX,
-    onChangeValue: setX,
     onChange: setXChanged
   }), /*#__PURE__*/React__default['default'].createElement(Input, {
     label: "Y",
     value: y,
     setValue: setY,
-    onChangeValue: setY,
     onChange: setYChanged
   }), /*#__PURE__*/React__default['default'].createElement(Input, {
     label: "\xB0",
     value: position,
     setValue: setPosition,
-    onChangeValue: setPosition,
-    onChange: setYChanged
+    onChange: setPosition
   })), /*#__PURE__*/React__default['default'].createElement("div", {
     className: `${row}`
   }, /*#__PURE__*/React__default['default'].createElement(Input, {
     label: "W",
     value: w,
     setValue: setW,
-    onChangeValue: setW,
     onChange: setWChanged
   }), /*#__PURE__*/React__default['default'].createElement(Input, {
     label: "H",
     value: h,
     setValue: setH,
-    onChangeValue: setH,
     onChange: setHChanged
   }), /*#__PURE__*/React__default['default'].createElement("div", {
     className: `${rowAction}`
@@ -4989,7 +4984,6 @@ const Properties = ({
   }, /*#__PURE__*/React__default['default'].createElement(Input, {
     value: radius,
     setValue: setRadius,
-    onChangeValue: setRadius,
     onChange: setRadiusChanged
   }, /*#__PURE__*/React__default['default'].createElement(RadiusIcon, {
     width: 8,
