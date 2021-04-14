@@ -1832,7 +1832,8 @@ var style$r = {"addMenu":"add-menu-module_addMenu__2M05g","header":"add-menu-mod
 styleInject(css_248z$u);
 
 const AddMenu = ({
-  textColor = 'black'
+  textColor = 'black',
+  styles
 }) => {
   const {
     addMenu,
@@ -1916,7 +1917,8 @@ const AddMenu = ({
     console.log('BREADCRUMB', breadcrumb);
   }, [breadcrumb]);
   return /*#__PURE__*/React__default['default'].createElement("div", {
-    className: `${addMenu}`
+    className: `${addMenu}`,
+    style: styles
   }, /*#__PURE__*/React__default['default'].createElement(React__default['default'].Fragment, null, /*#__PURE__*/React__default['default'].createElement("div", {
     className: header
   }, isSearch ? /*#__PURE__*/React__default['default'].createElement(Input, {
