@@ -4802,7 +4802,7 @@ styleInject(css_248z$k);
 
 /* eslint-disable react-hooks/exhaustive-deps */
 const Properties = ({
-  onChangeValues,
+  onChange = () => {},
   values = {
     x: 22,
     y: 22,
@@ -4846,7 +4846,7 @@ const Properties = ({
       _res = {
         x: parseFloat(x)
       };
-      if (onChangeValues) onChangeValues(_res);
+      if (onChange) onChange(_res);
       setXChanged(false);
     }
   }, [xChanged, x]);
@@ -4857,7 +4857,7 @@ const Properties = ({
       _res = {
         y: parseFloat(y)
       };
-      if (onChangeValues) onChangeValues(_res);
+      if (onChange) onChange(_res);
       setYChanged(false);
     }
   }, [yChanged, y]);
@@ -4878,7 +4878,7 @@ const Properties = ({
         };
       }
 
-      if (onChangeValues) onChangeValues(_res);
+      if (onChange) onChange(_res);
       setWChanged(false);
     }
   }, [linkBtn, wChanged, w]);
@@ -4898,7 +4898,7 @@ const Properties = ({
         };
       }
 
-      if (onChangeValues) onChangeValues(_res);
+      if (onChange) onChange(_res);
       setHChanged(false);
     }
   }, [linkBtn, hChanged, h]);
@@ -4922,7 +4922,7 @@ const Properties = ({
       };
     }
 
-    if (onChangeValues) onChangeValues(_res);
+    if (onChange) onChange(_res);
     setRadiusChanged(false);
   }, [radiusBtn, radius]);
   React$1.useEffect(() => {
@@ -4934,11 +4934,11 @@ const Properties = ({
       bottom: parseFloat(radiusBottom),
       right: parseFloat(radiusRight)
     };
-    if (onChangeValues) onChangeValues(_res);
+    if (onChange) onChange(_res);
   }, [radiusTop, radiusBottom, radiusLeft, radiusRight]);
   React$1.useEffect(() => {
     setWHRatio(Math.abs(w / h));
-    if (onChangeValues) onChangeValues({
+    if (onChange) onChange({
       w: parseFloat(w),
       h: parseFloat(h)
     });
