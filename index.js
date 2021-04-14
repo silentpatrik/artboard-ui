@@ -2144,8 +2144,8 @@ const BrushesIcon = ({
     viewBox: "0 0 18 19",
     fill: "none"
   }, /*#__PURE__*/React__default['default'].createElement("path", {
-    "fill-rule": "evenodd",
-    "clip-rule": "evenodd",
+    fillRule: "evenodd",
+    clipRule: "evenodd",
     d: "M1.72946 1.59806C1.66758 1.28866 1.90422 1 2.21975 1H3.84856L5.22259 1.91603L5.99994 2.43426V1.5V1H11.7801C12.0957 1 12.3323 1.28866 12.2704 1.59806L11.19 7H12.2098L13.251 1.79417C13.4366 0.865987 12.7267 0 11.7801 0H5.49994H4.99994V0.5V0.565741L4.27729 0.0839748L4.15133 0H3.99994H2.21975C1.27318 0 0.563239 0.865986 0.748877 1.79417L1.79004 7H2.80985L1.72946 1.59806Z",
     fill: "#333333"
   }), /*#__PURE__*/React__default['default'].createElement("mask", {
@@ -2573,58 +2573,23 @@ const MaskIcon = ({
   width = 18,
   height = 18
 }) => {
-  return (
-    /*#__PURE__*/
-    // <svg width={width} height={height} viewBox={`0 0 12 12`}>
-    //   <rect
-    //     x='.5'
-    //     y='.5'
-    //     width='11'
-    //     height='11'
-    //     rx='5.5'
-    //     fill='#F5F5F5'
-    //     stroke='#999'
-    //   />
-    //   <mask
-    //     id='a'
-    //     maskUnits='userSpaceOnUse'
-    //     x='0'
-    //     y='0'
-    //     width='12'
-    //     height='12'
-    //   >
-    //     <rect
-    //       x='.5'
-    //       y='.5'
-    //       width='11'
-    //       height='11'
-    //       rx='5.5'
-    //       fill='#F5F5F5'
-    //       stroke='#999'
-    //     />
-    //   </mask>
-    //   <g mask='url(#a)'>
-    //     <rect x='-4' width='12' height='12' rx='6' fill='#999' />
-    //   </g>
-    // </svg>
-    React__default['default'].createElement("svg", {
-      width: width,
-      height: height,
-      viewBox: `0 0 18 18`
-    }, /*#__PURE__*/React__default['default'].createElement("path", {
-      "fill-rule": "evenodd",
-      "clip-rule": "evenodd",
-      d: "M6 17.4879C9.4956 16.2524 12 12.9187 12 9c0-3.9187-2.5044-7.2524-6-8.4879C2.5044 1.7476 0 5.0813 0 9c0 3.9187 2.5044 7.2524 6 8.4879z",
-      fill: "#999"
-    }), /*#__PURE__*/React__default['default'].createElement("rect", {
-      x: ".5",
-      y: ".5",
-      width: "17",
-      height: "17",
-      rx: "8.5",
-      stroke: "#333"
-    }))
-  );
+  return /*#__PURE__*/React__default['default'].createElement("svg", {
+    width: width,
+    height: height,
+    viewBox: `0 0 18 18`
+  }, /*#__PURE__*/React__default['default'].createElement("path", {
+    fillRule: "evenodd",
+    clipRule: "evenodd",
+    d: "M6 17.4879C9.4956 16.2524 12 12.9187 12 9c0-3.9187-2.5044-7.2524-6-8.4879C2.5044 1.7476 0 5.0813 0 9c0 3.9187 2.5044 7.2524 6 8.4879z",
+    fill: "#999"
+  }), /*#__PURE__*/React__default['default'].createElement("rect", {
+    x: ".5",
+    y: ".5",
+    width: "17",
+    height: "17",
+    rx: "8.5",
+    stroke: "#333"
+  }));
 };
 const ShapeModeUnion = ({
   width = 13,
@@ -2645,52 +2610,26 @@ const ShapeModeSubtract = ({
   width = 16,
   height = 16
 }) => {
-  return (
-    /*#__PURE__*/
-    // <svg width={width} height={height} viewBox={`0 0 13 13`}>
-    //   <path
-    //     fillRule='evenodd'
-    //     clipRule='evenodd'
-    //     d='M4.333 4.333H2a2 2 0 00-2 2V11a2 2 0 002 2h4.667a2 2 0 002-2V8.667H6.333a2 2 0 01-2-2V4.333z'
-    //     fill='#999'
-    //   />
-    //   <rect
-    //     x='4.833'
-    //     y='.5'
-    //     width='7.667'
-    //     height='7.667'
-    //     rx='1.5'
-    //     stroke='#999'
-    //   />
-    //   <path
-    //     fillRule='evenodd'
-    //     clipRule='evenodd'
-    //     d='M4.333 4.333H3c-.932 0-1.398 0-1.765.153A2 2 0 00.152 5.568C0 5.936 0 6.401 0 7.333V10c0 .932 0 1.398.152 1.765a2 2 0 001.083 1.083C1.602 13 2.068 13 3 13h2.667c.932 0 1.397 0 1.765-.152a2 2 0 001.082-1.083c.153-.367.153-.833.153-1.765V8.667h-1V10c0 .48 0 .79-.017 1.026-.016.228-.042.315-.06.357a1 1 0 01-.54.54c-.042.018-.13.045-.357.06C6.456 12 6.146 12 5.667 12H3c-.48 0-.79 0-1.026-.017-.228-.015-.315-.042-.357-.06a1 1 0 01-.54-.54c-.018-.042-.045-.129-.06-.357A16.908 16.908 0 011 10V7.333c0-.48 0-.789.017-1.026.015-.228.042-.315.06-.356a1 1 0 01.54-.542c.042-.017.129-.043.357-.059.237-.016.546-.017 1.026-.017h1.333v-1z'
-    //     fill='#999'
-    //   />
-    // </svg>
-    // <svg width="16" height="16" fill="none">
-    React__default['default'].createElement("svg", {
-      width: width,
-      height: height,
-      viewBox: `0 0 16 16`
-    }, /*#__PURE__*/React__default['default'].createElement("path", {
-      "fill-rule": "evenodd",
-      "clip-rule": "evenodd",
-      d: "M5 5H3C1.3432 5 0 6.343 0 8v5c0 1.6568 1.3432 3 3 3h5c1.6569 0 3-1.3432 3-3v-2H8c-1.6569 0-3-1.3432-3-3V5z",
-      fill: "#999"
-    }), /*#__PURE__*/React__default['default'].createElement("path", {
-      "fill-rule": "evenodd",
-      "clip-rule": "evenodd",
-      d: "M13 1H8c-1.1046 0-2 .8954-2 2v5c0 1.1046.8954 2 2 2h5c1.1046 0 2-.8954 2-2V3c0-1.1046-.8954-2-2-2zM8 0C6.3431 0 5 1.3432 5 3v5c0 1.6569 1.3431 3 3 3h5c1.6569 0 3-1.3431 3-3V3c0-1.6568-1.3431-3-3-3H8z",
-      fill: "#333"
-    }), /*#__PURE__*/React__default['default'].createElement("path", {
-      "fill-rule": "evenodd",
-      "clip-rule": "evenodd",
-      d: "M5 5H3C1.3432 5 0 6.343 0 8v5c0 1.6568 1.3432 3 3 3h5c1.6569 0 3-1.3432 3-3v-2h-1v2c0 1.1045-.8954 2-2 2H3c-1.1046 0-2-.8955-2-2V8c0-1.1046.8954-2 2-2h2V5z",
-      fill: "#333"
-    }))
-  );
+  return /*#__PURE__*/React__default['default'].createElement("svg", {
+    width: width,
+    height: height,
+    viewBox: `0 0 16 16`
+  }, /*#__PURE__*/React__default['default'].createElement("path", {
+    fillRule: "evenodd",
+    clipRule: "evenodd",
+    d: "M5 5H3C1.3432 5 0 6.343 0 8v5c0 1.6568 1.3432 3 3 3h5c1.6569 0 3-1.3432 3-3v-2H8c-1.6569 0-3-1.3432-3-3V5z",
+    fill: "#999"
+  }), /*#__PURE__*/React__default['default'].createElement("path", {
+    fillRule: "evenodd",
+    clipRule: "evenodd",
+    d: "M13 1H8c-1.1046 0-2 .8954-2 2v5c0 1.1046.8954 2 2 2h5c1.1046 0 2-.8954 2-2V3c0-1.1046-.8954-2-2-2zM8 0C6.3431 0 5 1.3432 5 3v5c0 1.6569 1.3431 3 3 3h5c1.6569 0 3-1.3431 3-3V3c0-1.6568-1.3431-3-3-3H8z",
+    fill: "#333"
+  }), /*#__PURE__*/React__default['default'].createElement("path", {
+    fillRule: "evenodd",
+    clipRule: "evenodd",
+    d: "M5 5H3C1.3432 5 0 6.343 0 8v5c0 1.6568 1.3432 3 3 3h5c1.6569 0 3-1.3432 3-3v-2h-1v2c0 1.1045-.8954 2-2 2H3c-1.1046 0-2-.8955-2-2V8c0-1.1046.8954-2 2-2h2V5z",
+    fill: "#333"
+  }));
 };
 const ShapeModeIntersect = ({
   width = 16,
