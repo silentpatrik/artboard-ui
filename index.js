@@ -2135,15 +2135,14 @@ const ShapeMenu = ({
 };
 
 const BrushesIcon = ({
-  width = 14,
-  height = 17
+  width = 18,
+  height = 19
 }) => {
   return /*#__PURE__*/React__default['default'].createElement("svg", {
     width: width,
     height: height,
-    viewBox: "0 0 14 17",
-    fill: "none",
-    xmlns: "http://www.w3.org/2000/svg"
+    viewBox: "0 0 18 19",
+    fill: "none"
   }, /*#__PURE__*/React__default['default'].createElement("path", {
     "fill-rule": "evenodd",
     "clip-rule": "evenodd",
@@ -2158,6 +2157,10 @@ const BrushesIcon = ({
     d: "M5 12L5.99504 12.0995C6.02315 11.8184 5.93103 11.5385 5.74145 11.329C5.55187 11.1195 5.28253 11 5 11V12ZM9 12V11C8.71747 11 8.44813 11.1195 8.25855 11.329C8.06897 11.5385 7.97685 11.8184 8.00496 12.0995L9 12ZM4.74876 14.5124L3.75372 14.4129L4.74876 14.5124ZM2 9H12V7H2V9ZM12 9V10H14V9H12ZM2 10V9H0V10H2ZM5 11H3V13H5V11ZM11 11H9V13H11V11ZM8.00496 12.0995L8.2562 14.6119L10.2463 14.4129L9.99504 11.9005L8.00496 12.0995ZM5.7438 14.6119L5.99504 12.0995L4.00496 11.9005L3.75372 14.4129L5.7438 14.6119ZM7 16C6.2531 16 5.66948 15.3551 5.7438 14.6119L3.75372 14.4129C3.56167 16.3335 5.06985 18 7 18V16ZM0 10C0 11.6569 1.34315 13 3 13V11C2.44772 11 2 10.5523 2 10H0ZM12 10C12 10.5523 11.5523 11 11 11V13C12.6569 13 14 11.6569 14 10H12ZM8.2562 14.6119C8.33052 15.3551 7.7469 16 7 16V18C8.93015 18 10.4383 16.3335 10.2463 14.4129L8.2562 14.6119ZM12 9H14C14 7.89543 13.1046 7 12 7V9ZM2 7C0.895431 7 0 7.89543 0 9H2V7Z",
     fill: "#333333",
     mask: "url(#path-2-inside-1)"
+  }), /*#__PURE__*/React__default['default'].createElement("path", {
+    d: "M15.5 18.5H17.5V16.5",
+    stroke: "#333333",
+    "stroke-linecap": "round"
   }));
 };
 const BrushIcon = ({
