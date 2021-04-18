@@ -85,18 +85,19 @@ const Input = ({
   placeholder = '',
   value = '',
   id = null,
+  ref = null,
   onChange = () => {}
 }) => {
   const {
     input
   } = style$M;
-  const [val, setValue] = useState(value);
 
   const ArrowKeyUpDown = event => {
     const {
       code,
       shiftKey
     } = event;
+    const val = value;
 
     if (type !== 'string') {
       validateNumber(val);
@@ -107,8 +108,8 @@ const Input = ({
   };
 
   const calcInput = () => {
-    if (val && type !== 'string') {
-      const inputVal = val.toString();
+    if (value && type !== 'string') {
+      const inputVal = value.toString();
       const operations = ['+', '-', '*', '/'];
       validateNumber(inputVal);
       operations.map(_value => {
@@ -119,7 +120,7 @@ const Input = ({
           setValue(calculate(_res[0], _res[1], _value));
         }
 
-        return val;
+        return value;
       });
     }
   };
@@ -128,9 +129,7 @@ const Input = ({
     if (isCharacterALetter(data)) setValue(0);
   };
 
-  useEffect(() => {
-    if (value === val) return;
-
+  const setValue = val => {
     if (size === 'noStyle') {
       onChange(val);
     } else if (!val || val === '') {
@@ -143,27 +142,27 @@ const Input = ({
       setValue(min);
       onChange(min);
     } else onChange(parseFloat(val));
-  }, [val]);
-  useEffect(() => {
-    setValue(value);
-  }, [value]);
+  };
+
   return /*#__PURE__*/React$1.createElement(React$1.Fragment, null, size === 'noStyle' ? /*#__PURE__*/React$1.createElement("input", {
+    ref: ref,
     type: "text",
     onFocus: event => event.target.select(),
     onKeyUp: ArrowKeyUpDown,
-    value: val,
+    value: value,
     onBlur: calcInput,
     className: `${className ? className : ''}`,
     placeholder: placeholder,
     onChange: e => setValue(e.target.value)
   }) : /*#__PURE__*/React$1.createElement("div", {
+    ref: ref,
     className: `${className ? className : ''} ${input} ${style$M[size]} ${style$M[direction]}`
   }, label || children ? /*#__PURE__*/React$1.createElement("input", {
     id: id,
     type: "text",
     onFocus: event => event.target.select(),
     onKeyDown: ArrowKeyUpDown,
-    value: val,
+    value: value,
     onBlur: calcInput,
     onChange: e => setValue(e.target.value)
   }) : null, /*#__PURE__*/React$1.createElement("label", null, children ? children : label)));
