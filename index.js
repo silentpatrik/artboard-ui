@@ -129,6 +129,8 @@ const Input = ({
   };
 
   useEffect(() => {
+    if (value === val) return;
+
     if (size === 'noStyle') {
       onChange(val);
     } else if (!val || val === '') {
