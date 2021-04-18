@@ -91,7 +91,6 @@ const Input = ({
     input
   } = style$M;
   const [val, setValue] = useState(value);
-  console.log(value);
 
   const ArrowKeyUpDown = event => {
     const {
