@@ -3650,7 +3650,8 @@ const RowItem = props => {
     onContextMenu: e => handleClick(e),
     onDoubleClick: () => {
       setEditTitle(node.id);
-    }
+    },
+    onClick: () => onRowClick(node)
   }, /*#__PURE__*/React$1.createElement(React$1.Fragment, null, /*#__PURE__*/React$1.createElement("div", {
     className: pageName
   }, editTitle !== node.id ? /*#__PURE__*/React$1.createElement("label", null, node.title) : /*#__PURE__*/React$1.createElement("input", {
@@ -3689,9 +3690,36 @@ class ArtboardStudioPagesTheme extends Component {
 
 }
 
+const _defaultRow = [{
+  id: '14c92cb80-b738-4292-9562-841ca9fbcbb5',
+  title: 'Page 1',
+  selected: false,
+  color: 'red'
+}, {
+  id: '298e52b0a-e89f-0795f0e83870-9e33-0795f',
+  title: 'Page 1',
+  selected: false,
+  color: 'yellow'
+}, {
+  id: '3716ae080-1288-4a86-b740-62e217ea7c8d',
+  title: 'Page 2',
+  selected: false,
+  color: 'blue'
+}, {
+  id: '42fb5d090-89f6-425c-9912-ee0d52dbbbfc',
+  title: 'Page 3',
+  selected: false,
+  color: 'transparent'
+}, {
+  id: '598ff117a-2afb-4755-aff5-42fb7c018917',
+  title: 'Page 4',
+  selected: false,
+  color: 'green'
+}];
 const Pages = ({
   onChange,
-  setValue
+  setValue,
+  rows = _defaultRow
 }) => {
   const {
     pages,
@@ -3700,26 +3728,10 @@ const Pages = ({
     title,
     actionButton
   } = style$k;
-  const [pagesRows, setPagesRows] = useState([]);
-  const [pageRow, setPageRow] = useState([]);
-  useEffect(() => {
-    getData();
-  }, []);
-
-  const getData = () => {
-    fetch('../../../data/pages.json', {
-      headers: {
-        'Content-Type': 'application/json',
-        Accept: 'application/json'
-      }
-    }).then(function (response) {
-      return response.json();
-    }).then(function (myJson) {
-      setPagesRows({
-        treeData: myJson
-      });
-    });
-  };
+  const [pagesRows, setPagesRows] = useState({
+    treeData: rows
+  });
+  useState([]);
 
   const optionAction = ({
     row,
@@ -3820,9 +3832,8 @@ const Pages = ({
     isVirtualized: false,
     canDrop: canDrop,
     treeData: pagesRows.treeData,
-    onRowClick: treeData => setPagesRows(treeData),
     generateNodeProps: rowInfo => ({
-      onRowClick: () => setPageRow(rowInfo),
+      onRowClick: row => onChange(row),
       rowInfo,
       updateTitle: option => optionAction({
         option,
