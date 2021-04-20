@@ -68,9 +68,9 @@ function styleInject(css, ref) {
   }
 }
 
-var css_248z$Q = ".input-module_input__3k4oC {\n  border: 1px solid #e8ebed;\n  box-sizing: border-box;\n  border-radius: 8px;\n  display: flex;\n  justify-content: left;\n  align-items: center;\n  overflow: hidden;\n  background-color: #f5f5f5; }\n  .input-module_input__3k4oC * {\n    font-family: Aktiv Grotesk, sans-serif;\n    box-sizing: border-box;\n    user-select: none; }\n  .input-module_input__3k4oC.input-module_right__3AGuV input {\n    text-align: left; }\n  .input-module_input__3k4oC.input-module_left__29lN4 {\n    flex-direction: row-reverse; }\n    .input-module_input__3k4oC.input-module_left__29lN4 input {\n      padding-left: 2px; }\n  .input-module_input__3k4oC input {\n    border: 0;\n    color: #31363a;\n    background: transparent; }\n    .input-module_input__3k4oC input:focus {\n      outline: 0; }\n  .input-module_input__3k4oC label {\n    font-family: Aktiv Grotesk, sans-serif;\n    width: 24px;\n    height: 32px;\n    font-size: 12px;\n    line-height: 32px;\n    color: #b6babd;\n    display: flex;\n    align-items: center;\n    justify-content: center; }\n    .input-module_input__3k4oC label > svg {\n      margin-left: 3px; }\n  .input-module_input__3k4oC.input-module_normal__3iBT3 {\n    width: 64px;\n    height: 32px; }\n    .input-module_input__3k4oC.input-module_normal__3iBT3 input {\n      width: 40px;\n      height: 32px;\n      font-size: 12px;\n      line-height: 24px;\n      padding-left: 8px; }\n  .input-module_input__3k4oC:hover {\n    border: 1px solid #b6babd;\n    box-sizing: border-box; }\n  .input-module_input__3k4oC [type='text']:focus,\n  .input-module_input__3k4oC [type='password']:focus,\n  .input-module_input__3k4oC [type='number']:focus,\n  .input-module_input__3k4oC [type='email']:focus,\n  .input-module_input__3k4oC [type='search']:focus {\n    color: #31363a; }\n  .input-module_input__3k4oC:focus-within {\n    border: 1px solid #3399ff; }\n    .input-module_input__3k4oC:focus-within label {\n      color: #3399ff; }\n";
-var style$M = {"input":"input-module_input__3k4oC","right":"input-module_right__3AGuV","left":"input-module_left__29lN4","normal":"input-module_normal__3iBT3"};
-styleInject(css_248z$Q);
+var css_248z$O = ".input-module_input__3k4oC {\n  border: 1px solid #e8ebed;\n  box-sizing: border-box;\n  border-radius: 8px;\n  display: flex;\n  justify-content: left;\n  align-items: center;\n  overflow: hidden;\n  background-color: #f5f5f5; }\n  .input-module_input__3k4oC * {\n    font-family: Aktiv Grotesk, sans-serif;\n    box-sizing: border-box;\n    user-select: none; }\n  .input-module_input__3k4oC.input-module_right__3AGuV input {\n    text-align: left; }\n  .input-module_input__3k4oC.input-module_left__29lN4 {\n    flex-direction: row-reverse; }\n    .input-module_input__3k4oC.input-module_left__29lN4 input {\n      padding-left: 2px; }\n  .input-module_input__3k4oC input {\n    border: 0;\n    color: #31363a;\n    background: transparent; }\n    .input-module_input__3k4oC input:focus {\n      outline: 0; }\n  .input-module_input__3k4oC label {\n    font-family: Aktiv Grotesk, sans-serif;\n    width: 24px;\n    height: 32px;\n    font-size: 12px;\n    line-height: 32px;\n    color: #b6babd;\n    display: flex;\n    align-items: center;\n    justify-content: center; }\n    .input-module_input__3k4oC label > svg {\n      margin-left: 3px; }\n  .input-module_input__3k4oC.input-module_normal__3iBT3 {\n    width: 64px;\n    height: 32px; }\n    .input-module_input__3k4oC.input-module_normal__3iBT3 input {\n      width: 40px;\n      height: 32px;\n      font-size: 12px;\n      line-height: 24px;\n      padding-left: 8px; }\n  .input-module_input__3k4oC:hover {\n    border: 1px solid #b6babd;\n    box-sizing: border-box; }\n  .input-module_input__3k4oC [type='text']:focus,\n  .input-module_input__3k4oC [type='password']:focus,\n  .input-module_input__3k4oC [type='number']:focus,\n  .input-module_input__3k4oC [type='email']:focus,\n  .input-module_input__3k4oC [type='search']:focus {\n    color: #31363a; }\n  .input-module_input__3k4oC:focus-within {\n    border: 1px solid #3399ff; }\n    .input-module_input__3k4oC:focus-within label {\n      color: #3399ff; }\n";
+var style$K = {"input":"input-module_input__3k4oC","right":"input-module_right__3AGuV","left":"input-module_left__29lN4","normal":"input-module_normal__3iBT3"};
+styleInject(css_248z$O);
 
 /* eslint-disable react-hooks/exhaustive-deps */
 const Input = ({
@@ -90,7 +90,7 @@ const Input = ({
 }) => {
   const {
     input
-  } = style$M;
+  } = style$K;
 
   const ArrowKeyUpDown = event => {
     const {
@@ -156,7 +156,7 @@ const Input = ({
     onChange: e => setValue(e.target.value)
   }) : /*#__PURE__*/React$1.createElement("div", {
     ref: ref,
-    className: `${className ? className : ''} ${input} ${style$M[size]} ${style$M[direction]}`
+    className: `${className ? className : ''} ${input} ${style$K[size]} ${style$K[direction]}`
   }, label || children ? /*#__PURE__*/React$1.createElement("input", {
     id: id,
     type: "text",
@@ -168,9 +168,9 @@ const Input = ({
   }) : null, /*#__PURE__*/React$1.createElement("label", null, children ? children : label)));
 };
 
-var css_248z$P = ".iconButton-module_btn__1Xikn {\n  font-family: aktiv-grotesk, sans-serif;\n  box-sizing: border-box;\n  outline: none;\n  border-radius: 6px;\n  display: flex;\n  align-items: center;\n  justify-content: center;\n  border: 0;\n  cursor: pointer; }\n  .iconButton-module_btn__1Xikn.iconButton-module_white__6dVau {\n    background-color: #ffffff; }\n  .iconButton-module_btn__1Xikn.iconButton-module_gray__1lziB {\n    background-color: #f7f9fa; }\n  .iconButton-module_btn__1Xikn:hover, .iconButton-module_btn__1Xikn.iconButton-module_active__3ZrO_ {\n    background: #f2f4f5; }\n  .iconButton-module_btn__1Xikn.iconButton-module_active__3ZrO_ {\n    border: 1px solid #3399ff; }\n    .iconButton-module_btn__1Xikn.iconButton-module_active__3ZrO_ svg rect {\n      fill: #333333; }\n  .iconButton-module_btn__1Xikn.iconButton-module_normal__1YN9Y {\n    width: 32px;\n    height: 32px; }\n  .iconButton-module_btn__1Xikn.iconButton-module_small__1eSuR {\n    width: 24px;\n    height: 24px; }\n";
-var style$L = {"btn":"iconButton-module_btn__1Xikn","white":"iconButton-module_white__6dVau","gray":"iconButton-module_gray__1lziB","active":"iconButton-module_active__3ZrO_","normal":"iconButton-module_normal__1YN9Y","small":"iconButton-module_small__1eSuR"};
-styleInject(css_248z$P);
+var css_248z$N = ".iconButton-module_btn__1Xikn {\n  font-family: aktiv-grotesk, sans-serif;\n  box-sizing: border-box;\n  outline: none;\n  border-radius: 6px;\n  display: flex;\n  align-items: center;\n  justify-content: center;\n  border: 0;\n  cursor: pointer; }\n  .iconButton-module_btn__1Xikn.iconButton-module_white__6dVau {\n    background-color: #ffffff; }\n  .iconButton-module_btn__1Xikn.iconButton-module_gray__1lziB {\n    background-color: #f7f9fa; }\n  .iconButton-module_btn__1Xikn:hover, .iconButton-module_btn__1Xikn.iconButton-module_active__3ZrO_ {\n    background: #f2f4f5; }\n  .iconButton-module_btn__1Xikn.iconButton-module_active__3ZrO_ {\n    border: 1px solid #3399ff; }\n    .iconButton-module_btn__1Xikn.iconButton-module_active__3ZrO_ svg rect {\n      fill: #333333; }\n  .iconButton-module_btn__1Xikn.iconButton-module_normal__1YN9Y {\n    width: 32px;\n    height: 32px; }\n  .iconButton-module_btn__1Xikn.iconButton-module_small__1eSuR {\n    width: 24px;\n    height: 24px; }\n  .iconButton-module_btn__1Xikn:active {\n    border: 1px solid #3399ff; }\n";
+var style$J = {"btn":"iconButton-module_btn__1Xikn","white":"iconButton-module_white__6dVau","gray":"iconButton-module_gray__1lziB","active":"iconButton-module_active__3ZrO_","normal":"iconButton-module_normal__1YN9Y","small":"iconButton-module_small__1eSuR"};
+styleInject(css_248z$N);
 
 const IconButton = ({
   children,
@@ -184,37 +184,1275 @@ const IconButton = ({
   const {
     btn,
     active
-  } = style$L;
+  } = style$J;
   return /*#__PURE__*/React$1.createElement("button", {
     onClick: onClick,
-    className: `icon-btn ${btn} ${style$L[size]} ${style$L[color]} ${isActive ? active : ''} ${className ? className : ''}`,
+    className: `icon-btn ${btn} ${style$J[size]} ${style$J[color]} ${isActive ? active : ''} ${className ? className : ''}`,
     disabled: disable
   }, children);
 };
 
-const ShareIcon = ({
-  width = 15,
+const RadiusIcon$1 = ({
+  width = 12,
+  height = 12
+}) => {
+  return /*#__PURE__*/React$1.createElement("svg", {
+    width: width,
+    height: height,
+    viewBox: "0 0 12 12",
+    fill: "none"
+  }, /*#__PURE__*/React$1.createElement("path", {
+    fillRule: "evenodd",
+    clipRule: "evenodd",
+    d: "M1 2.5C1 1.67157 1.67157 1 2.5 1H4.5V0H2.5C1.11929 0 0 1.11929 0 2.5V4.5H1V2.5ZM11 2.5C11 1.67157 10.3284 1 9.5 1H7.5V0H9.5C10.8807 0 12 1.11929 12 2.5V4.5H11V2.5ZM2.5 11C1.67157 11 1 10.3284 1 9.5V7.5H0V9.5C0 10.8807 1.11929 12 2.5 12H4.5V11H2.5ZM11 9.5C11 10.3284 10.3284 11 9.5 11H7.5V12H9.5C10.8807 12 12 10.8807 12 9.5V7.5H11V9.5Z",
+    fill: "#333333"
+  }));
+};
+const LinkIcon$1 = ({
+  width = 14,
+  height = 5
+}) => {
+  return /*#__PURE__*/React$1.createElement("svg", {
+    width: width,
+    height: height,
+    viewBox: "0 0 14 5",
+    fill: "none"
+  }, /*#__PURE__*/React$1.createElement("path", {
+    fillRule: "evenodd",
+    clipRule: "evenodd",
+    d: "M5 5L3 5C1.61929 5 0.5 3.88071 0.5 2.5C0.5 1.11929 1.61929 -4.89256e-08 3 -1.09278e-07L5 -1.96701e-07L5 1L3 1C2.17157 1 1.5 1.67157 1.5 2.5C1.5 3.32843 2.17157 4 3 4L5 4L5 5ZM11 5C12.3807 5 13.5 3.88071 13.5 2.5C13.5 1.11929 12.3807 -5.19322e-07 11 -4.5897e-07L9 -3.71547e-07L9 1L11 1C11.8284 1 12.5 1.67157 12.5 2.5C12.5 3.32843 11.8284 4 11 4L9 4L9 5L11 5Z",
+    fill: "#333333"
+  }));
+};
+const EyeIcon$1 = ({
+  width = 12,
+  height = 6
+}) => {
+  return /*#__PURE__*/React$1.createElement("svg", {
+    width: width,
+    height: height,
+    viewBox: "0 0 12 6",
+    fill: "none"
+  }, /*#__PURE__*/React$1.createElement("path", {
+    fillRule: "evenodd",
+    clipRule: "evenodd",
+    d: "M10.5843 3.99999L10.5843 4H11.6586L11.6586 3.99999C10.8349 1.66961 8.61245 0 6.00002 0C3.38758 0 1.1651 1.66962 0.341431 4H1.41577C2.18779 2.23296 3.95106 1 6.00002 1C8.04897 1 9.81224 2.23295 10.5843 3.99999ZM6 3C5.17157 3 4.5 3.67157 4.5 4.5C4.5 5.32843 5.17157 6 6 6C6.82843 6 7.5 5.32843 7.5 4.5C7.5 3.67157 6.82843 3 6 3Z",
+    fill: "#333333"
+  }));
+};
+const EyeCloseIcon$1 = ({
+  width = 12,
+  height = 4
+}) => {
+  return /*#__PURE__*/React$1.createElement("svg", {
+    width: width,
+    height: height,
+    viewBox: "0 0 12 4",
+    fill: "none"
+  }, /*#__PURE__*/React$1.createElement("path", {
+    fillRule: "evenodd",
+    clipRule: "evenodd",
+    d: "M1.41577 -4.76837e-07C2.18779 1.76704 3.95106 3 6.00002 3C8.04898 3 9.81225 1.76704 10.5843 1.43051e-06L11.6586 -1.90735e-06C10.8349 2.33038 8.61246 4 6.00002 4C3.38758 4 1.1651 2.33038 0.341431 -9.53674e-07L1.41577 -4.76837e-07Z",
+    fill: "#333333"
+  }));
+};
+const TreeDotsIcon$1 = ({
+  width = 12,
+  height = 2
+}) => {
+  return /*#__PURE__*/React$1.createElement("svg", {
+    width: width,
+    height: height,
+    viewBox: "0 0 10 2",
+    fill: "none"
+  }, /*#__PURE__*/React$1.createElement("path", {
+    fillRule: "evenodd",
+    clipRule: "evenodd",
+    d: "M0 1C0 0.447715 0.447715 0 1 0C1.55228 0 2 0.447715 2 1C2 1.55228 1.55228 2 1 2C0.447715 2 0 1.55228 0 1ZM4 1C4 0.447715 4.44772 0 5 0C5.55228 0 6 0.447715 6 1C6 1.55228 5.55228 2 5 2C4.44772 2 4 1.55228 4 1ZM9 0C8.44771 0 8 0.447715 8 1C8 1.55228 8.44771 2 9 2C9.55229 2 10 1.55228 10 1C10 0.447715 9.55229 0 9 0Z",
+    fill: "#333333"
+  }));
+};
+const BlendIcon$1 = ({
+  width = 8,
   height = 13
 }) => {
   return /*#__PURE__*/React$1.createElement("svg", {
     width: width,
     height: height,
-    viewBox: `0 0 15 13`
+    viewBox: "0 0 8 13",
+    fill: "none"
   }, /*#__PURE__*/React$1.createElement("path", {
-    fillRule: "evenodd",
-    clipRule: "evenodd",
-    d: "M0 8v2a3 3 0 003 3h9a3 3 0 003-3V8h-1v2a2 2 0 01-2 2H3a2 2 0 01-2-2V8H0z",
-    fill: "#fff"
-  }), /*#__PURE__*/React$1.createElement("path", {
-    d: "M7.5 9V1m0 0L10 3.5M7.5 1L5 3.5",
-    stroke: "#fff",
+    d: "M1.21537 6.87311L4 2L6.78463 6.87311C7.5022 8.12884 7.29052 9.70948 6.26784 10.7322C5.01535 11.9847 2.98466 11.9847 1.73216 10.7322C0.709481 9.70948 0.497805 8.12884 1.21537 6.87311Z",
+    stroke: "#333333"
+  }));
+};
+const AlignLeftIcon$1 = ({
+  width = 13,
+  height = 12
+}) => {
+  return /*#__PURE__*/React$1.createElement("svg", {
+    width: width,
+    height: height,
+    viewBox: "0 0 13 12",
+    fill: "none"
+  }, /*#__PURE__*/React$1.createElement("line", {
+    x1: "0.5",
+    y1: "2.18557e-08",
+    x2: "0.499999",
+    y2: "12",
+    stroke: "#999999"
+  }), /*#__PURE__*/React$1.createElement("line", {
+    x1: "2",
+    y1: "4",
+    x2: "12",
+    y2: "4",
+    stroke: "#333333",
+    strokeWidth: "2",
+    strokeLinecap: "round"
+  }), /*#__PURE__*/React$1.createElement("line", {
+    x1: "2",
+    y1: "8",
+    x2: "6",
+    y2: "8",
+    stroke: "#333333",
+    strokeWidth: "2",
     strokeLinecap: "round"
   }));
 };
+const AlignCenterVIcon$1 = ({
+  width = 13,
+  height = 12
+}) => {
+  return /*#__PURE__*/React$1.createElement("svg", {
+    width: width,
+    height: height,
+    viewBox: "0 0 13 12",
+    fill: "none"
+  }, /*#__PURE__*/React$1.createElement("line", {
+    x1: "6.5",
+    y1: "2.18557e-08",
+    x2: "6.5",
+    y2: "12",
+    stroke: "#999999"
+  }), /*#__PURE__*/React$1.createElement("line", {
+    x1: "1.5",
+    y1: "4",
+    x2: "11.5",
+    y2: "4",
+    stroke: "#333333",
+    strokeWidth: "2",
+    strokeLinecap: "round"
+  }), /*#__PURE__*/React$1.createElement("line", {
+    x1: "4.5",
+    y1: "8",
+    x2: "8.5",
+    y2: "8",
+    stroke: "#333333",
+    strokeWidth: "2",
+    strokeLinecap: "round"
+  }));
+};
+const AlignRightIcon$1 = ({
+  width = 13,
+  height = 12
+}) => {
+  return /*#__PURE__*/React$1.createElement("svg", {
+    width: width,
+    height: height,
+    viewBox: "0 0 13 12",
+    fill: "none"
+  }, /*#__PURE__*/React$1.createElement("line", {
+    y1: "-0.5",
+    x2: "12",
+    y2: "-0.5",
+    transform: "matrix(4.37114e-08 1 1 -4.37114e-08 13 0)",
+    stroke: "#999999"
+  }), /*#__PURE__*/React$1.createElement("line", {
+    x1: "1",
+    y1: "-1",
+    x2: "11",
+    y2: "-1",
+    transform: "matrix(-1 0 0 1 12 5)",
+    stroke: "#333333",
+    strokeWidth: "2",
+    strokeLinecap: "round"
+  }), /*#__PURE__*/React$1.createElement("line", {
+    x1: "1",
+    y1: "-1",
+    x2: "5",
+    y2: "-1",
+    transform: "matrix(-1 0 0 1 12 9)",
+    stroke: "#333333",
+    strokeWidth: "2",
+    strokeLinecap: "round"
+  }));
+};
+const AlignTopIcon$1 = ({
+  width = 13,
+  height = 12
+}) => {
+  return /*#__PURE__*/React$1.createElement("svg", {
+    width: width,
+    height: height,
+    viewBox: "0 0 13 12",
+    fill: "none"
+  }, /*#__PURE__*/React$1.createElement("line", {
+    x1: "12",
+    y1: "0.5",
+    x2: "-4.37114e-08",
+    y2: "0.499999",
+    stroke: "#999999"
+  }), /*#__PURE__*/React$1.createElement("line", {
+    x1: "8",
+    y1: "2",
+    x2: "8",
+    y2: "12",
+    stroke: "#333333",
+    strokeWidth: "2",
+    strokeLinecap: "round"
+  }), /*#__PURE__*/React$1.createElement("line", {
+    x1: "4",
+    y1: "2",
+    x2: "4",
+    y2: "6",
+    stroke: "#333333",
+    strokeWidth: "2",
+    strokeLinecap: "round"
+  }));
+};
+const AlignCenterIcon$1 = ({
+  width = 12,
+  height = 13
+}) => {
+  return /*#__PURE__*/React$1.createElement("svg", {
+    width: width,
+    height: height,
+    viewBox: "0 0 12 13",
+    fill: "none"
+  }, /*#__PURE__*/React$1.createElement("line", {
+    y1: "6.5",
+    x2: "12",
+    y2: "6.5",
+    stroke: "#999999"
+  }), /*#__PURE__*/React$1.createElement("line", {
+    x1: "4",
+    y1: "11.5",
+    x2: "4",
+    y2: "1.5",
+    stroke: "#333333",
+    strokeWidth: "2",
+    strokeLinecap: "round"
+  }), /*#__PURE__*/React$1.createElement("line", {
+    x1: "8",
+    y1: "8.5",
+    x2: "8",
+    y2: "4.5",
+    stroke: "#333333",
+    strokeWidth: "2",
+    strokeLinecap: "round"
+  }));
+};
+const AlignBottomIcon$1 = ({
+  width = 12,
+  height = 13
+}) => {
+  return /*#__PURE__*/React$1.createElement("svg", {
+    width: width,
+    height: height,
+    viewBox: "0 0 12 13",
+    fill: "none"
+  }, /*#__PURE__*/React$1.createElement("line", {
+    x1: "2.78181e-08",
+    y1: "12.5",
+    x2: "12",
+    y2: "12.5",
+    stroke: "#999999"
+  }), /*#__PURE__*/React$1.createElement("line", {
+    x1: "4",
+    y1: "11",
+    x2: "4",
+    y2: "1",
+    stroke: "#333333",
+    strokeWidth: "2",
+    strokeLinecap: "round"
+  }), /*#__PURE__*/React$1.createElement("line", {
+    x1: "8",
+    y1: "11",
+    x2: "8",
+    y2: "7",
+    stroke: "#333333",
+    strokeWidth: "2",
+    strokeLinecap: "round"
+  }));
+};
+const AlignDistributeVerticalSpacingIcon$1 = ({
+  width = 8,
+  height = 12
+}) => {
+  return /*#__PURE__*/React$1.createElement("svg", {
+    width: width,
+    height: height,
+    viewBox: "0 0 8 12",
+    fill: "none"
+  }, /*#__PURE__*/React$1.createElement("line", {
+    x1: "7.5",
+    y1: "12",
+    x2: "7.5",
+    y2: "2.18557e-08",
+    stroke: "#999999"
+  }), /*#__PURE__*/React$1.createElement("line", {
+    x1: "0.5",
+    y1: "-2.18557e-08",
+    x2: "0.500001",
+    y2: "12",
+    stroke: "#999999"
+  }), /*#__PURE__*/React$1.createElement("line", {
+    x1: "4",
+    y1: "8",
+    x2: "4",
+    y2: "4",
+    stroke: "#333333",
+    strokeWidth: "2",
+    strokeLinecap: "round"
+  }));
+};
+const AlignDistributeHorizontalSpacingIcon$1 = ({
+  width = 8,
+  height = 12
+}) => {
+  return /*#__PURE__*/React$1.createElement("svg", {
+    width: width,
+    height: height,
+    viewBox: "0 0 8 12",
+    fill: "none"
+  }, /*#__PURE__*/React$1.createElement("line", {
+    x1: "-2.78181e-08",
+    y1: "7.5",
+    x2: "12",
+    y2: "7.5",
+    stroke: "#999999"
+  }), /*#__PURE__*/React$1.createElement("line", {
+    x1: "12",
+    y1: "0.5",
+    x2: "2.78181e-08",
+    y2: "0.500001",
+    stroke: "#999999"
+  }), /*#__PURE__*/React$1.createElement("line", {
+    x1: "4",
+    y1: "4",
+    x2: "8",
+    y2: "4",
+    stroke: "#333333",
+    strokeWidth: "2",
+    strokeLinecap: "round"
+  }));
+};
+const LockIcon$1 = ({
+  width = 8,
+  height = 11
+}) => {
+  return /*#__PURE__*/React$1.createElement("svg", {
+    width: width,
+    height: height,
+    viewBox: "0 0 8 11",
+    fill: "none"
+  }, /*#__PURE__*/React$1.createElement("path", {
+    fillRule: "evenodd",
+    clipRule: "evenodd",
+    d: "M4 0C2.34315 0 1 1.34315 1 3V5C0.447715 5 0 5.44772 0 6V9C0 10.1046 0.895431 11 2 11H6C7.10457 11 8 10.1046 8 9V6C8 5.44772 7.55228 5 7 5V3C7 1.34315 5.65685 0 4 0ZM6 5V3C6 1.89543 5.10457 1 4 1C2.89543 1 2 1.89543 2 3V5H6ZM1 9V6H7V9C7 9.55228 6.55228 10 6 10H2C1.44772 10 1 9.55228 1 9Z",
+    fill: "#333333"
+  }));
+};
+const LockedIcon$1 = ({
+  width = 8,
+  height = 11
+}) => {
+  return /*#__PURE__*/React$1.createElement("svg", {
+    width: width,
+    height: height,
+    viewBox: "0 0 8 11",
+    fill: "none"
+  }, /*#__PURE__*/React$1.createElement("path", {
+    d: "M1.5 5V3C1.5 1.61929 2.61929 0.5 4 0.5V0.5C5.38071 0.5 6.5 1.61929 6.5 3V5",
+    stroke: "#333333"
+  }), /*#__PURE__*/React$1.createElement("path", {
+    d: "M0.5 6C0.5 5.72386 0.723858 5.5 1 5.5H7C7.27614 5.5 7.5 5.72386 7.5 6V9C7.5 9.82843 6.82843 10.5 6 10.5H2C1.17157 10.5 0.5 9.82843 0.5 9V6Z",
+    fill: "#333333",
+    stroke: "#333333",
+    strokeLinecap: "round",
+    strokeLinejoin: "round"
+  }));
+};
+const VolumeOnIcon$1 = ({
+  width = 12,
+  height = 12
+}) => {
+  return /*#__PURE__*/React$1.createElement("svg", {
+    width: width,
+    height: height,
+    viewBox: "0 0 12 12",
+    fill: "none"
+  }, /*#__PURE__*/React$1.createElement("mask", {
+    id: "path-1-inside-1",
+    fill: "white"
+  }, /*#__PURE__*/React$1.createElement("path", {
+    d: "M2 3C0.895431 3 0 3.89543 0 5V7C0 8.10457 0.895431 9 2 9H3L6.4855 11.0913C7.15203 11.4912 8 11.0111 8 10.2338V1.76619C8 0.988896 7.15203 0.508783 6.4855 0.908698L3 3H2Z"
+  })), /*#__PURE__*/React$1.createElement("path", {
+    d: "M3 9L3.5145 8.14251L3.27698 8H3V9ZM3 3V4H3.27698L3.5145 3.85749L3 3ZM6.4855 11.0913L5.97101 11.9488L6.4855 11.0913ZM-1 5V7H1V5H-1ZM2 10H3V8H2V10ZM2.4855 9.85749L5.97101 11.9488L7 10.2338L3.5145 8.14251L2.4855 9.85749ZM9 10.2338V1.76619H7V10.2338H9ZM5.97101 0.0512046L2.4855 2.14251L3.5145 3.85749L7 1.76619L5.97101 0.0512046ZM3 2H2V4H3V2ZM9 1.76619C9 0.211601 7.30406 -0.748625 5.97101 0.0512046L7 1.76619V1.76619H9ZM5.97101 11.9488C7.30405 12.7486 9 11.7884 9 10.2338H7L7 10.2338L5.97101 11.9488ZM-1 7C-1 8.65685 0.343146 10 2 10V8C1.44772 8 1 7.55228 1 7H-1ZM1 5C1 4.44772 1.44772 4 2 4V2C0.343146 2 -1 3.34315 -1 5H1Z",
+    fill: "#333333",
+    mask: "url(#path-1-inside-1)"
+  }), /*#__PURE__*/React$1.createElement("path", {
+    fillRule: "evenodd",
+    clipRule: "evenodd",
+    d: "M9 7.73243C9.5978 7.38663 10 6.74028 10 6C10 5.25972 9.5978 4.61337 9 4.26756V6V7.73243Z",
+    fill: "#333333"
+  }), /*#__PURE__*/React$1.createElement("path", {
+    fillRule: "evenodd",
+    clipRule: "evenodd",
+    d: "M9 9.74796C10.7252 9.30392 12 7.73782 12 5.87398C12 4.01014 10.7252 2.44404 9 2V3.04469C10.1652 3.45652 11 4.56776 11 5.87398C11 7.1802 10.1652 8.29144 9 8.70328V9.74796Z",
+    fill: "#333333"
+  }));
+};
+const VolumeOffIcon$1 = ({
+  width = 12,
+  height = 12
+}) => {
+  return /*#__PURE__*/React$1.createElement("svg", {
+    width: width,
+    height: height,
+    viewBox: "0 0 12 12",
+    fill: "none"
+  }, /*#__PURE__*/React$1.createElement("path", {
+    fillRule: "evenodd",
+    clipRule: "evenodd",
+    d: "M3.5145 8.14251L3.27698 8H3H2C1.44772 8 1 7.55229 1 7V5C1 4.44772 1.44772 4 2 4H3H3.27698L3.5145 3.8575L7 1.76619V3H8V1.76619C8 0.988899 7.15203 0.508786 6.4855 0.9087L3 3H2C0.895431 3 0 3.89543 0 5V7C0 8.10457 0.895431 9 2 9H3L6.4855 11.0913C7.15203 11.4912 8 11.0111 8 10.2338V9H7V10.2338L6.4855 11.0913L7 10.2338L3.5145 8.14251Z",
+    fill: "#333333"
+  }), /*#__PURE__*/React$1.createElement("path", {
+    d: "M6 7.5L9 4.5",
+    stroke: "#333333",
+    strokeLinecap: "round"
+  }), /*#__PURE__*/React$1.createElement("path", {
+    d: "M9 7.5L6 4.5",
+    stroke: "#333333",
+    strokeLinecap: "round"
+  }));
+}; //SMART LAYOUT
 
-var css_248z$O = ".shareButton-module_shareBtn__bxF0X {\n  width: 24px;\n  height: 24px;\n  background-color: #3399ff;\n  box-sizing: border-box;\n  outline: none;\n  border-radius: 8px;\n  display: flex;\n  align-items: center;\n  justify-content: center;\n  border: 0;\n  cursor: pointer; }\n";
-var style$K = {"shareBtn":"shareButton-module_shareBtn__bxF0X"};
-styleInject(css_248z$O);
+const EdgeAlignTopIcon$1 = ({
+  width = 8,
+  height = 12,
+  color = null
+}) => {
+  return /*#__PURE__*/React$1.createElement("svg", {
+    width: width,
+    height: height,
+    viewBox: "0 0 8 12"
+  }, /*#__PURE__*/React$1.createElement("path", {
+    stroke: color // strokeWidth="1.5"
+    ,
+    strokeLinecap: "round",
+    d: "M4 11.25V.75M7.25.75H.75"
+  }));
+};
+const EdgeAlignRightIcon$1 = ({
+  width = 12,
+  height = 8,
+  color = null
+}) => {
+  return /*#__PURE__*/React$1.createElement("svg", {
+    width: width,
+    height: height,
+    viewBox: "0 0 12 8"
+  }, /*#__PURE__*/React$1.createElement("path", {
+    stroke: color // strokeWidth="1.5"
+    ,
+    strokeLinecap: "round",
+    d: "M11.25 4H.75M.75.75v6.5"
+  }));
+};
+const EdgeAlignLeftIcon$1 = ({
+  width = 12,
+  height = 8,
+  color = null
+}) => {
+  return /*#__PURE__*/React$1.createElement("svg", {
+    width: width,
+    height: height,
+    viewBox: "0 0 12 8"
+  }, /*#__PURE__*/React$1.createElement("path", {
+    stroke: color,
+    strokeLinecap: "round",
+    d: "M.5 4h11M11.5 7.5v-7"
+  }));
+};
+const EdgeAlignBottomIcon$1 = ({
+  width = 8,
+  height = 12,
+  color = null
+}) => {
+  return /*#__PURE__*/React$1.createElement("svg", {
+    width: width,
+    height: height,
+    viewBox: "0 0 8 12"
+  }, /*#__PURE__*/React$1.createElement("path", {
+    stroke: color,
+    strokeLinecap: "round",
+    d: "M4 .5v11M.5 11.5h7"
+  }));
+};
+
+const Stroke1Icon$1 = ({
+  width = 8,
+  height = 8
+}) => {
+  return /*#__PURE__*/React$1.createElement("svg", {
+    width: width,
+    height: height,
+    viewBox: `0 0 8 8`,
+    fill: "transparent"
+  }, /*#__PURE__*/React$1.createElement("path", {
+    d: "M8 .5H.5V8",
+    stroke: "#999"
+  }));
+};
+const Stroke2Icon$1 = ({
+  width = 8,
+  height = 8
+}) => {
+  return /*#__PURE__*/React$1.createElement("svg", {
+    width: width,
+    height: height,
+    viewBox: `0 0 8 8`,
+    fill: "transparent"
+  }, /*#__PURE__*/React$1.createElement("path", {
+    d: "M8 .5H4.25L.5 4.25V8",
+    stroke: "#999"
+  }));
+};
+const Stroke3Icon$1 = ({
+  width = 8,
+  height = 8
+}) => {
+  return /*#__PURE__*/React$1.createElement("svg", {
+    width: width,
+    height: height,
+    viewBox: `0 0 8 8`,
+    fill: "transparent"
+  }, /*#__PURE__*/React$1.createElement("path", {
+    d: "M8 .5H6.5c-3.3137 0-6 2.6863-6 6V8",
+    stroke: "#999"
+  }));
+}; //Tools Panel
+
+const ToolsPanelMenuIcon$1 = ({
+  width = 12,
+  height = 9
+}) => {
+  return /*#__PURE__*/React$1.createElement("svg", {
+    width: width,
+    height: height,
+    viewBox: "0 0 12 9",
+    fill: "none"
+  }, /*#__PURE__*/React$1.createElement("line", {
+    x1: "0.5",
+    y1: "0.5",
+    x2: "11.5",
+    y2: "0.500001",
+    stroke: "#333333",
+    strokeLinecap: "round"
+  }), /*#__PURE__*/React$1.createElement("line", {
+    x1: "0.5",
+    y1: "4.5",
+    x2: "11.5",
+    y2: "4.5",
+    stroke: "#333333",
+    strokeLinecap: "round"
+  }), /*#__PURE__*/React$1.createElement("line", {
+    x1: "0.5",
+    y1: "8.5",
+    x2: "11.5",
+    y2: "8.5",
+    stroke: "#333333",
+    strokeLinecap: "round"
+  }));
+};
+const ToolsPanelShareIcon$1 = ({
+  width = 15,
+  height = 14
+}) => {
+  return /*#__PURE__*/React$1.createElement("svg", {
+    width: width,
+    height: height,
+    viewBox: "0 0 15 14",
+    fill: "none"
+  }, /*#__PURE__*/React$1.createElement("path", {
+    fillRule: "evenodd",
+    clipRule: "evenodd",
+    d: "M0 10V11C0 12.6569 1.34315 14 3 14H12C13.6569 14 15 12.6569 15 11V10H14V11C14 12.1046 13.1046 13 12 13H3C1.89543 13 1 12.1046 1 11V10H0Z",
+    fill: "#333333"
+  }), /*#__PURE__*/React$1.createElement("path", {
+    d: "M7.5 9L7.5 1M7.5 1L10 3.5M7.5 1L5 3.5",
+    stroke: "#333333",
+    strokeLinecap: "round"
+  }));
+};
+const WrapIcon$1 = ({
+  width = 16,
+  height = 16
+}) => {
+  return /*#__PURE__*/React$1.createElement("svg", {
+    width: width,
+    height: height,
+    viewBox: "0 0 16 16",
+    fill: "none"
+  }, /*#__PURE__*/React$1.createElement("path", {
+    fillRule: "evenodd",
+    clipRule: "evenodd",
+    d: "M1 3v10c0 1.1046.8954 2 2 2h10c1.1046 0 2-.8954 2-2V3c0-1.1046-.8954-2-2-2H3c-1.1046 0-2 .8954-2 2zm2-3C1.3432 0 0 1.3432 0 3v10c0 1.6569 1.3432 3 3 3h10c1.6569 0 3-1.3431 3-3V3c0-1.6568-1.3431-3-3-3H3z",
+    fill: "#333"
+  }), /*#__PURE__*/React$1.createElement("path", {
+    stroke: "#333",
+    d: "M5.5 0v16M10.5 0v16M0 10.5h16M0 5.5h16"
+  }));
+};
+const PerspectiveIcon$1 = ({
+  width = 16,
+  height = 17
+}) => {
+  return /*#__PURE__*/React$1.createElement("svg", {
+    width: width,
+    height: height,
+    viewBox: "0 0 16 17",
+    fill: "none"
+  }, /*#__PURE__*/React$1.createElement("path", {
+    d: "M7.5 2.5V15M12.5 3.5v10M1 8.5h14M.5 2.947c0-.9483.8692-1.6587 1.7986-1.4699l12 2.4375a1.5 1.5 0 011.2014 1.47v6.3273a1.5 1.5 0 01-1.1149 1.4497l-12 3.1875C1.433 16.602.5 15.8843.5 14.8994V2.9471z",
+    stroke: "#333"
+  }));
+};
+const RemoveBGIcon$1 = ({
+  width = 18,
+  height = 18
+}) => {
+  return /*#__PURE__*/React$1.createElement("svg", {
+    width: width,
+    height: height,
+    viewBox: "0 0 18 18",
+    fill: "none"
+  }, /*#__PURE__*/React$1.createElement("rect", {
+    x: "0.636039",
+    y: "15.2426",
+    width: "15",
+    height: "3",
+    rx: "1",
+    transform: "rotate(-45 0.636039 15.2426)",
+    stroke: "#333333"
+  }), /*#__PURE__*/React$1.createElement("line", {
+    x1: "8.35355",
+    y1: "7.64645",
+    x2: "10.3536",
+    y2: "9.64645",
+    stroke: "#333333"
+  }), /*#__PURE__*/React$1.createElement("path", {
+    d: "M5.03107 0.767252C5.19215 0.331943 5.80785 0.331944 5.96893 0.767253L6.50058 2.20402C6.55122 2.34088 6.65912 2.44878 6.79598 2.49942L8.23275 3.03107C8.66806 3.19215 8.66806 3.80785 8.23275 3.96893L6.79598 4.50058C6.65912 4.55122 6.55122 4.65912 6.50058 4.79598L5.96893 6.23275C5.80785 6.66806 5.19215 6.66806 5.03107 6.23275L4.49942 4.79598C4.44878 4.65912 4.34088 4.55122 4.20402 4.50058L2.76725 3.96893C2.33194 3.80785 2.33194 3.19215 2.76725 3.03107L4.20402 2.49942C4.34088 2.44878 4.44878 2.34088 4.49942 2.20402L5.03107 0.767252Z",
+    fill: "#333333"
+  }), /*#__PURE__*/React$1.createElement("path", {
+    d: "M15.0311 0.767253C15.1922 0.331944 15.8078 0.331944 15.9689 0.767253L16.2305 1.47411C16.2811 1.61097 16.389 1.71887 16.5259 1.76951L17.2327 2.03107C17.6681 2.19215 17.6681 2.80785 17.2327 2.96893L16.5259 3.23049C16.389 3.28113 16.2811 3.38903 16.2305 3.52589L15.9689 4.23275C15.8078 4.66806 15.1922 4.66806 15.0311 4.23275L14.7695 3.52589C14.7189 3.38903 14.611 3.28113 14.4741 3.23049L13.7673 2.96893C13.3319 2.80785 13.3319 2.19215 13.7673 2.03107L14.4741 1.76951C14.611 1.71887 14.7189 1.61097 14.7695 1.47411L15.0311 0.767253Z",
+    fill: "#333333"
+  }), /*#__PURE__*/React$1.createElement("path", {
+    d: "M15.0384 9.74755C15.1969 9.31901 15.8031 9.31901 15.9616 9.74755C16.0115 9.88228 16.1177 9.98851 16.2524 10.0384C16.681 10.1969 16.681 10.8031 16.2524 10.9616C16.1177 11.0115 16.0115 11.1177 15.9616 11.2524C15.8031 11.681 15.1969 11.681 15.0384 11.2524C14.9885 11.1177 14.8823 11.0115 14.7476 10.9616C14.319 10.8031 14.319 10.1969 14.7476 10.0384C14.8823 9.98851 14.9885 9.88228 15.0384 9.74755Z",
+    fill: "#333333"
+  }));
+};
+const CheckIcon$1 = ({
+  width = 10,
+  height = 9
+}) => {
+  return /*#__PURE__*/React$1.createElement("svg", {
+    width: width,
+    height: height,
+    viewBox: "0 0 10 9",
+    fill: "none"
+  }, /*#__PURE__*/React$1.createElement("path", {
+    fillRule: "evenodd",
+    clipRule: "evenodd",
+    d: "M9.3796 1.3254l-6 7-.3514.41-.3817-.3819-2.5-2.5.707-.707 2.1183 2.1181 5.6486-6.59.7592.6508z",
+    fill: "#999"
+  }));
+};
+const ChevronArrowIcon$1 = ({
+  width = 8,
+  height = 4
+}) => {
+  return /*#__PURE__*/React$1.createElement("svg", {
+    width: width,
+    height: height,
+    viewBox: "0 0 8 4",
+    fill: "none"
+  }, /*#__PURE__*/React$1.createElement("path", {
+    fillRule: "evenodd",
+    clipRule: "evenodd",
+    d: "M.2929 0l3.3536 3.3535L4 3.7071l.3536-.3536L7.707 0H6.293L4 2.2929 1.7071 0H.293z",
+    fill: "#999"
+  }));
+};
+const ListIcon$1 = ({
+  width = 12,
+  height = 7
+}) => {
+  return /*#__PURE__*/React$1.createElement("svg", {
+    width: width,
+    height: height,
+    viewBox: "0 0 12 7",
+    fill: "none"
+  }, /*#__PURE__*/React$1.createElement("path", {
+    fillRule: "evenodd",
+    clipRule: "evenodd",
+    d: "M12 2H4V1h8v1z",
+    fill: "#999"
+  }), /*#__PURE__*/React$1.createElement("circle", {
+    cx: "1.5",
+    cy: "1.5",
+    r: ".5",
+    fill: "#999",
+    stroke: "#999",
+    strokeWidth: ".5"
+  }), /*#__PURE__*/React$1.createElement("circle", {
+    cx: "1.5",
+    cy: "5.5",
+    r: ".5",
+    fill: "#999",
+    stroke: "#999",
+    strokeWidth: ".5"
+  }), /*#__PURE__*/React$1.createElement("path", {
+    stroke: "#999",
+    d: "M4 5.5h8"
+  }));
+};
+const PlusIcon$1 = ({
+  width = 9,
+  height = 9
+}) => {
+  return /*#__PURE__*/React$1.createElement("svg", {
+    width: width,
+    height: height,
+    viewBox: "0 0 9 9",
+    fill: "none"
+  }, /*#__PURE__*/React$1.createElement("path", {
+    fillRule: "evenodd",
+    clipRule: "evenodd",
+    d: "M5 4V0H4v4H0v1h4v4h1V5h4V4H5z",
+    fill: "#999"
+  }));
+};
+const MinusIcon$1 = ({
+  width = 9,
+  height = 1
+}) => {
+  return /*#__PURE__*/React$1.createElement("svg", {
+    width: width,
+    height: height,
+    viewBox: "0 0 9 1",
+    fill: "none"
+  }, /*#__PURE__*/React$1.createElement("path", {
+    fillRule: "evenodd",
+    clipRule: "evenodd",
+    d: "M9 1H0V0h9v1z",
+    fill: "#999"
+  }));
+};
+const CrossIcon$1 = ({
+  width = 10,
+  height = 10
+}) => {
+  return /*#__PURE__*/React$1.createElement("svg", {
+    width: width,
+    height: height,
+    viewBox: "0 0 10 10",
+    fill: "none"
+  }, /*#__PURE__*/React$1.createElement("path", {
+    d: "M9 1L1 9M1 1l8 8",
+    stroke: "#999"
+  }));
+};
+const SearchIcon$1 = ({
+  width = 11,
+  height = 12
+}) => {
+  return /*#__PURE__*/React$1.createElement("svg", {
+    width: width,
+    height: height,
+    viewBox: "0 0 11 12",
+    fill: "none"
+  }, /*#__PURE__*/React$1.createElement("path", {
+    fillRule: "evenodd",
+    clipRule: "evenodd",
+    d: "M9 5c0 2.2091-1.7909 4-4 4-2.2091 0-4-1.7909-4-4 0-2.2091 1.7909-4 4-4 2.2091 0 4 1.7909 4 4zM7.578 9.285C6.8252 9.739 5.943 10 5 10c-2.7614 0-5-2.2386-5-5s2.2386-5 5-5 5 2.2386 5 5c0 1.4552-.6217 2.7652-1.614 3.679l2.4676 2.4674-.7072.7072L7.578 9.285z",
+    fill: "#999"
+  }));
+};
+
+const LayerFolderIcon$1 = ({
+  width = 12,
+  height = 10
+}) => {
+  return /*#__PURE__*/React$1.createElement("svg", {
+    width: width,
+    height: height,
+    viewBox: "0 0 12 10",
+    fill: "none"
+  }, /*#__PURE__*/React$1.createElement("path", {
+    d: "M0 3c0-.9319 0-1.3978.1522-1.7654A2 2 0 011.2346.1522C1.6022 0 2.0681 0 3 0h3l1 2h2.75c.6989 0 1.0484 0 1.324.1142.3676.1522.6596.4442.8118.8118C12 3.2016 12 3.551 12 4.25V7c0 .9319 0 1.3978-.1522 1.7654-.203.49-.5924.8794-1.0824 1.0824C10.3978 10 9.9319 10 9 10H3c-.9319 0-1.3978 0-1.7654-.1522A2 2 0 01.1522 8.7654C0 8.3978 0 7.9319 0 7V3z",
+    fill: "#F5F5F5"
+  }), /*#__PURE__*/React$1.createElement("path", {
+    fillRule: "evenodd",
+    clipRule: "evenodd",
+    d: "M7 2L6 0H3c-.9319 0-1.3978 0-1.7654.1522A2 2 0 00.1522 1.2346C0 1.6022 0 2.0681 0 3v4c0 .9319 0 1.3978.1522 1.7654a2 2 0 001.0824 1.0824C1.6022 10 2.0681 10 3 10h6c.9319 0 1.3978 0 1.7654-.1522.49-.203.8794-.5924 1.0824-1.0824C12 8.3978 12 7.9319 12 7V4.25c0-.699 0-1.0484-.1142-1.324a1.4997 1.4997 0 00-.8118-.8118C10.7984 2 10.4489 2 9.75 2H7zM5.382 1H3c-.4796 0-.7893.0005-1.0262.0167-.228.0156-.3149.0422-.3565.0594a1 1 0 00-.5412.5412c-.0172.0416-.0438.1285-.0594.3565C1.0005 2.2108 1 2.5204 1 3v4c0 .4796.0005.7893.0167 1.0262.0156.228.0422.3149.0594.3565a1 1 0 00.5412.5412c.0416.0172.1285.0438.3565.0594C2.2108 8.9995 2.5204 9 3 9h6c.4796 0 .7893-.0005 1.0262-.0167.228-.0156.3149-.0422.3565-.0594a1.0001 1.0001 0 00.5412-.5412c.0172-.0416.0438-.1285.0594-.3565C10.9995 7.7892 11 7.4796 11 7V4.25c0-.3631-.0005-.5854-.012-.7527-.0096-.142-.0244-.1845-.026-.1886-.0002-.0005-.0002-.0005 0 0a.5.5 0 00-.2707-.2706c-.0041-.0017-.0466-.0165-.1886-.0261C10.3354 3.0005 10.1131 3 9.75 3H6.382l-1-2z",
+    fill: "#999"
+  }));
+};
+const LayerFileIcon$1 = ({
+  width = 10,
+  height = 12
+}) => {
+  return /*#__PURE__*/React$1.createElement("svg", {
+    width: width,
+    height: height,
+    viewBox: `0 0 10 12`,
+    fill: "none"
+  }, /*#__PURE__*/React$1.createElement("path", {
+    d: "M.5 4.5c0-.706 0-1.21.027-1.607.027-.393.079-.645.163-.85A2.5 2.5 0 012.043.69c.205-.084.457-.136.85-.163C3.29.5 3.794.5 4.5.5h1.293L9.5 4.207V7.5c0 .706 0 1.21-.027 1.607-.027.393-.079.645-.163.85a2.5 2.5 0 01-1.353 1.353c-.205.084-.457.136-.85.163-.397.027-.901.027-1.607.027h-1c-.706 0-1.21 0-1.607-.027-.393-.027-.645-.079-.85-.163A2.5 2.5 0 01.69 9.957C.606 9.752.554 9.5.527 9.107.5 8.71.5 8.206.5 7.5v-3z",
+    fill: "#F5F5F5",
+    stroke: "#999"
+  }), /*#__PURE__*/React$1.createElement("path", {
+    d: "M9.5 4.207V4.5H7A1.5 1.5 0 015.5 3V.5h.293L9.5 4.207z",
+    fill: "#F5F5F5",
+    stroke: "#999"
+  }));
+};
+const LayerVectorIcon$1 = ({
+  width = 12,
+  height = 12
+}) => {
+  return /*#__PURE__*/React$1.createElement("svg", {
+    width: width,
+    height: height,
+    viewBox: "0 0 12 12",
+    fill: "none"
+  }, /*#__PURE__*/React$1.createElement("path", {
+    fillRule: "evenodd",
+    clipRule: "evenodd",
+    d: "M9 2c0 .5523.4477 1 1 1s1-.4477 1-1-.4477-1-1-1-1 .4477-1 1zm-.9192.5645C8.3244 3.3942 9.0915 4 10 4c1.1046 0 2-.8954 2-2s-.8954-2-2-2c-.9533 0-1.7508.667-1.9514 1.5598-3.3814.428-6.0608 3.1074-6.4888 6.4888C.667 8.2491 0 9.0466 0 10c0 1.1046.8954 2 2 2s2-.8954 2-2c0-.9085-.6058-1.6756-1.4355-1.9192.404-2.8543 2.662-5.1123 5.5163-5.5163zM2 9c-.5523 0-1 .4477-1 1s.4477 1 1 1 1-.4477 1-1-.4477-1-1-1z",
+    fill: "#999"
+  }), /*#__PURE__*/React$1.createElement("path", {
+    d: "M0 10c0-1.1046.8954-2 2-2s2 .8954 2 2-.8954 2-2 2-2-.8954-2-2z",
+    fill: "#F5F5F5"
+  }), /*#__PURE__*/React$1.createElement("path", {
+    fillRule: "evenodd",
+    clipRule: "evenodd",
+    d: "M1 10c0 .5523.4477 1 1 1s1-.4477 1-1-.4477-1-1-1-1 .4477-1 1zm1-2c-1.1046 0-2 .8954-2 2s.8954 2 2 2 2-.8954 2-2-.8954-2-2-2z",
+    fill: "#999"
+  }), /*#__PURE__*/React$1.createElement("path", {
+    d: "M8 2c0-1.1046.8954-2 2-2s2 .8954 2 2-.8954 2-2 2-2-.8954-2-2z",
+    fill: "#F5F5F5"
+  }), /*#__PURE__*/React$1.createElement("path", {
+    fillRule: "evenodd",
+    clipRule: "evenodd",
+    d: "M9 2c0 .5523.4477 1 1 1s1-.4477 1-1-.4477-1-1-1-1 .4477-1 1zm1-2C8.8954 0 8 .8954 8 2s.8954 2 2 2 2-.8954 2-2-.8954-2-2-2z",
+    fill: "#999"
+  }));
+};
+const LayerTextIcon$1 = ({
+  width = 12,
+  height = 12
+}) => {
+  return /*#__PURE__*/React$1.createElement("svg", {
+    width: width,
+    height: height,
+    viewBox: "0 0 12 12",
+    fill: "none"
+  }, /*#__PURE__*/React$1.createElement("path", {
+    d: "M0 4.5c0-1.3978 0-2.0967.2284-2.648A3 3 0 011.852.2284C2.4032 0 3.1021 0 4.5 0h3c1.3978 0 2.0967 0 2.6481.2284a2.9999 2.9999 0 011.6235 1.6236C12 2.4032 12 3.1021 12 4.5v3c0 1.3978 0 2.0967-.2284 2.6481a2.9997 2.9997 0 01-1.6235 1.6235C9.5967 12 8.8978 12 7.5 12h-3c-1.3978 0-2.0967 0-2.648-.2284a2.9999 2.9999 0 01-1.6236-1.6235C0 9.5967 0 8.8978 0 7.5v-3z",
+    fill: "#F5F5F5"
+  }), /*#__PURE__*/React$1.createElement("path", {
+    fillRule: "evenodd",
+    clipRule: "evenodd",
+    d: "M7.5 1h-3c-.7126 0-1.197.0005-1.5734.0262-.3675.0251-.5585.0707-.692.126a2 2 0 00-1.0824 1.0824c-.0553.1335-.1009.3245-.126.692C1.0005 3.303 1 3.7874 1 4.5v3c0 .7126.0005 1.197.0262 1.5734.0251.3674.0707.5585.126.692.203.49.5924.8794 1.0824 1.0824.1335.0553.3245.1009.692.126C3.303 10.9995 3.7874 11 4.5 11h3c.7126 0 1.197-.0005 1.5734-.0262.3674-.0251.5585-.0707.692-.126.49-.203.8794-.5924 1.0824-1.0824.0553-.1335.1009-.3246.126-.692C10.9995 8.697 11 8.2126 11 7.5v-3c0-.7126-.0005-1.197-.0262-1.5734-.0251-.3675-.0707-.5585-.126-.692a2.0002 2.0002 0 00-1.0824-1.0824c-.1335-.0553-.3246-.1009-.692-.126C8.697 1.0005 8.2126 1 7.5 1zm-7.2716.852C0 2.4032 0 3.1021 0 4.5v3c0 1.3978 0 2.0967.2284 2.6481a2.9999 2.9999 0 001.6236 1.6235C2.4032 12 3.1021 12 4.5 12h3c1.3978 0 2.0967 0 2.6481-.2284a2.9997 2.9997 0 001.6235-1.6235C12 9.5967 12 8.8978 12 7.5v-3c0-1.3978 0-2.0967-.2284-2.648A2.9999 2.9999 0 0010.1481.2284C9.5967 0 8.8978 0 7.5 0h-3C3.1022 0 2.4033 0 1.852.2284A3 3 0 00.2284 1.852z",
+    fill: "#999"
+  }), /*#__PURE__*/React$1.createElement("path", {
+    fillRule: "evenodd",
+    clipRule: "evenodd",
+    d: "M6 3a.5.5 0 01.4616.3077L8.8334 9H7.7501l-.4167-1H4.6668L4.25 9H3.1668l2.3717-5.6923A.5.5 0 016.0001 3zm-.9166 4h1.8334L6 4.8 5.0834 7z",
+    fill: "#999"
+  }));
+};
+const LayerImageIcon$1 = ({
+  width = 12,
+  height = 12
+}) => {
+  return /*#__PURE__*/React$1.createElement("svg", {
+    width: width,
+    height: height,
+    viewBox: "0 0 12 12",
+    fill: "none"
+  }, /*#__PURE__*/React$1.createElement("path", {
+    fillRule: "evenodd",
+    clipRule: "evenodd",
+    d: "M7.5 1h-3c-.7126 0-1.197.0005-1.5734.0262-.3675.0251-.5585.0707-.692.126a2 2 0 00-1.0824 1.0824c-.0553.1335-.1009.3245-.126.692C1.0005 3.303 1 3.7874 1 4.5v3c0 .7126.0005 1.197.0262 1.5734.0251.3674.0707.5585.126.692.203.49.5924.8794 1.0824 1.0824.1335.0553.3245.1009.692.126C3.303 10.9995 3.7874 11 4.5 11h3c.7126 0 1.197-.0005 1.5734-.0262.3674-.0251.5585-.0707.692-.126.49-.203.8794-.5924 1.0824-1.0824.0553-.1335.1009-.3246.126-.692C10.9995 8.697 11 8.2126 11 7.5v-3c0-.7126-.0005-1.197-.0262-1.5734-.0251-.3675-.0707-.5585-.126-.692a2.0002 2.0002 0 00-1.0824-1.0824c-.1335-.0553-.3246-.1009-.692-.126C8.697 1.0005 8.2126 1 7.5 1zm-7.2716.852C0 2.4032 0 3.1021 0 4.5v3c0 1.3978 0 2.0967.2284 2.6481a2.9999 2.9999 0 001.6236 1.6235C2.4032 12 3.1021 12 4.5 12h3c1.3978 0 2.0967 0 2.6481-.2284a2.9997 2.9997 0 001.6235-1.6235C12 9.5967 12 8.8978 12 7.5v-3c0-1.3978 0-2.0967-.2284-2.648A2.9999 2.9999 0 0010.1481.2284C9.5967 0 8.8978 0 7.5 0h-3C3.1022 0 2.4033 0 1.852.2284A3 3 0 00.2284 1.852z",
+    fill: "#999"
+  }), /*#__PURE__*/React$1.createElement("path", {
+    d: "M5.2929 6.707l-3 3A1 1 0 002 10.4143V10.5c0 .5523.4477 1 1 1h5.864c1.4558 0 2.636-1.1802 2.636-2.636a.8787.8787 0 00-.2574-.6214l-.5355-.5355c-.3905-.3905-1.0237-.3905-1.4142 0L8.5 8.5 6.7071 6.707c-.3905-.3904-1.0237-.3904-1.4142 0z",
+    fill: "#F5F5F5"
+  }), /*#__PURE__*/React$1.createElement("path", {
+    fillRule: "evenodd",
+    clipRule: "evenodd",
+    d: "M6.3536 7.0606a.5.5 0 00-.7072 0l-3 3a.5002.5002 0 00-.1464.3536V10.5a.5.5 0 00.5.5h5.864C10.0437 11 11 10.0436 11 8.864a.3787.3787 0 00-.1109-.2678l-.5355-.5356a.5.5 0 00-.7072 0l-1.7928 1.793-.7072-.7072L7.793 8.5 6.3535 7.0606zM8.5 7.793l.4393-.4394c.5858-.5858 1.5356-.5858 2.1214 0l.5355.5356c.2585.2585.4038.6092.4038.9748C12 10.596 10.5959 12 8.864 12H3c-.8284 0-1.5-.6716-1.5-1.5v-.0858c0-.3978.158-.7794.4393-1.0607l3-3c.5858-.5858 1.5356-.5858 2.1214 0L8.5 7.793z",
+    fill: "#999"
+  }), /*#__PURE__*/React$1.createElement("path", {
+    d: "M5 4c0 .5523-.4477 1-1 1s-1-.4477-1-1 .4477-1 1-1 1 .4477 1 1z",
+    fill: "#999"
+  }));
+};
+const LayerRectangleIcon$1 = ({
+  width = 12,
+  height = 12
+}) => {
+  return /*#__PURE__*/React$1.createElement("svg", {
+    width: width,
+    height: height,
+    viewBox: "0 0 12 12",
+    fill: "none"
+  }, /*#__PURE__*/React$1.createElement("path", {
+    d: "M0 4.5c0-1.3978 0-2.0967.2284-2.648A3 3 0 011.852.2284C2.4032 0 3.1021 0 4.5 0h3c1.3978 0 2.0967 0 2.6481.2284a2.9999 2.9999 0 011.6235 1.6236C12 2.4032 12 3.1021 12 4.5v3c0 1.3978 0 2.0967-.2284 2.6481a2.9997 2.9997 0 01-1.6235 1.6235C9.5967 12 8.8978 12 7.5 12h-3c-1.3978 0-2.0967 0-2.648-.2284a2.9999 2.9999 0 01-1.6236-1.6235C0 9.5967 0 8.8978 0 7.5v-3z",
+    fill: "#F5F5F5"
+  }), /*#__PURE__*/React$1.createElement("path", {
+    fillRule: "evenodd",
+    clipRule: "evenodd",
+    d: "M7.5 1h-3c-.7126 0-1.197.0005-1.5734.0262-.3675.0251-.5585.0707-.692.126a2 2 0 00-1.0824 1.0824c-.0553.1335-.1009.3245-.126.692C1.0005 3.303 1 3.7874 1 4.5v3c0 .7126.0005 1.197.0262 1.5734.0251.3674.0707.5585.126.692.203.49.5924.8794 1.0824 1.0824.1335.0553.3245.1009.692.126C3.303 10.9995 3.7874 11 4.5 11h3c.7126 0 1.197-.0005 1.5734-.0262.3674-.0251.5585-.0707.692-.126.49-.203.8794-.5924 1.0824-1.0824.0553-.1335.1009-.3246.126-.692C10.9995 8.697 11 8.2126 11 7.5v-3c0-.7126-.0005-1.197-.0262-1.5734-.0251-.3675-.0707-.5585-.126-.692a2.0002 2.0002 0 00-1.0824-1.0824c-.1335-.0553-.3246-.1009-.692-.126C8.697 1.0005 8.2126 1 7.5 1zm-7.2716.852C0 2.4032 0 3.1021 0 4.5v3c0 1.3978 0 2.0967.2284 2.6481a2.9999 2.9999 0 001.6236 1.6235C2.4032 12 3.1021 12 4.5 12h3c1.3978 0 2.0967 0 2.6481-.2284a2.9997 2.9997 0 001.6235-1.6235C12 9.5967 12 8.8978 12 7.5v-3c0-1.3978 0-2.0967-.2284-2.648A2.9999 2.9999 0 0010.1481.2284C9.5967 0 8.8978 0 7.5 0h-3C3.1022 0 2.4033 0 1.852.2284A3 3 0 00.2284 1.852z",
+    fill: "#999"
+  }));
+};
+const LayerSmartObjectIcon$1 = ({
+  width = 12,
+  height = 12
+}) => {
+  return /*#__PURE__*/React$1.createElement("svg", {
+    width: width,
+    height: height,
+    viewBox: "0 0 12 12",
+    fill: "none"
+  }, /*#__PURE__*/React$1.createElement("path", {
+    d: "M3 2c0-1.1046.8954-2 2-2h3l4 4v5c0 1.1046-.8954 2-2 2H5c-1.1046 0-2-.8954-2-2V2z",
+    fill: "#F5F5F5"
+  }), /*#__PURE__*/React$1.createElement("path", {
+    d: "M7.5 1v2.5c0 .5523.4477 1 1 1h3",
+    stroke: "#999"
+  }), /*#__PURE__*/React$1.createElement("rect", {
+    x: ".5",
+    y: "6.5",
+    width: "5",
+    height: "5",
+    rx: "1",
+    fill: "#F5F5F5",
+    stroke: "#999"
+  }), /*#__PURE__*/React$1.createElement("path", {
+    fillRule: "evenodd",
+    clipRule: "evenodd",
+    d: "M7 10h3c.5523 0 1-.4477 1-1V4.4142L7.5858 1H5c-.5523 0-1 .4477-1 1v3H3V2c0-1.1046.8954-2 2-2h3l4 4v5c0 1.1046-.8954 2-2 2H7v-1z",
+    fill: "#999"
+  }));
+};
+const LayerComponentIcon$1 = ({
+  width = 14,
+  height = 14
+}) => {
+  return /*#__PURE__*/React$1.createElement("svg", {
+    width: width,
+    height: height,
+    viewBox: "0 0 14 14",
+    fill: "none"
+  }, /*#__PURE__*/React$1.createElement("path", {
+    d: "M3.6035 10.3964c-.7703-.7703-1.3203-1.3212-1.7027-1.7924-.3768-.4644-.5535-.8078-.6167-1.1505a2.5001 2.5001 0 010-.907c.0632-.3427.2399-.6861.6167-1.1505.3824-.4712.9324-1.0221 1.7027-1.7925.7704-.7703 1.3213-1.3203 1.7925-1.7027.4644-.3768.8078-.5535 1.1505-.6167a2.5001 2.5001 0 01.907 0c.3427.0632.6861.2399 1.1505.6167.4712.3824 1.0221.9324 1.7924 1.7027.7704.7704 1.3204 1.3213 1.7028 1.7925.3768.4644.5535.8078.6167 1.1505a2.4997 2.4997 0 010 .907c-.0632.3427-.2399.6861-.6167 1.1505-.3824.4712-.9324 1.0221-1.7028 1.7924-.7703.7704-1.3212 1.3204-1.7924 1.7028-.4644.3768-.8078.5535-1.1505.6167a2.4997 2.4997 0 01-.907 0c-.3427-.0632-.6861-.2399-1.1505-.6167-.4712-.3824-1.0221-.9324-1.7925-1.7028zM10.5 3.5l-7 7M3.5 3.5l7 7",
+    stroke: "#999"
+  }));
+};
+const LayerMaskIcon$1 = ({
+  width = 12,
+  height = 12
+}) => {
+  return /*#__PURE__*/React$1.createElement("svg", {
+    width: width,
+    height: height,
+    viewBox: "0 0 12 12",
+    fill: "none"
+  }, /*#__PURE__*/React$1.createElement("rect", {
+    width: "12",
+    height: "12",
+    rx: "6",
+    fill: "#999"
+  }), /*#__PURE__*/React$1.createElement("path", {
+    fillRule: "evenodd",
+    clipRule: "evenodd",
+    d: "M4 11.6586A5.9904 5.9904 0 006 12c3.3137 0 6-2.6863 6-6S9.3137 0 6 0a5.9903 5.9903 0 00-2 .3414C6.3304 1.1651 8 3.3876 8 6s-1.6696 4.8349-4 5.6586z",
+    fill: "#F5F5F5"
+  }), /*#__PURE__*/React$1.createElement("rect", {
+    x: ".5",
+    y: ".5",
+    width: "11",
+    height: "11",
+    rx: "5.5",
+    stroke: "#999"
+  }));
+};
+const LayerShapeModeUnionIcon$1 = ({
+  width = 13,
+  height = 13
+}) => {
+  return /*#__PURE__*/React$1.createElement("svg", {
+    width: width,
+    height: height,
+    viewBox: "0 0 13 13",
+    fill: "none"
+  }, /*#__PURE__*/React$1.createElement("path", {
+    fillRule: "evenodd",
+    clipRule: "evenodd",
+    d: "M5 5H2c-.5523 0-1 .4477-1 1v5c0 .5523.4477 1 1 1h5c.5523 0 1-.4477 1-1V8h3c.5523 0 1-.4477 1-1V2c0-.5523-.4477-1-1-1H6c-.5523 0-1 .4477-1 1v3zM4 2c0-1.1046.8954-2 2-2h5c1.1046 0 2 .8954 2 2v5c0 1.1046-.8954 2-2 2H9v2c0 1.1046-.8954 2-2 2H2c-1.1046 0-2-.8954-2-2V6c0-1.1046.8954-2 2-2h2V2z",
+    fill: "#999"
+  }));
+};
+const LayerShapeModeSubtractIcon$1 = ({
+  width = 13,
+  height = 13
+}) => {
+  return /*#__PURE__*/React$1.createElement("svg", {
+    width: width,
+    height: height,
+    viewBox: "0 0 13 13",
+    fill: "none"
+  }, /*#__PURE__*/React$1.createElement("path", {
+    fillRule: "evenodd",
+    clipRule: "evenodd",
+    d: "M4 4H2C.8954 4 0 4.8954 0 6v5c0 1.1046.8954 2 2 2h5c1.1046 0 2-.8954 2-2V9H6c-1.1046 0-2-.8954-2-2V4z",
+    fill: "#999"
+  }), /*#__PURE__*/React$1.createElement("rect", {
+    x: "4.5",
+    y: ".5",
+    width: "8",
+    height: "8",
+    rx: "1.5",
+    stroke: "#999"
+  }));
+};
+const LayerShapeModeIntersectIcon$1 = ({
+  width = 13,
+  height = 13
+}) => {
+  return /*#__PURE__*/React$1.createElement("svg", {
+    width: width,
+    height: height,
+    viewBox: "0 0 13 13",
+    fill: "none"
+  }, /*#__PURE__*/React$1.createElement("path", {
+    fillRule: "evenodd",
+    clipRule: "evenodd",
+    d: "M5 5H2c-.5523 0-1 .4477-1 1v5c0 .5523.4477 1 1 1h5c.5523 0 1-.4477 1-1V8h3c.5523 0 1-.4477 1-1V2c0-.5523-.4477-1-1-1H6c-.5523 0-1 .4477-1 1v3zM4 2c0-1.1046.8954-2 2-2h5c1.1046 0 2 .8954 2 2v5c0 1.1046-.8954 2-2 2H9v2c0 1.1046-.8954 2-2 2H2c-1.1046 0-2-.8954-2-2V6c0-1.1046.8954-2 2-2h2V2z",
+    fill: "#999"
+  }), /*#__PURE__*/React$1.createElement("path", {
+    fillRule: "evenodd",
+    clipRule: "evenodd",
+    d: "M9 9H6c-1.1046 0-2-.8954-2-2V4h3c1.1046 0 2 .8954 2 2v3z",
+    fill: "#999"
+  }));
+};
+const LayerShapeModeExcludeIcon$1 = ({
+  width = 13,
+  height = 13
+}) => {
+  return /*#__PURE__*/React$1.createElement("svg", {
+    width: width,
+    height: height,
+    viewBox: "0 0 13 13",
+    fill: "none"
+  }, /*#__PURE__*/React$1.createElement("path", {
+    fillRule: "evenodd",
+    clipRule: "evenodd",
+    d: "M9 9h2c1.1046 0 2-.8954 2-2V2c0-1.1046-.8954-2-2-2H6C4.8954 0 4 .8954 4 2v2H2C.8954 4 0 4.8954 0 6v5c0 1.1046.8954 2 2 2h5c1.1046 0 2-.8954 2-2V9zM5 5h2c.5523 0 1 .4477 1 1v2H6c-.5523 0-1-.4477-1-1V5z",
+    fill: "#999"
+  }));
+};
+const LayerItemIcon$1 = ({
+  width = 11,
+  height = 13
+}) => {
+  return /*#__PURE__*/React$1.createElement("svg", {
+    width: width,
+    height: height,
+    viewBox: "0 0 11 13",
+    fill: "none"
+  }, /*#__PURE__*/React$1.createElement("path", {
+    d: "M5.0528 1.2236a1 1 0 01.8944 0l4 2a1 1 0 01.5528.8944v4.764a1 1 0 01-.5528.8944l-4 2a1.0004 1.0004 0 01-.8944 0l-4-2A1 1 0 01.5 8.882V4.118a1 1 0 01.5528-.8944l4-2z",
+    fill: "#F5F5F5"
+  }), /*#__PURE__*/React$1.createElement("path", {
+    fillRule: "evenodd",
+    clipRule: "evenodd",
+    d: "M4.8292.7764a1.5 1.5 0 011.3416 0l4 2A1.5 1.5 0 0111 4.118v4.764a1.5 1.5 0 01-.8292 1.3416l-4 2a1.5003 1.5003 0 01-1.3416 0l-4-2A1.5 1.5 0 010 8.882V4.118a1.5 1.5 0 01.8292-1.3416l4-2zm.8944.8944a.5.5 0 00-.4472 0l-4 2A.5.5 0 001 4.118v4.764a.5.5 0 00.2764.4472l4 2a.4999.4999 0 00.4472 0l4-2A.5.5 0 0010 8.882V4.118a.5.5 0 00-.2764-.4472l-4-2z",
+    fill: "#999"
+  }), /*#__PURE__*/React$1.createElement("path", {
+    fillRule: "evenodd",
+    clipRule: "evenodd",
+    d: "M9.382 3.5L5.5 5.441 1.618 3.5l-.3416.1708A.5.5 0 001 4.118v.191l4 2v4.882l.2764.1382a.4999.4999 0 00.4472 0L6 11.191V6.309l4-2v-.191a.5.5 0 00-.2764-.4472L9.382 3.5z",
+    fill: "#999"
+  }));
+};
+const LayerArtboardIcon$1 = ({
+  width = 12,
+  height = 12
+}) => {
+  return /*#__PURE__*/React$1.createElement("svg", {
+    width: width,
+    height: height,
+    viewBox: "0 0 12 12",
+    fill: "none"
+  }, /*#__PURE__*/React$1.createElement("path", {
+    fillRule: "evenodd",
+    clipRule: "evenodd",
+    d: "M2.5 0a.5.5 0 01.5.5V2h6V.5a.5.5 0 011 0V2h1.5a.5.5 0 010 1H10v6h1.5a.5.5 0 010 1H10v1.5a.5.5 0 01-1 0V10H3v1.5a.5.5 0 01-1 0V10H.5a.5.5 0 010-1H2V3H.5a.5.5 0 010-1H2V.5a.5.5 0 01.5-.5zM9 9V3H3v6h6z",
+    fill: "#999"
+  }));
+};
+const LayerFXIcon$1 = ({
+  width = 11,
+  height = 7
+}) => {
+  return /*#__PURE__*/React$1.createElement("svg", {
+    width: width,
+    height: height,
+    viewBox: `0 0 11 7`
+  }, /*#__PURE__*/React$1.createElement("path", {
+    d: "M.314 7V.7h4.041v.891H1.268v1.926H3.86v.837H1.268V7H.314zM5.324 7l1.88-3.15L5.307.7h1.107l1.359 2.268L9.095.7h1.07l-1.88 3.123L10.184 7h-1.09L7.719 4.705 6.413 7h-1.09z",
+    fill: "#333"
+  }));
+};
+const LayerFilterIcon$1 = ({
+  width = 12,
+  height = 12
+}) => {
+  return /*#__PURE__*/React$1.createElement("svg", {
+    width: width,
+    height: height,
+    viewBox: "0 0 12 12",
+    fill: "none"
+  }, /*#__PURE__*/React$1.createElement("path", {
+    fillRule: "evenodd",
+    clipRule: "evenodd",
+    d: "M5 2h-.5c-.713 0-1.197 0-1.573.026-.368.025-.559.07-.692.126a2 2 0 00-1.083 1.083c-.055.133-.1.324-.126.692C1.001 4.303 1 4.787 1 5.5v2c0 .713 0 1.197.026 1.573.025.368.07.559.126.692a2 2 0 001.083 1.083c.133.055.324.1.692.126.376.025.86.026 1.573.026h2c.713 0 1.197 0 1.573-.026.368-.025.559-.07.692-.126a2 2 0 001.083-1.083c.055-.133.1-.324.126-.692.025-.376.026-.86.026-1.573V7h1v.5c0 1.398 0 2.097-.228 2.648a3 3 0 01-1.624 1.624C8.597 12 7.898 12 6.5 12h-2c-1.398 0-2.097 0-2.648-.228a3 3 0 01-1.624-1.624C0 9.597 0 8.898 0 7.5v-2c0-1.398 0-2.097.228-2.648a3 3 0 011.624-1.624C2.403 1 3.102 1 4.5 1H5v1z",
+    fill: "#999"
+  }), /*#__PURE__*/React$1.createElement("path", {
+    d: "M7 1c0 3.2-2.667 4-4 4 3.2 0 4 2.667 4 4 0-3.2 2.667-4 4-4-3.2 0-4-2.667-4-4z",
+    fill: "#999"
+  }), /*#__PURE__*/React$1.createElement("path", {
+    d: "M10 0c0 1.6-1.333 2-2 2 1.6 0 2 1.333 2 2 0-1.6 1.333-2 2-2-1.6 0-2-1.333-2-2z",
+    fill: "#999"
+  }));
+};
+const LayerVideoIcon$1 = ({
+  width = 12,
+  height = 12
+}) => {
+  return /*#__PURE__*/React$1.createElement("svg", {
+    width: width,
+    height: height,
+    viewBox: "0 0 12 12"
+  }, /*#__PURE__*/React$1.createElement("rect", {
+    x: ".5",
+    y: ".5",
+    width: "11",
+    height: "11",
+    rx: "2.5",
+    fill: "#F5F5F5",
+    stroke: "#999"
+  }), /*#__PURE__*/React$1.createElement("path", {
+    d: "M4 3.883v4.234a.5.5 0 00.757.429l3.528-2.117a.5.5 0 000-.858L4.757 3.454a.5.5 0 00-.757.43z",
+    fill: "#999"
+  }));
+};
+const RecentIcon$1 = ({
+  width = 15,
+  height = 12
+}) => {
+  return /*#__PURE__*/React$1.createElement("svg", {
+    width: width,
+    height: height,
+    viewBox: "0 0 15 12",
+    fill: "none"
+  }, /*#__PURE__*/React$1.createElement("path", {
+    fillRule: "evenodd",
+    clipRule: "evenodd",
+    d: "M9 11c2.7614 0 5-2.2386 5-5s-2.2386-5-5-5-5 2.2386-5 5H3c0-3.3137 2.6863-6 6-6s6 2.6863 6 6-2.6863 6-6 6c-1.5132 0-2.8956-.5602-3.951-1.4845l.6584-.7526C6.587 10.5332 7.739 11 9 11zM8 3v3l1 1h2V6H9V3H8z",
+    fill: "#333"
+  }), /*#__PURE__*/React$1.createElement("path", {
+    fillRule: "evenodd",
+    clipRule: "evenodd",
+    d: "M.2929 5l2.8536 2.8536.3535.3535.3535-.3536L6.7072 5H5.293L4 6.2929V6a.5.5 0 00-1 0v.2929L1.7071 5H.293z",
+    fill: "#333"
+  }));
+};
+
+const ArrowLeftIcon$1 = ({
+  width = 9,
+  height = 7
+}) => {
+  return /*#__PURE__*/React$1.createElement("svg", {
+    width: width,
+    height: height,
+    viewBox: "0 0 9 7",
+    fill: "none"
+  }, /*#__PURE__*/React$1.createElement("defs", null), /*#__PURE__*/React$1.createElement("path", {
+    fill: "#31363A",
+    fillRule: "evenodd",
+    d: "M3.147.646a.5.5 0 01.707.708L2.207 3H8.5a.5.5 0 010 1H2.207l1.647 1.646a.5.5 0 11-.707.708l-2.5-2.5L.293 3.5l.354-.354 2.5-2.5z",
+    clipRule: "evenodd"
+  }));
+};
+const ArrowRightSecondIcon$1 = ({
+  width = 5,
+  height = 8
+}) => {
+  return /*#__PURE__*/React$1.createElement("svg", {
+    width: width,
+    height: height,
+    viewBox: "0 0 5 8",
+    fill: "none"
+  }, /*#__PURE__*/React$1.createElement("path", {
+    d: "M1 7l3-3-3-3",
+    stroke: "#999",
+    strokeLinecap: "round"
+  }));
+}; //TO Do : delete after test
+const ThumbnailIcon$1 = ({
+  width = 9,
+  height = 9
+}) => {
+  return /*#__PURE__*/React$1.createElement("svg", {
+    width: width,
+    height: height,
+    viewBox: "0 0 9 9",
+    fill: "none"
+  }, /*#__PURE__*/React$1.createElement("defs", null), /*#__PURE__*/React$1.createElement("rect", {
+    width: "8",
+    height: "8",
+    x: ".5",
+    y: ".5",
+    stroke: "#63676C",
+    rx: "1.5"
+  }), /*#__PURE__*/React$1.createElement("path", {
+    stroke: "#B6BABD",
+    d: "M1 4.5h7M4.5 8V1"
+  }));
+};
+
+var css_248z$M = ".shareButton-module_shareBtn__bxF0X {\n  width: 24px;\n  height: 24px;\n  background-color: #3399ff;\n  box-sizing: border-box;\n  outline: none;\n  border-radius: 8px;\n  display: flex;\n  align-items: center;\n  justify-content: center;\n  border: 0;\n  cursor: pointer; }\n  .shareButton-module_shareBtn__bxF0X svg path:nth-child(1) {\n    fill: #ffffff; }\n  .shareButton-module_shareBtn__bxF0X svg path:nth-child(2) {\n    stroke: #ffffff; }\n";
+var style$I = {"shareBtn":"shareButton-module_shareBtn__bxF0X"};
+styleInject(css_248z$M);
 
 const ShareButton = ({
   disable = false,
@@ -225,17 +1463,17 @@ const ShareButton = ({
   const {
     shareBtn,
     active
-  } = style$K;
+  } = style$I;
   return /*#__PURE__*/React$1.createElement("button", {
     onClick: onClick,
     className: `${shareBtn} ${isActive ? active : ''} ${className ? className : ''}`,
     disabled: disable
-  }, /*#__PURE__*/React$1.createElement(ShareIcon, null));
+  }, /*#__PURE__*/React$1.createElement(ToolsPanelShareIcon$1, null));
 };
 
-var css_248z$N = ".toolbar-zoom-module_toolbarZoom__ecekb {\n  width: 56px;\n  height: 24px;\n  background-color: #e8ebed;\n  box-sizing: border-box;\n  outline: none;\n  border-radius: 8px;\n  display: flex;\n  align-items: center;\n  justify-content: center;\n  border: 0;\n  cursor: pointer; }\n  .toolbar-zoom-module_toolbarZoom__ecekb.toolbar-zoom-module_active__ypORY {\n    border: 1px solid #3399ff; }\n";
-var style$J = {"toolbarZoom":"toolbar-zoom-module_toolbarZoom__ecekb","active":"toolbar-zoom-module_active__ypORY"};
-styleInject(css_248z$N);
+var css_248z$L = ".toolbar-zoom-module_toolbarZoom__ecekb {\n  width: 56px;\n  height: 24px;\n  background-color: #e8ebed;\n  box-sizing: border-box;\n  outline: none;\n  border-radius: 8px;\n  display: flex;\n  align-items: center;\n  justify-content: center;\n  border: 0;\n  cursor: pointer; }\n  .toolbar-zoom-module_toolbarZoom__ecekb.toolbar-zoom-module_active__ypORY {\n    border: 1px solid #3399ff; }\n";
+var style$H = {"toolbarZoom":"toolbar-zoom-module_toolbarZoom__ecekb","active":"toolbar-zoom-module_active__ypORY"};
+styleInject(css_248z$L);
 
 const ToolbarZoom = ({
   disable = false,
@@ -246,7 +1484,7 @@ const ToolbarZoom = ({
   const {
     toolbarZoom,
     active
-  } = style$J;
+  } = style$H;
   return /*#__PURE__*/React$1.createElement("div", {
     onClick: onClick,
     className: `${toolbarZoom} ${isActive ? active : ''} ${className ? className : ''}`,
@@ -254,108 +1492,9 @@ const ToolbarZoom = ({
   });
 };
 
-const SmartObjectIcon = ({
-  width = 16,
-  height = 17
-}) => {
-  return /*#__PURE__*/React$1.createElement("svg", {
-    width: width,
-    height: height,
-    viewBox: `0 0 16 17`
-  }, /*#__PURE__*/React$1.createElement("path", {
-    "fill-rule": "evenodd",
-    "clip-rule": "evenodd",
-    d: "M9 14H13C14.1046 14 15 13.1046 15 12V5.41421L10.5858 1H7C5.89543 1 5 1.89543 5 3V8H4V3C4 1.34315 5.34315 0 7 0H11L16 5V12C16 13.6569 14.6569 15 13 15H9V14Z",
-    fill: "#333333"
-  }), /*#__PURE__*/React$1.createElement("path", {
-    d: "M10.5 1V4.5C10.5 5.05228 10.9477 5.5 11.5 5.5H15",
-    stroke: "#333333"
-  }), /*#__PURE__*/React$1.createElement("rect", {
-    x: "0.5",
-    y: "9.5",
-    width: "7",
-    height: "7",
-    rx: "1.5",
-    stroke: "#333333"
-  }));
-};
-const PerspectiveIcon = ({
-  width = 16,
-  height = 18
-}) => {
-  return /*#__PURE__*/React$1.createElement("svg", {
-    width: width,
-    height: height,
-    viewBox: `0 0 16 18`
-  }, /*#__PURE__*/React$1.createElement("path", {
-    fillRule: "evenodd",
-    clipRule: "evenodd",
-    d: "M8.75 9v5.5l-.75.211V9H1v-.75h7V3.289l.75.21V8.25H15V9H8.75z",
-    fill: "#333"
-  }), /*#__PURE__*/React$1.createElement("path", {
-    fillRule: "evenodd",
-    clipRule: "evenodd",
-    d: "M14.27 5.052l-12-3.375A1 1 0 001 2.64v12.72a1 1 0 001.27.963l12-3.375a1 1 0 00.73-.963v-5.97a1 1 0 00-.73-.963zM2.542.715A2 2 0 000 2.64v12.72a2 2 0 002.541 1.925l12-3.375A2 2 0 0016 11.985v-5.97a2 2 0 00-1.459-1.925l-12-3.375z",
-    fill: "#333"
-  }));
-};
-const WrapIcon = ({
-  width = 16,
-  height = 16
-}) => {
-  return /*#__PURE__*/React$1.createElement("svg", {
-    width: width,
-    height: height,
-    viewBox: `0 0 16 16`
-  }, /*#__PURE__*/React$1.createElement("path", {
-    fillRule: "evenodd",
-    clipRule: "evenodd",
-    d: "M1 3v10a2 2 0 002 2h10a2 2 0 002-2V3a2 2 0 00-2-2H3a2 2 0 00-2 2zm2-3a3 3 0 00-3 3v10a3 3 0 003 3h10a3 3 0 003-3V3a3 3 0 00-3-3H3z",
-    fill: "#333"
-  }), /*#__PURE__*/React$1.createElement("path", {
-    stroke: "#333",
-    strokeWidth: ".75",
-    d: "M5.375 0v16M10.375 0v16M0 10.625h16M0 5.625h16"
-  }));
-};
-const RemoveBGIcon = ({
-  width = 17,
-  height = 19
-}) => {
-  return /*#__PURE__*/React$1.createElement("svg", {
-    width: width,
-    height: height,
-    viewBox: `0 0 17 19`
-  }, /*#__PURE__*/React$1.createElement("path", {
-    d: "M1.06 16.253a.5.5 0 010-.707l8.486-8.485a.5.5 0 01.707 0l.707.707a.5.5 0 010 .707L2.475 16.96a.5.5 0 01-.707 0l-.707-.707z",
-    stroke: "#333"
-  }), /*#__PURE__*/React$1.createElement("path", {
-    stroke: "#333",
-    strokeWidth: "9",
-    d: "M3.889 12.01l2.121 2.122"
-  }), /*#__PURE__*/React$1.createElement("path", {
-    d: "M6 0c0 3.2-2.667 4-4 4 3.2 0 4 2.667 4 4 0-3.2 2.667-4 4-4-3.2 0-4-2.667-4-4zM14 0c0 2.4-2 3-3 3 2.4 0 3 2 3 3 0-2.4 2-3 3-3-2.4 0-3-2-3-3zM14 9c0 1.6-1.333 2-2 2 1.6 0 2 1.333 2 2 0-1.6 1.333-2 2-2-1.6 0-2-1.333-2-2z",
-    fill: "#333"
-  }));
-};
-const HamburgerIcon = ({
-  width = 12,
-  height = 9
-}) => {
-  return /*#__PURE__*/React$1.createElement("svg", {
-    width: width,
-    height: height,
-    viewBox: `0 0 12 9`
-  }, /*#__PURE__*/React$1.createElement("path", {
-    stroke: "#333",
-    strokeLinecap: "round",
-    d: "M.5.5h11M.5 4.5h11M.5 8.5h11"
-  }));
-};
-
-var css_248z$M = ".top-menu-module_topMenu__1p30l {\n  width: 100%;\n  height: 40px;\n  background-color: #ffffff;\n  display: flex;\n  align-items: center;\n  justify-content: space-between;\n  box-sizing: border-box;\n  padding: 4px 8px 4px 4px; }\n  .top-menu-module_topMenu__1p30l .top-menu-module_iconWrapper__36nvL {\n    width: 32px;\n    height: 32px;\n    display: flex;\n    justify-content: center;\n    align-items: center;\n    margin-right: 16px; }\n  .top-menu-module_topMenu__1p30l .top-menu-module_leftSide__ehTxU {\n    display: flex;\n    align-items: center;\n    justify-content: space-between; }\n    .top-menu-module_topMenu__1p30l .top-menu-module_leftSide__ehTxU .top-menu-module_breadcrumbs__1eBtM {\n      min-width: 122px;\n      height: 24px;\n      display: flex;\n      align-items: center;\n      justify-content: space-around;\n      margin-left: 16px; }\n      .top-menu-module_topMenu__1p30l .top-menu-module_leftSide__ehTxU .top-menu-module_breadcrumbs__1eBtM span {\n        font-family: Aktiv Grotesk, sans-serif;\n        font-size: 11px;\n        line-height: 16px;\n        display: flex;\n        align-items: center;\n        color: #999999;\n        cursor: pointer; }\n        .top-menu-module_topMenu__1p30l .top-menu-module_leftSide__ehTxU .top-menu-module_breadcrumbs__1eBtM span.top-menu-module_active__34I7L {\n          color: #000408;\n          font-weight: 600; }\n  .top-menu-module_topMenu__1p30l .top-menu-module_middleSide__p1R4x {\n    height: 32px;\n    display: flex;\n    align-items: center;\n    justify-content: center; }\n  .top-menu-module_topMenu__1p30l .top-menu-module_rightSide__Ob1B5 {\n    height: 32px;\n    display: flex;\n    align-items: center;\n    justify-content: space-between; }\n    .top-menu-module_topMenu__1p30l .top-menu-module_rightSide__Ob1B5 .top-menu-module_shareBtn__2oXRI {\n      margin-right: 8px; }\n";
-var style$I = {"topMenu":"top-menu-module_topMenu__1p30l","iconWrapper":"top-menu-module_iconWrapper__36nvL","leftSide":"top-menu-module_leftSide__ehTxU","breadcrumbs":"top-menu-module_breadcrumbs__1eBtM","active":"top-menu-module_active__34I7L","middleSide":"top-menu-module_middleSide__p1R4x","rightSide":"top-menu-module_rightSide__Ob1B5","shareBtn":"top-menu-module_shareBtn__2oXRI"};
-styleInject(css_248z$M);
+var css_248z$K = ".top-menu-module_topMenu__1p30l {\n  width: 100%;\n  height: 40px;\n  background-color: #ffffff;\n  display: flex;\n  align-items: center;\n  justify-content: space-between;\n  box-sizing: border-box;\n  padding: 4px 8px 4px 4px; }\n  .top-menu-module_topMenu__1p30l .top-menu-module_iconWrapper__36nvL {\n    width: 32px;\n    height: 32px;\n    display: flex;\n    justify-content: center;\n    align-items: center;\n    margin-right: 16px; }\n  .top-menu-module_topMenu__1p30l .top-menu-module_leftSide__ehTxU {\n    display: flex;\n    align-items: center;\n    justify-content: space-between; }\n    .top-menu-module_topMenu__1p30l .top-menu-module_leftSide__ehTxU .top-menu-module_breadcrumbs__1eBtM {\n      min-width: 122px;\n      height: 24px;\n      display: flex;\n      align-items: center;\n      justify-content: space-around;\n      margin-left: 16px; }\n      .top-menu-module_topMenu__1p30l .top-menu-module_leftSide__ehTxU .top-menu-module_breadcrumbs__1eBtM span {\n        font-family: Aktiv Grotesk, sans-serif;\n        font-size: 11px;\n        line-height: 16px;\n        display: flex;\n        align-items: center;\n        color: #999999;\n        cursor: pointer; }\n        .top-menu-module_topMenu__1p30l .top-menu-module_leftSide__ehTxU .top-menu-module_breadcrumbs__1eBtM span.top-menu-module_active__34I7L {\n          color: #000408;\n          font-weight: 600; }\n  .top-menu-module_topMenu__1p30l .top-menu-module_middleSide__p1R4x {\n    height: 32px;\n    display: flex;\n    align-items: center;\n    justify-content: center; }\n  .top-menu-module_topMenu__1p30l .top-menu-module_rightSide__Ob1B5 {\n    height: 32px;\n    display: flex;\n    align-items: center;\n    justify-content: space-between; }\n    .top-menu-module_topMenu__1p30l .top-menu-module_rightSide__Ob1B5 .top-menu-module_shareBtn__2oXRI {\n      margin-right: 8px; }\n";
+var style$G = {"topMenu":"top-menu-module_topMenu__1p30l","iconWrapper":"top-menu-module_iconWrapper__36nvL","leftSide":"top-menu-module_leftSide__ehTxU","breadcrumbs":"top-menu-module_breadcrumbs__1eBtM","active":"top-menu-module_active__34I7L","middleSide":"top-menu-module_middleSide__p1R4x","rightSide":"top-menu-module_rightSide__Ob1B5","shareBtn":"top-menu-module_shareBtn__2oXRI"};
+styleInject(css_248z$K);
 
 const TopMenu = () => {
   const {
@@ -365,27 +1504,27 @@ const TopMenu = () => {
     rightSide,
     breadcrumbs,
     shareBtn
-  } = style$I;
+  } = style$G;
   return /*#__PURE__*/React$1.createElement("nav", {
     className: `${topMenu}`
   }, /*#__PURE__*/React$1.createElement("div", {
     className: leftSide
-  }, /*#__PURE__*/React$1.createElement(IconButton, null, /*#__PURE__*/React$1.createElement(HamburgerIcon, null)), /*#__PURE__*/React$1.createElement("div", {
+  }, /*#__PURE__*/React$1.createElement(IconButton, null, /*#__PURE__*/React$1.createElement(ToolsPanelMenuIcon$1, null)), /*#__PURE__*/React$1.createElement("div", {
     className: breadcrumbs
   }, /*#__PURE__*/React$1.createElement("span", null, "Projects"), /*#__PURE__*/React$1.createElement("span", null, "/"), /*#__PURE__*/React$1.createElement("span", {
-    className: style$I['active']
+    className: style$G['active']
   }, "Social Media"))), /*#__PURE__*/React$1.createElement("div", {
     className: middleSide
-  }, /*#__PURE__*/React$1.createElement(IconButton, null, /*#__PURE__*/React$1.createElement(PerspectiveIcon, null)), /*#__PURE__*/React$1.createElement(IconButton, null, /*#__PURE__*/React$1.createElement(WrapIcon, null)), /*#__PURE__*/React$1.createElement(IconButton, null, /*#__PURE__*/React$1.createElement(RemoveBGIcon, null))), /*#__PURE__*/React$1.createElement("div", {
+  }, /*#__PURE__*/React$1.createElement(IconButton, null, /*#__PURE__*/React$1.createElement(PerspectiveIcon$1, null)), /*#__PURE__*/React$1.createElement(IconButton, null, /*#__PURE__*/React$1.createElement(WrapIcon$1, null)), /*#__PURE__*/React$1.createElement(IconButton, null, /*#__PURE__*/React$1.createElement(RemoveBGIcon$1, null))), /*#__PURE__*/React$1.createElement("div", {
     className: rightSide
   }, /*#__PURE__*/React$1.createElement(ShareButton, {
     className: shareBtn
   }), /*#__PURE__*/React$1.createElement(ToolbarZoom, null)));
 };
 
-var css_248z$L = ".divider-module_divider__1wfxg {\n  margin: 4px 0;\n  padding: 0;\n  border: 0; }\n  .divider-module_divider__1wfxg.divider-module_primary__2675E {\n    background-color: #f5f5f5;\n    margin: 12px 0; }\n  .divider-module_divider__1wfxg.divider-module_silent__1Hxpx {\n    background-color: #f5f5f5;\n    margin: 0; }\n";
-var style$H = {"divider":"divider-module_divider__1wfxg","primary":"divider-module_primary__2675E","silent":"divider-module_silent__1Hxpx"};
-styleInject(css_248z$L);
+var css_248z$J = ".divider-module_divider__1wfxg {\n  margin: 4px 0;\n  padding: 0;\n  border: 0; }\n  .divider-module_divider__1wfxg.divider-module_primary__2675E {\n    background-color: #f5f5f5;\n    margin: 12px 0; }\n  .divider-module_divider__1wfxg.divider-module_silent__1Hxpx {\n    background-color: #f5f5f5;\n    margin: 0; }\n";
+var style$F = {"divider":"divider-module_divider__1wfxg","primary":"divider-module_primary__2675E","silent":"divider-module_silent__1Hxpx"};
+styleInject(css_248z$J);
 
 const Divider = ({
   width = 10,
@@ -394,13 +1533,13 @@ const Divider = ({
 }) => {
   const {
     divider
-  } = style$H;
+  } = style$F;
   return /*#__PURE__*/React$1.createElement("hr", {
     style: {
       width,
       height: size
     },
-    className: `${divider} ${style$H[type]}`
+    className: `${divider} ${style$F[type]}`
   });
 };
 
@@ -422,44 +1561,9 @@ function _extends() {
   return _extends.apply(this, arguments);
 }
 
-const SearchIcon = ({
-  width = 11,
-  height = 12
-}) => {
-  return /*#__PURE__*/React$1.createElement("svg", {
-    width: width,
-    height: height,
-    viewBox: `0 0 11 12`
-  }, /*#__PURE__*/React$1.createElement("path", {
-    fillRule: "evenodd",
-    clipRule: "evenodd",
-    d: "M9 5a4 4 0 11-8 0 4 4 0 018 0zM7.586 9.28a5 5 0 11.8-.601l2.468 2.467a.5.5 0 01-.708.708l-2.5-2.5a.503.503 0 01-.06-.074z",
-    fill: "#999"
-  }));
-};
-
-const CrossIcon = ({
-  width = 11,
-  height = 11,
-  color = '#999',
-  className = 'crossIcon'
-}) => {
-  return /*#__PURE__*/React$1.createElement("svg", {
-    className: className,
-    width: width,
-    height: height,
-    viewBox: "0 0 10 10",
-    fill: "none"
-  }, /*#__PURE__*/React$1.createElement("defs", null), /*#__PURE__*/React$1.createElement("path", {
-    stroke: color,
-    strokeLinecap: "round",
-    d: "M9 1L1 9M1 1l8 8"
-  }));
-};
-
-var css_248z$K = ".branding-module_branding__36GBz {\n  cursor: pointer;\n  position: relative;\n  width: 240px;\n  background: #ffffff;\n  align-items: center;\n  margin-bottom: 8px;\n  display: flex;\n  flex-direction: column;\n  z-index: 1; }\n  .branding-module_branding__36GBz * {\n    cursor: pointer;\n    font-family: Aktiv Grotesk, sans-serif;\n    box-sizing: border-box; }\n  .branding-module_branding__36GBz .branding-module_header__38RuT {\n    margin-top: 8px;\n    width: 224px;\n    font-size: 11px;\n    line-height: 32px;\n    color: #999999;\n    display: flex;\n    padding: 8px; }\n  .branding-module_branding__36GBz .branding-module_itemRow__nSqQl {\n    width: 224px;\n    height: 48px;\n    display: flex;\n    justify-content: center;\n    align-items: center; }\n    .branding-module_branding__36GBz .branding-module_itemRow__nSqQl .branding-module_imageBox__1i7DS {\n      width: 32px;\n      height: 32px;\n      border-radius: 50%;\n      margin-right: 8px;\n      background-size: cover;\n      background-position: center;\n      background-color: #ffffff;\n      box-shadow: 0px 0.5px 1px rgba(0, 4, 8, 0.12), 0px 8px 16px -8px rgba(0, 4, 8, 0.08); }\n    .branding-module_branding__36GBz .branding-module_itemRow__nSqQl .branding-module_textBox__3_pO3 {\n      width: 176px; }\n      .branding-module_branding__36GBz .branding-module_itemRow__nSqQl .branding-module_textBox__3_pO3 .branding-module_title__3CfOQ {\n        height: 24px;\n        font-weight: 600;\n        font-size: 12px;\n        line-height: 24px;\n        display: flex;\n        align-items: center;\n        color: #31363a;\n        margin: 0;\n        user-select: none;\n        display: flex;\n        justify-content: space-between; }\n        .branding-module_branding__36GBz .branding-module_itemRow__nSqQl .branding-module_textBox__3_pO3 .branding-module_title__3CfOQ svg {\n          stroke: #b6babd; }\n      .branding-module_branding__36GBz .branding-module_itemRow__nSqQl .branding-module_textBox__3_pO3 .branding-module_date__1Sch9 {\n        display: inline-block;\n        width: 176px;\n        height: 16px;\n        font-size: 11px;\n        line-height: 16px;\n        color: #b6babd;\n        white-space: nowrap;\n        overflow: hidden;\n        text-overflow: ellipsis;\n        user-select: none; }\n";
-var style$G = {"branding":"branding-module_branding__36GBz","header":"branding-module_header__38RuT","itemRow":"branding-module_itemRow__nSqQl","imageBox":"branding-module_imageBox__1i7DS","textBox":"branding-module_textBox__3_pO3","title":"branding-module_title__3CfOQ","date":"branding-module_date__1Sch9"};
-styleInject(css_248z$K);
+var css_248z$I = ".branding-module_branding__36GBz {\n  cursor: pointer;\n  position: relative;\n  width: 240px;\n  background: #ffffff;\n  align-items: center;\n  margin-bottom: 8px;\n  display: flex;\n  flex-direction: column;\n  z-index: 1; }\n  .branding-module_branding__36GBz * {\n    cursor: pointer;\n    font-family: Aktiv Grotesk, sans-serif;\n    box-sizing: border-box; }\n  .branding-module_branding__36GBz .branding-module_header__38RuT {\n    margin-top: 8px;\n    width: 224px;\n    font-size: 11px;\n    line-height: 32px;\n    color: #999999;\n    display: flex;\n    padding: 8px; }\n  .branding-module_branding__36GBz .branding-module_itemRow__nSqQl {\n    width: 224px;\n    height: 48px;\n    display: flex;\n    justify-content: center;\n    align-items: center; }\n    .branding-module_branding__36GBz .branding-module_itemRow__nSqQl .branding-module_imageBox__1i7DS {\n      width: 32px;\n      height: 32px;\n      border-radius: 50%;\n      margin-right: 8px;\n      background-size: cover;\n      background-position: center;\n      background-color: #ffffff;\n      box-shadow: 0px 0.5px 1px rgba(0, 4, 8, 0.12), 0px 8px 16px -8px rgba(0, 4, 8, 0.08); }\n    .branding-module_branding__36GBz .branding-module_itemRow__nSqQl .branding-module_textBox__3_pO3 {\n      width: 176px; }\n      .branding-module_branding__36GBz .branding-module_itemRow__nSqQl .branding-module_textBox__3_pO3 .branding-module_title__3CfOQ {\n        height: 24px;\n        font-weight: 600;\n        font-size: 12px;\n        line-height: 24px;\n        display: flex;\n        align-items: center;\n        color: #31363a;\n        margin: 0;\n        user-select: none;\n        display: flex;\n        justify-content: space-between; }\n        .branding-module_branding__36GBz .branding-module_itemRow__nSqQl .branding-module_textBox__3_pO3 .branding-module_title__3CfOQ svg {\n          stroke: #b6babd; }\n      .branding-module_branding__36GBz .branding-module_itemRow__nSqQl .branding-module_textBox__3_pO3 .branding-module_date__1Sch9 {\n        display: inline-block;\n        width: 176px;\n        height: 16px;\n        font-size: 11px;\n        line-height: 16px;\n        color: #b6babd;\n        white-space: nowrap;\n        overflow: hidden;\n        text-overflow: ellipsis;\n        user-select: none; }\n";
+var style$E = {"branding":"branding-module_branding__36GBz","header":"branding-module_header__38RuT","itemRow":"branding-module_itemRow__nSqQl","imageBox":"branding-module_imageBox__1i7DS","textBox":"branding-module_textBox__3_pO3","title":"branding-module_title__3CfOQ","date":"branding-module_date__1Sch9"};
+styleInject(css_248z$I);
 
 const Branding = ({
   items,
@@ -473,7 +1577,7 @@ const Branding = ({
     date,
     header,
     itemRow
-  } = style$G;
+  } = style$E;
   return /*#__PURE__*/React$1.createElement("div", {
     className: `${branding}`
   }, /*#__PURE__*/React$1.createElement("div", {
@@ -497,94 +1601,15 @@ const Branding = ({
   }, item.date)))));
 };
 
-const ArrowRightIcon = ({
-  width = 9,
-  height = 7
-}) => {
-  return /*#__PURE__*/React$1.createElement("svg", {
-    width: width,
-    height: height,
-    viewBox: "0 0 9 7",
-    fill: "none"
-  }, /*#__PURE__*/React$1.createElement("path", {
-    fillRule: "evenodd",
-    clipRule: "evenodd",
-    stroke: "#999",
-    d: "M5.854.646a.5.5 0 10-.708.708L6.793 3H.5a.5.5 0 000 1h6.293L5.146 5.646a.5.5 0 10.708.708l2.5-2.5.353-.354-.353-.354-2.5-2.5z"
-  }));
-};
-const ArrowRightSecondIcon = ({
-  width = 5,
-  height = 8
-}) => {
-  return /*#__PURE__*/React$1.createElement("svg", {
-    width: width,
-    height: height,
-    viewBox: "0 0 5 8",
-    fill: "none"
-  }, /*#__PURE__*/React$1.createElement("path", {
-    d: "M1 7l3-3-3-3",
-    stroke: "#999",
-    strokeLinecap: "round"
-  }));
-};
-const ArrowLeftIcon = ({
-  width = 9,
-  height = 7
-}) => {
-  return /*#__PURE__*/React$1.createElement("svg", {
-    width: width,
-    height: height,
-    viewBox: "0 0 9 7",
-    fill: "none"
-  }, /*#__PURE__*/React$1.createElement("defs", null), /*#__PURE__*/React$1.createElement("path", {
-    fill: "#31363A",
-    fillRule: "evenodd",
-    d: "M3.147.646a.5.5 0 01.707.708L2.207 3H8.5a.5.5 0 010 1H2.207l1.647 1.646a.5.5 0 11-.707.708l-2.5-2.5L.293 3.5l.354-.354 2.5-2.5z",
-    clipRule: "evenodd"
-  }));
-};
-const ChevronArrowIcon = ({
-  width = 8,
-  height = 5
-}) => {
-  return /*#__PURE__*/React$1.createElement("svg", {
-    width: width,
-    height: height,
-    viewBox: "0 0 8 5",
-    fill: "none"
-  }, /*#__PURE__*/React$1.createElement("path", {
-    d: "M1 1l3 3 3-3",
-    stroke: "#999",
-    strokeLinecap: "round"
-  }));
-};
-
-const ResentIcon = ({
-  width = 14,
-  height = 12
-}) => {
-  return /*#__PURE__*/React$1.createElement("svg", {
-    width: width,
-    height: height,
-    viewBox: `0 0 14 12`
-  }, /*#__PURE__*/React$1.createElement("path", {
-    fillRule: "evenodd",
-    clipRule: "evenodd",
-    d: "M8 11a5 5 0 10-4.992-4.715l1.138-1.139a.5.5 0 11.708.708l-2 2-.354.353-.354-.353-2-2a.5.5 0 11.708-.708L2 6.293V6a6 6 0 112.287 4.713L5 10c.835.628 1.874 1 3 1zm-.5-8a.5.5 0 01.5.5V6h1.5a.5.5 0 010 1h-2a.5.5 0 01-.5-.5v-3a.5.5 0 01.5-.5z",
-    fill: "#999"
-  }));
-};
-
-var css_248z$J = ".itemMenu-module_itemMenu__11Siw {\n  display: flex;\n  flex-direction: column;\n  padding: 0 8px;\n  background: #ffffff;\n  overflow: hidden;\n  cursor: pointer; }\n  .itemMenu-module_itemMenu__11Siw * {\n    user-select: none;\n    box-sizing: border-box;\n    font-family: Aktiv Grotesk, sans-serif; }\n  .itemMenu-module_itemMenu__11Siw.itemMenu-module_recentOpen__25U0G .itemMenu-module_itemWrapper__rSz22 {\n    height: 72px; }\n  .itemMenu-module_itemMenu__11Siw .itemMenu-module_itemWrapper__rSz22 {\n    width: 224px;\n    height: 48px;\n    display: flex;\n    flex-direction: column;\n    justify-content: center;\n    border-bottom: 1px solid #e8ebed; }\n    .itemMenu-module_itemMenu__11Siw .itemMenu-module_itemWrapper__rSz22 .itemMenu-module_title__1f6Dn {\n      height: 32px;\n      width: 100%;\n      cursor: pointer;\n      display: flex;\n      align-items: center;\n      justify-content: space-between;\n      padding: 0 8px; }\n      .itemMenu-module_itemMenu__11Siw .itemMenu-module_itemWrapper__rSz22 .itemMenu-module_title__1f6Dn .itemMenu-module_svgBox__3wB0j svg path {\n        stroke: #b6babd; }\n      .itemMenu-module_itemMenu__11Siw .itemMenu-module_itemWrapper__rSz22 .itemMenu-module_title__1f6Dn label {\n        cursor: pointer;\n        width: 200px;\n        height: 24px;\n        font-weight: 600;\n        font-size: 11px;\n        line-height: 24px;\n        display: flex;\n        align-items: center;\n        color: #31363a;\n        user-select: none; }\n  .itemMenu-module_itemMenu__11Siw .itemMenu-module_recentBox__2AImV {\n    display: flex;\n    height: 24px; }\n    .itemMenu-module_itemMenu__11Siw .itemMenu-module_recentBox__2AImV .itemMenu-module_resentIcon__3OoDb {\n      display: flex;\n      width: 24px;\n      justify-content: center;\n      align-items: center; }\n    .itemMenu-module_itemMenu__11Siw .itemMenu-module_recentBox__2AImV label {\n      width: 24px;\n      font-weight: 600;\n      font-size: 9px;\n      display: flex;\n      align-items: center;\n      letter-spacing: 0.01em;\n      text-transform: uppercase;\n      color: #b6babd;\n      width: 100%;\n      box-sizing: border-box;\n      padding-top: 8px;\n      user-select: none; }\n    .itemMenu-module_itemMenu__11Siw .itemMenu-module_recentBox__2AImV .itemMenu-module_resentItems__34En3 {\n      display: flex;\n      flex-direction: row;\n      flex-wrap: wrap;\n      box-sizing: border-box; }\n      .itemMenu-module_itemMenu__11Siw .itemMenu-module_recentBox__2AImV .itemMenu-module_resentItems__34En3 span {\n        user-select: none;\n        font-size: 11px;\n        line-height: 16px;\n        padding: 4px 8px;\n        min-width: 24px;\n        max-width: 78px;\n        height: 24px;\n        background: #f2f4f5;\n        border-radius: 8px;\n        margin: 0 5px 4px 0;\n        white-space: nowrap;\n        overflow: hidden;\n        text-overflow: ellipsis; }\n  .itemMenu-module_itemMenu__11Siw:hover .itemMenu-module_itemWrapper__rSz22 .itemMenu-module_svgBox__3wB0j svg path {\n    stroke: #31363a; }\n";
-var style$F = {"itemMenu":"itemMenu-module_itemMenu__11Siw","recentOpen":"itemMenu-module_recentOpen__25U0G","itemWrapper":"itemMenu-module_itemWrapper__rSz22","title":"itemMenu-module_title__1f6Dn","svgBox":"itemMenu-module_svgBox__3wB0j","recentBox":"itemMenu-module_recentBox__2AImV","resentIcon":"itemMenu-module_resentIcon__3OoDb","resentItems":"itemMenu-module_resentItems__34En3"};
-styleInject(css_248z$J);
+var css_248z$H = ".itemMenu-module_itemMenu__11Siw {\n  display: flex;\n  flex-direction: column;\n  padding: 0 8px;\n  background: #ffffff;\n  overflow: hidden;\n  cursor: pointer; }\n  .itemMenu-module_itemMenu__11Siw * {\n    user-select: none;\n    box-sizing: border-box;\n    font-family: Aktiv Grotesk, sans-serif; }\n  .itemMenu-module_itemMenu__11Siw.itemMenu-module_recentOpen__25U0G .itemMenu-module_itemWrapper__rSz22 {\n    height: 72px; }\n  .itemMenu-module_itemMenu__11Siw .itemMenu-module_itemWrapper__rSz22 {\n    width: 224px;\n    height: 48px;\n    display: flex;\n    flex-direction: column;\n    justify-content: center;\n    border-bottom: 1px solid #e8ebed; }\n    .itemMenu-module_itemMenu__11Siw .itemMenu-module_itemWrapper__rSz22 .itemMenu-module_title__1f6Dn {\n      height: 32px;\n      width: 100%;\n      cursor: pointer;\n      display: flex;\n      align-items: center;\n      justify-content: space-between;\n      padding: 0 8px; }\n      .itemMenu-module_itemMenu__11Siw .itemMenu-module_itemWrapper__rSz22 .itemMenu-module_title__1f6Dn .itemMenu-module_svgBox__3wB0j svg path {\n        stroke: #b6babd; }\n      .itemMenu-module_itemMenu__11Siw .itemMenu-module_itemWrapper__rSz22 .itemMenu-module_title__1f6Dn label {\n        cursor: pointer;\n        width: 200px;\n        height: 24px;\n        font-weight: 600;\n        font-size: 11px;\n        line-height: 24px;\n        display: flex;\n        align-items: center;\n        color: #31363a;\n        user-select: none; }\n  .itemMenu-module_itemMenu__11Siw .itemMenu-module_recentBox__2AImV {\n    display: flex;\n    height: 24px; }\n    .itemMenu-module_itemMenu__11Siw .itemMenu-module_recentBox__2AImV .itemMenu-module_recentIcon__10Ur1 {\n      display: flex;\n      width: 24px;\n      justify-content: center;\n      align-items: center; }\n      .itemMenu-module_itemMenu__11Siw .itemMenu-module_recentBox__2AImV .itemMenu-module_recentIcon__10Ur1 svg path:first-child {\n        fill: #999999; }\n    .itemMenu-module_itemMenu__11Siw .itemMenu-module_recentBox__2AImV label {\n      width: 24px;\n      font-weight: 600;\n      font-size: 9px;\n      display: flex;\n      align-items: center;\n      letter-spacing: 0.01em;\n      text-transform: uppercase;\n      color: #b6babd;\n      width: 100%;\n      box-sizing: border-box;\n      padding-top: 8px;\n      user-select: none; }\n    .itemMenu-module_itemMenu__11Siw .itemMenu-module_recentBox__2AImV .itemMenu-module_recentItems__5VCoX {\n      display: flex;\n      flex-direction: row;\n      flex-wrap: wrap;\n      box-sizing: border-box; }\n      .itemMenu-module_itemMenu__11Siw .itemMenu-module_recentBox__2AImV .itemMenu-module_recentItems__5VCoX span {\n        user-select: none;\n        font-size: 11px;\n        line-height: 16px;\n        padding: 4px 8px;\n        min-width: 24px;\n        max-width: 78px;\n        height: 24px;\n        background: #f2f4f5;\n        border-radius: 8px;\n        margin: 0 5px 4px 0;\n        white-space: nowrap;\n        overflow: hidden;\n        text-overflow: ellipsis; }\n  .itemMenu-module_itemMenu__11Siw:hover .itemMenu-module_itemWrapper__rSz22 .itemMenu-module_svgBox__3wB0j svg path {\n    stroke: #31363a; }\n";
+var style$D = {"itemMenu":"itemMenu-module_itemMenu__11Siw","recentOpen":"itemMenu-module_recentOpen__25U0G","itemWrapper":"itemMenu-module_itemWrapper__rSz22","title":"itemMenu-module_title__1f6Dn","svgBox":"itemMenu-module_svgBox__3wB0j","recentBox":"itemMenu-module_recentBox__2AImV","recentIcon":"itemMenu-module_recentIcon__10Ur1","recentItems":"itemMenu-module_recentItems__5VCoX"};
+styleInject(css_248z$H);
 
 const ItemMenu = ({
   item: {
     label,
     value,
-    resent
+    recent
   },
   onClick = null
 }) => {
@@ -595,11 +1620,11 @@ const ItemMenu = ({
     svgBox,
     recentOpen,
     recentBox,
-    resentItems,
-    resentIcon
-  } = style$F;
+    recentItems,
+    recentIcon
+  } = style$D;
   return /*#__PURE__*/React$1.createElement("div", {
-    className: `${itemMenu} ${resent ? recentOpen : ''}`
+    className: `${itemMenu} ${recent ? recentOpen : ''}`
   }, /*#__PURE__*/React$1.createElement("div", {
     className: itemWrapper,
     onClick: () => onClick({
@@ -610,20 +1635,20 @@ const ItemMenu = ({
     className: title
   }, /*#__PURE__*/React$1.createElement("label", null, label), /*#__PURE__*/React$1.createElement("div", {
     className: svgBox
-  }, /*#__PURE__*/React$1.createElement(ArrowRightSecondIcon, null))), resent && /*#__PURE__*/React$1.createElement("div", {
+  }, /*#__PURE__*/React$1.createElement(ArrowRightSecondIcon$1, null))), recent && /*#__PURE__*/React$1.createElement("div", {
     className: recentBox
   }, /*#__PURE__*/React$1.createElement("div", {
-    className: resentIcon
-  }, /*#__PURE__*/React$1.createElement(ResentIcon, null)), /*#__PURE__*/React$1.createElement("div", {
-    className: resentItems
-  }, resent.map((item, key) => /*#__PURE__*/React$1.createElement("span", {
+    className: recentIcon
+  }, /*#__PURE__*/React$1.createElement(RecentIcon$1, null)), /*#__PURE__*/React$1.createElement("div", {
+    className: recentItems
+  }, recent.map((item, key) => /*#__PURE__*/React$1.createElement("span", {
     key: key
   }, item.label))))));
 };
 
-var css_248z$I = ".illustration-items-module_illustrationsItems__28b88 {\n  align-items: center;\n  justify-content: center;\n  display: flex; }\n  .illustration-items-module_illustrationsItems__28b88 * {\n    user-select: none;\n    font-family: Aktiv Grotesk, sans-serif;\n    box-sizing: border-box;\n    cursor: pointer; }\n  .illustration-items-module_illustrationsItems__28b88 .illustration-items-module_row__1vawQ {\n    width: 224px;\n    height: 64px;\n    display: flex;\n    justify-content: left;\n    padding: 4px 0 4px 4px;\n    background-color: #ffffff;\n    margin-bottom: 4px; }\n    .illustration-items-module_illustrationsItems__28b88 .illustration-items-module_row__1vawQ .illustration-items-module_image__7tTU3 {\n      width: 84px;\n      height: 56px;\n      background-size: cover;\n      background-position: center;\n      background-color: #ffffff;\n      border-radius: 5px;\n      margin-right: 8px; }\n    .illustration-items-module_illustrationsItems__28b88 .illustration-items-module_row__1vawQ .illustration-items-module_titleTagWrapper__3zSsk {\n      display: flex;\n      flex-direction: column; }\n      .illustration-items-module_illustrationsItems__28b88 .illustration-items-module_row__1vawQ .illustration-items-module_titleTagWrapper__3zSsk label {\n        width: 125px;\n        font-size: 11px;\n        line-height: 16px;\n        font-weight: 600;\n        color: #333333; }\n      .illustration-items-module_illustrationsItems__28b88 .illustration-items-module_row__1vawQ .illustration-items-module_titleTagWrapper__3zSsk .illustration-items-module_tag__sct8m {\n        width: 125px;\n        height: 16px;\n        font-size: 11px;\n        line-height: 16px;\n        color: #b6babd;\n        display: inline-block;\n        white-space: nowrap;\n        overflow: hidden;\n        text-overflow: ellipsis; }\n    .illustration-items-module_illustrationsItems__28b88 .illustration-items-module_row__1vawQ:hover {\n      background: #f5f5f5;\n      border-radius: 8px; }\n";
-var style$E = {"illustrationsItems":"illustration-items-module_illustrationsItems__28b88","row":"illustration-items-module_row__1vawQ","image":"illustration-items-module_image__7tTU3","titleTagWrapper":"illustration-items-module_titleTagWrapper__3zSsk","tag":"illustration-items-module_tag__sct8m"};
-styleInject(css_248z$I);
+var css_248z$G = ".illustration-items-module_illustrationsItems__28b88 {\n  align-items: center;\n  justify-content: center;\n  display: flex; }\n  .illustration-items-module_illustrationsItems__28b88 * {\n    user-select: none;\n    font-family: Aktiv Grotesk, sans-serif;\n    box-sizing: border-box;\n    cursor: pointer; }\n  .illustration-items-module_illustrationsItems__28b88 .illustration-items-module_row__1vawQ {\n    width: 224px;\n    height: 64px;\n    display: flex;\n    justify-content: left;\n    padding: 4px 0 4px 4px;\n    background-color: #ffffff;\n    margin-bottom: 4px; }\n    .illustration-items-module_illustrationsItems__28b88 .illustration-items-module_row__1vawQ .illustration-items-module_image__7tTU3 {\n      width: 84px;\n      height: 56px;\n      background-size: cover;\n      background-position: center;\n      background-color: #ffffff;\n      border-radius: 5px;\n      margin-right: 8px; }\n    .illustration-items-module_illustrationsItems__28b88 .illustration-items-module_row__1vawQ .illustration-items-module_titleTagWrapper__3zSsk {\n      display: flex;\n      flex-direction: column; }\n      .illustration-items-module_illustrationsItems__28b88 .illustration-items-module_row__1vawQ .illustration-items-module_titleTagWrapper__3zSsk label {\n        width: 125px;\n        font-size: 11px;\n        line-height: 16px;\n        font-weight: 600;\n        color: #333333; }\n      .illustration-items-module_illustrationsItems__28b88 .illustration-items-module_row__1vawQ .illustration-items-module_titleTagWrapper__3zSsk .illustration-items-module_tag__sct8m {\n        width: 125px;\n        height: 16px;\n        font-size: 11px;\n        line-height: 16px;\n        color: #b6babd;\n        display: inline-block;\n        white-space: nowrap;\n        overflow: hidden;\n        text-overflow: ellipsis; }\n    .illustration-items-module_illustrationsItems__28b88 .illustration-items-module_row__1vawQ:hover {\n      background: #f5f5f5;\n      border-radius: 8px; }\n";
+var style$C = {"illustrationsItems":"illustration-items-module_illustrationsItems__28b88","row":"illustration-items-module_row__1vawQ","image":"illustration-items-module_image__7tTU3","titleTagWrapper":"illustration-items-module_titleTagWrapper__3zSsk","tag":"illustration-items-module_tag__sct8m"};
+styleInject(css_248z$G);
 
 const IllustrationsItems = ({
   item,
@@ -635,7 +1660,7 @@ const IllustrationsItems = ({
     image,
     titleTagWrapper,
     tag
-  } = style$E;
+  } = style$C;
   const {
     label,
     tags,
@@ -658,9 +1683,9 @@ const IllustrationsItems = ({
   }, tags))));
 };
 
-var css_248z$H = ".illustration-module_scrollWrapper__3eobP > :nth-child(3) {\n  width: 4px !important;\n  right: 0 !important; }\n\n.illustration-module_illustration__2Tgoi {\n  align-items: center;\n  box-sizing: border-box;\n  padding-bottom: 46px;\n  width: 240px; }\n  .illustration-module_illustration__2Tgoi * {\n    font-family: Aktiv Grotesk, sans-serif;\n    box-sizing: border-box; }\n  .illustration-module_illustration__2Tgoi .illustration-module_header__hp2lh {\n    width: 224px;\n    height: 32px;\n    align-items: center;\n    justify-content: space-between; }\n";
-var style$D = {"scrollWrapper":"illustration-module_scrollWrapper__3eobP","illustration":"illustration-module_illustration__2Tgoi","header":"illustration-module_header__hp2lh"};
-styleInject(css_248z$H);
+var css_248z$F = ".illustration-module_scrollWrapper__3eobP > :nth-child(3) {\n  width: 4px !important;\n  right: 0 !important; }\n\n.illustration-module_illustration__2Tgoi {\n  align-items: center;\n  box-sizing: border-box;\n  padding-bottom: 46px;\n  width: 240px; }\n  .illustration-module_illustration__2Tgoi * {\n    font-family: Aktiv Grotesk, sans-serif;\n    box-sizing: border-box; }\n  .illustration-module_illustration__2Tgoi .illustration-module_header__hp2lh {\n    width: 224px;\n    height: 32px;\n    align-items: center;\n    justify-content: space-between; }\n";
+var style$B = {"scrollWrapper":"illustration-module_scrollWrapper__3eobP","illustration":"illustration-module_illustration__2Tgoi","header":"illustration-module_header__hp2lh"};
+styleInject(css_248z$F);
 
 /* eslint-disable react-hooks/exhaustive-deps */
 const illustrationItemsData = [{
@@ -695,7 +1720,7 @@ const Illustrations = ({
 }) => {
   const {
     stockPhotoItems
-  } = style$D;
+  } = style$B;
   const [stockPhotoItemsDetailsData, setStockPhotoItemsDataDetails] = useState(null);
 
   const clickOnStockPhotoItem = stockName => {
@@ -732,7 +1757,7 @@ const Wrapper$2 = ({
   const {
     scrollWrapper,
     illustration
-  } = style$D;
+  } = style$B;
   return /*#__PURE__*/React$1.createElement(Scrollbars, {
     autoHide: true,
     style: {
@@ -744,9 +1769,9 @@ const Wrapper$2 = ({
   }, children));
 };
 
-var css_248z$G = ".stockPhoto-items-details-module_stockPhotoItemsDetailsWrapper__1kYQp {\n  width: 232px;\n  columns: 2;\n  column-gap: 4px;\n  padding-left: 8px; }\n  .stockPhoto-items-details-module_stockPhotoItemsDetailsWrapper__1kYQp * {\n    box-sizing: border-box;\n    cursor: pointer; }\n  .stockPhoto-items-details-module_stockPhotoItemsDetailsWrapper__1kYQp .stockPhoto-items-details-module_scrollWrapper__1IKFg > :nth-child(3) {\n    width: 4px !important;\n    right: 0 !important; }\n  .stockPhoto-items-details-module_stockPhotoItemsDetailsWrapper__1kYQp img {\n    border-radius: 8px;\n    margin-bottom: 4px; }\n";
-var style$C = {"stockPhotoItemsDetailsWrapper":"stockPhoto-items-details-module_stockPhotoItemsDetailsWrapper__1kYQp","scrollWrapper":"stockPhoto-items-details-module_scrollWrapper__1IKFg"};
-styleInject(css_248z$G);
+var css_248z$E = ".stockPhoto-items-details-module_stockPhotoItemsDetailsWrapper__1kYQp {\n  width: 232px;\n  columns: 2;\n  column-gap: 4px;\n  padding-left: 8px; }\n  .stockPhoto-items-details-module_stockPhotoItemsDetailsWrapper__1kYQp * {\n    box-sizing: border-box;\n    cursor: pointer; }\n  .stockPhoto-items-details-module_stockPhotoItemsDetailsWrapper__1kYQp .stockPhoto-items-details-module_scrollWrapper__1IKFg > :nth-child(3) {\n    width: 4px !important;\n    right: 0 !important; }\n  .stockPhoto-items-details-module_stockPhotoItemsDetailsWrapper__1kYQp img {\n    border-radius: 8px;\n    margin-bottom: 4px; }\n";
+var style$A = {"stockPhotoItemsDetailsWrapper":"stockPhoto-items-details-module_stockPhotoItemsDetailsWrapper__1kYQp","scrollWrapper":"stockPhoto-items-details-module_scrollWrapper__1IKFg"};
+styleInject(css_248z$E);
 
 const StockPhotoItemsDetails = ({
   items = [],
@@ -755,7 +1780,7 @@ const StockPhotoItemsDetails = ({
   const {
     stockPhotoItemsDetailsWrapper,
     scrollWrapper
-  } = style$C;
+  } = style$A;
   return /*#__PURE__*/React$1.createElement(Scrollbars, {
     autoHide: true,
     style: {
@@ -771,9 +1796,9 @@ const StockPhotoItemsDetails = ({
   }))));
 };
 
-var css_248z$F = ".stockPhoto-items-module_stockPhotoItems__3GW_k {\n  align-items: center;\n  justify-content: center;\n  display: flex; }\n  .stockPhoto-items-module_stockPhotoItems__3GW_k * {\n    user-select: none;\n    font-family: Aktiv Grotesk, sans-serif;\n    box-sizing: border-box;\n    cursor: pointer; }\n  .stockPhoto-items-module_stockPhotoItems__3GW_k .stockPhoto-items-module_row__3760c {\n    width: 224px;\n    min-height: 56px;\n    display: flex;\n    box-sizing: border-box;\n    align-items: center;\n    justify-content: left;\n    padding: 8px;\n    border-radius: 12px;\n    background-color: #ffffff;\n    margin-bottom: 8px;\n    cursor: pointer; }\n    .stockPhoto-items-module_stockPhotoItems__3GW_k .stockPhoto-items-module_row__3760c .stockPhoto-items-module_stockPhotoImage__2dvCg {\n      margin-right: 8px;\n      height: 20px;\n      width: 20px;\n      cursor: pointer;\n      border-radius: 50%;\n      box-shadow: 0px 0.5px 1px rgba(0, 4, 8, 0.12), 0px 8px 16px -8px rgba(0, 4, 8, 0.08);\n      background-size: cover;\n      background-position: center;\n      background-color: #ffffff;\n      position: relative;\n      align-self: flex-start; }\n      .stockPhoto-items-module_stockPhotoItems__3GW_k .stockPhoto-items-module_row__3760c .stockPhoto-items-module_stockPhotoImage__2dvCg .stockPhoto-items-module_premium__35CGJ {\n        position: absolute;\n        right: 0; }\n    .stockPhoto-items-module_stockPhotoItems__3GW_k .stockPhoto-items-module_row__3760c .stockPhoto-items-module_titleTagWrapper__1QK7w {\n      width: 176px; }\n      .stockPhoto-items-module_stockPhotoItems__3GW_k .stockPhoto-items-module_row__3760c .stockPhoto-items-module_titleTagWrapper__1QK7w .stockPhoto-items-module_titleWrapper__2xBzY {\n        width: 176px;\n        display: flex;\n        justify-content: space-between; }\n        .stockPhoto-items-module_stockPhotoItems__3GW_k .stockPhoto-items-module_row__3760c .stockPhoto-items-module_titleTagWrapper__1QK7w .stockPhoto-items-module_titleWrapper__2xBzY label {\n          font-size: 11px;\n          font-weight: 600;\n          cursor: pointer;\n          margin-bottom: 4px;\n          display: block; }\n        .stockPhoto-items-module_stockPhotoItems__3GW_k .stockPhoto-items-module_row__3760c .stockPhoto-items-module_titleTagWrapper__1QK7w .stockPhoto-items-module_titleWrapper__2xBzY .stockPhoto-items-module_svgBox__pMQwy {\n          width: 16px;\n          height: 16px;\n          display: flex;\n          justify-content: center;\n          align-items: center;\n          opacity: 0;\n          transition: opacity 0.2s; }\n          .stockPhoto-items-module_stockPhotoItems__3GW_k .stockPhoto-items-module_row__3760c .stockPhoto-items-module_titleTagWrapper__1QK7w .stockPhoto-items-module_titleWrapper__2xBzY .stockPhoto-items-module_svgBox__pMQwy svg path {\n            stroke: #000408; }\n      .stockPhoto-items-module_stockPhotoItems__3GW_k .stockPhoto-items-module_row__3760c .stockPhoto-items-module_titleTagWrapper__1QK7w .stockPhoto-items-module_tag__2mWt2 {\n        width: 176px;\n        font-size: 11px;\n        line-height: 16px;\n        color: #63676c; }\n    .stockPhoto-items-module_stockPhotoItems__3GW_k .stockPhoto-items-module_row__3760c:hover {\n      background: #f5f5f5;\n      border-radius: 8px; }\n      .stockPhoto-items-module_stockPhotoItems__3GW_k .stockPhoto-items-module_row__3760c:hover .stockPhoto-items-module_titleTagWrapper__1QK7w .stockPhoto-items-module_titleWrapper__2xBzY .stockPhoto-items-module_svgBox__pMQwy {\n        opacity: 1; }\n";
-var style$B = {"stockPhotoItems":"stockPhoto-items-module_stockPhotoItems__3GW_k","row":"stockPhoto-items-module_row__3760c","stockPhotoImage":"stockPhoto-items-module_stockPhotoImage__2dvCg","premium":"stockPhoto-items-module_premium__35CGJ","titleTagWrapper":"stockPhoto-items-module_titleTagWrapper__1QK7w","titleWrapper":"stockPhoto-items-module_titleWrapper__2xBzY","svgBox":"stockPhoto-items-module_svgBox__pMQwy","tag":"stockPhoto-items-module_tag__2mWt2"};
-styleInject(css_248z$F);
+var css_248z$D = ".stockPhoto-items-module_stockPhotoItems__3GW_k {\n  align-items: center;\n  justify-content: center;\n  display: flex; }\n  .stockPhoto-items-module_stockPhotoItems__3GW_k * {\n    user-select: none;\n    font-family: Aktiv Grotesk, sans-serif;\n    box-sizing: border-box;\n    cursor: pointer; }\n  .stockPhoto-items-module_stockPhotoItems__3GW_k .stockPhoto-items-module_row__3760c {\n    width: 224px;\n    min-height: 56px;\n    display: flex;\n    box-sizing: border-box;\n    align-items: center;\n    justify-content: left;\n    padding: 8px;\n    border-radius: 12px;\n    background-color: #ffffff;\n    margin-bottom: 8px;\n    cursor: pointer; }\n    .stockPhoto-items-module_stockPhotoItems__3GW_k .stockPhoto-items-module_row__3760c .stockPhoto-items-module_stockPhotoImage__2dvCg {\n      margin-right: 8px;\n      height: 20px;\n      width: 20px;\n      cursor: pointer;\n      border-radius: 50%;\n      box-shadow: 0px 0.5px 1px rgba(0, 4, 8, 0.12), 0px 8px 16px -8px rgba(0, 4, 8, 0.08);\n      background-size: cover;\n      background-position: center;\n      background-color: #ffffff;\n      position: relative;\n      align-self: flex-start; }\n      .stockPhoto-items-module_stockPhotoItems__3GW_k .stockPhoto-items-module_row__3760c .stockPhoto-items-module_stockPhotoImage__2dvCg .stockPhoto-items-module_premium__35CGJ {\n        position: absolute;\n        right: 0; }\n    .stockPhoto-items-module_stockPhotoItems__3GW_k .stockPhoto-items-module_row__3760c .stockPhoto-items-module_titleTagWrapper__1QK7w {\n      width: 176px; }\n      .stockPhoto-items-module_stockPhotoItems__3GW_k .stockPhoto-items-module_row__3760c .stockPhoto-items-module_titleTagWrapper__1QK7w .stockPhoto-items-module_titleWrapper__2xBzY {\n        width: 176px;\n        display: flex;\n        justify-content: space-between; }\n        .stockPhoto-items-module_stockPhotoItems__3GW_k .stockPhoto-items-module_row__3760c .stockPhoto-items-module_titleTagWrapper__1QK7w .stockPhoto-items-module_titleWrapper__2xBzY label {\n          font-size: 11px;\n          font-weight: 600;\n          cursor: pointer;\n          margin-bottom: 4px;\n          display: block; }\n        .stockPhoto-items-module_stockPhotoItems__3GW_k .stockPhoto-items-module_row__3760c .stockPhoto-items-module_titleTagWrapper__1QK7w .stockPhoto-items-module_titleWrapper__2xBzY .stockPhoto-items-module_svgBox__pMQwy {\n          width: 16px;\n          height: 16px;\n          display: flex;\n          justify-content: center;\n          align-items: center;\n          opacity: 0;\n          transition: opacity 0.2s; }\n          .stockPhoto-items-module_stockPhotoItems__3GW_k .stockPhoto-items-module_row__3760c .stockPhoto-items-module_titleTagWrapper__1QK7w .stockPhoto-items-module_titleWrapper__2xBzY .stockPhoto-items-module_svgBox__pMQwy svg path {\n            stroke: #000408; }\n      .stockPhoto-items-module_stockPhotoItems__3GW_k .stockPhoto-items-module_row__3760c .stockPhoto-items-module_titleTagWrapper__1QK7w .stockPhoto-items-module_tag__2mWt2 {\n        width: 176px;\n        font-size: 11px;\n        line-height: 16px;\n        color: #63676c; }\n    .stockPhoto-items-module_stockPhotoItems__3GW_k .stockPhoto-items-module_row__3760c:hover {\n      background: #f5f5f5;\n      border-radius: 8px; }\n      .stockPhoto-items-module_stockPhotoItems__3GW_k .stockPhoto-items-module_row__3760c:hover .stockPhoto-items-module_titleTagWrapper__1QK7w .stockPhoto-items-module_titleWrapper__2xBzY .stockPhoto-items-module_svgBox__pMQwy {\n        opacity: 1; }\n";
+var style$z = {"stockPhotoItems":"stockPhoto-items-module_stockPhotoItems__3GW_k","row":"stockPhoto-items-module_row__3760c","stockPhotoImage":"stockPhoto-items-module_stockPhotoImage__2dvCg","premium":"stockPhoto-items-module_premium__35CGJ","titleTagWrapper":"stockPhoto-items-module_titleTagWrapper__1QK7w","titleWrapper":"stockPhoto-items-module_titleWrapper__2xBzY","svgBox":"stockPhoto-items-module_svgBox__pMQwy","tag":"stockPhoto-items-module_tag__2mWt2"};
+styleInject(css_248z$D);
 
 const StockPhotoItems = ({
   item,
@@ -787,7 +1812,7 @@ const StockPhotoItems = ({
     titleWrapper,
     svgBox,
     tag
-  } = style$B;
+  } = style$z;
   const {
     label,
     tags,
@@ -810,14 +1835,14 @@ const StockPhotoItems = ({
     className: titleWrapper
   }, /*#__PURE__*/React$1.createElement("label", null, label), /*#__PURE__*/React$1.createElement("div", {
     className: svgBox
-  }, /*#__PURE__*/React$1.createElement(ArrowRightSecondIcon, null))), /*#__PURE__*/React$1.createElement("div", {
+  }, /*#__PURE__*/React$1.createElement(ArrowRightSecondIcon$1, null))), /*#__PURE__*/React$1.createElement("div", {
     className: tag
   }, tags))));
 };
 
-var css_248z$E = ".stockPhotos-module_scrollWrapper__13b60 > :nth-child(3) {\n  width: 4px !important;\n  right: 0 !important; }\n\n.stockPhotos-module_stockPhoto__8x4lY {\n  width: 240px;\n  align-items: center;\n  box-sizing: border-box;\n  padding-bottom: 46px; }\n  .stockPhotos-module_stockPhoto__8x4lY * {\n    font-family: Aktiv Grotesk, sans-serif;\n    box-sizing: border-box; }\n  .stockPhotos-module_stockPhoto__8x4lY .stockPhotos-module_header__JIZ9V {\n    width: 224px;\n    height: 32px;\n    align-items: center;\n    justify-content: space-between; }\n";
-var style$A = {"scrollWrapper":"stockPhotos-module_scrollWrapper__13b60","stockPhoto":"stockPhotos-module_stockPhoto__8x4lY","header":"stockPhotos-module_header__JIZ9V"};
-styleInject(css_248z$E);
+var css_248z$C = ".stockPhotos-module_scrollWrapper__13b60 > :nth-child(3) {\n  width: 4px !important;\n  right: 0 !important; }\n\n.stockPhotos-module_stockPhoto__8x4lY {\n  width: 240px;\n  align-items: center;\n  box-sizing: border-box;\n  padding-bottom: 46px; }\n  .stockPhotos-module_stockPhoto__8x4lY * {\n    font-family: Aktiv Grotesk, sans-serif;\n    box-sizing: border-box; }\n  .stockPhotos-module_stockPhoto__8x4lY .stockPhotos-module_header__JIZ9V {\n    width: 224px;\n    height: 32px;\n    align-items: center;\n    justify-content: space-between; }\n";
+var style$y = {"scrollWrapper":"stockPhotos-module_scrollWrapper__13b60","stockPhoto":"stockPhotos-module_stockPhoto__8x4lY","header":"stockPhotos-module_header__JIZ9V"};
+styleInject(css_248z$C);
 
 /* eslint-disable react-hooks/exhaustive-deps */
 const stockPhotoItemsData = [{
@@ -874,7 +1899,7 @@ const StockPhotos = ({
 }) => {
   const {
     stockPhotoItems
-  } = style$A;
+  } = style$y;
   const [stockPhotoItemsDetailsData, setStockPhotoItemsDataDetails] = useState(null);
 
   const clickOnStockPhotoItem = stockName => {
@@ -914,7 +1939,7 @@ const Wrapper$1 = ({
   const {
     scrollWrapper,
     stockPhoto
-  } = style$A;
+  } = style$y;
   return /*#__PURE__*/React$1.createElement(Scrollbars, {
     autoHide: true,
     style: {
@@ -926,68 +1951,12 @@ const Wrapper$1 = ({
   }, children));
 };
 
-const ListIcon = ({
-  width = 12,
-  height = 7
-}) => {
-  return /*#__PURE__*/React$1.createElement("svg", {
-    width: width,
-    height: height,
-    viewBox: "0 0 12 7"
-  }, /*#__PURE__*/React$1.createElement("defs", null), /*#__PURE__*/React$1.createElement("path", {
-    fill: "#31363A",
-    fillRule: "evenodd",
-    d: "M4 1.5c0-.27614.22386-.5.5-.5h7c.2761 0 .5.22386.5.5s-.2239.5-.5.5h-7c-.27614 0-.5-.22386-.5-.5z",
-    clipRule: "evenodd"
-  }), /*#__PURE__*/React$1.createElement("circle", {
-    cx: "1.5",
-    cy: "1.5",
-    r: ".75",
-    fill: "#31363A",
-    stroke: "#31363A",
-    strokeWidth: ".5"
-  }), /*#__PURE__*/React$1.createElement("circle", {
-    cx: "1.5",
-    cy: "5.5",
-    r: ".75",
-    fill: "#63676C",
-    stroke: "#63676C",
-    strokeWidth: ".5"
-  }), /*#__PURE__*/React$1.createElement("path", {
-    stroke: "#63676C",
-    strokeLinecap: "round",
-    d: "M4.5 5.5h7"
-  }));
-};
+var css_248z$B = ".tooltip-module_tooltip__zRBWm {\n  font-family: Aktiv Grotesk, sans-serif; }\n  .tooltip-module_tooltip__zRBWm h3 {\n    margin: 0;\n    padding: 0;\n    cursor: pointer; }\n";
+var style$x = {"tooltip":"tooltip-module_tooltip__zRBWm"};
+styleInject(css_248z$B);
 
-const ThumbnailIcon = ({
-  width = 9,
-  height = 9
-}) => {
-  return /*#__PURE__*/React$1.createElement("svg", {
-    width: width,
-    height: height,
-    viewBox: "0 0 9 9",
-    fill: "none"
-  }, /*#__PURE__*/React$1.createElement("defs", null), /*#__PURE__*/React$1.createElement("rect", {
-    width: "8",
-    height: "8",
-    x: ".5",
-    y: ".5",
-    stroke: "#63676C",
-    rx: "1.5"
-  }), /*#__PURE__*/React$1.createElement("path", {
-    stroke: "#B6BABD",
-    d: "M1 4.5h7M4.5 8V1"
-  }));
-};
-
-var css_248z$D = ".tooltip-module_tooltip__zRBWm {\n  font-family: Aktiv Grotesk, sans-serif; }\n  .tooltip-module_tooltip__zRBWm h3 {\n    margin: 0;\n    padding: 0;\n    cursor: pointer; }\n";
-var style$z = {"tooltip":"tooltip-module_tooltip__zRBWm"};
-styleInject(css_248z$D);
-
-var css_248z$C = ".tooltip_tippy-popper__3A4NM {\n  top: -8px !important;\n  left: -4px !important;\n  max-width: 246px; }\n  .tooltip_tippy-popper__3A4NM .tooltip_tippy-tooltip__2TRTm [x-circle] {\n    background-color: transparent !important; }\n  .tooltip_tippy-popper__3A4NM .tooltip_tippy-tooltip__2TRTm .tooltip_tippy-tooltip-content__1g461 {\n    font-family: Aktiv Grotesk, sans-serif;\n    padding: 4px 8px;\n    border-radius: 8px;\n    box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.06), 0px 0.5px 1px rgba(0, 0, 0, 0.24);\n    font-family: Aktiv Grotesk, sans-serif;\n    font-size: 12px;\n    line-height: 24px; }\n  .tooltip_tippy-popper__3A4NM .tooltip_tippy-tooltip__2TRTm.tooltip_light-theme__3AdwA {\n    color: #26323d;\n    box-shadow: none; }\n    .tooltip_tippy-popper__3A4NM .tooltip_tippy-tooltip__2TRTm.tooltip_light-theme__3AdwA .tooltip_tippy-tooltip-content__1g461 {\n      background: #ffffff;\n      color: #31363a; }\n      .tooltip_tippy-popper__3A4NM .tooltip_tippy-tooltip__2TRTm.tooltip_light-theme__3AdwA .tooltip_tippy-tooltip-content__1g461:after {\n        background-color: #ffffff; }\n  .tooltip_tippy-popper__3A4NM .tooltip_tippy-tooltip__2TRTm.tooltip_dark-theme__2mirF .tooltip_tippy-tooltip-content__1g461 {\n    background: #31363a;\n    color: #ffffff; }\n    .tooltip_tippy-popper__3A4NM .tooltip_tippy-tooltip__2TRTm.tooltip_dark-theme__2mirF .tooltip_tippy-tooltip-content__1g461:after {\n      background-color: #31363a; }\n  .tooltip_tippy-popper__3A4NM[x-placement='top'] .tooltip_light-theme__3AdwA, .tooltip_tippy-popper__3A4NM[x-placement='top-start'] .tooltip_light-theme__3AdwA, .tooltip_tippy-popper__3A4NM[x-placement='top-end'] .tooltip_light-theme__3AdwA {\n    top: 2px !important;\n    left: -1px !important; }\n    .tooltip_tippy-popper__3A4NM[x-placement='top'] .tooltip_light-theme__3AdwA .tooltip_tippy-tooltip-content__1g461:after, .tooltip_tippy-popper__3A4NM[x-placement='top-start'] .tooltip_light-theme__3AdwA .tooltip_tippy-tooltip-content__1g461:after, .tooltip_tippy-popper__3A4NM[x-placement='top-end'] .tooltip_light-theme__3AdwA .tooltip_tippy-tooltip-content__1g461:after {\n      background-color: #ffffff;\n      top: 33px !important;\n      transform: rotate(45deg); }\n  .tooltip_tippy-popper__3A4NM[x-placement='top'], .tooltip_tippy-popper__3A4NM[x-placement='top-start'], .tooltip_tippy-popper__3A4NM[x-placement='top-end'] {\n    top: -3px !important;\n    left: -3px !important; }\n    .tooltip_tippy-popper__3A4NM[x-placement='top'] .tooltip_dark-theme__2mirF .tooltip_tippy-tooltip-content__1g461:after, .tooltip_tippy-popper__3A4NM[x-placement='top-start'] .tooltip_dark-theme__2mirF .tooltip_tippy-tooltip-content__1g461:after, .tooltip_tippy-popper__3A4NM[x-placement='top-end'] .tooltip_dark-theme__2mirF .tooltip_tippy-tooltip-content__1g461:after {\n      background-color: #31363a;\n      top: 33px; }\n  .tooltip_tippy-popper__3A4NM[x-placement='left'] .tooltip_light-theme__3AdwA, .tooltip_tippy-popper__3A4NM[x-placement='left-start'] .tooltip_light-theme__3AdwA, .tooltip_tippy-popper__3A4NM[x-placement='left-end'] .tooltip_light-theme__3AdwA {\n    top: 0 !important;\n    left: 0 !important; }\n    .tooltip_tippy-popper__3A4NM[x-placement='left'] .tooltip_light-theme__3AdwA .tooltip_tippy-tooltip-content__1g461:after, .tooltip_tippy-popper__3A4NM[x-placement='left-start'] .tooltip_light-theme__3AdwA .tooltip_tippy-tooltip-content__1g461:after, .tooltip_tippy-popper__3A4NM[x-placement='left-end'] .tooltip_light-theme__3AdwA .tooltip_tippy-tooltip-content__1g461:after {\n      background-color: #ffffff;\n      width: 7px;\n      height: 7px;\n      top: 20px;\n      right: 5px;\n      left: auto;\n      transform: rotate(315deg); }\n  .tooltip_tippy-popper__3A4NM[x-placement='left'], .tooltip_tippy-popper__3A4NM[x-placement='left-start'], .tooltip_tippy-popper__3A4NM[x-placement='left-end'] {\n    top: 0 !important;\n    left: 0 !important; }\n    .tooltip_tippy-popper__3A4NM[x-placement='left'] .tooltip_dark-theme__2mirF .tooltip_tippy-tooltip-content__1g461:after, .tooltip_tippy-popper__3A4NM[x-placement='left-start'] .tooltip_dark-theme__2mirF .tooltip_tippy-tooltip-content__1g461:after, .tooltip_tippy-popper__3A4NM[x-placement='left-end'] .tooltip_dark-theme__2mirF .tooltip_tippy-tooltip-content__1g461:after {\n      background-color: #31363a;\n      width: 7px;\n      height: 7px;\n      top: 20px;\n      right: 5px;\n      left: auto;\n      transform: rotate(315deg); }\n  .tooltip_tippy-popper__3A4NM[x-placement='right'] .tooltip_light-theme__3AdwA, .tooltip_tippy-popper__3A4NM[x-placement='right-start'] .tooltip_light-theme__3AdwA, .tooltip_tippy-popper__3A4NM[x-placement='right-end'] .tooltip_light-theme__3AdwA {\n    top: 0 !important;\n    left: 0 !important; }\n    .tooltip_tippy-popper__3A4NM[x-placement='right'] .tooltip_light-theme__3AdwA .tooltip_tippy-tooltip-content__1g461, .tooltip_tippy-popper__3A4NM[x-placement='right-start'] .tooltip_light-theme__3AdwA .tooltip_tippy-tooltip-content__1g461, .tooltip_tippy-popper__3A4NM[x-placement='right-end'] .tooltip_light-theme__3AdwA .tooltip_tippy-tooltip-content__1g461 {\n      margin-left: -4px; }\n      .tooltip_tippy-popper__3A4NM[x-placement='right'] .tooltip_light-theme__3AdwA .tooltip_tippy-tooltip-content__1g461:after, .tooltip_tippy-popper__3A4NM[x-placement='right-start'] .tooltip_light-theme__3AdwA .tooltip_tippy-tooltip-content__1g461:after, .tooltip_tippy-popper__3A4NM[x-placement='right-end'] .tooltip_light-theme__3AdwA .tooltip_tippy-tooltip-content__1g461:after {\n        background-color: #ffffff;\n        width: 7px;\n        height: 7px;\n        top: 19px;\n        right: auto;\n        left: 10px;\n        transform: rotate(133deg); }\n  .tooltip_tippy-popper__3A4NM[x-placement='right'], .tooltip_tippy-popper__3A4NM[x-placement='right-start'], .tooltip_tippy-popper__3A4NM[x-placement='right-end'] {\n    top: 0 !important;\n    left: 0 !important; }\n    .tooltip_tippy-popper__3A4NM[x-placement='right'] .tooltip_dark-theme__2mirF .tooltip_tippy-tooltip-content__1g461, .tooltip_tippy-popper__3A4NM[x-placement='right-start'] .tooltip_dark-theme__2mirF .tooltip_tippy-tooltip-content__1g461, .tooltip_tippy-popper__3A4NM[x-placement='right-end'] .tooltip_dark-theme__2mirF .tooltip_tippy-tooltip-content__1g461 {\n      margin-left: -4px; }\n      .tooltip_tippy-popper__3A4NM[x-placement='right'] .tooltip_dark-theme__2mirF .tooltip_tippy-tooltip-content__1g461:after, .tooltip_tippy-popper__3A4NM[x-placement='right-start'] .tooltip_dark-theme__2mirF .tooltip_tippy-tooltip-content__1g461:after, .tooltip_tippy-popper__3A4NM[x-placement='right-end'] .tooltip_dark-theme__2mirF .tooltip_tippy-tooltip-content__1g461:after {\n        background-color: #31363a;\n        width: 7px;\n        height: 7px;\n        top: 19px;\n        right: auto;\n        left: 10px;\n        transform: rotate(133deg); }\n";
-styleInject(css_248z$C);
+var css_248z$A = ".tooltip_tippy-popper__3A4NM {\n  top: -8px !important;\n  left: -4px !important;\n  max-width: 246px; }\n  .tooltip_tippy-popper__3A4NM .tooltip_tippy-tooltip__2TRTm [x-circle] {\n    background-color: transparent !important; }\n  .tooltip_tippy-popper__3A4NM .tooltip_tippy-tooltip__2TRTm .tooltip_tippy-tooltip-content__1g461 {\n    font-family: Aktiv Grotesk, sans-serif;\n    padding: 4px 8px;\n    border-radius: 8px;\n    box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.06), 0px 0.5px 1px rgba(0, 0, 0, 0.24);\n    font-family: Aktiv Grotesk, sans-serif;\n    font-size: 12px;\n    line-height: 24px; }\n  .tooltip_tippy-popper__3A4NM .tooltip_tippy-tooltip__2TRTm.tooltip_light-theme__3AdwA {\n    color: #26323d;\n    box-shadow: none; }\n    .tooltip_tippy-popper__3A4NM .tooltip_tippy-tooltip__2TRTm.tooltip_light-theme__3AdwA .tooltip_tippy-tooltip-content__1g461 {\n      background: #ffffff;\n      color: #31363a; }\n      .tooltip_tippy-popper__3A4NM .tooltip_tippy-tooltip__2TRTm.tooltip_light-theme__3AdwA .tooltip_tippy-tooltip-content__1g461:after {\n        background-color: #ffffff; }\n  .tooltip_tippy-popper__3A4NM .tooltip_tippy-tooltip__2TRTm.tooltip_dark-theme__2mirF .tooltip_tippy-tooltip-content__1g461 {\n    background: #31363a;\n    color: #ffffff; }\n    .tooltip_tippy-popper__3A4NM .tooltip_tippy-tooltip__2TRTm.tooltip_dark-theme__2mirF .tooltip_tippy-tooltip-content__1g461:after {\n      background-color: #31363a; }\n  .tooltip_tippy-popper__3A4NM[x-placement='top'] .tooltip_light-theme__3AdwA, .tooltip_tippy-popper__3A4NM[x-placement='top-start'] .tooltip_light-theme__3AdwA, .tooltip_tippy-popper__3A4NM[x-placement='top-end'] .tooltip_light-theme__3AdwA {\n    top: 2px !important;\n    left: -1px !important; }\n    .tooltip_tippy-popper__3A4NM[x-placement='top'] .tooltip_light-theme__3AdwA .tooltip_tippy-tooltip-content__1g461:after, .tooltip_tippy-popper__3A4NM[x-placement='top-start'] .tooltip_light-theme__3AdwA .tooltip_tippy-tooltip-content__1g461:after, .tooltip_tippy-popper__3A4NM[x-placement='top-end'] .tooltip_light-theme__3AdwA .tooltip_tippy-tooltip-content__1g461:after {\n      background-color: #ffffff;\n      top: 33px !important;\n      transform: rotate(45deg); }\n  .tooltip_tippy-popper__3A4NM[x-placement='top'], .tooltip_tippy-popper__3A4NM[x-placement='top-start'], .tooltip_tippy-popper__3A4NM[x-placement='top-end'] {\n    top: -3px !important;\n    left: -3px !important; }\n    .tooltip_tippy-popper__3A4NM[x-placement='top'] .tooltip_dark-theme__2mirF .tooltip_tippy-tooltip-content__1g461:after, .tooltip_tippy-popper__3A4NM[x-placement='top-start'] .tooltip_dark-theme__2mirF .tooltip_tippy-tooltip-content__1g461:after, .tooltip_tippy-popper__3A4NM[x-placement='top-end'] .tooltip_dark-theme__2mirF .tooltip_tippy-tooltip-content__1g461:after {\n      background-color: #31363a;\n      top: 33px; }\n  .tooltip_tippy-popper__3A4NM[x-placement='left'] .tooltip_light-theme__3AdwA, .tooltip_tippy-popper__3A4NM[x-placement='left-start'] .tooltip_light-theme__3AdwA, .tooltip_tippy-popper__3A4NM[x-placement='left-end'] .tooltip_light-theme__3AdwA {\n    top: 0 !important;\n    left: 0 !important; }\n    .tooltip_tippy-popper__3A4NM[x-placement='left'] .tooltip_light-theme__3AdwA .tooltip_tippy-tooltip-content__1g461:after, .tooltip_tippy-popper__3A4NM[x-placement='left-start'] .tooltip_light-theme__3AdwA .tooltip_tippy-tooltip-content__1g461:after, .tooltip_tippy-popper__3A4NM[x-placement='left-end'] .tooltip_light-theme__3AdwA .tooltip_tippy-tooltip-content__1g461:after {\n      background-color: #ffffff;\n      width: 7px;\n      height: 7px;\n      top: 20px;\n      right: 5px;\n      left: auto;\n      transform: rotate(315deg); }\n  .tooltip_tippy-popper__3A4NM[x-placement='left'], .tooltip_tippy-popper__3A4NM[x-placement='left-start'], .tooltip_tippy-popper__3A4NM[x-placement='left-end'] {\n    top: 0 !important;\n    left: 0 !important; }\n    .tooltip_tippy-popper__3A4NM[x-placement='left'] .tooltip_dark-theme__2mirF .tooltip_tippy-tooltip-content__1g461:after, .tooltip_tippy-popper__3A4NM[x-placement='left-start'] .tooltip_dark-theme__2mirF .tooltip_tippy-tooltip-content__1g461:after, .tooltip_tippy-popper__3A4NM[x-placement='left-end'] .tooltip_dark-theme__2mirF .tooltip_tippy-tooltip-content__1g461:after {\n      background-color: #31363a;\n      width: 7px;\n      height: 7px;\n      top: 20px;\n      right: 5px;\n      left: auto;\n      transform: rotate(315deg); }\n  .tooltip_tippy-popper__3A4NM[x-placement='right'] .tooltip_light-theme__3AdwA, .tooltip_tippy-popper__3A4NM[x-placement='right-start'] .tooltip_light-theme__3AdwA, .tooltip_tippy-popper__3A4NM[x-placement='right-end'] .tooltip_light-theme__3AdwA {\n    top: 0 !important;\n    left: 0 !important; }\n    .tooltip_tippy-popper__3A4NM[x-placement='right'] .tooltip_light-theme__3AdwA .tooltip_tippy-tooltip-content__1g461, .tooltip_tippy-popper__3A4NM[x-placement='right-start'] .tooltip_light-theme__3AdwA .tooltip_tippy-tooltip-content__1g461, .tooltip_tippy-popper__3A4NM[x-placement='right-end'] .tooltip_light-theme__3AdwA .tooltip_tippy-tooltip-content__1g461 {\n      margin-left: -4px; }\n      .tooltip_tippy-popper__3A4NM[x-placement='right'] .tooltip_light-theme__3AdwA .tooltip_tippy-tooltip-content__1g461:after, .tooltip_tippy-popper__3A4NM[x-placement='right-start'] .tooltip_light-theme__3AdwA .tooltip_tippy-tooltip-content__1g461:after, .tooltip_tippy-popper__3A4NM[x-placement='right-end'] .tooltip_light-theme__3AdwA .tooltip_tippy-tooltip-content__1g461:after {\n        background-color: #ffffff;\n        width: 7px;\n        height: 7px;\n        top: 19px;\n        right: auto;\n        left: 10px;\n        transform: rotate(133deg); }\n  .tooltip_tippy-popper__3A4NM[x-placement='right'], .tooltip_tippy-popper__3A4NM[x-placement='right-start'], .tooltip_tippy-popper__3A4NM[x-placement='right-end'] {\n    top: 0 !important;\n    left: 0 !important; }\n    .tooltip_tippy-popper__3A4NM[x-placement='right'] .tooltip_dark-theme__2mirF .tooltip_tippy-tooltip-content__1g461, .tooltip_tippy-popper__3A4NM[x-placement='right-start'] .tooltip_dark-theme__2mirF .tooltip_tippy-tooltip-content__1g461, .tooltip_tippy-popper__3A4NM[x-placement='right-end'] .tooltip_dark-theme__2mirF .tooltip_tippy-tooltip-content__1g461 {\n      margin-left: -4px; }\n      .tooltip_tippy-popper__3A4NM[x-placement='right'] .tooltip_dark-theme__2mirF .tooltip_tippy-tooltip-content__1g461:after, .tooltip_tippy-popper__3A4NM[x-placement='right-start'] .tooltip_dark-theme__2mirF .tooltip_tippy-tooltip-content__1g461:after, .tooltip_tippy-popper__3A4NM[x-placement='right-end'] .tooltip_dark-theme__2mirF .tooltip_tippy-tooltip-content__1g461:after {\n        background-color: #31363a;\n        width: 7px;\n        height: 7px;\n        top: 19px;\n        right: auto;\n        left: 10px;\n        transform: rotate(133deg); }\n";
+styleInject(css_248z$A);
 
 const Tooltips = ({
   children,
@@ -1001,7 +1970,7 @@ const Tooltips = ({
 }) => {
   const {
     tooltip
-  } = style$z;
+  } = style$x;
   return /*#__PURE__*/React.createElement("div", {
     className: `${tooltip}`
   }, /*#__PURE__*/React.createElement(Tooltip, {
@@ -1020,9 +1989,9 @@ const Tooltips = ({
   }, children));
 };
 
-var css_248z$B = ".mockup-items-details-module_addMenuItemsDetails__2etZC {\n  display: flex;\n  justify-content: center;\n  align-items: center;\n  flex-direction: column;\n  height: 100%; }\n  .mockup-items-details-module_addMenuItemsDetails__2etZC .mockup-items-details-module_scrollWrapper__2M3tR > :nth-child(3) {\n    width: 4px !important;\n    right: 0 !important; }\n  .mockup-items-details-module_addMenuItemsDetails__2etZC * {\n    box-sizing: border-box;\n    cursor: pointer; }\n  .mockup-items-details-module_addMenuItemsDetails__2etZC .mockup-items-details-module_filterViewWrapper__2AJNu {\n    display: flex;\n    justify-content: space-between;\n    width: 224px; }\n    .mockup-items-details-module_addMenuItemsDetails__2etZC .mockup-items-details-module_filterViewWrapper__2AJNu .mockup-items-details-module_filter__2OzAH {\n      width: 196px;\n      height: 32px;\n      box-sizing: border-box;\n      border-bottom: 1px solid #f5f5f5;\n      display: flex;\n      justify-content: start;\n      align-items: center; }\n      .mockup-items-details-module_addMenuItemsDetails__2etZC .mockup-items-details-module_filterViewWrapper__2AJNu .mockup-items-details-module_filter__2OzAH .mockup-items-details-module_filterItem__2sQx2 {\n        min-width: 46px;\n        height: 24px;\n        display: flex;\n        align-items: center; }\n        .mockup-items-details-module_addMenuItemsDetails__2etZC .mockup-items-details-module_filterViewWrapper__2AJNu .mockup-items-details-module_filter__2OzAH .mockup-items-details-module_filterItem__2sQx2:first-child {\n          margin-right: 16px;\n          margin-left: 8px; }\n        .mockup-items-details-module_addMenuItemsDetails__2etZC .mockup-items-details-module_filterViewWrapper__2AJNu .mockup-items-details-module_filter__2OzAH .mockup-items-details-module_filterItem__2sQx2 label {\n          font-size: 11px;\n          line-height: 32px;\n          border-bottom: 1px solid #f5f5f5; }\n        .mockup-items-details-module_addMenuItemsDetails__2etZC .mockup-items-details-module_filterViewWrapper__2AJNu .mockup-items-details-module_filter__2OzAH .mockup-items-details-module_filterItem__2sQx2.mockup-items-details-module_selected__26YQN label {\n          border-bottom: 1px solid #333333; }\n    .mockup-items-details-module_addMenuItemsDetails__2etZC .mockup-items-details-module_filterViewWrapper__2AJNu .mockup-items-details-module_switchView__1khfD {\n      width: 24px;\n      display: flex;\n      align-items: center;\n      justify-content: center; }\n      .mockup-items-details-module_addMenuItemsDetails__2etZC .mockup-items-details-module_filterViewWrapper__2AJNu .mockup-items-details-module_switchView__1khfD svg {\n        fill: #e8ebed; }\n  .mockup-items-details-module_addMenuItemsDetails__2etZC .mockup-items-details-module_itemsWrapper__3w0ll {\n    width: 224px;\n    margin-top: 8px;\n    display: flex;\n    flex-direction: row;\n    flex-wrap: wrap;\n    justify-content: space-between;\n    align-content: start;\n    height: calc(100% - 46px);\n    padding-bottom: 46px; }\n    .mockup-items-details-module_addMenuItemsDetails__2etZC .mockup-items-details-module_itemsWrapper__3w0ll.mockup-items-details-module_columnReverse__3gm5b {\n      flex-direction: column-reverse; }\n    .mockup-items-details-module_addMenuItemsDetails__2etZC .mockup-items-details-module_itemsWrapper__3w0ll.mockup-items-details-module_rowReverse__3vMhW {\n      flex-direction: row-reverse; }\n    .mockup-items-details-module_addMenuItemsDetails__2etZC .mockup-items-details-module_itemsWrapper__3w0ll > div {\n      justify-self: end; }\n    .mockup-items-details-module_addMenuItemsDetails__2etZC .mockup-items-details-module_itemsWrapper__3w0ll .mockup-items-details-module_thumbnailView__parU8 .mockup-items-details-module_imageBox__3dxDE {\n      width: 72px;\n      height: 72px;\n      border-radius: 8px;\n      background-size: cover;\n      background-position: center;\n      background-color: #ffffff;\n      margin-bottom: 4px; }\n    .mockup-items-details-module_addMenuItemsDetails__2etZC .mockup-items-details-module_itemsWrapper__3w0ll .mockup-items-details-module_listView__1k7Oc {\n      display: flex;\n      width: 224px;\n      height: 56px;\n      background-color: #ffffff;\n      border-radius: 12px;\n      margin-bottom: 8px; }\n      .mockup-items-details-module_addMenuItemsDetails__2etZC .mockup-items-details-module_itemsWrapper__3w0ll .mockup-items-details-module_listView__1k7Oc .mockup-items-details-module_imageBox__3dxDE {\n        width: 52px;\n        height: 52px;\n        border-radius: 8px;\n        background-size: cover;\n        background-position: center;\n        background-color: #ffffff;\n        margin-bottom: 4px; }\n      .mockup-items-details-module_addMenuItemsDetails__2etZC .mockup-items-details-module_itemsWrapper__3w0ll .mockup-items-details-module_listView__1k7Oc .mockup-items-details-module_itemLabel__35Q-y {\n        width: 160px;\n        font-size: 11px;\n        line-height: 16px;\n        color: #31363a;\n        align-self: center; }\n      .mockup-items-details-module_addMenuItemsDetails__2etZC .mockup-items-details-module_itemsWrapper__3w0ll .mockup-items-details-module_listView__1k7Oc:hover {\n        box-shadow: 0px 0.5px 1px rgba(0, 4, 8, 0.12), 0px 8px 16px -8px rgba(0, 4, 8, 0.08); }\n";
-var style$y = {"addMenuItemsDetails":"mockup-items-details-module_addMenuItemsDetails__2etZC","scrollWrapper":"mockup-items-details-module_scrollWrapper__2M3tR","filterViewWrapper":"mockup-items-details-module_filterViewWrapper__2AJNu","filter":"mockup-items-details-module_filter__2OzAH","filterItem":"mockup-items-details-module_filterItem__2sQx2","selected":"mockup-items-details-module_selected__26YQN","switchView":"mockup-items-details-module_switchView__1khfD","itemsWrapper":"mockup-items-details-module_itemsWrapper__3w0ll","columnReverse":"mockup-items-details-module_columnReverse__3gm5b","rowReverse":"mockup-items-details-module_rowReverse__3vMhW","thumbnailView":"mockup-items-details-module_thumbnailView__parU8","imageBox":"mockup-items-details-module_imageBox__3dxDE","listView":"mockup-items-details-module_listView__1k7Oc","itemLabel":"mockup-items-details-module_itemLabel__35Q-y"};
-styleInject(css_248z$B);
+var css_248z$z = ".mockup-items-details-module_addMenuItemsDetails__2etZC {\n  display: flex;\n  justify-content: center;\n  align-items: center;\n  flex-direction: column;\n  height: 100%; }\n  .mockup-items-details-module_addMenuItemsDetails__2etZC .mockup-items-details-module_scrollWrapper__2M3tR > :nth-child(3) {\n    width: 4px !important;\n    right: 0 !important; }\n  .mockup-items-details-module_addMenuItemsDetails__2etZC * {\n    box-sizing: border-box;\n    cursor: pointer; }\n  .mockup-items-details-module_addMenuItemsDetails__2etZC .mockup-items-details-module_filterViewWrapper__2AJNu {\n    display: flex;\n    justify-content: space-between;\n    width: 224px; }\n    .mockup-items-details-module_addMenuItemsDetails__2etZC .mockup-items-details-module_filterViewWrapper__2AJNu .mockup-items-details-module_filter__2OzAH {\n      width: 196px;\n      height: 32px;\n      box-sizing: border-box;\n      border-bottom: 1px solid #f5f5f5;\n      display: flex;\n      justify-content: start;\n      align-items: center; }\n      .mockup-items-details-module_addMenuItemsDetails__2etZC .mockup-items-details-module_filterViewWrapper__2AJNu .mockup-items-details-module_filter__2OzAH .mockup-items-details-module_filterItem__2sQx2 {\n        min-width: 46px;\n        height: 24px;\n        display: flex;\n        align-items: center; }\n        .mockup-items-details-module_addMenuItemsDetails__2etZC .mockup-items-details-module_filterViewWrapper__2AJNu .mockup-items-details-module_filter__2OzAH .mockup-items-details-module_filterItem__2sQx2:first-child {\n          margin-right: 16px;\n          margin-left: 8px; }\n        .mockup-items-details-module_addMenuItemsDetails__2etZC .mockup-items-details-module_filterViewWrapper__2AJNu .mockup-items-details-module_filter__2OzAH .mockup-items-details-module_filterItem__2sQx2 label {\n          font-size: 11px;\n          line-height: 32px;\n          border-bottom: 1px solid #f5f5f5; }\n        .mockup-items-details-module_addMenuItemsDetails__2etZC .mockup-items-details-module_filterViewWrapper__2AJNu .mockup-items-details-module_filter__2OzAH .mockup-items-details-module_filterItem__2sQx2.mockup-items-details-module_selected__26YQN label {\n          border-bottom: 1px solid #333333; }\n    .mockup-items-details-module_addMenuItemsDetails__2etZC .mockup-items-details-module_filterViewWrapper__2AJNu .mockup-items-details-module_switchView__1khfD {\n      width: 24px;\n      display: flex;\n      align-items: center;\n      justify-content: center; }\n      .mockup-items-details-module_addMenuItemsDetails__2etZC .mockup-items-details-module_filterViewWrapper__2AJNu .mockup-items-details-module_switchView__1khfD svg {\n        fill: #e8ebed; }\n  .mockup-items-details-module_addMenuItemsDetails__2etZC .mockup-items-details-module_itemsWrapper__3w0ll {\n    width: 224px;\n    margin-top: 8px;\n    display: flex;\n    flex-direction: row;\n    flex-wrap: wrap;\n    justify-content: space-between;\n    align-content: start;\n    height: calc(100% - 46px);\n    padding-bottom: 46px; }\n    .mockup-items-details-module_addMenuItemsDetails__2etZC .mockup-items-details-module_itemsWrapper__3w0ll.mockup-items-details-module_columnReverse__3gm5b {\n      flex-direction: column-reverse; }\n    .mockup-items-details-module_addMenuItemsDetails__2etZC .mockup-items-details-module_itemsWrapper__3w0ll.mockup-items-details-module_rowReverse__3vMhW {\n      flex-direction: row-reverse; }\n    .mockup-items-details-module_addMenuItemsDetails__2etZC .mockup-items-details-module_itemsWrapper__3w0ll > div {\n      justify-self: end; }\n    .mockup-items-details-module_addMenuItemsDetails__2etZC .mockup-items-details-module_itemsWrapper__3w0ll .mockup-items-details-module_thumbnailView__parU8 .mockup-items-details-module_imageBox__3dxDE {\n      width: 72px;\n      height: 72px;\n      border-radius: 8px;\n      background-size: cover;\n      background-position: center;\n      background-color: #ffffff;\n      margin-bottom: 4px; }\n    .mockup-items-details-module_addMenuItemsDetails__2etZC .mockup-items-details-module_itemsWrapper__3w0ll .mockup-items-details-module_listView__1k7Oc {\n      display: flex;\n      width: 224px;\n      height: 56px;\n      background-color: #ffffff;\n      border-radius: 12px;\n      margin-bottom: 8px; }\n      .mockup-items-details-module_addMenuItemsDetails__2etZC .mockup-items-details-module_itemsWrapper__3w0ll .mockup-items-details-module_listView__1k7Oc .mockup-items-details-module_imageBox__3dxDE {\n        width: 52px;\n        height: 52px;\n        border-radius: 8px;\n        background-size: cover;\n        background-position: center;\n        background-color: #ffffff;\n        margin-bottom: 4px; }\n      .mockup-items-details-module_addMenuItemsDetails__2etZC .mockup-items-details-module_itemsWrapper__3w0ll .mockup-items-details-module_listView__1k7Oc .mockup-items-details-module_itemLabel__35Q-y {\n        width: 160px;\n        font-size: 11px;\n        line-height: 16px;\n        color: #31363a;\n        align-self: center; }\n      .mockup-items-details-module_addMenuItemsDetails__2etZC .mockup-items-details-module_itemsWrapper__3w0ll .mockup-items-details-module_listView__1k7Oc:hover {\n        box-shadow: 0px 0.5px 1px rgba(0, 4, 8, 0.12), 0px 8px 16px -8px rgba(0, 4, 8, 0.08); }\n";
+var style$w = {"addMenuItemsDetails":"mockup-items-details-module_addMenuItemsDetails__2etZC","scrollWrapper":"mockup-items-details-module_scrollWrapper__2M3tR","filterViewWrapper":"mockup-items-details-module_filterViewWrapper__2AJNu","filter":"mockup-items-details-module_filter__2OzAH","filterItem":"mockup-items-details-module_filterItem__2sQx2","selected":"mockup-items-details-module_selected__26YQN","switchView":"mockup-items-details-module_switchView__1khfD","itemsWrapper":"mockup-items-details-module_itemsWrapper__3w0ll","columnReverse":"mockup-items-details-module_columnReverse__3gm5b","rowReverse":"mockup-items-details-module_rowReverse__3vMhW","thumbnailView":"mockup-items-details-module_thumbnailView__parU8","imageBox":"mockup-items-details-module_imageBox__3dxDE","listView":"mockup-items-details-module_listView__1k7Oc","itemLabel":"mockup-items-details-module_itemLabel__35Q-y"};
+styleInject(css_248z$z);
 
 const MockupItemsDetails = ({
   items = [],
@@ -1042,7 +2011,7 @@ const MockupItemsDetails = ({
     listView,
     itemLabel,
     scrollWrapper
-  } = style$y;
+  } = style$w;
   const [viewSwitch, setViewSwitch] = useState(true);
   const [topFrontFilter, setTopFrontFilter] = useState('top');
   return /*#__PURE__*/React$1.createElement("div", {
@@ -1052,10 +2021,10 @@ const MockupItemsDetails = ({
   }, /*#__PURE__*/React$1.createElement("div", {
     className: filter
   }, /*#__PURE__*/React$1.createElement("div", {
-    className: `${filterItem} ${topFrontFilter === 'top' ? style$y['selected'] : ''}`,
+    className: `${filterItem} ${topFrontFilter === 'top' ? style$w['selected'] : ''}`,
     onClick: () => setTopFrontFilter('top')
   }, /*#__PURE__*/React$1.createElement("label", null, "Top View")), /*#__PURE__*/React$1.createElement("div", {
-    className: `${filterItem} ${topFrontFilter === 'front' ? style$y['selected'] : ''}`,
+    className: `${filterItem} ${topFrontFilter === 'front' ? style$w['selected'] : ''}`,
     onClick: () => setTopFrontFilter('front')
   }, /*#__PURE__*/React$1.createElement("label", null, "Front View"))), /*#__PURE__*/React$1.createElement("div", {
     className: switchView
@@ -1063,11 +2032,11 @@ const MockupItemsDetails = ({
     size: "small",
     type: "secondary",
     onClick: () => setViewSwitch(false)
-  }, /*#__PURE__*/React$1.createElement(ListIcon, null)) : /*#__PURE__*/React$1.createElement(IconButton, {
+  }, /*#__PURE__*/React$1.createElement(ListIcon$1, null)) : /*#__PURE__*/React$1.createElement(IconButton, {
     size: "small",
     type: "secondary",
     onClick: () => setViewSwitch(true)
-  }, /*#__PURE__*/React$1.createElement(ThumbnailIcon, {
+  }, /*#__PURE__*/React$1.createElement(ThumbnailIcon$1, {
     onClick: () => setViewSwitch(true)
   })))), /*#__PURE__*/React$1.createElement(Scrollbars, {
     autoHide: true,
@@ -1101,9 +2070,9 @@ const MockupItemsDetails = ({
   }, /*#__PURE__*/React$1.createElement("label", null, menuItem.label)))))));
 };
 
-var css_248z$A = ".mockup-items-module_mockupItems__1_owu {\n  align-items: center;\n  justify-content: center;\n  display: flex;\n  height: 56px; }\n  .mockup-items-module_mockupItems__1_owu * {\n    user-select: none;\n    font-family: Aktiv Grotesk, sans-serif;\n    box-sizing: border-box;\n    cursor: pointer; }\n  .mockup-items-module_mockupItems__1_owu .mockup-items-module_row__o7FAT {\n    width: 224px;\n    height: 48px;\n    display: flex;\n    box-sizing: border-box;\n    align-items: center;\n    justify-content: left;\n    padding-bottom: 8px;\n    border-bottom: 1px solid #f5f5f5;\n    background-color: #ffffff;\n    margin-bottom: 8px;\n    cursor: pointer; }\n    .mockup-items-module_mockupItems__1_owu .mockup-items-module_row__o7FAT .mockup-items-module_mockupImage__4U-PT {\n      margin-right: 8px;\n      height: 40px;\n      width: 40px;\n      cursor: pointer;\n      background-size: cover;\n      background-position: center;\n      background-color: #ffffff; }\n    .mockup-items-module_mockupItems__1_owu .mockup-items-module_row__o7FAT .mockup-items-module_titleTagWrapper__l745z {\n      width: 170px; }\n      .mockup-items-module_mockupItems__1_owu .mockup-items-module_row__o7FAT .mockup-items-module_titleTagWrapper__l745z .mockup-items-module_titleWrapper__hl5ql {\n        width: 170px;\n        display: flex;\n        justify-content: space-between; }\n        .mockup-items-module_mockupItems__1_owu .mockup-items-module_row__o7FAT .mockup-items-module_titleTagWrapper__l745z .mockup-items-module_titleWrapper__hl5ql label {\n          font-size: 11px;\n          line-height: 16px;\n          font-weight: 600;\n          cursor: pointer;\n          user-select: none;\n          margin-bottom: 4px; }\n        .mockup-items-module_mockupItems__1_owu .mockup-items-module_row__o7FAT .mockup-items-module_titleTagWrapper__l745z .mockup-items-module_titleWrapper__hl5ql .mockup-items-module_svgBox__f2-Bw {\n          width: 16px;\n          height: 16px;\n          display: flex;\n          justify-content: center;\n          align-items: center;\n          opacity: 0;\n          transition: opacity .2s; }\n          .mockup-items-module_mockupItems__1_owu .mockup-items-module_row__o7FAT .mockup-items-module_titleTagWrapper__l745z .mockup-items-module_titleWrapper__hl5ql .mockup-items-module_svgBox__f2-Bw svg path {\n            stroke: #000408; }\n      .mockup-items-module_mockupItems__1_owu .mockup-items-module_row__o7FAT .mockup-items-module_titleTagWrapper__l745z .mockup-items-module_tag__11KIh {\n        width: 160px;\n        height: 16px;\n        font-size: 11px;\n        line-height: 16px;\n        color: #b6babd;\n        display: inline-block;\n        white-space: nowrap;\n        overflow: hidden;\n        text-overflow: ellipsis; }\n    .mockup-items-module_mockupItems__1_owu .mockup-items-module_row__o7FAT:hover .mockup-items-module_titleTagWrapper__l745z .mockup-items-module_titleWrapper__hl5ql .mockup-items-module_svgBox__f2-Bw {\n      opacity: 1; }\n";
-var style$x = {"mockupItems":"mockup-items-module_mockupItems__1_owu","row":"mockup-items-module_row__o7FAT","mockupImage":"mockup-items-module_mockupImage__4U-PT","titleTagWrapper":"mockup-items-module_titleTagWrapper__l745z","titleWrapper":"mockup-items-module_titleWrapper__hl5ql","svgBox":"mockup-items-module_svgBox__f2-Bw","tag":"mockup-items-module_tag__11KIh"};
-styleInject(css_248z$A);
+var css_248z$y = ".mockup-items-module_mockupItems__1_owu {\n  align-items: center;\n  justify-content: center;\n  display: flex;\n  height: 56px; }\n  .mockup-items-module_mockupItems__1_owu * {\n    user-select: none;\n    font-family: Aktiv Grotesk, sans-serif;\n    box-sizing: border-box;\n    cursor: pointer; }\n  .mockup-items-module_mockupItems__1_owu .mockup-items-module_row__o7FAT {\n    width: 224px;\n    height: 48px;\n    display: flex;\n    box-sizing: border-box;\n    align-items: center;\n    justify-content: left;\n    padding-bottom: 8px;\n    border-bottom: 1px solid #f5f5f5;\n    background-color: #ffffff;\n    margin-bottom: 8px;\n    cursor: pointer; }\n    .mockup-items-module_mockupItems__1_owu .mockup-items-module_row__o7FAT .mockup-items-module_mockupImage__4U-PT {\n      margin-right: 8px;\n      height: 40px;\n      width: 40px;\n      cursor: pointer;\n      background-size: cover;\n      background-position: center;\n      background-color: #ffffff; }\n    .mockup-items-module_mockupItems__1_owu .mockup-items-module_row__o7FAT .mockup-items-module_titleTagWrapper__l745z {\n      width: 170px; }\n      .mockup-items-module_mockupItems__1_owu .mockup-items-module_row__o7FAT .mockup-items-module_titleTagWrapper__l745z .mockup-items-module_titleWrapper__hl5ql {\n        width: 170px;\n        display: flex;\n        justify-content: space-between; }\n        .mockup-items-module_mockupItems__1_owu .mockup-items-module_row__o7FAT .mockup-items-module_titleTagWrapper__l745z .mockup-items-module_titleWrapper__hl5ql label {\n          font-size: 11px;\n          line-height: 16px;\n          font-weight: 600;\n          cursor: pointer;\n          user-select: none;\n          margin-bottom: 4px; }\n        .mockup-items-module_mockupItems__1_owu .mockup-items-module_row__o7FAT .mockup-items-module_titleTagWrapper__l745z .mockup-items-module_titleWrapper__hl5ql .mockup-items-module_svgBox__f2-Bw {\n          width: 16px;\n          height: 16px;\n          display: flex;\n          justify-content: center;\n          align-items: center;\n          opacity: 0;\n          transition: opacity .2s; }\n          .mockup-items-module_mockupItems__1_owu .mockup-items-module_row__o7FAT .mockup-items-module_titleTagWrapper__l745z .mockup-items-module_titleWrapper__hl5ql .mockup-items-module_svgBox__f2-Bw svg path {\n            stroke: #000408; }\n      .mockup-items-module_mockupItems__1_owu .mockup-items-module_row__o7FAT .mockup-items-module_titleTagWrapper__l745z .mockup-items-module_tag__11KIh {\n        width: 160px;\n        height: 16px;\n        font-size: 11px;\n        line-height: 16px;\n        color: #b6babd;\n        display: inline-block;\n        white-space: nowrap;\n        overflow: hidden;\n        text-overflow: ellipsis; }\n    .mockup-items-module_mockupItems__1_owu .mockup-items-module_row__o7FAT:hover .mockup-items-module_titleTagWrapper__l745z .mockup-items-module_titleWrapper__hl5ql .mockup-items-module_svgBox__f2-Bw {\n      opacity: 1; }\n";
+var style$v = {"mockupItems":"mockup-items-module_mockupItems__1_owu","row":"mockup-items-module_row__o7FAT","mockupImage":"mockup-items-module_mockupImage__4U-PT","titleTagWrapper":"mockup-items-module_titleTagWrapper__l745z","titleWrapper":"mockup-items-module_titleWrapper__hl5ql","svgBox":"mockup-items-module_svgBox__f2-Bw","tag":"mockup-items-module_tag__11KIh"};
+styleInject(css_248z$y);
 
 const MockupItems = ({
   item,
@@ -1117,7 +2086,7 @@ const MockupItems = ({
     titleWrapper,
     svgBox,
     tag
-  } = style$x;
+  } = style$v;
   const {
     label,
     tags,
@@ -1140,14 +2109,14 @@ const MockupItems = ({
     className: titleWrapper
   }, /*#__PURE__*/React$1.createElement("label", null, label), /*#__PURE__*/React$1.createElement("div", {
     className: svgBox
-  }, /*#__PURE__*/React$1.createElement(ArrowRightSecondIcon, null))), /*#__PURE__*/React$1.createElement("div", {
+  }, /*#__PURE__*/React$1.createElement(ArrowRightSecondIcon$1, null))), /*#__PURE__*/React$1.createElement("div", {
     className: tag
   }, tags))));
 };
 
-var css_248z$z = ".mockup-module_scrollWrapper__2lJx_ > :nth-child(3) {\n  width: 4px !important;\n  right: 0 !important; }\n\n.mockup-module_mockup__39iKm {\n  align-items: center;\n  box-sizing: border-box;\n  padding: 8px;\n  padding-bottom: 46px;\n  width: 240px; }\n  .mockup-module_mockup__39iKm * {\n    font-family: Aktiv Grotesk, sans-serif;\n    box-sizing: border-box; }\n  .mockup-module_mockup__39iKm .mockup-module_header__2mnD6 {\n    width: 224px;\n    height: 32px;\n    align-items: center;\n    justify-content: space-between; }\n";
-var style$w = {"scrollWrapper":"mockup-module_scrollWrapper__2lJx_","mockup":"mockup-module_mockup__39iKm","header":"mockup-module_header__2mnD6"};
-styleInject(css_248z$z);
+var css_248z$x = ".mockup-module_scrollWrapper__2lJx_ > :nth-child(3) {\n  width: 4px !important;\n  right: 0 !important; }\n\n.mockup-module_mockup__39iKm {\n  align-items: center;\n  box-sizing: border-box;\n  padding: 8px;\n  padding-bottom: 46px;\n  width: 240px; }\n  .mockup-module_mockup__39iKm * {\n    font-family: Aktiv Grotesk, sans-serif;\n    box-sizing: border-box; }\n  .mockup-module_mockup__39iKm .mockup-module_header__2mnD6 {\n    width: 224px;\n    height: 32px;\n    align-items: center;\n    justify-content: space-between; }\n";
+var style$u = {"scrollWrapper":"mockup-module_scrollWrapper__2lJx_","mockup":"mockup-module_mockup__39iKm","header":"mockup-module_header__2mnD6"};
+styleInject(css_248z$x);
 
 /* eslint-disable react-hooks/exhaustive-deps */
 const mockupItemsData = [{
@@ -1551,7 +2520,7 @@ const Mockup = ({
 }) => {
   const {
     mockupItems
-  } = style$w;
+  } = style$u;
   const [mockupItemsDetails, setMockupItemsDetails] = useState(null);
 
   const clickOnMockupItem = mockupName => {
@@ -1593,7 +2562,7 @@ const Wrapper = ({
   const {
     scrollWrapper,
     mockup
-  } = style$w;
+  } = style$u;
   return /*#__PURE__*/React$1.createElement(Scrollbars, {
     autoHide: true,
     style: {
@@ -1605,9 +2574,9 @@ const Wrapper = ({
   }, children));
 };
 
-var css_248z$y = ".filters-module_filters__3U1DQ {\n  align-items: center;\n  justify-content: center;\n  display: flex; }\n  .filters-module_filters__3U1DQ * {\n    user-select: none;\n    font-family: Aktiv Grotesk, sans-serif;\n    box-sizing: border-box;\n    cursor: pointer; }\n  .filters-module_filters__3U1DQ .filters-module_filterWrapper__14VNm {\n    width: 224px;\n    display: flex;\n    justify-content: space-between;\n    flex-wrap: wrap; }\n    .filters-module_filters__3U1DQ .filters-module_filterWrapper__14VNm .filters-module_imageWrapper__3_W5I .filters-module_image__2ipTF {\n      width: 110px;\n      height: 110px;\n      background-size: cover;\n      background-position: center;\n      background-color: #ffffff;\n      border-radius: 8px;\n      margin-bottom: 4px; }\n      .filters-module_filters__3U1DQ .filters-module_filterWrapper__14VNm .filters-module_imageWrapper__3_W5I .filters-module_image__2ipTF:hover {\n        box-shadow: 0px 0.5px 1px rgba(0, 4, 8, 0.12), 0px 8px 16px -8px rgba(0, 4, 8, 0.08); }\n";
-var style$v = {"filters":"filters-module_filters__3U1DQ","filterWrapper":"filters-module_filterWrapper__14VNm","imageWrapper":"filters-module_imageWrapper__3_W5I","image":"filters-module_image__2ipTF"};
-styleInject(css_248z$y);
+var css_248z$w = ".filters-module_filters__3U1DQ {\n  align-items: center;\n  justify-content: center;\n  display: flex; }\n  .filters-module_filters__3U1DQ * {\n    user-select: none;\n    font-family: Aktiv Grotesk, sans-serif;\n    box-sizing: border-box;\n    cursor: pointer; }\n  .filters-module_filters__3U1DQ .filters-module_filterWrapper__14VNm {\n    width: 224px;\n    display: flex;\n    justify-content: space-between;\n    flex-wrap: wrap; }\n    .filters-module_filters__3U1DQ .filters-module_filterWrapper__14VNm .filters-module_imageWrapper__3_W5I .filters-module_image__2ipTF {\n      width: 110px;\n      height: 110px;\n      background-size: cover;\n      background-position: center;\n      background-color: #ffffff;\n      border-radius: 8px;\n      margin-bottom: 4px; }\n      .filters-module_filters__3U1DQ .filters-module_filterWrapper__14VNm .filters-module_imageWrapper__3_W5I .filters-module_image__2ipTF:hover {\n        box-shadow: 0px 0.5px 1px rgba(0, 4, 8, 0.12), 0px 8px 16px -8px rgba(0, 4, 8, 0.08); }\n";
+var style$t = {"filters":"filters-module_filters__3U1DQ","filterWrapper":"filters-module_filterWrapper__14VNm","imageWrapper":"filters-module_imageWrapper__3_W5I","image":"filters-module_image__2ipTF"};
+styleInject(css_248z$w);
 
 const items$1 = [{
   id: getUnique(),
@@ -1651,7 +2620,7 @@ const Filters = ({
     filterWrapper,
     image,
     imageWrapper
-  } = style$v;
+  } = style$t;
   return /*#__PURE__*/React$1.createElement(React$1.Fragment, null, activeMenu.action === 'filters' && /*#__PURE__*/React$1.createElement("div", {
     className: filters
   }, /*#__PURE__*/React$1.createElement("div", {
@@ -1668,25 +2637,9 @@ const Filters = ({
   }))))));
 };
 
-const PlusIcon = ({
-  width = 11,
-  height = 11
-}) => {
-  return /*#__PURE__*/React$1.createElement("svg", {
-    width: width,
-    height: height,
-    viewBox: `0 0 11 11`
-  }, /*#__PURE__*/React$1.createElement("path", {
-    fillRule: "evenodd",
-    clipRule: "evenodd",
-    d: "M6 0.5C6 0.223858 5.77614 0 5.5 0C5.22386 0 5 0.223858 5 0.5V5L0.5 5C0.223858 5 0 5.22386 0 5.5C0 5.77614 0.223858 6 0.5 6L5 6V10.5C5 10.7761 5.22386 11 5.5 11C5.77614 11 6 10.7761 6 10.5V6L10.5 6C10.7761 6 11 5.77614 11 5.5C11 5.22386 10.7761 5 10.5 5L6 5V0.5Z",
-    fillOpacity: "0.8"
-  }));
-};
-
-var css_248z$x = ".artboard-items-module_artboardsItems__1VFrx {\n  display: flex;\n  flex-direction: column; }\n  .artboard-items-module_artboardsItems__1VFrx * {\n    user-select: none;\n    font-family: Aktiv Grotesk, sans-serif;\n    box-sizing: border-box;\n    cursor: pointer; }\n  .artboard-items-module_artboardsItems__1VFrx .artboard-items-module_row__1HHnp {\n    width: 224px; }\n    .artboard-items-module_artboardsItems__1VFrx .artboard-items-module_row__1HHnp .artboard-items-module_titleRow__pu9ch {\n      min-height: 32px;\n      display: flex;\n      align-items: center;\n      font-size: 11px;\n      font-weight: 600; }\n      .artboard-items-module_artboardsItems__1VFrx .artboard-items-module_row__1HHnp .artboard-items-module_titleRow__pu9ch .artboard-items-module_svgBox__1BKTh {\n        width: 12px;\n        height: 12px;\n        display: flex;\n        justify-content: center;\n        align-items: center;\n        margin-right: 4px; }\n        .artboard-items-module_artboardsItems__1VFrx .artboard-items-module_row__1HHnp .artboard-items-module_titleRow__pu9ch .artboard-items-module_svgBox__1BKTh svg path {\n          stroke: #000408; }\n    .artboard-items-module_artboardsItems__1VFrx .artboard-items-module_row__1HHnp .artboard-items-module_itemDetails__2TrrQ {\n      display: none; }\n      .artboard-items-module_artboardsItems__1VFrx .artboard-items-module_row__1HHnp .artboard-items-module_itemDetails__2TrrQ .artboard-items-module_textStyleWrapper__1a3F6 {\n        display: flex;\n        flex-direction: column; }\n        .artboard-items-module_artboardsItems__1VFrx .artboard-items-module_row__1HHnp .artboard-items-module_itemDetails__2TrrQ .artboard-items-module_textStyleWrapper__1a3F6 .artboard-items-module_textStyleItem__17GFJ {\n          background-color: #f5f5f5;\n          border-radius: 8px;\n          width: 224px;\n          padding: 8px;\n          font-size: 11px;\n          color: #999999;\n          margin-bottom: 8px; }\n          .artboard-items-module_artboardsItems__1VFrx .artboard-items-module_row__1HHnp .artboard-items-module_itemDetails__2TrrQ .artboard-items-module_textStyleWrapper__1a3F6 .artboard-items-module_textStyleItem__17GFJ label {\n            display: flex;\n            justify-content: space-between; }\n          .artboard-items-module_artboardsItems__1VFrx .artboard-items-module_row__1HHnp .artboard-items-module_itemDetails__2TrrQ .artboard-items-module_textStyleWrapper__1a3F6 .artboard-items-module_textStyleItem__17GFJ h1 {\n            color: #000408;\n            padding: 0;\n            margin: 8px 0 0 0;\n            overflow: hidden; }\n          .artboard-items-module_artboardsItems__1VFrx .artboard-items-module_row__1HHnp .artboard-items-module_itemDetails__2TrrQ .artboard-items-module_textStyleWrapper__1a3F6 .artboard-items-module_textStyleItem__17GFJ:hover {\n            box-shadow: 0px 0.5px 1px rgba(0, 4, 8, 0.12), 0px 8px 16px -8px rgba(0, 4, 8, 0.08); }\n        .artboard-items-module_artboardsItems__1VFrx .artboard-items-module_row__1HHnp .artboard-items-module_itemDetails__2TrrQ .artboard-items-module_textStyleWrapper__1a3F6 .artboard-items-module_uploadNewFont__1IGP4 {\n          width: 224px;\n          height: 24px;\n          display: flex;\n          justify-content: space-between;\n          padding: 4px 8px; }\n          .artboard-items-module_artboardsItems__1VFrx .artboard-items-module_row__1HHnp .artboard-items-module_itemDetails__2TrrQ .artboard-items-module_textStyleWrapper__1a3F6 .artboard-items-module_uploadNewFont__1IGP4 span {\n            font-size: 11px;\n            color: #3399ff; }\n          .artboard-items-module_artboardsItems__1VFrx .artboard-items-module_row__1HHnp .artboard-items-module_itemDetails__2TrrQ .artboard-items-module_textStyleWrapper__1a3F6 .artboard-items-module_uploadNewFont__1IGP4 .artboard-items-module_svgBox__1BKTh {\n            width: 12px;\n            height: 12px;\n            display: flex;\n            justify-content: center;\n            align-items: center;\n            margin-right: 4px; }\n            .artboard-items-module_artboardsItems__1VFrx .artboard-items-module_row__1HHnp .artboard-items-module_itemDetails__2TrrQ .artboard-items-module_textStyleWrapper__1a3F6 .artboard-items-module_uploadNewFont__1IGP4 .artboard-items-module_svgBox__1BKTh svg {\n              fill: #3399ff; }\n    .artboard-items-module_artboardsItems__1VFrx .artboard-items-module_row__1HHnp.artboard-items-module_collapse__xrIAK .artboard-items-module_itemDetails__2TrrQ {\n      display: flex; }\n    .artboard-items-module_artboardsItems__1VFrx .artboard-items-module_row__1HHnp.artboard-items-module_collapse__xrIAK .artboard-items-module_titleRow__pu9ch .artboard-items-module_svgBox__1BKTh {\n      transform: rotate(90deg); }\n";
-var style$u = {"artboardsItems":"artboard-items-module_artboardsItems__1VFrx","row":"artboard-items-module_row__1HHnp","titleRow":"artboard-items-module_titleRow__pu9ch","svgBox":"artboard-items-module_svgBox__1BKTh","itemDetails":"artboard-items-module_itemDetails__2TrrQ","textStyleWrapper":"artboard-items-module_textStyleWrapper__1a3F6","textStyleItem":"artboard-items-module_textStyleItem__17GFJ","uploadNewFont":"artboard-items-module_uploadNewFont__1IGP4","collapse":"artboard-items-module_collapse__xrIAK"};
-styleInject(css_248z$x);
+var css_248z$v = ".artboard-items-module_artboardsItems__1VFrx {\n  display: flex;\n  flex-direction: column; }\n  .artboard-items-module_artboardsItems__1VFrx * {\n    user-select: none;\n    font-family: Aktiv Grotesk, sans-serif;\n    box-sizing: border-box;\n    cursor: pointer; }\n  .artboard-items-module_artboardsItems__1VFrx .artboard-items-module_row__1HHnp {\n    width: 224px; }\n    .artboard-items-module_artboardsItems__1VFrx .artboard-items-module_row__1HHnp .artboard-items-module_titleRow__pu9ch {\n      min-height: 32px;\n      display: flex;\n      align-items: center;\n      font-size: 11px;\n      font-weight: 600; }\n      .artboard-items-module_artboardsItems__1VFrx .artboard-items-module_row__1HHnp .artboard-items-module_titleRow__pu9ch .artboard-items-module_svgBox__1BKTh {\n        width: 12px;\n        height: 12px;\n        display: flex;\n        justify-content: center;\n        align-items: center;\n        margin-right: 4px; }\n        .artboard-items-module_artboardsItems__1VFrx .artboard-items-module_row__1HHnp .artboard-items-module_titleRow__pu9ch .artboard-items-module_svgBox__1BKTh svg path {\n          stroke: #000408; }\n    .artboard-items-module_artboardsItems__1VFrx .artboard-items-module_row__1HHnp .artboard-items-module_itemDetails__2TrrQ {\n      display: none; }\n      .artboard-items-module_artboardsItems__1VFrx .artboard-items-module_row__1HHnp .artboard-items-module_itemDetails__2TrrQ .artboard-items-module_textStyleWrapper__1a3F6 {\n        display: flex;\n        flex-direction: column; }\n        .artboard-items-module_artboardsItems__1VFrx .artboard-items-module_row__1HHnp .artboard-items-module_itemDetails__2TrrQ .artboard-items-module_textStyleWrapper__1a3F6 .artboard-items-module_textStyleItem__17GFJ {\n          background-color: #f5f5f5;\n          border-radius: 8px;\n          width: 224px;\n          padding: 8px;\n          font-size: 11px;\n          color: #999999;\n          margin-bottom: 8px; }\n          .artboard-items-module_artboardsItems__1VFrx .artboard-items-module_row__1HHnp .artboard-items-module_itemDetails__2TrrQ .artboard-items-module_textStyleWrapper__1a3F6 .artboard-items-module_textStyleItem__17GFJ label {\n            display: flex;\n            justify-content: space-between; }\n          .artboard-items-module_artboardsItems__1VFrx .artboard-items-module_row__1HHnp .artboard-items-module_itemDetails__2TrrQ .artboard-items-module_textStyleWrapper__1a3F6 .artboard-items-module_textStyleItem__17GFJ h1 {\n            color: #000408;\n            padding: 0;\n            margin: 8px 0 0 0;\n            overflow: hidden; }\n          .artboard-items-module_artboardsItems__1VFrx .artboard-items-module_row__1HHnp .artboard-items-module_itemDetails__2TrrQ .artboard-items-module_textStyleWrapper__1a3F6 .artboard-items-module_textStyleItem__17GFJ:hover {\n            box-shadow: 0px 0.5px 1px rgba(0, 4, 8, 0.12), 0px 8px 16px -8px rgba(0, 4, 8, 0.08); }\n        .artboard-items-module_artboardsItems__1VFrx .artboard-items-module_row__1HHnp .artboard-items-module_itemDetails__2TrrQ .artboard-items-module_textStyleWrapper__1a3F6 .artboard-items-module_uploadNewFont__1IGP4 {\n          width: 224px;\n          height: 24px;\n          display: flex;\n          justify-content: space-between;\n          padding: 4px 8px; }\n          .artboard-items-module_artboardsItems__1VFrx .artboard-items-module_row__1HHnp .artboard-items-module_itemDetails__2TrrQ .artboard-items-module_textStyleWrapper__1a3F6 .artboard-items-module_uploadNewFont__1IGP4 span {\n            font-size: 11px;\n            color: #3399ff; }\n          .artboard-items-module_artboardsItems__1VFrx .artboard-items-module_row__1HHnp .artboard-items-module_itemDetails__2TrrQ .artboard-items-module_textStyleWrapper__1a3F6 .artboard-items-module_uploadNewFont__1IGP4 .artboard-items-module_svgBox__1BKTh {\n            width: 12px;\n            height: 12px;\n            display: flex;\n            justify-content: center;\n            align-items: center;\n            margin-right: 4px; }\n            .artboard-items-module_artboardsItems__1VFrx .artboard-items-module_row__1HHnp .artboard-items-module_itemDetails__2TrrQ .artboard-items-module_textStyleWrapper__1a3F6 .artboard-items-module_uploadNewFont__1IGP4 .artboard-items-module_svgBox__1BKTh svg {\n              fill: #3399ff; }\n    .artboard-items-module_artboardsItems__1VFrx .artboard-items-module_row__1HHnp.artboard-items-module_collapse__xrIAK .artboard-items-module_itemDetails__2TrrQ {\n      display: flex; }\n    .artboard-items-module_artboardsItems__1VFrx .artboard-items-module_row__1HHnp.artboard-items-module_collapse__xrIAK .artboard-items-module_titleRow__pu9ch .artboard-items-module_svgBox__1BKTh {\n      transform: rotate(90deg); }\n";
+var style$s = {"artboardsItems":"artboard-items-module_artboardsItems__1VFrx","row":"artboard-items-module_row__1HHnp","titleRow":"artboard-items-module_titleRow__pu9ch","svgBox":"artboard-items-module_svgBox__1BKTh","itemDetails":"artboard-items-module_itemDetails__2TrrQ","textStyleWrapper":"artboard-items-module_textStyleWrapper__1a3F6","textStyleItem":"artboard-items-module_textStyleItem__17GFJ","uploadNewFont":"artboard-items-module_uploadNewFont__1IGP4","collapse":"artboard-items-module_collapse__xrIAK"};
+styleInject(css_248z$v);
 
 const items = [{
   id: getUnique(),
@@ -1745,7 +2698,7 @@ const ArtboardsItems = ({
 }) => {
   const {
     artboardsItems
-  } = style$u;
+  } = style$s;
   return /*#__PURE__*/React$1.createElement(React$1.Fragment, null, activeMenu.action === 'artboard' && /*#__PURE__*/React$1.createElement("div", {
     className: artboardsItems
   }, items.map((item, key) => /*#__PURE__*/React$1.createElement(Row, {
@@ -1766,7 +2719,7 @@ const Row = ({
     svgBox,
     itemDetails,
     collapse
-  } = style$u;
+  } = style$s;
   const [isCollapse, setIsCollapse] = useState(false);
   return /*#__PURE__*/React$1.createElement(React$1.Fragment, null, /*#__PURE__*/React$1.createElement("div", {
     key: key,
@@ -1776,7 +2729,7 @@ const Row = ({
     onClick: () => setIsCollapse(!isCollapse)
   }, /*#__PURE__*/React$1.createElement("div", {
     className: svgBox
-  }, /*#__PURE__*/React$1.createElement(ArrowRightSecondIcon, null)), /*#__PURE__*/React$1.createElement("label", {
+  }, /*#__PURE__*/React$1.createElement(ArrowRightSecondIcon$1, null)), /*#__PURE__*/React$1.createElement("label", {
     onClick: () => onClick(item)
   }, item.label)), /*#__PURE__*/React$1.createElement("div", {
     className: itemDetails
@@ -1798,7 +2751,7 @@ const TextStyle = ({
     textStyleItem,
     uploadNewFont,
     svgBox
-  } = style$u;
+  } = style$s;
   return /*#__PURE__*/React$1.createElement("div", {
     key: key,
     className: textStyleWrapper
@@ -1826,12 +2779,12 @@ const TextStyle = ({
     className: uploadNewFont
   }, /*#__PURE__*/React$1.createElement("span", null, "Upload New Font"), /*#__PURE__*/React$1.createElement("div", {
     className: svgBox
-  }, /*#__PURE__*/React$1.createElement(PlusIcon, null))));
+  }, /*#__PURE__*/React$1.createElement(PlusIcon$1, null))));
 };
 
-var css_248z$w = ".add-menu-module_addMenu__2M05g {\n  width: 240px;\n  height: 100%;\n  display: flex;\n  flex-direction: column;\n  align-items: center;\n  justify-content: flex-start;\n  box-sizing: border-box;\n  padding-top: 4px;\n  padding-bottom: 46px;\n  background: #ffffff;\n  position: absolute;\n  left: 40px;\n  top: 40px;\n  border-top: 1px solid #ebebeb;\n  border-left: 1px solid #ebebeb;\n  z-index: 1; }\n  .add-menu-module_addMenu__2M05g * {\n    font-family: Aktiv Grotesk, sans-serif;\n    user-select: none; }\n  .add-menu-module_addMenu__2M05g .add-menu-module_header__3oQxK {\n    width: 224px;\n    height: 32px;\n    display: flex;\n    box-sizing: border-box;\n    align-items: center;\n    justify-content: space-between;\n    margin-bottom: 4px; }\n    .add-menu-module_addMenu__2M05g .add-menu-module_header__3oQxK .add-menu-module_text__k_8Tc {\n      width: 208px;\n      height: 32px;\n      font-family: Aktiv Grotesk, sans-serif;\n      box-sizing: border-box;\n      font-size: 12px;\n      line-height: 24px;\n      font-weight: 600;\n      display: flex;\n      align-items: center;\n      padding-left: 8px;\n      cursor: text; }\n      .add-menu-module_addMenu__2M05g .add-menu-module_header__3oQxK .add-menu-module_text__k_8Tc.add-menu-module_purple__2rg-K {\n        color: #b555e5; }\n      .add-menu-module_addMenu__2M05g .add-menu-module_header__3oQxK .add-menu-module_text__k_8Tc.add-menu-module_black__1VxTk {\n        color: #31363a; }\n    .add-menu-module_addMenu__2M05g .add-menu-module_header__3oQxK .add-menu-module_searchInput__2WcVW {\n      border: 0;\n      outline: 0;\n      padding: 8px;\n      width: 100%; }\n    .add-menu-module_addMenu__2M05g .add-menu-module_header__3oQxK .add-menu-module_backBtn__3w2eo {\n      height: 32px;\n      width: 32px;\n      display: flex;\n      align-items: center;\n      justify-content: center;\n      cursor: pointer; }\n    .add-menu-module_addMenu__2M05g .add-menu-module_header__3oQxK .add-menu-module_btnAction__pwV_Y {\n      display: flex; }\n      .add-menu-module_addMenu__2M05g .add-menu-module_header__3oQxK .add-menu-module_btnAction__pwV_Y .add-menu-module_crossIcon__2lBjS svg path {\n        stroke: #31363a; }\n      .add-menu-module_addMenu__2M05g .add-menu-module_header__3oQxK .add-menu-module_btnAction__pwV_Y .add-menu-module_searchIcon__2D017 svg path {\n        fill: #31363a; }\n    .add-menu-module_addMenu__2M05g .add-menu-module_header__3oQxK [type='text']:focus,\n    .add-menu-module_addMenu__2M05g .add-menu-module_header__3oQxK [type='password']:focus,\n    .add-menu-module_addMenu__2M05g .add-menu-module_header__3oQxK [type='number']:focus,\n    .add-menu-module_addMenu__2M05g .add-menu-module_header__3oQxK [type='email']:focus,\n    .add-menu-module_addMenu__2M05g .add-menu-module_header__3oQxK [type='search']:focus {\n      color: #31363a; }\n  .add-menu-module_addMenu__2M05g .add-menu-module_items__2t7Ey {\n    width: 240px; }\n";
-var style$t = {"addMenu":"add-menu-module_addMenu__2M05g","header":"add-menu-module_header__3oQxK","text":"add-menu-module_text__k_8Tc","purple":"add-menu-module_purple__2rg-K","black":"add-menu-module_black__1VxTk","searchInput":"add-menu-module_searchInput__2WcVW","backBtn":"add-menu-module_backBtn__3w2eo","btnAction":"add-menu-module_btnAction__pwV_Y","crossIcon":"add-menu-module_crossIcon__2lBjS","searchIcon":"add-menu-module_searchIcon__2D017","items":"add-menu-module_items__2t7Ey"};
-styleInject(css_248z$w);
+var css_248z$u = ".add-menu-module_addMenu__2M05g {\n  width: 240px;\n  height: 100%;\n  display: flex;\n  flex-direction: column;\n  align-items: center;\n  justify-content: flex-start;\n  box-sizing: border-box;\n  padding-top: 4px;\n  padding-bottom: 46px;\n  background: #ffffff;\n  position: absolute;\n  left: 40px;\n  top: 40px;\n  border-top: 1px solid #ebebeb;\n  border-left: 1px solid #ebebeb;\n  z-index: 1; }\n  .add-menu-module_addMenu__2M05g * {\n    font-family: Aktiv Grotesk, sans-serif;\n    user-select: none; }\n  .add-menu-module_addMenu__2M05g .add-menu-module_header__3oQxK {\n    width: 224px;\n    height: 32px;\n    display: flex;\n    box-sizing: border-box;\n    align-items: center;\n    justify-content: space-between;\n    margin-bottom: 4px; }\n    .add-menu-module_addMenu__2M05g .add-menu-module_header__3oQxK .add-menu-module_text__k_8Tc {\n      width: 208px;\n      height: 32px;\n      font-family: Aktiv Grotesk, sans-serif;\n      box-sizing: border-box;\n      font-size: 12px;\n      line-height: 24px;\n      font-weight: 600;\n      display: flex;\n      align-items: center;\n      padding-left: 8px;\n      cursor: text; }\n      .add-menu-module_addMenu__2M05g .add-menu-module_header__3oQxK .add-menu-module_text__k_8Tc.add-menu-module_purple__2rg-K {\n        color: #b555e5; }\n      .add-menu-module_addMenu__2M05g .add-menu-module_header__3oQxK .add-menu-module_text__k_8Tc.add-menu-module_black__1VxTk {\n        color: #31363a; }\n    .add-menu-module_addMenu__2M05g .add-menu-module_header__3oQxK .add-menu-module_searchInput__2WcVW {\n      border: 0;\n      outline: 0;\n      padding: 8px;\n      width: 100%; }\n    .add-menu-module_addMenu__2M05g .add-menu-module_header__3oQxK .add-menu-module_backBtn__3w2eo {\n      height: 32px;\n      width: 32px;\n      display: flex;\n      align-items: center;\n      justify-content: center;\n      cursor: pointer; }\n    .add-menu-module_addMenu__2M05g .add-menu-module_header__3oQxK .add-menu-module_btnAction__pwV_Y {\n      display: flex; }\n      .add-menu-module_addMenu__2M05g .add-menu-module_header__3oQxK .add-menu-module_btnAction__pwV_Y .add-menu-module_crossIcon__2lBjS svg path {\n        stroke: #31363a; }\n      .add-menu-module_addMenu__2M05g .add-menu-module_header__3oQxK .add-menu-module_btnAction__pwV_Y .add-menu-module_searchIcon__2D017 svg path {\n        fill: #31363a; }\n    .add-menu-module_addMenu__2M05g .add-menu-module_header__3oQxK [type='text']:focus,\n    .add-menu-module_addMenu__2M05g .add-menu-module_header__3oQxK [type='password']:focus,\n    .add-menu-module_addMenu__2M05g .add-menu-module_header__3oQxK [type='number']:focus,\n    .add-menu-module_addMenu__2M05g .add-menu-module_header__3oQxK [type='email']:focus,\n    .add-menu-module_addMenu__2M05g .add-menu-module_header__3oQxK [type='search']:focus {\n      color: #31363a; }\n  .add-menu-module_addMenu__2M05g .add-menu-module_items__2t7Ey {\n    width: 240px; }\n";
+var style$r = {"addMenu":"add-menu-module_addMenu__2M05g","header":"add-menu-module_header__3oQxK","text":"add-menu-module_text__k_8Tc","purple":"add-menu-module_purple__2rg-K","black":"add-menu-module_black__1VxTk","searchInput":"add-menu-module_searchInput__2WcVW","backBtn":"add-menu-module_backBtn__3w2eo","btnAction":"add-menu-module_btnAction__pwV_Y","crossIcon":"add-menu-module_crossIcon__2lBjS","searchIcon":"add-menu-module_searchIcon__2D017","items":"add-menu-module_items__2t7Ey"};
+styleInject(css_248z$u);
 
 const AddMenu = ({
   textColor = 'black',
@@ -1847,7 +2800,7 @@ const AddMenu = ({
     items,
     searchInput,
     backBtn
-  } = style$t;
+  } = style$r;
   const [isSearch, setIsSearch] = useState(false);
   const [search, setSearch] = useState('');
   const [breadcrumb, setBreadcrumb] = useState([{
@@ -1863,7 +2816,7 @@ const AddMenu = ({
   const itemsDate = [{
     label: 'Mockups',
     value: 'mockups',
-    resent: [{
+    recent: [{
       id: getUnique(),
       label: 'Print'
     }, {
@@ -1876,7 +2829,7 @@ const AddMenu = ({
   }, {
     label: 'Stock Photos',
     value: 'stockPhotos',
-    resent: [{
+    recent: [{
       id: getUnique(),
       label: 'Unsplash'
     }, {
@@ -1886,7 +2839,7 @@ const AddMenu = ({
   }, {
     label: 'Illustrations & Graphics',
     value: 'illustrations',
-    resent: [{
+    recent: [{
       id: getUnique(),
       label: 'Unicolor blob blob blob '
     }, {
@@ -1934,8 +2887,8 @@ const AddMenu = ({
   }) : /*#__PURE__*/React$1.createElement(React$1.Fragment, null, activeMenu.action && /*#__PURE__*/React$1.createElement("div", {
     className: backBtn,
     onClick: () => goToPreventMenu()
-  }, /*#__PURE__*/React$1.createElement(ArrowLeftIcon, null)), /*#__PURE__*/React$1.createElement("label", {
-    className: `${text} ${style$t[textColor]}`
+  }, /*#__PURE__*/React$1.createElement(ArrowLeftIcon$1, null)), /*#__PURE__*/React$1.createElement("label", {
+    className: `${text} ${style$r[textColor]}`
   }, activeMenu.label)) // <>
   //   {breadcrumb.map(({ action, label }, key) => (
   //     <div
@@ -1959,10 +2912,10 @@ const AddMenu = ({
   }, isSearch && /*#__PURE__*/React$1.createElement(IconButton, {
     className: crossIcon,
     onClick: () => setIsSearch(false)
-  }, /*#__PURE__*/React$1.createElement(CrossIcon, null)), /*#__PURE__*/React$1.createElement(IconButton, {
+  }, /*#__PURE__*/React$1.createElement(CrossIcon$1, null)), /*#__PURE__*/React$1.createElement(IconButton, {
     className: searchIcon,
     onClick: () => setIsSearch(true)
-  }, /*#__PURE__*/React$1.createElement(SearchIcon, null)))), /*#__PURE__*/React$1.createElement(Mockup, _extends({
+  }, /*#__PURE__*/React$1.createElement(SearchIcon$1, null)))), /*#__PURE__*/React$1.createElement(Mockup, _extends({
     onChangeValue: val => {
       console.log(val);
     }
@@ -2023,312 +2976,6 @@ const AddMenu = ({
       });
     }
   }))));
-};
-
-const DiamondIcon = ({
-  width = 8,
-  height = 10
-}) => /*#__PURE__*/React$1.createElement("svg", {
-  width: width,
-  height: height
-}, /*#__PURE__*/React$1.createElement("path", {
-  fill: "#B555E6",
-  stroke: "#B555E6",
-  strokeLinecap: "round",
-  strokeLinejoin: "round",
-  d: "M4 9.19961L0.890191 5.31235C0.744103 5.12974 0.744103 4.87026 0.89019 4.68765L4 0.80039L7.10981 4.68765C7.2559 4.87026 7.2559 5.12974 7.10981 5.31235L4 9.19961Z"
-}));
-const RectangleIcon$1 = ({
-  width = 16,
-  height = 16
-}) => /*#__PURE__*/React$1.createElement("svg", {
-  width: width,
-  height: height,
-  viewBox: `0 0 16 16`
-}, /*#__PURE__*/React$1.createElement("path", {
-  d: "M0.5 4C0.5 2.067 2.067 0.5 4 0.5H12C13.933 0.5 15.5 2.067 15.5 4V9V12C15.5 13.933 13.933 15.5 12 15.5H10H4C2.067 15.5 0.5 13.933 0.5 12V4Z",
-  stroke: "#333333",
-  fill: "transparent"
-}));
-const EllipseIcon = ({
-  width = 16,
-  height = 16
-}) => /*#__PURE__*/React$1.createElement("svg", {
-  width: width,
-  height: height,
-  viewBox: `0 0 16 16`
-}, /*#__PURE__*/React$1.createElement("circle", {
-  cx: "8",
-  cy: "8",
-  r: "7.5",
-  stroke: "#333",
-  fill: "transparent"
-}));
-const PolygonIcon = ({
-  width = 16,
-  height = 16
-}) => /*#__PURE__*/React$1.createElement("svg", {
-  width: width,
-  height: height,
-  viewBox: `0 0 16 16`
-}, /*#__PURE__*/React$1.createElement("path", {
-  d: "M6.65836 1.80131C7.21115.695741 8.78885.695741 9.34164 1.80132L15.1056 13.3292c.4986.9973-.2266 2.1708-1.3417 2.1708H2.23607C1.121 15.5.395751 14.3265.894427 13.3292L6.65836 1.80131z",
-  stroke: "#333",
-  fill: "transparent"
-}));
-const StarIcon = ({
-  width = 18,
-  height = 17
-}) => /*#__PURE__*/React$1.createElement("svg", {
-  width: width,
-  height: height,
-  viewBox: `0 0 18 17`
-}, /*#__PURE__*/React$1.createElement("path", {
-  d: "M8.55163 1.03827c.18341-.371624.71333-.371624.89674 0l1.80953 3.66649c.2185.44271.6408.74957 1.1294.82056l4.0462.58795c.4101.05959.5739.56358.2771.85284l-2.9279 2.85397c-.3535.34462-.5148.84112-.4314 1.32772l.6912 4.0298c.0701.4085-.3586.72-.7254.5271l-3.61909-1.9026c-.43698-.2298-.95904-.2298-1.39602 0l-3.61904 1.9026c-.36681.1929-.79553-.1186-.72548-.5271l.69118-4.0298c.08346-.4866-.07787-.9831-.43139-1.32772L1.28939 6.96611c-.296758-.28926-.133-.79325.27711-.85284l4.04621-.58795c.48856-.07099.91091-.37785 1.1294-.82056l1.80952-3.66649z",
-  stroke: "#333",
-  fill: "transparent"
-}));
-const DrawLineIcon = ({
-  width = 16,
-  height = 16
-}) => /*#__PURE__*/React$1.createElement("svg", {
-  width: width,
-  height: height,
-  viewBox: `0 0 16 16`
-}, /*#__PURE__*/React$1.createElement("path", {
-  d: "M1.5 14.5l13-13",
-  stroke: "#333",
-  "stroke-linecap": "round",
-  "stroke-linejoin": "round"
-}));
-const DrawArrowIcon = ({
-  width = 20,
-  height = 20
-}) => /*#__PURE__*/React$1.createElement("svg", {
-  width: width,
-  height: height,
-  viewBox: `0 0 20 20`
-}, /*#__PURE__*/React$1.createElement("path", {
-  d: "M3.5 16.5l13-13m0 0h-4m4 0v4",
-  stroke: "#333",
-  "stroke-linecap": "round",
-  "stroke-linejoin": "round"
-}));
-
-var css_248z$v = ".shape-menu-module_shapeMenu__2O5hG {\n  width: 103px;\n  position: absolute;\n  background: #ffffff;\n  box-shadow: 0px 0.5px 1px rgba(0, 4, 8, 0.12), 0px 8px 16px -8px rgba(0, 4, 8, 0.08);\n  border-radius: 8px;\n  display: flex;\n  flex-direction: column;\n  justify-content: center;\n  align-items: center;\n  padding: 4px 0;\n  z-index: 1;\n  left: 44px;\n  top: -8px; }\n  .shape-menu-module_shapeMenu__2O5hG * {\n    font-family: Aktiv Grotesk, sans-serif;\n    box-sizing: border-box;\n    cursor: pointer;\n    user-select: none; }\n  .shape-menu-module_shapeMenu__2O5hG .shape-menu-module_itemWrapper__duGfK {\n    width: 95px;\n    height: 32px;\n    display: flex;\n    justify-content: left;\n    align-items: center; }\n    .shape-menu-module_shapeMenu__2O5hG .shape-menu-module_itemWrapper__duGfK .shape-menu-module_icon__2MFdP {\n      width: 32px;\n      height: 32px;\n      display: flex;\n      align-items: center;\n      justify-content: center; }\n    .shape-menu-module_shapeMenu__2O5hG .shape-menu-module_itemWrapper__duGfK .shape-menu-module_title__2Gh1X {\n      font-size: 11px;\n      color: #333333; }\n    .shape-menu-module_shapeMenu__2O5hG .shape-menu-module_itemWrapper__duGfK.shape-menu-module_active__2ay5j, .shape-menu-module_shapeMenu__2O5hG .shape-menu-module_itemWrapper__duGfK:hover {\n      background: #f5f5f5;\n      border-radius: 6px; }\n";
-var style$s = {"shapeMenu":"shape-menu-module_shapeMenu__2O5hG","itemWrapper":"shape-menu-module_itemWrapper__duGfK","icon":"shape-menu-module_icon__2MFdP","title":"shape-menu-module_title__2Gh1X","active":"shape-menu-module_active__2ay5j"};
-styleInject(css_248z$v);
-
-const shapeMenuItem$1 = [{
-  icon: /*#__PURE__*/React$1.createElement(RectangleIcon$1, null),
-  title: 'Rectangle'
-}, {
-  icon: /*#__PURE__*/React$1.createElement(EllipseIcon, null),
-  title: 'Ellipse'
-}, {
-  icon: /*#__PURE__*/React$1.createElement(PolygonIcon, null),
-  title: 'Polygon'
-}, {
-  icon: /*#__PURE__*/React$1.createElement(StarIcon, null),
-  title: 'Star'
-}];
-const ShapeMenu = ({
-  onChange = () => {},
-  selectedItem = shapeMenuItem$1[0].title,
-  styles,
-  options
-}) => {
-  const {
-    shapeMenu,
-    itemWrapper,
-    icon,
-    title,
-    active
-  } = style$s;
-  const [selectedItemState, setSelectedItemState] = useState(selectedItem);
-  return /*#__PURE__*/React$1.createElement("div", {
-    className: shapeMenu,
-    style: styles
-  }, shapeMenuItem$1.map((item, key) => /*#__PURE__*/React$1.createElement("div", {
-    key: key,
-    className: `${itemWrapper} ${selectedItemState === item.title ? active : ''}`,
-    onClick: () => {
-      onChange(item.title);
-      setSelectedItemState(item.title);
-    }
-  }, /*#__PURE__*/React$1.createElement("div", {
-    className: icon
-  }, item.icon), /*#__PURE__*/React$1.createElement("div", {
-    className: title
-  }, item.title))));
-};
-
-const BrushesIcon = ({
-  width = 18,
-  height = 19
-}) => {
-  return /*#__PURE__*/React$1.createElement("svg", {
-    width: width,
-    height: height,
-    viewBox: "0 0 18 19",
-    fill: "none"
-  }, /*#__PURE__*/React$1.createElement("path", {
-    fillRule: "evenodd",
-    clipRule: "evenodd",
-    d: "M1.72946 1.59806C1.66758 1.28866 1.90422 1 2.21975 1H3.84856L5.22259 1.91603L5.99994 2.43426V1.5V1H11.7801C12.0957 1 12.3323 1.28866 12.2704 1.59806L11.19 7H12.2098L13.251 1.79417C13.4366 0.865987 12.7267 0 11.7801 0H5.49994H4.99994V0.5V0.565741L4.27729 0.0839748L4.15133 0H3.99994H2.21975C1.27318 0 0.563239 0.865986 0.748877 1.79417L1.79004 7H2.80985L1.72946 1.59806Z",
-    fill: "#333333"
-  }), /*#__PURE__*/React$1.createElement("mask", {
-    id: "path-2-inside-1",
-    fill: "white"
-  }, /*#__PURE__*/React$1.createElement("path", {
-    d: "M1 9C1 8.44772 1.44772 8 2 8H12C12.5523 8 13 8.44772 13 9V10C13 11.1046 12.1046 12 11 12H9L9.25124 14.5124C9.38443 15.8443 8.33853 17 7 17C5.66147 17 4.61557 15.8443 4.74876 14.5124L5 12H3C1.89543 12 1 11.1046 1 10V9Z"
-  })), /*#__PURE__*/React$1.createElement("path", {
-    d: "M5 12L5.99504 12.0995C6.02315 11.8184 5.93103 11.5385 5.74145 11.329C5.55187 11.1195 5.28253 11 5 11V12ZM9 12V11C8.71747 11 8.44813 11.1195 8.25855 11.329C8.06897 11.5385 7.97685 11.8184 8.00496 12.0995L9 12ZM4.74876 14.5124L3.75372 14.4129L4.74876 14.5124ZM2 9H12V7H2V9ZM12 9V10H14V9H12ZM2 10V9H0V10H2ZM5 11H3V13H5V11ZM11 11H9V13H11V11ZM8.00496 12.0995L8.2562 14.6119L10.2463 14.4129L9.99504 11.9005L8.00496 12.0995ZM5.7438 14.6119L5.99504 12.0995L4.00496 11.9005L3.75372 14.4129L5.7438 14.6119ZM7 16C6.2531 16 5.66948 15.3551 5.7438 14.6119L3.75372 14.4129C3.56167 16.3335 5.06985 18 7 18V16ZM0 10C0 11.6569 1.34315 13 3 13V11C2.44772 11 2 10.5523 2 10H0ZM12 10C12 10.5523 11.5523 11 11 11V13C12.6569 13 14 11.6569 14 10H12ZM8.2562 14.6119C8.33052 15.3551 7.7469 16 7 16V18C8.93015 18 10.4383 16.3335 10.2463 14.4129L8.2562 14.6119ZM12 9H14C14 7.89543 13.1046 7 12 7V9ZM2 7C0.895431 7 0 7.89543 0 9H2V7Z",
-    fill: "#333333",
-    mask: "url(#path-2-inside-1)"
-  }), /*#__PURE__*/React$1.createElement("path", {
-    d: "M15.5 18.5H17.5V16.5",
-    stroke: "#333333",
-    strokeLinecap: "round"
-  }));
-};
-const BrushIcon = ({
-  width = 18,
-  height = 19
-}) => {
-  return /*#__PURE__*/React$1.createElement("svg", {
-    width: width,
-    height: height,
-    viewBox: "0 0 14 17",
-    fill: "none"
-  }, /*#__PURE__*/React$1.createElement("path", {
-    fillRule: "evenodd",
-    clipRule: "evenodd",
-    d: "M1.72946 1.59806C1.66758 1.28866 1.90422 1 2.21975 1H3.84856L5.22259 1.91603L5.99994 2.43426V1.5V1H11.7801C12.0957 1 12.3323 1.28866 12.2704 1.59806L11.19 7H12.2098L13.251 1.79417C13.4366 0.865987 12.7267 0 11.7801 0H5.49994H4.99994V0.5V0.565741L4.27729 0.0839748L4.15133 0H3.99994H2.21975C1.27318 0 0.563239 0.865986 0.748877 1.79417L1.79004 7H2.80985L1.72946 1.59806Z",
-    fill: "#333333"
-  }), /*#__PURE__*/React$1.createElement("mask", {
-    id: "path-2-inside-1",
-    fill: "white"
-  }, /*#__PURE__*/React$1.createElement("path", {
-    d: "M1 9C1 8.44772 1.44772 8 2 8H12C12.5523 8 13 8.44772 13 9V10C13 11.1046 12.1046 12 11 12H9L9.25124 14.5124C9.38443 15.8443 8.33853 17 7 17C5.66147 17 4.61557 15.8443 4.74876 14.5124L5 12H3C1.89543 12 1 11.1046 1 10V9Z"
-  })), /*#__PURE__*/React$1.createElement("path", {
-    d: "M5 12L5.99504 12.0995C6.02315 11.8184 5.93103 11.5385 5.74145 11.329C5.55187 11.1195 5.28253 11 5 11V12ZM9 12V11C8.71747 11 8.44813 11.1195 8.25855 11.329C8.06897 11.5385 7.97685 11.8184 8.00496 12.0995L9 12ZM4.74876 14.5124L3.75372 14.4129L4.74876 14.5124ZM2 9H12V7H2V9ZM12 9V10H14V9H12ZM2 10V9H0V10H2ZM5 11H3V13H5V11ZM11 11H9V13H11V11ZM8.00496 12.0995L8.2562 14.6119L10.2463 14.4129L9.99504 11.9005L8.00496 12.0995ZM5.7438 14.6119L5.99504 12.0995L4.00496 11.9005L3.75372 14.4129L5.7438 14.6119ZM7 16C6.2531 16 5.66948 15.3551 5.7438 14.6119L3.75372 14.4129C3.56167 16.3335 5.06985 18 7 18V16ZM0 10C0 11.6569 1.34315 13 3 13V11C2.44772 11 2 10.5523 2 10H0ZM12 10C12 10.5523 11.5523 11 11 11V13C12.6569 13 14 11.6569 14 10H12ZM8.2562 14.6119C8.33052 15.3551 7.7469 16 7 16V18C8.93015 18 10.4383 16.3335 10.2463 14.4129L8.2562 14.6119ZM12 9H14C14 7.89543 13.1046 7 12 7V9ZM2 7C0.895431 7 0 7.89543 0 9H2V7Z",
-    fill: "#333333",
-    mask: "url(#path-2-inside-1)"
-  }));
-};
-const CrayonBrushIcon = ({
-  width = 20,
-  height = 20
-}) => {
-  return /*#__PURE__*/React$1.createElement("svg", {
-    width: width,
-    height: height,
-    viewBox: "0 0 20 20",
-    fill: "none"
-  }, /*#__PURE__*/React$1.createElement("path", {
-    d: "M4.259 16.6332c-.4003.1475-.7896-.2418-.6421-.642l1.6879-4.5814 9.1147-9.1148c.5858-.5857 1.5355-.5857 2.1213 0l1.4142 1.4143c.5858.5857.5858 1.5355 0 2.1213l-9.1147 9.1147-4.5814 1.6879zM8.7627 14.3159l-3.5356-3.5356",
-    stroke: "#333"
-  }));
-};
-const InkBrushIcon = ({
-  width = 16,
-  height = 16
-}) => {
-  return /*#__PURE__*/React$1.createElement("svg", {
-    width: width,
-    height: height,
-    viewBox: "0 0 16 16",
-    fill: "none"
-  }, /*#__PURE__*/React$1.createElement("path", {
-    d: "M9.5 6.5l-9 9",
-    stroke: "#333",
-    strokeLinecap: "round"
-  }), /*#__PURE__*/React$1.createElement("path", {
-    fillRule: "evenodd",
-    clipRule: "evenodd",
-    d: "M15.9939.578a.5001.5001 0 00-.8475-.4315c-.9253.9253-2.1594 1.551-3.5419 2.0733-.6893.2604-1.4042.4911-2.1275.7218l-.1617.0516c-.6666.2124-1.3395.4268-1.9862.662-1.3917.506-2.7276 1.1299-3.714 2.1162C2.6086 6.7782 2 8.1272 2 10h1c0-1.6271.5164-2.7156 1.3223-3.5214.8261-.8262 1.9902-1.3898 3.3485-1.8837.6269-.228 1.281-.4364 1.9519-.6502l.1581-.0504c.722-.2302 1.4602-.4682 2.1771-.739 1.015-.3835 2.0104-.8408 2.8869-1.4582l-.0211.1882c-.0255.228-.0519.4643-.0802.7056-.0984.839-.2218 1.764-.4114 2.6944-.3673 1.802-.9691 3.5473-2.0451 4.7147H9a.5.5 0 00-.4.8l1.1715 1.562c-.1548.0688-.3445.1395-.5633.2074-.5175.1608-1.1703.2977-1.8563.3608-.6874.0633-1.3898.0508-2.0129-.0751-.6256-.1263-1.1363-.3595-1.4855-.7086l-.707.7071c.5347.5347 1.2525.8319 1.9946.9817.7447.1504 1.5492.16 2.3025.0907.7546-.0695 1.4762-.2198 2.0612-.4016.2925-.0908.5578-.1917.7797-.2978.2125-.1017.4208-.2248.569-.373A.5.5 0 0010.9 12.2L10 11h2.5a.5.5 0 00.3535-.1464c1.3809-1.3809 2.0662-3.4439 2.4584-5.3686.198-.9716.3252-1.9293.4247-2.7776.0304-.2588.058-.5052.084-.7381.0605-.541.1129-1.0091.1733-1.3913z",
-    fill: "#333"
-  }));
-};
-const SprayBrushIcon = ({
-  width = 16,
-  height = 17
-}) => {
-  return /*#__PURE__*/React$1.createElement("svg", {
-    width: width,
-    height: height,
-    viewBox: "0 0 16 17",
-    fill: "none",
-    xmlns: "http://www.w3.org/2000/svg"
-  }, /*#__PURE__*/React$1.createElement("path", {
-    d: "M15.5 7V7C15.5 5.61929 14.3807 4.5 13 4.5H11C9.61929 4.5 8.5 5.61929 8.5 7V7",
-    stroke: "#333333"
-  }), /*#__PURE__*/React$1.createElement("path", {
-    d: "M13.5 5V2.5C13.5 1.94772 13.0523 1.5 12.5 1.5H11.5C10.9477 1.5 10.5 1.94772 10.5 2.5V5",
-    stroke: "#333333"
-  }), /*#__PURE__*/React$1.createElement("path", {
-    d: "M0.5 0.5L7.5 2.5L0.5 4.5",
-    stroke: "#333333",
-    strokeLinecap: "round",
-    strokeLinejoin: "round"
-  }), /*#__PURE__*/React$1.createElement("mask", {
-    id: "path-4-inside-1",
-    fill: "white"
-  }, /*#__PURE__*/React$1.createElement("path", {
-    d: "M16 7H8V15C8 16.1046 8.89543 17 10 17H14C15.1046 17 16 16.1046 16 15V7Z"
-  })), /*#__PURE__*/React$1.createElement("path", {
-    d: "M16 7V6C16.5523 6 17 6.44772 17 7H16ZM8 7H7C7 6.44772 7.44771 6 8 6V7ZM16 8H8V6H16V8ZM9 7V15H7V7H9ZM10 16H14V18H10V16ZM15 15V7H17V15H15ZM14 16C14.5523 16 15 15.5523 15 15H17C17 16.6569 15.6569 18 14 18V16ZM9 15C9 15.5523 9.44772 16 10 16V18C8.34315 18 7 16.6569 7 15H9Z",
-    fill: "#333333",
-    mask: "url(#path-4-inside-1)"
-  }));
-};
-
-var css_248z$u = ".brushes-menu-module_brushMenu__23bMK {\n  width: 120px;\n  position: absolute;\n  background: #ffffff;\n  box-shadow: 0px 0.5px 1px rgba(0, 4, 8, 0.12), 0px 8px 16px -8px rgba(0, 4, 8, 0.08);\n  border-radius: 8px;\n  display: flex;\n  flex-direction: column;\n  justify-content: center;\n  align-items: center;\n  padding: 4px 0;\n  z-index: 1;\n  left: 44px;\n  top: -8px; }\n  .brushes-menu-module_brushMenu__23bMK * {\n    font-family: Aktiv Grotesk, sans-serif;\n    box-sizing: border-box;\n    cursor: pointer;\n    user-select: none; }\n  .brushes-menu-module_brushMenu__23bMK .brushes-menu-module_itemWrapper__1ZLHc {\n    width: 112px;\n    height: 32px;\n    display: flex;\n    justify-content: left;\n    align-items: center; }\n    .brushes-menu-module_brushMenu__23bMK .brushes-menu-module_itemWrapper__1ZLHc .brushes-menu-module_icon__STFEG {\n      width: 32px;\n      height: 32px;\n      display: flex;\n      align-items: center;\n      justify-content: center; }\n    .brushes-menu-module_brushMenu__23bMK .brushes-menu-module_itemWrapper__1ZLHc .brushes-menu-module_title__2Xqq6 {\n      font-size: 11px;\n      color: #333333; }\n    .brushes-menu-module_brushMenu__23bMK .brushes-menu-module_itemWrapper__1ZLHc.brushes-menu-module_active__E5ZLB, .brushes-menu-module_brushMenu__23bMK .brushes-menu-module_itemWrapper__1ZLHc:hover {\n      background: #f5f5f5;\n      border-radius: 6px; }\n";
-var style$r = {"brushMenu":"brushes-menu-module_brushMenu__23bMK","itemWrapper":"brushes-menu-module_itemWrapper__1ZLHc","icon":"brushes-menu-module_icon__STFEG","title":"brushes-menu-module_title__2Xqq6","active":"brushes-menu-module_active__E5ZLB"};
-styleInject(css_248z$u);
-
-const shapeMenuItem = [{
-  icon: /*#__PURE__*/React$1.createElement(BrushIcon, null),
-  title: 'Normal Brush'
-}, {
-  icon: /*#__PURE__*/React$1.createElement(CrayonBrushIcon, null),
-  title: 'Crayon Brush'
-}, {
-  icon: /*#__PURE__*/React$1.createElement(InkBrushIcon, null),
-  title: 'Ink Brush'
-}, {
-  icon: /*#__PURE__*/React$1.createElement(SprayBrushIcon, null),
-  title: 'Spray Brush'
-}];
-const BrushesMenu = ({
-  onChange = () => {},
-  setValue = shapeMenuItem[0].title,
-  styles
-}) => {
-  const {
-    brushMenu,
-    itemWrapper,
-    icon,
-    title,
-    active
-  } = style$r;
-  const [activeItem, setActiveItem] = useState(setValue);
-  return /*#__PURE__*/React$1.createElement("div", {
-    className: brushMenu,
-    style: styles
-  }, shapeMenuItem.map((item, key) => /*#__PURE__*/React$1.createElement("div", {
-    className: `${itemWrapper} ${activeItem === item.title ? active : ''}`,
-    key: key,
-    onClick: () => {
-      onChange(item.title);
-      setActiveItem(item.title);
-    }
-  }, /*#__PURE__*/React$1.createElement("div", {
-    className: icon
-  }, item.icon), /*#__PURE__*/React$1.createElement("div", {
-    className: title
-  }, item.title))));
 };
 
 var css_248z$t = ".menu-module_wrapper__1oE4p {\n  width: 103px;\n  background: #ffffff;\n  box-shadow: 0px 0.5px 1px rgba(0, 4, 8, 0.12), 0px 8px 16px -8px rgba(0, 4, 8, 0.08);\n  border-radius: 8px;\n  display: flex;\n  flex-direction: column;\n  justify-content: center;\n  padding: 4px;\n  z-index: 1; }\n  .menu-module_wrapper__1oE4p * {\n    font-family: Aktiv Grotesk, sans-serif;\n    box-sizing: border-box;\n    cursor: pointer;\n    user-select: none; }\n  .menu-module_wrapper__1oE4p .menu-module_itemWrapper__XH8o1 {\n    height: 32px;\n    display: flex;\n    justify-content: left;\n    align-items: center; }\n    .menu-module_wrapper__1oE4p .menu-module_itemWrapper__XH8o1 .menu-module_icon__1UDld {\n      width: 32px;\n      height: 32px;\n      display: flex;\n      align-items: center;\n      justify-content: center; }\n    .menu-module_wrapper__1oE4p .menu-module_itemWrapper__XH8o1 label {\n      font-size: 11px;\n      color: #333333; }\n    .menu-module_wrapper__1oE4p .menu-module_itemWrapper__XH8o1.menu-module_isActive__36we2, .menu-module_wrapper__1oE4p .menu-module_itemWrapper__XH8o1:hover {\n      background: #f5f5f5;\n      border-radius: 6px; }\n";
@@ -2420,7 +3067,7 @@ const Options = ({
     onClick: () => onItemClick(item)
   }, /*#__PURE__*/React$1.createElement("span", null, item.label), item.shortcut && /*#__PURE__*/React$1.createElement("span", {
     className: shortcut
-  }, item.shortcut[isMacOs() ? 1 : 0]), item.subMenu ? /*#__PURE__*/React$1.createElement(ChevronArrowIcon, null) : null)), item.divider ? /*#__PURE__*/React$1.createElement("li", {
+  }, item.shortcut[isMacOs() ? 1 : 0]), item.subMenu ? /*#__PURE__*/React$1.createElement(ChevronArrowIcon$1, null) : null)), item.divider ? /*#__PURE__*/React$1.createElement("li", {
     className: `${row} ${divider}`
   }) : null)));
 };
@@ -2474,475 +3121,6 @@ const ColorsActionInMenu = ({
       value: item.name
     })
   }))));
-};
-
-const FolderIcon = ({
-  width = 12,
-  height = 10
-}) => {
-  return /*#__PURE__*/React$1.createElement("svg", {
-    width: width,
-    height: height,
-    viewBox: `0 0 12 10`
-  }, /*#__PURE__*/React$1.createElement("path", {
-    d: "M6.553 2.224l.138.276H9.75c.356 0 .598 0 .787.013.183.013.279.035.346.063a1 1 0 01.54.541c.028.067.051.163.064.346.013.189.013.43.013.787V7c0 .473 0 .802-.018 1.06-.017.254-.05.401-.096.514a1.5 1.5 0 01-.812.812c-.113.046-.26.079-.514.096C9.802 9.5 9.473 9.5 9 9.5H3c-.473 0-.802 0-1.06-.018-.254-.017-.401-.05-.514-.096a1.5 1.5 0 01-.812-.812c-.046-.113-.079-.26-.096-.514A17.265 17.265 0 01.5 7V3c0-.473 0-.802.018-1.06.017-.254.05-.401.096-.514a1.5 1.5 0 01.812-.812c.113-.046.26-.079.514-.096C2.198.5 2.527.5 3 .5h2.691l.862 1.724z",
-    fill: "#F5F5F5",
-    stroke: "#999"
-  }));
-};
-const VectorIcon = ({
-  width = 12,
-  height = 10
-}) => {
-  return /*#__PURE__*/React$1.createElement("svg", {
-    width: width,
-    height: height,
-    fill: "none",
-    viewBox: `0 0 12 12`
-  }, /*#__PURE__*/React$1.createElement("path", {
-    fillRule: "evenodd",
-    clipRule: "evenodd",
-    d: "M9 2a1 1 0 102 0 1 1 0 00-2 0zm-.92.564A2 2 0 108.05 1.56a7.504 7.504 0 00-6.49 6.489 2 2 0 101.005.032 6.504 6.504 0 015.517-5.516zM2 9a1 1 0 100 2 1 1 0 000-2z",
-    fill: "#999"
-  }), /*#__PURE__*/React$1.createElement("path", {
-    d: "M0 10a2 2 0 114 0 2 2 0 01-4 0z",
-    fill: "#F5F5F5"
-  }), /*#__PURE__*/React$1.createElement("path", {
-    fillRule: "evenodd",
-    clipRule: "evenodd",
-    d: "M1 10a1 1 0 102 0 1 1 0 00-2 0zm1-2a2 2 0 100 4 2 2 0 000-4z",
-    fill: "#999"
-  }), /*#__PURE__*/React$1.createElement("path", {
-    d: "M8 2a2 2 0 114 0 2 2 0 01-4 0z",
-    fill: "#F5F5F5"
-  }), /*#__PURE__*/React$1.createElement("path", {
-    fillRule: "evenodd",
-    clipRule: "evenodd",
-    d: "M9 2a1 1 0 102 0 1 1 0 00-2 0zm1-2a2 2 0 100 4 2 2 0 000-4z",
-    fill: "#999"
-  }));
-};
-const RectangleIcon = ({
-  width = 12,
-  height = 12
-}) => {
-  return /*#__PURE__*/React$1.createElement("svg", {
-    width: width,
-    height: height,
-    fill: "none",
-    viewBox: `0 0 12 12`
-  }, /*#__PURE__*/React$1.createElement("rect", {
-    x: ".5",
-    y: ".5",
-    width: "11",
-    height: "11",
-    rx: "2.5",
-    fill: "#F5F5F5",
-    stroke: "#999"
-  }));
-};
-const MockupItemIcon = ({
-  width = 11,
-  height = 13
-}) => {
-  return /*#__PURE__*/React$1.createElement("svg", {
-    width: width,
-    height: height,
-    fill: "none",
-    viewBox: `0 0 11 13`
-  }, /*#__PURE__*/React$1.createElement("path", {
-    d: "M5.053 1.224a1 1 0 01.894 0l4 2a1 1 0 01.553.894v4.764a1 1 0 01-.553.894l-4 2a1 1 0 01-.894 0l-4-2A1 1 0 01.5 8.882V4.118a1 1 0 01.553-.894l4-2z",
-    fill: "#F5F5F5",
-    stroke: "#999"
-  }), /*#__PURE__*/React$1.createElement("path", {
-    fillRule: "evenodd",
-    clipRule: "evenodd",
-    d: "M9.382 3.5L5.5 5.441 1.618 3.5l-.342.17A.5.5 0 001 4.119v.191l4 2v4.882l.276.138a.5.5 0 00.448 0L6 11.191V6.309l4-2v-.191a.5.5 0 00-.276-.447L9.382 3.5z",
-    fill: "#999"
-  }));
-};
-const TextIcon = ({
-  width = 12,
-  height = 12
-}) => {
-  return /*#__PURE__*/React$1.createElement("svg", {
-    width: width,
-    height: height,
-    fill: "none",
-    viewBox: `0 0 12 12`
-  }, /*#__PURE__*/React$1.createElement("rect", {
-    x: ".5",
-    y: ".5",
-    width: "11",
-    height: "11",
-    rx: "2.5",
-    fill: "#F5F5F5",
-    stroke: "#999"
-  }), /*#__PURE__*/React$1.createElement("path", {
-    fillRule: "evenodd",
-    clipRule: "evenodd",
-    d: "M6 3a.5.5 0 01.462.308L8.833 9H7.75l-.417-1H4.667L4.25 9H3.167l2.372-5.692A.5.5 0 016 3zm-.917 4h1.834L6 4.8 5.083 7z",
-    fill: "#999"
-  }));
-};
-const ImageIcon = ({
-  width = 12,
-  height = 12
-}) => {
-  return /*#__PURE__*/React$1.createElement("svg", {
-    width: width,
-    height: height,
-    viewBox: `0 0 12 12`,
-    fill: "transparent"
-  }, /*#__PURE__*/React$1.createElement("rect", {
-    x: ".5",
-    y: ".5",
-    width: "11",
-    height: "11",
-    rx: "2.5",
-    stroke: "#999"
-  }), /*#__PURE__*/React$1.createElement("path", {
-    d: "M5.293 6.707l-3 3a1 1 0 00-.293.707v.086a1 1 0 001 1h5.864A2.636 2.636 0 0011.5 8.864a.879.879 0 00-.257-.621l-.536-.536a1 1 0 00-1.414 0L8.5 8.5 6.707 6.707a1 1 0 00-1.414 0z",
-    fill: "#F5F5F5"
-  }), /*#__PURE__*/React$1.createElement("path", {
-    d: "M8.5 8.5L6.707 6.707a1 1 0 00-1.414 0l-3 3a1 1 0 00-.293.707v.086a1 1 0 001 1h5.864A2.636 2.636 0 0011.5 8.864a.879.879 0 00-.257-.621l-.536-.536a1 1 0 00-1.414 0L8.5 8.5zm0 0l-1 1",
-    stroke: "#999"
-  }), /*#__PURE__*/React$1.createElement("circle", {
-    cx: "4",
-    cy: "4",
-    r: "1",
-    fill: "#999"
-  }));
-};
-const FileIcon = ({
-  width = 10,
-  height = 12
-}) => {
-  return /*#__PURE__*/React$1.createElement("svg", {
-    width: width,
-    height: height,
-    viewBox: `0 0 10 12`
-  }, /*#__PURE__*/React$1.createElement("path", {
-    d: "M.5 4.5c0-.706 0-1.21.027-1.607.027-.393.079-.645.163-.85A2.5 2.5 0 012.043.69c.205-.084.457-.136.85-.163C3.29.5 3.794.5 4.5.5h1.293L9.5 4.207V7.5c0 .706 0 1.21-.027 1.607-.027.393-.079.645-.163.85a2.5 2.5 0 01-1.353 1.353c-.205.084-.457.136-.85.163-.397.027-.901.027-1.607.027h-1c-.706 0-1.21 0-1.607-.027-.393-.027-.645-.079-.85-.163A2.5 2.5 0 01.69 9.957C.606 9.752.554 9.5.527 9.107.5 8.71.5 8.206.5 7.5v-3z",
-    fill: "#F5F5F5",
-    stroke: "#999"
-  }), /*#__PURE__*/React$1.createElement("path", {
-    d: "M9.5 4.207V4.5H7A1.5 1.5 0 015.5 3V.5h.293L9.5 4.207z",
-    fill: "#F5F5F5",
-    stroke: "#999"
-  }));
-};
-const FilterIcon = ({
-  width = 12,
-  height = 12
-}) => {
-  return /*#__PURE__*/React$1.createElement("svg", {
-    width: width,
-    height: height,
-    viewBox: `0 0 12 12`
-  }, /*#__PURE__*/React$1.createElement("path", {
-    fillRule: "evenodd",
-    clipRule: "evenodd",
-    d: "M5 2h-.5c-.713 0-1.197 0-1.573.026-.368.025-.559.07-.692.126a2 2 0 00-1.083 1.083c-.055.133-.1.324-.126.692C1.001 4.303 1 4.787 1 5.5v2c0 .713 0 1.197.026 1.573.025.368.07.559.126.692a2 2 0 001.083 1.083c.133.055.324.1.692.126.376.025.86.026 1.573.026h2c.713 0 1.197 0 1.573-.026.368-.025.559-.07.692-.126a2 2 0 001.083-1.083c.055-.133.1-.324.126-.692.025-.376.026-.86.026-1.573V7h1v.5c0 1.398 0 2.097-.228 2.648a3 3 0 01-1.624 1.624C8.597 12 7.898 12 6.5 12h-2c-1.398 0-2.097 0-2.648-.228a3 3 0 01-1.624-1.624C0 9.597 0 8.898 0 7.5v-2c0-1.398 0-2.097.228-2.648a3 3 0 011.624-1.624C2.403 1 3.102 1 4.5 1H5v1z",
-    fill: "#999"
-  }), /*#__PURE__*/React$1.createElement("path", {
-    d: "M7 1c0 3.2-2.667 4-4 4 3.2 0 4 2.667 4 4 0-3.2 2.667-4 4-4-3.2 0-4-2.667-4-4z",
-    fill: "#999"
-  }), /*#__PURE__*/React$1.createElement("path", {
-    d: "M10 0c0 1.6-1.333 2-2 2 1.6 0 2 1.333 2 2 0-1.6 1.333-2 2-2-1.6 0-2-1.333-2-2z",
-    fill: "#999"
-  }));
-};
-const MaskIcon = ({
-  width = 18,
-  height = 18
-}) => {
-  return /*#__PURE__*/React$1.createElement("svg", {
-    width: width,
-    height: height,
-    viewBox: `0 0 18 18`
-  }, /*#__PURE__*/React$1.createElement("path", {
-    fillRule: "evenodd",
-    clipRule: "evenodd",
-    d: "M6 17.4879C9.4956 16.2524 12 12.9187 12 9c0-3.9187-2.5044-7.2524-6-8.4879C2.5044 1.7476 0 5.0813 0 9c0 3.9187 2.5044 7.2524 6 8.4879z",
-    fill: "#999"
-  }), /*#__PURE__*/React$1.createElement("rect", {
-    x: ".5",
-    y: ".5",
-    width: "17",
-    height: "17",
-    rx: "8.5",
-    stroke: "#333"
-  }));
-};
-const ShapeModeUnion = ({
-  width = 13,
-  height = 13
-}) => {
-  return /*#__PURE__*/React$1.createElement("svg", {
-    width: width,
-    height: height,
-    viewBox: `0 0 13 13`
-  }, /*#__PURE__*/React$1.createElement("path", {
-    fillRule: "evenodd",
-    clipRule: "evenodd",
-    d: "M5 5H2a1 1 0 00-1 1v5a1 1 0 001 1h5a1 1 0 001-1V8h3a1 1 0 001-1V2a1 1 0 00-1-1H6a1 1 0 00-1 1v3zM4 2a2 2 0 012-2h5a2 2 0 012 2v5a2 2 0 01-2 2H9v2a2 2 0 01-2 2H2a2 2 0 01-2-2V6a2 2 0 012-2h2V2z",
-    fill: "#999"
-  }));
-};
-const ShapeModeSubtract = ({
-  width = 16,
-  height = 16
-}) => {
-  return /*#__PURE__*/React$1.createElement("svg", {
-    width: width,
-    height: height,
-    viewBox: `0 0 16 16`
-  }, /*#__PURE__*/React$1.createElement("path", {
-    fillRule: "evenodd",
-    clipRule: "evenodd",
-    d: "M5 5H3C1.3432 5 0 6.343 0 8v5c0 1.6568 1.3432 3 3 3h5c1.6569 0 3-1.3432 3-3v-2H8c-1.6569 0-3-1.3432-3-3V5z",
-    fill: "#999"
-  }), /*#__PURE__*/React$1.createElement("path", {
-    fillRule: "evenodd",
-    clipRule: "evenodd",
-    d: "M13 1H8c-1.1046 0-2 .8954-2 2v5c0 1.1046.8954 2 2 2h5c1.1046 0 2-.8954 2-2V3c0-1.1046-.8954-2-2-2zM8 0C6.3431 0 5 1.3432 5 3v5c0 1.6569 1.3431 3 3 3h5c1.6569 0 3-1.3431 3-3V3c0-1.6568-1.3431-3-3-3H8z",
-    fill: "#333"
-  }), /*#__PURE__*/React$1.createElement("path", {
-    fillRule: "evenodd",
-    clipRule: "evenodd",
-    d: "M5 5H3C1.3432 5 0 6.343 0 8v5c0 1.6568 1.3432 3 3 3h5c1.6569 0 3-1.3432 3-3v-2h-1v2c0 1.1045-.8954 2-2 2H3c-1.1046 0-2-.8955-2-2V8c0-1.1046.8954-2 2-2h2V5z",
-    fill: "#333"
-  }));
-};
-const ShapeModeIntersect = ({
-  width = 16,
-  height = 16
-}) => {
-  return /*#__PURE__*/React$1.createElement("svg", {
-    fill: "none",
-    width: width,
-    height: height,
-    viewBox: `0 0 16 16`
-  }, /*#__PURE__*/React$1.createElement("path", {
-    fillRule: "evenodd",
-    clipRule: "evenodd",
-    d: "M11 11H8c-1.6569 0-3-1.3431-3-3V5h3c1.6569 0 3 1.3432 3 3v3z",
-    fill: "#999"
-  }), /*#__PURE__*/React$1.createElement("path", {
-    fillRule: "evenodd",
-    clipRule: "evenodd",
-    d: "M8 1h5c1.1046 0 2 .8954 2 2v5c0 1.1046-.8954 2-2 2h-2V8c0-1.6569-1.3431-3-3-3H6V3c0-1.1046.8954-2 2-2zM5 5V3c0-1.6568 1.3431-3 3-3h5c1.6569 0 3 1.3432 3 3v5c0 1.6569-1.3431 3-3 3h-2v2c0 1.6569-1.3431 3-3 3H3c-1.6568 0-3-1.3431-3-3V8c0-1.6569 1.3432-3 3-3h2zm5 6v2c0 1.1046-.8954 2-2 2H3c-1.1046 0-2-.8954-2-2V8c0-1.1046.8954-2 2-2h2v2c0 1.6569 1.3431 3 3 3h2zm0-1H8c-1.1046 0-2-.8954-2-2V6h2c1.1046 0 2 .8954 2 2v2z",
-    fill: "#333"
-  }));
-};
-const ShapeModeExclude = ({
-  width = 16,
-  height = 16
-}) => {
-  return /*#__PURE__*/React$1.createElement("svg", {
-    fill: "none",
-    width: width,
-    height: height,
-    viewBox: `0 0 16 16`
-  }, /*#__PURE__*/React$1.createElement("path", {
-    fillRule: "evenodd",
-    clipRule: "evenodd",
-    d: "M8 0C6.3431 0 5 1.3432 5 3v2H3C1.3432 5 0 6.3431 0 8v5c0 1.6569 1.3432 3 3 3h5c1.6569 0 3-1.3431 3-3v-2h2c1.6569 0 3-1.3431 3-3V3c0-1.6568-1.3431-3-3-3H8zm3 11V8c0-1.6569-1.3431-3-3-3H5v3c0 1.6569 1.3431 3 3 3h3z",
-    fill: "#999"
-  }), /*#__PURE__*/React$1.createElement("path", {
-    fillRule: "evenodd",
-    clipRule: "evenodd",
-    d: "M8 1h5c1.1046 0 2 .8954 2 2v5c0 1.1046-.8954 2-2 2h-2V8c0-1.6569-1.3431-3-3-3H6V3c0-1.1046.8954-2 2-2zM5 5V3c0-1.6568 1.3431-3 3-3h5c1.6569 0 3 1.3432 3 3v5c0 1.6569-1.3431 3-3 3h-2v2c0 1.6569-1.3431 3-3 3H3c-1.6568 0-3-1.3431-3-3V8c0-1.6569 1.3432-3 3-3h2zm5 6v2c0 1.1046-.8954 2-2 2H3c-1.1046 0-2-.8954-2-2V8c0-1.1046.8954-2 2-2h2v2c0 1.6569 1.3431 3 3 3h2zm0-1H8c-1.1046 0-2-.8954-2-2V6h2c1.1046 0 2 .8954 2 2v2z",
-    fill: "#333"
-  }));
-};
-const ItemSubtract = ({
-  width = 11,
-  height = 13
-}) => {
-  return /*#__PURE__*/React$1.createElement("svg", {
-    width: width,
-    height: height,
-    viewBox: `0 0 11 13`
-  }, /*#__PURE__*/React$1.createElement("path", {
-    d: "M5.053 1.224a1 1 0 01.894 0l4 2a1 1 0 01.553.894v4.764a1 1 0 01-.553.894l-4 2a1 1 0 01-.894 0l-4-2A1 1 0 01.5 8.882V4.118a1 1 0 01.553-.894l4-2z",
-    fill: "#F5F5F5",
-    stroke: "#999"
-  }), /*#__PURE__*/React$1.createElement("path", {
-    fillRule: "evenodd",
-    clipRule: "evenodd",
-    d: "M9.382 3.5L5.5 5.441 1.618 3.5l-.342.17A.5.5 0 001 4.119v.191l4 2v4.882l.276.138a.5.5 0 00.448 0L6 11.191V6.309l4-2v-.191a.5.5 0 00-.276-.447L9.382 3.5z",
-    fill: "#999"
-  }));
-};
-const ArtboardIcon = ({
-  width = 12,
-  height = 12
-}) => {
-  return /*#__PURE__*/React$1.createElement("svg", {
-    width: width,
-    height: height,
-    viewBox: `0 0 12 12`
-  }, /*#__PURE__*/React$1.createElement("path", {
-    fillRule: "evenodd",
-    clipRule: "evenodd",
-    d: "M2.5 0a.5.5 0 01.5.5V2h6V.5a.5.5 0 011 0V2h1.5a.5.5 0 010 1H10v6h1.5a.5.5 0 010 1H10v1.5a.5.5 0 01-1 0V10H3v1.5a.5.5 0 01-1 0V10H.5a.5.5 0 010-1H2V3H.5a.5.5 0 010-1H2V.5a.5.5 0 01.5-.5zM9 9V3H3v6h6z",
-    fill: "#333"
-  }));
-};
-const VideoIcon = ({
-  width = 12,
-  height = 12
-}) => {
-  return /*#__PURE__*/React$1.createElement("svg", {
-    width: width,
-    height: height,
-    viewBox: `0 0 12 12`
-  }, /*#__PURE__*/React$1.createElement("rect", {
-    x: ".5",
-    y: ".5",
-    width: "11",
-    height: "11",
-    rx: "2.5",
-    fill: "#F5F5F5",
-    stroke: "#999"
-  }), /*#__PURE__*/React$1.createElement("path", {
-    d: "M4 3.883v4.234a.5.5 0 00.757.429l3.528-2.117a.5.5 0 000-.858L4.757 3.454a.5.5 0 00-.757.43z",
-    fill: "#999"
-  }));
-};
-const FXIcon = ({
-  width = 11,
-  height = 7
-}) => {
-  return /*#__PURE__*/React$1.createElement("svg", {
-    width: width,
-    height: height,
-    viewBox: `0 0 11 7`
-  }, /*#__PURE__*/React$1.createElement("path", {
-    d: "M.314 7V.7h4.041v.891H1.268v1.926H3.86v.837H1.268V7H.314zM5.324 7l1.88-3.15L5.307.7h1.107l1.359 2.268L9.095.7h1.07l-1.88 3.123L10.184 7h-1.09L7.719 4.705 6.413 7h-1.09z",
-    fill: "#333"
-  }));
-};
-const EyeIcon = ({
-  width = 12,
-  height = 6
-}) => {
-  return /*#__PURE__*/React$1.createElement("svg", {
-    width: width,
-    height: height,
-    viewBox: "0 0 12 6"
-  }, /*#__PURE__*/React$1.createElement("path", {
-    fillRule: "evenodd",
-    clipRule: "evenodd",
-    d: "M10.5841 3.99999L10.5841 4H11.6585L11.6585 3.99999C10.8348 1.66961 8.61233 0 5.9999 0C3.38746 0 1.16498 1.66962 0.341309 4H1.41565C2.18767 2.23296 3.95094 1 5.9999 1C8.04885 1 9.81212 2.23295 10.5841 3.99999ZM5.99988 3C5.17145 3 4.49988 3.67157 4.49988 4.5C4.49988 5.32843 5.17145 6 5.99988 6C6.8283 6 7.49988 5.32843 7.49988 4.5C7.49988 3.67157 6.8283 3 5.99988 3Z",
-    fill: "#000408"
-  }));
-};
-const EyeOffIcon = ({
-  width = 12,
-  height = 4
-}) => {
-  return /*#__PURE__*/React$1.createElement("svg", {
-    width: width,
-    height: height,
-    viewBox: `0 0 12 4`
-  }, /*#__PURE__*/React$1.createElement("path", {
-    fillRule: "evenodd",
-    clipRule: "evenodd",
-    d: "M1.416 0a5.002 5.002 0 009.168 0h1.075A6.003 6.003 0 01.34 0h1.075z",
-    fill: "#333"
-  }));
-};
-const LockIcon = ({
-  width = 8,
-  height = 11
-}) => {
-  return /*#__PURE__*/React$1.createElement("svg", {
-    width: width,
-    height: height,
-    viewBox: `0 0 8 11`
-  }, /*#__PURE__*/React$1.createElement("path", {
-    fillRule: "evenodd",
-    clipRule: "evenodd",
-    d: "M4 0C2.34315 0 1 1.34315 1 3V5C0.447715 5 0 5.44772 0 6V9C0 10.1046 0.895431 11 2 11H6C7.10457 11 8 10.1046 8 9V6C8 5.44772 7.55228 5 7 5V3C7 1.34315 5.65685 0 4 0ZM6 5V3C6 1.89543 5.10457 1 4 1C2.89543 1 2 1.89543 2 3V5H6ZM1 9V6H7V9C7 9.55228 6.55228 10 6 10H2C1.44772 10 1 9.55228 1 9Z",
-    fill: "#000408"
-  }));
-};
-const LockedIcon = ({
-  width = 8,
-  height = 11
-}) => {
-  return /*#__PURE__*/React$1.createElement("svg", {
-    width: width,
-    height: height,
-    viewBox: `0 0 8 11`,
-    fill: "white"
-  }, /*#__PURE__*/React$1.createElement("path", {
-    d: "M1.5 5V3A2.5 2.5 0 014 .5v0A2.5 2.5 0 016.5 3v2",
-    stroke: "#333"
-  }), /*#__PURE__*/React$1.createElement("path", {
-    d: "M.5 6a.5.5 0 01.5-.5h6a.5.5 0 01.5.5v3A1.5 1.5 0 016 10.5H2A1.5 1.5 0 01.5 9V6z",
-    fill: "#333",
-    stroke: "#333",
-    strokeLinecap: "round",
-    strokeLinejoin: "round"
-  }));
-};
-const VolumeIcon = ({
-  width = 12,
-  height = 12
-}) => {
-  return /*#__PURE__*/React$1.createElement("svg", {
-    width: width,
-    height: height,
-    viewBox: "0 0 12 12",
-    fill: "none"
-  }, /*#__PURE__*/React$1.createElement("mask", {
-    id: "path-1-inside-1",
-    fill: "white"
-  }, /*#__PURE__*/React$1.createElement("path", {
-    d: "M2 3C0.895431 3 0 3.89543 0 5V7C0 8.10457 0.895431 9 2 9H3L6.4855 11.0913C7.15203 11.4912 8 11.0111 8 10.2338V1.76619C8 0.988896 7.15203 0.508783 6.4855 0.908698L3 3H2Z"
-  })), /*#__PURE__*/React$1.createElement("path", {
-    d: "M3 9L3.5145 8.14251L3.27698 8H3V9ZM3 3V4H3.27698L3.5145 3.85749L3 3ZM6.4855 11.0913L5.97101 11.9488L6.4855 11.0913ZM-1 5V7H1V5H-1ZM2 10H3V8H2V10ZM2.4855 9.85749L5.97101 11.9488L7 10.2338L3.5145 8.14251L2.4855 9.85749ZM9 10.2338V1.76619H7V10.2338H9ZM5.97101 0.0512046L2.4855 2.14251L3.5145 3.85749L7 1.76619L5.97101 0.0512046ZM3 2H2V4H3V2ZM9 1.76619C9 0.211601 7.30406 -0.748625 5.97101 0.0512046L7 1.76619V1.76619H9ZM5.97101 11.9488C7.30405 12.7486 9 11.7884 9 10.2338H7L7 10.2338L5.97101 11.9488ZM-1 7C-1 8.65685 0.343146 10 2 10V8C1.44772 8 1 7.55228 1 7H-1ZM1 5C1 4.44772 1.44772 4 2 4V2C0.343146 2 -1 3.34315 -1 5H1Z",
-    fill: "#333333",
-    mask: "url(#path-1-inside-1)"
-  }), /*#__PURE__*/React$1.createElement("path", {
-    fillRule: "evenodd",
-    clipRule: "evenodd",
-    d: "M9 7.73243C9.5978 7.38662 10 6.74028 10 6C10 5.25972 9.5978 4.61337 9 4.26756V6V7.73243Z",
-    fill: "#333333"
-  }), /*#__PURE__*/React$1.createElement("path", {
-    fillRule: "evenodd",
-    clipRule: "evenodd",
-    d: "M9 9.74796C10.7252 9.30392 12 7.73782 12 5.87398C12 4.01014 10.7252 2.44404 9 2V3.04469C10.1652 3.45652 11 4.56776 11 5.87398C11 7.1802 10.1652 8.29144 9 8.70328V9.74796Z",
-    fill: "#333333"
-  }));
-};
-const VolumeMuteIcon = ({
-  width = 10,
-  height = 12
-}) => {
-  return /*#__PURE__*/React$1.createElement("svg", {
-    width: width,
-    height: height,
-    viewBox: "0 0 10 12",
-    fill: "none"
-  }, /*#__PURE__*/React$1.createElement("path", {
-    fillRule: "evenodd",
-    clipRule: "evenodd",
-    d: "M3.5145 8.14251L3.27698 8H3H2C1.44772 8 1 7.55229 1 7V5C1 4.44772 1.44772 4 2 4H3H3.27698L3.5145 3.8575L7 1.76619V3H8V1.76619C8 0.988898 7.15203 0.508785 6.4855 0.9087L3 3H2C0.895431 3 0 3.89543 0 5V7C0 8.10457 0.895431 9 2 9H3L6.4855 11.0913C7.15203 11.4912 8 11.0111 8 10.2338V9H7V10.2338L6.4855 11.0913L7 10.2338L3.5145 8.14251Z",
-    fill: "#333333"
-  }), /*#__PURE__*/React$1.createElement("path", {
-    d: "M6 7.5L9 4.5",
-    stroke: "#333333",
-    strokeLinecap: "round"
-  }), /*#__PURE__*/React$1.createElement("path", {
-    d: "M9 7.5L6 4.5",
-    stroke: "#333333",
-    strokeLinecap: "round"
-  }));
 };
 
 var css_248z$p = ".creator-module_creator__iBp7G {\n  display: flex;\n  width: 172px;\n  height: 32px;\n  justify-content: left;\n  align-items: center;\n  margin: 4px 0 0 -4px; }\n  .creator-module_creator__iBp7G * {\n    font-family: Aktiv Grotesk, sans-serif;\n    box-sizing: border-box;\n    cursor: pointer;\n    user-select: none; }\n  .creator-module_creator__iBp7G .creator-module_image__nbbgx {\n    border-radius: 50%;\n    width: 24px;\n    height: 24px;\n    background-size: cover;\n    background-position: center;\n    background-repeat: no-repeat;\n    margin-right: 8px; }\n  .creator-module_creator__iBp7G .creator-module_title__1ZO1M {\n    color: #333333; }\n";
@@ -3224,7 +3402,7 @@ const RowItem$1 = props => {
     onDoubleClick: () => {
       setEditTitle(true);
     }
-  }, node.type === 'image' && /*#__PURE__*/React$1.createElement(ImageIcon, null), node.type === 'video' && /*#__PURE__*/React$1.createElement(VideoIcon, null), node.type === 'shape' && /*#__PURE__*/React$1.createElement(ShapeModeUnion, null), node.type === 'vector' && /*#__PURE__*/React$1.createElement(VectorIcon, null), node.type === 'text' && /*#__PURE__*/React$1.createElement(TextIcon, null), node.type === 'rectangle' && /*#__PURE__*/React$1.createElement(RectangleIcon, null), node.type === 'mockupItem' && /*#__PURE__*/React$1.createElement(MockupItemIcon, null), node.type === 'artboard' && /*#__PURE__*/React$1.createElement(ArtboardIcon, null), node.type === 'file' && /*#__PURE__*/React$1.createElement(FileIcon, null), node.type === 'group' && /*#__PURE__*/React$1.createElement(FolderIcon, null), node.type === 'filter' && /*#__PURE__*/React$1.createElement(FilterIcon, null), /*#__PURE__*/React$1.createElement("div", {
+  }, node.type === 'image' && /*#__PURE__*/React$1.createElement(LayerImageIcon$1, null), node.type === 'video' && /*#__PURE__*/React$1.createElement(LayerVideoIcon$1, null), node.type === 'shape' && /*#__PURE__*/React$1.createElement(LayerShapeModeUnionIcon$1, null), node.type === 'vector' && /*#__PURE__*/React$1.createElement(LayerVectorIcon$1, null), node.type === 'text' && /*#__PURE__*/React$1.createElement(LayerTextIcon$1, null), node.type === 'rectangle' && /*#__PURE__*/React$1.createElement(LayerRectangleIcon$1, null), node.type === 'mockupItem' && /*#__PURE__*/React$1.createElement(LayerItemIcon$1, null), node.type === 'artboard' && /*#__PURE__*/React$1.createElement(LayerArtboardIcon$1, null), node.type === 'file' && /*#__PURE__*/React$1.createElement(LayerFileIcon$1, null), node.type === 'group' && /*#__PURE__*/React$1.createElement(LayerFolderIcon$1, null), node.type === 'filter' && /*#__PURE__*/React$1.createElement(LayerFilterIcon$1, null), node.type === 'smartObject' && /*#__PURE__*/React$1.createElement(LayerSmartObjectIcon$1, null), node.type === 'component' && /*#__PURE__*/React$1.createElement(LayerComponentIcon$1, null), node.type === 'mask' && /*#__PURE__*/React$1.createElement(LayerMaskIcon$1, null), node.type === 'shapeModeSubtract' && /*#__PURE__*/React$1.createElement(LayerShapeModeSubtractIcon$1, null), node.type === 'shapeModeIntersect' && /*#__PURE__*/React$1.createElement(LayerShapeModeIntersectIcon$1, null), node.type === 'shapeModeExclude' && /*#__PURE__*/React$1.createElement(LayerShapeModeExcludeIcon$1, null), /*#__PURE__*/React$1.createElement("div", {
     className: textLayerTitle
   }, !editTitle ? /*#__PURE__*/React$1.createElement(React$1.Fragment, null, /*#__PURE__*/React$1.createElement("label", null, node.title), toggleChildrenVisibility && node.children && (node.children.length > 0 || typeof node.children === 'function') && /*#__PURE__*/React$1.createElement("div", {
     className: collapseIcon,
@@ -3235,7 +3413,7 @@ const RowItem$1 = props => {
       path,
       treeIndex
     })
-  }, /*#__PURE__*/React$1.createElement(ArrowRightSecondIcon, null))) : /*#__PURE__*/React$1.createElement("input", {
+  }, /*#__PURE__*/React$1.createElement(ArrowRightSecondIcon$1, null))) : /*#__PURE__*/React$1.createElement("input", {
     type: "text",
     value: node.title,
     onKeyDown: ArrowKeyUpDown,
@@ -3293,22 +3471,6 @@ function classnames(...classes) {
   // Boolean("classname") === true;
   return classes.filter(Boolean).join(' ');
 }
-
-const CheckIcon = ({
-  width = 10,
-  height = 8
-}) => {
-  return /*#__PURE__*/React$1.createElement("svg", {
-    width: width,
-    height: height,
-    fill: "none",
-    viewBox: "0 0 10 8"
-  }, /*#__PURE__*/React$1.createElement("path", {
-    d: "M.5 4.5L3 7l6-6",
-    stroke: "#999",
-    strokeLinecap: "round"
-  }));
-};
 
 var css_248z$m = ".template_pages__1jMos {\n  height: 100%; }\n  .template_pages__1jMos .template_rst__tree__1Bion {\n    margin-left: -15px; }\n  .template_pages__1jMos .template_rst__lineHalfHorizontalRight__3Twe5::before,\n  .template_pages__1jMos .template_rst__lineFullVertical__2cVYe::after,\n  .template_pages__1jMos .template_rst__lineHalfVerticalTop__mrC0u::after,\n  .template_pages__1jMos .template_rst__lineHalfVerticalBottom__37jIB::after {\n    display: none !important; }\n  .template_pages__1jMos .template_rst__lineHalfHorizontalRight__3Twe5::before {\n    display: none !important; }\n  .template_pages__1jMos .template_rst__rtl__2Mec1.template_rst__lineHalfHorizontalRight__3Twe5::before {\n    display: none !important; }\n  .template_pages__1jMos .template_ReactVirtualized__Grid__3VrLM.template_ReactVirtualized__List__3m4ch.template_rst__virtualScrollOverride__1BfFC {\n    overflow: hidden !important; }\n  .template_pages__1jMos .template_rst__highlightBottomLeftCorner__298To::before,\n  .template_pages__1jMos .template_rst__highlightBottomLeftCorner__298To::after,\n  .template_pages__1jMos .template_rst__rtl__2Mec1.template_rst__highlightBottomLeftCorner__298To::after,\n  .template_pages__1jMos .template_rst__highlightTopLeftCorner__35fXI::before,\n  .template_pages__1jMos .template_rst__highlightLineVertical__3Ab_H::before {\n    display: none; }\n  .template_pages__1jMos .template_rst__placeholder__208EO::before {\n    border: none; }\n  .template_pages__1jMos .template_rst__nodeContent__3orKy {\n    width: 100%; }\n";
 styleInject(css_248z$m);
@@ -3503,7 +3665,7 @@ const RowItem = props => {
     })
   })), node.selected ? /*#__PURE__*/React$1.createElement("div", {
     className: icon
-  }, /*#__PURE__*/React$1.createElement(CheckIcon, null)) : ''))), {
+  }, /*#__PURE__*/React$1.createElement(CheckIcon$1, null)) : ''))), {
     dropEffect: 'copy'
   }))), toggleOption ? /*#__PURE__*/React$1.createElement("div", {
     ref: optionWrapper
@@ -3650,7 +3812,7 @@ const Pages = ({
         field: 'new'
       }
     })
-  }, /*#__PURE__*/React$1.createElement(PlusIcon, null)))), /*#__PURE__*/React$1.createElement("div", {
+  }, /*#__PURE__*/React$1.createElement(PlusIcon$1, null)))), /*#__PURE__*/React$1.createElement("div", {
     className: pagesWrapper
   }, /*#__PURE__*/React$1.createElement(SortableTree, {
     rowHeight: 32,
@@ -3867,16 +4029,16 @@ const Layers = ({
     generateNodeProps: (rowInfo, path) => ({
       buttons: [rowInfo.node.type === 'image' && /*#__PURE__*/React$1.createElement("div", {
         className: layerIconBtn
-      }, /*#__PURE__*/React$1.createElement(FXIcon, null)), rowInfo.node.type === 'video' && /*#__PURE__*/React$1.createElement("div", {
+      }, /*#__PURE__*/React$1.createElement(LayerFXIcon$1, null)), rowInfo.node.type === 'video' && /*#__PURE__*/React$1.createElement("div", {
         className: layerIconBtn,
         onClick: () => updateNode(rowInfo, 'volume')
-      }, rowInfo.node.volume ? /*#__PURE__*/React$1.createElement(VolumeIcon, null) : /*#__PURE__*/React$1.createElement(VolumeMuteIcon, null)), /*#__PURE__*/React$1.createElement(React$1.Fragment, null, /*#__PURE__*/React$1.createElement("div", {
+      }, rowInfo.node.volume ? /*#__PURE__*/React$1.createElement(VolumeOnIcon$1, null) : /*#__PURE__*/React$1.createElement(VolumeOffIcon$1, null)), /*#__PURE__*/React$1.createElement(React$1.Fragment, null, /*#__PURE__*/React$1.createElement("div", {
         className: layerIconBtn,
         onClick: () => updateNode(rowInfo, 'eye')
-      }, rowInfo.node.eye ? /*#__PURE__*/React$1.createElement(EyeIcon, null) : /*#__PURE__*/React$1.createElement(EyeOffIcon, null)), /*#__PURE__*/React$1.createElement("div", {
+      }, rowInfo.node.eye ? /*#__PURE__*/React$1.createElement(EyeIcon$1, null) : /*#__PURE__*/React$1.createElement(EyeCloseIcon$1, null)), /*#__PURE__*/React$1.createElement("div", {
         className: layerIconBtn,
         onClick: () => updateNode(rowInfo, 'lock')
-      }, rowInfo.node.lock ? /*#__PURE__*/React$1.createElement(LockedIcon, null) : /*#__PURE__*/React$1.createElement(LockIcon, null)))],
+      }, rowInfo.node.lock ? /*#__PURE__*/React$1.createElement(LockedIcon$1, null) : /*#__PURE__*/React$1.createElement(LockIcon$1, null)))],
       onRowClick: () => updateNode(rowInfo),
       rowInfo,
       updateTitle: row => updateTitle(row),
@@ -3895,299 +4057,684 @@ const Layers = ({
   }));
 };
 
-const LinkIcon = ({
-  width = 5,
-  height = 13
+var css_248z$k = ".properties-module_properties__VrtKX {\n  font-family: aktiv-grotesk, sans-serif;\n  background-color: #ffffff;\n  box-sizing: border-box;\n  outline: none;\n  cursor: pointer;\n  border-radius: 6px;\n  display: flex;\n  align-items: end;\n  justify-content: center;\n  flex-direction: column;\n  width: 224px;\n  padding-top: 8px; }\n  .properties-module_properties__VrtKX .properties-module_radiusDetails__TWHfU {\n    display: flex;\n    flex-direction: column; }\n    .properties-module_properties__VrtKX .properties-module_radiusDetails__TWHfU div {\n      display: flex; }\n      .properties-module_properties__VrtKX .properties-module_radiusDetails__TWHfU div input {\n        width: 28px;\n        height: 32px;\n        border: 1px solid #e8ebed;\n        outline: none;\n        padding: 4px 8px; }\n  .properties-module_properties__VrtKX .properties-module_row__2wnPk {\n    display: flex;\n    align-items: flex-start;\n    justify-content: center;\n    margin-left: 8px;\n    margin-bottom: 8px; }\n    .properties-module_properties__VrtKX .properties-module_row__2wnPk > div {\n      margin-right: 8px; }\n    .properties-module_properties__VrtKX .properties-module_row__2wnPk > div:last-child {\n      margin-right: 0; }\n    .properties-module_properties__VrtKX .properties-module_row__2wnPk .properties-module_rowAction__3mqc2 {\n      display: flex;\n      align-items: center;\n      justify-content: center; }\n";
+var style$j = {"properties":"properties-module_properties__VrtKX","radiusDetails":"properties-module_radiusDetails__TWHfU","row":"properties-module_row__2wnPk","rowAction":"properties-module_rowAction__3mqc2"};
+styleInject(css_248z$k);
+
+/* eslint-disable react-hooks/exhaustive-deps */
+const Properties = ({
+  onChange = () => {},
+  values = {
+    x: 22,
+    y: 22,
+    w: 22,
+    h: 22,
+    r: 22,
+    radius: 22,
+    position: 22,
+    isLock: false,
+    isLink: true,
+    isRadius: false
+  }
 }) => {
-  return /*#__PURE__*/React$1.createElement("svg", {
-    width: width,
-    height: height,
-    viewBox: `0 0 5 13`
-  }, /*#__PURE__*/React$1.createElement("path", {
-    fillRule: "evenodd",
-    clipRule: "evenodd",
-    d: "M0 4.5V2.5C0 1.11929 1.11929 0 2.5 0C3.88071 0 5 1.11929 5 2.5V4.5H4V2.5C4 1.67157 3.32843 1 2.5 1C1.67157 1 1 1.67157 1 2.5V4.5H0ZM0 10.5C0 11.8807 1.11929 13 2.5 13C3.88071 13 5 11.8807 5 10.5V8.5H4V10.5C4 11.3284 3.32843 12 2.5 12C1.67157 12 1 11.3284 1 10.5L1 8.5H0V10.5Z",
-    fill: "#000408"
-  }));
+  const {
+    properties,
+    row,
+    rowAction
+  } = style$j;
+  const [x, setX] = useState(values.x);
+  const [y, setY] = useState(values.y);
+  const [xChanged, setXChanged] = useState(true);
+  const [yChanged, setYChanged] = useState(true);
+  const [w, setW] = useState(values.w);
+  const [h, setH] = useState(values.h);
+  const [wChanged, setWChanged] = useState(true);
+  const [hChanged, setHChanged] = useState(true);
+  const [whRatio, setWHRatio] = useState(1);
+  const [radius, setRadius] = useState(values.radius);
+  const [, setRadiusChanged] = useState(true);
+  const [linkBtn, setLinkBtn] = useState(values.isLink);
+  const [radiusBtn, setRadiusBtn] = useState(values.isRadius);
+  const [radiusTop, setRadiusTop] = useState(values.radius);
+  const [radiusBottom, setRadiusBottom] = useState(values.radius);
+  const [radiusLeft, setRadiusLeft] = useState(values.radius);
+  const [radiusRight, setRadiusRight] = useState(values.radius);
+  const [position, setPosition] = useState(values.position);
+  useEffect(() => {
+    if (xChanged) {
+      let _res;
+
+      _res = {
+        x: parseFloat(x)
+      };
+      if (onChange) onChange(_res);
+      setXChanged(false);
+    }
+  }, [xChanged, x]);
+  useEffect(() => {
+    if (yChanged) {
+      let _res;
+
+      _res = {
+        y: parseFloat(y)
+      };
+      if (onChange) onChange(_res);
+      setYChanged(false);
+    }
+  }, [yChanged, y]);
+  useEffect(() => {
+    onChange({
+      position: parseFloat(position)
+    });
+  }, [position]);
+  useEffect(() => {
+    if (wChanged) {
+      let _res;
+
+      if (linkBtn) {
+        const H = Math.round(w * whRatio);
+        setH(H);
+        _res = {
+          w: parseFloat(w),
+          h: H
+        };
+      } else {
+        _res = {
+          w: parseFloat(w)
+        };
+      }
+
+      if (onChange) onChange(_res);
+      setWChanged(false);
+    }
+  }, [linkBtn, wChanged, w]);
+  useEffect(() => {
+    if (hChanged) {
+      let _res;
+
+      if (linkBtn) {
+        setW(h);
+        _res = {
+          w: parseFloat(h),
+          h: parseFloat(h)
+        };
+      } else {
+        _res = {
+          h: parseFloat(h)
+        };
+      }
+
+      if (onChange) onChange(_res);
+      setHChanged(false);
+    }
+  }, [linkBtn, hChanged, h]);
+  useEffect(() => {
+    let _res;
+
+    if (radiusBtn) {
+      setRadiusTop(parseFloat(radius));
+      setRadiusBottom(parseFloat(radius));
+      setRadiusLeft(parseFloat(radius));
+      setRadiusRight(parseFloat(radius));
+      _res = {
+        top: parseFloat(radius),
+        right: parseFloat(radius),
+        bottom: parseFloat(radius),
+        left: parseFloat(radius)
+      };
+    } else {
+      _res = {
+        radius: parseFloat(radius)
+      };
+    }
+
+    if (onChange) onChange(_res);
+    setRadiusChanged(false);
+  }, [radiusBtn, radius]);
+  useEffect(() => {
+    let _res;
+
+    _res = {
+      top: parseFloat(radiusTop),
+      left: parseFloat(radiusLeft),
+      bottom: parseFloat(radiusBottom),
+      right: parseFloat(radiusRight)
+    };
+    if (onChange) onChange(_res);
+  }, [radiusTop, radiusBottom, radiusLeft, radiusRight]);
+  useEffect(() => {
+    setWHRatio(Math.abs(w / h));
+    if (onChange) onChange({
+      w: parseFloat(w),
+      h: parseFloat(h)
+    });
+  }, [linkBtn]);
+  return /*#__PURE__*/React$1.createElement("div", {
+    className: `${properties}`
+  }, /*#__PURE__*/React$1.createElement("div", {
+    className: `${row}`
+  }, /*#__PURE__*/React$1.createElement(Input, {
+    label: "X",
+    value: x,
+    setValue: setX,
+    onChange: setXChanged
+  }), /*#__PURE__*/React$1.createElement(Input, {
+    label: "Y",
+    value: y,
+    setValue: setY,
+    onChange: setYChanged
+  }), /*#__PURE__*/React$1.createElement(Input, {
+    label: "\xB0",
+    value: position,
+    setValue: setPosition,
+    onChange: setPosition
+  })), /*#__PURE__*/React$1.createElement("div", {
+    className: `${row}`
+  }, /*#__PURE__*/React$1.createElement(Input, {
+    label: "W",
+    value: w,
+    setValue: setW,
+    onChange: setWChanged
+  }), /*#__PURE__*/React$1.createElement(Input, {
+    label: "H",
+    value: h,
+    setValue: setH,
+    onChange: setHChanged
+  }), /*#__PURE__*/React$1.createElement("div", {
+    className: `${rowAction}`
+  }, /*#__PURE__*/React$1.createElement(IconButton, {
+    isActive: linkBtn,
+    onClick: () => setLinkBtn(!linkBtn)
+  }, /*#__PURE__*/React$1.createElement(LinkIcon$1, null)))), /*#__PURE__*/React$1.createElement("div", {
+    className: `${row}`
+  }, /*#__PURE__*/React$1.createElement(Input, {
+    value: radius,
+    setValue: setRadius,
+    onChange: setRadiusChanged
+  }, /*#__PURE__*/React$1.createElement(RadiusIcon$1, {
+    width: 8,
+    height: 8
+  })), /*#__PURE__*/React$1.createElement("div", {
+    className: `${rowAction}`
+  }, /*#__PURE__*/React$1.createElement(IconButton, {
+    isActive: radiusBtn,
+    onClick: () => setRadiusBtn(!radiusBtn)
+  }, /*#__PURE__*/React$1.createElement(RadiusIcon$1, null)))));
 };
-const LinkIconVertical = ({
-  width = 14,
-  height = 5
+
+var css_248z$j = ".alignment-module_alignment__2yWS_ {\n  color: #b6babd;\n  background-color: #ffffff;\n  box-sizing: border-box;\n  height: 48px;\n  width: 240px;\n  display: flex;\n  justify-content: space-between;\n  align-items: center;\n  padding: 8px;\n  position: relative; }\n  .alignment-module_alignment__2yWS_ * {\n    font-family: Aktiv Grotesk, sans-serif;\n    box-sizing: border-box;\n    user-select: none; }\n  .alignment-module_alignment__2yWS_ .alignment-module_moreItems__2qnn1 {\n    width: 198px;\n    height: 56px;\n    padding: 4px;\n    opacity: 0;\n    border-radius: 8px;\n    box-shadow: 0px 2px 4px rgba(51, 51, 51, 0.12), 0px 0px 1px #999999, 0px 12px 24px -8px rgba(51, 51, 51, 0.08);\n    display: none;\n    flex-direction: column;\n    align-items: center;\n    justify-content: space-between;\n    position: absolute;\n    top: 44px;\n    right: 8px;\n    transition: opacity 0.1s ease-in-out;\n    z-index: 1;\n    background: #ffffff; }\n    .alignment-module_alignment__2yWS_ .alignment-module_moreItems__2qnn1 .alignment-module_moreItem__3UhRt {\n      width: 190px;\n      height: 23px;\n      display: flex;\n      align-items: center;\n      justify-content: left; }\n      .alignment-module_alignment__2yWS_ .alignment-module_moreItems__2qnn1 .alignment-module_moreItem__3UhRt.alignment-module_active__38FRK {\n        background: #f5f5f5;\n        border-radius: 4px; }\n      .alignment-module_alignment__2yWS_ .alignment-module_moreItems__2qnn1 .alignment-module_moreItem__3UhRt * {\n        cursor: pointer; }\n      .alignment-module_alignment__2yWS_ .alignment-module_moreItems__2qnn1 .alignment-module_moreItem__3UhRt .alignment-module_icon__LCeUF {\n        width: 24px;\n        height: 24px;\n        display: flex;\n        align-items: center;\n        justify-content: center; }\n      .alignment-module_alignment__2yWS_ .alignment-module_moreItems__2qnn1 .alignment-module_moreItem__3UhRt label {\n        width: 150px;\n        height: 16px;\n        font-size: 11px;\n        line-height: 16px;\n        display: flex;\n        align-items: center;\n        color: #333333;\n        margin-left: 8px; }\n      .alignment-module_alignment__2yWS_ .alignment-module_moreItems__2qnn1 .alignment-module_moreItem__3UhRt:hover {\n        background: #f5f5f5;\n        border-radius: 4px; }\n    .alignment-module_alignment__2yWS_ .alignment-module_moreItems__2qnn1.alignment-module_active__38FRK {\n      opacity: 1;\n      display: flex; }\n";
+var style$i = {"alignment":"alignment-module_alignment__2yWS_","moreItems":"alignment-module_moreItems__2qnn1","moreItem":"alignment-module_moreItem__3UhRt","active":"alignment-module_active__38FRK","icon":"alignment-module_icon__LCeUF"};
+styleInject(css_248z$j);
+
+const Alignment = ({
+  onChange = () => {}
 }) => {
-  return /*#__PURE__*/React$1.createElement("svg", {
-    width: width,
-    height: height,
-    viewBox: `0 0 14 5`
-  }, /*#__PURE__*/React$1.createElement("path", {
-    fillRule: "evenodd",
-    clipRule: "evenodd",
-    d: "M5 5H3C1.61929 5 .5 3.88071.5 2.5S1.61929 0 3 0h2v1H3c-.82843 0-1.5.67157-1.5 1.5S2.17157 4 3 4h2v1zm6 0c1.3807 0 2.5-1.11929 2.5-2.5S12.3807 0 11 0H9v1h2c.8284 0 1.5.67157 1.5 1.5S11.8284 4 11 4H9v1h2z",
-    fill: "#333"
-  }), /*#__PURE__*/React$1.createElement("path", {
-    stroke: "#333",
-    strokeLinecap: "round",
-    d: "M4.5 2.5h5"
+  const {
+    alignment,
+    moreItems,
+    moreItem,
+    icon,
+    active
+  } = style$i;
+  const [toggleOther, setToggleOther] = useState(false); // close moreItemsMenu by click outside.
+
+  const moreItemsWrapper = /*#__PURE__*/createRef();
+  useEffect(() => {
+    function clickOutside(e) {
+      if (moreItemsWrapper.current && !moreItemsWrapper.current.contains(e.target)) {
+        toggleOther && setToggleOther(false);
+      }
+    }
+
+    window.addEventListener('mousedown', clickOutside);
+    return () => window.removeEventListener('mousedown', clickOutside);
+  }, [moreItemsWrapper]);
+  return /*#__PURE__*/React$1.createElement("div", {
+    className: `${alignment}`
+  }, /*#__PURE__*/React$1.createElement(IconButton, {
+    onClick: () => onChange('left')
+  }, /*#__PURE__*/React$1.createElement(AlignLeftIcon$1, {
+    width: 12,
+    height: 12
+  })), /*#__PURE__*/React$1.createElement(IconButton, {
+    onClick: () => onChange('center')
+  }, /*#__PURE__*/React$1.createElement(AlignCenterIcon$1, {
+    width: 12,
+    height: 12
+  })), /*#__PURE__*/React$1.createElement(IconButton, {
+    onClick: () => onChange('right')
+  }, /*#__PURE__*/React$1.createElement(AlignRightIcon$1, {
+    width: 12,
+    height: 12
+  })), /*#__PURE__*/React$1.createElement(IconButton, {
+    onClick: () => onChange('top')
+  }, /*#__PURE__*/React$1.createElement(AlignTopIcon$1, {
+    width: 12,
+    height: 12
+  })), /*#__PURE__*/React$1.createElement(IconButton, {
+    onClick: () => onChange('centerV')
+  }, /*#__PURE__*/React$1.createElement(AlignCenterVIcon$1, {
+    width: 12,
+    height: 12
+  })), /*#__PURE__*/React$1.createElement(IconButton, {
+    onClick: () => onChange('bottom')
+  }, /*#__PURE__*/React$1.createElement(AlignBottomIcon$1, {
+    width: 12,
+    height: 12
+  })), /*#__PURE__*/React$1.createElement("div", {
+    ref: moreItemsWrapper
+  }, /*#__PURE__*/React$1.createElement(IconButton, {
+    isActive: toggleOther,
+    onClick: () => {
+      setToggleOther(!toggleOther);
+    }
+  }, /*#__PURE__*/React$1.createElement(ChevronArrowIcon$1, null)), /*#__PURE__*/React$1.createElement("div", {
+    className: `${moreItems} ${toggleOther ? active : ''}`
+  }, /*#__PURE__*/React$1.createElement("div", {
+    className: `${moreItem}`,
+    onClick: () => {
+      setToggleOther(false);
+      onChange('hSpacing');
+    }
+  }, /*#__PURE__*/React$1.createElement("div", {
+    className: icon
+  }, /*#__PURE__*/React$1.createElement(AlignDistributeHorizontalSpacingIcon$1, {
+    width: 12,
+    height: 12
+  })), /*#__PURE__*/React$1.createElement("label", null, "Distribute Horizontal Spacing")), /*#__PURE__*/React$1.createElement("div", {
+    className: `${moreItem}`,
+    onClick: () => {
+      setToggleOther(false);
+      onChange('vSpacing');
+    }
+  }, /*#__PURE__*/React$1.createElement("div", {
+    className: icon
+  }, /*#__PURE__*/React$1.createElement(AlignDistributeVerticalSpacingIcon$1, {
+    width: 12,
+    height: 12
+  })), /*#__PURE__*/React$1.createElement("label", null, "Distribute Vertical Spacing")))));
+};
+
+var css_248z$i = ".dropdown-module_dropdown__22lKQ {\n  display: flex;\n  align-items: center;\n  border: 1px solid #e8ebed;\n  border-radius: 8px;\n  position: relative;\n  background-color: #f5f5f5; }\n  .dropdown-module_dropdown__22lKQ * {\n    font-family: aktiv-grotesk, sans-serif;\n    box-sizing: border-box;\n    user-select: none; }\n  .dropdown-module_dropdown__22lKQ input {\n    border: none;\n    outline: none;\n    background: transparent;\n    padding: 0;\n    margin: 0; }\n  .dropdown-module_dropdown__22lKQ.dropdown-module_ddlOption__mBVs1 {\n    border: 0;\n    width: 100%; }\n    .dropdown-module_dropdown__22lKQ.dropdown-module_ddlOption__mBVs1 .dropdown-module_selectedItem__2-QsG {\n      width: 100%;\n      display: flex;\n      justify-content: left;\n      padding: 8px 0 8px 8px; }\n      .dropdown-module_dropdown__22lKQ.dropdown-module_ddlOption__mBVs1 .dropdown-module_selectedItem__2-QsG label {\n        font-family: Aktiv Grotesk, sans-serif;\n        font-style: normal;\n        font-weight: 700;\n        font-size: 12px;\n        line-height: 20px;\n        display: flex;\n        align-items: center;\n        color: #000408;\n        margin-right: 4px; }\n      .dropdown-module_dropdown__22lKQ.dropdown-module_ddlOption__mBVs1 .dropdown-module_selectedItem__2-QsG span {\n        font-size: 11px;\n        user-select: none; }\n    .dropdown-module_dropdown__22lKQ.dropdown-module_ddlOption__mBVs1:hover {\n      border: 0; }\n    .dropdown-module_dropdown__22lKQ.dropdown-module_ddlOption__mBVs1.dropdown-module_open__zFsbX {\n      border: 0; }\n    .dropdown-module_dropdown__22lKQ.dropdown-module_ddlOption__mBVs1 ul {\n      width: 177px;\n      top: -13px; }\n      .dropdown-module_dropdown__22lKQ.dropdown-module_ddlOption__mBVs1 ul li {\n        width: 164px; }\n        .dropdown-module_dropdown__22lKQ.dropdown-module_ddlOption__mBVs1 ul li button {\n          font-size: 11px;\n          line-height: 16px; }\n        .dropdown-module_dropdown__22lKQ.dropdown-module_ddlOption__mBVs1 ul li:hover {\n          background: #e8ebed; }\n          .dropdown-module_dropdown__22lKQ.dropdown-module_ddlOption__mBVs1 ul li:hover button {\n            color: #000408; }\n            .dropdown-module_dropdown__22lKQ.dropdown-module_ddlOption__mBVs1 ul li:hover button svg {\n              stroke: #000408; }\n  .dropdown-module_dropdown__22lKQ.dropdown-module_small__2V6t9 {\n    width: 108px;\n    height: 24px; }\n    .dropdown-module_dropdown__22lKQ.dropdown-module_small__2V6t9 input {\n      width: 85px;\n      font-size: 11px;\n      padding-left: 8px; }\n    .dropdown-module_dropdown__22lKQ.dropdown-module_small__2V6t9 ul.dropdown-module_search__1mXOx {\n      top: 23px;\n      min-height: 24px; }\n  .dropdown-module_dropdown__22lKQ.dropdown-module_medium__1pXzE {\n    width: 128px;\n    height: 32px; }\n    .dropdown-module_dropdown__22lKQ.dropdown-module_medium__1pXzE input {\n      width: 100%;\n      font-size: 12px;\n      padding-left: 8px; }\n    .dropdown-module_dropdown__22lKQ.dropdown-module_medium__1pXzE button {\n      padding-right: 3px; }\n    .dropdown-module_dropdown__22lKQ.dropdown-module_medium__1pXzE ul.dropdown-module_search__1mXOx {\n      top: 31px; }\n  .dropdown-module_dropdown__22lKQ.dropdown-module_large__3Mmct {\n    width: 136px;\n    height: 32px; }\n    .dropdown-module_dropdown__22lKQ.dropdown-module_large__3Mmct input {\n      width: 105px;\n      font-size: 14px;\n      line-height: 24px; }\n    .dropdown-module_dropdown__22lKQ.dropdown-module_large__3Mmct ul.dropdown-module_search__1mXOx {\n      top: 39px;\n      min-height: 24px; }\n  .dropdown-module_dropdown__22lKQ .dropdown-module_selectedItem__2-QsG {\n    width: 100%;\n    display: flex;\n    justify-content: space-between; }\n    .dropdown-module_dropdown__22lKQ .dropdown-module_selectedItem__2-QsG button {\n      width: 24px;\n      height: 32px;\n      display: flex;\n      justify-content: center;\n      align-items: center; }\n      .dropdown-module_dropdown__22lKQ .dropdown-module_selectedItem__2-QsG button svg {\n        stroke: #999999; }\n    .dropdown-module_dropdown__22lKQ .dropdown-module_selectedItem__2-QsG span {\n      font-size: 11px;\n      user-select: none; }\n  .dropdown-module_dropdown__22lKQ button {\n    border: 0;\n    background: transparent;\n    outline: none;\n    padding: 0;\n    margin: 0;\n    display: flex;\n    justify-content: space-between;\n    align-items: center;\n    cursor: pointer; }\n  .dropdown-module_dropdown__22lKQ ul {\n    list-style: none;\n    margin: 0;\n    padding: 0;\n    display: flex;\n    flex-direction: column;\n    padding: 4px;\n    position: absolute;\n    width: 140px;\n    background: #ffffff;\n    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.06), 0px 0.5px 1px rgba(0, 0, 0, 0.24);\n    border-radius: 8px;\n    top: -1px;\n    left: -2px;\n    z-index: 1;\n    max-height: 104px;\n    overflow: hidden; }\n    .dropdown-module_dropdown__22lKQ ul > div > div:nth-child(3) {\n      width: 4px !important;\n      right: 0 !important; }\n      .dropdown-module_dropdown__22lKQ ul > div > div:nth-child(3) > div:hover {\n        background-color: #3399ff !important; }\n    .dropdown-module_dropdown__22lKQ ul li {\n      display: flex;\n      flex-direction: row;\n      align-items: center;\n      padding: 4px 4px 4px 8px;\n      position: static;\n      width: 132px;\n      height: 24px;\n      border-radius: 4px;\n      align-self: stretch; }\n      .dropdown-module_dropdown__22lKQ ul li button {\n        width: 100%;\n        padding-right: 4px;\n        height: 32px; }\n        .dropdown-module_dropdown__22lKQ ul li button span {\n          font-size: 11px;\n          user-select: none; }\n          .dropdown-module_dropdown__22lKQ ul li button span > span {\n            color: #b6babd; }\n        .dropdown-module_dropdown__22lKQ ul li button svg {\n          stroke: #31363a; }\n      .dropdown-module_dropdown__22lKQ ul li:hover {\n        background: #3399ff; }\n        .dropdown-module_dropdown__22lKQ ul li:hover button {\n          color: #ffffff; }\n          .dropdown-module_dropdown__22lKQ ul li:hover button > span > span {\n            color: #63676c; }\n          .dropdown-module_dropdown__22lKQ ul li:hover button svg {\n            stroke: #e8ebed; }\n    .dropdown-module_dropdown__22lKQ ul button {\n      text-align: left; }\n  .dropdown-module_dropdown__22lKQ:hover {\n    border: 1px solid #b6babd; }\n  .dropdown-module_dropdown__22lKQ.dropdown-module_open__zFsbX {\n    border: 1px solid #3399ff; }\n  .dropdown-module_dropdown__22lKQ [type='text']:focus,\n  .dropdown-module_dropdown__22lKQ [type='password']:focus,\n  .dropdown-module_dropdown__22lKQ [type='number']:focus,\n  .dropdown-module_dropdown__22lKQ [type='email']:focus,\n  .dropdown-module_dropdown__22lKQ [type='search']:focus {\n    color: #333333; }\n";
+var style$h = {"dropdown":"dropdown-module_dropdown__22lKQ","ddlOption":"dropdown-module_ddlOption__mBVs1","selectedItem":"dropdown-module_selectedItem__2-QsG","open":"dropdown-module_open__zFsbX","small":"dropdown-module_small__2V6t9","search":"dropdown-module_search__1mXOx","medium":"dropdown-module_medium__1pXzE","large":"dropdown-module_large__3Mmct"};
+styleInject(css_248z$i);
+
+/* eslint-disable react-hooks/exhaustive-deps */
+
+const Dropdown = ({
+  option = [],
+  size = 'small',
+  onChange = () => {},
+  selectedValue = option[0],
+  className = null,
+  popupMenu = 'right'
+}) => {
+  const [optionValueState, setOptionValueState] = useState(selectedValue);
+  const [toggleOption, setToggleOption] = useState(false);
+  const [toggleSearch, setToggleSearch] = useState(false);
+  const [searchState, setSearchState] = useState('');
+  const [resultSearchState, setResultSearchState] = useState([]);
+  const {
+    dropdown,
+    selectedItem,
+    search,
+    open
+  } = style$h;
+  const openMenuPosition = popupMenu === 'left' ? {
+    right: -2,
+    left: 'auto'
+  } : {
+    left: -2,
+    right: 'auto'
+  }; // close menu by click outside.
+
+  const menuWrapper = /*#__PURE__*/createRef();
+  useEffect(() => {
+    function clickOutside(e) {
+      if (menuWrapper.current && !menuWrapper.current.contains(e.target)) {
+        setToggleOption(false);
+      }
+    }
+
+    window.addEventListener('mousedown', clickOutside);
+    return () => window.removeEventListener('mousedown', clickOutside);
+  }, [menuWrapper]); // close Search by click outside.
+
+  const searchWrapper = /*#__PURE__*/createRef();
+  useEffect(() => {
+    function clickOutside(e) {
+      if (searchWrapper.current && !searchWrapper.current.contains(e.target)) {
+        setToggleSearch(false);
+      }
+    }
+
+    window.addEventListener('mousedown', clickOutside);
+    return () => window.removeEventListener('mousedown', clickOutside);
+  }, [searchWrapper]);
+  useEffect(() => {
+    if (selectedValue) setSearchState(selectedValue.name);
+  }, [selectedValue]);
+
+  const onClickOptionHandler = optionValue => {
+    // scrollOfOn(true);
+    setOptionValueState(optionValue);
+    setSearchState(optionValue.name);
+    onChange(optionValue);
+    setToggleOption(false);
+    setToggleSearch(false);
+  };
+
+  const inputOnChangeHandler = ({
+    value
+  }) => {
+    setToggleSearch(true);
+    setSearchState(value);
+    if (value === '') setResultSearchState(option);else setResultSearchState(option.filter(item => {
+      return item.name.toString().toLowerCase().includes(value.toLowerCase());
+    }));
+  };
+
+  return /*#__PURE__*/React$1.createElement("div", {
+    className: `${dropdown} ${style$h[size]} ${toggleSearch ? open : ''} ${className ? className : ''}`,
+    ref: menuWrapper
+  }, toggleOption && option.length > 1 && /*#__PURE__*/React$1.createElement("ul", {
+    style: openMenuPosition
+  }, /*#__PURE__*/React$1.createElement(Scrollbars$1, {
+    autoHide: true,
+    style: {
+      width: size === 'medium-fw' ? 176 : 144,
+      height: 104
+    }
+  }, option.map((option, key) => /*#__PURE__*/React$1.createElement("li", {
+    key: key // onMouseEnter={() => scrollOfOn()}
+    // onMouseLeave={() => scrollOfOn(true)}
+
+  }, /*#__PURE__*/React$1.createElement("button", {
+    type: "button",
+    onClick: () => onClickOptionHandler(option)
+  }, /*#__PURE__*/React$1.createElement("span", null, option.name), optionValueState && optionValueState.value === option.value && /*#__PURE__*/React$1.createElement(CheckIcon$1, null)))))), /*#__PURE__*/React$1.createElement("div", {
+    className: `${selectedItem}`
+  }, optionValueState && /*#__PURE__*/React$1.createElement("input", {
+    type: "text",
+    value: searchState,
+    onClick: e => inputOnChangeHandler(e.target),
+    onChange: e => inputOnChangeHandler(e.target)
+  }), /*#__PURE__*/React$1.createElement("button", {
+    type: "button",
+    onClick: () => setToggleOption(!toggleOption)
+  }, /*#__PURE__*/React$1.createElement(ChevronArrowIcon$1, null))), toggleSearch && resultSearchState.length ? /*#__PURE__*/React$1.createElement("ul", {
+    className: `${search}`,
+    ref: searchWrapper,
+    style: openMenuPosition
+  }, /*#__PURE__*/React$1.createElement(Scrollbars$1, {
+    autoHide: true,
+    style: {
+      width: size === 'medium-fw' ? 176 : 144,
+      height: 104
+    }
+  }, resultSearchState.map((option, key) => /*#__PURE__*/React$1.createElement("li", {
+    key: key // onMouseEnter={() => scrollOfOn()}
+    // onMouseLeave={() => scrollOfOn(true)}
+
+  }, /*#__PURE__*/React$1.createElement("button", {
+    type: "button",
+    onClick: () => onClickOptionHandler(option)
+  }, /*#__PURE__*/React$1.createElement("span", null, option.name)))))) : null);
+};
+
+var css_248z$h = ".visibility-module_visibility__3iQjS {\n  width: 240px;\n  height: 48px;\n  display: flex;\n  align-items: center;\n  justify-content: end;\n  border-radius: 4px;\n  cursor: pointer;\n  padding: 8px; }\n  .visibility-module_visibility__3iQjS * {\n    font-family: Aktiv Grotesk, sans-serif;\n    box-sizing: border-box;\n    user-select: none; }\n  .visibility-module_visibility__3iQjS > div:first-child {\n    margin-right: 8px; }\n  .visibility-module_visibility__3iQjS.visibility-module_white__iRpGB {\n    background: #ffffff; }\n  .visibility-module_visibility__3iQjS.visibility-module_gray__3wI-z {\n    background: #f5f5f5; }\n  .visibility-module_visibility__3iQjS.visibility-module_silver__21swe {\n    background: #f2f4f5; }\n  .visibility-module_visibility__3iQjS .visibility-module_layerText__3beuT {\n    font-family: Aktiv Grotesk, sans-serif;\n    font-size: 12px;\n    line-height: 24px;\n    font-weight: 600;\n    display: flex;\n    align-items: center;\n    margin: 0px 8px;\n    width: 188px;\n    height: 24px;\n    cursor: text; }\n    .visibility-module_visibility__3iQjS .visibility-module_layerText__3beuT.visibility-module_purple__1LY8P {\n      color: #b555e5; }\n    .visibility-module_visibility__3iQjS .visibility-module_layerText__3beuT.visibility-module_black__2mGsm {\n      color: #31363a; }\n";
+var style$g = {"visibility":"visibility-module_visibility__3iQjS","white":"visibility-module_white__iRpGB","gray":"visibility-module_gray__3wI-z","silver":"visibility-module_silver__21swe","layerText":"visibility-module_layerText__3beuT","purple":"visibility-module_purple__1LY8P","black":"visibility-module_black__2mGsm"};
+styleInject(css_248z$h);
+
+/* eslint-disable react-hooks/exhaustive-deps */
+const defaultOption = [{
+  name: 'Normal',
+  value: 'Normal'
+}, {
+  name: 'Darken',
+  value: 'Darken'
+}, {
+  name: 'Multiply',
+  value: 'Multiply'
+}, {
+  name: 'Color Burn',
+  value: 'Color Burn'
+}, {
+  name: 'Lighten',
+  value: 'Lighten'
+}, {
+  name: 'Screen',
+  value: 'Screen'
+}, {
+  name: 'Color Dodge',
+  value: 'Color Dodge'
+}, {
+  name: 'Lighter Color',
+  value: 'Lighter Color'
+}, {
+  name: 'Overlay',
+  value: 'Overlay'
+}, {
+  name: 'Soft Light',
+  value: 'Soft Light'
+}, {
+  name: 'Hard Light',
+  value: 'Hard Light'
+}, {
+  name: 'Difference"',
+  value: 'Difference'
+}, {
+  name: 'Exclusion',
+  value: 'Exclusion'
+}, {
+  name: 'Hue',
+  value: 'Hue'
+}, {
+  name: 'Saturation',
+  value: 'Saturation'
+}, {
+  name: 'Color',
+  value: 'Color'
+}, {
+  name: 'Luminosity',
+  value: 'Luminosity'
+}, {
+  name: 'Source In',
+  value: 'Source In'
+}, {
+  name: 'Source Out',
+  value: 'Source Out'
+}, {
+  name: 'Source Atop',
+  value: 'Source Atop'
+}, {
+  name: 'Destination Over',
+  value: 'Destination Over'
+}, {
+  name: 'Destination In',
+  value: 'Destination In'
+}, {
+  name: 'Destination Out',
+  value: 'Destination Out'
+}, {
+  name: 'Destination Atop',
+  value: 'Destination Atop'
+}, {
+  name: 'Copy',
+  value: 'Copy'
+}, {
+  name: 'XOR',
+  value: 'XOR'
+}];
+const Visibility = ({
+  type = 'white',
+  option = defaultOption,
+  input = 0,
+  label = '%',
+  onChangeValues
+}) => {
+  const {
+    visibility
+  } = style$g;
+  const [selectedItem, setSelectedItem] = useState(option[0]);
+  const [inputState, setInputState] = useState(input);
+  useEffect(() => {
+    if (onChangeValues) onChangeValues({
+      option: selectedItem,
+      value: parseFloat(inputState)
+    });
+  }, [selectedItem, inputState]);
+  return /*#__PURE__*/React$1.createElement("div", {
+    className: `${visibility} ${style$g[type]}`
+  }, /*#__PURE__*/React$1.createElement(Dropdown, {
+    option: option,
+    onChangeValue: setSelectedItem,
+    size: "medium"
+  }), /*#__PURE__*/React$1.createElement(Input, {
+    onChangeValue: setInputState,
+    value: inputState,
+    setValue: setInputState,
+    label: label,
+    size: "normal"
   }));
 };
 
-const RadiusIcon = ({
-  width = 9,
-  height = 9
+var css_248z$g = ".smart-layout-module_smartLayout__1hqko {\n  background-color: #ffffff;\n  width: 240px;\n  min-height: 48px;\n  display: flex;\n  padding: 8px;\n  display: flex;\n  flex-direction: column;\n  align-items: center; }\n  .smart-layout-module_smartLayout__1hqko * {\n    font-family: Aktiv Grotesk, sans-serif;\n    box-sizing: border-box;\n    user-select: none; }\n  .smart-layout-module_smartLayout__1hqko .smart-layout-module_header__p8MeV {\n    width: 224px;\n    height: 32px;\n    display: flex;\n    align-items: center;\n    justify-content: space-between; }\n    .smart-layout-module_smartLayout__1hqko .smart-layout-module_header__p8MeV .smart-layout-module_title__3l_hj {\n      height: 16px;\n      font-weight: 600;\n      font-size: 11px;\n      line-height: 16px;\n      display: flex;\n      align-items: center;\n      color: #333333; }\n    .smart-layout-module_smartLayout__1hqko .smart-layout-module_header__p8MeV .smart-layout-module_actionButton__1TAJH button {\n      width: 24px;\n      height: 24px; }\n  .smart-layout-module_smartLayout__1hqko .smart-layout-module_smartLayoutDetails__1S3Nf {\n    width: 100%;\n    display: none;\n    align-items: center;\n    justify-content: end; }\n    .smart-layout-module_smartLayout__1hqko .smart-layout-module_smartLayoutDetails__1S3Nf.smart-layout-module_active__NNYfB {\n      display: flex; }\n    .smart-layout-module_smartLayout__1hqko .smart-layout-module_smartLayoutDetails__1S3Nf .smart-layout-module_pinToEdgeBtnWrapper__3HFeW {\n      width: 64px;\n      height: 64px;\n      padding: 4px;\n      background-color: #f5f5f5;\n      display: flex;\n      flex-direction: column;\n      justify-content: space-between;\n      border-radius: 8px;\n      margin-right: 8px; }\n      .smart-layout-module_smartLayout__1hqko .smart-layout-module_smartLayoutDetails__1S3Nf .smart-layout-module_pinToEdgeBtnWrapper__3HFeW * {\n        cursor: pointer; }\n      .smart-layout-module_smartLayout__1hqko .smart-layout-module_smartLayoutDetails__1S3Nf .smart-layout-module_pinToEdgeBtnWrapper__3HFeW .smart-layout-module_alignCenter__1Z096 {\n        display: flex;\n        align-items: center;\n        justify-content: space-between; }\n        .smart-layout-module_smartLayout__1hqko .smart-layout-module_smartLayoutDetails__1S3Nf .smart-layout-module_pinToEdgeBtnWrapper__3HFeW .smart-layout-module_alignCenter__1Z096 .smart-layout-module_alignCenterIconVHWrapper__1pTlN {\n          width: 16px;\n          height: 16px;\n          position: relative; }\n          .smart-layout-module_smartLayout__1hqko .smart-layout-module_smartLayoutDetails__1S3Nf .smart-layout-module_pinToEdgeBtnWrapper__3HFeW .smart-layout-module_alignCenter__1Z096 .smart-layout-module_alignCenterIconVHWrapper__1pTlN .smart-layout-module_alignCenterIconH__1NfSX {\n            position: absolute;\n            width: 16px;\n            height: 1px;\n            background-color: #999999;\n            top: 7.3px; }\n            .smart-layout-module_smartLayout__1hqko .smart-layout-module_smartLayoutDetails__1S3Nf .smart-layout-module_pinToEdgeBtnWrapper__3HFeW .smart-layout-module_alignCenter__1Z096 .smart-layout-module_alignCenterIconVHWrapper__1pTlN .smart-layout-module_alignCenterIconH__1NfSX.smart-layout-module_active__NNYfB, .smart-layout-module_smartLayout__1hqko .smart-layout-module_smartLayoutDetails__1S3Nf .smart-layout-module_pinToEdgeBtnWrapper__3HFeW .smart-layout-module_alignCenter__1Z096 .smart-layout-module_alignCenterIconVHWrapper__1pTlN .smart-layout-module_alignCenterIconH__1NfSX:hover {\n              background-color: #333333; }\n          .smart-layout-module_smartLayout__1hqko .smart-layout-module_smartLayoutDetails__1S3Nf .smart-layout-module_pinToEdgeBtnWrapper__3HFeW .smart-layout-module_alignCenter__1Z096 .smart-layout-module_alignCenterIconVHWrapper__1pTlN .smart-layout-module_alignCenterIconV__1w-BM {\n            position: absolute;\n            width: 1px;\n            height: 16px;\n            background-color: #999999;\n            left: 7.3px; }\n            .smart-layout-module_smartLayout__1hqko .smart-layout-module_smartLayoutDetails__1S3Nf .smart-layout-module_pinToEdgeBtnWrapper__3HFeW .smart-layout-module_alignCenter__1Z096 .smart-layout-module_alignCenterIconVHWrapper__1pTlN .smart-layout-module_alignCenterIconV__1w-BM.smart-layout-module_active__NNYfB, .smart-layout-module_smartLayout__1hqko .smart-layout-module_smartLayoutDetails__1S3Nf .smart-layout-module_pinToEdgeBtnWrapper__3HFeW .smart-layout-module_alignCenter__1Z096 .smart-layout-module_alignCenterIconVHWrapper__1pTlN .smart-layout-module_alignCenterIconV__1w-BM:hover {\n              background-color: #333333; }\n      .smart-layout-module_smartLayout__1hqko .smart-layout-module_smartLayoutDetails__1S3Nf .smart-layout-module_pinToEdgeBtnWrapper__3HFeW .smart-layout-module_alignTop__18_GT,\n      .smart-layout-module_smartLayout__1hqko .smart-layout-module_smartLayoutDetails__1S3Nf .smart-layout-module_pinToEdgeBtnWrapper__3HFeW .smart-layout-module_alignBottom__30mef {\n        height: 12px;\n        width: 100%;\n        display: flex;\n        align-items: center;\n        justify-content: center; }\n      .smart-layout-module_smartLayout__1hqko .smart-layout-module_smartLayoutDetails__1S3Nf .smart-layout-module_pinToEdgeBtnWrapper__3HFeW .smart-layout-module_icon__3fK_L {\n        stroke: #999999;\n        display: flex;\n        flex-direction: column;\n        justify-content: space-between;\n        cursor: pointer; }\n        .smart-layout-module_smartLayout__1hqko .smart-layout-module_smartLayoutDetails__1S3Nf .smart-layout-module_pinToEdgeBtnWrapper__3HFeW .smart-layout-module_icon__3fK_L.smart-layout-module_active__NNYfB {\n          stroke-width: 1.5;\n          stroke: #333333; }\n    .smart-layout-module_smartLayout__1hqko .smart-layout-module_smartLayoutDetails__1S3Nf .smart-layout-module_pinToEdgeOptionsWrapper__1M5Cr {\n      display: flex;\n      flex-direction: column;\n      align-items: center;\n      justify-content: space-around;\n      width: 107px;\n      height: 64px; }\n";
+var style$f = {"smartLayout":"smart-layout-module_smartLayout__1hqko","header":"smart-layout-module_header__p8MeV","title":"smart-layout-module_title__3l_hj","actionButton":"smart-layout-module_actionButton__1TAJH","smartLayoutDetails":"smart-layout-module_smartLayoutDetails__1S3Nf","active":"smart-layout-module_active__NNYfB","pinToEdgeBtnWrapper":"smart-layout-module_pinToEdgeBtnWrapper__3HFeW","alignCenter":"smart-layout-module_alignCenter__1Z096","alignCenterIconVHWrapper":"smart-layout-module_alignCenterIconVHWrapper__1pTlN","alignCenterIconH":"smart-layout-module_alignCenterIconH__1NfSX","alignCenterIconV":"smart-layout-module_alignCenterIconV__1w-BM","alignTop":"smart-layout-module_alignTop__18_GT","alignBottom":"smart-layout-module_alignBottom__30mef","icon":"smart-layout-module_icon__3fK_L","pinToEdgeOptionsWrapper":"smart-layout-module_pinToEdgeOptionsWrapper__1M5Cr"};
+styleInject(css_248z$g);
+
+/* eslint-disable react-hooks/exhaustive-deps */
+const SmartLayout = ({
+  type = 'white',
+  onChange,
+  value = {
+    v: 'Scale',
+    h: 'Scale'
+  }
 }) => {
-  return /*#__PURE__*/React$1.createElement("svg", {
-    width: width,
-    height: height,
-    viewBox: "0 0 9 9",
-    fill: "none"
-  }, /*#__PURE__*/React$1.createElement("path", {
-    d: "M0.5 8V4.5C0.5 2.29086 2.29086 0.5 4.5 0.5H8",
-    stroke: "#B6BABD",
-    strokeLinecap: "round"
-  }));
+  const {
+    smartLayout,
+    header,
+    title,
+    actionButton,
+    smartLayoutDetails,
+    active,
+    pinToEdgeBtnWrapper,
+    pinToEdgeOptionsWrapper,
+    alignTop,
+    alignCenter,
+    alignBottom,
+    icon,
+    alignCenterIconVHWrapper,
+    alignCenterIconH,
+    alignCenterIconV
+  } = style$f;
+  const [toggleDetails, setToggleDetail] = useState(false);
+  const [selectedV, setSelectedItemV] = useState(value.v);
+  const [selectedH, setSelectedItemH] = useState(value.h);
+  useEffect(() => {
+    onChange({
+      selectedV,
+      selectedH
+    });
+  }, [selectedV, selectedH]);
+  return /*#__PURE__*/React$1.createElement("div", {
+    className: `${smartLayout} ${style$f[type]}`
+  }, /*#__PURE__*/React$1.createElement("div", {
+    className: header
+  }, /*#__PURE__*/React$1.createElement("div", {
+    className: title
+  }, /*#__PURE__*/React$1.createElement("label", null, "Pin to Edge")), /*#__PURE__*/React$1.createElement("div", {
+    className: actionButton
+  }, /*#__PURE__*/React$1.createElement(IconButton, {
+    onClick: () => {
+      setToggleDetail(!toggleDetails);
+    }
+  }, !toggleDetails ? /*#__PURE__*/React$1.createElement(PlusIcon$1, null) : /*#__PURE__*/React$1.createElement(MinusIcon$1, null)))), /*#__PURE__*/React$1.createElement("div", {
+    className: `${smartLayoutDetails} ${toggleDetails ? active : ''}`
+  }, /*#__PURE__*/React$1.createElement("div", {
+    className: pinToEdgeBtnWrapper
+  }, /*#__PURE__*/React$1.createElement("div", {
+    className: alignTop
+  }, /*#__PURE__*/React$1.createElement("div", {
+    className: `${icon} ${selectedV.includes('Top') ? active : ''}`,
+    onClick: () => setSelectedItemV('Top')
+  }, /*#__PURE__*/React$1.createElement(EdgeAlignTopIcon$1, null))), /*#__PURE__*/React$1.createElement("div", {
+    className: alignCenter
+  }, /*#__PURE__*/React$1.createElement("div", {
+    className: `${icon} ${selectedH.includes('Left') ? active : ''}`,
+    onClick: () => setSelectedItemH('Left')
+  }, /*#__PURE__*/React$1.createElement(EdgeAlignRightIcon$1, null)), /*#__PURE__*/React$1.createElement("div", {
+    className: alignCenterIconVHWrapper
+  }, /*#__PURE__*/React$1.createElement("div", {
+    className: `${alignCenterIconV} ${selectedV.includes('CenterV') ? active : ''}`,
+    onClick: () => setSelectedItemV('CenterV')
+  }), /*#__PURE__*/React$1.createElement("div", {
+    className: `${alignCenterIconH} ${selectedH.includes('CenterH') ? active : ''}`,
+    onClick: () => setSelectedItemH('CenterH')
+  })), /*#__PURE__*/React$1.createElement("div", {
+    className: `${icon} ${selectedH.includes('Right') ? active : ''}`,
+    onClick: () => setSelectedItemH('Right')
+  }, /*#__PURE__*/React$1.createElement(EdgeAlignLeftIcon$1, null))), /*#__PURE__*/React$1.createElement("div", {
+    className: alignBottom
+  }, /*#__PURE__*/React$1.createElement("div", {
+    className: `${icon} ${selectedV.includes('Bottom') ? active : ''}`,
+    onClick: () => setSelectedItemV('Bottom')
+  }, /*#__PURE__*/React$1.createElement(EdgeAlignBottomIcon$1, null)))), /*#__PURE__*/React$1.createElement("div", {
+    className: pinToEdgeOptionsWrapper
+  }, /*#__PURE__*/React$1.createElement(Dropdown, {
+    option: optionH,
+    onChangeValue: ({
+      value
+    }) => setSelectedItemH(value),
+    selectedValue: optionH.filter(item => item.value === selectedH)[0],
+    size: "small"
+  }), /*#__PURE__*/React$1.createElement(Dropdown, {
+    option: optionV,
+    selectedValue: optionV.filter(item => item.value === selectedV)[0],
+    onChangeValue: ({
+      value
+    }) => setSelectedItemV(value),
+    size: "small"
+  }))));
 };
-const RadiusIconFull = ({
-  width = 12,
-  height = 12
-}) => {
-  return /*#__PURE__*/React$1.createElement("svg", {
-    width: width,
-    height: height,
-    viewBox: `0 0 12 12`
-  }, /*#__PURE__*/React$1.createElement("path", {
-    fillRule: "evenodd",
-    clipRule: "evenodd",
-    d: "M1 2.5C1 1.67157 1.67157 1 2.5 1h2V0h-2C1.11929 0 0 1.11929 0 2.5v2h1v-2zm10 0c0-.82843-.6716-1.5-1.5-1.5h-2V0h2C10.8807 0 12 1.11929 12 2.5v2h-1v-2zM2.5 11C1.67157 11 1 10.3284 1 9.5v-2H0v2C0 10.8807 1.11929 12 2.5 12h2v-1h-2zM11 9.5c0 .8284-.6716 1.5-1.5 1.5h-2v1h2c1.3807 0 2.5-1.1193 2.5-2.5v-2h-1v2z",
-    fill: "#333"
-  }));
-};
-const AlignLeftIcon = ({
-  width = 14,
-  height = 16
-}) => {
-  return /*#__PURE__*/React$1.createElement("svg", {
-    width: width,
-    height: height,
-    viewBox: "0 0 14 16",
-    fill: "none",
-    xmlns: "http://www.w3.org/2000/svg"
-  }, /*#__PURE__*/React$1.createElement("line", {
-    x1: "0.5",
-    y1: "0.5",
-    x2: "0.500001",
-    y2: "15.5",
-    stroke: "#B6BABD",
-    strokeLinecap: "round"
-  }), /*#__PURE__*/React$1.createElement("rect", {
-    x: "2",
-    y: "5",
-    width: "12",
-    height: "2",
-    rx: "1",
-    fill: "#31363A"
-  }), /*#__PURE__*/React$1.createElement("rect", {
-    x: "2",
-    y: "9",
-    width: "6",
-    height: "2",
-    rx: "1",
-    fill: "#31363A"
-  }));
-};
-const AlignCenterIcon = ({
-  width = 13,
-  height = 12
-}) => {
-  return /*#__PURE__*/React$1.createElement("svg", {
-    width: width,
-    height: height,
-    viewBox: "0 0 13 12",
-    fill: "none",
-    xmlns: "http://www.w3.org/2000/svg"
-  }, /*#__PURE__*/React$1.createElement("path", {
-    fillRule: "evenodd",
-    clipRule: "evenodd",
-    d: "M7 0.5C7 0.223858 6.77614 0 6.5 0C6.22386 0 6 0.223858 6 0.5V5L7 5V0.5ZM7 7L6 7V11.5C6 11.7761 6.22386 12 6.5 12C6.77614 12 7 11.7761 7 11.5V7Z",
-    fill: "#B6BABD"
-  }), /*#__PURE__*/React$1.createElement("rect", {
-    y: "3",
-    width: "13",
-    height: "2",
-    rx: "1",
-    fill: "#31363A"
-  }), /*#__PURE__*/React$1.createElement("rect", {
-    x: "3",
-    y: "7",
-    width: "7",
-    height: "2",
-    rx: "1",
-    fill: "#31363A"
-  }));
-};
-const AlignRightIcon = ({
-  width = 16,
-  height = 16
-}) => {
-  return /*#__PURE__*/React$1.createElement("svg", {
-    width: width,
-    height: height,
-    fill: "none",
-    viewBox: "0 0 16 16"
-  }, /*#__PURE__*/React$1.createElement("defs", null), /*#__PURE__*/React$1.createElement("path", {
-    stroke: "#B6BABD",
-    strokeLinecap: "round",
-    d: "M15.5.5v15"
-  }), /*#__PURE__*/React$1.createElement("rect", {
-    width: "12",
-    height: "2",
-    fill: "#31363A",
-    rx: "1",
-    transform: "matrix(-1 0 0 1 14 5)"
-  }), /*#__PURE__*/React$1.createElement("rect", {
-    width: "6",
-    height: "2",
-    fill: "#31363A",
-    rx: "1",
-    transform: "matrix(-1 0 0 1 14 9)"
-  }));
-};
-const AlignTopIcon = ({
-  width = 16,
-  height = 16
-}) => {
-  return /*#__PURE__*/React$1.createElement("svg", {
-    width: width,
-    height: height,
-    fill: "none",
-    viewBox: "0 0 16 16"
-  }, /*#__PURE__*/React$1.createElement("defs", null), /*#__PURE__*/React$1.createElement("path", {
-    stroke: "#B6BABD",
-    strokeLinecap: "round",
-    d: "M.5.5h15"
-  }), /*#__PURE__*/React$1.createElement("rect", {
-    width: "12",
-    height: "2",
-    fill: "#31363A",
-    rx: "1",
-    transform: "matrix(0 1 1 0 5 2)"
-  }), /*#__PURE__*/React$1.createElement("rect", {
-    width: "6",
-    height: "2",
-    fill: "#31363A",
-    rx: "1",
-    transform: "matrix(0 1 1 0 9 2)"
-  }));
-};
-const AlignVerticalCenterIcon = ({
-  width = 16,
-  height = 16
-}) => {
-  return /*#__PURE__*/React$1.createElement("svg", {
-    width: width,
-    height: height,
-    fill: "none",
-    viewBox: "0 0 16 15"
-  }, /*#__PURE__*/React$1.createElement("defs", null), /*#__PURE__*/React$1.createElement("path", {
-    fill: "#B6BABD",
-    fillRule: "evenodd",
-    d: "M2.5 7c-.27614 0-.5.22386-.5.5s.22386.5.5.5H7V7H2.5zM9 7v1h4.5c.2761 0 .5-.22386.5-.5s-.2239-.5-.5-.5H9z",
-    clipRule: "evenodd"
-  }), /*#__PURE__*/React$1.createElement("rect", {
-    width: "13",
-    height: "2",
-    x: "5",
-    y: "14",
-    fill: "#31363A",
-    rx: "1",
-    transform: "rotate(-90 5 14)"
-  }), /*#__PURE__*/React$1.createElement("rect", {
-    width: "7",
-    height: "2",
-    x: "9",
-    y: "11",
-    fill: "#31363A",
-    rx: "1",
-    transform: "rotate(-90 9 11)"
-  }));
-};
-const AlignBottomIcon = ({
-  width = 16,
-  height = 14
-}) => {
-  return /*#__PURE__*/React$1.createElement("svg", {
-    width: width,
-    height: height,
-    fill: "none",
-    viewBox: "0 0 16 14"
-  }, /*#__PURE__*/React$1.createElement("defs", null), /*#__PURE__*/React$1.createElement("path", {
-    stroke: "#B6BABD",
-    strokeLinecap: "round",
-    d: "M.5 13.5h15"
-  }), /*#__PURE__*/React$1.createElement("rect", {
-    width: "12",
-    height: "2",
-    x: "5",
-    y: "12",
-    fill: "#31363A",
-    rx: "1",
-    transform: "rotate(-90 5 12)"
-  }), /*#__PURE__*/React$1.createElement("rect", {
-    width: "6",
-    height: "2",
-    x: "9",
-    y: "12",
-    fill: "#31363A",
-    rx: "1",
-    transform: "rotate(-90 9 12)"
-  }));
-};
-const AlignDistributeHorizontalSpaceIcon = ({
-  width = 8,
-  height = 16
-}) => {
-  return /*#__PURE__*/React$1.createElement("svg", {
-    width: width,
-    height: height,
-    fill: "none",
-    viewBox: "0 0 8 16"
-  }, /*#__PURE__*/React$1.createElement("defs", null), /*#__PURE__*/React$1.createElement("path", {
-    fill: "#B6BABD",
-    fillRule: "evenodd",
-    d: "M.5 16c-.27614 0-.5-.2239-.5-.5V.5C0 .22386.22386 0 .5 0s.5.22386.5.5v15c0 .2761-.22386.5-.5.5zm7 0c.27614 0 .5-.2239.5-.5V.5c0-.27614-.22386-.5-.5-.5S7 .22386 7 .5v15c0 .2761.22386.5.5.5z",
-    clipRule: "evenodd"
-  }), /*#__PURE__*/React$1.createElement("rect", {
-    width: "2",
-    height: "6",
-    x: "5",
-    y: "11",
-    fill: "#31363A",
-    rx: "1",
-    transform: "rotate(180 5 11)"
-  }));
-};
-const AlignDistributeVerticalSpaceIcon = ({
-  width = 16,
-  height = 8
-}) => {
-  return /*#__PURE__*/React$1.createElement("svg", {
-    width: width,
-    height: height,
-    fill: "none",
-    viewBox: "0 0 16 8"
-  }, /*#__PURE__*/React$1.createElement("defs", null), /*#__PURE__*/React$1.createElement("path", {
-    fill: "#B6BABD",
-    fillRule: "evenodd",
-    d: "M15.9999 7.5c0 .27614-.2238.5-.5.5H.49994c-.27614 0-.5-.22386-.5-.5s.22386-.5.5-.5H15.4999c.2762 0 .5.22386.5.5zm0-7c0-.27614-.2238-.5-.5-.5H.49994c-.27614 0-.5.22386-.5.5s.22386.5.5.5H15.4999c.2762 0 .5-.22386.5-.5z",
-    clipRule: "evenodd"
-  }), /*#__PURE__*/React$1.createElement("rect", {
-    width: "2",
-    height: "6",
-    x: "11",
-    y: "3",
-    fill: "#31363A",
-    rx: "1",
-    transform: "rotate(90 11 3)"
-  }));
-};
+const optionH = [{
+  name: 'Left',
+  value: 'Left'
+}, {
+  name: 'Right',
+  value: 'Right'
+}, {
+  name: 'Left and Right',
+  value: 'Left and Right'
+}, {
+  name: 'Center',
+  value: 'CenterH'
+}, {
+  name: 'Scale',
+  value: 'Scale'
+}];
+const optionV = [{
+  name: 'Top',
+  value: 'Top'
+}, {
+  name: 'Bottom',
+  value: 'Bottom'
+}, {
+  name: 'Top and Bottom',
+  value: 'Top and Bottom'
+}, {
+  name: 'Center',
+  value: 'CenterV'
+}, {
+  name: 'Scale',
+  value: 'Scale'
+}];
+
+var css_248z$f = "* {\n  box-sizing: border-box;\n  font-family: Aktiv Grotesk, sans-serif; }\n\n.text-module_textComp__1YJsp {\n  width: 240px;\n  display: flex;\n  flex-direction: column;\n  align-items: center;\n  justify-content: space-between;\n  box-sizing: border-box;\n  padding: 8px;\n  cursor: pointer; }\n  .text-module_textComp__1YJsp .text-module_textControlWrapper__18OLP {\n    display: flex;\n    flex-direction: column;\n    width: 224px; }\n    .text-module_textComp__1YJsp .text-module_textControlWrapper__18OLP .text-module_textWrapper__2bJ4r {\n      width: 224px;\n      background: #ffffff;\n      border-radius: 4px;\n      display: flex;\n      flex-direction: column;\n      align-items: center; }\n      .text-module_textComp__1YJsp .text-module_textControlWrapper__18OLP .text-module_textWrapper__2bJ4r .text-module_fontListOption__3Z7yn {\n        width: 224px;\n        height: 32px;\n        display: flex;\n        justify-content: space-between; }\n        .text-module_textComp__1YJsp .text-module_textControlWrapper__18OLP .text-module_textWrapper__2bJ4r .text-module_fontListOption__3Z7yn .text-module_fontSizes__34JoY {\n          width: 64px;\n          height: 32px; }\n        .text-module_textComp__1YJsp .text-module_textControlWrapper__18OLP .text-module_textWrapper__2bJ4r .text-module_fontListOption__3Z7yn .text-module_fontListStyle__2ZCs5 {\n          width: 156px;\n          height: 32px; }\n      .text-module_textComp__1YJsp .text-module_textControlWrapper__18OLP .text-module_textWrapper__2bJ4r .text-module_row__2eioI {\n        width: 224px;\n        height: 32px;\n        margin-top: 12px;\n        display: flex;\n        justify-content: space-between;\n        align-items: center; }\n        .text-module_textComp__1YJsp .text-module_textControlWrapper__18OLP .text-module_textWrapper__2bJ4r .text-module_row__2eioI .text-module_lineHeightSpace__ql2h6 {\n          width: 88px;\n          height: 32px;\n          display: flex;\n          justify-content: space-between;\n          align-items: center; }\n        .text-module_textComp__1YJsp .text-module_textControlWrapper__18OLP .text-module_textWrapper__2bJ4r .text-module_row__2eioI .text-module_lineHeightSpaceButtons__1U7Ki {\n          width: 80px;\n          height: 32px;\n          box-sizing: border-box;\n          display: flex; }\n        .text-module_textComp__1YJsp .text-module_textControlWrapper__18OLP .text-module_textWrapper__2bJ4r .text-module_row__2eioI .text-module_alignButtons__2F0BL {\n          width: 80px; }\n        .text-module_textComp__1YJsp .text-module_textControlWrapper__18OLP .text-module_textWrapper__2bJ4r .text-module_row__2eioI .text-module_alignButtons2__1JRbx {\n          width: 80px;\n          margin-right: 8px; }\n        .text-module_textComp__1YJsp .text-module_textControlWrapper__18OLP .text-module_textWrapper__2bJ4r .text-module_row__2eioI .text-module_alignButtons3__245BR {\n          width: 80px;\n          margin-right: 8px; }\n  .text-module_textComp__1YJsp .text-module_moreMenu__1Y2-e {\n    width: 200px;\n    min-height: 104px;\n    padding: 4px;\n    border-radius: 8px;\n    box-shadow: 0px 2px 4px rgba(51, 51, 51, 0.12), 0px 0px 1px #999999, 0px 12px 24px -8px rgba(51, 51, 51, 0.08);\n    position: fixed;\n    background-color: #ffffff;\n    right: 240px; }\n    .text-module_textComp__1YJsp .text-module_moreMenu__1Y2-e .text-module_moreHeader__1JJI- {\n      width: 192px;\n      height: 32px;\n      border-bottom: 1px solid #f5f5f5;\n      display: flex;\n      align-items: center;\n      justify-content: space-between;\n      font-size: 11px;\n      font-weight: 600;\n      padding: 4px; }\n    .text-module_textComp__1YJsp .text-module_moreMenu__1Y2-e .text-module_moreBody__119Uk {\n      display: flex;\n      justify-content: center;\n      align-items: center;\n      border-radius: 8px;\n      flex-direction: column;\n      padding-top: 4px; }\n      .text-module_textComp__1YJsp .text-module_moreMenu__1Y2-e .text-module_moreBody__119Uk .text-module_morMenuBodyRow__1y-B- {\n        width: 184px;\n        height: 32px;\n        display: flex;\n        justify-content: space-between;\n        align-items: center; }\n        .text-module_textComp__1YJsp .text-module_moreMenu__1Y2-e .text-module_moreBody__119Uk .text-module_morMenuBodyRow__1y-B- label {\n          color: #999999;\n          font-size: 11px;\n          font-weight: 600; }\n        .text-module_textComp__1YJsp .text-module_moreMenu__1Y2-e .text-module_moreBody__119Uk .text-module_morMenuBodyRow__1y-B- .text-module_morItemRadioButton__2hdHK {\n          height: 24px; }\n          .text-module_textComp__1YJsp .text-module_moreMenu__1Y2-e .text-module_moreBody__119Uk .text-module_morMenuBodyRow__1y-B- .text-module_morItemRadioButton__2hdHK button {\n            background-color: transparent;\n            border-radius: 8px;\n            border: 0 !important; }\n            .text-module_textComp__1YJsp .text-module_moreMenu__1Y2-e .text-module_moreBody__119Uk .text-module_morMenuBodyRow__1y-B- .text-module_morItemRadioButton__2hdHK button:hover, .text-module_textComp__1YJsp .text-module_moreMenu__1Y2-e .text-module_moreBody__119Uk .text-module_morMenuBodyRow__1y-B- .text-module_morItemRadioButton__2hdHK button.text-module_active__3fs_m {\n              background-color: #ebebeb !important; }\n  .text-module_textComp__1YJsp.text-module_white__FFMVg {\n    background: #ffffff; }\n  .text-module_textComp__1YJsp .text-module_header__77oI3 {\n    width: 224px;\n    height: 32px;\n    margin-bottom: 8px;\n    display: flex;\n    align-items: center;\n    justify-content: space-between; }\n    .text-module_textComp__1YJsp .text-module_header__77oI3 .text-module_layerText__ailJB {\n      font-family: Aktiv Grotesk, sans-serif;\n      font-size: 12px;\n      line-height: 24px;\n      font-weight: 600;\n      display: flex;\n      align-items: center;\n      cursor: text; }\n      .text-module_textComp__1YJsp .text-module_header__77oI3 .text-module_layerText__ailJB.text-module_purple__1cJZj {\n        color: #b555e5; }\n      .text-module_textComp__1YJsp .text-module_header__77oI3 .text-module_layerText__ailJB.text-module_black__X88TG {\n        color: #31363a; }\n";
+var style$e = {"textComp":"text-module_textComp__1YJsp","textControlWrapper":"text-module_textControlWrapper__18OLP","textWrapper":"text-module_textWrapper__2bJ4r","fontListOption":"text-module_fontListOption__3Z7yn","fontSizes":"text-module_fontSizes__34JoY","fontListStyle":"text-module_fontListStyle__2ZCs5","row":"text-module_row__2eioI","lineHeightSpace":"text-module_lineHeightSpace__ql2h6","lineHeightSpaceButtons":"text-module_lineHeightSpaceButtons__1U7Ki","alignButtons":"text-module_alignButtons__2F0BL","alignButtons2":"text-module_alignButtons2__1JRbx","alignButtons3":"text-module_alignButtons3__245BR","moreMenu":"text-module_moreMenu__1Y2-e","moreHeader":"text-module_moreHeader__1JJI-","moreBody":"text-module_moreBody__119Uk","morMenuBodyRow":"text-module_morMenuBodyRow__1y-B-","morItemRadioButton":"text-module_morItemRadioButton__2hdHK","active":"text-module_active__3fs_m","white":"text-module_white__FFMVg","header":"text-module_header__77oI3","layerText":"text-module_layerText__ailJB","purple":"text-module_purple__1cJZj","black":"text-module_black__X88TG"};
+styleInject(css_248z$f);
+
 const AlignHorizontalIcon = ({
   width = 14,
   height = 6
@@ -4202,121 +4749,6 @@ const AlignHorizontalIcon = ({
     fillRule: "evenodd",
     d: "M3.85357.14645c.19526.19526.19526.51184 0 .7071L2.20712 2.5h9.58578L10.1465.85355c-.1953-.19526-.1953-.51184 0-.7071.1952-.19527.5118-.19527.7071 0L13.7071 3l-2.8535 2.85355c-.1953.19527-.5119.19527-.7071 0-.1953-.19526-.1953-.51184 0-.7071L11.7929 3.5H2.20712l1.64645 1.64645c.19526.19526.19526.51184 0 .7071-.19526.19527-.51185.19527-.70711 0L.29291 3 3.14646.14645c.19526-.19527.51185-.19527.70711 0z",
     clipRule: "evenodd"
-  }));
-};
-const AlignVerticalIcon = ({
-  width = 6,
-  height = 12
-}) => {
-  return /*#__PURE__*/React$1.createElement("svg", {
-    width: width,
-    height: height,
-    fill: "none",
-    viewBox: "0 0 6 12"
-  }, /*#__PURE__*/React$1.createElement("defs", null), /*#__PURE__*/React$1.createElement("path", {
-    fill: "#000408",
-    fillRule: "evenodd",
-    d: "M5.85331 3.85363c-.19526.19526-.51185.19526-.70711 0L3.49976 2.20718v7.58579L5.1462 8.14652c.19526-.19526.51185-.19526.70711 0s.19526.51185 0 .70711L2.99976 11.7072.1462 8.85363c-.19526-.19526-.19526-.51185 0-.70711s.51185-.19526.7071 0l1.64646 1.64645V2.20718L.85331 3.85363c-.19526.19526-.51185.19526-.7071 0-.19527-.19526-.19527-.51185 0-.70711L2.99975.29297l2.85355 2.85355c.19526.19526.19526.51185 0 .70711z",
-    clipRule: "evenodd"
-  }));
-};
-const AlignTopLineIcon = ({
-  width = 14,
-  height = 20
-}) => {
-  return /*#__PURE__*/React$1.createElement("svg", {
-    width: width,
-    height: height,
-    viewBox: "0 0 14 20"
-  }, /*#__PURE__*/React$1.createElement("defs", null), /*#__PURE__*/React$1.createElement("rect", {
-    width: "12",
-    height: "2",
-    x: "14",
-    fill: "#E8EBED",
-    rx: "1",
-    transform: "rotate(90 14 0)"
-  }), /*#__PURE__*/React$1.createElement("rect", {
-    width: "20",
-    height: "2",
-    x: "8",
-    fill: "#E8EBED",
-    rx: "1",
-    transform: "rotate(90 8 0)"
-  }), /*#__PURE__*/React$1.createElement("rect", {
-    width: "12",
-    height: "2",
-    x: "2",
-    fill: "#E8EBED",
-    rx: "1",
-    transform: "rotate(90 2 0)"
-  }));
-};
-const AlignCenterLineIcon = ({
-  width = 14,
-  height = 20
-}) => {
-  return /*#__PURE__*/React$1.createElement("svg", {
-    width: width,
-    height: height,
-    fill: "none",
-    viewBox: "0 0 14 20"
-  }, /*#__PURE__*/React$1.createElement("defs", null), /*#__PURE__*/React$1.createElement("rect", {
-    width: "12",
-    height: "2",
-    x: "14",
-    y: "4",
-    fill: "#E8EBED",
-    rx: "1",
-    transform: "rotate(90 14 4)"
-  }), /*#__PURE__*/React$1.createElement("rect", {
-    width: "20",
-    height: "2",
-    x: "8",
-    fill: "#E8EBED",
-    rx: "1",
-    transform: "rotate(90 8 0)"
-  }), /*#__PURE__*/React$1.createElement("rect", {
-    width: "12",
-    height: "2",
-    x: "2",
-    y: "4",
-    fill: "#E8EBED",
-    rx: "1",
-    transform: "rotate(90 2 4)"
-  }));
-};
-const AlignBottomLineIcon = ({
-  width = 14,
-  height = 20
-}) => {
-  return /*#__PURE__*/React$1.createElement("svg", {
-    width: width,
-    height: height,
-    fill: "none",
-    viewBox: "0 0 14 20"
-  }, /*#__PURE__*/React$1.createElement("defs", null), /*#__PURE__*/React$1.createElement("rect", {
-    width: "12",
-    height: "2",
-    y: "20",
-    fill: "#E8EBED",
-    rx: "1",
-    transform: "rotate(-90 0 20)"
-  }), /*#__PURE__*/React$1.createElement("rect", {
-    width: "20",
-    height: "2",
-    x: "6",
-    y: "20",
-    fill: "#E8EBED",
-    rx: "1",
-    transform: "rotate(-90 6 20)"
-  }), /*#__PURE__*/React$1.createElement("rect", {
-    width: "12",
-    height: "2",
-    x: "12",
-    y: "20",
-    fill: "#E8EBED",
-    rx: "1",
-    transform: "rotate(-90 12 20)"
   }));
 };
 const AlignLineHeightIcon = ({
@@ -4643,909 +5075,6 @@ const TextStrikeThroughDecorationIcon = ({
     d: "M5 .5a.5.5 0 01.468.324L8.158 8H7.092l-.75-2H3.659l-.75 2H1.84L4.53.824A.5.5 0 015 .5zM4.034 5h1.932L5 2.424 4.034 5z",
     clipRule: "evenodd"
   }));
-}; //SMART LAYOUT
-
-const EdgeAlignTopIcon = ({
-  width = 8,
-  height = 12,
-  color = null
-}) => {
-  return /*#__PURE__*/React$1.createElement("svg", {
-    width: width,
-    height: height,
-    viewBox: "0 0 8 12"
-  }, /*#__PURE__*/React$1.createElement("path", {
-    stroke: color // stroke-width="1.5"
-    ,
-    strokeLinecap: "round",
-    d: "M4 11.25V.75M7.25.75H.75"
-  }));
-};
-const EdgeAlignRightIcon = ({
-  width = 12,
-  height = 8,
-  color = null
-}) => {
-  return /*#__PURE__*/React$1.createElement("svg", {
-    width: width,
-    height: height,
-    viewBox: "0 0 12 8"
-  }, /*#__PURE__*/React$1.createElement("path", {
-    stroke: color // stroke-width="1.5"
-    ,
-    strokeLinecap: "round",
-    d: "M11.25 4H.75M.75.75v6.5"
-  }));
-};
-const EdgeAlignLeftIcon = ({
-  width = 12,
-  height = 8,
-  color = null
-}) => {
-  return /*#__PURE__*/React$1.createElement("svg", {
-    width: width,
-    height: height,
-    viewBox: "0 0 12 8"
-  }, /*#__PURE__*/React$1.createElement("path", {
-    stroke: color,
-    strokeLinecap: "round",
-    d: "M.5 4h11M11.5 7.5v-7"
-  }));
-};
-const EdgeAlignBottomIcon = ({
-  width = 8,
-  height = 12,
-  color = null
-}) => {
-  return /*#__PURE__*/React$1.createElement("svg", {
-    width: width,
-    height: height,
-    viewBox: "0 0 8 12"
-  }, /*#__PURE__*/React$1.createElement("path", {
-    stroke: color,
-    strokeLinecap: "round",
-    d: "M4 .5v11M.5 11.5h7"
-  }));
-};
-const EdgeAlignCenterIcon = ({
-  width = 16,
-  height = 16,
-  color = null
-}) => {
-  return /*#__PURE__*/React$1.createElement("svg", {
-    width: width,
-    height: height,
-    viewBox: "0 0 16 16"
-  }, /*#__PURE__*/React$1.createElement("path", {
-    stroke: color,
-    strokeLinecap: "round",
-    d: "M.5 8h15M8 15.5V.5"
-  }));
-};
-const EdgeAlignCenterHorizontalIcon = ({
-  width = 16,
-  height = 2,
-  color = null
-}) => {
-  return /*#__PURE__*/React$1.createElement("svg", {
-    width: width,
-    height: height,
-    viewBox: "0 0 16 2"
-  }, /*#__PURE__*/React$1.createElement("path", {
-    stroke: color,
-    strokeLinecap: "round",
-    d: "M.5 1h15"
-  }));
-};
-const EdgeAlignCenterVerticalIcon = ({
-  width = 2,
-  height = 16,
-  color = null
-}) => {
-  return /*#__PURE__*/React$1.createElement("svg", {
-    width: width,
-    height: height,
-    viewBox: "0 0 2 16"
-  }, /*#__PURE__*/React$1.createElement("path", {
-    stroke: color,
-    strokeLinecap: "round",
-    d: "M1 15.5L.999999.5"
-  }));
-};
-
-var css_248z$k = ".properties-module_properties__VrtKX {\n  font-family: aktiv-grotesk, sans-serif;\n  background-color: #ffffff;\n  box-sizing: border-box;\n  outline: none;\n  cursor: pointer;\n  border-radius: 6px;\n  display: flex;\n  align-items: end;\n  justify-content: center;\n  flex-direction: column;\n  width: 224px;\n  padding-top: 8px; }\n  .properties-module_properties__VrtKX .properties-module_radiusDetails__TWHfU {\n    display: flex;\n    flex-direction: column; }\n    .properties-module_properties__VrtKX .properties-module_radiusDetails__TWHfU div {\n      display: flex; }\n      .properties-module_properties__VrtKX .properties-module_radiusDetails__TWHfU div input {\n        width: 28px;\n        height: 32px;\n        border: 1px solid #e8ebed;\n        outline: none;\n        padding: 4px 8px; }\n  .properties-module_properties__VrtKX .properties-module_row__2wnPk {\n    display: flex;\n    align-items: flex-start;\n    justify-content: center;\n    margin-left: 8px;\n    margin-bottom: 8px; }\n    .properties-module_properties__VrtKX .properties-module_row__2wnPk > div {\n      margin-right: 8px; }\n    .properties-module_properties__VrtKX .properties-module_row__2wnPk > div:last-child {\n      margin-right: 0; }\n    .properties-module_properties__VrtKX .properties-module_row__2wnPk .properties-module_rowAction__3mqc2 {\n      display: flex;\n      align-items: center;\n      justify-content: center; }\n";
-var style$j = {"properties":"properties-module_properties__VrtKX","radiusDetails":"properties-module_radiusDetails__TWHfU","row":"properties-module_row__2wnPk","rowAction":"properties-module_rowAction__3mqc2"};
-styleInject(css_248z$k);
-
-/* eslint-disable react-hooks/exhaustive-deps */
-const Properties = ({
-  onChange = () => {},
-  values = {
-    x: 22,
-    y: 22,
-    w: 22,
-    h: 22,
-    r: 22,
-    radius: 22,
-    position: 22,
-    isLock: false,
-    isLink: true,
-    isRadius: false
-  }
-}) => {
-  const {
-    properties,
-    row,
-    rowAction
-  } = style$j;
-  const [x, setX] = useState(values.x);
-  const [y, setY] = useState(values.y);
-  const [xChanged, setXChanged] = useState(true);
-  const [yChanged, setYChanged] = useState(true);
-  const [w, setW] = useState(values.w);
-  const [h, setH] = useState(values.h);
-  const [wChanged, setWChanged] = useState(true);
-  const [hChanged, setHChanged] = useState(true);
-  const [whRatio, setWHRatio] = useState(1);
-  const [radius, setRadius] = useState(values.radius);
-  const [, setRadiusChanged] = useState(true);
-  const [linkBtn, setLinkBtn] = useState(values.isLink);
-  const [radiusBtn, setRadiusBtn] = useState(values.isRadius);
-  const [radiusTop, setRadiusTop] = useState(values.radius);
-  const [radiusBottom, setRadiusBottom] = useState(values.radius);
-  const [radiusLeft, setRadiusLeft] = useState(values.radius);
-  const [radiusRight, setRadiusRight] = useState(values.radius);
-  const [position, setPosition] = useState(values.position);
-  useEffect(() => {
-    if (xChanged) {
-      let _res;
-
-      _res = {
-        x: parseFloat(x)
-      };
-      if (onChange) onChange(_res);
-      setXChanged(false);
-    }
-  }, [xChanged, x]);
-  useEffect(() => {
-    if (yChanged) {
-      let _res;
-
-      _res = {
-        y: parseFloat(y)
-      };
-      if (onChange) onChange(_res);
-      setYChanged(false);
-    }
-  }, [yChanged, y]);
-  useEffect(() => {
-    onChange({
-      position: parseFloat(position)
-    });
-  }, [position]);
-  useEffect(() => {
-    if (wChanged) {
-      let _res;
-
-      if (linkBtn) {
-        const H = Math.round(w * whRatio);
-        setH(H);
-        _res = {
-          w: parseFloat(w),
-          h: H
-        };
-      } else {
-        _res = {
-          w: parseFloat(w)
-        };
-      }
-
-      if (onChange) onChange(_res);
-      setWChanged(false);
-    }
-  }, [linkBtn, wChanged, w]);
-  useEffect(() => {
-    if (hChanged) {
-      let _res;
-
-      if (linkBtn) {
-        setW(h);
-        _res = {
-          w: parseFloat(h),
-          h: parseFloat(h)
-        };
-      } else {
-        _res = {
-          h: parseFloat(h)
-        };
-      }
-
-      if (onChange) onChange(_res);
-      setHChanged(false);
-    }
-  }, [linkBtn, hChanged, h]);
-  useEffect(() => {
-    let _res;
-
-    if (radiusBtn) {
-      setRadiusTop(parseFloat(radius));
-      setRadiusBottom(parseFloat(radius));
-      setRadiusLeft(parseFloat(radius));
-      setRadiusRight(parseFloat(radius));
-      _res = {
-        top: parseFloat(radius),
-        right: parseFloat(radius),
-        bottom: parseFloat(radius),
-        left: parseFloat(radius)
-      };
-    } else {
-      _res = {
-        radius: parseFloat(radius)
-      };
-    }
-
-    if (onChange) onChange(_res);
-    setRadiusChanged(false);
-  }, [radiusBtn, radius]);
-  useEffect(() => {
-    let _res;
-
-    _res = {
-      top: parseFloat(radiusTop),
-      left: parseFloat(radiusLeft),
-      bottom: parseFloat(radiusBottom),
-      right: parseFloat(radiusRight)
-    };
-    if (onChange) onChange(_res);
-  }, [radiusTop, radiusBottom, radiusLeft, radiusRight]);
-  useEffect(() => {
-    setWHRatio(Math.abs(w / h));
-    if (onChange) onChange({
-      w: parseFloat(w),
-      h: parseFloat(h)
-    });
-  }, [linkBtn]);
-  return /*#__PURE__*/React$1.createElement("div", {
-    className: `${properties}`
-  }, /*#__PURE__*/React$1.createElement("div", {
-    className: `${row}`
-  }, /*#__PURE__*/React$1.createElement(Input, {
-    label: "X",
-    value: x,
-    setValue: setX,
-    onChange: setXChanged
-  }), /*#__PURE__*/React$1.createElement(Input, {
-    label: "Y",
-    value: y,
-    setValue: setY,
-    onChange: setYChanged
-  }), /*#__PURE__*/React$1.createElement(Input, {
-    label: "\xB0",
-    value: position,
-    setValue: setPosition,
-    onChange: setPosition
-  })), /*#__PURE__*/React$1.createElement("div", {
-    className: `${row}`
-  }, /*#__PURE__*/React$1.createElement(Input, {
-    label: "W",
-    value: w,
-    setValue: setW,
-    onChange: setWChanged
-  }), /*#__PURE__*/React$1.createElement(Input, {
-    label: "H",
-    value: h,
-    setValue: setH,
-    onChange: setHChanged
-  }), /*#__PURE__*/React$1.createElement("div", {
-    className: `${rowAction}`
-  }, /*#__PURE__*/React$1.createElement(IconButton, {
-    isActive: linkBtn,
-    onClick: () => setLinkBtn(!linkBtn)
-  }, /*#__PURE__*/React$1.createElement(LinkIconVertical, null)))), /*#__PURE__*/React$1.createElement("div", {
-    className: `${row}`
-  }, /*#__PURE__*/React$1.createElement(Input, {
-    value: radius,
-    setValue: setRadius,
-    onChange: setRadiusChanged
-  }, /*#__PURE__*/React$1.createElement(RadiusIcon, {
-    width: 8,
-    height: 8
-  })), /*#__PURE__*/React$1.createElement("div", {
-    className: `${rowAction}`
-  }, /*#__PURE__*/React$1.createElement(IconButton, {
-    isActive: radiusBtn,
-    onClick: () => setRadiusBtn(!radiusBtn)
-  }, /*#__PURE__*/React$1.createElement(RadiusIconFull, null)))));
-};
-
-var css_248z$j = ".alignment-module_alignment__2yWS_ {\n  color: #b6babd;\n  background-color: #ffffff;\n  box-sizing: border-box;\n  height: 48px;\n  width: 240px;\n  display: flex;\n  justify-content: space-between;\n  align-items: center;\n  padding: 8px;\n  position: relative; }\n  .alignment-module_alignment__2yWS_ * {\n    font-family: Aktiv Grotesk, sans-serif;\n    box-sizing: border-box;\n    user-select: none; }\n  .alignment-module_alignment__2yWS_ .alignment-module_moreItems__2qnn1 {\n    width: 198px;\n    height: 56px;\n    padding: 4px;\n    opacity: 0;\n    border-radius: 8px;\n    box-shadow: 0px 2px 4px rgba(51, 51, 51, 0.12), 0px 0px 1px #999999, 0px 12px 24px -8px rgba(51, 51, 51, 0.08);\n    display: none;\n    flex-direction: column;\n    align-items: center;\n    justify-content: space-between;\n    position: absolute;\n    top: 44px;\n    right: 8px;\n    transition: opacity 0.1s ease-in-out;\n    z-index: 1;\n    background: #ffffff; }\n    .alignment-module_alignment__2yWS_ .alignment-module_moreItems__2qnn1 .alignment-module_moreItem__3UhRt {\n      width: 190px;\n      height: 23px;\n      display: flex;\n      align-items: center;\n      justify-content: left; }\n      .alignment-module_alignment__2yWS_ .alignment-module_moreItems__2qnn1 .alignment-module_moreItem__3UhRt.alignment-module_active__38FRK {\n        background: #f5f5f5;\n        border-radius: 4px; }\n      .alignment-module_alignment__2yWS_ .alignment-module_moreItems__2qnn1 .alignment-module_moreItem__3UhRt * {\n        cursor: pointer; }\n      .alignment-module_alignment__2yWS_ .alignment-module_moreItems__2qnn1 .alignment-module_moreItem__3UhRt .alignment-module_icon__LCeUF {\n        width: 24px;\n        height: 24px;\n        display: flex;\n        align-items: center;\n        justify-content: center; }\n      .alignment-module_alignment__2yWS_ .alignment-module_moreItems__2qnn1 .alignment-module_moreItem__3UhRt label {\n        width: 150px;\n        height: 16px;\n        font-size: 11px;\n        line-height: 16px;\n        display: flex;\n        align-items: center;\n        color: #333333;\n        margin-left: 8px; }\n      .alignment-module_alignment__2yWS_ .alignment-module_moreItems__2qnn1 .alignment-module_moreItem__3UhRt:hover {\n        background: #f5f5f5;\n        border-radius: 4px; }\n    .alignment-module_alignment__2yWS_ .alignment-module_moreItems__2qnn1.alignment-module_active__38FRK {\n      opacity: 1;\n      display: flex; }\n";
-var style$i = {"alignment":"alignment-module_alignment__2yWS_","moreItems":"alignment-module_moreItems__2qnn1","moreItem":"alignment-module_moreItem__3UhRt","active":"alignment-module_active__38FRK","icon":"alignment-module_icon__LCeUF"};
-styleInject(css_248z$j);
-
-const alignmentDefaultValues = {
-  left: true,
-  right: false,
-  center: false,
-  verticalCenter: false,
-  bottom: false,
-  alignLeft: false,
-  horizontalSpace: false,
-  verticalSpace: false
-};
-const Alignment = ({
-  value = alignmentDefaultValues,
-  onChange = () => {}
-}) => {
-  const {
-    left = true,
-    right = false,
-    center = false,
-    verticalCenter = false,
-    bottom = true,
-    alignLeft = false,
-    horizontalSpace = false,
-    verticalSpace = false
-  } = value;
-  const {
-    alignment,
-    moreItems,
-    moreItem,
-    icon,
-    active
-  } = style$i;
-  const [leftState, setLeftState] = useState(left);
-  const [centerState, setCenterState] = useState(center);
-  const [rightState, setRightState] = useState(right);
-  const [verticalCenterState, setVerticalCenterState] = useState(verticalCenter);
-  const [bottomState, setBottomState] = useState(bottom);
-  const [alignLeftState, setAlignLeftState] = useState(alignLeft);
-  const [horizontalSpaceState, setHorizontalSpaceState] = useState(horizontalSpace);
-  const [verticalSpaceState, setVerticalSpaceState] = useState(verticalSpace);
-  const [toggleOther, setToggleOther] = useState(false);
-  useEffect(() => {
-    const _res = {
-      left: leftState,
-      center: centerState,
-      right: rightState,
-      verticalCenter: verticalCenterState,
-      bottom: bottomState,
-      alignLeft: alignLeftState,
-      horizontalSpace: horizontalSpaceState,
-      verticalSpace: verticalSpaceState
-    };
-    if (onChange) onChange(_res);
-  }, [alignLeftState, bottomState, centerState, horizontalSpaceState, leftState, onChange, rightState, verticalCenterState, verticalSpaceState]);
-
-  const allDisabled = target => {
-    setLeftState(false);
-    setCenterState(false);
-    setRightState(false);
-    setVerticalCenterState(false);
-    setBottomState(false);
-    setAlignLeftState(false);
-
-    if (!target) {
-      setHorizontalSpaceState(false);
-      setVerticalSpaceState(false);
-    }
-  }; // close moreItemsMenu by click outside.
-
-
-  const moreItemsWrapper = /*#__PURE__*/createRef();
-  useEffect(() => {
-    function clickOutside(e) {
-      if (moreItemsWrapper.current && !moreItemsWrapper.current.contains(e.target)) {
-        toggleOther && setToggleOther(false);
-      }
-    }
-
-    window.addEventListener('mousedown', clickOutside);
-    return () => window.removeEventListener('mousedown', clickOutside);
-  }, [moreItemsWrapper]);
-  return /*#__PURE__*/React$1.createElement("div", {
-    className: `${alignment}`
-  }, /*#__PURE__*/React$1.createElement(IconButton, {
-    type: "xSmall",
-    isActive: leftState,
-    onClick: () => {
-      allDisabled();
-      setLeftState(!leftState);
-    }
-  }, /*#__PURE__*/React$1.createElement(AlignLeftIcon, {
-    width: 12,
-    height: 12
-  })), /*#__PURE__*/React$1.createElement(IconButton, {
-    isActive: centerState,
-    onClick: () => {
-      allDisabled();
-      setCenterState(!centerState);
-    }
-  }, /*#__PURE__*/React$1.createElement(AlignCenterIcon, {
-    width: 12,
-    height: 12
-  })), /*#__PURE__*/React$1.createElement(IconButton, {
-    isActive: rightState,
-    onClick: () => {
-      allDisabled();
-      setRightState(!rightState);
-    }
-  }, /*#__PURE__*/React$1.createElement(AlignRightIcon, {
-    width: 12,
-    height: 12
-  })), /*#__PURE__*/React$1.createElement(IconButton, {
-    isActive: verticalCenterState,
-    onClick: () => {
-      allDisabled();
-      setVerticalCenterState(!verticalCenterState);
-    }
-  }, /*#__PURE__*/React$1.createElement(AlignTopIcon, {
-    width: 12,
-    height: 12
-  })), /*#__PURE__*/React$1.createElement(IconButton, {
-    isActive: bottomState,
-    onClick: () => {
-      allDisabled();
-      setBottomState(!bottomState);
-    }
-  }, /*#__PURE__*/React$1.createElement(AlignVerticalCenterIcon, {
-    width: 12,
-    height: 12
-  })), /*#__PURE__*/React$1.createElement(IconButton, {
-    isActive: alignLeftState,
-    onClick: () => {
-      allDisabled();
-      setAlignLeftState(!alignLeftState);
-    }
-  }, /*#__PURE__*/React$1.createElement(AlignBottomIcon, {
-    width: 12,
-    height: 12
-  })), /*#__PURE__*/React$1.createElement("div", {
-    ref: moreItemsWrapper
-  }, /*#__PURE__*/React$1.createElement(IconButton, {
-    isActive: toggleOther,
-    onClick: () => {
-      allDisabled(true);
-      setToggleOther(!toggleOther);
-    }
-  }, /*#__PURE__*/React$1.createElement(ChevronArrowIcon, null)), /*#__PURE__*/React$1.createElement("div", {
-    className: `${moreItems} ${toggleOther ? active : ''}`
-  }, /*#__PURE__*/React$1.createElement("div", {
-    className: `${moreItem} ${horizontalSpaceState ? active : ''}`,
-    onClick: () => {
-      allDisabled();
-      setHorizontalSpaceState(!horizontalSpaceState);
-      setToggleOther(!toggleOther);
-    }
-  }, /*#__PURE__*/React$1.createElement("div", {
-    className: icon
-  }, /*#__PURE__*/React$1.createElement(AlignDistributeHorizontalSpaceIcon, {
-    width: 12,
-    height: 12
-  })), /*#__PURE__*/React$1.createElement("label", null, "Distrubute Horizontal Spacing")), /*#__PURE__*/React$1.createElement("div", {
-    className: `${moreItem} ${verticalSpaceState ? active : ''}`,
-    onClick: () => {
-      allDisabled();
-      setVerticalSpaceState(!verticalSpaceState);
-      setToggleOther(!toggleOther);
-    }
-  }, /*#__PURE__*/React$1.createElement("div", {
-    className: icon
-  }, /*#__PURE__*/React$1.createElement(AlignDistributeVerticalSpaceIcon, {
-    width: 12,
-    height: 12
-  })), /*#__PURE__*/React$1.createElement("label", null, "Distrubute Vertical Spacing")))));
-};
-
-var css_248z$i = ".dropdown-module_dropdown__22lKQ {\n  display: flex;\n  align-items: center;\n  border: 1px solid #e8ebed;\n  border-radius: 8px;\n  position: relative;\n  background-color: #f5f5f5; }\n  .dropdown-module_dropdown__22lKQ * {\n    font-family: aktiv-grotesk, sans-serif;\n    box-sizing: border-box;\n    user-select: none; }\n  .dropdown-module_dropdown__22lKQ input {\n    border: none;\n    outline: none;\n    background: transparent;\n    padding: 0;\n    margin: 0; }\n  .dropdown-module_dropdown__22lKQ.dropdown-module_ddlOption__mBVs1 {\n    border: 0;\n    width: 100%; }\n    .dropdown-module_dropdown__22lKQ.dropdown-module_ddlOption__mBVs1 .dropdown-module_selectedItem__2-QsG {\n      width: 100%;\n      display: flex;\n      justify-content: left;\n      padding: 8px 0 8px 8px; }\n      .dropdown-module_dropdown__22lKQ.dropdown-module_ddlOption__mBVs1 .dropdown-module_selectedItem__2-QsG label {\n        font-family: Aktiv Grotesk, sans-serif;\n        font-style: normal;\n        font-weight: 700;\n        font-size: 12px;\n        line-height: 20px;\n        display: flex;\n        align-items: center;\n        color: #000408;\n        margin-right: 4px; }\n      .dropdown-module_dropdown__22lKQ.dropdown-module_ddlOption__mBVs1 .dropdown-module_selectedItem__2-QsG span {\n        font-size: 11px;\n        user-select: none; }\n    .dropdown-module_dropdown__22lKQ.dropdown-module_ddlOption__mBVs1:hover {\n      border: 0; }\n    .dropdown-module_dropdown__22lKQ.dropdown-module_ddlOption__mBVs1.dropdown-module_open__zFsbX {\n      border: 0; }\n    .dropdown-module_dropdown__22lKQ.dropdown-module_ddlOption__mBVs1 ul {\n      width: 177px;\n      top: -13px; }\n      .dropdown-module_dropdown__22lKQ.dropdown-module_ddlOption__mBVs1 ul li {\n        width: 164px; }\n        .dropdown-module_dropdown__22lKQ.dropdown-module_ddlOption__mBVs1 ul li button {\n          font-size: 11px;\n          line-height: 16px; }\n        .dropdown-module_dropdown__22lKQ.dropdown-module_ddlOption__mBVs1 ul li:hover {\n          background: #e8ebed; }\n          .dropdown-module_dropdown__22lKQ.dropdown-module_ddlOption__mBVs1 ul li:hover button {\n            color: #000408; }\n            .dropdown-module_dropdown__22lKQ.dropdown-module_ddlOption__mBVs1 ul li:hover button svg {\n              stroke: #000408; }\n  .dropdown-module_dropdown__22lKQ.dropdown-module_small__2V6t9 {\n    width: 108px;\n    height: 24px; }\n    .dropdown-module_dropdown__22lKQ.dropdown-module_small__2V6t9 input {\n      width: 85px;\n      font-size: 11px;\n      padding-left: 8px; }\n    .dropdown-module_dropdown__22lKQ.dropdown-module_small__2V6t9 ul.dropdown-module_search__1mXOx {\n      top: 23px;\n      min-height: 24px; }\n  .dropdown-module_dropdown__22lKQ.dropdown-module_medium__1pXzE {\n    width: 128px;\n    height: 32px; }\n    .dropdown-module_dropdown__22lKQ.dropdown-module_medium__1pXzE input {\n      width: 100%;\n      font-size: 12px;\n      padding-left: 8px; }\n    .dropdown-module_dropdown__22lKQ.dropdown-module_medium__1pXzE button {\n      padding-right: 3px; }\n    .dropdown-module_dropdown__22lKQ.dropdown-module_medium__1pXzE ul.dropdown-module_search__1mXOx {\n      top: 31px; }\n  .dropdown-module_dropdown__22lKQ.dropdown-module_large__3Mmct {\n    width: 136px;\n    height: 32px; }\n    .dropdown-module_dropdown__22lKQ.dropdown-module_large__3Mmct input {\n      width: 105px;\n      font-size: 14px;\n      line-height: 24px; }\n    .dropdown-module_dropdown__22lKQ.dropdown-module_large__3Mmct ul.dropdown-module_search__1mXOx {\n      top: 39px;\n      min-height: 24px; }\n  .dropdown-module_dropdown__22lKQ .dropdown-module_selectedItem__2-QsG {\n    width: 100%;\n    display: flex;\n    justify-content: space-between; }\n    .dropdown-module_dropdown__22lKQ .dropdown-module_selectedItem__2-QsG button {\n      width: 24px;\n      height: 32px;\n      display: flex;\n      justify-content: center;\n      align-items: center; }\n      .dropdown-module_dropdown__22lKQ .dropdown-module_selectedItem__2-QsG button svg {\n        stroke: #999999; }\n    .dropdown-module_dropdown__22lKQ .dropdown-module_selectedItem__2-QsG span {\n      font-size: 11px;\n      user-select: none; }\n  .dropdown-module_dropdown__22lKQ button {\n    border: 0;\n    background: transparent;\n    outline: none;\n    padding: 0;\n    margin: 0;\n    display: flex;\n    justify-content: space-between;\n    align-items: center;\n    cursor: pointer; }\n  .dropdown-module_dropdown__22lKQ ul {\n    list-style: none;\n    margin: 0;\n    padding: 0;\n    display: flex;\n    flex-direction: column;\n    padding: 4px;\n    position: absolute;\n    width: 140px;\n    background: #ffffff;\n    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.06), 0px 0.5px 1px rgba(0, 0, 0, 0.24);\n    border-radius: 8px;\n    top: -1px;\n    left: -2px;\n    z-index: 1;\n    max-height: 104px;\n    overflow: hidden; }\n    .dropdown-module_dropdown__22lKQ ul > div > div:nth-child(3) {\n      width: 4px !important;\n      right: 0 !important; }\n      .dropdown-module_dropdown__22lKQ ul > div > div:nth-child(3) > div:hover {\n        background-color: #3399ff !important; }\n    .dropdown-module_dropdown__22lKQ ul li {\n      display: flex;\n      flex-direction: row;\n      align-items: center;\n      padding: 4px 4px 4px 8px;\n      position: static;\n      width: 132px;\n      height: 24px;\n      border-radius: 4px;\n      align-self: stretch; }\n      .dropdown-module_dropdown__22lKQ ul li button {\n        width: 100%;\n        padding-right: 4px;\n        height: 32px; }\n        .dropdown-module_dropdown__22lKQ ul li button span {\n          font-size: 11px;\n          user-select: none; }\n          .dropdown-module_dropdown__22lKQ ul li button span > span {\n            color: #b6babd; }\n        .dropdown-module_dropdown__22lKQ ul li button svg {\n          stroke: #31363a; }\n      .dropdown-module_dropdown__22lKQ ul li:hover {\n        background: #3399ff; }\n        .dropdown-module_dropdown__22lKQ ul li:hover button {\n          color: #ffffff; }\n          .dropdown-module_dropdown__22lKQ ul li:hover button > span > span {\n            color: #63676c; }\n          .dropdown-module_dropdown__22lKQ ul li:hover button svg {\n            stroke: #e8ebed; }\n    .dropdown-module_dropdown__22lKQ ul button {\n      text-align: left; }\n  .dropdown-module_dropdown__22lKQ:hover {\n    border: 1px solid #b6babd; }\n  .dropdown-module_dropdown__22lKQ.dropdown-module_open__zFsbX {\n    border: 1px solid #3399ff; }\n  .dropdown-module_dropdown__22lKQ [type='text']:focus,\n  .dropdown-module_dropdown__22lKQ [type='password']:focus,\n  .dropdown-module_dropdown__22lKQ [type='number']:focus,\n  .dropdown-module_dropdown__22lKQ [type='email']:focus,\n  .dropdown-module_dropdown__22lKQ [type='search']:focus {\n    color: #333333; }\n";
-var style$h = {"dropdown":"dropdown-module_dropdown__22lKQ","ddlOption":"dropdown-module_ddlOption__mBVs1","selectedItem":"dropdown-module_selectedItem__2-QsG","open":"dropdown-module_open__zFsbX","small":"dropdown-module_small__2V6t9","search":"dropdown-module_search__1mXOx","medium":"dropdown-module_medium__1pXzE","large":"dropdown-module_large__3Mmct"};
-styleInject(css_248z$i);
-
-/* eslint-disable react-hooks/exhaustive-deps */
-
-const Dropdown = ({
-  option = [],
-  size = 'small',
-  onChange = () => {},
-  selectedValue = option[0],
-  className = null,
-  popupMenu = 'right'
-}) => {
-  const [optionValueState, setOptionValueState] = useState(selectedValue);
-  const [toggleOption, setToggleOption] = useState(false);
-  const [toggleSearch, setToggleSearch] = useState(false);
-  const [searchState, setSearchState] = useState('');
-  const [resultSearchState, setResultSearchState] = useState([]);
-  const {
-    dropdown,
-    selectedItem,
-    search,
-    open
-  } = style$h;
-  const openMenuPosition = popupMenu === 'left' ? {
-    right: -2,
-    left: 'auto'
-  } : {
-    left: -2,
-    right: 'auto'
-  }; // close menu by click outside.
-
-  const menuWrapper = /*#__PURE__*/createRef();
-  useEffect(() => {
-    function clickOutside(e) {
-      if (menuWrapper.current && !menuWrapper.current.contains(e.target)) {
-        setToggleOption(false);
-      }
-    }
-
-    window.addEventListener('mousedown', clickOutside);
-    return () => window.removeEventListener('mousedown', clickOutside);
-  }, [menuWrapper]); // close Search by click outside.
-
-  const searchWrapper = /*#__PURE__*/createRef();
-  useEffect(() => {
-    function clickOutside(e) {
-      if (searchWrapper.current && !searchWrapper.current.contains(e.target)) {
-        setToggleSearch(false);
-      }
-    }
-
-    window.addEventListener('mousedown', clickOutside);
-    return () => window.removeEventListener('mousedown', clickOutside);
-  }, [searchWrapper]);
-  useEffect(() => {
-    if (selectedValue) setSearchState(selectedValue.name);
-  }, [selectedValue]);
-
-  const onClickOptionHandler = optionValue => {
-    // scrollOfOn(true);
-    setOptionValueState(optionValue);
-    setSearchState(optionValue.name);
-    onChange(optionValue);
-    setToggleOption(false);
-    setToggleSearch(false);
-  };
-
-  const inputOnChangeHandler = ({
-    value
-  }) => {
-    setToggleSearch(true);
-    setSearchState(value);
-    if (value === '') setResultSearchState(option);else setResultSearchState(option.filter(item => {
-      return item.name.toString().toLowerCase().includes(value.toLowerCase());
-    }));
-  };
-
-  return /*#__PURE__*/React$1.createElement("div", {
-    className: `${dropdown} ${style$h[size]} ${toggleSearch ? open : ''} ${className ? className : ''}`,
-    ref: menuWrapper
-  }, toggleOption && option.length > 1 && /*#__PURE__*/React$1.createElement("ul", {
-    style: openMenuPosition
-  }, /*#__PURE__*/React$1.createElement(Scrollbars$1, {
-    autoHide: true,
-    style: {
-      width: size === 'medium-fw' ? 176 : 144,
-      height: 104
-    }
-  }, option.map((option, key) => /*#__PURE__*/React$1.createElement("li", {
-    key: key // onMouseEnter={() => scrollOfOn()}
-    // onMouseLeave={() => scrollOfOn(true)}
-
-  }, /*#__PURE__*/React$1.createElement("button", {
-    type: "button",
-    onClick: () => onClickOptionHandler(option)
-  }, /*#__PURE__*/React$1.createElement("span", null, option.name), optionValueState && optionValueState.value === option.value && /*#__PURE__*/React$1.createElement(CheckIcon, null)))))), /*#__PURE__*/React$1.createElement("div", {
-    className: `${selectedItem}`
-  }, optionValueState && /*#__PURE__*/React$1.createElement("input", {
-    type: "text",
-    value: searchState,
-    onClick: e => inputOnChangeHandler(e.target),
-    onChange: e => inputOnChangeHandler(e.target)
-  }), /*#__PURE__*/React$1.createElement("button", {
-    type: "button",
-    onClick: () => setToggleOption(!toggleOption)
-  }, /*#__PURE__*/React$1.createElement(ChevronArrowIcon, null))), toggleSearch && resultSearchState.length ? /*#__PURE__*/React$1.createElement("ul", {
-    className: `${search}`,
-    ref: searchWrapper,
-    style: openMenuPosition
-  }, /*#__PURE__*/React$1.createElement(Scrollbars$1, {
-    autoHide: true,
-    style: {
-      width: size === 'medium-fw' ? 176 : 144,
-      height: 104
-    }
-  }, resultSearchState.map((option, key) => /*#__PURE__*/React$1.createElement("li", {
-    key: key // onMouseEnter={() => scrollOfOn()}
-    // onMouseLeave={() => scrollOfOn(true)}
-
-  }, /*#__PURE__*/React$1.createElement("button", {
-    type: "button",
-    onClick: () => onClickOptionHandler(option)
-  }, /*#__PURE__*/React$1.createElement("span", null, option.name)))))) : null);
-};
-
-var css_248z$h = ".visibility-module_visibility__3iQjS {\n  width: 240px;\n  height: 48px;\n  display: flex;\n  align-items: center;\n  justify-content: end;\n  border-radius: 4px;\n  cursor: pointer;\n  padding: 8px; }\n  .visibility-module_visibility__3iQjS * {\n    font-family: Aktiv Grotesk, sans-serif;\n    box-sizing: border-box;\n    user-select: none; }\n  .visibility-module_visibility__3iQjS > div:first-child {\n    margin-right: 8px; }\n  .visibility-module_visibility__3iQjS.visibility-module_white__iRpGB {\n    background: #ffffff; }\n  .visibility-module_visibility__3iQjS.visibility-module_gray__3wI-z {\n    background: #f5f5f5; }\n  .visibility-module_visibility__3iQjS.visibility-module_silver__21swe {\n    background: #f2f4f5; }\n  .visibility-module_visibility__3iQjS .visibility-module_layerText__3beuT {\n    font-family: Aktiv Grotesk, sans-serif;\n    font-size: 12px;\n    line-height: 24px;\n    font-weight: 600;\n    display: flex;\n    align-items: center;\n    margin: 0px 8px;\n    width: 188px;\n    height: 24px;\n    cursor: text; }\n    .visibility-module_visibility__3iQjS .visibility-module_layerText__3beuT.visibility-module_purple__1LY8P {\n      color: #b555e5; }\n    .visibility-module_visibility__3iQjS .visibility-module_layerText__3beuT.visibility-module_black__2mGsm {\n      color: #31363a; }\n";
-var style$g = {"visibility":"visibility-module_visibility__3iQjS","white":"visibility-module_white__iRpGB","gray":"visibility-module_gray__3wI-z","silver":"visibility-module_silver__21swe","layerText":"visibility-module_layerText__3beuT","purple":"visibility-module_purple__1LY8P","black":"visibility-module_black__2mGsm"};
-styleInject(css_248z$h);
-
-/* eslint-disable react-hooks/exhaustive-deps */
-const defaultOption = [{
-  name: 'Normal',
-  value: 'Normal'
-}, {
-  name: 'Darken',
-  value: 'Darken'
-}, {
-  name: 'Multiply',
-  value: 'Multiply'
-}, {
-  name: 'Color Burn',
-  value: 'Color Burn'
-}, {
-  name: 'Lighten',
-  value: 'Lighten'
-}, {
-  name: 'Screen',
-  value: 'Screen'
-}, {
-  name: 'Color Dodge',
-  value: 'Color Dodge'
-}, {
-  name: 'Lighter Color',
-  value: 'Lighter Color'
-}, {
-  name: 'Overlay',
-  value: 'Overlay'
-}, {
-  name: 'Soft Light',
-  value: 'Soft Light'
-}, {
-  name: 'Hard Light',
-  value: 'Hard Light'
-}, {
-  name: 'Difference"',
-  value: 'Difference'
-}, {
-  name: 'Exclusion',
-  value: 'Exclusion'
-}, {
-  name: 'Hue',
-  value: 'Hue'
-}, {
-  name: 'Saturation',
-  value: 'Saturation'
-}, {
-  name: 'Color',
-  value: 'Color'
-}, {
-  name: 'Luminosity',
-  value: 'Luminosity'
-}, {
-  name: 'Source In',
-  value: 'Source In'
-}, {
-  name: 'Source Out',
-  value: 'Source Out'
-}, {
-  name: 'Source Atop',
-  value: 'Source Atop'
-}, {
-  name: 'Destination Over',
-  value: 'Destination Over'
-}, {
-  name: 'Destination In',
-  value: 'Destination In'
-}, {
-  name: 'Destination Out',
-  value: 'Destination Out'
-}, {
-  name: 'Destination Atop',
-  value: 'Destination Atop'
-}, {
-  name: 'Copy',
-  value: 'Copy'
-}, {
-  name: 'XOR',
-  value: 'XOR'
-}];
-const Visibility = ({
-  type = 'white',
-  option = defaultOption,
-  input = 0,
-  label = '%',
-  onChangeValues
-}) => {
-  const {
-    visibility
-  } = style$g;
-  const [selectedItem, setSelectedItem] = useState(option[0]);
-  const [inputState, setInputState] = useState(input);
-  useEffect(() => {
-    if (onChangeValues) onChangeValues({
-      option: selectedItem,
-      value: parseFloat(inputState)
-    });
-  }, [selectedItem, inputState]);
-  return /*#__PURE__*/React$1.createElement("div", {
-    className: `${visibility} ${style$g[type]}`
-  }, /*#__PURE__*/React$1.createElement(Dropdown, {
-    option: option,
-    onChangeValue: setSelectedItem,
-    size: "medium"
-  }), /*#__PURE__*/React$1.createElement(Input, {
-    onChangeValue: setInputState,
-    value: inputState,
-    setValue: setInputState,
-    label: label,
-    size: "normal"
-  }));
-};
-
-const MinusIcon = ({
-  width = 9,
-  height = 1
-}) => {
-  return /*#__PURE__*/React$1.createElement("svg", {
-    width: width,
-    height: height,
-    fill: "none",
-    viewBox: "0 0 9 1"
-  }, /*#__PURE__*/React$1.createElement("defs", null), /*#__PURE__*/React$1.createElement("path", {
-    stroke: "#000408",
-    strokeLinecap: "round",
-    d: "M.5.5h8"
-  }));
-};
-
-var css_248z$g = ".smart-layout-module_smartLayout__1hqko {\n  background-color: #ffffff;\n  width: 240px;\n  min-height: 48px;\n  display: flex;\n  padding: 8px;\n  display: flex;\n  flex-direction: column;\n  align-items: center; }\n  .smart-layout-module_smartLayout__1hqko * {\n    font-family: Aktiv Grotesk, sans-serif;\n    box-sizing: border-box;\n    user-select: none; }\n  .smart-layout-module_smartLayout__1hqko .smart-layout-module_header__p8MeV {\n    width: 224px;\n    height: 32px;\n    display: flex;\n    align-items: center;\n    justify-content: space-between; }\n    .smart-layout-module_smartLayout__1hqko .smart-layout-module_header__p8MeV .smart-layout-module_title__3l_hj {\n      height: 16px;\n      font-weight: 600;\n      font-size: 11px;\n      line-height: 16px;\n      display: flex;\n      align-items: center;\n      color: #333333; }\n    .smart-layout-module_smartLayout__1hqko .smart-layout-module_header__p8MeV .smart-layout-module_actionButton__1TAJH button {\n      width: 24px;\n      height: 24px; }\n  .smart-layout-module_smartLayout__1hqko .smart-layout-module_smartLayoutDetails__1S3Nf {\n    width: 100%;\n    display: none;\n    align-items: center;\n    justify-content: end; }\n    .smart-layout-module_smartLayout__1hqko .smart-layout-module_smartLayoutDetails__1S3Nf.smart-layout-module_active__NNYfB {\n      display: flex; }\n    .smart-layout-module_smartLayout__1hqko .smart-layout-module_smartLayoutDetails__1S3Nf .smart-layout-module_pinToEdgeBtnWrapper__3HFeW {\n      width: 64px;\n      height: 64px;\n      padding: 4px;\n      background-color: #f5f5f5;\n      display: flex;\n      flex-direction: column;\n      justify-content: space-between;\n      border-radius: 8px;\n      margin-right: 8px; }\n      .smart-layout-module_smartLayout__1hqko .smart-layout-module_smartLayoutDetails__1S3Nf .smart-layout-module_pinToEdgeBtnWrapper__3HFeW * {\n        cursor: pointer; }\n      .smart-layout-module_smartLayout__1hqko .smart-layout-module_smartLayoutDetails__1S3Nf .smart-layout-module_pinToEdgeBtnWrapper__3HFeW .smart-layout-module_alignCenter__1Z096 {\n        display: flex;\n        align-items: center;\n        justify-content: space-between; }\n        .smart-layout-module_smartLayout__1hqko .smart-layout-module_smartLayoutDetails__1S3Nf .smart-layout-module_pinToEdgeBtnWrapper__3HFeW .smart-layout-module_alignCenter__1Z096 .smart-layout-module_alignCenterIconVHWrapper__1pTlN {\n          width: 16px;\n          height: 16px;\n          position: relative; }\n          .smart-layout-module_smartLayout__1hqko .smart-layout-module_smartLayoutDetails__1S3Nf .smart-layout-module_pinToEdgeBtnWrapper__3HFeW .smart-layout-module_alignCenter__1Z096 .smart-layout-module_alignCenterIconVHWrapper__1pTlN .smart-layout-module_alignCenterIconH__1NfSX {\n            position: absolute;\n            width: 16px;\n            height: 1px;\n            background-color: #999999;\n            top: 7.3px; }\n            .smart-layout-module_smartLayout__1hqko .smart-layout-module_smartLayoutDetails__1S3Nf .smart-layout-module_pinToEdgeBtnWrapper__3HFeW .smart-layout-module_alignCenter__1Z096 .smart-layout-module_alignCenterIconVHWrapper__1pTlN .smart-layout-module_alignCenterIconH__1NfSX.smart-layout-module_active__NNYfB, .smart-layout-module_smartLayout__1hqko .smart-layout-module_smartLayoutDetails__1S3Nf .smart-layout-module_pinToEdgeBtnWrapper__3HFeW .smart-layout-module_alignCenter__1Z096 .smart-layout-module_alignCenterIconVHWrapper__1pTlN .smart-layout-module_alignCenterIconH__1NfSX:hover {\n              background-color: #333333; }\n          .smart-layout-module_smartLayout__1hqko .smart-layout-module_smartLayoutDetails__1S3Nf .smart-layout-module_pinToEdgeBtnWrapper__3HFeW .smart-layout-module_alignCenter__1Z096 .smart-layout-module_alignCenterIconVHWrapper__1pTlN .smart-layout-module_alignCenterIconV__1w-BM {\n            position: absolute;\n            width: 1px;\n            height: 16px;\n            background-color: #999999;\n            left: 7.3px; }\n            .smart-layout-module_smartLayout__1hqko .smart-layout-module_smartLayoutDetails__1S3Nf .smart-layout-module_pinToEdgeBtnWrapper__3HFeW .smart-layout-module_alignCenter__1Z096 .smart-layout-module_alignCenterIconVHWrapper__1pTlN .smart-layout-module_alignCenterIconV__1w-BM.smart-layout-module_active__NNYfB, .smart-layout-module_smartLayout__1hqko .smart-layout-module_smartLayoutDetails__1S3Nf .smart-layout-module_pinToEdgeBtnWrapper__3HFeW .smart-layout-module_alignCenter__1Z096 .smart-layout-module_alignCenterIconVHWrapper__1pTlN .smart-layout-module_alignCenterIconV__1w-BM:hover {\n              background-color: #333333; }\n      .smart-layout-module_smartLayout__1hqko .smart-layout-module_smartLayoutDetails__1S3Nf .smart-layout-module_pinToEdgeBtnWrapper__3HFeW .smart-layout-module_alignTop__18_GT,\n      .smart-layout-module_smartLayout__1hqko .smart-layout-module_smartLayoutDetails__1S3Nf .smart-layout-module_pinToEdgeBtnWrapper__3HFeW .smart-layout-module_alignBottom__30mef {\n        height: 12px;\n        width: 100%;\n        display: flex;\n        align-items: center;\n        justify-content: center; }\n      .smart-layout-module_smartLayout__1hqko .smart-layout-module_smartLayoutDetails__1S3Nf .smart-layout-module_pinToEdgeBtnWrapper__3HFeW .smart-layout-module_icon__3fK_L {\n        stroke: #999999;\n        display: flex;\n        flex-direction: column;\n        justify-content: space-between;\n        cursor: pointer; }\n        .smart-layout-module_smartLayout__1hqko .smart-layout-module_smartLayoutDetails__1S3Nf .smart-layout-module_pinToEdgeBtnWrapper__3HFeW .smart-layout-module_icon__3fK_L.smart-layout-module_active__NNYfB {\n          stroke-width: 1.5;\n          stroke: #333333; }\n    .smart-layout-module_smartLayout__1hqko .smart-layout-module_smartLayoutDetails__1S3Nf .smart-layout-module_pinToEdgeOptionsWrapper__1M5Cr {\n      display: flex;\n      flex-direction: column;\n      align-items: center;\n      justify-content: space-around;\n      width: 107px;\n      height: 64px; }\n";
-var style$f = {"smartLayout":"smart-layout-module_smartLayout__1hqko","header":"smart-layout-module_header__p8MeV","title":"smart-layout-module_title__3l_hj","actionButton":"smart-layout-module_actionButton__1TAJH","smartLayoutDetails":"smart-layout-module_smartLayoutDetails__1S3Nf","active":"smart-layout-module_active__NNYfB","pinToEdgeBtnWrapper":"smart-layout-module_pinToEdgeBtnWrapper__3HFeW","alignCenter":"smart-layout-module_alignCenter__1Z096","alignCenterIconVHWrapper":"smart-layout-module_alignCenterIconVHWrapper__1pTlN","alignCenterIconH":"smart-layout-module_alignCenterIconH__1NfSX","alignCenterIconV":"smart-layout-module_alignCenterIconV__1w-BM","alignTop":"smart-layout-module_alignTop__18_GT","alignBottom":"smart-layout-module_alignBottom__30mef","icon":"smart-layout-module_icon__3fK_L","pinToEdgeOptionsWrapper":"smart-layout-module_pinToEdgeOptionsWrapper__1M5Cr"};
-styleInject(css_248z$g);
-
-/* eslint-disable react-hooks/exhaustive-deps */
-const SmartLayout = ({
-  type = 'white',
-  onChange,
-  value = {
-    v: 'Scale',
-    h: 'Scale'
-  }
-}) => {
-  const {
-    smartLayout,
-    header,
-    title,
-    actionButton,
-    smartLayoutDetails,
-    active,
-    pinToEdgeBtnWrapper,
-    pinToEdgeOptionsWrapper,
-    alignTop,
-    alignCenter,
-    alignBottom,
-    icon,
-    alignCenterIconVHWrapper,
-    alignCenterIconH,
-    alignCenterIconV
-  } = style$f;
-  const [toggleDetails, setToggleDetail] = useState(false);
-  const [selectedV, setSelectedItemV] = useState(value.v);
-  const [selectedH, setSelectedItemH] = useState(value.h);
-  useEffect(() => {
-    onChange({
-      selectedV,
-      selectedH
-    });
-  }, [selectedV, selectedH]);
-  return /*#__PURE__*/React$1.createElement("div", {
-    className: `${smartLayout} ${style$f[type]}`
-  }, /*#__PURE__*/React$1.createElement("div", {
-    className: header
-  }, /*#__PURE__*/React$1.createElement("div", {
-    className: title
-  }, /*#__PURE__*/React$1.createElement("label", null, "Pin to Edge")), /*#__PURE__*/React$1.createElement("div", {
-    className: actionButton
-  }, /*#__PURE__*/React$1.createElement(IconButton, {
-    onClick: () => {
-      setToggleDetail(!toggleDetails);
-    }
-  }, !toggleDetails ? /*#__PURE__*/React$1.createElement(PlusIcon, null) : /*#__PURE__*/React$1.createElement(MinusIcon, null)))), /*#__PURE__*/React$1.createElement("div", {
-    className: `${smartLayoutDetails} ${toggleDetails ? active : ''}`
-  }, /*#__PURE__*/React$1.createElement("div", {
-    className: pinToEdgeBtnWrapper
-  }, /*#__PURE__*/React$1.createElement("div", {
-    className: alignTop
-  }, /*#__PURE__*/React$1.createElement("div", {
-    className: `${icon} ${selectedV.includes('Top') ? active : ''}`,
-    onClick: () => setSelectedItemV('Top')
-  }, /*#__PURE__*/React$1.createElement(EdgeAlignTopIcon, null))), /*#__PURE__*/React$1.createElement("div", {
-    className: alignCenter
-  }, /*#__PURE__*/React$1.createElement("div", {
-    className: `${icon} ${selectedH.includes('Left') ? active : ''}`,
-    onClick: () => setSelectedItemH('Left')
-  }, /*#__PURE__*/React$1.createElement(EdgeAlignRightIcon, null)), /*#__PURE__*/React$1.createElement("div", {
-    className: alignCenterIconVHWrapper
-  }, /*#__PURE__*/React$1.createElement("div", {
-    className: `${alignCenterIconV} ${selectedV.includes('CenterV') ? active : ''}`,
-    onClick: () => setSelectedItemV('CenterV')
-  }), /*#__PURE__*/React$1.createElement("div", {
-    className: `${alignCenterIconH} ${selectedH.includes('CenterH') ? active : ''}`,
-    onClick: () => setSelectedItemH('CenterH')
-  })), /*#__PURE__*/React$1.createElement("div", {
-    className: `${icon} ${selectedH.includes('Right') ? active : ''}`,
-    onClick: () => setSelectedItemH('Right')
-  }, /*#__PURE__*/React$1.createElement(EdgeAlignLeftIcon, null))), /*#__PURE__*/React$1.createElement("div", {
-    className: alignBottom
-  }, /*#__PURE__*/React$1.createElement("div", {
-    className: `${icon} ${selectedV.includes('Bottom') ? active : ''}`,
-    onClick: () => setSelectedItemV('Bottom')
-  }, /*#__PURE__*/React$1.createElement(EdgeAlignBottomIcon, null)))), /*#__PURE__*/React$1.createElement("div", {
-    className: pinToEdgeOptionsWrapper
-  }, /*#__PURE__*/React$1.createElement(Dropdown, {
-    option: optionH,
-    onChangeValue: ({
-      value
-    }) => setSelectedItemH(value),
-    selectedValue: optionH.filter(item => item.value === selectedH)[0],
-    size: "small"
-  }), /*#__PURE__*/React$1.createElement(Dropdown, {
-    option: optionV,
-    selectedValue: optionV.filter(item => item.value === selectedV)[0],
-    onChangeValue: ({
-      value
-    }) => setSelectedItemV(value),
-    size: "small"
-  }))));
-};
-const optionH = [{
-  name: 'Left',
-  value: 'Left'
-}, {
-  name: 'Right',
-  value: 'Right'
-}, {
-  name: 'Left and Right',
-  value: 'Left and Right'
-}, {
-  name: 'Center',
-  value: 'CenterH'
-}, {
-  name: 'Scale',
-  value: 'Scale'
-}];
-const optionV = [{
-  name: 'Top',
-  value: 'Top'
-}, {
-  name: 'Bottom',
-  value: 'Bottom'
-}, {
-  name: 'Top and Bottom',
-  value: 'Top and Bottom'
-}, {
-  name: 'Center',
-  value: 'CenterV'
-}, {
-  name: 'Scale',
-  value: 'Scale'
-}];
-
-var css_248z$f = "* {\n  box-sizing: border-box;\n  font-family: Aktiv Grotesk, sans-serif; }\n\n.text-module_textComp__1YJsp {\n  width: 240px;\n  display: flex;\n  flex-direction: column;\n  align-items: center;\n  justify-content: space-between;\n  box-sizing: border-box;\n  padding: 8px;\n  cursor: pointer; }\n  .text-module_textComp__1YJsp .text-module_textControlWrapper__18OLP {\n    display: flex;\n    flex-direction: column;\n    width: 224px; }\n    .text-module_textComp__1YJsp .text-module_textControlWrapper__18OLP .text-module_textWrapper__2bJ4r {\n      width: 224px;\n      background: #ffffff;\n      border-radius: 4px;\n      display: flex;\n      flex-direction: column;\n      align-items: center; }\n      .text-module_textComp__1YJsp .text-module_textControlWrapper__18OLP .text-module_textWrapper__2bJ4r .text-module_fontListOption__3Z7yn {\n        width: 224px;\n        height: 32px;\n        display: flex;\n        justify-content: space-between; }\n        .text-module_textComp__1YJsp .text-module_textControlWrapper__18OLP .text-module_textWrapper__2bJ4r .text-module_fontListOption__3Z7yn .text-module_fontSizes__34JoY {\n          width: 64px;\n          height: 32px; }\n        .text-module_textComp__1YJsp .text-module_textControlWrapper__18OLP .text-module_textWrapper__2bJ4r .text-module_fontListOption__3Z7yn .text-module_fontListStyle__2ZCs5 {\n          width: 156px;\n          height: 32px; }\n      .text-module_textComp__1YJsp .text-module_textControlWrapper__18OLP .text-module_textWrapper__2bJ4r .text-module_row__2eioI {\n        width: 224px;\n        height: 32px;\n        margin-top: 12px;\n        display: flex;\n        justify-content: space-between;\n        align-items: center; }\n        .text-module_textComp__1YJsp .text-module_textControlWrapper__18OLP .text-module_textWrapper__2bJ4r .text-module_row__2eioI .text-module_lineHeightSpace__ql2h6 {\n          width: 88px;\n          height: 32px;\n          display: flex;\n          justify-content: space-between;\n          align-items: center; }\n        .text-module_textComp__1YJsp .text-module_textControlWrapper__18OLP .text-module_textWrapper__2bJ4r .text-module_row__2eioI .text-module_lineHeightSpaceButtons__1U7Ki {\n          width: 80px;\n          height: 32px;\n          box-sizing: border-box;\n          display: flex; }\n        .text-module_textComp__1YJsp .text-module_textControlWrapper__18OLP .text-module_textWrapper__2bJ4r .text-module_row__2eioI .text-module_alignButtons__2F0BL {\n          width: 80px; }\n        .text-module_textComp__1YJsp .text-module_textControlWrapper__18OLP .text-module_textWrapper__2bJ4r .text-module_row__2eioI .text-module_alignButtons2__1JRbx {\n          width: 80px;\n          margin-right: 8px; }\n        .text-module_textComp__1YJsp .text-module_textControlWrapper__18OLP .text-module_textWrapper__2bJ4r .text-module_row__2eioI .text-module_alignButtons3__245BR {\n          width: 80px;\n          margin-right: 8px; }\n  .text-module_textComp__1YJsp .text-module_moreMenu__1Y2-e {\n    width: 200px;\n    min-height: 104px;\n    padding: 4px;\n    border-radius: 8px;\n    box-shadow: 0px 2px 4px rgba(51, 51, 51, 0.12), 0px 0px 1px #999999, 0px 12px 24px -8px rgba(51, 51, 51, 0.08);\n    position: fixed;\n    background-color: #ffffff;\n    right: 240px; }\n    .text-module_textComp__1YJsp .text-module_moreMenu__1Y2-e .text-module_moreHeader__1JJI- {\n      width: 192px;\n      height: 32px;\n      border-bottom: 1px solid #f5f5f5;\n      display: flex;\n      align-items: center;\n      justify-content: space-between;\n      font-size: 11px;\n      font-weight: 600;\n      padding: 4px; }\n    .text-module_textComp__1YJsp .text-module_moreMenu__1Y2-e .text-module_moreBody__119Uk {\n      display: flex;\n      justify-content: center;\n      align-items: center;\n      border-radius: 8px;\n      flex-direction: column;\n      padding-top: 4px; }\n      .text-module_textComp__1YJsp .text-module_moreMenu__1Y2-e .text-module_moreBody__119Uk .text-module_morMenuBodyRow__1y-B- {\n        width: 184px;\n        height: 32px;\n        display: flex;\n        justify-content: space-between;\n        align-items: center; }\n        .text-module_textComp__1YJsp .text-module_moreMenu__1Y2-e .text-module_moreBody__119Uk .text-module_morMenuBodyRow__1y-B- label {\n          color: #999999;\n          font-size: 11px;\n          font-weight: 600; }\n        .text-module_textComp__1YJsp .text-module_moreMenu__1Y2-e .text-module_moreBody__119Uk .text-module_morMenuBodyRow__1y-B- .text-module_morItemRadioButton__2hdHK {\n          height: 24px; }\n          .text-module_textComp__1YJsp .text-module_moreMenu__1Y2-e .text-module_moreBody__119Uk .text-module_morMenuBodyRow__1y-B- .text-module_morItemRadioButton__2hdHK button {\n            background-color: transparent;\n            border-radius: 8px;\n            border: 0 !important; }\n            .text-module_textComp__1YJsp .text-module_moreMenu__1Y2-e .text-module_moreBody__119Uk .text-module_morMenuBodyRow__1y-B- .text-module_morItemRadioButton__2hdHK button:hover, .text-module_textComp__1YJsp .text-module_moreMenu__1Y2-e .text-module_moreBody__119Uk .text-module_morMenuBodyRow__1y-B- .text-module_morItemRadioButton__2hdHK button.text-module_active__3fs_m {\n              background-color: #ebebeb !important; }\n  .text-module_textComp__1YJsp.text-module_white__FFMVg {\n    background: #ffffff; }\n  .text-module_textComp__1YJsp .text-module_header__77oI3 {\n    width: 224px;\n    height: 32px;\n    margin-bottom: 8px;\n    display: flex;\n    align-items: center;\n    justify-content: space-between; }\n    .text-module_textComp__1YJsp .text-module_header__77oI3 .text-module_layerText__ailJB {\n      font-family: Aktiv Grotesk, sans-serif;\n      font-size: 12px;\n      line-height: 24px;\n      font-weight: 600;\n      display: flex;\n      align-items: center;\n      cursor: text; }\n      .text-module_textComp__1YJsp .text-module_header__77oI3 .text-module_layerText__ailJB.text-module_purple__1cJZj {\n        color: #b555e5; }\n      .text-module_textComp__1YJsp .text-module_header__77oI3 .text-module_layerText__ailJB.text-module_black__X88TG {\n        color: #31363a; }\n";
-var style$e = {"textComp":"text-module_textComp__1YJsp","textControlWrapper":"text-module_textControlWrapper__18OLP","textWrapper":"text-module_textWrapper__2bJ4r","fontListOption":"text-module_fontListOption__3Z7yn","fontSizes":"text-module_fontSizes__34JoY","fontListStyle":"text-module_fontListStyle__2ZCs5","row":"text-module_row__2eioI","lineHeightSpace":"text-module_lineHeightSpace__ql2h6","lineHeightSpaceButtons":"text-module_lineHeightSpaceButtons__1U7Ki","alignButtons":"text-module_alignButtons__2F0BL","alignButtons2":"text-module_alignButtons2__1JRbx","alignButtons3":"text-module_alignButtons3__245BR","moreMenu":"text-module_moreMenu__1Y2-e","moreHeader":"text-module_moreHeader__1JJI-","moreBody":"text-module_moreBody__119Uk","morMenuBodyRow":"text-module_morMenuBodyRow__1y-B-","morItemRadioButton":"text-module_morItemRadioButton__2hdHK","active":"text-module_active__3fs_m","white":"text-module_white__FFMVg","header":"text-module_header__77oI3","layerText":"text-module_layerText__ailJB","purple":"text-module_purple__1cJZj","black":"text-module_black__X88TG"};
-styleInject(css_248z$f);
-
-const TreeDots = ({
-  width = 10,
-  height = 2
-}) => {
-  return /*#__PURE__*/React$1.createElement("svg", {
-    width: width,
-    height: height,
-    viewBox: `0 0 10 2`
-  }, /*#__PURE__*/React$1.createElement("defs", null), /*#__PURE__*/React$1.createElement("path", {
-    fill: "#31363A",
-    fillRule: "evenodd",
-    d: "M0 1c0-.55229.44771-1 1-1 .55228 0 1 .44771 1 1 0 .55228-.44772 1-1 1-.55229 0-1-.44772-1-1zm4 0c0-.55229.44772-1 1-1s1 .44771 1 1c0 .55228-.44772 1-1 1s-1-.44772-1-1zm5-1c-.55229 0-1 .44771-1 1 0 .55228.44771 1 1 1s1-.44772 1-1c0-.55229-.44771-1-1-1z",
-    clipRule: "evenodd"
-  }));
 };
 
 var css_248z$e = ".radio-module_radioButton__2_3sh {\n  min-width: 32px;\n  height: 32px;\n  background-color: #ffffff;\n  border: 1px solid #e8ebed;\n  border-radius: 8px;\n  display: flex;\n  align-items: center;\n  justify-content: center; }\n  .radio-module_radioButton__2_3sh * {\n    box-sizing: border-box; }\n  .radio-module_radioButton__2_3sh .radio-module_resetBtn__28xi1.radio-module_active__3wKuC {\n    background-color: #ebebeb !important; }\n";
@@ -5676,7 +5205,7 @@ const Text = ({
   const morMenuCaseOptions = [{
     id: getUnique(),
     name: 'MinusIcon',
-    icon: /*#__PURE__*/React$1.createElement(MinusIcon, {
+    icon: /*#__PURE__*/React$1.createElement(MinusIcon$1, {
       width: 10
     })
   }, {
@@ -5701,7 +5230,7 @@ const Text = ({
   const morMenuDecorationOptions = [{
     id: getUnique(),
     name: 'MinusIcon',
-    icon: /*#__PURE__*/React$1.createElement(MinusIcon, {
+    icon: /*#__PURE__*/React$1.createElement(MinusIcon$1, {
       width: 10
     })
   }, {
@@ -5827,14 +5356,14 @@ const Text = ({
   }), /*#__PURE__*/React$1.createElement(IconButton, {
     onClick: () => setToggleMoreItems(!toggleMoreItems),
     isActive: toggleMoreItems
-  }, /*#__PURE__*/React$1.createElement(TreeDots, null)))), toggleMoreItems && /*#__PURE__*/React$1.createElement("div", {
+  }, /*#__PURE__*/React$1.createElement(TreeDotsIcon$1, null)))), toggleMoreItems && /*#__PURE__*/React$1.createElement("div", {
     className: moreMenu
   }, /*#__PURE__*/React$1.createElement("div", {
     className: moreHeader
   }, /*#__PURE__*/React$1.createElement("label", null, "Text Option"), /*#__PURE__*/React$1.createElement(IconButton, {
     size: "small",
     onClick: () => setToggleMoreItems(!toggleMoreItems)
-  }, /*#__PURE__*/React$1.createElement(CrossIcon, null))), /*#__PURE__*/React$1.createElement("div", {
+  }, /*#__PURE__*/React$1.createElement(CrossIcon$1, null))), /*#__PURE__*/React$1.createElement("div", {
     className: moreBody
   }, /*#__PURE__*/React$1.createElement("div", {
     className: morMenuBodyRow
@@ -5922,7 +5451,7 @@ const AdjMenu = ({
   }, "Reset"), /*#__PURE__*/React$1.createElement("label", null, "Add Adjustment"), /*#__PURE__*/React$1.createElement(IconButton, {
     size: "small",
     onClick: () => closeMenu(false)
-  }, /*#__PURE__*/React$1.createElement(CrossIcon, null))), /*#__PURE__*/React$1.createElement("div", {
+  }, /*#__PURE__*/React$1.createElement(CrossIcon$1, null))), /*#__PURE__*/React$1.createElement("div", {
     className: body
   }, /*#__PURE__*/React$1.createElement("div", {
     className: left
@@ -5944,7 +5473,7 @@ const AdjMenu = ({
       value: item.value,
       key
     })
-  }, /*#__PURE__*/React$1.createElement("label", null, item.name), item.selected ? /*#__PURE__*/React$1.createElement(CheckIcon, null) : '')))))), /*#__PURE__*/React$1.createElement("div", {
+  }, /*#__PURE__*/React$1.createElement("label", null, item.name), item.selected ? /*#__PURE__*/React$1.createElement(CheckIcon$1, null) : '')))))), /*#__PURE__*/React$1.createElement("div", {
     className: right
   }, /*#__PURE__*/React$1.createElement(Scrollbars, {
     autoHide: true,
@@ -6024,10 +5553,10 @@ const AdjRow = ({
   }, row.name), /*#__PURE__*/React$1.createElement(IconButton, {
     className: btn,
     onClick: () => onChange('visible')
-  }, row.visible ? /*#__PURE__*/React$1.createElement(EyeIcon, null) : /*#__PURE__*/React$1.createElement(EyeOffIcon, null)), /*#__PURE__*/React$1.createElement(IconButton, {
+  }, row.visible ? /*#__PURE__*/React$1.createElement(EyeIcon$1, null) : /*#__PURE__*/React$1.createElement(EyeCloseIcon$1, null)), /*#__PURE__*/React$1.createElement(IconButton, {
     className: `${btn} ${minus}`,
     onClick: () => onChange('selected')
-  }, /*#__PURE__*/React$1.createElement(MinusIcon, null)));
+  }, /*#__PURE__*/React$1.createElement(MinusIcon$1, null)));
 };
 
 var css_248z$b = ".adjustments-module_fill__2kUst {\n  width: 240px;\n  display: flex;\n  flex-direction: column;\n  align-items: center;\n  justify-content: space-between;\n  box-sizing: border-box;\n  padding: 8px;\n  cursor: pointer; }\n  .adjustments-module_fill__2kUst .adjustments-module_header__38ZI8 {\n    display: flex; }\n    .adjustments-module_fill__2kUst .adjustments-module_header__38ZI8 button {\n      width: 24px;\n      height: 24px; }\n  .adjustments-module_fill__2kUst .adjustments-module_activeFillItems__Jm7jm {\n    display: flex;\n    flex-direction: column;\n    width: 224px; }\n  .adjustments-module_fill__2kUst.adjustments-module_white__3zrYX {\n    background: #ffffff; }\n  .adjustments-module_fill__2kUst.adjustments-module_gray__2XM6P {\n    background: #f7f9fa; }\n  .adjustments-module_fill__2kUst.adjustments-module_silver__3v8G4 {\n    background: #f2f4f5; }\n  .adjustments-module_fill__2kUst .adjustments-module_header__38ZI8 {\n    width: 224px;\n    height: 32px;\n    display: flex;\n    align-items: center;\n    justify-content: space-between; }\n    .adjustments-module_fill__2kUst .adjustments-module_header__38ZI8 .adjustments-module_layerText__6sKpM {\n      font-family: Aktiv Grotesk, sans-serif;\n      font-size: 12px;\n      line-height: 24px;\n      font-weight: 600;\n      display: flex;\n      align-items: center;\n      cursor: text; }\n      .adjustments-module_fill__2kUst .adjustments-module_header__38ZI8 .adjustments-module_layerText__6sKpM.adjustments-module_purple__dVPPy {\n        color: #b555e5; }\n      .adjustments-module_fill__2kUst .adjustments-module_header__38ZI8 .adjustments-module_layerText__6sKpM.adjustments-module_black__1MxYM {\n        color: #31363a; }\n  .adjustments-module_fill__2kUst .adjustments-module_layerBtnAction__2mKlA {\n    display: flex;\n    justify-content: flex-end;\n    align-items: center;\n    vertical-align: middle; }\n";
@@ -6120,7 +5649,7 @@ const Adjustment = ({
     ref: closeMenuBtn,
     className: `${layerBtnAction}`,
     onClick: () => setToggleAdjMenu(!toggleAdjMenu)
-  }, /*#__PURE__*/React$1.createElement(IconButton, null, /*#__PURE__*/React$1.createElement(PlusIcon, null))), toggleAdjMenu && /*#__PURE__*/React$1.createElement(AdjMenu, {
+  }, /*#__PURE__*/React$1.createElement(IconButton, null, /*#__PURE__*/React$1.createElement(PlusIcon$1, null))), toggleAdjMenu && /*#__PURE__*/React$1.createElement(AdjMenu, {
     closeMenu: setToggleAdjMenu,
     onChange: onChange,
     closeBtnRef: closeMenuBtn,
@@ -6145,59 +5674,6 @@ const Adjustment = ({
       })
     }) : '');
   })));
-};
-
-const BlendIcon = ({
-  width = 18,
-  height = 12
-}) => {
-  return /*#__PURE__*/React$1.createElement("svg", {
-    width: width,
-    height: height,
-    viewBox: `0 0 18 12`,
-    fill: "transparent"
-  }, /*#__PURE__*/React$1.createElement("path", {
-    fillRule: "evenodd",
-    clipRule: "evenodd",
-    d: "M9 11.1973C10.7934 10.1599 12 8.2208 12 6 12 3.779 10.7934 1.84 9 .8027 7.2066 1.84 6 3.779 6 6c0 2.2208 1.2066 4.1599 3 5.1973z",
-    fill: "#EBEBEB"
-  }), /*#__PURE__*/React$1.createElement("circle", {
-    cx: "6",
-    cy: "6",
-    r: "5.5",
-    stroke: "#999"
-  }), /*#__PURE__*/React$1.createElement("circle", {
-    cx: "12",
-    cy: "6",
-    r: "5.5",
-    stroke: "#999"
-  }));
-};
-const BlendHoverIcon = ({
-  width = 18,
-  height = 12
-}) => {
-  return /*#__PURE__*/React$1.createElement("svg", {
-    width: width,
-    height: height,
-    viewBox: `0 0 18 12`,
-    fill: "transparent"
-  }, /*#__PURE__*/React$1.createElement("path", {
-    fillRule: "evenodd",
-    clipRule: "evenodd",
-    d: "M9 11.1973C10.7934 10.1599 12 8.2208 12 6 12 3.779 10.7934 1.84 9 .8027 7.2066 1.84 6 3.779 6 6c0 2.2208 1.2066 4.1599 3 5.1973z",
-    fill: "#999"
-  }), /*#__PURE__*/React$1.createElement("circle", {
-    cx: "6",
-    cy: "6",
-    r: "5.5",
-    stroke: "#333"
-  }), /*#__PURE__*/React$1.createElement("circle", {
-    cx: "12",
-    cy: "6",
-    r: "5.5",
-    stroke: "#333"
-  }));
 };
 
 var css_248z$a = ".fill-row-module_fillRow__3AiSV {\n  position: relative;\n  width: 224px;\n  height: 32px;\n  display: flex;\n  align-items: center;\n  justify-content: space-between;\n  border-radius: 4px;\n  margin: 8px 0;\n  cursor: pointer; }\n  .fill-row-module_fillRow__3AiSV * {\n    box-sizing: border-box;\n    font-family: Aktiv Grotesk, sans-serif;\n    user-select: none; }\n  .fill-row-module_fillRow__3AiSV .fill-row-module_colorActionWrapper__XD7Wi {\n    display: flex;\n    width: 104px;\n    height: 32px;\n    border: 1px solid #e8ebed;\n    border-radius: 8px;\n    align-items: center;\n    padding: 8px; }\n    .fill-row-module_fillRow__3AiSV .fill-row-module_colorActionWrapper__XD7Wi:hover {\n      border: 1px solid #3399ff; }\n    .fill-row-module_fillRow__3AiSV .fill-row-module_colorActionWrapper__XD7Wi:focus-within {\n      border: 1px solid #3399ff; }\n    .fill-row-module_fillRow__3AiSV .fill-row-module_colorActionWrapper__XD7Wi input {\n      font-size: 11px;\n      border: 0;\n      outline: none;\n      width: 64px;\n      padding-left: 8px; }\n    .fill-row-module_fillRow__3AiSV .fill-row-module_colorActionWrapper__XD7Wi .fill-row-module_colorPicker__15Lpx {\n      width: 16px;\n      height: 16px;\n      border-radius: 50%; }\n  .fill-row-module_fillRow__3AiSV.fill-row-module_active__29zYK {\n    border: 1px solid #3399ff; }\n  .fill-row-module_fillRow__3AiSV .fill-row-module_fillText__2rXs8 {\n    width: 52px;\n    height: 32px;\n    justify-content: flex-end; }\n    .fill-row-module_fillRow__3AiSV .fill-row-module_fillText__2rXs8 input {\n      width: 20px;\n      padding: 0;\n      line-height: 16px;\n      font-size: 11px; }\n  .fill-row-module_fillRow__3AiSV .fill-row-module_btnRow__1FtV2 {\n    width: 24px;\n    height: 32px; }\n  .fill-row-module_fillRow__3AiSV .fill-row-module_colorPickerModal__3sRG0 {\n    position: fixed;\n    right: 240px;\n    z-index: 1; }\n    .fill-row-module_fillRow__3AiSV .fill-row-module_colorPickerModal__3sRG0 > div {\n      border: 0 !important;\n      border-radius: 8px !important;\n      background: #f7f9fa !important;\n      box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.06), 0px 0.5px 1px rgba(0, 0, 0, 0.24) !important; }\n  .fill-row-module_fillRow__3AiSV.fill-row-module_white__1nKau {\n    background: #ffffff; }\n  .fill-row-module_fillRow__3AiSV.fill-row-module_gray__CHWab {\n    background: #f7f9fa; }\n  .fill-row-module_fillRow__3AiSV.fill-row-module_silver__spEV6 {\n    background: #f2f4f5; }\n  .fill-row-module_fillRow__3AiSV .fill-row-module_layerText__1SiPB {\n    font-size: 12px;\n    line-height: 24px;\n    font-weight: 600;\n    display: flex;\n    align-items: center;\n    margin: 0px 8px;\n    width: 188px;\n    height: 24px;\n    cursor: text; }\n    .fill-row-module_fillRow__3AiSV .fill-row-module_layerText__1SiPB.fill-row-module_purple__1o4db {\n      color: #b555e5; }\n    .fill-row-module_fillRow__3AiSV .fill-row-module_layerText__1SiPB.fill-row-module_black__80Yjk {\n      color: #31363a; }\n  .fill-row-module_fillRow__3AiSV [type='text']:focus,\n  .fill-row-module_fillRow__3AiSV [type='password']:focus,\n  .fill-row-module_fillRow__3AiSV [type='number']:focus,\n  .fill-row-module_fillRow__3AiSV [type='email']:focus,\n  .fill-row-module_fillRow__3AiSV [type='search']:focus {\n    color: #333333; }\n";
@@ -6278,7 +5754,7 @@ const FillRow = ({
     value: selectedColor,
     type: "string",
     size: "noStyle"
-  })), /*#__PURE__*/React$1.createElement(IconButton, null, /*#__PURE__*/React$1.createElement(BlendHoverIcon, null)), /*#__PURE__*/React$1.createElement(Input, {
+  })), /*#__PURE__*/React$1.createElement(IconButton, null, /*#__PURE__*/React$1.createElement(BlendIcon$1, null)), /*#__PURE__*/React$1.createElement(Input, {
     onChange: setSelectedOpacity,
     value: selectedOpacity,
     setValue: setSelectedOpacity,
@@ -6288,7 +5764,7 @@ const FillRow = ({
   }), /*#__PURE__*/React$1.createElement(IconButton, {
     className: btnRow,
     onClick: () => removeRow(row)
-  }, /*#__PURE__*/React$1.createElement(MinusIcon, null)));
+  }, /*#__PURE__*/React$1.createElement(MinusIcon$1, null)));
 };
 
 var css_248z$9 = ".fill-module_fill__s6n7N {\n  width: 240px;\n  display: flex;\n  flex-direction: column;\n  align-items: center;\n  justify-content: space-between;\n  box-sizing: border-box;\n  padding: 8px;\n  cursor: pointer; }\n  .fill-module_fill__s6n7N .fill-module_header__GMBXs {\n    display: flex; }\n    .fill-module_fill__s6n7N .fill-module_header__GMBXs button {\n      width: 24px;\n      height: 24px; }\n  .fill-module_fill__s6n7N .fill-module_fillItems__1yysb {\n    display: flex;\n    flex-direction: column;\n    width: 224px; }\n  .fill-module_fill__s6n7N.fill-module_white__2KTz0 {\n    background: #ffffff; }\n  .fill-module_fill__s6n7N.fill-module_gray__26J6h {\n    background: #f7f9fa; }\n  .fill-module_fill__s6n7N.fill-module_silver__39Gtg {\n    background: #f2f4f5; }\n  .fill-module_fill__s6n7N .fill-module_header__GMBXs {\n    width: 224px;\n    height: 32px;\n    display: flex;\n    align-items: center;\n    justify-content: space-between; }\n    .fill-module_fill__s6n7N .fill-module_header__GMBXs .fill-module_layerText__3Pa6k {\n      font-family: Aktiv Grotesk, sans-serif;\n      font-size: 12px;\n      line-height: 24px;\n      font-weight: 600;\n      display: flex;\n      align-items: center;\n      cursor: text; }\n      .fill-module_fill__s6n7N .fill-module_header__GMBXs .fill-module_layerText__3Pa6k.fill-module_purple__11PKi {\n        color: #b555e5; }\n      .fill-module_fill__s6n7N .fill-module_header__GMBXs .fill-module_layerText__3Pa6k.fill-module_black__gqKeu {\n        color: #31363a; }\n  .fill-module_fill__s6n7N .fill-module_layerBtnAction__Tu2kH {\n    display: flex;\n    justify-content: flex-end;\n    align-items: center;\n    vertical-align: middle; }\n";
@@ -6341,7 +5817,7 @@ const Fill = ({
   }, "Fill"), /*#__PURE__*/React$1.createElement("div", {
     className: `${layerBtnAction}`,
     onClick: () => addRow()
-  }, /*#__PURE__*/React$1.createElement(IconButton, null, /*#__PURE__*/React$1.createElement(PlusIcon, null)))), /*#__PURE__*/React$1.createElement("div", {
+  }, /*#__PURE__*/React$1.createElement(IconButton, null, /*#__PURE__*/React$1.createElement(PlusIcon$1, null)))), /*#__PURE__*/React$1.createElement("div", {
     className: fillItems
   }, optionsState.map((item, key) => /*#__PURE__*/React$1.createElement(FillRow, {
     key: `${item.id}`,
@@ -6350,49 +5826,6 @@ const Fill = ({
     onChange: _res => setValue(_res, key),
     removeRow: removeRow
   }))));
-};
-
-const Stroke1Icon = ({
-  width = 8,
-  height = 8
-}) => {
-  return /*#__PURE__*/React$1.createElement("svg", {
-    width: width,
-    height: height,
-    viewBox: `0 0 8 8`,
-    fill: "transparent"
-  }, /*#__PURE__*/React$1.createElement("path", {
-    d: "M8 .5H.5V8",
-    stroke: "#999"
-  }));
-};
-const Stroke2Icon = ({
-  width = 8,
-  height = 8
-}) => {
-  return /*#__PURE__*/React$1.createElement("svg", {
-    width: width,
-    height: height,
-    viewBox: `0 0 8 8`,
-    fill: "transparent"
-  }, /*#__PURE__*/React$1.createElement("path", {
-    d: "M8 .5H4.25L.5 4.25V8",
-    stroke: "#999"
-  }));
-};
-const Stroke3Icon = ({
-  width = 8,
-  height = 8
-}) => {
-  return /*#__PURE__*/React$1.createElement("svg", {
-    width: width,
-    height: height,
-    viewBox: `0 0 8 8`,
-    fill: "transparent"
-  }, /*#__PURE__*/React$1.createElement("path", {
-    d: "M8 .5H6.5c-3.3137 0-6 2.6863-6 6V8",
-    stroke: "#999"
-  }));
 };
 
 var css_248z$8 = ".stroke-row-module_strokeRow__SpWBF {\n  position: relative;\n  width: 224px;\n  height: 32px;\n  display: flex;\n  align-items: center;\n  justify-content: space-between;\n  border-radius: 4px;\n  margin: 8px 0;\n  cursor: pointer; }\n  .stroke-row-module_strokeRow__SpWBF * {\n    box-sizing: border-box;\n    font-family: Aktiv Grotesk, sans-serif;\n    user-select: none; }\n  .stroke-row-module_strokeRow__SpWBF .stroke-row-module_strokeInput1__3AjaJ {\n    width: 44px;\n    height: 32px;\n    justify-content: flex-end;\n    align-items: center; }\n    .stroke-row-module_strokeRow__SpWBF .stroke-row-module_strokeInput1__3AjaJ input {\n      width: 12px;\n      padding: 0;\n      font-size: 11px; }\n    .stroke-row-module_strokeRow__SpWBF .stroke-row-module_strokeInput1__3AjaJ label {\n      width: 24px;\n      height: 32px; }\n  .stroke-row-module_strokeRow__SpWBF .stroke-row-module_strokeInput2__2D5ze {\n    width: 52px;\n    height: 32px;\n    justify-content: flex-end;\n    align-items: center; }\n    .stroke-row-module_strokeRow__SpWBF .stroke-row-module_strokeInput2__2D5ze input {\n      width: 20px;\n      padding: 0;\n      font-size: 11px; }\n    .stroke-row-module_strokeRow__SpWBF .stroke-row-module_strokeInput2__2D5ze label {\n      width: 24px;\n      height: 32px; }\n  .stroke-row-module_strokeRow__SpWBF .stroke-row-module_btnRow__3o45S {\n    width: 24px;\n    height: 32px; }\n  .stroke-row-module_strokeRow__SpWBF .stroke-row-module_colorActionWrapper__33veL {\n    display: flex;\n    width: 92px;\n    height: 32px;\n    border: 1px solid #e8ebed;\n    box-sizing: border-box;\n    border-radius: 8px;\n    align-items: center;\n    justify-content: flex-start;\n    padding: 8px; }\n    .stroke-row-module_strokeRow__SpWBF .stroke-row-module_colorActionWrapper__33veL .stroke-row-module_colorPicker__33Cir {\n      width: 16px;\n      height: 16px;\n      border-radius: 50%; }\n    .stroke-row-module_strokeRow__SpWBF .stroke-row-module_colorActionWrapper__33veL input {\n      border: 0;\n      outline: none;\n      width: 58px;\n      height: 16px;\n      font-size: 11px;\n      line-height: 16px;\n      padding-left: 8px; }\n    .stroke-row-module_strokeRow__SpWBF .stroke-row-module_colorActionWrapper__33veL:hover {\n      border: 1px solid #3399ff; }\n    .stroke-row-module_strokeRow__SpWBF .stroke-row-module_colorActionWrapper__33veL:focus-within {\n      border: 1px solid #3399ff; }\n  .stroke-row-module_strokeRow__SpWBF .stroke-row-module_colorPickerModal__25b0p {\n    position: absolute;\n    top: 40px;\n    z-index: 1; }\n    .stroke-row-module_strokeRow__SpWBF .stroke-row-module_colorPickerModal__25b0p > div {\n      border: 0 !important;\n      border-radius: 8px !important;\n      background: #f7f9fa !important;\n      box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.06), 0px 0.5px 1px rgba(0, 0, 0, 0.24) !important; }\n  .stroke-row-module_strokeRow__SpWBF.stroke-row-module_white__8e02Q {\n    background: #ffffff; }\n  .stroke-row-module_strokeRow__SpWBF.stroke-row-module_gray__1-1Ec {\n    background: #f7f9fa; }\n  .stroke-row-module_strokeRow__SpWBF.stroke-row-module_silver__2YY7i {\n    background: #f2f4f5; }\n  .stroke-row-module_strokeRow__SpWBF [type='text']:focus,\n  .stroke-row-module_strokeRow__SpWBF [type='password']:focus,\n  .stroke-row-module_strokeRow__SpWBF [type='number']:focus,\n  .stroke-row-module_strokeRow__SpWBF [type='email']:focus,\n  .stroke-row-module_strokeRow__SpWBF [type='search']:focus {\n    color: #333333; }\n";
@@ -6482,7 +5915,7 @@ const StrokeRow = ({
   }), /*#__PURE__*/React$1.createElement(IconButton, {
     onClick: () => removeRow(row),
     className: btnRow
-  }, /*#__PURE__*/React$1.createElement(MinusIcon, null)));
+  }, /*#__PURE__*/React$1.createElement(MinusIcon$1, null)));
 };
 
 var css_248z$7 = ".stroke-module_stroke__3xznE {\n  width: 240px;\n  display: flex;\n  flex-direction: column;\n  align-items: center;\n  justify-content: space-between;\n  padding: 8px 0;\n  cursor: pointer; }\n  .stroke-module_stroke__3xznE .stroke-module_header__PmbN- {\n    display: flex; }\n    .stroke-module_stroke__3xznE .stroke-module_header__PmbN- button {\n      width: 24px;\n      height: 24px; }\n  .stroke-module_stroke__3xznE .stroke-module_strokeItems__18zIM {\n    display: flex;\n    flex-direction: column; }\n  .stroke-module_stroke__3xznE.stroke-module_white__1EwvI {\n    background: #ffffff; }\n  .stroke-module_stroke__3xznE.stroke-module_gray__1yxJA {\n    background: #f7f9fa; }\n  .stroke-module_stroke__3xznE.stroke-module_silver__3Jf5m {\n    background: #f2f4f5; }\n  .stroke-module_stroke__3xznE .stroke-module_moreMenu__2r2_q {\n    width: 200px;\n    min-height: 104px;\n    padding: 4px;\n    border-radius: 8px;\n    box-shadow: 0px 2px 4px rgba(51, 51, 51, 0.12), 0px 0px 1px #999999, 0px 12px 24px -8px rgba(51, 51, 51, 0.08);\n    position: fixed;\n    background-color: #ffffff;\n    right: 240px; }\n    .stroke-module_stroke__3xznE .stroke-module_moreMenu__2r2_q .stroke-module_moreHeader__T0nk1 {\n      width: 192px;\n      height: 32px;\n      border-bottom: 1px solid #f5f5f5;\n      display: flex;\n      align-items: center;\n      justify-content: space-between;\n      font-size: 11px;\n      font-weight: 600;\n      padding: 4px; }\n    .stroke-module_stroke__3xznE .stroke-module_moreMenu__2r2_q .stroke-module_moreBody__2c1Os {\n      display: flex;\n      justify-content: center;\n      align-items: center;\n      border-radius: 8px;\n      flex-direction: column;\n      padding-top: 4px; }\n      .stroke-module_stroke__3xznE .stroke-module_moreMenu__2r2_q .stroke-module_moreBody__2c1Os .stroke-module_morMenuBodyRow__3SjdX {\n        width: 184px;\n        height: 32px;\n        display: flex;\n        justify-content: space-between;\n        align-items: center; }\n        .stroke-module_stroke__3xznE .stroke-module_moreMenu__2r2_q .stroke-module_moreBody__2c1Os .stroke-module_morMenuBodyRow__3SjdX label {\n          color: #999999;\n          font-size: 11px;\n          font-weight: 600; }\n        .stroke-module_stroke__3xznE .stroke-module_moreMenu__2r2_q .stroke-module_moreBody__2c1Os .stroke-module_morMenuBodyRow__3SjdX .stroke-module_morItemRadioButton__2-DkR {\n          height: 24px; }\n          .stroke-module_stroke__3xznE .stroke-module_moreMenu__2r2_q .stroke-module_moreBody__2c1Os .stroke-module_morMenuBodyRow__3SjdX .stroke-module_morItemRadioButton__2-DkR button {\n            background-color: transparent;\n            border-radius: 8px;\n            border: 0 !important; }\n            .stroke-module_stroke__3xznE .stroke-module_moreMenu__2r2_q .stroke-module_moreBody__2c1Os .stroke-module_morMenuBodyRow__3SjdX .stroke-module_morItemRadioButton__2-DkR button:hover, .stroke-module_stroke__3xznE .stroke-module_moreMenu__2r2_q .stroke-module_moreBody__2c1Os .stroke-module_morMenuBodyRow__3SjdX .stroke-module_morItemRadioButton__2-DkR button.stroke-module_active__TzwdW {\n              background-color: #ebebeb !important; }\n        .stroke-module_stroke__3xznE .stroke-module_moreMenu__2r2_q .stroke-module_moreBody__2c1Os .stroke-module_morMenuBodyRow__3SjdX .stroke-module_option__1JTwD {\n          width: 90px;\n          height: 24px; }\n        .stroke-module_stroke__3xznE .stroke-module_moreMenu__2r2_q .stroke-module_moreBody__2c1Os .stroke-module_morMenuBodyRow__3SjdX .stroke-module_input__oxlkz {\n          width: 90px;\n          height: 24px;\n          justify-content: flex-end; }\n          .stroke-module_stroke__3xznE .stroke-module_moreMenu__2r2_q .stroke-module_moreBody__2c1Os .stroke-module_morMenuBodyRow__3SjdX .stroke-module_input__oxlkz input {\n            width: calc(100% - 32px);\n            padding: 0; }\n  .stroke-module_stroke__3xznE .stroke-module_header__PmbN- {\n    width: 224px;\n    height: 32px;\n    display: flex;\n    align-items: center;\n    justify-content: space-between; }\n    .stroke-module_stroke__3xznE .stroke-module_header__PmbN- .stroke-module_layerText__atHEa {\n      width: 188px;\n      font-family: Aktiv Grotesk, sans-serif;\n      font-size: 12px;\n      line-height: 24px;\n      font-weight: 600;\n      display: flex;\n      align-items: center;\n      cursor: text; }\n      .stroke-module_stroke__3xznE .stroke-module_header__PmbN- .stroke-module_layerText__atHEa.stroke-module_purple__11RP4 {\n        color: #b555e5; }\n      .stroke-module_stroke__3xznE .stroke-module_header__PmbN- .stroke-module_layerText__atHEa.stroke-module_black__2Y9xL {\n        color: #31363a; }\n  .stroke-module_stroke__3xznE .stroke-module_layerBtnAction__3nbXe {\n    display: flex;\n    justify-content: flex-end;\n    align-items: center;\n    vertical-align: middle; }\n";
@@ -6513,19 +5946,19 @@ const _trim = [{
 const _cases = [{
   id: getUnique(),
   name: 'Stroke1Icon',
-  icon: /*#__PURE__*/React$1.createElement(Stroke1Icon, {
+  icon: /*#__PURE__*/React$1.createElement(Stroke1Icon$1, {
     width: 10
   })
 }, {
   id: getUnique(),
   name: 'Stroke2Icon',
-  icon: /*#__PURE__*/React$1.createElement(Stroke2Icon, {
+  icon: /*#__PURE__*/React$1.createElement(Stroke2Icon$1, {
     width: 10
   })
 }, {
   id: getUnique(),
   name: 'Stroke3Icon',
-  icon: /*#__PURE__*/React$1.createElement(Stroke3Icon, {
+  icon: /*#__PURE__*/React$1.createElement(Stroke3Icon$1, {
     width: 10
   })
 }];
@@ -6628,9 +6061,9 @@ const Stroke = ({
     className: `${layerBtnAction}`
   }, /*#__PURE__*/React$1.createElement(IconButton, {
     onClick: () => setToggleMoreItems(!toggleMoreItems)
-  }, /*#__PURE__*/React$1.createElement(TreeDots, null)), /*#__PURE__*/React$1.createElement(IconButton, {
+  }, /*#__PURE__*/React$1.createElement(TreeDotsIcon$1, null)), /*#__PURE__*/React$1.createElement(IconButton, {
     onClick: () => addRow()
-  }, /*#__PURE__*/React$1.createElement(PlusIcon, null)))), /*#__PURE__*/React$1.createElement("div", {
+  }, /*#__PURE__*/React$1.createElement(PlusIcon$1, null)))), /*#__PURE__*/React$1.createElement("div", {
     className: strokeItems
   }, strokesState.map((item, key) => /*#__PURE__*/React$1.createElement(StrokeRow, {
     key: `${item.id}`,
@@ -6644,7 +6077,7 @@ const Stroke = ({
   }, /*#__PURE__*/React$1.createElement("label", null, "Text Option"), /*#__PURE__*/React$1.createElement(IconButton, {
     size: "small",
     onClick: () => setToggleMoreItems(!toggleMoreItems)
-  }, /*#__PURE__*/React$1.createElement(CrossIcon, null))), /*#__PURE__*/React$1.createElement("div", {
+  }, /*#__PURE__*/React$1.createElement(CrossIcon$1, null))), /*#__PURE__*/React$1.createElement("div", {
     className: moreBody
   }, /*#__PURE__*/React$1.createElement("div", {
     className: morMenuBodyRow
@@ -6770,7 +6203,7 @@ const TextBackgroundRow = ({
     value: selectedColor,
     type: "string",
     size: "noStyle"
-  })), /*#__PURE__*/React$1.createElement(IconButton, null, /*#__PURE__*/React$1.createElement(BlendHoverIcon, null)), /*#__PURE__*/React$1.createElement(Input, {
+  })), /*#__PURE__*/React$1.createElement(IconButton, null, /*#__PURE__*/React$1.createElement(BlendIcon$1, null)), /*#__PURE__*/React$1.createElement(Input, {
     onChangeValue: setSelectedOpacity,
     value: selectedOpacity,
     setValue: setSelectedOpacity,
@@ -6780,7 +6213,7 @@ const TextBackgroundRow = ({
   }), /*#__PURE__*/React$1.createElement(IconButton, {
     className: btnRow,
     onClick: () => removeRow(row)
-  }, /*#__PURE__*/React$1.createElement(MinusIcon, null)));
+  }, /*#__PURE__*/React$1.createElement(MinusIcon$1, null)));
 };
 
 var css_248z$5 = ".text-background-module_fill__27w5d {\n  width: 240px;\n  display: flex;\n  flex-direction: column;\n  align-items: center;\n  justify-content: space-between;\n  box-sizing: border-box;\n  padding: 8px;\n  cursor: pointer; }\n  .text-background-module_fill__27w5d .text-background-module_header__2T8Aw {\n    display: flex; }\n    .text-background-module_fill__27w5d .text-background-module_header__2T8Aw button {\n      width: 24px;\n      height: 24px; }\n  .text-background-module_fill__27w5d .text-background-module_fillItems__RB0x4 {\n    display: flex;\n    flex-direction: column;\n    width: 224px; }\n  .text-background-module_fill__27w5d.text-background-module_white__1zeD1 {\n    background: #ffffff; }\n  .text-background-module_fill__27w5d.text-background-module_gray__HehSe {\n    background: #f7f9fa; }\n  .text-background-module_fill__27w5d.text-background-module_silver__2A-zz {\n    background: #f2f4f5; }\n  .text-background-module_fill__27w5d .text-background-module_header__2T8Aw {\n    width: 224px;\n    height: 32px;\n    display: flex;\n    align-items: center;\n    justify-content: space-between; }\n    .text-background-module_fill__27w5d .text-background-module_header__2T8Aw .text-background-module_layerText__36qv- {\n      font-family: Aktiv Grotesk, sans-serif;\n      font-size: 12px;\n      line-height: 24px;\n      font-weight: 600;\n      display: flex;\n      align-items: center;\n      cursor: text; }\n      .text-background-module_fill__27w5d .text-background-module_header__2T8Aw .text-background-module_layerText__36qv-.text-background-module_purple__2tWos {\n        color: #b555e5; }\n      .text-background-module_fill__27w5d .text-background-module_header__2T8Aw .text-background-module_layerText__36qv-.text-background-module_black__3UNAP {\n        color: #31363a; }\n  .text-background-module_fill__27w5d .text-background-module_layerBtnAction__shJOe {\n    display: flex;\n    justify-content: flex-end;\n    align-items: center;\n    vertical-align: middle; }\n";
@@ -6834,7 +6267,7 @@ const TextBackground = ({
   }, titleS), /*#__PURE__*/React$1.createElement("div", {
     className: `${layerBtnAction}`,
     onClick: () => addRow()
-  }, /*#__PURE__*/React$1.createElement(IconButton, null, /*#__PURE__*/React$1.createElement(PlusIcon, null)))), /*#__PURE__*/React$1.createElement("div", {
+  }, /*#__PURE__*/React$1.createElement(IconButton, null, /*#__PURE__*/React$1.createElement(PlusIcon$1, null)))), /*#__PURE__*/React$1.createElement("div", {
     className: fillItems
   }, optionsState.map((item, key) => /*#__PURE__*/React$1.createElement(TextBackgroundRow, {
     key: `${item.id}`,
@@ -7037,7 +6470,7 @@ const FxMenu = ({
   }, "Reset"), /*#__PURE__*/React$1.createElement("label", null, "Add Fx"), /*#__PURE__*/React$1.createElement(IconButton, {
     size: "small",
     onClick: () => closeMenu(false)
-  }, /*#__PURE__*/React$1.createElement(CrossIcon, null))), /*#__PURE__*/React$1.createElement("div", {
+  }, /*#__PURE__*/React$1.createElement(CrossIcon$1, null))), /*#__PURE__*/React$1.createElement("div", {
     className: body
   }, /*#__PURE__*/React$1.createElement("div", {
     className: left
@@ -7050,7 +6483,7 @@ const FxMenu = ({
       value: 'presents',
       key: 0
     })
-  }, /*#__PURE__*/React$1.createElement("label", null, "Presets"), activeFilters[0].selected ? /*#__PURE__*/React$1.createElement(CheckIcon, null) : '')), /*#__PURE__*/React$1.createElement(Scrollbars, {
+  }, /*#__PURE__*/React$1.createElement("label", null, "Presets"), activeFilters[0].selected ? /*#__PURE__*/React$1.createElement(CheckIcon$1, null) : '')), /*#__PURE__*/React$1.createElement(Scrollbars, {
     autoHide: true,
     style: {
       height: '100%',
@@ -7068,7 +6501,7 @@ const FxMenu = ({
       value: item.value,
       key
     })
-  }, /*#__PURE__*/React$1.createElement("label", null, item.name), item.selected ? /*#__PURE__*/React$1.createElement(CheckIcon, null) : '')))))), /*#__PURE__*/React$1.createElement("div", {
+  }, /*#__PURE__*/React$1.createElement("label", null, item.name), item.selected ? /*#__PURE__*/React$1.createElement(CheckIcon$1, null) : '')))))), /*#__PURE__*/React$1.createElement("div", {
     className: right
   }, /*#__PURE__*/React$1.createElement(Scrollbars, {
     autoHide: true,
@@ -7367,10 +6800,10 @@ const FxRow = ({
   }, row.name), /*#__PURE__*/React$1.createElement(IconButton, {
     className: btn,
     onClick: () => onChange('visible')
-  }, row.visible ? /*#__PURE__*/React$1.createElement(EyeIcon, null) : /*#__PURE__*/React$1.createElement(EyeOffIcon, null)), /*#__PURE__*/React$1.createElement(IconButton, {
+  }, row.visible ? /*#__PURE__*/React$1.createElement(EyeIcon$1, null) : /*#__PURE__*/React$1.createElement(EyeCloseIcon$1, null)), /*#__PURE__*/React$1.createElement(IconButton, {
     className: `${btn} ${minus}`,
     onClick: () => onChange('selected')
-  }, /*#__PURE__*/React$1.createElement(MinusIcon, null)));
+  }, /*#__PURE__*/React$1.createElement(MinusIcon$1, null)));
 };
 
 var css_248z = ".fx-module_fill__3u_XH {\n  width: 240px;\n  display: flex;\n  flex-direction: column;\n  align-items: center;\n  justify-content: space-between;\n  box-sizing: border-box;\n  padding: 8px;\n  cursor: pointer; }\n  .fx-module_fill__3u_XH .fx-module_header__1ImeE {\n    display: flex; }\n    .fx-module_fill__3u_XH .fx-module_header__1ImeE button {\n      width: 24px;\n      height: 24px; }\n  .fx-module_fill__3u_XH .fx-module_activeFillItems__iftQ3 {\n    display: flex;\n    flex-direction: column;\n    width: 224px; }\n  .fx-module_fill__3u_XH.fx-module_white__2uBjo {\n    background: #ffffff; }\n  .fx-module_fill__3u_XH.fx-module_gray__1otcM {\n    background: #f7f9fa; }\n  .fx-module_fill__3u_XH.fx-module_silver__33Xt2 {\n    background: #f2f4f5; }\n  .fx-module_fill__3u_XH .fx-module_header__1ImeE {\n    width: 224px;\n    height: 32px;\n    display: flex;\n    align-items: center;\n    justify-content: space-between; }\n    .fx-module_fill__3u_XH .fx-module_header__1ImeE .fx-module_layerText__1YPfe {\n      font-family: Aktiv Grotesk, sans-serif;\n      font-size: 12px;\n      line-height: 24px;\n      font-weight: 600;\n      display: flex;\n      align-items: center;\n      cursor: text; }\n      .fx-module_fill__3u_XH .fx-module_header__1ImeE .fx-module_layerText__1YPfe.fx-module_purple__2G2ff {\n        color: #b555e5; }\n      .fx-module_fill__3u_XH .fx-module_header__1ImeE .fx-module_layerText__1YPfe.fx-module_black__3JpEd {\n        color: #31363a; }\n  .fx-module_fill__3u_XH .fx-module_layerBtnAction__18dfK {\n    display: flex;\n    justify-content: flex-end;\n    align-items: center;\n    vertical-align: middle; }\n";
@@ -7510,7 +6943,7 @@ const Fx = ({
     ref: fxCloseMenuBtn,
     className: `${layerBtnAction}`,
     onClick: () => setToggleFxMenu(!toggleFxMenu)
-  }, /*#__PURE__*/React$1.createElement(IconButton, null, /*#__PURE__*/React$1.createElement(PlusIcon, null))), toggleFxMenu && /*#__PURE__*/React$1.createElement(FxMenu, {
+  }, /*#__PURE__*/React$1.createElement(IconButton, null, /*#__PURE__*/React$1.createElement(PlusIcon$1, null))), toggleFxMenu && /*#__PURE__*/React$1.createElement(FxMenu, {
     closeMenu: setToggleFxMenu,
     onChange: onChange,
     closeBtnRef: fxCloseMenuBtn,
@@ -7537,82 +6970,712 @@ const Fx = ({
   })));
 };
 
-const LayerImageIcon = ({
+const RadiusIcon = ({
   width = 12,
   height = 12
 }) => {
   return /*#__PURE__*/React$1.createElement("svg", {
     width: width,
     height: height,
-    viewBox: `0 0 12 12`
-  }, /*#__PURE__*/React$1.createElement("rect", {
-    width: "11",
-    height: "11",
-    x: ".5",
-    y: ".5",
-    stroke: "#B6BABD",
-    rx: "2.5"
-  }), /*#__PURE__*/React$1.createElement("path", {
-    fill: "#DEE1E2",
-    d: "M5.29289 6.70696l-3 3A.99994.99994 0 002 10.4141v.0857c0 .5523.44772 1 1 1h5.86396c1.45584 0 2.63604-1.1801 2.63604-2.63599a.87865.87865 0 00-.2574-.62132l-.5355-.53553c-.3905-.39053-1.02368-.39053-1.41421 0L8.5 8.49985 6.70711 6.70696c-.39053-.39053-1.02369-.39053-1.41422 0z"
-  }), /*#__PURE__*/React$1.createElement("path", {
-    stroke: "#63676C",
-    d: "M8.5 8.49985L6.70711 6.70696c-.39053-.39053-1.02369-.39053-1.41422 0l-3 3A.99994.99994 0 002 10.4141v.0857c0 .5523.44772 1 1 1h5.86396c1.45584 0 2.63604-1.1801 2.63604-2.63599a.87865.87865 0 00-.2574-.62132l-.5355-.53553c-.3905-.39053-1.02368-.39053-1.41421 0L8.5 8.49985zm0 0l-1 1"
-  }), /*#__PURE__*/React$1.createElement("circle", {
-    cx: "4",
-    cy: "4",
-    r: "1",
-    fill: "#63676C"
+    viewBox: "0 0 12 12",
+    fill: "none"
+  }, /*#__PURE__*/React$1.createElement("path", {
+    fillRule: "evenodd",
+    clipRule: "evenodd",
+    d: "M1 2.5C1 1.67157 1.67157 1 2.5 1H4.5V0H2.5C1.11929 0 0 1.11929 0 2.5V4.5H1V2.5ZM11 2.5C11 1.67157 10.3284 1 9.5 1H7.5V0H9.5C10.8807 0 12 1.11929 12 2.5V4.5H11V2.5ZM2.5 11C1.67157 11 1 10.3284 1 9.5V7.5H0V9.5C0 10.8807 1.11929 12 2.5 12H4.5V11H2.5ZM11 9.5C11 10.3284 10.3284 11 9.5 11H7.5V12H9.5C10.8807 12 12 10.8807 12 9.5V7.5H11V9.5Z",
+    fill: "#333333"
   }));
 };
-const LayerImagePurpleIcon = ({
+const LinkIcon = ({
+  width = 14,
+  height = 5
+}) => {
+  return /*#__PURE__*/React$1.createElement("svg", {
+    width: width,
+    height: height,
+    viewBox: "0 0 14 5",
+    fill: "none"
+  }, /*#__PURE__*/React$1.createElement("path", {
+    fillRule: "evenodd",
+    clipRule: "evenodd",
+    d: "M5 5L3 5C1.61929 5 0.5 3.88071 0.5 2.5C0.5 1.11929 1.61929 -4.89256e-08 3 -1.09278e-07L5 -1.96701e-07L5 1L3 1C2.17157 1 1.5 1.67157 1.5 2.5C1.5 3.32843 2.17157 4 3 4L5 4L5 5ZM11 5C12.3807 5 13.5 3.88071 13.5 2.5C13.5 1.11929 12.3807 -5.19322e-07 11 -4.5897e-07L9 -3.71547e-07L9 1L11 1C11.8284 1 12.5 1.67157 12.5 2.5C12.5 3.32843 11.8284 4 11 4L9 4L9 5L11 5Z",
+    fill: "#333333"
+  }));
+};
+const LinkedIcon = ({
+  width = 14,
+  height = 5
+}) => {
+  return /*#__PURE__*/React$1.createElement("svg", {
+    width: width,
+    height: height,
+    viewBox: "0 0 14 5",
+    fill: "none"
+  }, /*#__PURE__*/React$1.createElement("path", {
+    fillRule: "evenodd",
+    clipRule: "evenodd",
+    d: "M5 5L3 5C1.61929 5 0.5 3.88071 0.5 2.5C0.5 1.11929 1.61929 -4.89256e-08 3 -1.09278e-07L5 -1.96701e-07L5 1L3 1C2.17157 1 1.5 1.67157 1.5 2.5C1.5 3.32843 2.17157 4 3 4L5 4L5 5ZM11 5C12.3807 5 13.5 3.88071 13.5 2.5C13.5 1.11929 12.3807 -5.19322e-07 11 -4.5897e-07L9 -3.71547e-07L9 1L11 1C11.8284 1 12.5 1.67157 12.5 2.5C12.5 3.32843 11.8284 4 11 4L9 4L9 5L11 5Z",
+    fill: "#333333"
+  }), /*#__PURE__*/React$1.createElement("line", {
+    x1: "4.5",
+    y1: "2.5",
+    x2: "9.5",
+    y2: "2.5",
+    stroke: "#333333",
+    strokeLinecap: "round"
+  }));
+};
+const EyeIcon = ({
+  width = 12,
+  height = 6
+}) => {
+  return /*#__PURE__*/React$1.createElement("svg", {
+    width: width,
+    height: height,
+    viewBox: "0 0 12 6",
+    fill: "none"
+  }, /*#__PURE__*/React$1.createElement("path", {
+    fillRule: "evenodd",
+    clipRule: "evenodd",
+    d: "M10.5843 3.99999L10.5843 4H11.6586L11.6586 3.99999C10.8349 1.66961 8.61245 0 6.00002 0C3.38758 0 1.1651 1.66962 0.341431 4H1.41577C2.18779 2.23296 3.95106 1 6.00002 1C8.04897 1 9.81224 2.23295 10.5843 3.99999ZM6 3C5.17157 3 4.5 3.67157 4.5 4.5C4.5 5.32843 5.17157 6 6 6C6.82843 6 7.5 5.32843 7.5 4.5C7.5 3.67157 6.82843 3 6 3Z",
+    fill: "#333333"
+  }));
+};
+const EyeCloseIcon = ({
+  width = 12,
+  height = 4
+}) => {
+  return /*#__PURE__*/React$1.createElement("svg", {
+    width: width,
+    height: height,
+    viewBox: "0 0 12 4",
+    fill: "none"
+  }, /*#__PURE__*/React$1.createElement("path", {
+    fillRule: "evenodd",
+    clipRule: "evenodd",
+    d: "M1.41577 -4.76837e-07C2.18779 1.76704 3.95106 3 6.00002 3C8.04898 3 9.81225 1.76704 10.5843 1.43051e-06L11.6586 -1.90735e-06C10.8349 2.33038 8.61246 4 6.00002 4C3.38758 4 1.1651 2.33038 0.341431 -9.53674e-07L1.41577 -4.76837e-07Z",
+    fill: "#333333"
+  }));
+};
+const TreeDotsIcon = ({
+  width = 12,
+  height = 2
+}) => {
+  return /*#__PURE__*/React$1.createElement("svg", {
+    width: width,
+    height: height,
+    viewBox: "0 0 10 2",
+    fill: "none"
+  }, /*#__PURE__*/React$1.createElement("path", {
+    fillRule: "evenodd",
+    clipRule: "evenodd",
+    d: "M0 1C0 0.447715 0.447715 0 1 0C1.55228 0 2 0.447715 2 1C2 1.55228 1.55228 2 1 2C0.447715 2 0 1.55228 0 1ZM4 1C4 0.447715 4.44772 0 5 0C5.55228 0 6 0.447715 6 1C6 1.55228 5.55228 2 5 2C4.44772 2 4 1.55228 4 1ZM9 0C8.44771 0 8 0.447715 8 1C8 1.55228 8.44771 2 9 2C9.55229 2 10 1.55228 10 1C10 0.447715 9.55229 0 9 0Z",
+    fill: "#333333"
+  }));
+};
+const BlendIcon = ({
+  width = 8,
+  height = 13
+}) => {
+  return /*#__PURE__*/React$1.createElement("svg", {
+    width: width,
+    height: height,
+    viewBox: "0 0 8 13",
+    fill: "none"
+  }, /*#__PURE__*/React$1.createElement("path", {
+    d: "M1.21537 6.87311L4 2L6.78463 6.87311C7.5022 8.12884 7.29052 9.70948 6.26784 10.7322C5.01535 11.9847 2.98466 11.9847 1.73216 10.7322C0.709481 9.70948 0.497805 8.12884 1.21537 6.87311Z",
+    stroke: "#333333"
+  }));
+};
+const BlendedIcon = ({
+  width = 8,
+  height = 13
+}) => {
+  return /*#__PURE__*/React$1.createElement("svg", {
+    width: width,
+    height: height,
+    viewBox: "0 0 8 13",
+    fill: "none"
+  }, /*#__PURE__*/React$1.createElement("path", {
+    d: "M1 8H7L6.37873 10.4851C6.15615 11.3754 5.35618 12 4.43845 12H3.56155C2.64382 12 1.84385 11.3754 1.62127 10.4851L1 8Z",
+    fill: "#999999"
+  }), /*#__PURE__*/React$1.createElement("path", {
+    d: "M1.21537 6.87311L4 2L6.78463 6.87311C7.5022 8.12884 7.29052 9.70948 6.26784 10.7322C5.01535 11.9847 2.98466 11.9847 1.73216 10.7322C0.709481 9.70948 0.497805 8.12884 1.21537 6.87311Z",
+    stroke: "#333333"
+  }));
+};
+const AlignLeftIcon = ({
+  width = 13,
+  height = 12
+}) => {
+  return /*#__PURE__*/React$1.createElement("svg", {
+    width: width,
+    height: height,
+    viewBox: "0 0 13 12",
+    fill: "none"
+  }, /*#__PURE__*/React$1.createElement("line", {
+    x1: "0.5",
+    y1: "2.18557e-08",
+    x2: "0.499999",
+    y2: "12",
+    stroke: "#999999"
+  }), /*#__PURE__*/React$1.createElement("line", {
+    x1: "2",
+    y1: "4",
+    x2: "12",
+    y2: "4",
+    stroke: "#333333",
+    strokeWidth: "2",
+    strokeLinecap: "round"
+  }), /*#__PURE__*/React$1.createElement("line", {
+    x1: "2",
+    y1: "8",
+    x2: "6",
+    y2: "8",
+    stroke: "#333333",
+    strokeWidth: "2",
+    strokeLinecap: "round"
+  }));
+};
+const AlignCenterVIcon = ({
+  width = 13,
+  height = 12
+}) => {
+  return /*#__PURE__*/React$1.createElement("svg", {
+    width: width,
+    height: height,
+    viewBox: "0 0 13 12",
+    fill: "none"
+  }, /*#__PURE__*/React$1.createElement("line", {
+    x1: "6.5",
+    y1: "2.18557e-08",
+    x2: "6.5",
+    y2: "12",
+    stroke: "#999999"
+  }), /*#__PURE__*/React$1.createElement("line", {
+    x1: "1.5",
+    y1: "4",
+    x2: "11.5",
+    y2: "4",
+    stroke: "#333333",
+    strokeWidth: "2",
+    strokeLinecap: "round"
+  }), /*#__PURE__*/React$1.createElement("line", {
+    x1: "4.5",
+    y1: "8",
+    x2: "8.5",
+    y2: "8",
+    stroke: "#333333",
+    strokeWidth: "2",
+    strokeLinecap: "round"
+  }));
+};
+const AlignRightIcon = ({
+  width = 13,
+  height = 12
+}) => {
+  return /*#__PURE__*/React$1.createElement("svg", {
+    width: width,
+    height: height,
+    viewBox: "0 0 13 12",
+    fill: "none"
+  }, /*#__PURE__*/React$1.createElement("line", {
+    y1: "-0.5",
+    x2: "12",
+    y2: "-0.5",
+    transform: "matrix(4.37114e-08 1 1 -4.37114e-08 13 0)",
+    stroke: "#999999"
+  }), /*#__PURE__*/React$1.createElement("line", {
+    x1: "1",
+    y1: "-1",
+    x2: "11",
+    y2: "-1",
+    transform: "matrix(-1 0 0 1 12 5)",
+    stroke: "#333333",
+    strokeWidth: "2",
+    strokeLinecap: "round"
+  }), /*#__PURE__*/React$1.createElement("line", {
+    x1: "1",
+    y1: "-1",
+    x2: "5",
+    y2: "-1",
+    transform: "matrix(-1 0 0 1 12 9)",
+    stroke: "#333333",
+    strokeWidth: "2",
+    strokeLinecap: "round"
+  }));
+};
+const AlignTopIcon = ({
+  width = 13,
+  height = 12
+}) => {
+  return /*#__PURE__*/React$1.createElement("svg", {
+    width: width,
+    height: height,
+    viewBox: "0 0 13 12",
+    fill: "none"
+  }, /*#__PURE__*/React$1.createElement("line", {
+    x1: "12",
+    y1: "0.5",
+    x2: "-4.37114e-08",
+    y2: "0.499999",
+    stroke: "#999999"
+  }), /*#__PURE__*/React$1.createElement("line", {
+    x1: "8",
+    y1: "2",
+    x2: "8",
+    y2: "12",
+    stroke: "#333333",
+    strokeWidth: "2",
+    strokeLinecap: "round"
+  }), /*#__PURE__*/React$1.createElement("line", {
+    x1: "4",
+    y1: "2",
+    x2: "4",
+    y2: "6",
+    stroke: "#333333",
+    strokeWidth: "2",
+    strokeLinecap: "round"
+  }));
+};
+const AlignCenterIcon = ({
+  width = 12,
+  height = 13
+}) => {
+  return /*#__PURE__*/React$1.createElement("svg", {
+    width: width,
+    height: height,
+    viewBox: "0 0 12 13",
+    fill: "none"
+  }, /*#__PURE__*/React$1.createElement("line", {
+    y1: "6.5",
+    x2: "12",
+    y2: "6.5",
+    stroke: "#999999"
+  }), /*#__PURE__*/React$1.createElement("line", {
+    x1: "4",
+    y1: "11.5",
+    x2: "4",
+    y2: "1.5",
+    stroke: "#333333",
+    strokeWidth: "2",
+    strokeLinecap: "round"
+  }), /*#__PURE__*/React$1.createElement("line", {
+    x1: "8",
+    y1: "8.5",
+    x2: "8",
+    y2: "4.5",
+    stroke: "#333333",
+    strokeWidth: "2",
+    strokeLinecap: "round"
+  }));
+};
+const AlignBottomIcon = ({
+  width = 12,
+  height = 13
+}) => {
+  return /*#__PURE__*/React$1.createElement("svg", {
+    width: width,
+    height: height,
+    viewBox: "0 0 12 13",
+    fill: "none"
+  }, /*#__PURE__*/React$1.createElement("line", {
+    x1: "2.78181e-08",
+    y1: "12.5",
+    x2: "12",
+    y2: "12.5",
+    stroke: "#999999"
+  }), /*#__PURE__*/React$1.createElement("line", {
+    x1: "4",
+    y1: "11",
+    x2: "4",
+    y2: "1",
+    stroke: "#333333",
+    strokeWidth: "2",
+    strokeLinecap: "round"
+  }), /*#__PURE__*/React$1.createElement("line", {
+    x1: "8",
+    y1: "11",
+    x2: "8",
+    y2: "7",
+    stroke: "#333333",
+    strokeWidth: "2",
+    strokeLinecap: "round"
+  }));
+};
+const AlignDistributeVerticalSpacingIcon = ({
+  width = 8,
+  height = 12
+}) => {
+  return /*#__PURE__*/React$1.createElement("svg", {
+    width: width,
+    height: height,
+    viewBox: "0 0 8 12",
+    fill: "none"
+  }, /*#__PURE__*/React$1.createElement("line", {
+    x1: "7.5",
+    y1: "12",
+    x2: "7.5",
+    y2: "2.18557e-08",
+    stroke: "#999999"
+  }), /*#__PURE__*/React$1.createElement("line", {
+    x1: "0.5",
+    y1: "-2.18557e-08",
+    x2: "0.500001",
+    y2: "12",
+    stroke: "#999999"
+  }), /*#__PURE__*/React$1.createElement("line", {
+    x1: "4",
+    y1: "8",
+    x2: "4",
+    y2: "4",
+    stroke: "#333333",
+    strokeWidth: "2",
+    strokeLinecap: "round"
+  }));
+};
+const AlignDistributeHorizontalSpacingIcon = ({
+  width = 8,
+  height = 12
+}) => {
+  return /*#__PURE__*/React$1.createElement("svg", {
+    width: width,
+    height: height,
+    viewBox: "0 0 8 12",
+    fill: "none"
+  }, /*#__PURE__*/React$1.createElement("line", {
+    x1: "-2.78181e-08",
+    y1: "7.5",
+    x2: "12",
+    y2: "7.5",
+    stroke: "#999999"
+  }), /*#__PURE__*/React$1.createElement("line", {
+    x1: "12",
+    y1: "0.5",
+    x2: "2.78181e-08",
+    y2: "0.500001",
+    stroke: "#999999"
+  }), /*#__PURE__*/React$1.createElement("line", {
+    x1: "4",
+    y1: "4",
+    x2: "8",
+    y2: "4",
+    stroke: "#333333",
+    strokeWidth: "2",
+    strokeLinecap: "round"
+  }));
+};
+const LockIcon = ({
+  width = 8,
+  height = 11
+}) => {
+  return /*#__PURE__*/React$1.createElement("svg", {
+    width: width,
+    height: height,
+    viewBox: "0 0 8 11",
+    fill: "none"
+  }, /*#__PURE__*/React$1.createElement("path", {
+    fillRule: "evenodd",
+    clipRule: "evenodd",
+    d: "M4 0C2.34315 0 1 1.34315 1 3V5C0.447715 5 0 5.44772 0 6V9C0 10.1046 0.895431 11 2 11H6C7.10457 11 8 10.1046 8 9V6C8 5.44772 7.55228 5 7 5V3C7 1.34315 5.65685 0 4 0ZM6 5V3C6 1.89543 5.10457 1 4 1C2.89543 1 2 1.89543 2 3V5H6ZM1 9V6H7V9C7 9.55228 6.55228 10 6 10H2C1.44772 10 1 9.55228 1 9Z",
+    fill: "#333333"
+  }));
+};
+const LockedIcon = ({
+  width = 8,
+  height = 11
+}) => {
+  return /*#__PURE__*/React$1.createElement("svg", {
+    width: width,
+    height: height,
+    viewBox: "0 0 8 11",
+    fill: "none"
+  }, /*#__PURE__*/React$1.createElement("path", {
+    d: "M1.5 5V3C1.5 1.61929 2.61929 0.5 4 0.5V0.5C5.38071 0.5 6.5 1.61929 6.5 3V5",
+    stroke: "#333333"
+  }), /*#__PURE__*/React$1.createElement("path", {
+    d: "M0.5 6C0.5 5.72386 0.723858 5.5 1 5.5H7C7.27614 5.5 7.5 5.72386 7.5 6V9C7.5 9.82843 6.82843 10.5 6 10.5H2C1.17157 10.5 0.5 9.82843 0.5 9V6Z",
+    fill: "#333333",
+    stroke: "#333333",
+    strokeLinecap: "round",
+    strokeLinejoin: "round"
+  }));
+};
+const VolumeOnIcon = ({
   width = 12,
   height = 12
 }) => {
   return /*#__PURE__*/React$1.createElement("svg", {
     width: width,
     height: height,
-    viewBox: `0 0 12 12`
-  }, /*#__PURE__*/React$1.createElement("rect", {
-    x: "0.5",
-    y: "0.5",
-    width: "11",
-    height: "11",
-    rx: "2.5",
-    stroke: "#E3C8F4"
+    viewBox: "0 0 12 12",
+    fill: "none"
+  }, /*#__PURE__*/React$1.createElement("mask", {
+    id: "path-1-inside-1",
+    fill: "white"
+  }, /*#__PURE__*/React$1.createElement("path", {
+    d: "M2 3C0.895431 3 0 3.89543 0 5V7C0 8.10457 0.895431 9 2 9H3L6.4855 11.0913C7.15203 11.4912 8 11.0111 8 10.2338V1.76619C8 0.988896 7.15203 0.508783 6.4855 0.908698L3 3H2Z"
+  })), /*#__PURE__*/React$1.createElement("path", {
+    d: "M3 9L3.5145 8.14251L3.27698 8H3V9ZM3 3V4H3.27698L3.5145 3.85749L3 3ZM6.4855 11.0913L5.97101 11.9488L6.4855 11.0913ZM-1 5V7H1V5H-1ZM2 10H3V8H2V10ZM2.4855 9.85749L5.97101 11.9488L7 10.2338L3.5145 8.14251L2.4855 9.85749ZM9 10.2338V1.76619H7V10.2338H9ZM5.97101 0.0512046L2.4855 2.14251L3.5145 3.85749L7 1.76619L5.97101 0.0512046ZM3 2H2V4H3V2ZM9 1.76619C9 0.211601 7.30406 -0.748625 5.97101 0.0512046L7 1.76619V1.76619H9ZM5.97101 11.9488C7.30405 12.7486 9 11.7884 9 10.2338H7L7 10.2338L5.97101 11.9488ZM-1 7C-1 8.65685 0.343146 10 2 10V8C1.44772 8 1 7.55228 1 7H-1ZM1 5C1 4.44772 1.44772 4 2 4V2C0.343146 2 -1 3.34315 -1 5H1Z",
+    fill: "#333333",
+    mask: "url(#path-1-inside-1)"
   }), /*#__PURE__*/React$1.createElement("path", {
-    d: "M5.29289 6.70696L2.29289 9.70696C2.10536 9.89449 2 10.1488 2 10.4141V10.4998C2 11.0521 2.44772 11.4998 3 11.4998H8.86396C10.3198 11.4998 11.5 10.3197 11.5 8.86381C11.5 8.63077 11.4074 8.40727 11.2426 8.24249L10.7071 7.70696C10.3166 7.31643 9.68342 7.31643 9.29289 7.70696L8.5 8.49985L6.70711 6.70696C6.31658 6.31643 5.68342 6.31643 5.29289 6.70696Z",
-    fill: "#F0E9F8"
+    fillRule: "evenodd",
+    clipRule: "evenodd",
+    d: "M9 7.73243C9.5978 7.38663 10 6.74028 10 6C10 5.25972 9.5978 4.61337 9 4.26756V6V7.73243Z",
+    fill: "#333333"
   }), /*#__PURE__*/React$1.createElement("path", {
-    d: "M8.5 8.49985L6.70711 6.70696C6.31658 6.31643 5.68342 6.31643 5.29289 6.70696L2.29289 9.70696C2.10536 9.89449 2 10.1488 2 10.4141V10.4998C2 11.0521 2.44772 11.4998 3 11.4998H8.86396C10.3198 11.4998 11.5 10.3197 11.5 8.86381C11.5 8.63077 11.4074 8.40727 11.2426 8.24249L10.7071 7.70696C10.3166 7.31643 9.68342 7.31643 9.29289 7.70696L8.5 8.49985ZM8.5 8.49985L7.5 9.49985",
-    stroke: "#C781EB"
-  }), /*#__PURE__*/React$1.createElement("circle", {
-    cx: "4",
-    cy: "4",
-    r: "1",
-    fill: "#C781EB"
+    fillRule: "evenodd",
+    clipRule: "evenodd",
+    d: "M9 9.74796C10.7252 9.30392 12 7.73782 12 5.87398C12 4.01014 10.7252 2.44404 9 2V3.04469C10.1652 3.45652 11 4.56776 11 5.87398C11 7.1802 10.1652 8.29144 9 8.70328V9.74796Z",
+    fill: "#333333"
   }));
 };
+const VolumeOffIcon = ({
+  width = 12,
+  height = 12
+}) => {
+  return /*#__PURE__*/React$1.createElement("svg", {
+    width: width,
+    height: height,
+    viewBox: "0 0 12 12",
+    fill: "none"
+  }, /*#__PURE__*/React$1.createElement("path", {
+    fillRule: "evenodd",
+    clipRule: "evenodd",
+    d: "M3.5145 8.14251L3.27698 8H3H2C1.44772 8 1 7.55229 1 7V5C1 4.44772 1.44772 4 2 4H3H3.27698L3.5145 3.8575L7 1.76619V3H8V1.76619C8 0.988899 7.15203 0.508786 6.4855 0.9087L3 3H2C0.895431 3 0 3.89543 0 5V7C0 8.10457 0.895431 9 2 9H3L6.4855 11.0913C7.15203 11.4912 8 11.0111 8 10.2338V9H7V10.2338L6.4855 11.0913L7 10.2338L3.5145 8.14251Z",
+    fill: "#333333"
+  }), /*#__PURE__*/React$1.createElement("path", {
+    d: "M6 7.5L9 4.5",
+    stroke: "#333333",
+    strokeLinecap: "round"
+  }), /*#__PURE__*/React$1.createElement("path", {
+    d: "M9 7.5L6 4.5",
+    stroke: "#333333",
+    strokeLinecap: "round"
+  }));
+}; //SMART LAYOUT
 
-const ShutterStockPremiumIcon = ({
+const EdgeAlignTopIcon = ({
+  width = 8,
+  height = 12,
+  color = null
+}) => {
+  return /*#__PURE__*/React$1.createElement("svg", {
+    width: width,
+    height: height,
+    viewBox: "0 0 8 12"
+  }, /*#__PURE__*/React$1.createElement("path", {
+    stroke: color // strokeWidth="1.5"
+    ,
+    strokeLinecap: "round",
+    d: "M4 11.25V.75M7.25.75H.75"
+  }));
+};
+const EdgeAlignRightIcon = ({
   width = 12,
+  height = 8,
+  color = null
+}) => {
+  return /*#__PURE__*/React$1.createElement("svg", {
+    width: width,
+    height: height,
+    viewBox: "0 0 12 8"
+  }, /*#__PURE__*/React$1.createElement("path", {
+    stroke: color // strokeWidth="1.5"
+    ,
+    strokeLinecap: "round",
+    d: "M11.25 4H.75M.75.75v6.5"
+  }));
+};
+const EdgeAlignLeftIcon = ({
+  width = 12,
+  height = 8,
+  color = null
+}) => {
+  return /*#__PURE__*/React$1.createElement("svg", {
+    width: width,
+    height: height,
+    viewBox: "0 0 12 8"
+  }, /*#__PURE__*/React$1.createElement("path", {
+    stroke: color,
+    strokeLinecap: "round",
+    d: "M.5 4h11M11.5 7.5v-7"
+  }));
+};
+const EdgeAlignBottomIcon = ({
+  width = 8,
+  height = 12,
+  color = null
+}) => {
+  return /*#__PURE__*/React$1.createElement("svg", {
+    width: width,
+    height: height,
+    viewBox: "0 0 8 12"
+  }, /*#__PURE__*/React$1.createElement("path", {
+    stroke: color,
+    strokeLinecap: "round",
+    d: "M4 .5v11M.5 11.5h7"
+  }));
+};
+const EdgeAlignCenterIcon = ({
+  width = 16,
+  height = 16,
+  color = null
+}) => {
+  return /*#__PURE__*/React$1.createElement("svg", {
+    width: width,
+    height: height,
+    viewBox: "0 0 16 16"
+  }, /*#__PURE__*/React$1.createElement("path", {
+    stroke: color,
+    strokeLinecap: "round",
+    d: "M.5 8h15M8 15.5V.5"
+  }));
+};
+const EdgeAlignCenterHorizontalIcon = ({
+  width = 16,
+  height = 2,
+  color = null
+}) => {
+  return /*#__PURE__*/React$1.createElement("svg", {
+    width: width,
+    height: height,
+    viewBox: "0 0 16 2"
+  }, /*#__PURE__*/React$1.createElement("path", {
+    stroke: color,
+    strokeLinecap: "round",
+    d: "M.5 1h15"
+  }));
+};
+const EdgeAlignCenterVerticalIcon = ({
+  width = 2,
+  height = 16,
+  color = null
+}) => {
+  return /*#__PURE__*/React$1.createElement("svg", {
+    width: width,
+    height: height,
+    viewBox: "0 0 2 16"
+  }, /*#__PURE__*/React$1.createElement("path", {
+    stroke: color,
+    strokeLinecap: "round",
+    d: "M1 15.5L.999999.5"
+  }));
+}; // Stroke
+
+const Stroke1Icon = ({
+  width = 8,
+  height = 8
+}) => {
+  return /*#__PURE__*/React$1.createElement("svg", {
+    width: width,
+    height: height,
+    viewBox: `0 0 8 8`,
+    fill: "transparent"
+  }, /*#__PURE__*/React$1.createElement("path", {
+    d: "M8 .5H.5V8",
+    stroke: "#999"
+  }));
+};
+const Stroke2Icon = ({
+  width = 8,
+  height = 8
+}) => {
+  return /*#__PURE__*/React$1.createElement("svg", {
+    width: width,
+    height: height,
+    viewBox: `0 0 8 8`,
+    fill: "transparent"
+  }, /*#__PURE__*/React$1.createElement("path", {
+    d: "M8 .5H4.25L.5 4.25V8",
+    stroke: "#999"
+  }));
+};
+const Stroke3Icon = ({
+  width = 8,
+  height = 8
+}) => {
+  return /*#__PURE__*/React$1.createElement("svg", {
+    width: width,
+    height: height,
+    viewBox: `0 0 8 8`,
+    fill: "transparent"
+  }, /*#__PURE__*/React$1.createElement("path", {
+    d: "M8 .5H6.5c-3.3137 0-6 2.6863-6 6V8",
+    stroke: "#999"
+  }));
+}; //Tools Panel
+
+const ToolsPanelMenuIcon = ({
+  width = 12,
+  height = 9
+}) => {
+  return /*#__PURE__*/React$1.createElement("svg", {
+    width: width,
+    height: height,
+    viewBox: "0 0 12 9",
+    fill: "none"
+  }, /*#__PURE__*/React$1.createElement("line", {
+    x1: "0.5",
+    y1: "0.5",
+    x2: "11.5",
+    y2: "0.500001",
+    stroke: "#333333",
+    strokeLinecap: "round"
+  }), /*#__PURE__*/React$1.createElement("line", {
+    x1: "0.5",
+    y1: "4.5",
+    x2: "11.5",
+    y2: "4.5",
+    stroke: "#333333",
+    strokeLinecap: "round"
+  }), /*#__PURE__*/React$1.createElement("line", {
+    x1: "0.5",
+    y1: "8.5",
+    x2: "11.5",
+    y2: "8.5",
+    stroke: "#333333",
+    strokeLinecap: "round"
+  }));
+};
+const ToolsPanelShareIcon = ({
+  width = 15,
+  height = 14
+}) => {
+  return /*#__PURE__*/React$1.createElement("svg", {
+    width: width,
+    height: height,
+    viewBox: "0 0 15 14",
+    fill: "none"
+  }, /*#__PURE__*/React$1.createElement("path", {
+    fillRule: "evenodd",
+    clipRule: "evenodd",
+    d: "M0 10V11C0 12.6569 1.34315 14 3 14H12C13.6569 14 15 12.6569 15 11V10H14V11C14 12.1046 13.1046 13 12 13H3C1.89543 13 1 12.1046 1 11V10H0Z",
+    fill: "#333333"
+  }), /*#__PURE__*/React$1.createElement("path", {
+    d: "M7.5 9L7.5 1M7.5 1L10 3.5M7.5 1L5 3.5",
+    stroke: "#333333",
+    strokeLinecap: "round"
+  }));
+};
+const ToolsPanelPlusIcon = ({
+  width = 15,
   height = 15
 }) => {
   return /*#__PURE__*/React$1.createElement("svg", {
     width: width,
     height: height,
-    viewBox: `0 0 12 15`,
+    viewBox: "0 0 15 15",
     fill: "none"
   }, /*#__PURE__*/React$1.createElement("path", {
-    d: "M4 9.5c2.5 0 3.5-2.5 3.5-5 0 2.5 1 5 3.5 5-2.5 0-3.5 2.5-3.5 5 0-2.5-1-5-3.5-5zM.5 3.5c1.0714 0 2-1.25 2-2.5 0 1.25.9286 2.5 2 2.5-1.0714 0-2 1.25-2 2.5 0-1.25-.9286-2.5-2-2.5z",
-    fill: "#FC0",
-    stroke: "#FC0",
-    strokeLinecap: "round",
-    strokeLinejoin: "round"
+    fillRule: "evenodd",
+    clipRule: "evenodd",
+    d: "M8 0.5C8 0.223858 7.77614 0 7.5 0C7.22386 0 7 0.223858 7 0.5V7H0.5C0.223858 7 0 7.22386 0 7.5C0 7.77614 0.223858 8 0.5 8H7V14.5C7 14.7761 7.22386 15 7.5 15C7.77614 15 8 14.7761 8 14.5V8H14.5C14.7761 8 15 7.77614 15 7.5C15 7.22386 14.7761 7 14.5 7H8V0.5Z",
+    fill: "#333333"
   }));
 };
-
-const LayersIcon = ({
+const ToolsPanelLayersIcon = ({
   width = 16,
   height = 16
 }) => {
@@ -7622,18 +7685,57 @@ const LayersIcon = ({
     viewBox: "0 0 16 16",
     fill: "none"
   }, /*#__PURE__*/React$1.createElement("path", {
-    d: "M7.33.894a1.5 1.5 0 011.34 0L14.2 3.658c1.105.553 1.105 2.13 0 2.684L8.67 9.106a1.5 1.5 0 01-1.342 0L1.801 6.342c-1.105-.553-1.105-2.13 0-2.684L7.33.894z",
+    d: "M7.3292.8944a1.5 1.5 0 011.3416 0l5.5279 2.764c1.1056.5527 1.1056 2.1305 0 2.6832l-5.5279 2.764a1.5 1.5 0 01-1.3416 0l-5.5279-2.764c-1.1056-.5527-1.1056-2.1305 0-2.6832L7.3292.8944z",
     stroke: "#333"
   }), /*#__PURE__*/React$1.createElement("path", {
     fillRule: "evenodd",
     clipRule: "evenodd",
-    d: "M1.504 9.25c-1.4.77-1.375 2.814.074 3.539l5.528 2.764a2 2 0 001.788 0l5.528-2.764c1.45-.725 1.474-2.77.074-3.539a2.179 2.179 0 01-.074.039l-1.04.52.593.297a1 1 0 010 1.788l-5.528 2.764a1 1 0 01-.894 0l-5.528-2.764a1 1 0 010-1.788l.593-.297-1.04-.52a2.14 2.14 0 01-.074-.039z",
+    d: "M1.5036 9.25c-1.3996.7695-1.3749 2.8144.0741 3.5389l5.5279 2.7639a2.0002 2.0002 0 001.7888 0l5.5279-2.7639c1.449-.7245 1.4737-2.7694.0741-3.5389a2.1786 2.1786 0 01-.0741.0389l-1.0403.5201.5931.2966c.737.3685.737 1.4203 0 1.7888l-5.5279 2.764a1.0004 1.0004 0 01-.8944 0l-5.5279-2.764c-.737-.3685-.737-1.4203 0-1.7888l.5931-.2966-1.0403-.5201a2.1393 2.1393 0 01-.074-.0389z",
     fill: "#333"
   }));
 };
-const PenToolsIcon = ({
-  width = 15,
-  height = 17
+const ToolsPanelArtboardIcon = ({
+  width = 16,
+  height = 16
+}) => {
+  return /*#__PURE__*/React$1.createElement("svg", {
+    width: width,
+    height: height,
+    viewBox: "0 0 16 16",
+    fill: "none"
+  }, /*#__PURE__*/React$1.createElement("line", {
+    x1: "0.5",
+    y1: "3.5",
+    x2: "15.5",
+    y2: "3.5",
+    stroke: "#333333",
+    strokeLinecap: "round"
+  }), /*#__PURE__*/React$1.createElement("line", {
+    x1: "0.5",
+    y1: "12.5",
+    x2: "15.5",
+    y2: "12.5",
+    stroke: "#333333",
+    strokeLinecap: "round"
+  }), /*#__PURE__*/React$1.createElement("line", {
+    x1: "3.5",
+    y1: "0.5",
+    x2: "3.5",
+    y2: "15.5",
+    stroke: "#333333",
+    strokeLinecap: "round"
+  }), /*#__PURE__*/React$1.createElement("line", {
+    x1: "12.5",
+    y1: "0.5",
+    x2: "12.5",
+    y2: "15.5",
+    stroke: "#333333",
+    strokeLinecap: "round"
+  }));
+};
+const ToolsPanelPenToolsIcon = ({
+  width = 16,
+  height = 16
 }) => {
   return /*#__PURE__*/React$1.createElement("svg", {
     width: width,
@@ -7641,21 +7743,21 @@ const PenToolsIcon = ({
     viewBox: "0 0 15 17",
     fill: "none"
   }, /*#__PURE__*/React$1.createElement("path", {
-    d: "M7.50385 0.949121L13.4303 10.427C13.7517 10.9411 13.7321 11.5982 13.3804 12.0922L10.9899 15.4499C10.5208 16.1088 9.76202 16.5 8.95328 16.5H6.38785C5.6067 16.5 4.87045 16.1349 4.39769 15.513L1.78917 12.0819C1.41445 11.589 1.38107 10.9165 1.70515 10.389L7.50385 0.949121Z",
+    d: "M7.50378 0.949121L13.4302 10.427C13.7517 10.9411 13.732 11.5982 13.3803 12.0922L10.9898 15.4499C10.5207 16.1088 9.76195 16.5 8.9532 16.5H6.38778C5.60662 16.5 4.87037 16.1349 4.39761 15.513L1.78909 12.0819C1.41437 11.589 1.38099 10.9165 1.70507 10.389L7.50378 0.949121Z",
     stroke: "#333333"
   }), /*#__PURE__*/React$1.createElement("path", {
-    d: "M7.56226 1.5L7.56226 10.2942",
+    d: "M7.56218 1.5L7.56218 10.2942",
     stroke: "#333333"
   }), /*#__PURE__*/React$1.createElement("circle", {
-    cx: "7.56226",
+    cx: "7.56218",
     cy: "10.5442",
     r: "1.25",
     fill: "#333333"
   }));
 };
-const ShapeIcon = ({
-  width = 17,
-  height = 17
+const ToolsPanelTextsIcon = ({
+  width = 19,
+  height = 19
 }) => {
   return /*#__PURE__*/React$1.createElement("svg", {
     width: width,
@@ -7666,7 +7768,15 @@ const ShapeIcon = ({
     d: "M0.5 4C0.5 2.067 2.067 0.5 4 0.5H12C13.933 0.5 15.5 2.067 15.5 4V9V12C15.5 13.933 13.933 15.5 12 15.5H10H4C2.067 15.5 0.5 13.933 0.5 12V4Z",
     stroke: "#333333"
   }), /*#__PURE__*/React$1.createElement("path", {
-    d: "M16 18.5H18.5V16",
+    d: "M6 9.5H10V8.5H6V9.5Z",
+    fill: "#333333"
+  }), /*#__PURE__*/React$1.createElement("path", {
+    fillRule: "evenodd",
+    clipRule: "evenodd",
+    d: "M8.46233 4.30962C8.38519 4.12227 8.20261 4 8 4C7.79738 4 7.6148 4.12227 7.53766 4.30963L4.37103 12H5.45249L8 5.8132L10.5475 12H11.629L8.46233 4.30962Z",
+    fill: "#333333"
+  }), /*#__PURE__*/React$1.createElement("path", {
+    d: "M16.5 18.5H18.5V16.5",
     stroke: "#333333",
     strokeLinecap: "round"
   }));
@@ -7681,16 +7791,93 @@ const ToolsPanelTextIcon = ({
     viewBox: "0 0 16 16",
     fill: "none"
   }, /*#__PURE__*/React$1.createElement("path", {
-    stroke: "#000408",
-    d: "M.5 4C.5 2.067 2.067.5 4 .5h8c1.933 0 3.5 1.567 3.5 3.5v8c0 1.933-1.567 3.5-3.5 3.5H4C2.067 15.5.5 13.933.5 12V4z"
+    d: "M0.5 4C0.5 2.067 2.067 0.5 4 0.5H12C13.933 0.5 15.5 2.067 15.5 4V9V12C15.5 13.933 13.933 15.5 12 15.5H10H4C2.067 15.5 0.5 13.933 0.5 12V4Z",
+    stroke: "#333333"
   }), /*#__PURE__*/React$1.createElement("path", {
-    fill: "#000408",
-    d: "M6 9.5h4v-1H6v1z"
+    d: "M6 9.5H10V8.5H6V9.5Z",
+    fill: "#333333"
   }), /*#__PURE__*/React$1.createElement("path", {
-    fill: "#000408",
     fillRule: "evenodd",
-    d: "M8.4624 4.30962C8.38525 4.12227 8.20267 4 8.00006 4c-.20261 0-.3852.12227-.46234.30963L4.37109 12h1.08146l2.54751-6.1868L10.5476 12h1.0814L8.4624 4.30962z",
-    clipRule: "evenodd"
+    clipRule: "evenodd",
+    d: "M8.46233 4.30962C8.38519 4.12227 8.20261 4 8 4C7.79738 4 7.6148 4.12227 7.53766 4.30963L4.37103 12H5.45249L8 5.8132L10.5475 12H11.629L8.46233 4.30962Z",
+    fill: "#333333"
+  }));
+};
+const ToolsPanelPathText1Icon = ({
+  width = 18,
+  height = 14
+}) => {
+  return /*#__PURE__*/React$1.createElement("svg", {
+    width: width,
+    height: height,
+    viewBox: "0 0 18 14",
+    fill: "none"
+  }, /*#__PURE__*/React$1.createElement("path", {
+    d: "M7 5.5H11V4.5H7V5.5Z",
+    fill: "#333333"
+  }), /*#__PURE__*/React$1.createElement("path", {
+    fillRule: "evenodd",
+    clipRule: "evenodd",
+    d: "M9.46234 0.309625C9.38519 0.122274 9.20261 0 9 0C8.79738 0 8.6148 0.122274 8.53766 0.309625L5.37103 8H6.45249L9 1.8132L11.5475 8H12.629L9.46234 0.309625Z",
+    fill: "#333333"
+  }), /*#__PURE__*/React$1.createElement("path", {
+    d: "M2.5 13.5C2.5 13.5 5.5 10.5 9 10.5C12.5 10.5 15.5 13.5 15.5 13.5",
+    stroke: "#333333",
+    strokeLinecap: "round"
+  }), /*#__PURE__*/React$1.createElement("path", {
+    d: "M15.5 13.5L17 12",
+    stroke: "#333333",
+    strokeLinecap: "round"
+  }), /*#__PURE__*/React$1.createElement("path", {
+    d: "M2.5 13.5L1 12",
+    stroke: "#333333",
+    strokeLinecap: "round"
+  }));
+};
+const ToolsPanelPathText2Icon = ({
+  width = 16,
+  height = 14
+}) => {
+  return /*#__PURE__*/React$1.createElement("svg", {
+    width: width,
+    height: height,
+    viewBox: "0 0 16 14",
+    fill: "none"
+  }, /*#__PURE__*/React$1.createElement("path", {
+    d: "M6 5.5H10V4.5H6V5.5Z",
+    fill: "#333333"
+  }), /*#__PURE__*/React$1.createElement("path", {
+    fillRule: "evenodd",
+    clipRule: "evenodd",
+    d: "M8.46234 0.309625C8.38519 0.122274 8.20261 0 8 0C7.79738 0 7.6148 0.122274 7.53766 0.309625L4.37103 8H5.45249L8 1.8132L10.5475 8H11.629L8.46234 0.309625Z",
+    fill: "#333333"
+  }), /*#__PURE__*/React$1.createElement("path", {
+    d: "M0.5 14V14C0.5 12.067 2.067 10.5 4 10.5H12C13.933 10.5 15.5 8.933 15.5 7V7",
+    stroke: "#333333",
+    strokeLinecap: "round"
+  }));
+};
+const ToolsPanelPathText3Icon = ({
+  width = 19,
+  height = 20
+}) => {
+  return /*#__PURE__*/React$1.createElement("svg", {
+    width: width,
+    height: height,
+    viewBox: "0 0 19 20",
+    fill: "none"
+  }, /*#__PURE__*/React$1.createElement("path", {
+    d: "M10.5251 5.64644L13.3536 8.47487L14.0607 7.76776L11.2322 4.93933L10.5251 5.64644Z",
+    fill: "#333333"
+  }), /*#__PURE__*/React$1.createElement("path", {
+    fillRule: "evenodd",
+    clipRule: "evenodd",
+    d: "M15.9364 3.71742C16.0143 3.5304 15.9717 3.31483 15.8284 3.17156C15.6852 3.0283 15.4696 2.98565 15.2826 3.06358L7.60551 6.26235L8.37021 7.02706L14.5463 4.45369L11.9729 10.6298L12.7376 11.3945L15.9364 3.71742Z",
+    fill: "#333333"
+  }), /*#__PURE__*/React$1.createElement("path", {
+    d: "M1.22182 9.67158V9.67158C2.58866 8.30474 4.80473 8.30474 6.17157 9.67158L10.8284 14.3284C12.1953 15.6953 14.4113 15.6953 15.7782 14.3284V14.3284",
+    stroke: "#333333",
+    strokeLinecap: "round"
   }));
 };
 const ToolsPanelNoteIcon = ({
@@ -7703,11 +7890,11 @@ const ToolsPanelNoteIcon = ({
     viewBox: "0 0 16 16",
     fill: "none"
   }, /*#__PURE__*/React$1.createElement("path", {
-    stroke: "#000408",
-    d: "M.5 4C.5 2.067 2.067.5 4 .5h8c1.933 0 3.5 1.567 3.5 3.5v3.5203c0 .83549-.2989 1.64342-.8426 2.27777l-3.8397 4.47973c-.665.7757-1.6357 1.2222-2.65744 1.2222H4C2.067 15.5.5 13.933.5 12V4z"
+    d: "M0.5 4C0.5 2.067 2.067 0.5 4 0.5H12C13.933 0.5 15.5 2.067 15.5 4V7.5203C15.5 8.35579 15.2011 9.16372 14.6574 9.79807L10.8177 14.2778C10.1527 15.0535 9.182 15.5 8.16026 15.5H4C2.067 15.5 0.5 13.933 0.5 12V4Z",
+    stroke: "#333333"
   }), /*#__PURE__*/React$1.createElement("path", {
-    stroke: "#000408",
-    d: "M9 15.5l.52198-1.2179c.63262-1.4762.73712-3.1252.29594-4.66938v0C9.6586 9.05509 10.0773 8.5 10.6573 8.5H15.5"
+    d: "M9 15.5L9.52198 14.2821C10.1546 12.8059 10.2591 11.1569 9.81792 9.61272V9.61272C9.6586 9.05509 10.0773 8.5 10.6573 8.5H15.5",
+    stroke: "#333333"
   }));
 };
 const ToolsPanelPencilIcon = ({
@@ -7733,21 +7920,1597 @@ const ToolsPanelPencilIcon = ({
     stroke: "#333333"
   }));
 };
-const ToolsPanelAnimationModeIcon = ({
-  width = 24,
+const ToolsPanelShapeRectanglesIcon = ({
+  width = 19,
+  height = 19
+}) => {
+  return /*#__PURE__*/React$1.createElement("svg", {
+    width: width,
+    height: height,
+    viewBox: "0 0 19 19",
+    fill: "none"
+  }, /*#__PURE__*/React$1.createElement("path", {
+    d: "M0.5 4C0.5 2.067 2.067 0.5 4 0.5H12C13.933 0.5 15.5 2.067 15.5 4V9V12C15.5 13.933 13.933 15.5 12 15.5H10H4C2.067 15.5 0.5 13.933 0.5 12V4Z",
+    stroke: "#333333"
+  }), /*#__PURE__*/React$1.createElement("path", {
+    d: "M16.5 18.5H18.5V16.5",
+    stroke: "#333333",
+    strokeLinecap: "round"
+  }));
+};
+const ToolsPanelShapeRectangleIcon = ({
+  width = 16,
   height = 16
 }) => {
   return /*#__PURE__*/React$1.createElement("svg", {
     width: width,
     height: height,
-    viewBox: "0 0 24 16",
+    viewBox: "0 0 16 16",
+    fill: "none"
+  }, /*#__PURE__*/React$1.createElement("path", {
+    d: "M0.5 4C0.5 2.067 2.067 0.5 4 0.5H12C13.933 0.5 15.5 2.067 15.5 4V9V12C15.5 13.933 13.933 15.5 12 15.5H10H4C2.067 15.5 0.5 13.933 0.5 12V4Z",
+    stroke: "#333333"
+  }));
+};
+const ToolsPanelShapeEllipseIcon = ({
+  width = 16,
+  height = 16
+}) => {
+  return /*#__PURE__*/React$1.createElement("svg", {
+    width: width,
+    height: height,
+    viewBox: "0 0 16 16",
+    fill: "none"
+  }, /*#__PURE__*/React$1.createElement("circle", {
+    cx: "8",
+    cy: "8",
+    r: "7.5",
+    stroke: "#333333"
+  }));
+};
+const ToolsPanelShapePolygonIcon = ({
+  width = 16,
+  height = 16
+}) => {
+  return /*#__PURE__*/React$1.createElement("svg", {
+    width: width,
+    height: height,
+    viewBox: "0 0 16 16",
+    fill: "none"
+  }, /*#__PURE__*/React$1.createElement("path", {
+    d: "M6.65836 1.80131C7.21115 0.695741 8.78885 0.695741 9.34164 1.80132L15.1056 13.3292C15.6042 14.3265 14.879 15.5 13.7639 15.5H2.23607C1.121 15.5 0.395751 14.3265 0.894427 13.3292L6.65836 1.80131Z",
+    stroke: "#333333"
+  }));
+};
+const ToolsPanelShapeStarIcon = ({
+  width = 18,
+  height = 17
+}) => {
+  return /*#__PURE__*/React$1.createElement("svg", {
+    width: width,
+    height: height,
+    viewBox: "0 0 18 17",
+    fill: "none"
+  }, /*#__PURE__*/React$1.createElement("path", {
+    d: "M8.5516 1.0383c.1834-.3717.7134-.3717.8968 0l1.8095 3.6665a1.5 1.5 0 001.1294.8205l4.0462.588c.4101.0596.5739.5636.2771.8528l-2.9279 2.854a1.5003 1.5003 0 00-.4314 1.3277l.6912 4.0298c.0701.4085-.3586.72-.7254.5271l-3.619-1.9026a1.4996 1.4996 0 00-1.3961 0l-3.619 1.9026c-.3669.1929-.7956-.1186-.7255-.5271l.6911-4.0298a1.5 1.5 0 00-.4313-1.3277l-2.928-2.854c-.2967-.2893-.133-.7932.2772-.8528l4.0462-.588a1.5 1.5 0 001.1294-.8205l1.8095-3.6665z",
+    stroke: "#333"
+  }));
+};
+const ToolsPanelShapeLineIcon = ({
+  width = 14,
+  height = 14
+}) => {
+  return /*#__PURE__*/React$1.createElement("svg", {
+    width: width,
+    height: height,
+    viewBox: "0 0 14 14",
+    fill: "none"
+  }, /*#__PURE__*/React$1.createElement("path", {
+    d: "M.5 13.5l13-13",
+    stroke: "#333",
+    strokeLinecap: "round",
+    strokeLinejoin: "round"
+  }));
+};
+const ToolsPanelShapeLineArrowIcon = ({
+  width = 14,
+  height = 14
+}) => {
+  return /*#__PURE__*/React$1.createElement("svg", {
+    width: width,
+    height: height,
+    viewBox: "0 0 14 14",
+    fill: "none"
+  }, /*#__PURE__*/React$1.createElement("path", {
+    d: "M.5 13.5l13-13m0 0h-4m4 0v4",
+    stroke: "#333",
+    strokeLinecap: "round",
+    strokeLinejoin: "round"
+  }));
+};
+const ToolsPanelSelectionToolsIcon = ({
+  width = 13,
+  height = 16
+}) => {
+  return /*#__PURE__*/React$1.createElement("svg", {
+    width: width,
+    height: height,
+    viewBox: "0 0 13 16",
+    fill: "none"
+  }, /*#__PURE__*/React$1.createElement("mask", {
+    id: "a",
+    fill: "#fff"
+  }, /*#__PURE__*/React$1.createElement("path", {
+    fillRule: "evenodd",
+    clipRule: "evenodd",
+    d: "M1.6936.631C1.0584.0191 0 .4693 0 1.3511v13.5622c0 .914 1.1251 1.349 1.74.6727L5 12h6.0199c.9 0 1.3419-1.096.6936-1.7203L1.6936.6309z"
+  })), /*#__PURE__*/React$1.createElement("path", {
+    d: "M5 12v-1h-.4424l-.2975.3273L5 12zm6.7135-1.7203L11.0199 11l.6936-.7203zM-1 1.3512v13.5622h2V1.3512h-2zm3.4799 14.9075l3.26-3.586-1.4798-1.3454L1 14.9134l1.4799 1.3453zM5 13h6.0199v-2H5v2zm7.4072-3.4406L2.3872-.0894 1 1.3512 11.0199 11l1.3873-1.4406zM11.0199 13c1.8 0 2.6839-2.192 1.3873-3.4406L11.0199 11v2zM-1 14.9134c0 1.8281 2.2502 2.698 3.4799 1.3453L1 14.9134h-2zM1 1.3512L2.3873-.0894C1.1169-1.3128-1-.4124-1 1.3512h2z",
+    fill: "#333",
+    mask: "url(#a)"
+  }));
+};
+const ToolsPanelBrushIcon = ({
+  width = 14,
+  height = 17
+}) => {
+  return /*#__PURE__*/React$1.createElement("svg", {
+    width: width,
+    height: height,
+    viewBox: "0 0 14 17",
     fill: "none"
   }, /*#__PURE__*/React$1.createElement("path", {
     fillRule: "evenodd",
     clipRule: "evenodd",
-    d: "M16 1H11.876C14.3354 2.36473 16 4.98797 16 8C16 11.012 14.3354 13.6353 11.876 15H16C19.866 15 23 11.866 23 8C23 4.13401 19.866 1 16 1ZM16 0H8C3.58172 0 0 3.58172 0 8C0 12.4183 3.58172 16 8 16H16C20.4183 16 24 12.4183 24 8C24 3.58172 20.4183 0 16 0ZM6.77735 11.4818C6.44507 11.7033 6 11.4651 6 11.0657V4.93426C6 4.53491 6.44507 4.29672 6.77735 4.51823L11.376 7.58397C11.6728 7.78189 11.6728 8.21811 11.376 8.41603L6.77735 11.4818Z",
-    fill: "#31363A"
+    d: "M1.72952 1.59806C1.66764 1.28866 1.90429 1 2.21981 1H3.84862L5.22266 1.91603L6.00001 2.43426V1.5V1H11.7802C12.0957 1 12.3324 1.28866 12.2705 1.59806L11.1901 7H12.2099L13.2511 1.79417C13.4367 0.865987 12.7268 0 11.7802 0H5.50001H5.00001V0.5V0.565741L4.27736 0.0839748L4.15139 0H4.00001H2.21981C1.27324 0 0.5633 0.865986 0.748938 1.79417L1.7901 7H2.80991L1.72952 1.59806Z",
+    fill: "#333333"
+  }), /*#__PURE__*/React$1.createElement("mask", {
+    id: "path-2-inside-1",
+    fill: "white"
+  }, /*#__PURE__*/React$1.createElement("path", {
+    d: "M1 9C1 8.44772 1.44772 8 2 8H12C12.5523 8 13 8.44772 13 9V10C13 11.1046 12.1046 12 11 12H9L9.25124 14.5124C9.38443 15.8443 8.33853 17 7 17C5.66147 17 4.61557 15.8443 4.74876 14.5124L5 12H3C1.89543 12 1 11.1046 1 10V9Z"
+  })), /*#__PURE__*/React$1.createElement("path", {
+    d: "M5 12L5.99504 12.0995C6.02315 11.8184 5.93103 11.5385 5.74145 11.329C5.55187 11.1195 5.28253 11 5 11V12ZM9 12V11C8.71747 11 8.44813 11.1195 8.25855 11.329C8.06897 11.5385 7.97685 11.8184 8.00496 12.0995L9 12ZM4.74876 14.5124L3.75372 14.4129L4.74876 14.5124ZM2 9H12V7H2V9ZM12 9V10H14V9H12ZM2 10V9H0V10H2ZM5 11H3V13H5V11ZM11 11H9V13H11V11ZM8.00496 12.0995L8.2562 14.6119L10.2463 14.4129L9.99504 11.9005L8.00496 12.0995ZM5.7438 14.6119L5.99504 12.0995L4.00496 11.9005L3.75372 14.4129L5.7438 14.6119ZM7 16C6.2531 16 5.66948 15.3551 5.7438 14.6119L3.75372 14.4129C3.56167 16.3335 5.06985 18 7 18V16ZM0 10C0 11.6569 1.34315 13 3 13V11C2.44772 11 2 10.5523 2 10H0ZM12 10C12 10.5523 11.5523 11 11 11V13C12.6569 13 14 11.6569 14 10H12ZM8.2562 14.6119C8.33052 15.3551 7.7469 16 7 16V18C8.93015 18 10.4383 16.3335 10.2463 14.4129L8.2562 14.6119ZM12 9H14C14 7.89543 13.1046 7 12 7V9ZM2 7C0.895431 7 0 7.89543 0 9H2V7Z",
+    fill: "#333333",
+    mask: "url(#path-2-inside-1)"
+  }));
+};
+const ToolsPanelCrayonBrushIcon = ({
+  width = 8,
+  height = 17
+}) => {
+  return /*#__PURE__*/React$1.createElement("svg", {
+    width: width,
+    height: height,
+    viewBox: "0 0 8 17",
+    fill: "none"
+  }, /*#__PURE__*/React$1.createElement("path", {
+    fillRule: "evenodd",
+    clipRule: "evenodd",
+    d: "M1 17V7l.9615.2747 1.7253-6.0385a.3257.3257 0 01.6264 0l1.7253 6.0385L7 7v10h1V8c0-.5523-.4477-1-1-1L5.2747.9615a1.3257 1.3257 0 00-2.5494 0L1 7c-.5523 0-1 .4477-1 1v9h1z",
+    fill: "#333"
+  }), /*#__PURE__*/React$1.createElement("path", {
+    stroke: "#333",
+    d: "M8 10.5H0"
+  }), /*#__PURE__*/React$1.createElement("path", {
+    fillRule: "evenodd",
+    clipRule: "evenodd",
+    d: "M8 8H0c0-.5523.4477-1 1-1h6c.5523 0 1 .4477 1 1z",
+    fill: "#333"
+  }));
+};
+const ToolsPanelSprayBrushIcon = ({
+  width = 12,
+  height = 16
+}) => {
+  return /*#__PURE__*/React$1.createElement("svg", {
+    width: width,
+    height: height,
+    viewBox: "0 0 12 16",
+    fill: "none"
+  }, /*#__PURE__*/React$1.createElement("path", {
+    d: "M10.5 8v0c0-1.933-1.567-3.5-3.5-3.5H5C3.067 4.5 1.5 6.067 1.5 8v0M7.5 1.5v1c0 .5523-.4477 1-1 1h-1c-.5523 0-1-.4477-1-1v-1c0-.5523.4477-1 1-1h1c.5523 0 1 .4477 1 1z",
+    stroke: "#333"
+  }), /*#__PURE__*/React$1.createElement("path", {
+    fillRule: "evenodd",
+    clipRule: "evenodd",
+    d: "M10 9H2v7H1V8h10v8h-1V9z",
+    fill: "#333"
+  }), /*#__PURE__*/React$1.createElement("path", {
+    d: "M1 8.5h10",
+    stroke: "#333",
+    strokeLinecap: "round"
+  }));
+};
+const ToolsPanelInkBrushIcon = ({
+  width = 23,
+  height = 24
+}) => {
+  return /*#__PURE__*/React$1.createElement("svg", {
+    width: width,
+    height: height,
+    viewBox: "0 0 23 24",
+    fill: "none"
+  }, /*#__PURE__*/React$1.createElement("path", {
+    d: "M12.5 10.5l-9 9",
+    stroke: "#333",
+    strokeLinecap: "round"
+  }), /*#__PURE__*/React$1.createElement("path", {
+    fillRule: "evenodd",
+    clipRule: "evenodd",
+    d: "M18.9939 4.578a.5.5 0 00-.8475-.4316c-.9253.9254-2.1593 1.551-3.5418 2.0734-.6894.2604-1.4043.4911-2.1276.7218l-.1617.0515c-.6666.2124-1.3395.4268-1.9862.662-1.3916.506-2.7275 1.13-3.7139 2.1163C5.6085 10.7781 5 12.1271 5 14h1c0-1.6271.5165-2.7156 1.3223-3.5214.8261-.8262 1.9902-1.3898 3.3486-1.8837.6268-.228 1.281-.4364 1.9518-.6502l.1581-.0504c.722-.2302 1.4602-.4682 2.1772-.739 1.015-.3835 2.0103-.8408 2.8868-1.4582l-.0211.1882c-.0255.228-.0519.4643-.0802.7056-.0984.839-.2218 1.764-.4114 2.6943-.3673 1.8021-.969 3.5474-2.0451 4.7148H12a.5.5 0 00-.4.8l1.1715 1.562c-.1548.0687-.3445.1395-.5633.2074-.5175.1608-1.1703.2977-1.8563.3608-.6874.0633-1.3898.0507-2.0128-.0751-.6257-.1263-1.1364-.3595-1.4855-.7086l-.7072.7071c.5348.5347 1.2527.8319 1.9947.9817.7447.1504 1.5492.16 2.3025.0907.7546-.0695 1.4762-.2198 2.0613-.4016.2924-.0909.5577-.1917.7796-.2978.2125-.1017.4208-.2248.5691-.373A.5001.5001 0 0013.9 16.2L13 15h2.5a.5004.5004 0 00.3536-.1464c1.3808-1.3809 2.0661-3.4439 2.4583-5.3687.198-.9715.3253-1.9292.4248-2.7775.0303-.2588.0579-.5052.084-.7381.0605-.541.1128-1.0091.1732-1.3913z",
+    fill: "#333"
+  }));
+};
+const ToolsPanelFillIcon = ({
+  width = 16,
+  height = 16
+}) => {
+  return /*#__PURE__*/React$1.createElement("svg", {
+    width: width,
+    height: height,
+    viewBox: "0 0 16 16",
+    fill: "none"
+  }, /*#__PURE__*/React$1.createElement("path", {
+    d: "M8.5.5h-2c-1.6569 0-3 1.3432-3 3v0c0 1.6569 1.3431 3 3 3h2",
+    stroke: "#333",
+    strokeLinecap: "round"
+  }), /*#__PURE__*/React$1.createElement("path", {
+    fillRule: "evenodd",
+    clipRule: "evenodd",
+    d: "M14.6488 8.3559L8.3536 2.0607a.5.5 0 00-.7072 0L5.8536 3.8536a.5.5 0 01-.7072-.7071l1.793-1.793c.5857-.5857 1.5355-.5857 2.1213 0l6.2952 6.2953c.7461.7461-.0223 1.9894-1.0234 1.6558l.1581-.4744-.1581.4744-.4043-.1348a.5.5 0 00-.5117.1208l-5.1487 5.1487c-.9763.9764-2.5593.9764-3.5356 0l-3.6715-3.6715c-.9764-.9763-.9764-2.5592 0-3.5356l2.5857-2.5857.7072.707-2.5858 2.5858c-.5858.5858-.5858 1.5356 0 2.1214l3.6715 3.6715c.5858.5858 1.5356.5858 2.1214 0l5.1487-5.1487a1.5 1.5 0 011.535-.3624l.4044.1348z",
+    fill: "#333"
+  }));
+};
+const ToolsPanelRulerIcon = ({
+  width = 16,
+  height = 16
+}) => {
+  return /*#__PURE__*/React$1.createElement("svg", {
+    width: width,
+    height: height,
+    viewBox: "0 0 16 16",
+    fill: "none"
+  }, /*#__PURE__*/React$1.createElement("rect", {
+    x: ".7071",
+    y: "11.3137",
+    width: "15",
+    height: "5",
+    rx: ".5",
+    transform: "rotate(-45 .7071 11.3137)",
+    stroke: "#333"
+  }), /*#__PURE__*/React$1.createElement("path", {
+    stroke: "#333",
+    strokeLinecap: "round",
+    d: "M9.1924 2.8284l1.4142 1.4142M2.8284 9.1924l.7071.7071M4.9497 7.0711L6.364 8.4853M7.0711 4.9497l.7071.7071"
+  }));
+};
+const ToolsPanelBrushesIcon = ({
+  width = 18,
+  height = 19
+}) => {
+  return /*#__PURE__*/React$1.createElement("svg", {
+    width: width,
+    height: height,
+    viewBox: "0 0 18 19",
+    fill: "none"
+  }, /*#__PURE__*/React$1.createElement("path", {
+    fillRule: "evenodd",
+    clipRule: "evenodd",
+    d: "M1.72952 1.59806C1.66764 1.28866 1.90429 1 2.21981 1H3.84862L5.22266 1.91603L6.00001 2.43426V1.5V1H11.7802C12.0957 1 12.3324 1.28866 12.2705 1.59806L11.1901 7H12.2099L13.2511 1.79417C13.4367 0.865987 12.7268 0 11.7802 0H5.50001H5.00001V0.5V0.565741L4.27736 0.0839748L4.15139 0H4.00001H2.21981C1.27324 0 0.5633 0.865986 0.748938 1.79417L1.7901 7H2.80991L1.72952 1.59806Z",
+    fill: "#333333"
+  }), /*#__PURE__*/React$1.createElement("mask", {
+    id: "path-2-inside-1",
+    fill: "white"
+  }, /*#__PURE__*/React$1.createElement("path", {
+    d: "M1 9C1 8.44772 1.44772 8 2 8H12C12.5523 8 13 8.44772 13 9V10C13 11.1046 12.1046 12 11 12H9L9.25124 14.5124C9.38443 15.8443 8.33853 17 7 17C5.66147 17 4.61557 15.8443 4.74876 14.5124L5 12H3C1.89543 12 1 11.1046 1 10V9Z"
+  })), /*#__PURE__*/React$1.createElement("path", {
+    d: "M5 12L5.99504 12.0995C6.02315 11.8184 5.93103 11.5385 5.74145 11.329C5.55187 11.1195 5.28253 11 5 11V12ZM9 12V11C8.71747 11 8.44813 11.1195 8.25855 11.329C8.06897 11.5385 7.97685 11.8184 8.00496 12.0995L9 12ZM4.74876 14.5124L3.75372 14.4129L4.74876 14.5124ZM2 9H12V7H2V9ZM12 9V10H14V9H12ZM2 10V9H0V10H2ZM5 11H3V13H5V11ZM11 11H9V13H11V11ZM8.00496 12.0995L8.2562 14.6119L10.2463 14.4129L9.99504 11.9005L8.00496 12.0995ZM5.7438 14.6119L5.99504 12.0995L4.00496 11.9005L3.75372 14.4129L5.7438 14.6119ZM7 16C6.2531 16 5.66948 15.3551 5.7438 14.6119L3.75372 14.4129C3.56167 16.3335 5.06985 18 7 18V16ZM0 10C0 11.6569 1.34315 13 3 13V11C2.44772 11 2 10.5523 2 10H0ZM12 10C12 10.5523 11.5523 11 11 11V13C12.6569 13 14 11.6569 14 10H12ZM8.2562 14.6119C8.33052 15.3551 7.7469 16 7 16V18C8.93015 18 10.4383 16.3335 10.2463 14.4129L8.2562 14.6119ZM12 9H14C14 7.89543 13.1046 7 12 7V9ZM2 7C0.895431 7 0 7.89543 0 9H2V7Z",
+    fill: "#333333",
+    mask: "url(#path-2-inside-1)"
+  }), /*#__PURE__*/React$1.createElement("path", {
+    d: "M15.5 18.5H17.5V16.5",
+    stroke: "#333333",
+    strokeLinecap: "round"
+  }));
+};
+const ShapeModesIcon = ({
+  width = 19,
+  height = 19
+}) => {
+  return /*#__PURE__*/React$1.createElement("svg", {
+    width: width,
+    height: height,
+    viewBox: "0 0 19 19",
+    fill: "none"
+  }, /*#__PURE__*/React$1.createElement("path", {
+    fillRule: "evenodd",
+    clipRule: "evenodd",
+    d: "M6 6H3c-1.1046 0-2 .8954-2 2v5c0 1.1046.8954 2 2 2h5c1.1046 0 2-.8954 2-2v-3h3c1.1046 0 2-.8954 2-2V3c0-1.1046-.8954-2-2-2H8c-1.1046 0-2 .8954-2 2v3zM5 3c0-1.6568 1.3431-3 3-3h5c1.6569 0 3 1.3432 3 3v5c0 1.6569-1.3431 3-3 3h-2v2c0 1.6569-1.3431 3-3 3H3c-1.6568 0-3-1.3431-3-3V8c0-1.6569 1.3432-3 3-3h2V3z",
+    fill: "#333"
+  }), /*#__PURE__*/React$1.createElement("path", {
+    d: "M16.5 18.5h2v-2",
+    stroke: "#333",
+    strokeLinecap: "round"
+  }));
+};
+const ShapeSubtractIcon = ({
+  width = 16,
+  height = 16
+}) => {
+  return /*#__PURE__*/React$1.createElement("svg", {
+    width: width,
+    height: height,
+    viewBox: "0 0 16 16",
+    fill: "none"
+  }, /*#__PURE__*/React$1.createElement("path", {
+    fillRule: "evenodd",
+    clipRule: "evenodd",
+    d: "M5 5H3C1.3432 5 0 6.343 0 8v5c0 1.6568 1.3432 3 3 3h5c1.6569 0 3-1.3432 3-3v-2H8c-1.6569 0-3-1.3432-3-3V5z",
+    fill: "#999"
+  }), /*#__PURE__*/React$1.createElement("path", {
+    fillRule: "evenodd",
+    clipRule: "evenodd",
+    d: "M13 1H8c-1.1046 0-2 .8954-2 2v5c0 1.1046.8954 2 2 2h5c1.1046 0 2-.8954 2-2V3c0-1.1046-.8954-2-2-2zM8 0C6.3431 0 5 1.3432 5 3v5c0 1.6569 1.3431 3 3 3h5c1.6569 0 3-1.3431 3-3V3c0-1.6568-1.3431-3-3-3H8z",
+    fill: "#333"
+  }), /*#__PURE__*/React$1.createElement("path", {
+    fillRule: "evenodd",
+    clipRule: "evenodd",
+    d: "M5 5H3C1.3432 5 0 6.343 0 8v5c0 1.6568 1.3432 3 3 3h5c1.6569 0 3-1.3432 3-3v-2h-1v2c0 1.1045-.8954 2-2 2H3c-1.1046 0-2-.8955-2-2V8c0-1.1046.8954-2 2-2h2V5z",
+    fill: "#333"
+  }));
+};
+const ShapeIntersectIcon = ({
+  width = 16,
+  height = 16
+}) => {
+  return /*#__PURE__*/React$1.createElement("svg", {
+    width: width,
+    height: height,
+    viewBox: "0 0 16 16",
+    fill: "none"
+  }, /*#__PURE__*/React$1.createElement("path", {
+    fillRule: "evenodd",
+    clipRule: "evenodd",
+    d: "M10.9999 11h-3c-1.6568 0-3-1.3431-3-3V5h3c1.6569 0 3 1.3432 3 3v3z",
+    fill: "#999"
+  }), /*#__PURE__*/React$1.createElement("path", {
+    fillRule: "evenodd",
+    clipRule: "evenodd",
+    d: "M8 1h5c1.1046 0 2 .8954 2 2v5c0 1.1046-.8954 2-2 2h-2V8c0-1.6569-1.3431-3-3-3H6V3c0-1.1046.8954-2 2-2zM5 5V3c0-1.6568 1.3431-3 3-3h5c1.6569 0 3 1.3432 3 3v5c0 1.6569-1.3431 3-3 3h-2v2c0 1.6569-1.3431 3-3 3H3c-1.6568 0-3-1.3431-3-3V8c0-1.6569 1.3432-3 3-3h2zm5 6v2c0 1.1046-.8954 2-2 2H3c-1.1046 0-2-.8954-2-2V8c0-1.1046.8954-2 2-2h2v2c0 1.6569 1.3431 3 3 3h2zm0-1H8c-1.1046 0-2-.8954-2-2V6h2c1.1046 0 2 .8954 2 2v2z",
+    fill: "#333"
+  }));
+};
+const ShapeExcludeIcon = ({
+  width = 16,
+  height = 16
+}) => {
+  return /*#__PURE__*/React$1.createElement("svg", {
+    width: width,
+    height: height,
+    viewBox: "0 0 16 16",
+    fill: "none"
+  }, /*#__PURE__*/React$1.createElement("path", {
+    fillRule: "evenodd",
+    clipRule: "evenodd",
+    d: "M8 1h5c1.1046 0 2 .8954 2 2v5c0 1.1046-.8954 2-2 2h-2V8c0-1.6569-1.3431-3-3-3H6V3c0-1.1046.8954-2 2-2zM5 5V3c0-1.6568 1.3431-3 3-3h5c1.6569 0 3 1.3432 3 3v5c0 1.6569-1.3431 3-3 3h-2v2c0 1.6569-1.3431 3-3 3H3c-1.6568 0-3-1.3431-3-3V8c0-1.6569 1.3432-3 3-3h2zm5 6v2c0 1.1046-.8954 2-2 2H3c-1.1046 0-2-.8954-2-2V8c0-1.1046.8954-2 2-2h2v2c0 1.6569 1.3431 3 3 3h2zm0-1H8c-1.1046 0-2-.8954-2-2V6h2c1.1046 0 2 .8954 2 2v2z",
+    fill: "#333"
+  }));
+};
+const WrapIcon = ({
+  width = 16,
+  height = 16
+}) => {
+  return /*#__PURE__*/React$1.createElement("svg", {
+    width: width,
+    height: height,
+    viewBox: "0 0 16 16",
+    fill: "none"
+  }, /*#__PURE__*/React$1.createElement("path", {
+    fillRule: "evenodd",
+    clipRule: "evenodd",
+    d: "M1 3v10c0 1.1046.8954 2 2 2h10c1.1046 0 2-.8954 2-2V3c0-1.1046-.8954-2-2-2H3c-1.1046 0-2 .8954-2 2zm2-3C1.3432 0 0 1.3432 0 3v10c0 1.6569 1.3432 3 3 3h10c1.6569 0 3-1.3431 3-3V3c0-1.6568-1.3431-3-3-3H3z",
+    fill: "#333"
+  }), /*#__PURE__*/React$1.createElement("path", {
+    stroke: "#333",
+    d: "M5.5 0v16M10.5 0v16M0 10.5h16M0 5.5h16"
+  }));
+};
+const PerspectiveIcon = ({
+  width = 16,
+  height = 17
+}) => {
+  return /*#__PURE__*/React$1.createElement("svg", {
+    width: width,
+    height: height,
+    viewBox: "0 0 16 17",
+    fill: "none"
+  }, /*#__PURE__*/React$1.createElement("path", {
+    d: "M7.5 2.5V15M12.5 3.5v10M1 8.5h14M.5 2.947c0-.9483.8692-1.6587 1.7986-1.4699l12 2.4375a1.5 1.5 0 011.2014 1.47v6.3273a1.5 1.5 0 01-1.1149 1.4497l-12 3.1875C1.433 16.602.5 15.8843.5 14.8994V2.9471z",
+    stroke: "#333"
+  }));
+};
+const RemoveBGIcon = ({
+  width = 18,
+  height = 18
+}) => {
+  return /*#__PURE__*/React$1.createElement("svg", {
+    width: width,
+    height: height,
+    viewBox: "0 0 18 18",
+    fill: "none"
+  }, /*#__PURE__*/React$1.createElement("rect", {
+    x: "0.636039",
+    y: "15.2426",
+    width: "15",
+    height: "3",
+    rx: "1",
+    transform: "rotate(-45 0.636039 15.2426)",
+    stroke: "#333333"
+  }), /*#__PURE__*/React$1.createElement("line", {
+    x1: "8.35355",
+    y1: "7.64645",
+    x2: "10.3536",
+    y2: "9.64645",
+    stroke: "#333333"
+  }), /*#__PURE__*/React$1.createElement("path", {
+    d: "M5.03107 0.767252C5.19215 0.331943 5.80785 0.331944 5.96893 0.767253L6.50058 2.20402C6.55122 2.34088 6.65912 2.44878 6.79598 2.49942L8.23275 3.03107C8.66806 3.19215 8.66806 3.80785 8.23275 3.96893L6.79598 4.50058C6.65912 4.55122 6.55122 4.65912 6.50058 4.79598L5.96893 6.23275C5.80785 6.66806 5.19215 6.66806 5.03107 6.23275L4.49942 4.79598C4.44878 4.65912 4.34088 4.55122 4.20402 4.50058L2.76725 3.96893C2.33194 3.80785 2.33194 3.19215 2.76725 3.03107L4.20402 2.49942C4.34088 2.44878 4.44878 2.34088 4.49942 2.20402L5.03107 0.767252Z",
+    fill: "#333333"
+  }), /*#__PURE__*/React$1.createElement("path", {
+    d: "M15.0311 0.767253C15.1922 0.331944 15.8078 0.331944 15.9689 0.767253L16.2305 1.47411C16.2811 1.61097 16.389 1.71887 16.5259 1.76951L17.2327 2.03107C17.6681 2.19215 17.6681 2.80785 17.2327 2.96893L16.5259 3.23049C16.389 3.28113 16.2811 3.38903 16.2305 3.52589L15.9689 4.23275C15.8078 4.66806 15.1922 4.66806 15.0311 4.23275L14.7695 3.52589C14.7189 3.38903 14.611 3.28113 14.4741 3.23049L13.7673 2.96893C13.3319 2.80785 13.3319 2.19215 13.7673 2.03107L14.4741 1.76951C14.611 1.71887 14.7189 1.61097 14.7695 1.47411L15.0311 0.767253Z",
+    fill: "#333333"
+  }), /*#__PURE__*/React$1.createElement("path", {
+    d: "M15.0384 9.74755C15.1969 9.31901 15.8031 9.31901 15.9616 9.74755C16.0115 9.88228 16.1177 9.98851 16.2524 10.0384C16.681 10.1969 16.681 10.8031 16.2524 10.9616C16.1177 11.0115 16.0115 11.1177 15.9616 11.2524C15.8031 11.681 15.1969 11.681 15.0384 11.2524C14.9885 11.1177 14.8823 11.0115 14.7476 10.9616C14.319 10.8031 14.319 10.1969 14.7476 10.0384C14.8823 9.98851 14.9885 9.88228 15.0384 9.74755Z",
+    fill: "#333333"
+  }));
+};
+const Transition3DIcon = ({
+  width = 18,
+  height = 18
+}) => {
+  return /*#__PURE__*/React$1.createElement("svg", {
+    width: width,
+    height: height,
+    viewBox: "0 0 18 18",
+    fill: "none"
+  }, /*#__PURE__*/React$1.createElement("path", {
+    fillRule: "evenodd",
+    clipRule: "evenodd",
+    d: "M11.6614 14.8783C12.4691 13.4244 13 11.3481 13 9c0-2.348-.5309-4.4244-1.3386-5.8783C10.8348 1.6339 9.8526 1 9 1s-1.8348.6339-2.6614 2.1217C5.555 4.5324 5.0318 6.529 5.0014 8.7915l.645-.645a.5.5 0 11.7072.707l-1.5 1.5001-.3536.3535-.3536-.3535-1.5-1.5a.5.5 0 11.7071-.7072l.6478.6478C4.062 3.9187 6.2768 0 9 0c2.7614 0 5 4.0294 5 9s-2.2386 9-5 9c-1.9632 0-3.6621-2.0366-4.4803-5h1.0408c.2116.7012.4754 1.3335.7781 1.8783C7.1652 16.3661 8.1474 17 9 17s1.8348-.6339 2.6614-2.1217z",
+    fill: "#333"
+  }), /*#__PURE__*/React$1.createElement("path", {
+    fillRule: "evenodd",
+    clipRule: "evenodd",
+    d: "M14.8783 6.3386C13.4244 5.531 11.3481 5 9 5c-2.348 0-4.4244.5309-5.8783 1.3386C1.6339 7.1652 1 8.1474 1 9s.6339 1.8348 2.1217 2.6614C4.5757 12.4691 6.652 13 9 13c2.0068 0 3.8214-.3881 5.2182-1.0101C16.153 11.1282 17 9.9768 17 9c0-.8526-.6339-1.8348-2.1217-2.6614zM18 9c0-2.7614-4.0294-5-9-5S0 6.2386 0 9s4.0294 5 9 5c2.1284 0 4.0842-.4104 5.625-1.0966C16.6825 11.987 18 10.579 18 9z",
+    fill: "#333"
+  }));
+};
+const MaskIcon = ({
+  width = 18,
+  height = 18
+}) => {
+  return /*#__PURE__*/React$1.createElement("svg", {
+    width: width,
+    height: height,
+    viewBox: "0 0 18 18",
+    fill: "none"
+  }, /*#__PURE__*/React$1.createElement("path", {
+    fillRule: "evenodd",
+    clipRule: "evenodd",
+    d: "M6 17.4879C9.4956 16.2524 12 12.9187 12 9c0-3.9187-2.5044-7.2524-6-8.4879C2.5044 1.7476 0 5.0813 0 9c0 3.9187 2.5044 7.2524 6 8.4879z",
+    fill: "#999"
+  }), /*#__PURE__*/React$1.createElement("rect", {
+    x: ".5",
+    y: ".5",
+    width: "17",
+    height: "17",
+    rx: "8.5",
+    stroke: "#333"
+  }));
+};
+const ComponentOptionsIcon = ({
+  width = 21,
+  height = 21
+}) => {
+  return /*#__PURE__*/React$1.createElement("svg", {
+    width: width,
+    height: height,
+    viewBox: "0 0 21 21",
+    fill: "none"
+  }, /*#__PURE__*/React$1.createElement("path", {
+    d: "M14.5 5.5l-9 9M5.6464 5.6268l8.7072 8.7071M8.2322 2.9749c.9763-.9763 2.5593-.9763 3.5356 0l5.2573 5.2573c.9763.9763.9763 2.5593 0 3.5356l-5.2573 5.2573c-.9763.9763-2.5593.9763-3.5356 0L2.975 11.7678c-.9763-.9763-.9763-2.5593 0-3.5356L8.2322 2.975z",
+    stroke: "#333"
+  }), /*#__PURE__*/React$1.createElement("path", {
+    d: "M18.5 20.5h2v-2",
+    stroke: "#333",
+    strokeLinecap: "round"
+  }));
+};
+const ComponentIcon = ({
+  width = 20,
+  height = 20
+}) => {
+  return /*#__PURE__*/React$1.createElement("svg", {
+    width: width,
+    height: height,
+    viewBox: "0 0 20 20",
+    fill: "none"
+  }, /*#__PURE__*/React$1.createElement("path", {
+    d: "M14.5 5.5L5.5 14.5",
+    stroke: "#333333"
+  }), /*#__PURE__*/React$1.createElement("line", {
+    x1: "5.64645",
+    y1: "5.62684",
+    x2: "14.3536",
+    y2: "14.3339",
+    stroke: "#333333"
+  }), /*#__PURE__*/React$1.createElement("path", {
+    d: "M8.23223 2.97487C9.20854 1.99856 10.7915 1.99856 11.7678 2.97487L17.0251 8.23223C18.0014 9.20854 18.0014 10.7915 17.0251 11.7678L11.7678 17.0251C10.7915 18.0014 9.20854 18.0014 8.23223 17.0251L2.97487 11.7678C1.99856 10.7915 1.99856 9.20854 2.97487 8.23223L8.23223 2.97487Z",
+    stroke: "#333333"
+  }));
+};
+const SmartObjectsIcon = ({
+  width = 16,
+  height = 16
+}) => {
+  return /*#__PURE__*/React$1.createElement("svg", {
+    width: width,
+    height: height,
+    viewBox: "0 0 16 17",
+    fill: "none"
+  }, /*#__PURE__*/React$1.createElement("path", {
+    fillRule: "evenodd",
+    clipRule: "evenodd",
+    d: "M9 14h4c1.1046 0 2-.8954 2-2V5.4142L10.5858 1H7c-1.1046 0-2 .8954-2 2v5H4V3c0-1.6568 1.3431-3 3-3h4l5 5v7c0 1.6569-1.3431 3-3 3H9v-1z",
+    fill: "#333"
+  }), /*#__PURE__*/React$1.createElement("path", {
+    d: "M10.5 1v3.5c0 .5523.4477 1 1 1H15",
+    stroke: "#333"
+  }), /*#__PURE__*/React$1.createElement("rect", {
+    x: ".5",
+    y: "9.5",
+    width: "7",
+    height: "7",
+    rx: "1.5",
+    stroke: "#333"
+  }));
+};
+const ColorPickerIcon = ({
+  width = 14,
+  height = 15
+}) => {
+  return /*#__PURE__*/React$1.createElement("svg", {
+    width: width,
+    height: height,
+    viewBox: "0 0 14 15",
+    fill: "none"
+  }, /*#__PURE__*/React$1.createElement("path", {
+    d: "M8.0607 4.318l2.1213 2.1213-6.7175 6.7176c-.5858.5857-1.5356.5857-2.1214 0-.5857-.5858-.5857-1.5356 0-2.1214L8.0607 4.318z",
+    stroke: "#333",
+    strokeLinecap: "round",
+    strokeLinejoin: "round"
+  }), /*#__PURE__*/React$1.createElement("path", {
+    d: "M.636 13.1569a.5.5 0 10.7072.7071l-.7072-.7071zm.7072-.7072l-.7072.7072.7072.7071.707-.7071-.707-.7072z",
+    fill: "#333"
+  }), /*#__PURE__*/React$1.createElement("path", {
+    fillRule: "evenodd",
+    clipRule: "evenodd",
+    d: "M13.0104 4.318c.7811-.781.7811-2.0474 0-2.8284-.781-.781-2.0474-.781-2.8284 0L8.0607 3.6109c-.3906.3905-1.0237.3905-1.4143 0l-.3535-.3535a.5.5 0 00-.7071.707l4.9497 4.9498a.5.5 0 10.7071-.707l-.3535-.3537c-.3905-.3905-.3905-1.0236 0-1.4142l2.1213-2.1213z",
+    fill: "#333"
+  }));
+};
+const EaseIcon = ({
+  width = 18,
+  height = 16
+}) => {
+  return /*#__PURE__*/React$1.createElement("svg", {
+    width: width,
+    height: height,
+    viewBox: "0 0 18 16",
+    fill: "none"
+  }, /*#__PURE__*/React$1.createElement("path", {
+    stroke: "#999",
+    d: "M7 1.5h10M1 14.5h10"
+  }), /*#__PURE__*/React$1.createElement("path", {
+    d: "M1 14.5S7 15 9 8s8-6.5 8-6.5",
+    stroke: "#333"
+  }), /*#__PURE__*/React$1.createElement("rect", {
+    x: "6",
+    y: ".5",
+    width: "2",
+    height: "2",
+    rx: "1",
+    fill: "#999"
+  }), /*#__PURE__*/React$1.createElement("rect", {
+    x: "10",
+    y: "13.5",
+    width: "2",
+    height: "2",
+    rx: "1",
+    fill: "#999"
+  }));
+};
+const ArcIcon = ({
+  width = 14,
+  height = 18
+}) => {
+  return /*#__PURE__*/React$1.createElement("svg", {
+    width: width,
+    height: height,
+    viewBox: "0 0 14 18",
+    fill: "none"
+  }, /*#__PURE__*/React$1.createElement("path", {
+    d: "M1.07923 9.9917C1.27002 10.591 1.8162 11.2382 2.83341 11.8104C4.10544 12.5259 5.93008 13 8 13C9.34972 13 10.5952 12.7984 11.6511 12.4598L12 13.398C10.8233 13.7809 9.45715 14 8 14C3.88034 14 0.487982 12.2484 0.0482375 9.997C-0.0046981 9.72598 0.223858 9.5 0.5 9.5C0.776142 9.5 0.995457 9.72857 1.07923 9.9917Z",
+    fill: "#333333"
+  }), /*#__PURE__*/React$1.createElement("circle", {
+    cx: "8",
+    cy: "3",
+    r: "1.5",
+    stroke: "#333333"
+  }), /*#__PURE__*/React$1.createElement("path", {
+    fillRule: "evenodd",
+    clipRule: "evenodd",
+    d: "M9.46335 4.36332C9.22785 4.61598 8.9277 4.80758 8.58925 4.91178L12.5239 17.153C13.0497 16.984 13.3389 16.4207 13.1699 15.895L9.46335 4.36332ZM7.41064 4.91174C7.07219 4.80753 6.77205 4.6159 6.53657 4.36322L4.27209 11.4082C4.5703 11.5147 4.89128 11.6096 5.23178 11.6904L7.41064 4.91174ZM3.96594 12.3607C4.26875 12.4677 4.58929 12.5629 4.92493 12.6451L3.47595 17.153C2.95016 16.984 2.66093 16.4207 2.82994 15.895L3.96594 12.3607Z",
+    fill: "#333333"
+  }), /*#__PURE__*/React$1.createElement("path", {
+    d: "M8 1.5V0",
+    stroke: "#333333"
+  }));
+};
+const AlignmentRadiusLabelIcon = ({
+  width = 8,
+  height = 8
+}) => {
+  return /*#__PURE__*/React$1.createElement("svg", {
+    width: width,
+    height: height,
+    viewBox: "0 0 8 8",
+    fill: "none"
+  }, /*#__PURE__*/React$1.createElement("path", {
+    d: "M.5 8V5.5c0-2.7614 2.2386-5 5-5H8",
+    stroke: "#999"
+  }));
+};
+const AlignmentLineHeightIcon = ({
+  width = 8,
+  height = 12
+}) => {
+  return /*#__PURE__*/React$1.createElement("svg", {
+    width: width,
+    height: height,
+    viewBox: "0 0 8 12",
+    fill: "none"
+  }, /*#__PURE__*/React$1.createElement("path", {
+    fillRule: "evenodd",
+    clipRule: "evenodd",
+    d: "M4 2a.5.5 0 01.4715.3336L7.1771 10H6.1167l-.7059-2H2.589l-.7059 2H.8226l2.706-7.6664A.5.5 0 014 2zM2.942 7h2.116L4 4.0023 2.942 7z",
+    fill: "#999"
+  }), /*#__PURE__*/React$1.createElement("path", {
+    stroke: "#999",
+    strokeLinecap: "round",
+    d: "M7.5.5h-7m0 11h7"
+  }));
+};
+const AlignmentLetterSpacingIcon = ({
+  width = 10,
+  height = 10
+}) => {
+  return /*#__PURE__*/React$1.createElement("svg", {
+    width: width,
+    height: height,
+    viewBox: "0 0 10 10",
+    fill: "none"
+  }, /*#__PURE__*/React$1.createElement("path", {
+    fillRule: "evenodd",
+    clipRule: "evenodd",
+    d: "M4.9998 1.5a.5.5 0 01.4682.3244L8.1588 9h-1.068l-.75-2h-2.682l-.75 2h-1.068l2.6909-7.1756A.5.5 0 014.9998 1.5zM4.0338 6h1.932l-.966-2.576L4.0338 6z",
+    fill: "#999"
+  }), /*#__PURE__*/React$1.createElement("path", {
+    stroke: "#999",
+    strokeLinecap: "round",
+    d: "M.5.5v9"
+  }), /*#__PURE__*/React$1.createElement("path", {
+    transform: "matrix(0 1 1 0 10 0)",
+    stroke: "#999",
+    strokeLinecap: "round",
+    d: "M.5-.5h9"
+  }));
+};
+const CopyIcon = ({
+  width = 9,
+  height = 9
+}) => {
+  return /*#__PURE__*/React$1.createElement("svg", {
+    width: width,
+    height: height,
+    viewBox: "0 0 9 9",
+    fill: "none"
+  }, /*#__PURE__*/React$1.createElement("rect", {
+    x: ".5",
+    y: ".5",
+    width: "6",
+    height: "6",
+    rx: ".5",
+    stroke: "#999"
+  }), /*#__PURE__*/React$1.createElement("path", {
+    d: "M8.5 2.5v4c0 1.1046-.8954 2-2 2h-4",
+    stroke: "#999"
+  }));
+};
+const CheckIcon = ({
+  width = 10,
+  height = 9
+}) => {
+  return /*#__PURE__*/React$1.createElement("svg", {
+    width: width,
+    height: height,
+    viewBox: "0 0 10 9",
+    fill: "none"
+  }, /*#__PURE__*/React$1.createElement("path", {
+    fillRule: "evenodd",
+    clipRule: "evenodd",
+    d: "M9.3796 1.3254l-6 7-.3514.41-.3817-.3819-2.5-2.5.707-.707 2.1183 2.1181 5.6486-6.59.7592.6508z",
+    fill: "#999"
+  }));
+};
+const MiniPlusIcon = ({
+  width = 5,
+  height = 5
+}) => {
+  return /*#__PURE__*/React$1.createElement("svg", {
+    width: width,
+    height: height,
+    viewBox: "0 0 5 5",
+    fill: "none"
+  }, /*#__PURE__*/React$1.createElement("path", {
+    fillRule: "evenodd",
+    clipRule: "evenodd",
+    d: "M3 2V0H2v2H0v1h2v2h1V3h2V2H3z",
+    fill: "#999"
+  }));
+};
+const ChevronArrowIcon = ({
+  width = 8,
+  height = 4
+}) => {
+  return /*#__PURE__*/React$1.createElement("svg", {
+    width: width,
+    height: height,
+    viewBox: "0 0 8 4",
+    fill: "none"
+  }, /*#__PURE__*/React$1.createElement("path", {
+    fillRule: "evenodd",
+    clipRule: "evenodd",
+    d: "M.2929 0l3.3536 3.3535L4 3.7071l.3536-.3536L7.707 0H6.293L4 2.2929 1.7071 0H.293z",
+    fill: "#999"
+  }));
+};
+const SmallChevronArrowIcon = ({
+  width = 6,
+  height = 3
+}) => {
+  return /*#__PURE__*/React$1.createElement("svg", {
+    width: width,
+    height: height,
+    viewBox: "0 0 6 3",
+    fill: "none"
+  }, /*#__PURE__*/React$1.createElement("path", {
+    fillRule: "evenodd",
+    clipRule: "evenodd",
+    d: "M.2929 0l2.3536 2.3535L3 2.7071l.3535-.3536L5.7072 0H4.293L3 1.2929 1.7071 0H.293z",
+    fill: "#999"
+  }));
+};
+const ListIcon = ({
+  width = 12,
+  height = 7
+}) => {
+  return /*#__PURE__*/React$1.createElement("svg", {
+    width: width,
+    height: height,
+    viewBox: "0 0 12 7",
+    fill: "none"
+  }, /*#__PURE__*/React$1.createElement("path", {
+    fillRule: "evenodd",
+    clipRule: "evenodd",
+    d: "M12 2H4V1h8v1z",
+    fill: "#999"
+  }), /*#__PURE__*/React$1.createElement("circle", {
+    cx: "1.5",
+    cy: "1.5",
+    r: ".5",
+    fill: "#999",
+    stroke: "#999",
+    strokeWidth: ".5"
+  }), /*#__PURE__*/React$1.createElement("circle", {
+    cx: "1.5",
+    cy: "5.5",
+    r: ".5",
+    fill: "#999",
+    stroke: "#999",
+    strokeWidth: ".5"
+  }), /*#__PURE__*/React$1.createElement("path", {
+    stroke: "#999",
+    d: "M4 5.5h8"
+  }));
+};
+const PlusIcon = ({
+  width = 9,
+  height = 9
+}) => {
+  return /*#__PURE__*/React$1.createElement("svg", {
+    width: width,
+    height: height,
+    viewBox: "0 0 9 9",
+    fill: "none"
+  }, /*#__PURE__*/React$1.createElement("path", {
+    fillRule: "evenodd",
+    clipRule: "evenodd",
+    d: "M5 4V0H4v4H0v1h4v4h1V5h4V4H5z",
+    fill: "#999"
+  }));
+};
+const MinusIcon = ({
+  width = 9,
+  height = 1
+}) => {
+  return /*#__PURE__*/React$1.createElement("svg", {
+    width: width,
+    height: height,
+    viewBox: "0 0 9 1",
+    fill: "none"
+  }, /*#__PURE__*/React$1.createElement("path", {
+    fillRule: "evenodd",
+    clipRule: "evenodd",
+    d: "M9 1H0V0h9v1z",
+    fill: "#999"
+  }));
+};
+const CommandKeyIcon = ({
+  width = 10,
+  height = 10
+}) => {
+  return /*#__PURE__*/React$1.createElement("svg", {
+    width: width,
+    height: height,
+    viewBox: "0 0 10 10",
+    fill: "none"
+  }, /*#__PURE__*/React$1.createElement("path", {
+    d: "M6.5 3.5H2.25C1.5596 3.5 1 2.9404 1 2.25v0C1 1.5596 1.5596 1 2.25 1v0c.6904 0 1.25.5596 1.25 1.25v5.5C3.5 8.4404 2.9404 9 2.25 9v0C1.5596 9 1 8.4404 1 7.75v0c0-.6904.5596-1.25 1.25-1.25h5.5C8.4404 6.5 9 7.0596 9 7.75v0C9 8.4404 8.4404 9 7.75 9v0C7.0596 9 6.5 8.4404 6.5 7.75v-5.5C6.5 1.5596 7.0596 1 7.75 1v0C8.4404 1 9 1.5596 9 2.25v0c0 .6904-.5596 1.25-1.25 1.25H6.5z",
+    stroke: "#999"
+  }));
+};
+const ShiftKeyIcon = ({
+  width = 10,
+  height = 10
+}) => {
+  return /*#__PURE__*/React$1.createElement("svg", {
+    width: width,
+    height: height,
+    viewBox: "0 0 10 10",
+    fill: "none"
+  }, /*#__PURE__*/React$1.createElement("path", {
+    d: "M6.5 9.5h-3v-4h-2l3.5-4 3.5 4h-2v4z",
+    stroke: "#999"
+  }));
+};
+const OptionKeyIcon = ({
+  width = 8,
+  height = 5
+}) => {
+  return /*#__PURE__*/React$1.createElement("svg", {
+    width: width,
+    height: height,
+    viewBox: "0 0 8 5",
+    fill: "none"
+  }, /*#__PURE__*/React$1.createElement("path", {
+    d: "M8 4.5H5.5l-3-4H0M6 .5h2",
+    stroke: "#999"
+  }));
+};
+const ControlKeyIcon = ({
+  width = 8,
+  height = 5
+}) => {
+  return /*#__PURE__*/React$1.createElement("svg", {
+    width: width,
+    height: height,
+    viewBox: "0 0 8 5",
+    fill: "none"
+  }, /*#__PURE__*/React$1.createElement("path", {
+    fillRule: "evenodd",
+    clipRule: "evenodd",
+    d: "M4.3737 1.1678L4 .7474l-.3737.4204L.2199 5h1.338L4 2.2526 6.4421 5h1.338L4.3737 1.1678z",
+    fill: "#999"
+  }));
+};
+const DeleteKeyIcon = ({
+  width = 11,
+  height = 9
+}) => {
+  return /*#__PURE__*/React$1.createElement("svg", {
+    width: width,
+    height: height,
+    viewBox: "0 0 11 9",
+    fill: "none"
+  }, /*#__PURE__*/React$1.createElement("path", {
+    d: "M10.5.5v8h-7l-3-4 3-4h7z",
+    stroke: "#999",
+    strokeLinejoin: "round"
+  }), /*#__PURE__*/React$1.createElement("path", {
+    d: "M4.5 6.5l4-4M8.5 6.5l-4-4",
+    stroke: "#999",
+    strokeLinecap: "round"
+  }));
+};
+const GridIcon = ({
+  width = 11,
+  height = 11
+}) => {
+  return /*#__PURE__*/React$1.createElement("svg", {
+    width: width,
+    height: height,
+    viewBox: "0 0 11 11",
+    fill: "none"
+  }, /*#__PURE__*/React$1.createElement("rect", {
+    x: ".5",
+    y: ".5",
+    width: "10",
+    height: "10",
+    rx: "1.5",
+    stroke: "#999"
+  }), /*#__PURE__*/React$1.createElement("path", {
+    stroke: "#999",
+    d: "M1 5.5h9M5.5 10V1"
+  }));
+};
+const CrossIcon = ({
+  width = 10,
+  height = 10
+}) => {
+  return /*#__PURE__*/React$1.createElement("svg", {
+    width: width,
+    height: height,
+    viewBox: "0 0 10 10",
+    fill: "none"
+  }, /*#__PURE__*/React$1.createElement("path", {
+    d: "M9 1L1 9M1 1l8 8",
+    stroke: "#999"
+  }));
+};
+const SearchIcon = ({
+  width = 11,
+  height = 12
+}) => {
+  return /*#__PURE__*/React$1.createElement("svg", {
+    width: width,
+    height: height,
+    viewBox: "0 0 11 12",
+    fill: "none"
+  }, /*#__PURE__*/React$1.createElement("path", {
+    fillRule: "evenodd",
+    clipRule: "evenodd",
+    d: "M9 5c0 2.2091-1.7909 4-4 4-2.2091 0-4-1.7909-4-4 0-2.2091 1.7909-4 4-4 2.2091 0 4 1.7909 4 4zM7.578 9.285C6.8252 9.739 5.943 10 5 10c-2.7614 0-5-2.2386-5-5s2.2386-5 5-5 5 2.2386 5 5c0 1.4552-.6217 2.7652-1.614 3.679l2.4676 2.4674-.7072.7072L7.578 9.285z",
+    fill: "#999"
+  }));
+};
+const NewTabIcon = ({
+  width = 10,
+  height = 10
+}) => {
+  return /*#__PURE__*/React$1.createElement("svg", {
+    width: width,
+    height: height,
+    viewBox: "0 0 10 10",
+    fill: "none"
+  }, /*#__PURE__*/React$1.createElement("path", {
+    d: "M5 5L9.5.5m0 0H6m3.5 0V4",
+    stroke: "#999",
+    strokeLinecap: "round"
+  }), /*#__PURE__*/React$1.createElement("path", {
+    d: "M8.5 7v.5c0 1.1046-.8954 2-2 2h-4c-1.1046 0-2-.8954-2-2v-3c0-1.1046.8954-2 2-2H3",
+    stroke: "#999"
+  }));
+};
+const TrashIcon = ({
+  width = 12,
+  height = 12
+}) => {
+  return /*#__PURE__*/React$1.createElement("svg", {
+    width: width,
+    height: height,
+    viewBox: "0 0 12 12",
+    fill: "none"
+  }, /*#__PURE__*/React$1.createElement("path", {
+    d: "M1.6075 3.0497A.5.5 0 012.105 2.5h7.79a.5.5 0 01.4975.5497l-.71 7.0996C9.606 10.9161 8.9608 11.5 8.19 11.5H3.81c-.7706 0-1.4159-.5839-1.4926-1.3507l-.71-7.0996z",
+    stroke: "#999"
+  }), /*#__PURE__*/React$1.createElement("path", {
+    d: "M0 2h12v1H0V2zM4 0h4v1H4V0z",
+    fill: "#999"
+  }));
+};
+const EditIcon = ({
+  width = 10,
+  height = 13
+}) => {
+  return /*#__PURE__*/React$1.createElement("svg", {
+    width: width,
+    height: height,
+    viewBox: "0 0 10 13",
+    fill: "none"
+  }, /*#__PURE__*/React$1.createElement("path", {
+    fillRule: "evenodd",
+    clipRule: "evenodd",
+    d: "M1 7.4142v1.5857h1.5858l5.207-5.207c.438-.438.438-1.148 0-1.5858-.4378-.438-1.1478-.438-1.5857 0l-.6465.6464.793.793-.7072.707-.7929-.7929L1 7.4142zm-1-.4143v3h3l5.5-5.5c.8284-.8284.8284-2.1715 0-3-.8284-.8284-2.1716-.8284-3 0L0 7zM0 13h9v-1H0v1z",
+    fill: "#999"
+  }));
+};
+const HelpIcon = ({
+  width = 13,
+  height = 13
+}) => {
+  return /*#__PURE__*/React$1.createElement("svg", {
+    width: width,
+    height: height,
+    viewBox: "0 0 13 13",
+    fill: "none"
+  }, /*#__PURE__*/React$1.createElement("circle", {
+    cx: "6.5",
+    cy: "6.5",
+    r: "6",
+    stroke: "#999"
+  }), /*#__PURE__*/React$1.createElement("path", {
+    d: "M4.5 6v-.9c0-.8837.7163-1.6 1.6-1.6h.6295C7.7073 3.5 8.5 4.2927 8.5 5.2705v0c0 .447-.2526.8558-.6525 1.0557l-.453.2266A1.618 1.618 0 006.5 8v0",
+    stroke: "#999"
+  }), /*#__PURE__*/React$1.createElement("rect", {
+    x: "5.75",
+    y: "8.75",
+    width: "1.5",
+    height: "1.5",
+    rx: ".75",
+    fill: "#999"
+  }));
+};
+const InfoIcon = ({
+  width = 13,
+  height = 13
+}) => {
+  return /*#__PURE__*/React$1.createElement("svg", {
+    width: width,
+    height: height,
+    viewBox: "0 0 13 13",
+    fill: "none"
+  }, /*#__PURE__*/React$1.createElement("circle", {
+    cx: "6.5",
+    cy: "6.5",
+    r: "6",
+    stroke: "#999"
+  }), /*#__PURE__*/React$1.createElement("rect", {
+    x: "5.75",
+    y: "8.75",
+    width: "1.5",
+    height: "1.5",
+    rx: ".75",
+    fill: "#999"
+  }), /*#__PURE__*/React$1.createElement("path", {
+    fill: "#999",
+    d: "M6 3h1v5H6z"
+  }));
+};
+const AddEmojiIcon = ({
+  width = 12,
+  height = 12
+}) => {
+  return /*#__PURE__*/React$1.createElement("svg", {
+    width: width,
+    height: height,
+    viewBox: "0 0 12 12",
+    fill: "none"
+  }, /*#__PURE__*/React$1.createElement("path", {
+    fillRule: "evenodd",
+    clipRule: "evenodd",
+    d: "M7 10.9a5.022 5.022 0 01-1 .1c-2.7614 0-5-2.2386-5-5s2.2386-5 5-5 5 2.2386 5 5a5.022 5.022 0 01-.1 1h1.017A6.0363 6.0363 0 0012 6c0-3.3137-2.6863-6-6-6S0 2.6863 0 6s2.6863 6 6 6c.3407 0 .6748-.0284 1-.083V10.9z",
+    fill: "#999"
+  }));
+}; // Layers icon
+
+const LayerFolderIcon = ({
+  width = 12,
+  height = 10
+}) => {
+  return /*#__PURE__*/React$1.createElement("svg", {
+    width: width,
+    height: height,
+    viewBox: "0 0 12 10",
+    fill: "none"
+  }, /*#__PURE__*/React$1.createElement("path", {
+    d: "M0 3c0-.9319 0-1.3978.1522-1.7654A2 2 0 011.2346.1522C1.6022 0 2.0681 0 3 0h3l1 2h2.75c.6989 0 1.0484 0 1.324.1142.3676.1522.6596.4442.8118.8118C12 3.2016 12 3.551 12 4.25V7c0 .9319 0 1.3978-.1522 1.7654-.203.49-.5924.8794-1.0824 1.0824C10.3978 10 9.9319 10 9 10H3c-.9319 0-1.3978 0-1.7654-.1522A2 2 0 01.1522 8.7654C0 8.3978 0 7.9319 0 7V3z",
+    fill: "#F5F5F5"
+  }), /*#__PURE__*/React$1.createElement("path", {
+    fillRule: "evenodd",
+    clipRule: "evenodd",
+    d: "M7 2L6 0H3c-.9319 0-1.3978 0-1.7654.1522A2 2 0 00.1522 1.2346C0 1.6022 0 2.0681 0 3v4c0 .9319 0 1.3978.1522 1.7654a2 2 0 001.0824 1.0824C1.6022 10 2.0681 10 3 10h6c.9319 0 1.3978 0 1.7654-.1522.49-.203.8794-.5924 1.0824-1.0824C12 8.3978 12 7.9319 12 7V4.25c0-.699 0-1.0484-.1142-1.324a1.4997 1.4997 0 00-.8118-.8118C10.7984 2 10.4489 2 9.75 2H7zM5.382 1H3c-.4796 0-.7893.0005-1.0262.0167-.228.0156-.3149.0422-.3565.0594a1 1 0 00-.5412.5412c-.0172.0416-.0438.1285-.0594.3565C1.0005 2.2108 1 2.5204 1 3v4c0 .4796.0005.7893.0167 1.0262.0156.228.0422.3149.0594.3565a1 1 0 00.5412.5412c.0416.0172.1285.0438.3565.0594C2.2108 8.9995 2.5204 9 3 9h6c.4796 0 .7893-.0005 1.0262-.0167.228-.0156.3149-.0422.3565-.0594a1.0001 1.0001 0 00.5412-.5412c.0172-.0416.0438-.1285.0594-.3565C10.9995 7.7892 11 7.4796 11 7V4.25c0-.3631-.0005-.5854-.012-.7527-.0096-.142-.0244-.1845-.026-.1886-.0002-.0005-.0002-.0005 0 0a.5.5 0 00-.2707-.2706c-.0041-.0017-.0466-.0165-.1886-.0261C10.3354 3.0005 10.1131 3 9.75 3H6.382l-1-2z",
+    fill: "#999"
+  }));
+};
+const LayerFileIcon = ({
+  width = 10,
+  height = 12
+}) => {
+  return /*#__PURE__*/React$1.createElement("svg", {
+    width: width,
+    height: height,
+    viewBox: `0 0 10 12`,
+    fill: "none"
+  }, /*#__PURE__*/React$1.createElement("path", {
+    d: "M.5 4.5c0-.706 0-1.21.027-1.607.027-.393.079-.645.163-.85A2.5 2.5 0 012.043.69c.205-.084.457-.136.85-.163C3.29.5 3.794.5 4.5.5h1.293L9.5 4.207V7.5c0 .706 0 1.21-.027 1.607-.027.393-.079.645-.163.85a2.5 2.5 0 01-1.353 1.353c-.205.084-.457.136-.85.163-.397.027-.901.027-1.607.027h-1c-.706 0-1.21 0-1.607-.027-.393-.027-.645-.079-.85-.163A2.5 2.5 0 01.69 9.957C.606 9.752.554 9.5.527 9.107.5 8.71.5 8.206.5 7.5v-3z",
+    fill: "#F5F5F5",
+    stroke: "#999"
+  }), /*#__PURE__*/React$1.createElement("path", {
+    d: "M9.5 4.207V4.5H7A1.5 1.5 0 015.5 3V.5h.293L9.5 4.207z",
+    fill: "#F5F5F5",
+    stroke: "#999"
+  }));
+};
+const LayerVectorIcon = ({
+  width = 12,
+  height = 12
+}) => {
+  return /*#__PURE__*/React$1.createElement("svg", {
+    width: width,
+    height: height,
+    viewBox: "0 0 12 12",
+    fill: "none"
+  }, /*#__PURE__*/React$1.createElement("path", {
+    fillRule: "evenodd",
+    clipRule: "evenodd",
+    d: "M9 2c0 .5523.4477 1 1 1s1-.4477 1-1-.4477-1-1-1-1 .4477-1 1zm-.9192.5645C8.3244 3.3942 9.0915 4 10 4c1.1046 0 2-.8954 2-2s-.8954-2-2-2c-.9533 0-1.7508.667-1.9514 1.5598-3.3814.428-6.0608 3.1074-6.4888 6.4888C.667 8.2491 0 9.0466 0 10c0 1.1046.8954 2 2 2s2-.8954 2-2c0-.9085-.6058-1.6756-1.4355-1.9192.404-2.8543 2.662-5.1123 5.5163-5.5163zM2 9c-.5523 0-1 .4477-1 1s.4477 1 1 1 1-.4477 1-1-.4477-1-1-1z",
+    fill: "#999"
+  }), /*#__PURE__*/React$1.createElement("path", {
+    d: "M0 10c0-1.1046.8954-2 2-2s2 .8954 2 2-.8954 2-2 2-2-.8954-2-2z",
+    fill: "#F5F5F5"
+  }), /*#__PURE__*/React$1.createElement("path", {
+    fillRule: "evenodd",
+    clipRule: "evenodd",
+    d: "M1 10c0 .5523.4477 1 1 1s1-.4477 1-1-.4477-1-1-1-1 .4477-1 1zm1-2c-1.1046 0-2 .8954-2 2s.8954 2 2 2 2-.8954 2-2-.8954-2-2-2z",
+    fill: "#999"
+  }), /*#__PURE__*/React$1.createElement("path", {
+    d: "M8 2c0-1.1046.8954-2 2-2s2 .8954 2 2-.8954 2-2 2-2-.8954-2-2z",
+    fill: "#F5F5F5"
+  }), /*#__PURE__*/React$1.createElement("path", {
+    fillRule: "evenodd",
+    clipRule: "evenodd",
+    d: "M9 2c0 .5523.4477 1 1 1s1-.4477 1-1-.4477-1-1-1-1 .4477-1 1zm1-2C8.8954 0 8 .8954 8 2s.8954 2 2 2 2-.8954 2-2-.8954-2-2-2z",
+    fill: "#999"
+  }));
+};
+const LayerTextIcon = ({
+  width = 12,
+  height = 12
+}) => {
+  return /*#__PURE__*/React$1.createElement("svg", {
+    width: width,
+    height: height,
+    viewBox: "0 0 12 12",
+    fill: "none"
+  }, /*#__PURE__*/React$1.createElement("path", {
+    d: "M0 4.5c0-1.3978 0-2.0967.2284-2.648A3 3 0 011.852.2284C2.4032 0 3.1021 0 4.5 0h3c1.3978 0 2.0967 0 2.6481.2284a2.9999 2.9999 0 011.6235 1.6236C12 2.4032 12 3.1021 12 4.5v3c0 1.3978 0 2.0967-.2284 2.6481a2.9997 2.9997 0 01-1.6235 1.6235C9.5967 12 8.8978 12 7.5 12h-3c-1.3978 0-2.0967 0-2.648-.2284a2.9999 2.9999 0 01-1.6236-1.6235C0 9.5967 0 8.8978 0 7.5v-3z",
+    fill: "#F5F5F5"
+  }), /*#__PURE__*/React$1.createElement("path", {
+    fillRule: "evenodd",
+    clipRule: "evenodd",
+    d: "M7.5 1h-3c-.7126 0-1.197.0005-1.5734.0262-.3675.0251-.5585.0707-.692.126a2 2 0 00-1.0824 1.0824c-.0553.1335-.1009.3245-.126.692C1.0005 3.303 1 3.7874 1 4.5v3c0 .7126.0005 1.197.0262 1.5734.0251.3674.0707.5585.126.692.203.49.5924.8794 1.0824 1.0824.1335.0553.3245.1009.692.126C3.303 10.9995 3.7874 11 4.5 11h3c.7126 0 1.197-.0005 1.5734-.0262.3674-.0251.5585-.0707.692-.126.49-.203.8794-.5924 1.0824-1.0824.0553-.1335.1009-.3246.126-.692C10.9995 8.697 11 8.2126 11 7.5v-3c0-.7126-.0005-1.197-.0262-1.5734-.0251-.3675-.0707-.5585-.126-.692a2.0002 2.0002 0 00-1.0824-1.0824c-.1335-.0553-.3246-.1009-.692-.126C8.697 1.0005 8.2126 1 7.5 1zm-7.2716.852C0 2.4032 0 3.1021 0 4.5v3c0 1.3978 0 2.0967.2284 2.6481a2.9999 2.9999 0 001.6236 1.6235C2.4032 12 3.1021 12 4.5 12h3c1.3978 0 2.0967 0 2.6481-.2284a2.9997 2.9997 0 001.6235-1.6235C12 9.5967 12 8.8978 12 7.5v-3c0-1.3978 0-2.0967-.2284-2.648A2.9999 2.9999 0 0010.1481.2284C9.5967 0 8.8978 0 7.5 0h-3C3.1022 0 2.4033 0 1.852.2284A3 3 0 00.2284 1.852z",
+    fill: "#999"
+  }), /*#__PURE__*/React$1.createElement("path", {
+    fillRule: "evenodd",
+    clipRule: "evenodd",
+    d: "M6 3a.5.5 0 01.4616.3077L8.8334 9H7.7501l-.4167-1H4.6668L4.25 9H3.1668l2.3717-5.6923A.5.5 0 016.0001 3zm-.9166 4h1.8334L6 4.8 5.0834 7z",
+    fill: "#999"
+  }));
+};
+const LayerImageIcon = ({
+  width = 12,
+  height = 12
+}) => {
+  return /*#__PURE__*/React$1.createElement("svg", {
+    width: width,
+    height: height,
+    viewBox: "0 0 12 12",
+    fill: "none"
+  }, /*#__PURE__*/React$1.createElement("path", {
+    fillRule: "evenodd",
+    clipRule: "evenodd",
+    d: "M7.5 1h-3c-.7126 0-1.197.0005-1.5734.0262-.3675.0251-.5585.0707-.692.126a2 2 0 00-1.0824 1.0824c-.0553.1335-.1009.3245-.126.692C1.0005 3.303 1 3.7874 1 4.5v3c0 .7126.0005 1.197.0262 1.5734.0251.3674.0707.5585.126.692.203.49.5924.8794 1.0824 1.0824.1335.0553.3245.1009.692.126C3.303 10.9995 3.7874 11 4.5 11h3c.7126 0 1.197-.0005 1.5734-.0262.3674-.0251.5585-.0707.692-.126.49-.203.8794-.5924 1.0824-1.0824.0553-.1335.1009-.3246.126-.692C10.9995 8.697 11 8.2126 11 7.5v-3c0-.7126-.0005-1.197-.0262-1.5734-.0251-.3675-.0707-.5585-.126-.692a2.0002 2.0002 0 00-1.0824-1.0824c-.1335-.0553-.3246-.1009-.692-.126C8.697 1.0005 8.2126 1 7.5 1zm-7.2716.852C0 2.4032 0 3.1021 0 4.5v3c0 1.3978 0 2.0967.2284 2.6481a2.9999 2.9999 0 001.6236 1.6235C2.4032 12 3.1021 12 4.5 12h3c1.3978 0 2.0967 0 2.6481-.2284a2.9997 2.9997 0 001.6235-1.6235C12 9.5967 12 8.8978 12 7.5v-3c0-1.3978 0-2.0967-.2284-2.648A2.9999 2.9999 0 0010.1481.2284C9.5967 0 8.8978 0 7.5 0h-3C3.1022 0 2.4033 0 1.852.2284A3 3 0 00.2284 1.852z",
+    fill: "#999"
+  }), /*#__PURE__*/React$1.createElement("path", {
+    d: "M5.2929 6.707l-3 3A1 1 0 002 10.4143V10.5c0 .5523.4477 1 1 1h5.864c1.4558 0 2.636-1.1802 2.636-2.636a.8787.8787 0 00-.2574-.6214l-.5355-.5355c-.3905-.3905-1.0237-.3905-1.4142 0L8.5 8.5 6.7071 6.707c-.3905-.3904-1.0237-.3904-1.4142 0z",
+    fill: "#F5F5F5"
+  }), /*#__PURE__*/React$1.createElement("path", {
+    fillRule: "evenodd",
+    clipRule: "evenodd",
+    d: "M6.3536 7.0606a.5.5 0 00-.7072 0l-3 3a.5002.5002 0 00-.1464.3536V10.5a.5.5 0 00.5.5h5.864C10.0437 11 11 10.0436 11 8.864a.3787.3787 0 00-.1109-.2678l-.5355-.5356a.5.5 0 00-.7072 0l-1.7928 1.793-.7072-.7072L7.793 8.5 6.3535 7.0606zM8.5 7.793l.4393-.4394c.5858-.5858 1.5356-.5858 2.1214 0l.5355.5356c.2585.2585.4038.6092.4038.9748C12 10.596 10.5959 12 8.864 12H3c-.8284 0-1.5-.6716-1.5-1.5v-.0858c0-.3978.158-.7794.4393-1.0607l3-3c.5858-.5858 1.5356-.5858 2.1214 0L8.5 7.793z",
+    fill: "#999"
+  }), /*#__PURE__*/React$1.createElement("path", {
+    d: "M5 4c0 .5523-.4477 1-1 1s-1-.4477-1-1 .4477-1 1-1 1 .4477 1 1z",
+    fill: "#999"
+  }));
+};
+const LayerRectangleIcon = ({
+  width = 12,
+  height = 12
+}) => {
+  return /*#__PURE__*/React$1.createElement("svg", {
+    width: width,
+    height: height,
+    viewBox: "0 0 12 12",
+    fill: "none"
+  }, /*#__PURE__*/React$1.createElement("path", {
+    d: "M0 4.5c0-1.3978 0-2.0967.2284-2.648A3 3 0 011.852.2284C2.4032 0 3.1021 0 4.5 0h3c1.3978 0 2.0967 0 2.6481.2284a2.9999 2.9999 0 011.6235 1.6236C12 2.4032 12 3.1021 12 4.5v3c0 1.3978 0 2.0967-.2284 2.6481a2.9997 2.9997 0 01-1.6235 1.6235C9.5967 12 8.8978 12 7.5 12h-3c-1.3978 0-2.0967 0-2.648-.2284a2.9999 2.9999 0 01-1.6236-1.6235C0 9.5967 0 8.8978 0 7.5v-3z",
+    fill: "#F5F5F5"
+  }), /*#__PURE__*/React$1.createElement("path", {
+    fillRule: "evenodd",
+    clipRule: "evenodd",
+    d: "M7.5 1h-3c-.7126 0-1.197.0005-1.5734.0262-.3675.0251-.5585.0707-.692.126a2 2 0 00-1.0824 1.0824c-.0553.1335-.1009.3245-.126.692C1.0005 3.303 1 3.7874 1 4.5v3c0 .7126.0005 1.197.0262 1.5734.0251.3674.0707.5585.126.692.203.49.5924.8794 1.0824 1.0824.1335.0553.3245.1009.692.126C3.303 10.9995 3.7874 11 4.5 11h3c.7126 0 1.197-.0005 1.5734-.0262.3674-.0251.5585-.0707.692-.126.49-.203.8794-.5924 1.0824-1.0824.0553-.1335.1009-.3246.126-.692C10.9995 8.697 11 8.2126 11 7.5v-3c0-.7126-.0005-1.197-.0262-1.5734-.0251-.3675-.0707-.5585-.126-.692a2.0002 2.0002 0 00-1.0824-1.0824c-.1335-.0553-.3246-.1009-.692-.126C8.697 1.0005 8.2126 1 7.5 1zm-7.2716.852C0 2.4032 0 3.1021 0 4.5v3c0 1.3978 0 2.0967.2284 2.6481a2.9999 2.9999 0 001.6236 1.6235C2.4032 12 3.1021 12 4.5 12h3c1.3978 0 2.0967 0 2.6481-.2284a2.9997 2.9997 0 001.6235-1.6235C12 9.5967 12 8.8978 12 7.5v-3c0-1.3978 0-2.0967-.2284-2.648A2.9999 2.9999 0 0010.1481.2284C9.5967 0 8.8978 0 7.5 0h-3C3.1022 0 2.4033 0 1.852.2284A3 3 0 00.2284 1.852z",
+    fill: "#999"
+  }));
+};
+const LayerSmartObjectIcon = ({
+  width = 12,
+  height = 12
+}) => {
+  return /*#__PURE__*/React$1.createElement("svg", {
+    width: width,
+    height: height,
+    viewBox: "0 0 12 12",
+    fill: "none"
+  }, /*#__PURE__*/React$1.createElement("path", {
+    d: "M3 2c0-1.1046.8954-2 2-2h3l4 4v5c0 1.1046-.8954 2-2 2H5c-1.1046 0-2-.8954-2-2V2z",
+    fill: "#F5F5F5"
+  }), /*#__PURE__*/React$1.createElement("path", {
+    d: "M7.5 1v2.5c0 .5523.4477 1 1 1h3",
+    stroke: "#999"
+  }), /*#__PURE__*/React$1.createElement("rect", {
+    x: ".5",
+    y: "6.5",
+    width: "5",
+    height: "5",
+    rx: "1",
+    fill: "#F5F5F5",
+    stroke: "#999"
+  }), /*#__PURE__*/React$1.createElement("path", {
+    fillRule: "evenodd",
+    clipRule: "evenodd",
+    d: "M7 10h3c.5523 0 1-.4477 1-1V4.4142L7.5858 1H5c-.5523 0-1 .4477-1 1v3H3V2c0-1.1046.8954-2 2-2h3l4 4v5c0 1.1046-.8954 2-2 2H7v-1z",
+    fill: "#999"
+  }));
+};
+const LayerComponentIcon = ({
+  width = 14,
+  height = 14
+}) => {
+  return /*#__PURE__*/React$1.createElement("svg", {
+    width: width,
+    height: height,
+    viewBox: "0 0 14 14",
+    fill: "none"
+  }, /*#__PURE__*/React$1.createElement("path", {
+    d: "M3.6035 10.3964c-.7703-.7703-1.3203-1.3212-1.7027-1.7924-.3768-.4644-.5535-.8078-.6167-1.1505a2.5001 2.5001 0 010-.907c.0632-.3427.2399-.6861.6167-1.1505.3824-.4712.9324-1.0221 1.7027-1.7925.7704-.7703 1.3213-1.3203 1.7925-1.7027.4644-.3768.8078-.5535 1.1505-.6167a2.5001 2.5001 0 01.907 0c.3427.0632.6861.2399 1.1505.6167.4712.3824 1.0221.9324 1.7924 1.7027.7704.7704 1.3204 1.3213 1.7028 1.7925.3768.4644.5535.8078.6167 1.1505a2.4997 2.4997 0 010 .907c-.0632.3427-.2399.6861-.6167 1.1505-.3824.4712-.9324 1.0221-1.7028 1.7924-.7703.7704-1.3212 1.3204-1.7924 1.7028-.4644.3768-.8078.5535-1.1505.6167a2.4997 2.4997 0 01-.907 0c-.3427-.0632-.6861-.2399-1.1505-.6167-.4712-.3824-1.0221-.9324-1.7925-1.7028zM10.5 3.5l-7 7M3.5 3.5l7 7",
+    stroke: "#999"
+  }));
+};
+const LayerMaskIcon = ({
+  width = 12,
+  height = 12
+}) => {
+  return /*#__PURE__*/React$1.createElement("svg", {
+    width: width,
+    height: height,
+    viewBox: "0 0 12 12",
+    fill: "none"
+  }, /*#__PURE__*/React$1.createElement("rect", {
+    width: "12",
+    height: "12",
+    rx: "6",
+    fill: "#999"
+  }), /*#__PURE__*/React$1.createElement("path", {
+    fillRule: "evenodd",
+    clipRule: "evenodd",
+    d: "M4 11.6586A5.9904 5.9904 0 006 12c3.3137 0 6-2.6863 6-6S9.3137 0 6 0a5.9903 5.9903 0 00-2 .3414C6.3304 1.1651 8 3.3876 8 6s-1.6696 4.8349-4 5.6586z",
+    fill: "#F5F5F5"
+  }), /*#__PURE__*/React$1.createElement("rect", {
+    x: ".5",
+    y: ".5",
+    width: "11",
+    height: "11",
+    rx: "5.5",
+    stroke: "#999"
+  }));
+};
+const LayerShapeModeUnionIcon = ({
+  width = 13,
+  height = 13
+}) => {
+  return /*#__PURE__*/React$1.createElement("svg", {
+    width: width,
+    height: height,
+    viewBox: "0 0 13 13",
+    fill: "none"
+  }, /*#__PURE__*/React$1.createElement("path", {
+    fillRule: "evenodd",
+    clipRule: "evenodd",
+    d: "M5 5H2c-.5523 0-1 .4477-1 1v5c0 .5523.4477 1 1 1h5c.5523 0 1-.4477 1-1V8h3c.5523 0 1-.4477 1-1V2c0-.5523-.4477-1-1-1H6c-.5523 0-1 .4477-1 1v3zM4 2c0-1.1046.8954-2 2-2h5c1.1046 0 2 .8954 2 2v5c0 1.1046-.8954 2-2 2H9v2c0 1.1046-.8954 2-2 2H2c-1.1046 0-2-.8954-2-2V6c0-1.1046.8954-2 2-2h2V2z",
+    fill: "#999"
+  }));
+};
+const LayerShapeModeSubtractIcon = ({
+  width = 13,
+  height = 13
+}) => {
+  return /*#__PURE__*/React$1.createElement("svg", {
+    width: width,
+    height: height,
+    viewBox: "0 0 13 13",
+    fill: "none"
+  }, /*#__PURE__*/React$1.createElement("path", {
+    fillRule: "evenodd",
+    clipRule: "evenodd",
+    d: "M4 4H2C.8954 4 0 4.8954 0 6v5c0 1.1046.8954 2 2 2h5c1.1046 0 2-.8954 2-2V9H6c-1.1046 0-2-.8954-2-2V4z",
+    fill: "#999"
+  }), /*#__PURE__*/React$1.createElement("rect", {
+    x: "4.5",
+    y: ".5",
+    width: "8",
+    height: "8",
+    rx: "1.5",
+    stroke: "#999"
+  }));
+};
+const LayerShapeModeIntersectIcon = ({
+  width = 13,
+  height = 13
+}) => {
+  return /*#__PURE__*/React$1.createElement("svg", {
+    width: width,
+    height: height,
+    viewBox: "0 0 13 13",
+    fill: "none"
+  }, /*#__PURE__*/React$1.createElement("path", {
+    fillRule: "evenodd",
+    clipRule: "evenodd",
+    d: "M5 5H2c-.5523 0-1 .4477-1 1v5c0 .5523.4477 1 1 1h5c.5523 0 1-.4477 1-1V8h3c.5523 0 1-.4477 1-1V2c0-.5523-.4477-1-1-1H6c-.5523 0-1 .4477-1 1v3zM4 2c0-1.1046.8954-2 2-2h5c1.1046 0 2 .8954 2 2v5c0 1.1046-.8954 2-2 2H9v2c0 1.1046-.8954 2-2 2H2c-1.1046 0-2-.8954-2-2V6c0-1.1046.8954-2 2-2h2V2z",
+    fill: "#999"
+  }), /*#__PURE__*/React$1.createElement("path", {
+    fillRule: "evenodd",
+    clipRule: "evenodd",
+    d: "M9 9H6c-1.1046 0-2-.8954-2-2V4h3c1.1046 0 2 .8954 2 2v3z",
+    fill: "#999"
+  }));
+};
+const LayerShapeModeExcludeIcon = ({
+  width = 13,
+  height = 13
+}) => {
+  return /*#__PURE__*/React$1.createElement("svg", {
+    width: width,
+    height: height,
+    viewBox: "0 0 13 13",
+    fill: "none"
+  }, /*#__PURE__*/React$1.createElement("path", {
+    fillRule: "evenodd",
+    clipRule: "evenodd",
+    d: "M9 9h2c1.1046 0 2-.8954 2-2V2c0-1.1046-.8954-2-2-2H6C4.8954 0 4 .8954 4 2v2H2C.8954 4 0 4.8954 0 6v5c0 1.1046.8954 2 2 2h5c1.1046 0 2-.8954 2-2V9zM5 5h2c.5523 0 1 .4477 1 1v2H6c-.5523 0-1-.4477-1-1V5z",
+    fill: "#999"
+  }));
+};
+const LayerItemIcon = ({
+  width = 11,
+  height = 13
+}) => {
+  return /*#__PURE__*/React$1.createElement("svg", {
+    width: width,
+    height: height,
+    viewBox: "0 0 11 13",
+    fill: "none"
+  }, /*#__PURE__*/React$1.createElement("path", {
+    d: "M5.0528 1.2236a1 1 0 01.8944 0l4 2a1 1 0 01.5528.8944v4.764a1 1 0 01-.5528.8944l-4 2a1.0004 1.0004 0 01-.8944 0l-4-2A1 1 0 01.5 8.882V4.118a1 1 0 01.5528-.8944l4-2z",
+    fill: "#F5F5F5"
+  }), /*#__PURE__*/React$1.createElement("path", {
+    fillRule: "evenodd",
+    clipRule: "evenodd",
+    d: "M4.8292.7764a1.5 1.5 0 011.3416 0l4 2A1.5 1.5 0 0111 4.118v4.764a1.5 1.5 0 01-.8292 1.3416l-4 2a1.5003 1.5003 0 01-1.3416 0l-4-2A1.5 1.5 0 010 8.882V4.118a1.5 1.5 0 01.8292-1.3416l4-2zm.8944.8944a.5.5 0 00-.4472 0l-4 2A.5.5 0 001 4.118v4.764a.5.5 0 00.2764.4472l4 2a.4999.4999 0 00.4472 0l4-2A.5.5 0 0010 8.882V4.118a.5.5 0 00-.2764-.4472l-4-2z",
+    fill: "#999"
+  }), /*#__PURE__*/React$1.createElement("path", {
+    fillRule: "evenodd",
+    clipRule: "evenodd",
+    d: "M9.382 3.5L5.5 5.441 1.618 3.5l-.3416.1708A.5.5 0 001 4.118v.191l4 2v4.882l.2764.1382a.4999.4999 0 00.4472 0L6 11.191V6.309l4-2v-.191a.5.5 0 00-.2764-.4472L9.382 3.5z",
+    fill: "#999"
+  }));
+};
+const LayerArtboardIcon = ({
+  width = 12,
+  height = 12
+}) => {
+  return /*#__PURE__*/React$1.createElement("svg", {
+    width: width,
+    height: height,
+    viewBox: "0 0 12 12",
+    fill: "none"
+  }, /*#__PURE__*/React$1.createElement("path", {
+    fillRule: "evenodd",
+    clipRule: "evenodd",
+    d: "M2.5 0a.5.5 0 01.5.5V2h6V.5a.5.5 0 011 0V2h1.5a.5.5 0 010 1H10v6h1.5a.5.5 0 010 1H10v1.5a.5.5 0 01-1 0V10H3v1.5a.5.5 0 01-1 0V10H.5a.5.5 0 010-1H2V3H.5a.5.5 0 010-1H2V.5a.5.5 0 01.5-.5zM9 9V3H3v6h6z",
+    fill: "#999"
+  }));
+};
+const LayerFXIcon = ({
+  width = 11,
+  height = 7
+}) => {
+  return /*#__PURE__*/React$1.createElement("svg", {
+    width: width,
+    height: height,
+    viewBox: `0 0 11 7`
+  }, /*#__PURE__*/React$1.createElement("path", {
+    d: "M.314 7V.7h4.041v.891H1.268v1.926H3.86v.837H1.268V7H.314zM5.324 7l1.88-3.15L5.307.7h1.107l1.359 2.268L9.095.7h1.07l-1.88 3.123L10.184 7h-1.09L7.719 4.705 6.413 7h-1.09z",
+    fill: "#333"
+  }));
+};
+const LayerFilterIcon = ({
+  width = 12,
+  height = 12
+}) => {
+  return /*#__PURE__*/React$1.createElement("svg", {
+    width: width,
+    height: height,
+    viewBox: "0 0 12 12",
+    fill: "none"
+  }, /*#__PURE__*/React$1.createElement("path", {
+    fillRule: "evenodd",
+    clipRule: "evenodd",
+    d: "M5 2h-.5c-.713 0-1.197 0-1.573.026-.368.025-.559.07-.692.126a2 2 0 00-1.083 1.083c-.055.133-.1.324-.126.692C1.001 4.303 1 4.787 1 5.5v2c0 .713 0 1.197.026 1.573.025.368.07.559.126.692a2 2 0 001.083 1.083c.133.055.324.1.692.126.376.025.86.026 1.573.026h2c.713 0 1.197 0 1.573-.026.368-.025.559-.07.692-.126a2 2 0 001.083-1.083c.055-.133.1-.324.126-.692.025-.376.026-.86.026-1.573V7h1v.5c0 1.398 0 2.097-.228 2.648a3 3 0 01-1.624 1.624C8.597 12 7.898 12 6.5 12h-2c-1.398 0-2.097 0-2.648-.228a3 3 0 01-1.624-1.624C0 9.597 0 8.898 0 7.5v-2c0-1.398 0-2.097.228-2.648a3 3 0 011.624-1.624C2.403 1 3.102 1 4.5 1H5v1z",
+    fill: "#999"
+  }), /*#__PURE__*/React$1.createElement("path", {
+    d: "M7 1c0 3.2-2.667 4-4 4 3.2 0 4 2.667 4 4 0-3.2 2.667-4 4-4-3.2 0-4-2.667-4-4z",
+    fill: "#999"
+  }), /*#__PURE__*/React$1.createElement("path", {
+    d: "M10 0c0 1.6-1.333 2-2 2 1.6 0 2 1.333 2 2 0-1.6 1.333-2 2-2-1.6 0-2-1.333-2-2z",
+    fill: "#999"
+  }));
+};
+const LayerVideoIcon = ({
+  width = 12,
+  height = 12
+}) => {
+  return /*#__PURE__*/React$1.createElement("svg", {
+    width: width,
+    height: height,
+    viewBox: "0 0 12 12"
+  }, /*#__PURE__*/React$1.createElement("rect", {
+    x: ".5",
+    y: ".5",
+    width: "11",
+    height: "11",
+    rx: "2.5",
+    fill: "#F5F5F5",
+    stroke: "#999"
+  }), /*#__PURE__*/React$1.createElement("path", {
+    d: "M4 3.883v4.234a.5.5 0 00.757.429l3.528-2.117a.5.5 0 000-.858L4.757 3.454a.5.5 0 00-.757.43z",
+    fill: "#999"
+  }));
+};
+const RecentIcon = ({
+  width = 15,
+  height = 12
+}) => {
+  return /*#__PURE__*/React$1.createElement("svg", {
+    width: width,
+    height: height,
+    viewBox: "0 0 15 12",
+    fill: "none"
+  }, /*#__PURE__*/React$1.createElement("path", {
+    fillRule: "evenodd",
+    clipRule: "evenodd",
+    d: "M9 11c2.7614 0 5-2.2386 5-5s-2.2386-5-5-5-5 2.2386-5 5H3c0-3.3137 2.6863-6 6-6s6 2.6863 6 6-2.6863 6-6 6c-1.5132 0-2.8956-.5602-3.951-1.4845l.6584-.7526C6.587 10.5332 7.739 11 9 11zM8 3v3l1 1h2V6H9V3H8z",
+    fill: "#333"
+  }), /*#__PURE__*/React$1.createElement("path", {
+    fillRule: "evenodd",
+    clipRule: "evenodd",
+    d: "M.2929 5l2.8536 2.8536.3535.3535.3535-.3536L6.7072 5H5.293L4 6.2929V6a.5.5 0 00-1 0v.2929L1.7071 5H.293z",
+    fill: "#333"
+  }));
+};
+const ResetIcon = ({
+  width = 18,
+  height = 11
+}) => {
+  return /*#__PURE__*/React$1.createElement("svg", {
+    width: width,
+    height: height,
+    viewBox: "0 0 18 11",
+    fill: "none"
+  }, /*#__PURE__*/React$1.createElement("path", {
+    d: "M13.4784 1.708C12.4765.6553 11.0618-.0008 9.4938-.0008c-3.0376 0-5.5 2.4624-5.5 5.5 0 .4869.0226.931.0663 1.336l.989-.1522c-.0357-.3506-.0553-.7433-.0553-1.1838 0-2.4853 2.0147-4.5 4.5-4.5 1.3052 0 2.4806.5557 3.3026 1.4434l.682-.7346z",
+    fill: "#333"
+  }), /*#__PURE__*/React$1.createElement("path", {
+    fillRule: "evenodd",
+    clipRule: "evenodd",
+    d: "M1 4.078a.503.503 0 010-.1577v.1578zM1.7875 5l2.3527 2.3527.3536.3536.3535-.3536L7.2001 5H5.7859l-.7921.792v-.2928A.5.5 0 004.5225 5H4.465a.5.5 0 00-.4713.4992v.2929L3.2017 5H1.7875zM5.6949 9.4764c.9873.9434 2.3254 1.5228 3.7989 1.5228 3.0375 0 5.5-2.4625 5.5-5.5 0-.0983-.0026-.196-.0077-.293h-1.0017c.0062.097.0094.1946.0094.293 0 2.4853-2.0147 4.5-4.5 4.5-1.2106 0-2.3096-.478-3.1184-1.2557l-.6805.7329z",
+    fill: "#333"
+  }), /*#__PURE__*/React$1.createElement("path", {
+    fillRule: "evenodd",
+    clipRule: "evenodd",
+    d: "M15.7875 6l-.7937-.7937v.2929h-1v-.293L13.2001 6h-1.4142l2.3543-2.3544.3536-.3535.3535.3535L17.2017 6h-1.4142z",
+    fill: "#333"
+  }));
+}; //Other
+
+const ArrowLeftIcon = ({
+  width = 9,
+  height = 7
+}) => {
+  return /*#__PURE__*/React$1.createElement("svg", {
+    width: width,
+    height: height,
+    viewBox: "0 0 9 7",
+    fill: "none"
+  }, /*#__PURE__*/React$1.createElement("defs", null), /*#__PURE__*/React$1.createElement("path", {
+    fill: "#31363A",
+    fillRule: "evenodd",
+    d: "M3.147.646a.5.5 0 01.707.708L2.207 3H8.5a.5.5 0 010 1H2.207l1.647 1.646a.5.5 0 11-.707.708l-2.5-2.5L.293 3.5l.354-.354 2.5-2.5z",
+    clipRule: "evenodd"
+  }));
+};
+const ArrowRightSecondIcon = ({
+  width = 5,
+  height = 8
+}) => {
+  return /*#__PURE__*/React$1.createElement("svg", {
+    width: width,
+    height: height,
+    viewBox: "0 0 5 8",
+    fill: "none"
+  }, /*#__PURE__*/React$1.createElement("path", {
+    d: "M1 7l3-3-3-3",
+    stroke: "#999",
+    strokeLinecap: "round"
+  }));
+}; //TO Do : delete after test
+
+const HamburgerIcon = ({
+  width = 12,
+  height = 9
+}) => {
+  return /*#__PURE__*/React$1.createElement("svg", {
+    width: width,
+    height: height,
+    viewBox: `0 0 12 9`,
+    fill: "none"
+  }, /*#__PURE__*/React$1.createElement("path", {
+    stroke: "#333",
+    strokeLinecap: "round",
+    d: "M.5.5h11M.5 4.5h11M.5 8.5h11"
+  }));
+};
+const ThumbnailIcon = ({
+  width = 9,
+  height = 9
+}) => {
+  return /*#__PURE__*/React$1.createElement("svg", {
+    width: width,
+    height: height,
+    viewBox: "0 0 9 9",
+    fill: "none"
+  }, /*#__PURE__*/React$1.createElement("defs", null), /*#__PURE__*/React$1.createElement("rect", {
+    width: "8",
+    height: "8",
+    x: ".5",
+    y: ".5",
+    stroke: "#63676C",
+    rx: "1.5"
+  }), /*#__PURE__*/React$1.createElement("path", {
+    stroke: "#B6BABD",
+    d: "M1 4.5h7M4.5 8V1"
   }));
 };
 
-export { AddMenu, Adjustment, AlignAutoHeightIcon, AlignBottomIcon, AlignBottomLineIcon, AlignCenterIcon, AlignCenterLineIcon, AlignDistributeHorizontalSpaceIcon, AlignDistributeVerticalSpaceIcon, AlignHorizontalIcon, AlignLeftIcon, AlignLineHeightIcon, AlignLineSpaceIcon, AlignRectangleIcon, AlignRightIcon, AlignTextBottomIcon, AlignTextCenterIcon, AlignTextLeftIcon, AlignTextMiddleIcon, AlignTextRightIcon, AlignTextTopIcon, AlignTopIcon, AlignTopLineIcon, AlignVerticalCenterIcon, AlignVerticalIcon, Alignment, ArrowLeftIcon, ArrowRightIcon, ArrowRightSecondIcon, ArtboardIcon, BlendHoverIcon, BlendIcon, BrushIcon, BrushesIcon, BrushesMenu, CheckIcon, ChevronArrowIcon, CrayonBrushIcon, CrossIcon, DiamondIcon, Divider, DrawArrowIcon, DrawLineIcon, EdgeAlignBottomIcon, EdgeAlignCenterHorizontalIcon, EdgeAlignCenterIcon, EdgeAlignCenterVerticalIcon, EdgeAlignLeftIcon, EdgeAlignRightIcon, EdgeAlignTopIcon, EllipseIcon, EyeIcon, EyeOffIcon, FXIcon, FileIcon, Fill, FilterIcon, FolderIcon, Fx, HamburgerIcon, Icon, IconButton, ImageIcon, InkBrushIcon, Input, Item, ItemSubtract, LayerImageIcon, LayerImagePurpleIcon, Layers, LayersIcon, LinkIcon, LinkIconVertical, LockIcon, LockedIcon, MaskIcon, Menu, MinusIcon, MockupItemIcon, Pages, PenToolsIcon, PerspectiveIcon, PlusIcon, PolygonIcon, Properties, RadiusIcon, RadiusIconFull, RectangleIcon$1 as RectangleIcon, RemoveBGIcon, ResentIcon, SearchIcon, ShapeIcon, ShapeMenu, ShapeModeExclude, ShapeModeIntersect, ShapeModeSubtract, ShapeModeUnion, ShareButton, ShareIcon, ShutterStockPremiumIcon, SmartLayout, SmartObjectIcon, SprayBrushIcon, StarIcon, Stroke, Stroke1Icon, Stroke2Icon, Stroke3Icon, Text, TextBackground, TextCamelCaseIcon, TextCapitalCaseIcon, TextIcon, TextLowerCaseIcon, TextStrikeThroughDecorationIcon, TextUnderLineDecorationIcon, ThumbnailIcon, ToolbarZoom, ToolsPanelAnimationModeIcon, ToolsPanelNoteIcon, ToolsPanelPencilIcon, ToolsPanelTextIcon, TopMenu, TreeDots, VectorIcon, VideoIcon, Visibility, VolumeIcon, VolumeMuteIcon, WrapIcon };
+export { AddEmojiIcon, AddMenu, Adjustment, AlignBottomIcon, AlignCenterIcon, AlignCenterVIcon, AlignDistributeHorizontalSpacingIcon, AlignDistributeVerticalSpacingIcon, AlignLeftIcon, AlignRightIcon, AlignTopIcon, Alignment, AlignmentLetterSpacingIcon, AlignmentLineHeightIcon, AlignmentRadiusLabelIcon, ArcIcon, ArrowLeftIcon, ArrowRightSecondIcon, BlendIcon, BlendedIcon, CheckIcon, ChevronArrowIcon, ColorPickerIcon, CommandKeyIcon, ComponentIcon, ComponentOptionsIcon, ControlKeyIcon, CopyIcon, CrossIcon, DeleteKeyIcon, Divider, EaseIcon, EdgeAlignBottomIcon, EdgeAlignCenterHorizontalIcon, EdgeAlignCenterIcon, EdgeAlignCenterVerticalIcon, EdgeAlignLeftIcon, EdgeAlignRightIcon, EdgeAlignTopIcon, EditIcon, EyeCloseIcon, EyeIcon, Fill, Fx, GridIcon, HamburgerIcon, HelpIcon, Icon, IconButton, InfoIcon, Input, Item, LayerArtboardIcon, LayerComponentIcon, LayerFXIcon, LayerFileIcon, LayerFilterIcon, LayerFolderIcon, LayerImageIcon, LayerItemIcon, LayerMaskIcon, LayerRectangleIcon, LayerShapeModeExcludeIcon, LayerShapeModeIntersectIcon, LayerShapeModeSubtractIcon, LayerShapeModeUnionIcon, LayerSmartObjectIcon, LayerTextIcon, LayerVectorIcon, LayerVideoIcon, Layers, LinkIcon, LinkedIcon, ListIcon, LockIcon, LockedIcon, MaskIcon, Menu, MiniPlusIcon, MinusIcon, NewTabIcon, OptionKeyIcon, Pages, PerspectiveIcon, PlusIcon, Properties, RadiusIcon, RecentIcon, RemoveBGIcon, ResetIcon, SearchIcon, ShapeExcludeIcon, ShapeIntersectIcon, ShapeModesIcon, ShapeSubtractIcon, ShareButton, ShiftKeyIcon, SmallChevronArrowIcon, SmartLayout, SmartObjectsIcon, Stroke, Stroke1Icon, Stroke2Icon, Stroke3Icon, Text, TextBackground, ThumbnailIcon, ToolbarZoom, ToolsPanelArtboardIcon, ToolsPanelBrushIcon, ToolsPanelBrushesIcon, ToolsPanelCrayonBrushIcon, ToolsPanelFillIcon, ToolsPanelInkBrushIcon, ToolsPanelLayersIcon, ToolsPanelMenuIcon, ToolsPanelNoteIcon, ToolsPanelPathText1Icon, ToolsPanelPathText2Icon, ToolsPanelPathText3Icon, ToolsPanelPenToolsIcon, ToolsPanelPencilIcon, ToolsPanelPlusIcon, ToolsPanelRulerIcon, ToolsPanelSelectionToolsIcon, ToolsPanelShapeEllipseIcon, ToolsPanelShapeLineArrowIcon, ToolsPanelShapeLineIcon, ToolsPanelShapePolygonIcon, ToolsPanelShapeRectangleIcon, ToolsPanelShapeRectanglesIcon, ToolsPanelShapeStarIcon, ToolsPanelShareIcon, ToolsPanelSprayBrushIcon, ToolsPanelTextIcon, ToolsPanelTextsIcon, TopMenu, Transition3DIcon, TrashIcon, TreeDotsIcon, Visibility, VolumeOffIcon, VolumeOnIcon, WrapIcon };
