@@ -168,13 +168,13 @@ const Input = ({
   }) : null, /*#__PURE__*/React$1.createElement("label", null, children ? children : label)));
 };
 
-var css_248z$N = ".iconButton-module_btn__1Xikn {\n  font-family: aktiv-grotesk, sans-serif;\n  box-sizing: border-box;\n  outline: none;\n  border-radius: 6px;\n  display: flex;\n  align-items: center;\n  justify-content: center;\n  border: 0;\n  cursor: pointer; }\n  .iconButton-module_btn__1Xikn.iconButton-module_white__6dVau {\n    background-color: #ffffff; }\n  .iconButton-module_btn__1Xikn.iconButton-module_gray__1lziB {\n    background-color: #f7f9fa; }\n  .iconButton-module_btn__1Xikn:hover, .iconButton-module_btn__1Xikn.iconButton-module_active__3ZrO_ {\n    background: #f2f4f5; }\n  .iconButton-module_btn__1Xikn.iconButton-module_active__3ZrO_ {\n    border: 1px solid #3399ff; }\n    .iconButton-module_btn__1Xikn.iconButton-module_active__3ZrO_ svg rect {\n      fill: #333333; }\n  .iconButton-module_btn__1Xikn.iconButton-module_normal__1YN9Y {\n    width: 32px;\n    height: 32px; }\n  .iconButton-module_btn__1Xikn.iconButton-module_small__1eSuR {\n    width: 24px;\n    height: 24px; }\n  .iconButton-module_btn__1Xikn:active {\n    border: 1px solid #3399ff; }\n";
-var style$J = {"btn":"iconButton-module_btn__1Xikn","white":"iconButton-module_white__6dVau","gray":"iconButton-module_gray__1lziB","active":"iconButton-module_active__3ZrO_","normal":"iconButton-module_normal__1YN9Y","small":"iconButton-module_small__1eSuR"};
+var css_248z$N = ".iconButton-module_btn__1Xikn {\n  font-family: aktiv-grotesk, sans-serif;\n  box-sizing: border-box;\n  outline: none;\n  border-radius: 6px;\n  display: flex;\n  align-items: center;\n  justify-content: center;\n  border: 0;\n  cursor: pointer; }\n  .iconButton-module_btn__1Xikn.iconButton-module_enabled__z0B1G.iconButton-module_white__6dVau {\n    background-color: #ffffff; }\n  .iconButton-module_btn__1Xikn.iconButton-module_enabled__z0B1G.iconButton-module_gray__1lziB {\n    background-color: #f7f9fa; }\n  .iconButton-module_btn__1Xikn.iconButton-module_enabled__z0B1G:hover, .iconButton-module_btn__1Xikn.iconButton-module_enabled__z0B1G.iconButton-module_active__3ZrO_ {\n    background: #f2f4f5; }\n  .iconButton-module_btn__1Xikn.iconButton-module_enabled__z0B1G.iconButton-module_active__3ZrO_ {\n    border: 1px solid #3399ff; }\n    .iconButton-module_btn__1Xikn.iconButton-module_enabled__z0B1G.iconButton-module_active__3ZrO_ svg rect {\n      fill: #333333; }\n  .iconButton-module_btn__1Xikn.iconButton-module_enabled__z0B1G:active {\n    border: 1px solid #3399ff; }\n  .iconButton-module_btn__1Xikn.iconButton-module_disable__2qvG7 {\n    background-color: transparent;\n    pointer-events: none; }\n    .iconButton-module_btn__1Xikn.iconButton-module_disable__2qvG7 svg {\n      opacity: 0.2; }\n  .iconButton-module_btn__1Xikn.iconButton-module_normal__1YN9Y {\n    width: 32px;\n    height: 32px; }\n  .iconButton-module_btn__1Xikn.iconButton-module_small__1eSuR {\n    width: 24px;\n    height: 24px; }\n";
+var style$J = {"btn":"iconButton-module_btn__1Xikn","enabled":"iconButton-module_enabled__z0B1G","white":"iconButton-module_white__6dVau","gray":"iconButton-module_gray__1lziB","active":"iconButton-module_active__3ZrO_","disable":"iconButton-module_disable__2qvG7","normal":"iconButton-module_normal__1YN9Y","small":"iconButton-module_small__1eSuR"};
 styleInject(css_248z$N);
 
 const IconButton = ({
   children,
-  disable = false,
+  disabled = false,
   isActive = false,
   onClick = null,
   className = null,
@@ -183,12 +183,14 @@ const IconButton = ({
 }) => {
   const {
     btn,
-    active
+    active,
+    enabled,
+    disable
   } = style$J;
   return /*#__PURE__*/React$1.createElement("button", {
     onClick: onClick,
-    className: `icon-btn ${btn} ${style$J[size]} ${style$J[color]} ${isActive ? active : ''} ${className ? className : ''}`,
-    disabled: disable
+    className: `icon-btn ${btn} ${style$J[size]} ${style$J[color]} ${disabled ? disable : enabled}${isActive ? active : ''} ${className ? className : ''}`,
+    disabled: disabled
   }, children);
 };
 
@@ -3176,7 +3178,7 @@ var css_248z$o = ".layers-module_layers__fa5p7 {\n  height: 100%;\n  padding: 0p
 var style$l = {"layers":"layers-module_layers__fa5p7","header":"layers-module_header__1Yi9U","layersWrapper":"layers-module_layersWrapper__2k0XD","layersItems":"layers-module_layersItems__2X5fP","layerTextIconWrapper":"layers-module_layerTextIconWrapper__DikOF","textLayerTitle":"layers-module_textLayerTitle__3KQbJ","collapseIcon":"layers-module_collapseIcon__oATlJ","transparent":"layers-module_transparent__2xG7P","blue":"layers-module_blue__1XzYO","purple":"layers-module_purple__BNpxO","red":"layers-module_red__3pWd0","orange":"layers-module_orange__ff6Qs","yellow":"layers-module_yellow__34pXd","green":"layers-module_green__1MNgt","active":"layers-module_active__RVs_S","layerActionWrapper":"layers-module_layerActionWrapper___guEN","layerIconBtn":"layers-module_layerIconBtn__3CrpY","pagesWrapper":"layers-module_pagesWrapper__GrsPs"};
 styleInject(css_248z$o);
 
-var css_248z$n = ".template_layers__3G1QW .template_rst__tree__SSUZj {\n  margin-left: -15px; }\n\n.template_layers__3G1QW .template_rst__lineHalfHorizontalRight__iLorV::before,\n.template_layers__3G1QW .template_rst__lineFullVertical__FliD6::after,\n.template_layers__3G1QW .template_rst__lineHalfVerticalTop__19PN9::after,\n.template_layers__3G1QW .template_rst__lineHalfVerticalBottom__1q18E::after {\n  display: none !important; }\n\n.template_layers__3G1QW .template_rst__lineHalfHorizontalRight__iLorV::before {\n  display: none !important; }\n\n.template_layers__3G1QW .template_rst__rtl__y6FjX.template_rst__lineHalfHorizontalRight__iLorV::before {\n  display: none !important; }\n\n.template_layers__3G1QW .template_ReactVirtualized__Grid__OD_o5.template_ReactVirtualized__List__2UndT.template_rst__virtualScrollOverride__KGLez {\n  overflow: hidden !important; }\n\n.template_layers__3G1QW .template_rst__highlightBottomLeftCorner__72Gss::before,\n.template_layers__3G1QW .template_rst__highlightBottomLeftCorner__72Gss::after,\n.template_layers__3G1QW .template_rst__rtl__y6FjX.template_rst__highlightBottomLeftCorner__72Gss::after,\n.template_layers__3G1QW .template_rst__highlightTopLeftCorner__2KlSi::before,\n.template_layers__3G1QW .template_rst__highlightLineVertical__3uK7u::before {\n  display: none; }\n\n.template_layers__3G1QW .template_rst__placeholder__15G35::before {\n  border: none; }\n\n.template_layers__3G1QW .template_rst__node__-qavO:hover::before {\n  content: '';\n  border: 1px solid #ebebeb;\n  width: calc(100% - 16px);\n  height: 34px;\n  border-radius: 8px;\n  position: absolute;\n  left: 48px;\n  z-index: 1;\n  left: 15px; }\n\n.template_layers__3G1QW .template_law__rfL42 {\n  left: initial !important;\n  right: 0; }\n\n.template_layers__3G1QW .template_rst__node__-qavO .template_rst__lineBlock__2wMRA:nth-child(1) + .template_rst__nodeContent__19chm {\n  width: calc(100% - 16px); }\n\n.template_layers__3G1QW .template_rst__node__-qavO .template_rst__lineBlock__2wMRA:nth-child(2) + .template_rst__nodeContent__19chm {\n  width: calc(100% - 32px); }\n\n.template_layers__3G1QW .template_rst__node__-qavO .template_rst__lineBlock__2wMRA:nth-child(3) + .template_rst__nodeContent__19chm {\n  width: calc(100% - 48px); }\n\n.template_layers__3G1QW .template_rst__node__-qavO .template_rst__lineBlock__2wMRA:nth-child(4) + .template_rst__nodeContent__19chm {\n  width: calc(100% - 64px); }\n\n.template_layers__3G1QW .template_rst__node__-qavO .template_rst__lineBlock__2wMRA:nth-child(5) + .template_rst__nodeContent__19chm {\n  width: calc(100% - 80px); }\n\n.template_layers__3G1QW .template_rst__node__-qavO .template_rst__lineBlock__2wMRA:nth-child(6) + .template_rst__nodeContent__19chm {\n  width: calc(100% - 96px); }\n\n.template_layers__3G1QW .template_rst__node__-qavO .template_rst__lineBlock__2wMRA:nth-child(7) + .template_rst__nodeContent__19chm {\n  width: calc(100% - 112px); }\n\n.template_layers__3G1QW .template_rst__node__-qavO .template_rst__lineBlock__2wMRA:nth-child(8) + .template_rst__nodeContent__19chm {\n  width: calc(100% - 128px); }\n\n.template_layers__3G1QW .template_rst__node__-qavO .template_rst__lineBlock__2wMRA:nth-child(9) + .template_rst__nodeContent__19chm {\n  width: calc(100% - 144px); }\n\n.template_layers__3G1QW .template_rst__node__-qavO .template_rst__lineBlock__2wMRA:nth-child(10) + .template_rst__nodeContent__19chm {\n  width: calc(100% - 160px); }\n";
+var css_248z$n = ".template_layers__3G1QW .template_rst__tree__SSUZj {\n  margin-left: -15px; }\n\n.template_layers__3G1QW .template_rst__lineHalfHorizontalRight__iLorV::before,\n.template_layers__3G1QW .template_rst__lineFullVertical__FliD6::after,\n.template_layers__3G1QW .template_rst__lineHalfVerticalTop__19PN9::after,\n.template_layers__3G1QW .template_rst__lineHalfVerticalBottom__1q18E::after {\n  display: none !important; }\n\n.template_layers__3G1QW .template_rst__lineHalfHorizontalRight__iLorV::before {\n  display: none !important; }\n\n.template_layers__3G1QW .template_rst__rtl__y6FjX.template_rst__lineHalfHorizontalRight__iLorV::before {\n  display: none !important; }\n\n.template_layers__3G1QW .template_ReactVirtualized__Grid__OD_o5.template_ReactVirtualized__List__2UndT.template_rst__virtualScrollOverride__KGLez {\n  overflow: hidden !important; }\n\n.template_layers__3G1QW .template_rst__highlightBottomLeftCorner__72Gss::before,\n.template_layers__3G1QW .template_rst__highlightBottomLeftCorner__72Gss::after,\n.template_layers__3G1QW .template_rst__rtl__y6FjX.template_rst__highlightBottomLeftCorner__72Gss::after,\n.template_layers__3G1QW .template_rst__highlightTopLeftCorner__2KlSi::before,\n.template_layers__3G1QW .template_rst__highlightLineVertical__3uK7u::before {\n  display: none; }\n\n.template_layers__3G1QW .template_rst__placeholder__15G35::before {\n  border: none; }\n\n.template_layers__3G1QW .template_rst__node__-qavO:hover::before {\n  content: '';\n  border: 1px solid #999999;\n  width: calc(100% - 16px);\n  height: 34px;\n  border-radius: 8px;\n  position: absolute;\n  left: 48px;\n  z-index: 1;\n  left: 15px; }\n\n.template_layers__3G1QW .template_law__rfL42 {\n  left: initial !important;\n  right: 0; }\n\n.template_layers__3G1QW .template_rst__node__-qavO .template_rst__lineBlock__2wMRA:nth-child(1) + .template_rst__nodeContent__19chm {\n  width: calc(100% - 16px); }\n\n.template_layers__3G1QW .template_rst__node__-qavO .template_rst__lineBlock__2wMRA:nth-child(2) + .template_rst__nodeContent__19chm {\n  width: calc(100% - 32px); }\n\n.template_layers__3G1QW .template_rst__node__-qavO .template_rst__lineBlock__2wMRA:nth-child(3) + .template_rst__nodeContent__19chm {\n  width: calc(100% - 48px); }\n\n.template_layers__3G1QW .template_rst__node__-qavO .template_rst__lineBlock__2wMRA:nth-child(4) + .template_rst__nodeContent__19chm {\n  width: calc(100% - 64px); }\n\n.template_layers__3G1QW .template_rst__node__-qavO .template_rst__lineBlock__2wMRA:nth-child(5) + .template_rst__nodeContent__19chm {\n  width: calc(100% - 80px); }\n\n.template_layers__3G1QW .template_rst__node__-qavO .template_rst__lineBlock__2wMRA:nth-child(6) + .template_rst__nodeContent__19chm {\n  width: calc(100% - 96px); }\n\n.template_layers__3G1QW .template_rst__node__-qavO .template_rst__lineBlock__2wMRA:nth-child(7) + .template_rst__nodeContent__19chm {\n  width: calc(100% - 112px); }\n\n.template_layers__3G1QW .template_rst__node__-qavO .template_rst__lineBlock__2wMRA:nth-child(8) + .template_rst__nodeContent__19chm {\n  width: calc(100% - 128px); }\n\n.template_layers__3G1QW .template_rst__node__-qavO .template_rst__lineBlock__2wMRA:nth-child(9) + .template_rst__nodeContent__19chm {\n  width: calc(100% - 144px); }\n\n.template_layers__3G1QW .template_rst__node__-qavO .template_rst__lineBlock__2wMRA:nth-child(10) + .template_rst__nodeContent__19chm {\n  width: calc(100% - 160px); }\n";
 styleInject(css_248z$n);
 
 const RowItem$1 = props => {
@@ -4291,14 +4293,16 @@ var style$i = {"alignment":"alignment-module_alignment__2yWS_","moreItems":"alig
 styleInject(css_248z$j);
 
 const Alignment = ({
-  onChange = () => {}
+  onChange = () => {},
+  disabled = false
 }) => {
   const {
     alignment,
     moreItems,
     moreItem,
     icon,
-    active
+    active,
+    disable
   } = style$i;
   const [toggleOther, setToggleOther] = useState(false); // close moreItemsMenu by click outside.
 
@@ -4314,40 +4318,47 @@ const Alignment = ({
     return () => window.removeEventListener('mousedown', clickOutside);
   }, [moreItemsWrapper]);
   return /*#__PURE__*/React$1.createElement("div", {
-    className: `${alignment}`
+    className: `${alignment} ${disabled ? disable : ''}`
   }, /*#__PURE__*/React$1.createElement(IconButton, {
-    onClick: () => onChange('left')
+    onClick: () => onChange('left'),
+    disabled: disabled
   }, /*#__PURE__*/React$1.createElement(AlignLeftIcon$1, {
     width: 12,
     height: 12
   })), /*#__PURE__*/React$1.createElement(IconButton, {
-    onClick: () => onChange('center')
+    onClick: () => onChange('center'),
+    disabled: disabled
   }, /*#__PURE__*/React$1.createElement(AlignCenterIcon$1, {
     width: 12,
     height: 12
   })), /*#__PURE__*/React$1.createElement(IconButton, {
-    onClick: () => onChange('right')
+    onClick: () => onChange('right'),
+    disabled: disabled
   }, /*#__PURE__*/React$1.createElement(AlignRightIcon$1, {
     width: 12,
     height: 12
   })), /*#__PURE__*/React$1.createElement(IconButton, {
-    onClick: () => onChange('top')
+    onClick: () => onChange('top'),
+    disabled: disabled
   }, /*#__PURE__*/React$1.createElement(AlignTopIcon$1, {
     width: 12,
     height: 12
   })), /*#__PURE__*/React$1.createElement(IconButton, {
-    onClick: () => onChange('centerV')
+    onClick: () => onChange('centerV'),
+    disabled: disabled
   }, /*#__PURE__*/React$1.createElement(AlignCenterVIcon$1, {
     width: 12,
     height: 12
   })), /*#__PURE__*/React$1.createElement(IconButton, {
-    onClick: () => onChange('bottom')
+    onClick: () => onChange('bottom'),
+    disabled: disabled
   }, /*#__PURE__*/React$1.createElement(AlignBottomIcon$1, {
     width: 12,
     height: 12
   })), /*#__PURE__*/React$1.createElement("div", {
     ref: moreItemsWrapper
   }, /*#__PURE__*/React$1.createElement(IconButton, {
+    disabled: disabled,
     isActive: toggleOther,
     onClick: () => {
       setToggleOther(!toggleOther);
