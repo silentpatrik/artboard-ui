@@ -3,9 +3,9 @@ import { v4 } from 'uuid';
 import Scrollbars, { Scrollbars as Scrollbars$1 } from 'react-custom-scrollbars';
 import { Tooltip } from 'react-tippy';
 import 'react-tippy/dist/tippy.css';
-import SortableTree, { isDescendant, changeNodeAtPath as changeNodeAtPath$1, addNodeUnderParent } from 'react-sortable-tree';
+import SortableTree, { isDescendant, changeNodeAtPath, addNodeUnderParent } from 'react-sortable-tree';
 import 'react-sortable-tree/style.css';
-import { isDescendant as isDescendant$1, changeNodeAtPath, removeNodeAtPath } from 'react-sortable-tree/dist/index.esm';
+import { isDescendant as isDescendant$1, changeNodeAtPath as changeNodeAtPath$1, removeNodeAtPath } from 'react-sortable-tree/dist/index.esm';
 import { SketchPicker } from 'react-color';
 
 const calculate = (val1, val2, operation) => {
@@ -3172,7 +3172,7 @@ function classnames$1(...classes) {
   return classes.filter(Boolean).join(' ');
 }
 
-var css_248z$o = ".layers-module_layers__fa5p7 {\n  width: 240px;\n  height: 100%;\n  padding: 0px 8px;\n  position: absolute;\n  border-top: 1px solid #ebebeb;\n  border-left: 1px solid #ebebeb;\n  left: 40px;\n  top: 40px;\n  display: flex;\n  flex-direction: column;\n  justify-content: left;\n  background: #ffffff;\n  z-index: 1;\n  overflow-x: hidden; }\n  .layers-module_layers__fa5p7 * {\n    font-family: Aktiv Grotesk, sans-serif;\n    box-sizing: border-box;\n    cursor: pointer;\n    user-select: none; }\n  .layers-module_layers__fa5p7 .layers-module_header__1Yi9U {\n    width: 224px;\n    height: 40px;\n    display: flex;\n    align-items: center;\n    justify-content: start;\n    padding: 8px; }\n    .layers-module_layers__fa5p7 .layers-module_header__1Yi9U label {\n      width: 38px;\n      height: 16px;\n      font-size: 12px;\n      line-height: 16px;\n      font-weight: 600;\n      display: flex;\n      align-items: center;\n      color: #333333; }\n  .layers-module_layers__fa5p7 .layers-module_layersWrapper__2k0XD {\n    height: 70%;\n    overflow-x: hidden; }\n    .layers-module_layers__fa5p7 .layers-module_layersWrapper__2k0XD .layers-module_layersItems__2X5fP {\n      position: relative;\n      width: 100%;\n      height: 32px;\n      display: flex;\n      box-sizing: border-box;\n      align-items: center;\n      overflow: hidden;\n      border-radius: 8px;\n      justify-content: stretch;\n      z-index: 5; }\n      .layers-module_layers__fa5p7 .layers-module_layersWrapper__2k0XD .layers-module_layersItems__2X5fP .layers-module_layerTextIconWrapper__DikOF {\n        position: relative;\n        display: flex;\n        align-items: center;\n        height: 32px;\n        width: 100%;\n        height: 16px; }\n        .layers-module_layers__fa5p7 .layers-module_layersWrapper__2k0XD .layers-module_layersItems__2X5fP .layers-module_layerTextIconWrapper__DikOF .layers-module_textLayerTitle__3KQbJ {\n          display: flex;\n          align-items: baseline; }\n          .layers-module_layers__fa5p7 .layers-module_layersWrapper__2k0XD .layers-module_layersItems__2X5fP .layers-module_layerTextIconWrapper__DikOF .layers-module_textLayerTitle__3KQbJ .layers-module_collapseIcon__oATlJ {\n            position: relative;\n            z-index: 300;\n            padding: 8px; }\n            .layers-module_layers__fa5p7 .layers-module_layersWrapper__2k0XD .layers-module_layersItems__2X5fP .layers-module_layerTextIconWrapper__DikOF .layers-module_textLayerTitle__3KQbJ .layers-module_collapseIcon__oATlJ svg {\n              margin: 0; }\n        .layers-module_layers__fa5p7 .layers-module_layersWrapper__2k0XD .layers-module_layersItems__2X5fP .layers-module_layerTextIconWrapper__DikOF svg {\n          margin-left: 7px; }\n        .layers-module_layers__fa5p7 .layers-module_layersWrapper__2k0XD .layers-module_layersItems__2X5fP .layers-module_layerTextIconWrapper__DikOF::before {\n          content: '';\n          width: 2px;\n          height: 16px;\n          border-radius: 2px;\n          display: flex;\n          background-color: transparent; }\n        .layers-module_layers__fa5p7 .layers-module_layersWrapper__2k0XD .layers-module_layersItems__2X5fP .layers-module_layerTextIconWrapper__DikOF.layers-module_transparent__2xG7P::before {\n          background-color: transparent; }\n        .layers-module_layers__fa5p7 .layers-module_layersWrapper__2k0XD .layers-module_layersItems__2X5fP .layers-module_layerTextIconWrapper__DikOF.layers-module_blue__1XzYO::before {\n          background-color: #3399ff; }\n        .layers-module_layers__fa5p7 .layers-module_layersWrapper__2k0XD .layers-module_layersItems__2X5fP .layers-module_layerTextIconWrapper__DikOF.layers-module_purple__BNpxO::before {\n          background-color: #b555e5; }\n        .layers-module_layers__fa5p7 .layers-module_layersWrapper__2k0XD .layers-module_layersItems__2X5fP .layers-module_layerTextIconWrapper__DikOF.layers-module_red__3pWd0::before {\n          background-color: #ff3b30; }\n        .layers-module_layers__fa5p7 .layers-module_layersWrapper__2k0XD .layers-module_layersItems__2X5fP .layers-module_layerTextIconWrapper__DikOF.layers-module_orange__ff6Qs::before {\n          background-color: #ff9500; }\n        .layers-module_layers__fa5p7 .layers-module_layersWrapper__2k0XD .layers-module_layersItems__2X5fP .layers-module_layerTextIconWrapper__DikOF.layers-module_yellow__34pXd::before {\n          background-color: #ffcc00; }\n        .layers-module_layers__fa5p7 .layers-module_layersWrapper__2k0XD .layers-module_layersItems__2X5fP .layers-module_layerTextIconWrapper__DikOF.layers-module_green__1MNgt::before {\n          background-color: #34c759; }\n        .layers-module_layers__fa5p7 .layers-module_layersWrapper__2k0XD .layers-module_layersItems__2X5fP .layers-module_layerTextIconWrapper__DikOF.layers-module_active__RVs_S::before {\n          background-color: #ff3b30; }\n        .layers-module_layers__fa5p7 .layers-module_layersWrapper__2k0XD .layers-module_layersItems__2X5fP .layers-module_layerTextIconWrapper__DikOF label {\n          font-size: 11px;\n          line-height: 16px;\n          display: flex;\n          align-items: center;\n          color: #333333;\n          margin-left: 10px; }\n          .layers-module_layers__fa5p7 .layers-module_layersWrapper__2k0XD .layers-module_layersItems__2X5fP .layers-module_layerTextIconWrapper__DikOF label > svg {\n            transition: all 0.2s ease;\n            transform: rotate(0deg); }\n        .layers-module_layers__fa5p7 .layers-module_layersWrapper__2k0XD .layers-module_layersItems__2X5fP .layers-module_layerTextIconWrapper__DikOF input {\n          font-size: 11px;\n          line-height: 16px;\n          display: flex;\n          align-items: center;\n          color: #333333;\n          margin-left: 8px;\n          border: 0; }\n      .layers-module_layers__fa5p7 .layers-module_layersWrapper__2k0XD .layers-module_layersItems__2X5fP:hover .layers-module_layerActionWrapper___guEN {\n        opacity: 1; }\n      .layers-module_layers__fa5p7 .layers-module_layersWrapper__2k0XD .layers-module_layersItems__2X5fP .layers-module_layerActionWrapper___guEN {\n        display: flex;\n        align-items: center;\n        position: absolute;\n        opacity: 0;\n        transition: opacity 0.1s;\n        justify-content: flex-end;\n        width: 72px;\n        transition: opacity 0.1s;\n        z-index: 150; }\n        .layers-module_layers__fa5p7 .layers-module_layersWrapper__2k0XD .layers-module_layersItems__2X5fP .layers-module_layerActionWrapper___guEN .layers-module_layerIconBtn__3CrpY {\n          align-items: center;\n          justify-content: center;\n          display: flex;\n          width: 24px;\n          height: 32px; }\n      .layers-module_layers__fa5p7 .layers-module_layersWrapper__2k0XD .layers-module_layersItems__2X5fP:focus {\n        content: '';\n        border: 1px solid #ebebeb;\n        width: 224px;\n        height: 32px;\n        border-radius: 8px;\n        position: fixed;\n        left: 48px; }\n  .layers-module_layers__fa5p7 .layers-module_pagesWrapper__GrsPs {\n    box-sizing: border-box; }\n  .layers-module_layers__fa5p7 [type='text']:focus,\n  .layers-module_layers__fa5p7 [type='password']:focus,\n  .layers-module_layers__fa5p7 [type='number']:focus,\n  .layers-module_layers__fa5p7 [type='email']:focus,\n  .layers-module_layers__fa5p7 [type='search']:focus {\n    color: #31363a;\n    font-style: italic;\n    font-weight: 600; }\n";
+var css_248z$o = ".layers-module_layers__fa5p7 {\n  height: 100%;\n  padding: 0px 8px;\n  display: flex;\n  flex-direction: column;\n  justify-content: left;\n  z-index: 1;\n  overflow-x: hidden; }\n  .layers-module_layers__fa5p7 * {\n    font-family: Aktiv Grotesk, sans-serif;\n    box-sizing: border-box;\n    cursor: pointer;\n    user-select: none; }\n  .layers-module_layers__fa5p7 .layers-module_header__1Yi9U {\n    width: 224px;\n    height: 40px;\n    display: flex;\n    align-items: center;\n    justify-content: start;\n    padding: 8px; }\n    .layers-module_layers__fa5p7 .layers-module_header__1Yi9U label {\n      width: 38px;\n      height: 16px;\n      font-size: 12px;\n      line-height: 16px;\n      font-weight: 600;\n      display: flex;\n      align-items: center;\n      color: #333333; }\n  .layers-module_layers__fa5p7 .layers-module_layersWrapper__2k0XD {\n    height: 100%; }\n    .layers-module_layers__fa5p7 .layers-module_layersWrapper__2k0XD .layers-module_layersItems__2X5fP {\n      position: relative;\n      width: 100%;\n      height: 32px;\n      display: flex;\n      box-sizing: border-box;\n      align-items: center;\n      overflow: hidden;\n      border-radius: 8px;\n      justify-content: stretch;\n      z-index: 5; }\n      .layers-module_layers__fa5p7 .layers-module_layersWrapper__2k0XD .layers-module_layersItems__2X5fP .layers-module_layerTextIconWrapper__DikOF {\n        position: relative;\n        display: flex;\n        align-items: center;\n        height: 32px;\n        width: 100%;\n        height: 16px; }\n        .layers-module_layers__fa5p7 .layers-module_layersWrapper__2k0XD .layers-module_layersItems__2X5fP .layers-module_layerTextIconWrapper__DikOF .layers-module_textLayerTitle__3KQbJ {\n          display: flex;\n          align-items: baseline; }\n          .layers-module_layers__fa5p7 .layers-module_layersWrapper__2k0XD .layers-module_layersItems__2X5fP .layers-module_layerTextIconWrapper__DikOF .layers-module_textLayerTitle__3KQbJ .layers-module_collapseIcon__oATlJ {\n            position: relative;\n            z-index: 300;\n            padding: 8px; }\n            .layers-module_layers__fa5p7 .layers-module_layersWrapper__2k0XD .layers-module_layersItems__2X5fP .layers-module_layerTextIconWrapper__DikOF .layers-module_textLayerTitle__3KQbJ .layers-module_collapseIcon__oATlJ svg {\n              margin: 0; }\n        .layers-module_layers__fa5p7 .layers-module_layersWrapper__2k0XD .layers-module_layersItems__2X5fP .layers-module_layerTextIconWrapper__DikOF svg {\n          margin-left: 7px; }\n        .layers-module_layers__fa5p7 .layers-module_layersWrapper__2k0XD .layers-module_layersItems__2X5fP .layers-module_layerTextIconWrapper__DikOF::before {\n          content: '';\n          width: 2px;\n          height: 16px;\n          border-radius: 2px;\n          display: flex;\n          background-color: transparent; }\n        .layers-module_layers__fa5p7 .layers-module_layersWrapper__2k0XD .layers-module_layersItems__2X5fP .layers-module_layerTextIconWrapper__DikOF.layers-module_transparent__2xG7P::before {\n          background-color: transparent; }\n        .layers-module_layers__fa5p7 .layers-module_layersWrapper__2k0XD .layers-module_layersItems__2X5fP .layers-module_layerTextIconWrapper__DikOF.layers-module_blue__1XzYO::before {\n          background-color: #3399ff; }\n        .layers-module_layers__fa5p7 .layers-module_layersWrapper__2k0XD .layers-module_layersItems__2X5fP .layers-module_layerTextIconWrapper__DikOF.layers-module_purple__BNpxO::before {\n          background-color: #b555e5; }\n        .layers-module_layers__fa5p7 .layers-module_layersWrapper__2k0XD .layers-module_layersItems__2X5fP .layers-module_layerTextIconWrapper__DikOF.layers-module_red__3pWd0::before {\n          background-color: #ff3b30; }\n        .layers-module_layers__fa5p7 .layers-module_layersWrapper__2k0XD .layers-module_layersItems__2X5fP .layers-module_layerTextIconWrapper__DikOF.layers-module_orange__ff6Qs::before {\n          background-color: #ff9500; }\n        .layers-module_layers__fa5p7 .layers-module_layersWrapper__2k0XD .layers-module_layersItems__2X5fP .layers-module_layerTextIconWrapper__DikOF.layers-module_yellow__34pXd::before {\n          background-color: #ffcc00; }\n        .layers-module_layers__fa5p7 .layers-module_layersWrapper__2k0XD .layers-module_layersItems__2X5fP .layers-module_layerTextIconWrapper__DikOF.layers-module_green__1MNgt::before {\n          background-color: #34c759; }\n        .layers-module_layers__fa5p7 .layers-module_layersWrapper__2k0XD .layers-module_layersItems__2X5fP .layers-module_layerTextIconWrapper__DikOF.layers-module_active__RVs_S::before {\n          background-color: #ff3b30; }\n        .layers-module_layers__fa5p7 .layers-module_layersWrapper__2k0XD .layers-module_layersItems__2X5fP .layers-module_layerTextIconWrapper__DikOF label {\n          font-size: 11px;\n          line-height: 16px;\n          display: flex;\n          align-items: center;\n          color: #333333;\n          margin-left: 10px; }\n          .layers-module_layers__fa5p7 .layers-module_layersWrapper__2k0XD .layers-module_layersItems__2X5fP .layers-module_layerTextIconWrapper__DikOF label > svg {\n            transition: all 0.2s ease;\n            transform: rotate(0deg); }\n        .layers-module_layers__fa5p7 .layers-module_layersWrapper__2k0XD .layers-module_layersItems__2X5fP .layers-module_layerTextIconWrapper__DikOF input {\n          font-size: 11px;\n          line-height: 16px;\n          display: flex;\n          align-items: center;\n          color: #333333;\n          margin-left: 8px;\n          border: 0; }\n      .layers-module_layers__fa5p7 .layers-module_layersWrapper__2k0XD .layers-module_layersItems__2X5fP:hover .layers-module_layerActionWrapper___guEN {\n        opacity: 1; }\n      .layers-module_layers__fa5p7 .layers-module_layersWrapper__2k0XD .layers-module_layersItems__2X5fP .layers-module_layerActionWrapper___guEN {\n        display: flex;\n        align-items: center;\n        position: absolute;\n        opacity: 0;\n        transition: opacity 0.1s;\n        justify-content: flex-end;\n        width: 72px;\n        transition: opacity 0.1s;\n        z-index: 150; }\n        .layers-module_layers__fa5p7 .layers-module_layersWrapper__2k0XD .layers-module_layersItems__2X5fP .layers-module_layerActionWrapper___guEN .layers-module_layerIconBtn__3CrpY {\n          align-items: center;\n          justify-content: center;\n          display: flex;\n          width: 24px;\n          height: 32px; }\n      .layers-module_layers__fa5p7 .layers-module_layersWrapper__2k0XD .layers-module_layersItems__2X5fP:focus {\n        content: '';\n        border: 1px solid #ebebeb;\n        width: 224px;\n        height: 32px;\n        border-radius: 8px;\n        position: fixed;\n        left: 48px; }\n  .layers-module_layers__fa5p7 .layers-module_pagesWrapper__GrsPs {\n    box-sizing: border-box; }\n  .layers-module_layers__fa5p7 [type='text']:focus,\n  .layers-module_layers__fa5p7 [type='password']:focus,\n  .layers-module_layers__fa5p7 [type='number']:focus,\n  .layers-module_layers__fa5p7 [type='email']:focus,\n  .layers-module_layers__fa5p7 [type='search']:focus {\n    color: #31363a;\n    font-style: italic;\n    font-weight: 600; }\n";
 var style$l = {"layers":"layers-module_layers__fa5p7","header":"layers-module_header__1Yi9U","layersWrapper":"layers-module_layersWrapper__2k0XD","layersItems":"layers-module_layersItems__2X5fP","layerTextIconWrapper":"layers-module_layerTextIconWrapper__DikOF","textLayerTitle":"layers-module_textLayerTitle__3KQbJ","collapseIcon":"layers-module_collapseIcon__oATlJ","transparent":"layers-module_transparent__2xG7P","blue":"layers-module_blue__1XzYO","purple":"layers-module_purple__BNpxO","red":"layers-module_red__3pWd0","orange":"layers-module_orange__ff6Qs","yellow":"layers-module_yellow__34pXd","green":"layers-module_green__1MNgt","active":"layers-module_active__RVs_S","layerActionWrapper":"layers-module_layerActionWrapper___guEN","layerIconBtn":"layers-module_layerIconBtn__3CrpY","pagesWrapper":"layers-module_pagesWrapper__GrsPs"};
 styleInject(css_248z$o);
 
@@ -3397,8 +3397,8 @@ const RowItem$1 = props => {
       ...style
     }
   }, /*#__PURE__*/React$1.createElement("div", {
-    className: `${layerTextIconWrapper} ${style$l[node.color]}` // onClick={() => onRowClick(rowInfo)}
-    ,
+    className: `${layerTextIconWrapper} ${style$l[node.color]}`,
+    onClick: () => onRowClick(node),
     onDoubleClick: () => {
       setEditTitle(true);
     }
@@ -3450,409 +3450,41 @@ class ArtboardStudioLayersTheme extends Component {
 
 }
 
-// very simple className utility for creating a classname string...
-// Falsy arguments are ignored:
-//
-// const active = true
-// const className = classnames(
-//    "class1",
-//    !active && "class2",
-//    active && "class3"
-// ); // returns -> class1 class3";
-//
-function classnames(...classes) {
-  // Use Boolean constructor as a filter callback
-  // Allows for loose type truthy/falsey checks
-  // Boolean("") === false;
-  // Boolean(false) === false;
-  // Boolean(undefined) === false;
-  // Boolean(null) === false;
-  // Boolean(0) === false;
-  // Boolean("classname") === true;
-  return classes.filter(Boolean).join(' ');
-}
-
-var css_248z$m = ".template_pages__1jMos {\n  height: 100%; }\n  .template_pages__1jMos .template_rst__tree__1Bion {\n    margin-left: -15px; }\n  .template_pages__1jMos .template_rst__lineHalfHorizontalRight__3Twe5::before,\n  .template_pages__1jMos .template_rst__lineFullVertical__2cVYe::after,\n  .template_pages__1jMos .template_rst__lineHalfVerticalTop__mrC0u::after,\n  .template_pages__1jMos .template_rst__lineHalfVerticalBottom__37jIB::after {\n    display: none !important; }\n  .template_pages__1jMos .template_rst__lineHalfHorizontalRight__3Twe5::before {\n    display: none !important; }\n  .template_pages__1jMos .template_rst__rtl__2Mec1.template_rst__lineHalfHorizontalRight__3Twe5::before {\n    display: none !important; }\n  .template_pages__1jMos .template_ReactVirtualized__Grid__3VrLM.template_ReactVirtualized__List__3m4ch.template_rst__virtualScrollOverride__1BfFC {\n    overflow: hidden !important; }\n  .template_pages__1jMos .template_rst__highlightBottomLeftCorner__298To::before,\n  .template_pages__1jMos .template_rst__highlightBottomLeftCorner__298To::after,\n  .template_pages__1jMos .template_rst__rtl__2Mec1.template_rst__highlightBottomLeftCorner__298To::after,\n  .template_pages__1jMos .template_rst__highlightTopLeftCorner__35fXI::before,\n  .template_pages__1jMos .template_rst__highlightLineVertical__3Ab_H::before {\n    display: none; }\n  .template_pages__1jMos .template_rst__placeholder__208EO::before {\n    border: none; }\n  .template_pages__1jMos .template_rst__nodeContent__3orKy {\n    width: 100%; }\n";
-styleInject(css_248z$m);
-
-var css_248z$l = ".pages-module_pages__1NKWH {\n  position: relative;\n  z-index: 2;\n  width: 100%; }\n  .pages-module_pages__1NKWH * {\n    font-family: Aktiv Grotesk, sans-serif;\n    box-sizing: border-box;\n    cursor: pointer;\n    user-select: none; }\n  .pages-module_pages__1NKWH .pages-module_header__2TqxH {\n    height: 40px;\n    display: flex;\n    border-top: 1px solid #f5f5f5;\n    align-items: center;\n    justify-content: space-between;\n    padding: 8px 0 8px 8px; }\n    .pages-module_pages__1NKWH .pages-module_header__2TqxH label {\n      width: 38px;\n      height: 16px;\n      font-size: 12px;\n      line-height: 16px;\n      font-weight: 600;\n      display: flex;\n      align-items: center;\n      color: #333333; }\n    .pages-module_pages__1NKWH .pages-module_header__2TqxH .pages-module_actionButton__3sh81 {\n      width: 32px;\n      height: 32px; }\n  .pages-module_pages__1NKWH .pages-module_pagesWrapper__v5A2W {\n    height: 30%;\n    overflow-x: hidden; }\n    .pages-module_pages__1NKWH .pages-module_pagesWrapper__v5A2W .pages-module_pageRowWrapper__1LcDF {\n      width: calc(100% - 16px);\n      height: 32px;\n      padding: 8px 0 8px 8px;\n      display: flex;\n      align-items: center;\n      justify-content: left; }\n      .pages-module_pages__1NKWH .pages-module_pagesWrapper__v5A2W .pages-module_pageRowWrapper__1LcDF::before {\n        content: '';\n        width: 2px;\n        height: 16px;\n        border-radius: 2px;\n        display: flex;\n        background-color: transparent;\n        margin-right: 5px; }\n      .pages-module_pages__1NKWH .pages-module_pagesWrapper__v5A2W .pages-module_pageRowWrapper__1LcDF.pages-module_transparent__3qgyg::before {\n        background-color: transparent; }\n      .pages-module_pages__1NKWH .pages-module_pagesWrapper__v5A2W .pages-module_pageRowWrapper__1LcDF.pages-module_blue__2gODu::before {\n        background-color: #3399ff; }\n      .pages-module_pages__1NKWH .pages-module_pagesWrapper__v5A2W .pages-module_pageRowWrapper__1LcDF.pages-module_purple__m7hks::before {\n        background-color: #b555e5; }\n      .pages-module_pages__1NKWH .pages-module_pagesWrapper__v5A2W .pages-module_pageRowWrapper__1LcDF.pages-module_red__wT5J7::before {\n        background-color: #ff3b30; }\n      .pages-module_pages__1NKWH .pages-module_pagesWrapper__v5A2W .pages-module_pageRowWrapper__1LcDF.pages-module_orange__2_YOS::before {\n        background-color: #ff9500; }\n      .pages-module_pages__1NKWH .pages-module_pagesWrapper__v5A2W .pages-module_pageRowWrapper__1LcDF.pages-module_yellow__24jeo::before {\n        background-color: #ffcc00; }\n      .pages-module_pages__1NKWH .pages-module_pagesWrapper__v5A2W .pages-module_pageRowWrapper__1LcDF.pages-module_green__1j1qZ::before {\n        background-color: #34c759; }\n      .pages-module_pages__1NKWH .pages-module_pagesWrapper__v5A2W .pages-module_pageRowWrapper__1LcDF.pages-module_active__7emcz::before {\n        background-color: #ff3b30; }\n      .pages-module_pages__1NKWH .pages-module_pagesWrapper__v5A2W .pages-module_pageRowWrapper__1LcDF:hover {\n        border-radius: 8px;\n        background: #f5f5f5; }\n      .pages-module_pages__1NKWH .pages-module_pagesWrapper__v5A2W .pages-module_pageRowWrapper__1LcDF .pages-module_pageName__18Uwq {\n        display: flex;\n        align-items: center; }\n        .pages-module_pages__1NKWH .pages-module_pagesWrapper__v5A2W .pages-module_pageRowWrapper__1LcDF .pages-module_pageName__18Uwq label {\n          color: #333333;\n          font-size: 11px;\n          line-height: 16px; }\n        .pages-module_pages__1NKWH .pages-module_pagesWrapper__v5A2W .pages-module_pageRowWrapper__1LcDF .pages-module_pageName__18Uwq input {\n          font-size: 11px;\n          line-height: 16px;\n          display: flex;\n          align-items: center;\n          color: #333333;\n          margin: -2px;\n          border: 0; }\n      .pages-module_pages__1NKWH .pages-module_pagesWrapper__v5A2W .pages-module_pageRowWrapper__1LcDF .pages-module_icon__3_8-9 {\n        width: 32px;\n        height: 32px;\n        display: flex;\n        align-items: center;\n        justify-content: center;\n        box-sizing: #f5f5f5; }\n        .pages-module_pages__1NKWH .pages-module_pagesWrapper__v5A2W .pages-module_pageRowWrapper__1LcDF .pages-module_icon__3_8-9 svg {\n          stroke: #999999; }\n  .pages-module_pages__1NKWH [type='text']:focus,\n  .pages-module_pages__1NKWH [type='password']:focus,\n  .pages-module_pages__1NKWH [type='number']:focus,\n  .pages-module_pages__1NKWH [type='email']:focus,\n  .pages-module_pages__1NKWH [type='search']:focus {\n    color: #31363a;\n    font-style: normal;\n    font-weight: 600; }\n";
-var style$k = {"pages":"pages-module_pages__1NKWH","header":"pages-module_header__2TqxH","actionButton":"pages-module_actionButton__3sh81","pagesWrapper":"pages-module_pagesWrapper__v5A2W","pageRowWrapper":"pages-module_pageRowWrapper__1LcDF","transparent":"pages-module_transparent__3qgyg","blue":"pages-module_blue__2gODu","purple":"pages-module_purple__m7hks","red":"pages-module_red__wT5J7","orange":"pages-module_orange__2_YOS","yellow":"pages-module_yellow__24jeo","green":"pages-module_green__1j1qZ","active":"pages-module_active__7emcz","pageName":"pages-module_pageName__18Uwq","icon":"pages-module_icon__3_8-9"};
-styleInject(css_248z$l);
-
-const RowItem = props => {
-  const {
-    scaffoldBlockPxWidth,
-    toggleChildrenVisibility,
-    connectDragPreview,
-    connectDragSource,
-    isDragging,
-    canDrop,
-    canDrag,
-    node,
-    // title,
-    subtitle,
-    draggedNode,
-    path,
-    treeIndex,
-    isSearchMatch,
-    isSearchFocus,
-    buttons,
-    className,
-    style,
-    didDrop,
-    treeId,
-    isOver,
-    // Not needed, but preserved for other renderers
-    parentNode,
-    // Needed for dndManager
-    rowDirection,
-    onRowClick,
-    rowInfo,
-    updateTitle,
-    optionAction,
-    setCopyRowInfo,
-    ...otherProps
-  } = props.data;
-  const {
-    pageRowWrapper,
-    pageName,
-    active,
-    icon
-  } = style$k;
-  const [editTitle, setEditTitle] = useState(false);
-  const [optionStyle, setOptionStyle] = useState({});
-  const [toggleOption, setToggleOption] = useState(false); // editable row false by click outside.
-
-  const labelEditWrapper = /*#__PURE__*/createRef();
-  useEffect(() => {
-    function clickOutside(e) {
-      if (labelEditWrapper.current && !labelEditWrapper.current.contains(e.target)) {
-        setEditTitle(false);
-      }
-    }
-
-    window.addEventListener('mousedown', clickOutside);
-    return () => window.removeEventListener('mousedown', clickOutside);
-  }, [labelEditWrapper]);
-
-  const handleClick = event => {
-    event.preventDefault();
-    const {
-      screenX,
-      screenY
-    } = event;
-    let _optionStyle = {
-      position: 'fixed',
-      top: screenY - 100,
-      left: screenX - 20,
-      zIndex: 100
-    };
-    setOptionStyle(_optionStyle);
-    setToggleOption(true);
-  }; // close option by outside click.
-
-
-  const optionWrapper = /*#__PURE__*/createRef();
-  useEffect(() => {
-    function clickOutside(e) {
-      if (optionWrapper.current && !optionWrapper.current.contains(e.target)) {
-        setToggleOption(false);
-      }
-    }
-
-    window.addEventListener('mousedown', clickOutside);
-    return () => window.removeEventListener('mousedown', clickOutside);
-  }, [optionWrapper]);
-
-  const ArrowKeyUpDown = ({
-    code
-  }) => {
-    if (code === 'Enter' || code === 'NumpadEnter' || code === 'Escape') {
-      setEditTitle(false);
-    }
-  };
-
-  const optionActionManager = ({
-    option: {
-      field,
-      value
-    }
-  }) => {
-    setToggleOption(false);
-
-    if (field === 'color') {
-      optionAction({
-        field,
-        value
-      });
-    } else if (field === 'rename') {
-      setEditTitle(node.id);
-    } else if (field === 'duplicate') {
-      optionAction({
-        field
-      });
-    } else if (field === 'delete') {
-      optionAction({
-        field
-      });
-    }
-
-    if (field === 'copy-link') {
-      optionAction({
-        field
-      });
-    }
-  }; // ⌘ Command (or Cmd)
-  // ⇧ Shift
-  // ⌥ Option (or Alt)
-  // ⌃ Control (or Ctrl)
-
-
-  const options = [{
-    label: 'Copy link to Page',
-    actionName: 'copy-link',
-    divider: true
-  }, {
-    label: 'Delete',
-    actionName: 'delete',
-    divider: false
-  }, {
-    label: 'Duplicate',
-    actionName: 'duplicate',
-    shortcut: ['Shift Ctrl D', '⇧ ⌘ D'],
-    divider: false
-  }, {
-    label: 'Rename',
-    actionName: 'rename',
-    divider: true
-  }, {
-    label: 'Label',
-    component: /*#__PURE__*/React$1.createElement(ColorsActionInMenu, {
-      onChange: color => optionActionManager({
-        option: {
-          field: color.field,
-          value: color.value
-        }
-      })
-    }),
-    divider: false
-  }];
-  const isDraggedDescendant = draggedNode && isDescendant$1(draggedNode, node);
-  const isLandingPadActive = !didDrop && isDragging;
-  return /*#__PURE__*/React$1.createElement(React$1.Fragment, null, /*#__PURE__*/React$1.createElement("div", otherProps, connectDragPreview(connectDragSource( /*#__PURE__*/React$1.createElement("div", {
-    className: classnames(isLandingPadActive && 'rst__rowLandingPad', isLandingPadActive && !canDrop && 'rst__rowCancelPad', isSearchMatch && 'rst__rowSearchMatch', isSearchFocus && 'rst__rowSearchFocus', className),
-    style: {
-      opacity: isDraggedDescendant ? 0.5 : 1,
-      ...style
-    }
-  }, /*#__PURE__*/React$1.createElement("div", {
-    className: `${pageRowWrapper}  ${style$k[node.color]} ${node.selected ? active : ''}`,
-    onContextMenu: e => handleClick(e),
-    onDoubleClick: () => {
-      setEditTitle(node.id);
-    },
-    onClick: () => onRowClick(node)
-  }, /*#__PURE__*/React$1.createElement(React$1.Fragment, null, /*#__PURE__*/React$1.createElement("div", {
-    className: pageName
-  }, editTitle !== node.id ? /*#__PURE__*/React$1.createElement("label", null, node.title) : /*#__PURE__*/React$1.createElement("input", {
-    type: "text",
-    value: node.title,
-    onKeyDown: ArrowKeyUpDown,
-    autoFocus: true,
-    ref: labelEditWrapper,
-    onChange: e => updateTitle({
-      field: 'title',
-      value: e.target.value
-    })
-  })), node.selected ? /*#__PURE__*/React$1.createElement("div", {
-    className: icon
-  }, /*#__PURE__*/React$1.createElement(CheckIcon$1, null)) : ''))), {
-    dropEffect: 'copy'
-  }))), toggleOption ? /*#__PURE__*/React$1.createElement("div", {
-    ref: optionWrapper
-  }, /*#__PURE__*/React$1.createElement(Options, {
-    data: options,
-    styles: optionStyle,
-    onItemClick: field => optionActionManager({
-      option: {
-        field: field.actionName
-      }
-    })
-  })) : null);
-};
-
-class ArtboardStudioPagesTheme extends Component {
-  render() {
-    return /*#__PURE__*/React$1.createElement(RowItem, {
-      data: this.props
-    });
-  }
-
-}
-
-const _defaultRow = [{
+const _defaultRow$1 = [{
   id: '14c92cb80-b738-4292-9562-841ca9fbcbb5',
-  title: 'Page 1',
-  selected: false,
-  color: 'red'
+  color: 'blue',
+  type: 'image',
+  title: 'Image',
+  selected: true,
+  volume: true,
+  eye: true,
+  lock: false
 }, {
   id: '298e52b0a-e89f-0795f0e83870-9e33-0795f',
-  title: 'Page 1',
+  color: 'purple',
+  type: 'video',
+  title: 'Video',
   selected: false,
-  color: 'yellow'
-}, {
-  id: '3716ae080-1288-4a86-b740-62e217ea7c8d',
-  title: 'Page 2',
-  selected: false,
-  color: 'blue'
-}, {
-  id: '42fb5d090-89f6-425c-9912-ee0d52dbbbfc',
-  title: 'Page 3',
-  selected: false,
-  color: 'transparent'
-}, {
-  id: '598ff117a-2afb-4755-aff5-42fb7c018917',
-  title: 'Page 4',
-  selected: false,
-  color: 'green'
+  volume: true,
+  eye: false,
+  lock: true,
+  isOpenChild: true,
+  children: [{
+    id: '117f3d2d9f-6e5c-40b1-9d29-b775ba0ea44',
+    color: 'transparent',
+    type: 'artboard',
+    title: 'Artboard',
+    selected: false,
+    volume: true,
+    eye: false,
+    lock: true,
+    isOpenChild: true
+  }]
 }];
-const Pages = ({
-  onChange,
-  setValue,
-  rows = _defaultRow
-}) => {
-  const {
-    pages,
-    pagesWrapper,
-    header,
-    title,
-    actionButton
-  } = style$k;
-  const [pagesRows, setPagesRows] = useState({
-    treeData: rows
-  });
-  useState([]);
-
-  const optionAction = ({
-    row,
-    option: {
-      field,
-      value
-    }
-  }) => {
-    let newNode;
-
-    if (field === 'duplicate') {
-      newNode = { ...row.node,
-        title: row.node.title + ' copy'
-      };
-      setPagesRows({
-        treeData: pagesRows.treeData.concat(newNode)
-      });
-    } else if (field === 'new') {
-      newNode = {
-        title: `New Page ${pagesRows.treeData.length + 1}`,
-        color: 'transparent',
-        selected: false
-      };
-      setPagesRows({
-        treeData: pagesRows.treeData.concat(newNode)
-      });
-    } else if (field === 'color') {
-      newNode = { ...row.node,
-        color: value
-      };
-      let tree = changeNodeAtPath({
-        treeData: pagesRows.treeData,
-        path: row.path,
-        getNodeKey: ({
-          treeIndex
-        }) => treeIndex,
-        newNode
-      });
-      setPagesRows({
-        treeData: tree
-      });
-    } else if (field === 'title') {
-      newNode = { ...row.node,
-        title: value
-      };
-      let tree = changeNodeAtPath({
-        treeData: pagesRows.treeData,
-        path: row.path,
-        getNodeKey: ({
-          treeIndex
-        }) => treeIndex,
-        newNode
-      });
-      setPagesRows({
-        treeData: tree
-      });
-    } else if (field === 'delete') {
-      let tree = removeNodeAtPath({
-        treeData: pagesRows.treeData,
-        path: row.path,
-        getNodeKey: ({
-          treeIndex
-        }) => treeIndex
-      });
-      setPagesRows({
-        treeData: tree
-      });
-    }
-  };
-
-  const canDrop = ({
-    nextParent,
-    prevPath
-  }) => {
-    if (!nextParent || !prevPath) return true;
-    return false;
-  };
-
-  return /*#__PURE__*/React$1.createElement("div", {
-    className: `pages ${pages}`
-  }, /*#__PURE__*/React$1.createElement("div", {
-    className: header
-  }, /*#__PURE__*/React$1.createElement("div", {
-    className: title
-  }, /*#__PURE__*/React$1.createElement("label", null, "Pages")), /*#__PURE__*/React$1.createElement("div", {
-    className: actionButton
-  }, /*#__PURE__*/React$1.createElement(IconButton, {
-    onClick: () => optionAction({
-      option: {
-        field: 'new'
-      }
-    })
-  }, /*#__PURE__*/React$1.createElement(PlusIcon$1, null)))), /*#__PURE__*/React$1.createElement("div", {
-    className: pagesWrapper
-  }, /*#__PURE__*/React$1.createElement(SortableTree, {
-    rowHeight: 32,
-    scaffoldBlockPxWidth: 16,
-    isVirtualized: false,
-    canDrop: canDrop,
-    treeData: pagesRows.treeData,
-    generateNodeProps: rowInfo => ({
-      onRowClick: row => onChange(row),
-      rowInfo,
-      updateTitle: option => optionAction({
-        option,
-        row: rowInfo
-      }),
-      optionAction: option => optionAction({
-        option,
-        row: rowInfo
-      })
-    }),
-    onChange: treeData => setPagesRows({
-      treeData
-    }),
-    nodeContentRenderer: ArtboardStudioPagesTheme
-  })));
-};
-
 const Layers = ({
-  styles
+  onChange = () => {},
+  styles,
+  rows = _defaultRow$1
 }) => {
   const {
     layers,
@@ -3860,27 +3492,10 @@ const Layers = ({
     layersWrapper,
     layerIconBtn
   } = style$l;
-  const [layerRows, setLayerRows] = useState([]);
+  const [layerRows, setLayerRows] = useState({
+    treeData: rows
+  });
   const [copyRowInfo, setCopyRowInfo] = useState(false);
-  const [pagesData, setPagesData] = useState(false);
-  useEffect(() => {
-    getData();
-  }, []);
-
-  const getData = () => {
-    fetch('../../../data/layers.json', {
-      headers: {
-        'Content-Type': 'application/json',
-        Accept: 'application/json'
-      }
-    }).then(function (response) {
-      return response.json();
-    }).then(function (myJson) {
-      setLayerRows({
-        treeData: myJson
-      });
-    });
-  };
 
   const updateNode = (row, field = 'selected') => {
     const unselectAllRow = () => {
@@ -3915,7 +3530,7 @@ const Layers = ({
       if (field === 'lock') newNode = { ...row.node,
         lock: !row.node.lock
       };
-      let tree = changeNodeAtPath$1({
+      let tree = changeNodeAtPath({
         treeData: layerRows.treeData,
         path: row.path,
         getNodeKey: ({
@@ -3951,7 +3566,7 @@ const Layers = ({
     let newNode = { ...rowInfo.node,
       title: value
     };
-    let tree = changeNodeAtPath$1({
+    let tree = changeNodeAtPath({
       treeData: layerRows.treeData,
       path: rowInfo.path,
       getNodeKey: ({
@@ -3995,7 +3610,7 @@ const Layers = ({
         });
       }
     } else {
-      let tree = changeNodeAtPath$1({
+      let tree = changeNodeAtPath({
         treeData: layerRows.treeData,
         path: row.path,
         getNodeKey: ({
@@ -4036,7 +3651,6 @@ const Layers = ({
     isVirtualized: false,
     canDrop: canDrop,
     treeData: layerRows.treeData,
-    onRowClick: treeData => updateNode(treeData),
     generateNodeProps: (rowInfo, path) => ({
       buttons: [rowInfo.node.type === 'image' && /*#__PURE__*/React$1.createElement("div", {
         className: layerIconBtn
@@ -4050,7 +3664,7 @@ const Layers = ({
         className: layerIconBtn,
         onClick: () => updateNode(rowInfo, 'lock')
       }, rowInfo.node.lock ? /*#__PURE__*/React$1.createElement(LockedIcon$1, null) : /*#__PURE__*/React$1.createElement(LockIcon$1, null)))],
-      onRowClick: () => updateNode(rowInfo),
+      onRowClick: row => onChange(row),
       rowInfo,
       updateTitle: row => updateTitle(row),
       optionAction: option => optionAction({
@@ -4063,14 +3677,12 @@ const Layers = ({
       treeData
     }),
     nodeContentRenderer: ArtboardStudioLayersTheme
-  })), /*#__PURE__*/React$1.createElement(Pages, {
-    onChange: setPagesData
-  }));
+  })));
 };
 
-var css_248z$k = ".properties-module_properties__VrtKX {\n  font-family: aktiv-grotesk, sans-serif;\n  background-color: #ffffff;\n  box-sizing: border-box;\n  outline: none;\n  cursor: pointer;\n  border-radius: 6px;\n  display: flex;\n  align-items: end;\n  justify-content: center;\n  flex-direction: column;\n  width: 224px;\n  padding-top: 8px; }\n  .properties-module_properties__VrtKX .properties-module_radiusDetails__TWHfU {\n    display: flex;\n    flex-direction: column; }\n    .properties-module_properties__VrtKX .properties-module_radiusDetails__TWHfU div {\n      display: flex; }\n      .properties-module_properties__VrtKX .properties-module_radiusDetails__TWHfU div input {\n        width: 28px;\n        height: 32px;\n        border: 1px solid #e8ebed;\n        outline: none;\n        padding: 4px 8px; }\n  .properties-module_properties__VrtKX .properties-module_row__2wnPk {\n    display: flex;\n    align-items: flex-start;\n    justify-content: center;\n    margin-left: 8px;\n    margin-bottom: 8px; }\n    .properties-module_properties__VrtKX .properties-module_row__2wnPk > div {\n      margin-right: 8px; }\n    .properties-module_properties__VrtKX .properties-module_row__2wnPk > div:last-child {\n      margin-right: 0; }\n    .properties-module_properties__VrtKX .properties-module_row__2wnPk .properties-module_rowAction__3mqc2 {\n      display: flex;\n      align-items: center;\n      justify-content: center; }\n";
-var style$j = {"properties":"properties-module_properties__VrtKX","radiusDetails":"properties-module_radiusDetails__TWHfU","row":"properties-module_row__2wnPk","rowAction":"properties-module_rowAction__3mqc2"};
-styleInject(css_248z$k);
+var css_248z$m = ".properties-module_properties__VrtKX {\n  font-family: aktiv-grotesk, sans-serif;\n  background-color: #ffffff;\n  box-sizing: border-box;\n  outline: none;\n  cursor: pointer;\n  border-radius: 6px;\n  display: flex;\n  align-items: end;\n  justify-content: center;\n  flex-direction: column;\n  width: 224px;\n  padding-top: 8px; }\n  .properties-module_properties__VrtKX .properties-module_radiusDetails__TWHfU {\n    display: flex;\n    flex-direction: column; }\n    .properties-module_properties__VrtKX .properties-module_radiusDetails__TWHfU div {\n      display: flex; }\n      .properties-module_properties__VrtKX .properties-module_radiusDetails__TWHfU div input {\n        width: 28px;\n        height: 32px;\n        border: 1px solid #e8ebed;\n        outline: none;\n        padding: 4px 8px; }\n  .properties-module_properties__VrtKX .properties-module_row__2wnPk {\n    display: flex;\n    align-items: flex-start;\n    justify-content: center;\n    margin-left: 8px;\n    margin-bottom: 8px; }\n    .properties-module_properties__VrtKX .properties-module_row__2wnPk > div {\n      margin-right: 8px; }\n    .properties-module_properties__VrtKX .properties-module_row__2wnPk > div:last-child {\n      margin-right: 0; }\n    .properties-module_properties__VrtKX .properties-module_row__2wnPk .properties-module_rowAction__3mqc2 {\n      display: flex;\n      align-items: center;\n      justify-content: center; }\n";
+var style$k = {"properties":"properties-module_properties__VrtKX","radiusDetails":"properties-module_radiusDetails__TWHfU","row":"properties-module_row__2wnPk","rowAction":"properties-module_rowAction__3mqc2"};
+styleInject(css_248z$m);
 
 /* eslint-disable react-hooks/exhaustive-deps */
 const Properties = ({
@@ -4092,7 +3704,7 @@ const Properties = ({
     properties,
     row,
     rowAction
-  } = style$j;
+  } = style$k;
   const [x, setX] = useState(values.x);
   const [y, setY] = useState(values.y);
   const [xChanged, setXChanged] = useState(true);
@@ -4271,6 +3883,407 @@ const Properties = ({
     isActive: radiusBtn,
     onClick: () => setRadiusBtn(!radiusBtn)
   }, /*#__PURE__*/React$1.createElement(RadiusIcon$1, null)))));
+};
+
+// very simple className utility for creating a classname string...
+// Falsy arguments are ignored:
+//
+// const active = true
+// const className = classnames(
+//    "class1",
+//    !active && "class2",
+//    active && "class3"
+// ); // returns -> class1 class3";
+//
+function classnames(...classes) {
+  // Use Boolean constructor as a filter callback
+  // Allows for loose type truthy/falsey checks
+  // Boolean("") === false;
+  // Boolean(false) === false;
+  // Boolean(undefined) === false;
+  // Boolean(null) === false;
+  // Boolean(0) === false;
+  // Boolean("classname") === true;
+  return classes.filter(Boolean).join(' ');
+}
+
+var css_248z$l = ".template_pages__1jMos {\n  height: 100%; }\n  .template_pages__1jMos .template_rst__tree__1Bion {\n    margin-left: -15px; }\n  .template_pages__1jMos .template_rst__lineHalfHorizontalRight__3Twe5::before,\n  .template_pages__1jMos .template_rst__lineFullVertical__2cVYe::after,\n  .template_pages__1jMos .template_rst__lineHalfVerticalTop__mrC0u::after,\n  .template_pages__1jMos .template_rst__lineHalfVerticalBottom__37jIB::after {\n    display: none !important; }\n  .template_pages__1jMos .template_rst__lineHalfHorizontalRight__3Twe5::before {\n    display: none !important; }\n  .template_pages__1jMos .template_rst__rtl__2Mec1.template_rst__lineHalfHorizontalRight__3Twe5::before {\n    display: none !important; }\n  .template_pages__1jMos .template_ReactVirtualized__Grid__3VrLM.template_ReactVirtualized__List__3m4ch.template_rst__virtualScrollOverride__1BfFC {\n    overflow: hidden !important; }\n  .template_pages__1jMos .template_rst__highlightBottomLeftCorner__298To::before,\n  .template_pages__1jMos .template_rst__highlightBottomLeftCorner__298To::after,\n  .template_pages__1jMos .template_rst__rtl__2Mec1.template_rst__highlightBottomLeftCorner__298To::after,\n  .template_pages__1jMos .template_rst__highlightTopLeftCorner__35fXI::before,\n  .template_pages__1jMos .template_rst__highlightLineVertical__3Ab_H::before {\n    display: none; }\n  .template_pages__1jMos .template_rst__placeholder__208EO::before {\n    border: none; }\n  .template_pages__1jMos .template_rst__nodeContent__3orKy {\n    width: 100%; }\n";
+styleInject(css_248z$l);
+
+var css_248z$k = ".pages-module_pages__1NKWH {\n  position: relative;\n  z-index: 2;\n  justify-content: flex-start;\n  align-items: center;\n  display: flex;\n  flex-direction: column;\n  height: 100%; }\n  .pages-module_pages__1NKWH * {\n    font-family: Aktiv Grotesk, sans-serif;\n    box-sizing: border-box;\n    cursor: pointer;\n    user-select: none; }\n  .pages-module_pages__1NKWH .pages-module_header__2TqxH {\n    width: 224px;\n    height: 40px;\n    display: flex;\n    border-top: 1px solid #f5f5f5;\n    align-items: center;\n    justify-content: space-between;\n    padding: 8px 0 8px 8px; }\n    .pages-module_pages__1NKWH .pages-module_header__2TqxH label {\n      width: 38px;\n      height: 16px;\n      font-size: 12px;\n      line-height: 16px;\n      font-weight: 600;\n      display: flex;\n      align-items: center;\n      color: #333333; }\n    .pages-module_pages__1NKWH .pages-module_header__2TqxH .pages-module_actionButton__3sh81 {\n      width: 32px;\n      height: 32px; }\n  .pages-module_pages__1NKWH .pages-module_pagesWrapper__v5A2W {\n    height: 100%;\n    overflow-x: hidden;\n    width: 240px; }\n    .pages-module_pages__1NKWH .pages-module_pagesWrapper__v5A2W .pages-module_pageRowWrapper__1LcDF {\n      width: calc(100% - 16px);\n      height: 32px;\n      padding: 8px 0 8px 8px;\n      display: flex;\n      align-items: center;\n      justify-content: left; }\n      .pages-module_pages__1NKWH .pages-module_pagesWrapper__v5A2W .pages-module_pageRowWrapper__1LcDF::before {\n        content: '';\n        width: 2px;\n        height: 16px;\n        border-radius: 2px;\n        display: flex;\n        background-color: transparent;\n        margin-right: 5px; }\n      .pages-module_pages__1NKWH .pages-module_pagesWrapper__v5A2W .pages-module_pageRowWrapper__1LcDF.pages-module_transparent__3qgyg::before {\n        background-color: transparent; }\n      .pages-module_pages__1NKWH .pages-module_pagesWrapper__v5A2W .pages-module_pageRowWrapper__1LcDF.pages-module_blue__2gODu::before {\n        background-color: #3399ff; }\n      .pages-module_pages__1NKWH .pages-module_pagesWrapper__v5A2W .pages-module_pageRowWrapper__1LcDF.pages-module_purple__m7hks::before {\n        background-color: #b555e5; }\n      .pages-module_pages__1NKWH .pages-module_pagesWrapper__v5A2W .pages-module_pageRowWrapper__1LcDF.pages-module_red__wT5J7::before {\n        background-color: #ff3b30; }\n      .pages-module_pages__1NKWH .pages-module_pagesWrapper__v5A2W .pages-module_pageRowWrapper__1LcDF.pages-module_orange__2_YOS::before {\n        background-color: #ff9500; }\n      .pages-module_pages__1NKWH .pages-module_pagesWrapper__v5A2W .pages-module_pageRowWrapper__1LcDF.pages-module_yellow__24jeo::before {\n        background-color: #ffcc00; }\n      .pages-module_pages__1NKWH .pages-module_pagesWrapper__v5A2W .pages-module_pageRowWrapper__1LcDF.pages-module_green__1j1qZ::before {\n        background-color: #34c759; }\n      .pages-module_pages__1NKWH .pages-module_pagesWrapper__v5A2W .pages-module_pageRowWrapper__1LcDF.pages-module_active__7emcz::before {\n        background-color: #ff3b30; }\n      .pages-module_pages__1NKWH .pages-module_pagesWrapper__v5A2W .pages-module_pageRowWrapper__1LcDF:hover {\n        border-radius: 8px;\n        background: #f5f5f5; }\n      .pages-module_pages__1NKWH .pages-module_pagesWrapper__v5A2W .pages-module_pageRowWrapper__1LcDF .pages-module_pageName__18Uwq {\n        display: flex;\n        align-items: center; }\n        .pages-module_pages__1NKWH .pages-module_pagesWrapper__v5A2W .pages-module_pageRowWrapper__1LcDF .pages-module_pageName__18Uwq label {\n          color: #333333;\n          font-size: 11px;\n          line-height: 16px; }\n        .pages-module_pages__1NKWH .pages-module_pagesWrapper__v5A2W .pages-module_pageRowWrapper__1LcDF .pages-module_pageName__18Uwq input {\n          font-size: 11px;\n          line-height: 16px;\n          display: flex;\n          align-items: center;\n          color: #333333;\n          margin: -2px;\n          border: 0; }\n      .pages-module_pages__1NKWH .pages-module_pagesWrapper__v5A2W .pages-module_pageRowWrapper__1LcDF .pages-module_icon__3_8-9 {\n        width: 32px;\n        height: 32px;\n        display: flex;\n        align-items: center;\n        justify-content: center;\n        box-sizing: #f5f5f5; }\n        .pages-module_pages__1NKWH .pages-module_pagesWrapper__v5A2W .pages-module_pageRowWrapper__1LcDF .pages-module_icon__3_8-9 svg {\n          stroke: #999999; }\n  .pages-module_pages__1NKWH [type='text']:focus,\n  .pages-module_pages__1NKWH [type='password']:focus,\n  .pages-module_pages__1NKWH [type='number']:focus,\n  .pages-module_pages__1NKWH [type='email']:focus,\n  .pages-module_pages__1NKWH [type='search']:focus {\n    color: #31363a;\n    font-style: normal;\n    font-weight: 600; }\n";
+var style$j = {"pages":"pages-module_pages__1NKWH","header":"pages-module_header__2TqxH","actionButton":"pages-module_actionButton__3sh81","pagesWrapper":"pages-module_pagesWrapper__v5A2W","pageRowWrapper":"pages-module_pageRowWrapper__1LcDF","transparent":"pages-module_transparent__3qgyg","blue":"pages-module_blue__2gODu","purple":"pages-module_purple__m7hks","red":"pages-module_red__wT5J7","orange":"pages-module_orange__2_YOS","yellow":"pages-module_yellow__24jeo","green":"pages-module_green__1j1qZ","active":"pages-module_active__7emcz","pageName":"pages-module_pageName__18Uwq","icon":"pages-module_icon__3_8-9"};
+styleInject(css_248z$k);
+
+const RowItem = props => {
+  const {
+    scaffoldBlockPxWidth,
+    toggleChildrenVisibility,
+    connectDragPreview,
+    connectDragSource,
+    isDragging,
+    canDrop,
+    canDrag,
+    node,
+    // title,
+    subtitle,
+    draggedNode,
+    path,
+    treeIndex,
+    isSearchMatch,
+    isSearchFocus,
+    buttons,
+    className,
+    style,
+    didDrop,
+    treeId,
+    isOver,
+    // Not needed, but preserved for other renderers
+    parentNode,
+    // Needed for dndManager
+    rowDirection,
+    onRowClick,
+    rowInfo,
+    updateTitle,
+    optionAction,
+    setCopyRowInfo,
+    ...otherProps
+  } = props.data;
+  const {
+    pageRowWrapper,
+    pageName,
+    active,
+    icon
+  } = style$j;
+  const [editTitle, setEditTitle] = useState(false);
+  const [optionStyle, setOptionStyle] = useState({});
+  const [toggleOption, setToggleOption] = useState(false); // editable row false by click outside.
+
+  const labelEditWrapper = /*#__PURE__*/createRef();
+  useEffect(() => {
+    function clickOutside(e) {
+      if (labelEditWrapper.current && !labelEditWrapper.current.contains(e.target)) {
+        setEditTitle(false);
+      }
+    }
+
+    window.addEventListener('mousedown', clickOutside);
+    return () => window.removeEventListener('mousedown', clickOutside);
+  }, [labelEditWrapper]);
+
+  const handleClick = event => {
+    event.preventDefault();
+    const {
+      screenX,
+      screenY
+    } = event;
+    let _optionStyle = {
+      position: 'fixed',
+      top: screenY - 100,
+      left: screenX - 20,
+      zIndex: 100
+    };
+    setOptionStyle(_optionStyle);
+    setToggleOption(true);
+  }; // close option by outside click.
+
+
+  const optionWrapper = /*#__PURE__*/createRef();
+  useEffect(() => {
+    function clickOutside(e) {
+      if (optionWrapper.current && !optionWrapper.current.contains(e.target)) {
+        setToggleOption(false);
+      }
+    }
+
+    window.addEventListener('mousedown', clickOutside);
+    return () => window.removeEventListener('mousedown', clickOutside);
+  }, [optionWrapper]);
+
+  const ArrowKeyUpDown = ({
+    code
+  }) => {
+    if (code === 'Enter' || code === 'NumpadEnter' || code === 'Escape') {
+      setEditTitle(false);
+    }
+  };
+
+  const optionActionManager = ({
+    option: {
+      field,
+      value
+    }
+  }) => {
+    setToggleOption(false);
+
+    if (field === 'color') {
+      optionAction({
+        field,
+        value
+      });
+    } else if (field === 'rename') {
+      setEditTitle(node.id);
+    } else if (field === 'duplicate') {
+      optionAction({
+        field
+      });
+    } else if (field === 'delete') {
+      optionAction({
+        field
+      });
+    }
+
+    if (field === 'copy-link') {
+      optionAction({
+        field
+      });
+    }
+  }; // ⌘ Command (or Cmd)
+  // ⇧ Shift
+  // ⌥ Option (or Alt)
+  // ⌃ Control (or Ctrl)
+
+
+  const options = [{
+    label: 'Copy link to Page',
+    actionName: 'copy-link',
+    divider: true
+  }, {
+    label: 'Delete',
+    actionName: 'delete',
+    divider: false
+  }, {
+    label: 'Duplicate',
+    actionName: 'duplicate',
+    shortcut: ['Shift Ctrl D', '⇧ ⌘ D'],
+    divider: false
+  }, {
+    label: 'Rename',
+    actionName: 'rename',
+    divider: true
+  }, {
+    label: 'Label',
+    component: /*#__PURE__*/React$1.createElement(ColorsActionInMenu, {
+      onChange: color => optionActionManager({
+        option: {
+          field: color.field,
+          value: color.value
+        }
+      })
+    }),
+    divider: false
+  }];
+  const isDraggedDescendant = draggedNode && isDescendant$1(draggedNode, node);
+  const isLandingPadActive = !didDrop && isDragging;
+  return /*#__PURE__*/React$1.createElement(React$1.Fragment, null, /*#__PURE__*/React$1.createElement("div", otherProps, connectDragPreview(connectDragSource( /*#__PURE__*/React$1.createElement("div", {
+    className: classnames(isLandingPadActive && 'rst__rowLandingPad', isLandingPadActive && !canDrop && 'rst__rowCancelPad', isSearchMatch && 'rst__rowSearchMatch', isSearchFocus && 'rst__rowSearchFocus', className),
+    style: {
+      opacity: isDraggedDescendant ? 0.5 : 1,
+      ...style
+    }
+  }, /*#__PURE__*/React$1.createElement("div", {
+    className: `${pageRowWrapper}  ${style$j[node.color]} ${node.selected ? active : ''}`,
+    onContextMenu: e => handleClick(e),
+    onDoubleClick: () => {
+      setEditTitle(node.id);
+    },
+    onClick: () => onRowClick(node)
+  }, /*#__PURE__*/React$1.createElement(React$1.Fragment, null, /*#__PURE__*/React$1.createElement("div", {
+    className: pageName
+  }, editTitle !== node.id ? /*#__PURE__*/React$1.createElement("label", null, node.title) : /*#__PURE__*/React$1.createElement("input", {
+    type: "text",
+    value: node.title,
+    onKeyDown: ArrowKeyUpDown,
+    autoFocus: true,
+    ref: labelEditWrapper,
+    onChange: e => updateTitle({
+      field: 'title',
+      value: e.target.value
+    })
+  })), node.selected ? /*#__PURE__*/React$1.createElement("div", {
+    className: icon
+  }, /*#__PURE__*/React$1.createElement(CheckIcon$1, null)) : ''))), {
+    dropEffect: 'copy'
+  }))), toggleOption ? /*#__PURE__*/React$1.createElement("div", {
+    ref: optionWrapper
+  }, /*#__PURE__*/React$1.createElement(Options, {
+    data: options,
+    styles: optionStyle,
+    onItemClick: field => optionActionManager({
+      option: {
+        field: field.actionName
+      }
+    })
+  })) : null);
+};
+
+class ArtboardStudioPagesTheme extends Component {
+  render() {
+    return /*#__PURE__*/React$1.createElement(RowItem, {
+      data: this.props
+    });
+  }
+
+}
+
+const _defaultRow = [{
+  id: '14c92cb80-b738-4292-9562-841ca9fbcbb5',
+  title: 'Page 1',
+  selected: false,
+  color: 'red'
+}, {
+  id: '298e52b0a-e89f-0795f0e83870-9e33-0795f',
+  title: 'Page 1',
+  selected: false,
+  color: 'yellow'
+}, {
+  id: '3716ae080-1288-4a86-b740-62e217ea7c8d',
+  title: 'Page 2',
+  selected: false,
+  color: 'blue'
+}, {
+  id: '42fb5d090-89f6-425c-9912-ee0d52dbbbfc',
+  title: 'Page 3',
+  selected: false,
+  color: 'transparent'
+}, {
+  id: '598ff117a-2afb-4755-aff5-42fb7c018917',
+  title: 'Page 4',
+  selected: false,
+  color: 'green'
+}];
+const Pages = ({
+  onChange,
+  setValue,
+  rows = _defaultRow
+}) => {
+  const {
+    pages,
+    pagesWrapper,
+    header,
+    title,
+    actionButton
+  } = style$j;
+  const [pagesRows, setPagesRows] = useState({
+    treeData: rows
+  });
+  useState([]);
+
+  const optionAction = ({
+    row,
+    option: {
+      field,
+      value
+    }
+  }) => {
+    let newNode;
+
+    if (field === 'duplicate') {
+      newNode = { ...row.node,
+        title: row.node.title + ' copy'
+      };
+      setPagesRows({
+        treeData: pagesRows.treeData.concat(newNode)
+      });
+    } else if (field === 'new') {
+      newNode = {
+        title: `New Page ${pagesRows.treeData.length + 1}`,
+        color: 'transparent',
+        selected: false
+      };
+      setPagesRows({
+        treeData: pagesRows.treeData.concat(newNode)
+      });
+    } else if (field === 'color') {
+      newNode = { ...row.node,
+        color: value
+      };
+      let tree = changeNodeAtPath$1({
+        treeData: pagesRows.treeData,
+        path: row.path,
+        getNodeKey: ({
+          treeIndex
+        }) => treeIndex,
+        newNode
+      });
+      setPagesRows({
+        treeData: tree
+      });
+    } else if (field === 'title') {
+      newNode = { ...row.node,
+        title: value
+      };
+      let tree = changeNodeAtPath$1({
+        treeData: pagesRows.treeData,
+        path: row.path,
+        getNodeKey: ({
+          treeIndex
+        }) => treeIndex,
+        newNode
+      });
+      setPagesRows({
+        treeData: tree
+      });
+    } else if (field === 'delete') {
+      let tree = removeNodeAtPath({
+        treeData: pagesRows.treeData,
+        path: row.path,
+        getNodeKey: ({
+          treeIndex
+        }) => treeIndex
+      });
+      setPagesRows({
+        treeData: tree
+      });
+    }
+  };
+
+  const canDrop = ({
+    nextParent,
+    prevPath
+  }) => {
+    if (!nextParent || !prevPath) return true;
+    return false;
+  };
+
+  return /*#__PURE__*/React$1.createElement("div", {
+    className: `pages ${pages}`
+  }, /*#__PURE__*/React$1.createElement("div", {
+    className: header
+  }, /*#__PURE__*/React$1.createElement("div", {
+    className: title
+  }, /*#__PURE__*/React$1.createElement("label", null, "Pages")), /*#__PURE__*/React$1.createElement("div", {
+    className: actionButton
+  }, /*#__PURE__*/React$1.createElement(IconButton, {
+    onClick: () => optionAction({
+      option: {
+        field: 'new'
+      }
+    })
+  }, /*#__PURE__*/React$1.createElement(PlusIcon$1, null)))), /*#__PURE__*/React$1.createElement("div", {
+    className: pagesWrapper
+  }, /*#__PURE__*/React$1.createElement(SortableTree, {
+    rowHeight: 32,
+    scaffoldBlockPxWidth: 16,
+    isVirtualized: false,
+    canDrop: canDrop,
+    treeData: pagesRows.treeData,
+    generateNodeProps: rowInfo => ({
+      onRowClick: row => onChange(row),
+      rowInfo,
+      updateTitle: option => optionAction({
+        option,
+        row: rowInfo
+      }),
+      optionAction: option => optionAction({
+        option,
+        row: rowInfo
+      })
+    }),
+    onChange: treeData => setPagesRows({
+      treeData
+    }),
+    nodeContentRenderer: ArtboardStudioPagesTheme
+  })));
 };
 
 var css_248z$j = ".alignment-module_alignment__2yWS_ {\n  color: #b6babd;\n  background-color: #ffffff;\n  box-sizing: border-box;\n  height: 48px;\n  width: 240px;\n  display: flex;\n  justify-content: space-between;\n  align-items: center;\n  padding: 8px;\n  position: relative; }\n  .alignment-module_alignment__2yWS_ * {\n    font-family: Aktiv Grotesk, sans-serif;\n    box-sizing: border-box;\n    user-select: none; }\n  .alignment-module_alignment__2yWS_ .alignment-module_moreItems__2qnn1 {\n    width: 198px;\n    height: 56px;\n    padding: 4px;\n    opacity: 0;\n    border-radius: 8px;\n    box-shadow: 0px 2px 4px rgba(51, 51, 51, 0.12), 0px 0px 1px #999999, 0px 12px 24px -8px rgba(51, 51, 51, 0.08);\n    display: none;\n    flex-direction: column;\n    align-items: center;\n    justify-content: space-between;\n    position: absolute;\n    top: 44px;\n    right: 8px;\n    transition: opacity 0.1s ease-in-out;\n    z-index: 1;\n    background: #ffffff; }\n    .alignment-module_alignment__2yWS_ .alignment-module_moreItems__2qnn1 .alignment-module_moreItem__3UhRt {\n      width: 190px;\n      height: 23px;\n      display: flex;\n      align-items: center;\n      justify-content: left; }\n      .alignment-module_alignment__2yWS_ .alignment-module_moreItems__2qnn1 .alignment-module_moreItem__3UhRt.alignment-module_active__38FRK {\n        background: #f5f5f5;\n        border-radius: 4px; }\n      .alignment-module_alignment__2yWS_ .alignment-module_moreItems__2qnn1 .alignment-module_moreItem__3UhRt * {\n        cursor: pointer; }\n      .alignment-module_alignment__2yWS_ .alignment-module_moreItems__2qnn1 .alignment-module_moreItem__3UhRt .alignment-module_icon__LCeUF {\n        width: 24px;\n        height: 24px;\n        display: flex;\n        align-items: center;\n        justify-content: center; }\n      .alignment-module_alignment__2yWS_ .alignment-module_moreItems__2qnn1 .alignment-module_moreItem__3UhRt label {\n        width: 150px;\n        height: 16px;\n        font-size: 11px;\n        line-height: 16px;\n        display: flex;\n        align-items: center;\n        color: #333333;\n        margin-left: 8px; }\n      .alignment-module_alignment__2yWS_ .alignment-module_moreItems__2qnn1 .alignment-module_moreItem__3UhRt:hover {\n        background: #f5f5f5;\n        border-radius: 4px; }\n    .alignment-module_alignment__2yWS_ .alignment-module_moreItems__2qnn1.alignment-module_active__38FRK {\n      opacity: 1;\n      display: flex; }\n";
