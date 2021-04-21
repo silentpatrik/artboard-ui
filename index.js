@@ -4605,17 +4605,17 @@ const defaultOption = [{
 const Visibility = ({
   type = 'white',
   option = defaultOption,
-  input = 0,
+  value = 100,
   label = '%',
-  onChangeValues
+  onChange = () => {}
 }) => {
   const {
     visibility
   } = style$g;
   const [selectedItem, setSelectedItem] = useState(option[0]);
-  const [inputState, setInputState] = useState(input);
+  const [inputState, setInputState] = useState(value);
   useEffect(() => {
-    if (onChangeValues) onChangeValues({
+    onChange({
       option: selectedItem,
       value: parseFloat(inputState)
     });
@@ -4624,12 +4624,13 @@ const Visibility = ({
     className: `${visibility} ${style$g[type]}`
   }, /*#__PURE__*/React$1.createElement(Dropdown, {
     option: option,
-    onChangeValue: setSelectedItem,
+    onChange: setSelectedItem,
     size: "medium"
   }), /*#__PURE__*/React$1.createElement(Input, {
-    onChangeValue: setInputState,
+    min: 0,
+    max: 100,
+    onChange: setInputState,
     value: inputState,
-    setValue: setInputState,
     label: label,
     size: "normal"
   }));
