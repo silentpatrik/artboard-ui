@@ -168,7 +168,7 @@ const Input = ({
   }) : null, /*#__PURE__*/React$1.createElement("label", null, children ? children : label)));
 };
 
-var css_248z$N = ".iconButton-module_btn__1Xikn {\n  font-family: aktiv-grotesk, sans-serif;\n  box-sizing: border-box;\n  outline: none;\n  border-radius: 6px;\n  display: flex;\n  align-items: center;\n  justify-content: center;\n  border: 0;\n  cursor: pointer;\n  border: 1px transparent #3399ff; }\n  .iconButton-module_btn__1Xikn.iconButton-module_enabled__z0B1G.iconButton-module_white__6dVau {\n    background-color: #ffffff; }\n  .iconButton-module_btn__1Xikn.iconButton-module_enabled__z0B1G.iconButton-module_gray__1lziB {\n    background-color: #f7f9fa; }\n  .iconButton-module_btn__1Xikn.iconButton-module_enabled__z0B1G:hover, .iconButton-module_btn__1Xikn.iconButton-module_enabled__z0B1G.iconButton-module_active__3ZrO_ {\n    background: #f2f4f5; }\n  .iconButton-module_btn__1Xikn.iconButton-module_enabled__z0B1G.iconButton-module_active__3ZrO_ {\n    border: 1px solid #3399ff; }\n    .iconButton-module_btn__1Xikn.iconButton-module_enabled__z0B1G.iconButton-module_active__3ZrO_ svg rect {\n      fill: #333333; }\n  .iconButton-module_btn__1Xikn.iconButton-module_enabled__z0B1G:active {\n    border: 1px solid #3399ff; }\n  .iconButton-module_btn__1Xikn.iconButton-module_disable__2qvG7 {\n    background-color: transparent !important;\n    pointer-events: none; }\n    .iconButton-module_btn__1Xikn.iconButton-module_disable__2qvG7 svg {\n      opacity: 0.5; }\n  .iconButton-module_btn__1Xikn.iconButton-module_normal__1YN9Y {\n    width: 32px;\n    height: 32px; }\n  .iconButton-module_btn__1Xikn.iconButton-module_small__1eSuR {\n    width: 24px;\n    height: 24px; }\n";
+var css_248z$N = ".iconButton-module_btn__1Xikn {\n  font-family: aktiv-grotesk, sans-serif;\n  box-sizing: border-box;\n  outline: none;\n  border-radius: 6px;\n  display: flex;\n  align-items: center;\n  justify-content: center;\n  border: 0;\n  cursor: pointer;\n  border: 1px solid transparent; }\n  .iconButton-module_btn__1Xikn.iconButton-module_enabled__z0B1G.iconButton-module_white__6dVau {\n    background-color: #ffffff; }\n  .iconButton-module_btn__1Xikn.iconButton-module_enabled__z0B1G.iconButton-module_gray__1lziB {\n    background-color: #f7f9fa; }\n  .iconButton-module_btn__1Xikn.iconButton-module_enabled__z0B1G:hover, .iconButton-module_btn__1Xikn.iconButton-module_enabled__z0B1G.iconButton-module_active__3ZrO_ {\n    background: #f2f4f5; }\n  .iconButton-module_btn__1Xikn.iconButton-module_enabled__z0B1G.iconButton-module_active__3ZrO_ {\n    border: 1px solid #3399ff; }\n    .iconButton-module_btn__1Xikn.iconButton-module_enabled__z0B1G.iconButton-module_active__3ZrO_ svg rect {\n      fill: #333333; }\n  .iconButton-module_btn__1Xikn.iconButton-module_enabled__z0B1G:active {\n    border: 1px solid #3399ff; }\n  .iconButton-module_btn__1Xikn.iconButton-module_disable__2qvG7 {\n    background-color: transparent !important;\n    pointer-events: none; }\n    .iconButton-module_btn__1Xikn.iconButton-module_disable__2qvG7 svg {\n      opacity: 0.5; }\n  .iconButton-module_btn__1Xikn.iconButton-module_normal__1YN9Y {\n    width: 32px;\n    height: 32px; }\n  .iconButton-module_btn__1Xikn.iconButton-module_small__1eSuR {\n    width: 24px;\n    height: 24px; }\n";
 var style$J = {"btn":"iconButton-module_btn__1Xikn","enabled":"iconButton-module_enabled__z0B1G","white":"iconButton-module_white__6dVau","gray":"iconButton-module_gray__1lziB","active":"iconButton-module_active__3ZrO_","disable":"iconButton-module_disable__2qvG7","normal":"iconButton-module_normal__1YN9Y","small":"iconButton-module_small__1eSuR"};
 styleInject(css_248z$N);
 
@@ -4294,7 +4294,8 @@ styleInject(css_248z$j);
 
 const Alignment = ({
   onChange = () => {},
-  disabled = false
+  disabled = false,
+  subMenuDisabled = false
 }) => {
   const {
     alignment,
@@ -4358,7 +4359,7 @@ const Alignment = ({
   })), /*#__PURE__*/React$1.createElement("div", {
     ref: moreItemsWrapper
   }, /*#__PURE__*/React$1.createElement(IconButton, {
-    disabled: disabled,
+    disabled: subMenuDisabled || disabled,
     isActive: toggleOther,
     onClick: () => {
       setToggleOther(!toggleOther);
