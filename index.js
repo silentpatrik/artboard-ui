@@ -4518,7 +4518,7 @@ const Dropdown = ({
   }, /*#__PURE__*/React$1.createElement("span", null, option.name)))))) : null);
 };
 
-var css_248z$h = ".visibility-module_visibility__3iQjS {\n  width: 240px;\n  height: 48px;\n  display: flex;\n  align-items: center;\n  justify-content: end;\n  border-radius: 4px;\n  cursor: pointer;\n  padding: 8px; }\n  .visibility-module_visibility__3iQjS * {\n    font-family: Aktiv Grotesk, sans-serif;\n    box-sizing: border-box;\n    user-select: none; }\n  .visibility-module_visibility__3iQjS > div:first-child {\n    margin-right: 8px; }\n  .visibility-module_visibility__3iQjS.visibility-module_white__iRpGB {\n    background: #ffffff; }\n  .visibility-module_visibility__3iQjS.visibility-module_gray__3wI-z {\n    background: #f5f5f5; }\n  .visibility-module_visibility__3iQjS.visibility-module_silver__21swe {\n    background: #f2f4f5; }\n  .visibility-module_visibility__3iQjS .visibility-module_layerText__3beuT {\n    font-family: Aktiv Grotesk, sans-serif;\n    font-size: 12px;\n    line-height: 24px;\n    font-weight: 600;\n    display: flex;\n    align-items: center;\n    margin: 0px 8px;\n    width: 188px;\n    height: 24px;\n    cursor: text; }\n    .visibility-module_visibility__3iQjS .visibility-module_layerText__3beuT.visibility-module_purple__1LY8P {\n      color: #b555e5; }\n    .visibility-module_visibility__3iQjS .visibility-module_layerText__3beuT.visibility-module_black__2mGsm {\n      color: #31363a; }\n";
+var css_248z$h = ".visibility-module_visibility__3iQjS {\n  width: 240px;\n  height: 48px;\n  display: flex;\n  align-items: center;\n  justify-content: end;\n  border-radius: 4px;\n  padding: 8px; }\n  .visibility-module_visibility__3iQjS * {\n    font-family: Aktiv Grotesk, sans-serif;\n    box-sizing: border-box;\n    user-select: none; }\n  .visibility-module_visibility__3iQjS > div:first-child {\n    margin-right: 8px; }\n  .visibility-module_visibility__3iQjS.visibility-module_white__iRpGB {\n    background: #ffffff; }\n  .visibility-module_visibility__3iQjS.visibility-module_gray__3wI-z {\n    background: #f5f5f5; }\n  .visibility-module_visibility__3iQjS.visibility-module_silver__21swe {\n    background: #f2f4f5; }\n  .visibility-module_visibility__3iQjS .visibility-module_layerText__3beuT {\n    font-family: Aktiv Grotesk, sans-serif;\n    font-size: 12px;\n    line-height: 24px;\n    font-weight: 600;\n    display: flex;\n    align-items: center;\n    margin: 0px 8px;\n    width: 188px;\n    height: 24px;\n    cursor: text; }\n    .visibility-module_visibility__3iQjS .visibility-module_layerText__3beuT.visibility-module_purple__1LY8P {\n      color: #b555e5; }\n    .visibility-module_visibility__3iQjS .visibility-module_layerText__3beuT.visibility-module_black__2mGsm {\n      color: #31363a; }\n";
 var style$g = {"visibility":"visibility-module_visibility__3iQjS","white":"visibility-module_white__iRpGB","gray":"visibility-module_gray__3wI-z","silver":"visibility-module_silver__21swe","layerText":"visibility-module_layerText__3beuT","purple":"visibility-module_purple__1LY8P","black":"visibility-module_black__2mGsm"};
 styleInject(css_248z$h);
 
@@ -9561,7 +9561,7 @@ const ArrowMoreIcon = ({
   }, /*#__PURE__*/React$1.createElement("path", {
     d: "M.5 2.5h2v-2",
     stroke: "#333",
-    "stroke-linecap": "round"
+    strokeLinecap: "round"
   }));
 };
 
