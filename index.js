@@ -4604,33 +4604,33 @@ const defaultOption = [{
 }];
 const Visibility = ({
   type = 'white',
-  option = defaultOption,
-  value = 100,
+  blendModeOptions = defaultOption,
+  opacity,
+  blendMode = {
+    name: 'normal',
+    value: 'Normal'
+  },
+  onOpacityChange,
+  onBlendModeChange,
   label = '%',
-  onChange = () => {}
+  ddlMenuMaxHeight = 144
 }) => {
   const {
     visibility
   } = style$g;
-  const [selectedItem, setSelectedItem] = useState(option[0]);
-  const [inputState, setInputState] = useState(value);
-  useEffect(() => {
-    onChange({
-      option: selectedItem,
-      value: parseFloat(inputState)
-    });
-  }, [selectedItem, inputState]);
   return /*#__PURE__*/React$1.createElement("div", {
     className: `${visibility} ${style$g[type]}`
   }, /*#__PURE__*/React$1.createElement(Dropdown, {
-    option: option,
-    onChange: setSelectedItem,
-    size: "medium"
+    option: blendModeOptions,
+    selectedValue: blendMode,
+    onChange: onBlendModeChange,
+    size: "medium",
+    ddlMenuMaxHeight: ddlMenuMaxHeight
   }), /*#__PURE__*/React$1.createElement(Input, {
     min: 0,
     max: 100,
-    onChange: setInputState,
-    value: inputState,
+    onChange: onOpacityChange,
+    value: opacity,
     label: label,
     size: "normal"
   }));
