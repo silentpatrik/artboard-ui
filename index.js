@@ -4557,7 +4557,7 @@ const defaultOption = [{
   name: 'Hard Light',
   value: 'Hard Light'
 }, {
-  name: 'Difference"',
+  name: 'Difference',
   value: 'Difference'
 }, {
   name: 'Exclusion',
