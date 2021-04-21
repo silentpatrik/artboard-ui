@@ -168,7 +168,7 @@ const Input = ({
   }) : null, /*#__PURE__*/React$1.createElement("label", null, children ? children : label)));
 };
 
-var css_248z$N = ".iconButton-module_btn__1Xikn {\n  font-family: aktiv-grotesk, sans-serif;\n  box-sizing: border-box;\n  outline: none;\n  border-radius: 6px;\n  display: flex;\n  align-items: center;\n  justify-content: center;\n  border: 0;\n  cursor: pointer; }\n  .iconButton-module_btn__1Xikn.iconButton-module_enabled__z0B1G.iconButton-module_white__6dVau {\n    background-color: #ffffff; }\n  .iconButton-module_btn__1Xikn.iconButton-module_enabled__z0B1G.iconButton-module_gray__1lziB {\n    background-color: #f7f9fa; }\n  .iconButton-module_btn__1Xikn.iconButton-module_enabled__z0B1G:hover, .iconButton-module_btn__1Xikn.iconButton-module_enabled__z0B1G.iconButton-module_active__3ZrO_ {\n    background: #f2f4f5; }\n  .iconButton-module_btn__1Xikn.iconButton-module_enabled__z0B1G.iconButton-module_active__3ZrO_ {\n    border: 1px solid #3399ff; }\n    .iconButton-module_btn__1Xikn.iconButton-module_enabled__z0B1G.iconButton-module_active__3ZrO_ svg rect {\n      fill: #333333; }\n  .iconButton-module_btn__1Xikn.iconButton-module_enabled__z0B1G:active {\n    border: 1px solid #3399ff; }\n  .iconButton-module_btn__1Xikn.iconButton-module_disable__2qvG7 {\n    background-color: transparent;\n    pointer-events: none; }\n    .iconButton-module_btn__1Xikn.iconButton-module_disable__2qvG7 svg {\n      opacity: 0.2; }\n  .iconButton-module_btn__1Xikn.iconButton-module_normal__1YN9Y {\n    width: 32px;\n    height: 32px; }\n  .iconButton-module_btn__1Xikn.iconButton-module_small__1eSuR {\n    width: 24px;\n    height: 24px; }\n";
+var css_248z$N = ".iconButton-module_btn__1Xikn {\n  font-family: aktiv-grotesk, sans-serif;\n  box-sizing: border-box;\n  outline: none;\n  border-radius: 6px;\n  display: flex;\n  align-items: center;\n  justify-content: center;\n  border: 0;\n  cursor: pointer; }\n  .iconButton-module_btn__1Xikn.iconButton-module_enabled__z0B1G.iconButton-module_white__6dVau {\n    background-color: #ffffff; }\n  .iconButton-module_btn__1Xikn.iconButton-module_enabled__z0B1G.iconButton-module_gray__1lziB {\n    background-color: #f7f9fa; }\n  .iconButton-module_btn__1Xikn.iconButton-module_enabled__z0B1G:hover, .iconButton-module_btn__1Xikn.iconButton-module_enabled__z0B1G.iconButton-module_active__3ZrO_ {\n    background: #f2f4f5; }\n  .iconButton-module_btn__1Xikn.iconButton-module_enabled__z0B1G.iconButton-module_active__3ZrO_ {\n    border: 1px solid #3399ff; }\n    .iconButton-module_btn__1Xikn.iconButton-module_enabled__z0B1G.iconButton-module_active__3ZrO_ svg rect {\n      fill: #333333; }\n  .iconButton-module_btn__1Xikn.iconButton-module_enabled__z0B1G:active {\n    border: 1px solid #3399ff; }\n  .iconButton-module_btn__1Xikn.iconButton-module_disable__2qvG7 {\n    background-color: transparent !important;\n    pointer-events: none; }\n    .iconButton-module_btn__1Xikn.iconButton-module_disable__2qvG7 svg {\n      opacity: 0.5; }\n  .iconButton-module_btn__1Xikn.iconButton-module_normal__1YN9Y {\n    width: 32px;\n    height: 32px; }\n  .iconButton-module_btn__1Xikn.iconButton-module_small__1eSuR {\n    width: 24px;\n    height: 24px; }\n";
 var style$J = {"btn":"iconButton-module_btn__1Xikn","enabled":"iconButton-module_enabled__z0B1G","white":"iconButton-module_white__6dVau","gray":"iconButton-module_gray__1lziB","active":"iconButton-module_active__3ZrO_","disable":"iconButton-module_disable__2qvG7","normal":"iconButton-module_normal__1YN9Y","small":"iconButton-module_small__1eSuR"};
 styleInject(css_248z$N);
 
@@ -497,21 +497,21 @@ const AlignDistributeVerticalSpacingIcon$1 = ({
     viewBox: "0 0 8 12",
     fill: "none"
   }, /*#__PURE__*/React$1.createElement("line", {
-    x1: "7.5",
-    y1: "12",
-    x2: "7.5",
-    y2: "2.18557e-08",
+    x1: "-2.78181e-08",
+    y1: "7.5",
+    x2: "12",
+    y2: "7.5",
     stroke: "#999999"
   }), /*#__PURE__*/React$1.createElement("line", {
-    x1: "0.5",
-    y1: "-2.18557e-08",
-    x2: "0.500001",
-    y2: "12",
+    x1: "12",
+    y1: "0.5",
+    x2: "2.78181e-08",
+    y2: "0.500001",
     stroke: "#999999"
   }), /*#__PURE__*/React$1.createElement("line", {
     x1: "4",
-    y1: "8",
-    x2: "4",
+    y1: "4",
+    x2: "8",
     y2: "4",
     stroke: "#333333",
     strokeWidth: "2",
@@ -528,21 +528,21 @@ const AlignDistributeHorizontalSpacingIcon$1 = ({
     viewBox: "0 0 8 12",
     fill: "none"
   }, /*#__PURE__*/React$1.createElement("line", {
-    x1: "-2.78181e-08",
-    y1: "7.5",
-    x2: "12",
-    y2: "7.5",
+    x1: "7.5",
+    y1: "12",
+    x2: "7.5",
+    y2: "2.18557e-08",
     stroke: "#999999"
   }), /*#__PURE__*/React$1.createElement("line", {
-    x1: "12",
-    y1: "0.5",
-    x2: "2.78181e-08",
-    y2: "0.500001",
+    x1: "0.5",
+    y1: "-2.18557e-08",
+    x2: "0.500001",
+    y2: "12",
     stroke: "#999999"
   }), /*#__PURE__*/React$1.createElement("line", {
     x1: "4",
-    y1: "4",
-    x2: "8",
+    y1: "8",
+    x2: "4",
     y2: "4",
     stroke: "#333333",
     strokeWidth: "2",
@@ -4376,7 +4376,7 @@ const Alignment = ({
   }, /*#__PURE__*/React$1.createElement(AlignDistributeHorizontalSpacingIcon$1, {
     width: 12,
     height: 12
-  })), /*#__PURE__*/React$1.createElement("label", null, "Distribute Horizontal Spacing")), /*#__PURE__*/React$1.createElement("div", {
+  })), /*#__PURE__*/React$1.createElement("label", null, "Distribute Vertical Spacing")), /*#__PURE__*/React$1.createElement("div", {
     className: `${moreItem}`,
     onClick: () => {
       setToggleOther(false);
@@ -4387,7 +4387,7 @@ const Alignment = ({
   }, /*#__PURE__*/React$1.createElement(AlignDistributeVerticalSpacingIcon$1, {
     width: 12,
     height: 12
-  })), /*#__PURE__*/React$1.createElement("label", null, "Distribute Vertical Spacing")))));
+  })), /*#__PURE__*/React$1.createElement("label", null, "Distribute Horizontal Spacing")))));
 };
 
 var css_248z$i = ".dropdown-module_dropdown__22lKQ {\n  display: flex;\n  align-items: center;\n  border: 1px solid #e8ebed;\n  border-radius: 8px;\n  position: relative;\n  background-color: #f5f5f5; }\n  .dropdown-module_dropdown__22lKQ * {\n    font-family: aktiv-grotesk, sans-serif;\n    box-sizing: border-box;\n    user-select: none; }\n  .dropdown-module_dropdown__22lKQ input {\n    border: none;\n    outline: none;\n    background: transparent;\n    padding: 0;\n    margin: 0; }\n  .dropdown-module_dropdown__22lKQ.dropdown-module_ddlOption__mBVs1 {\n    border: 0;\n    width: 100%; }\n    .dropdown-module_dropdown__22lKQ.dropdown-module_ddlOption__mBVs1 .dropdown-module_selectedItem__2-QsG {\n      width: 100%;\n      display: flex;\n      justify-content: left;\n      padding: 8px 0 8px 8px; }\n      .dropdown-module_dropdown__22lKQ.dropdown-module_ddlOption__mBVs1 .dropdown-module_selectedItem__2-QsG label {\n        font-family: Aktiv Grotesk, sans-serif;\n        font-style: normal;\n        font-weight: 700;\n        font-size: 12px;\n        line-height: 20px;\n        display: flex;\n        align-items: center;\n        color: #000408;\n        margin-right: 4px; }\n      .dropdown-module_dropdown__22lKQ.dropdown-module_ddlOption__mBVs1 .dropdown-module_selectedItem__2-QsG span {\n        font-size: 11px;\n        user-select: none; }\n    .dropdown-module_dropdown__22lKQ.dropdown-module_ddlOption__mBVs1:hover {\n      border: 0; }\n    .dropdown-module_dropdown__22lKQ.dropdown-module_ddlOption__mBVs1.dropdown-module_open__zFsbX {\n      border: 0; }\n    .dropdown-module_dropdown__22lKQ.dropdown-module_ddlOption__mBVs1 ul {\n      width: 177px;\n      top: -13px; }\n      .dropdown-module_dropdown__22lKQ.dropdown-module_ddlOption__mBVs1 ul li {\n        width: 164px; }\n        .dropdown-module_dropdown__22lKQ.dropdown-module_ddlOption__mBVs1 ul li button {\n          font-size: 11px;\n          line-height: 16px; }\n        .dropdown-module_dropdown__22lKQ.dropdown-module_ddlOption__mBVs1 ul li:hover {\n          background: #e8ebed; }\n          .dropdown-module_dropdown__22lKQ.dropdown-module_ddlOption__mBVs1 ul li:hover button {\n            color: #000408; }\n            .dropdown-module_dropdown__22lKQ.dropdown-module_ddlOption__mBVs1 ul li:hover button svg {\n              stroke: #000408; }\n  .dropdown-module_dropdown__22lKQ.dropdown-module_small__2V6t9 {\n    width: 108px;\n    height: 24px; }\n    .dropdown-module_dropdown__22lKQ.dropdown-module_small__2V6t9 input {\n      width: 85px;\n      font-size: 11px;\n      padding-left: 8px; }\n    .dropdown-module_dropdown__22lKQ.dropdown-module_small__2V6t9 ul.dropdown-module_search__1mXOx {\n      top: 23px;\n      min-height: 24px; }\n  .dropdown-module_dropdown__22lKQ.dropdown-module_medium__1pXzE {\n    width: 128px;\n    height: 32px; }\n    .dropdown-module_dropdown__22lKQ.dropdown-module_medium__1pXzE input {\n      width: 100%;\n      font-size: 12px;\n      padding-left: 8px; }\n    .dropdown-module_dropdown__22lKQ.dropdown-module_medium__1pXzE button {\n      padding-right: 3px; }\n    .dropdown-module_dropdown__22lKQ.dropdown-module_medium__1pXzE ul.dropdown-module_search__1mXOx {\n      top: 31px; }\n  .dropdown-module_dropdown__22lKQ.dropdown-module_large__3Mmct {\n    width: 136px;\n    height: 32px; }\n    .dropdown-module_dropdown__22lKQ.dropdown-module_large__3Mmct input {\n      width: 105px;\n      font-size: 14px;\n      line-height: 24px; }\n    .dropdown-module_dropdown__22lKQ.dropdown-module_large__3Mmct ul.dropdown-module_search__1mXOx {\n      top: 39px;\n      min-height: 24px; }\n  .dropdown-module_dropdown__22lKQ .dropdown-module_selectedItem__2-QsG {\n    width: 100%;\n    display: flex;\n    justify-content: space-between; }\n    .dropdown-module_dropdown__22lKQ .dropdown-module_selectedItem__2-QsG button {\n      width: 24px;\n      height: 32px;\n      display: flex;\n      justify-content: center;\n      align-items: center; }\n      .dropdown-module_dropdown__22lKQ .dropdown-module_selectedItem__2-QsG button svg {\n        stroke: #999999; }\n    .dropdown-module_dropdown__22lKQ .dropdown-module_selectedItem__2-QsG span {\n      font-size: 11px;\n      user-select: none; }\n  .dropdown-module_dropdown__22lKQ button {\n    border: 0;\n    background: transparent;\n    outline: none;\n    padding: 0;\n    margin: 0;\n    display: flex;\n    justify-content: space-between;\n    align-items: center;\n    cursor: pointer; }\n  .dropdown-module_dropdown__22lKQ ul {\n    list-style: none;\n    margin: 0;\n    padding: 0;\n    display: flex;\n    flex-direction: column;\n    padding: 4px;\n    position: absolute;\n    width: 140px;\n    background: #ffffff;\n    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.06), 0px 0.5px 1px rgba(0, 0, 0, 0.24);\n    border-radius: 8px;\n    top: -1px;\n    left: -2px;\n    z-index: 1;\n    max-height: 104px;\n    overflow: hidden; }\n    .dropdown-module_dropdown__22lKQ ul > div > div:nth-child(3) {\n      width: 4px !important;\n      right: 0 !important; }\n      .dropdown-module_dropdown__22lKQ ul > div > div:nth-child(3) > div:hover {\n        background-color: #3399ff !important; }\n    .dropdown-module_dropdown__22lKQ ul li {\n      display: flex;\n      flex-direction: row;\n      align-items: center;\n      padding: 4px 4px 4px 8px;\n      position: static;\n      width: 132px;\n      height: 24px;\n      border-radius: 4px;\n      align-self: stretch; }\n      .dropdown-module_dropdown__22lKQ ul li button {\n        width: 100%;\n        padding-right: 4px;\n        height: 32px; }\n        .dropdown-module_dropdown__22lKQ ul li button span {\n          font-size: 11px;\n          user-select: none; }\n          .dropdown-module_dropdown__22lKQ ul li button span > span {\n            color: #b6babd; }\n        .dropdown-module_dropdown__22lKQ ul li button svg {\n          stroke: #31363a; }\n      .dropdown-module_dropdown__22lKQ ul li:hover {\n        background: #3399ff; }\n        .dropdown-module_dropdown__22lKQ ul li:hover button {\n          color: #ffffff; }\n          .dropdown-module_dropdown__22lKQ ul li:hover button > span > span {\n            color: #63676c; }\n          .dropdown-module_dropdown__22lKQ ul li:hover button svg {\n            stroke: #e8ebed; }\n    .dropdown-module_dropdown__22lKQ ul button {\n      text-align: left; }\n  .dropdown-module_dropdown__22lKQ:hover {\n    border: 1px solid #b6babd; }\n  .dropdown-module_dropdown__22lKQ.dropdown-module_open__zFsbX {\n    border: 1px solid #3399ff; }\n  .dropdown-module_dropdown__22lKQ [type='text']:focus,\n  .dropdown-module_dropdown__22lKQ [type='password']:focus,\n  .dropdown-module_dropdown__22lKQ [type='number']:focus,\n  .dropdown-module_dropdown__22lKQ [type='email']:focus,\n  .dropdown-module_dropdown__22lKQ [type='search']:focus {\n    color: #333333; }\n";
@@ -7348,21 +7348,21 @@ const AlignDistributeVerticalSpacingIcon = ({
     viewBox: "0 0 8 12",
     fill: "none"
   }, /*#__PURE__*/React$1.createElement("line", {
-    x1: "7.5",
-    y1: "12",
-    x2: "7.5",
-    y2: "2.18557e-08",
+    x1: "-2.78181e-08",
+    y1: "7.5",
+    x2: "12",
+    y2: "7.5",
     stroke: "#999999"
   }), /*#__PURE__*/React$1.createElement("line", {
-    x1: "0.5",
-    y1: "-2.18557e-08",
-    x2: "0.500001",
-    y2: "12",
+    x1: "12",
+    y1: "0.5",
+    x2: "2.78181e-08",
+    y2: "0.500001",
     stroke: "#999999"
   }), /*#__PURE__*/React$1.createElement("line", {
     x1: "4",
-    y1: "8",
-    x2: "4",
+    y1: "4",
+    x2: "8",
     y2: "4",
     stroke: "#333333",
     strokeWidth: "2",
@@ -7379,21 +7379,21 @@ const AlignDistributeHorizontalSpacingIcon = ({
     viewBox: "0 0 8 12",
     fill: "none"
   }, /*#__PURE__*/React$1.createElement("line", {
-    x1: "-2.78181e-08",
-    y1: "7.5",
-    x2: "12",
-    y2: "7.5",
+    x1: "7.5",
+    y1: "12",
+    x2: "7.5",
+    y2: "2.18557e-08",
     stroke: "#999999"
   }), /*#__PURE__*/React$1.createElement("line", {
-    x1: "12",
-    y1: "0.5",
-    x2: "2.78181e-08",
-    y2: "0.500001",
+    x1: "0.5",
+    y1: "-2.18557e-08",
+    x2: "0.500001",
+    y2: "12",
     stroke: "#999999"
   }), /*#__PURE__*/React$1.createElement("line", {
     x1: "4",
-    y1: "4",
-    x2: "8",
+    y1: "8",
+    x2: "4",
     y2: "4",
     stroke: "#333333",
     strokeWidth: "2",
