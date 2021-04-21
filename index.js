@@ -4614,7 +4614,7 @@ const Visibility = ({
   onOpacityChange = () => {},
   onBlendModeChange = () => {},
   label = '%',
-  dropDownMaxHeight = 144
+  dropDownMenuMaxHeight = 144
 }) => {
   const {
     visibility
@@ -4628,7 +4628,7 @@ const Visibility = ({
       value
     }) => onBlendModeChange(value),
     size: "medium",
-    dropDownMenuMaxHeight: dropDownMaxHeight
+    dropDownMenuMaxHeight: dropDownMenuMaxHeight
   }), /*#__PURE__*/React$1.createElement(Input, {
     min: 0,
     max: 100,
