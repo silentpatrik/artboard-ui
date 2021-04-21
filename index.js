@@ -4369,22 +4369,22 @@ const Alignment = ({
     className: `${moreItem}`,
     onClick: () => {
       setToggleOther(false);
-      onChange('hSpacing');
+      onChange('vSpacing');
     }
   }, /*#__PURE__*/React$1.createElement("div", {
     className: icon
-  }, /*#__PURE__*/React$1.createElement(AlignDistributeHorizontalSpacingIcon$1, {
+  }, /*#__PURE__*/React$1.createElement(AlignDistributeVerticalSpacingIcon$1, {
     width: 12,
     height: 12
   })), /*#__PURE__*/React$1.createElement("label", null, "Distribute Vertical Spacing")), /*#__PURE__*/React$1.createElement("div", {
     className: `${moreItem}`,
     onClick: () => {
       setToggleOther(false);
-      onChange('vSpacing');
+      onChange('hSpacing');
     }
   }, /*#__PURE__*/React$1.createElement("div", {
     className: icon
-  }, /*#__PURE__*/React$1.createElement(AlignDistributeVerticalSpacingIcon$1, {
+  }, /*#__PURE__*/React$1.createElement(AlignDistributeHorizontalSpacingIcon$1, {
     width: 12,
     height: 12
   })), /*#__PURE__*/React$1.createElement("label", null, "Distribute Horizontal Spacing")))));
