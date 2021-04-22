@@ -4646,7 +4646,7 @@ styleInject(css_248z$g);
 /* eslint-disable react-hooks/exhaustive-deps */
 const SmartLayout = ({
   type = 'white',
-  onChange,
+  onChange = () => {},
   value = {
     v: 'Scale',
     h: 'Scale'
@@ -4724,7 +4724,7 @@ const SmartLayout = ({
     className: pinToEdgeOptionsWrapper
   }, /*#__PURE__*/React$1.createElement(Dropdown, {
     option: optionH,
-    onChangeValue: ({
+    onChange: ({
       value
     }) => setSelectedItemH(value),
     selectedValue: optionH.filter(item => item.value === selectedH)[0],
@@ -4732,7 +4732,7 @@ const SmartLayout = ({
   }), /*#__PURE__*/React$1.createElement(Dropdown, {
     option: optionV,
     selectedValue: optionV.filter(item => item.value === selectedV)[0],
-    onChangeValue: ({
+    onChange: ({
       value
     }) => setSelectedItemV(value),
     size: "small"
