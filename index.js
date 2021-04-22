@@ -4670,14 +4670,12 @@ const SmartLayout = ({
     alignCenterIconV
   } = style$f;
   const [toggleDetails, setToggleDetail] = useState(false);
-  const [selectedV, setSelectedItemV] = useState(value.v);
-  const [selectedH, setSelectedItemH] = useState(value.h);
+  const [v, setV] = useState(value.v);
+  const [h, setH] = useState(value.h);
   useEffect(() => {
-    onChange({
-      selectedV,
-      selectedH
-    });
-  }, [selectedV, selectedH]);
+    setV(value.v);
+    setH(value.h);
+  }, [value]);
   return /*#__PURE__*/React$1.createElement("div", {
     className: `${smartLayout} ${style$f[type]}`
   }, /*#__PURE__*/React$1.createElement("div", {
@@ -4697,44 +4695,92 @@ const SmartLayout = ({
   }, /*#__PURE__*/React$1.createElement("div", {
     className: alignTop
   }, /*#__PURE__*/React$1.createElement("div", {
-    className: `${icon} ${selectedV.includes('Top') ? active : ''}`,
-    onClick: () => setSelectedItemV('Top')
+    className: `${icon} ${v.includes('Top') ? active : ''}`,
+    onClick: () => {
+      setV('Top');
+      onChange({
+        v: 'Top',
+        h
+      });
+    }
   }, /*#__PURE__*/React$1.createElement(EdgeAlignTopIcon$1, null))), /*#__PURE__*/React$1.createElement("div", {
     className: alignCenter
   }, /*#__PURE__*/React$1.createElement("div", {
-    className: `${icon} ${selectedH.includes('Left') ? active : ''}`,
-    onClick: () => setSelectedItemH('Left')
+    className: `${icon} ${h.includes('Left') ? active : ''}`,
+    onClick: () => {
+      setH('Left');
+      onChange({
+        v,
+        h: 'Left'
+      });
+    }
   }, /*#__PURE__*/React$1.createElement(EdgeAlignRightIcon$1, null)), /*#__PURE__*/React$1.createElement("div", {
     className: alignCenterIconVHWrapper
   }, /*#__PURE__*/React$1.createElement("div", {
-    className: `${alignCenterIconV} ${selectedV.includes('CenterV') ? active : ''}`,
-    onClick: () => setSelectedItemV('CenterV')
+    className: `${alignCenterIconV} ${v.includes('CenterV') ? active : ''}`,
+    onClick: () => {
+      setV('CenterV');
+      onChange({
+        v: 'CenterV',
+        h
+      });
+    }
   }), /*#__PURE__*/React$1.createElement("div", {
-    className: `${alignCenterIconH} ${selectedH.includes('CenterH') ? active : ''}`,
-    onClick: () => setSelectedItemH('CenterH')
+    className: `${alignCenterIconH} ${h.includes('CenterH') ? active : ''}`,
+    onClick: () => {
+      setH('CenterH');
+      onChange({
+        v,
+        h: 'CenterH'
+      });
+    }
   })), /*#__PURE__*/React$1.createElement("div", {
-    className: `${icon} ${selectedH.includes('Right') ? active : ''}`,
-    onClick: () => setSelectedItemH('Right')
+    className: `${icon} ${h.includes('Right') ? active : ''}`,
+    onClick: () => {
+      setH('Right');
+      onChange({
+        v,
+        h: 'Right'
+      });
+    }
   }, /*#__PURE__*/React$1.createElement(EdgeAlignLeftIcon$1, null))), /*#__PURE__*/React$1.createElement("div", {
     className: alignBottom
   }, /*#__PURE__*/React$1.createElement("div", {
-    className: `${icon} ${selectedV.includes('Bottom') ? active : ''}`,
-    onClick: () => setSelectedItemV('Bottom')
+    className: `${icon} ${v.includes('Bottom') ? active : ''}`,
+    onClick: () => {
+      setV('Bottom');
+      onChange({
+        v: 'Bottom',
+        h
+      });
+    }
   }, /*#__PURE__*/React$1.createElement(EdgeAlignBottomIcon$1, null)))), /*#__PURE__*/React$1.createElement("div", {
     className: pinToEdgeOptionsWrapper
   }, /*#__PURE__*/React$1.createElement(Dropdown, {
     option: optionH,
     onChange: ({
       value
-    }) => setSelectedItemH(value),
-    selectedValue: optionH.filter(item => item.value === selectedH)[0],
+    }) => {
+      setH(value);
+      onChange({
+        v: 'Bottom',
+        h: value
+      });
+    },
+    selectedValue: optionH.filter(item => item.value === h)[0],
     size: "small"
   }), /*#__PURE__*/React$1.createElement(Dropdown, {
     option: optionV,
-    selectedValue: optionV.filter(item => item.value === selectedV)[0],
+    selectedValue: optionV.filter(item => item.value === v)[0],
     onChange: ({
       value
-    }) => setSelectedItemV(value),
+    }) => {
+      setV(value);
+      onChange({
+        v: value,
+        h
+      });
+    },
     size: "small"
   }))));
 };
