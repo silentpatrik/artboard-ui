@@ -5924,8 +5924,17 @@ const FillRow = ({
     onClick: () => setToggleColorPicker(!toggleColorPicker),
     className: colorPicker,
     style: colorPickerStyle
-  }), /*#__PURE__*/React$1.createElement(Input, {
-    onChange: setSelectedColor,
+  }), /*#__PURE__*/React$1.createElement(Input // onChange={setSelectedColor}
+  , {
+    onChange: color => {
+      setSelectedColor(color);
+      onChange({
+        id,
+        color,
+        opacity: parseFloat(selectedOpacity),
+        blendMode: blendModeState
+      });
+    },
     value: selectedColor,
     type: "string",
     size: "noStyle"
@@ -5965,7 +5974,7 @@ const FillRow = ({
   }, /*#__PURE__*/React$1.createElement(MinusIcon$1, null)));
 };
 
-var css_248z$9 = ".fill-module_fill__s6n7N {\n  width: 240px;\n  display: flex;\n  flex-direction: column;\n  align-items: center;\n  justify-content: space-between;\n  box-sizing: border-box;\n  padding: 8px;\n  cursor: pointer; }\n  .fill-module_fill__s6n7N .fill-module_header__GMBXs {\n    display: flex; }\n    .fill-module_fill__s6n7N .fill-module_header__GMBXs button {\n      width: 24px;\n      height: 24px; }\n  .fill-module_fill__s6n7N .fill-module_fillItems__1yysb {\n    display: flex;\n    flex-direction: column;\n    width: 224px; }\n  .fill-module_fill__s6n7N.fill-module_white__2KTz0 {\n    background: #ffffff; }\n  .fill-module_fill__s6n7N.fill-module_gray__26J6h {\n    background: #f7f9fa; }\n  .fill-module_fill__s6n7N.fill-module_silver__39Gtg {\n    background: #f2f4f5; }\n  .fill-module_fill__s6n7N .fill-module_header__GMBXs {\n    width: 224px;\n    height: 32px;\n    display: flex;\n    align-items: center;\n    justify-content: space-between; }\n    .fill-module_fill__s6n7N .fill-module_header__GMBXs .fill-module_layerText__3Pa6k {\n      font-family: Aktiv Grotesk, sans-serif;\n      font-size: 12px;\n      line-height: 24px;\n      font-weight: 600;\n      display: flex;\n      align-items: center;\n      cursor: text; }\n      .fill-module_fill__s6n7N .fill-module_header__GMBXs .fill-module_layerText__3Pa6k.fill-module_purple__11PKi {\n        color: #b555e5; }\n      .fill-module_fill__s6n7N .fill-module_header__GMBXs .fill-module_layerText__3Pa6k.fill-module_black__gqKeu {\n        color: #31363a; }\n  .fill-module_fill__s6n7N .fill-module_layerBtnAction__Tu2kH {\n    display: flex;\n    justify-content: flex-end;\n    align-items: center;\n    vertical-align: middle; }\n";
+var css_248z$9 = ".fill-module_fill__s6n7N {\n  width: 240px;\n  display: flex;\n  flex-direction: column;\n  align-items: center;\n  justify-content: space-between;\n  box-sizing: border-box;\n  padding: 8px; }\n  .fill-module_fill__s6n7N .fill-module_header__GMBXs {\n    display: flex; }\n    .fill-module_fill__s6n7N .fill-module_header__GMBXs button {\n      width: 24px;\n      height: 24px; }\n  .fill-module_fill__s6n7N .fill-module_fillItems__1yysb {\n    display: flex;\n    flex-direction: column;\n    width: 224px; }\n  .fill-module_fill__s6n7N.fill-module_white__2KTz0 {\n    background: #ffffff; }\n  .fill-module_fill__s6n7N.fill-module_gray__26J6h {\n    background: #f7f9fa; }\n  .fill-module_fill__s6n7N.fill-module_silver__39Gtg {\n    background: #f2f4f5; }\n  .fill-module_fill__s6n7N .fill-module_header__GMBXs {\n    width: 224px;\n    height: 32px;\n    display: flex;\n    align-items: center;\n    justify-content: space-between; }\n    .fill-module_fill__s6n7N .fill-module_header__GMBXs .fill-module_layerText__3Pa6k {\n      font-family: Aktiv Grotesk, sans-serif;\n      font-size: 12px;\n      line-height: 24px;\n      font-weight: 600;\n      display: flex;\n      align-items: center;\n      cursor: text; }\n      .fill-module_fill__s6n7N .fill-module_header__GMBXs .fill-module_layerText__3Pa6k.fill-module_purple__11PKi {\n        color: #b555e5; }\n      .fill-module_fill__s6n7N .fill-module_header__GMBXs .fill-module_layerText__3Pa6k.fill-module_black__gqKeu {\n        color: #31363a; }\n  .fill-module_fill__s6n7N .fill-module_layerBtnAction__Tu2kH {\n    display: flex;\n    justify-content: flex-end;\n    align-items: center;\n    vertical-align: middle; }\n";
 var style$8 = {"fill":"fill-module_fill__s6n7N","header":"fill-module_header__GMBXs","fillItems":"fill-module_fillItems__1yysb","white":"fill-module_white__2KTz0","gray":"fill-module_gray__26J6h","silver":"fill-module_silver__39Gtg","layerText":"fill-module_layerText__3Pa6k","purple":"fill-module_purple__11PKi","black":"fill-module_black__gqKeu","layerBtnAction":"fill-module_layerBtnAction__Tu2kH"};
 styleInject(css_248z$9);
 
@@ -5996,7 +6005,7 @@ const Fill = ({
       id: data.id,
       color: data.color,
       opacity: data.opacity,
-      blendMode: data.blendMode
+      blendMode: !blendModeDisabled ? data.blendMode : null
     });
   };
 
@@ -6104,7 +6113,7 @@ const defaultOption = [{
   value: 'XOR'
 }];
 
-var css_248z$8 = ".stroke-row-module_strokeRow__SpWBF {\n  position: relative;\n  width: 224px;\n  height: 32px;\n  display: flex;\n  align-items: center;\n  justify-content: space-between;\n  border-radius: 4px;\n  margin: 8px 0;\n  cursor: pointer; }\n  .stroke-row-module_strokeRow__SpWBF * {\n    box-sizing: border-box;\n    font-family: Aktiv Grotesk, sans-serif;\n    user-select: none; }\n  .stroke-row-module_strokeRow__SpWBF .stroke-row-module_strokeInput1__3AjaJ {\n    width: 44px;\n    height: 32px;\n    justify-content: flex-end;\n    align-items: center; }\n    .stroke-row-module_strokeRow__SpWBF .stroke-row-module_strokeInput1__3AjaJ input {\n      width: 12px;\n      padding: 0;\n      font-size: 11px; }\n    .stroke-row-module_strokeRow__SpWBF .stroke-row-module_strokeInput1__3AjaJ label {\n      width: 24px;\n      height: 32px; }\n  .stroke-row-module_strokeRow__SpWBF .stroke-row-module_strokeInput2__2D5ze {\n    width: 52px;\n    height: 32px;\n    justify-content: flex-end;\n    align-items: center; }\n    .stroke-row-module_strokeRow__SpWBF .stroke-row-module_strokeInput2__2D5ze input {\n      width: 20px;\n      padding: 0;\n      font-size: 11px; }\n    .stroke-row-module_strokeRow__SpWBF .stroke-row-module_strokeInput2__2D5ze label {\n      width: 24px;\n      height: 32px; }\n  .stroke-row-module_strokeRow__SpWBF .stroke-row-module_btnRow__3o45S {\n    width: 24px;\n    height: 32px; }\n  .stroke-row-module_strokeRow__SpWBF .stroke-row-module_colorActionWrapper__33veL {\n    display: flex;\n    width: 92px;\n    height: 32px;\n    border: 1px solid #e8ebed;\n    box-sizing: border-box;\n    border-radius: 8px;\n    align-items: center;\n    justify-content: flex-start;\n    padding: 8px; }\n    .stroke-row-module_strokeRow__SpWBF .stroke-row-module_colorActionWrapper__33veL .stroke-row-module_colorPicker__33Cir {\n      width: 16px;\n      height: 16px;\n      border-radius: 50%; }\n    .stroke-row-module_strokeRow__SpWBF .stroke-row-module_colorActionWrapper__33veL input {\n      border: 0;\n      outline: none;\n      width: 58px;\n      height: 16px;\n      font-size: 11px;\n      line-height: 16px;\n      padding-left: 8px; }\n    .stroke-row-module_strokeRow__SpWBF .stroke-row-module_colorActionWrapper__33veL:hover {\n      border: 1px solid #3399ff; }\n    .stroke-row-module_strokeRow__SpWBF .stroke-row-module_colorActionWrapper__33veL:focus-within {\n      border: 1px solid #3399ff; }\n  .stroke-row-module_strokeRow__SpWBF .stroke-row-module_colorPickerModal__25b0p {\n    position: absolute;\n    top: 40px;\n    z-index: 1; }\n    .stroke-row-module_strokeRow__SpWBF .stroke-row-module_colorPickerModal__25b0p > div {\n      border: 0 !important;\n      border-radius: 8px !important;\n      background: #f7f9fa !important;\n      box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.06), 0px 0.5px 1px rgba(0, 0, 0, 0.24) !important; }\n  .stroke-row-module_strokeRow__SpWBF.stroke-row-module_white__8e02Q {\n    background: #ffffff; }\n  .stroke-row-module_strokeRow__SpWBF.stroke-row-module_gray__1-1Ec {\n    background: #f7f9fa; }\n  .stroke-row-module_strokeRow__SpWBF.stroke-row-module_silver__2YY7i {\n    background: #f2f4f5; }\n  .stroke-row-module_strokeRow__SpWBF [type='text']:focus,\n  .stroke-row-module_strokeRow__SpWBF [type='password']:focus,\n  .stroke-row-module_strokeRow__SpWBF [type='number']:focus,\n  .stroke-row-module_strokeRow__SpWBF [type='email']:focus,\n  .stroke-row-module_strokeRow__SpWBF [type='search']:focus {\n    color: #333333; }\n";
+var css_248z$8 = ".stroke-row-module_strokeRow__SpWBF {\n  position: relative;\n  width: 224px;\n  height: 32px;\n  display: flex;\n  align-items: center;\n  justify-content: space-between;\n  border-radius: 4px;\n  margin: 8px 0; }\n  .stroke-row-module_strokeRow__SpWBF * {\n    box-sizing: border-box;\n    font-family: Aktiv Grotesk, sans-serif;\n    user-select: none; }\n  .stroke-row-module_strokeRow__SpWBF .stroke-row-module_strokeInput1__3AjaJ {\n    width: 44px;\n    height: 32px;\n    justify-content: flex-end;\n    align-items: center; }\n    .stroke-row-module_strokeRow__SpWBF .stroke-row-module_strokeInput1__3AjaJ input {\n      width: 12px;\n      padding: 0;\n      font-size: 11px; }\n    .stroke-row-module_strokeRow__SpWBF .stroke-row-module_strokeInput1__3AjaJ label {\n      width: 24px;\n      height: 32px; }\n  .stroke-row-module_strokeRow__SpWBF .stroke-row-module_strokeInput2__2D5ze {\n    width: 52px;\n    height: 32px;\n    justify-content: flex-end;\n    align-items: center; }\n    .stroke-row-module_strokeRow__SpWBF .stroke-row-module_strokeInput2__2D5ze input {\n      width: 20px;\n      padding: 0;\n      font-size: 11px; }\n    .stroke-row-module_strokeRow__SpWBF .stroke-row-module_strokeInput2__2D5ze label {\n      width: 24px;\n      height: 32px; }\n  .stroke-row-module_strokeRow__SpWBF .stroke-row-module_btnRow__3o45S {\n    width: 24px;\n    height: 32px; }\n  .stroke-row-module_strokeRow__SpWBF .stroke-row-module_colorActionWrapper__33veL {\n    display: flex;\n    width: 92px;\n    height: 32px;\n    border: 1px solid #e8ebed;\n    box-sizing: border-box;\n    border-radius: 8px;\n    align-items: center;\n    justify-content: flex-start;\n    padding: 8px; }\n    .stroke-row-module_strokeRow__SpWBF .stroke-row-module_colorActionWrapper__33veL .stroke-row-module_colorPicker__33Cir {\n      width: 16px;\n      height: 16px;\n      border-radius: 50%; }\n    .stroke-row-module_strokeRow__SpWBF .stroke-row-module_colorActionWrapper__33veL input {\n      border: 0;\n      outline: none;\n      width: 58px;\n      height: 16px;\n      font-size: 11px;\n      line-height: 16px;\n      padding-left: 8px; }\n    .stroke-row-module_strokeRow__SpWBF .stroke-row-module_colorActionWrapper__33veL:hover {\n      border: 1px solid #3399ff; }\n    .stroke-row-module_strokeRow__SpWBF .stroke-row-module_colorActionWrapper__33veL:focus-within {\n      border: 1px solid #3399ff; }\n  .stroke-row-module_strokeRow__SpWBF .stroke-row-module_colorPickerModal__25b0p {\n    position: absolute;\n    top: 40px;\n    z-index: 1; }\n    .stroke-row-module_strokeRow__SpWBF .stroke-row-module_colorPickerModal__25b0p > div {\n      border: 0 !important;\n      border-radius: 8px !important;\n      background: #f7f9fa !important;\n      box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.06), 0px 0.5px 1px rgba(0, 0, 0, 0.24) !important; }\n  .stroke-row-module_strokeRow__SpWBF.stroke-row-module_white__8e02Q {\n    background: #ffffff; }\n  .stroke-row-module_strokeRow__SpWBF.stroke-row-module_gray__1-1Ec {\n    background: #f7f9fa; }\n  .stroke-row-module_strokeRow__SpWBF.stroke-row-module_silver__2YY7i {\n    background: #f2f4f5; }\n  .stroke-row-module_strokeRow__SpWBF [type='text']:focus,\n  .stroke-row-module_strokeRow__SpWBF [type='password']:focus,\n  .stroke-row-module_strokeRow__SpWBF [type='number']:focus,\n  .stroke-row-module_strokeRow__SpWBF [type='email']:focus,\n  .stroke-row-module_strokeRow__SpWBF [type='search']:focus {\n    color: #333333; }\n";
 var style$7 = {"strokeRow":"stroke-row-module_strokeRow__SpWBF","strokeInput1":"stroke-row-module_strokeInput1__3AjaJ","strokeInput2":"stroke-row-module_strokeInput2__2D5ze","btnRow":"stroke-row-module_btnRow__3o45S","colorActionWrapper":"stroke-row-module_colorActionWrapper__33veL","colorPicker":"stroke-row-module_colorPicker__33Cir","colorPickerModal":"stroke-row-module_colorPickerModal__25b0p","white":"stroke-row-module_white__8e02Q","gray":"stroke-row-module_gray__1-1Ec","silver":"stroke-row-module_silver__2YY7i"};
 styleInject(css_248z$8);
 
@@ -6112,8 +6121,8 @@ styleInject(css_248z$8);
 const StrokeRow = ({
   type = 'white',
   row,
-  onChange,
-  removeRow = null
+  onChange = () => {},
+  onRemoveClick = () => {}
 }) => {
   const {
     strokeRow,
@@ -6125,20 +6134,25 @@ const StrokeRow = ({
     btnRow
   } = style$7;
   const {
+    id,
     color,
-    input
+    strokeWidth,
+    opacity
   } = row;
   const [selectedColor, setSelectedColor] = useState(color);
   const [toggleColorPicker, setToggleColorPicker] = useState(false);
-  const [inputS1, setInputS1] = useState(input[0].value);
-  const [inputS2, setInputS2] = useState(input[1].value);
+  const [strokeWidthS, setStrokeSWidth] = useState(strokeWidth);
+  const [selectedOpacity, setSelectedOpacity] = useState(opacity);
+  const [colorPickerStyle, setColorPickerStyle] = useState({
+    backgroundColor: selectedColor,
+    opacity: selectedOpacity / 100
+  });
   useEffect(() => {
-    onChange({
-      color: selectedColor,
-      s1: parseFloat(inputS1),
-      s2: parseFloat(inputS2)
+    setColorPickerStyle({
+      backgroundColor: selectedColor,
+      opacity: selectedOpacity / 100
     });
-  }, [selectedColor, inputS1, inputS2]); // close color picker by click outside.
+  }, [selectedColor, selectedOpacity]); // close color picker by click outside.
 
   const colorPickerWrapper = /*#__PURE__*/createRef();
   useEffect(() => {
@@ -6151,9 +6165,6 @@ const StrokeRow = ({
     window.addEventListener('mousedown', clickOutside);
     return () => window.removeEventListener('mousedown', clickOutside);
   }, [colorPickerWrapper]);
-  const colorPickerStyle = {
-    backgroundColor: selectedColor
-  };
   return /*#__PURE__*/React$1.createElement("div", {
     className: `${strokeRow} ${style$7[type]}`
   }, toggleColorPicker && /*#__PURE__*/React$1.createElement("div", {
@@ -6161,7 +6172,15 @@ const StrokeRow = ({
     ref: colorPickerWrapper
   }, /*#__PURE__*/React$1.createElement(SketchPicker, {
     color: selectedColor,
-    onChange: color => setSelectedColor(color.hex)
+    onChange: color => {
+      setSelectedColor(color.hex);
+      onChange({
+        id,
+        color: color.hex,
+        strokeWidth: parseFloat(strokeWidthS),
+        opacity: parseFloat(selectedOpacity)
+      });
+    }
   })), /*#__PURE__*/React$1.createElement("div", {
     className: colorActionWrapper
   }, /*#__PURE__*/React$1.createElement("div", {
@@ -6169,27 +6188,48 @@ const StrokeRow = ({
     className: colorPicker,
     style: colorPickerStyle
   }), /*#__PURE__*/React$1.createElement(Input, {
-    onChange: setSelectedColor,
-    setValue: setSelectedColor,
+    onChange: color => {
+      setSelectedColor(color);
+      onChange({
+        id,
+        color,
+        strokeWidth: parseFloat(strokeWidthS),
+        opacity: parseFloat(selectedOpacity)
+      });
+    },
     value: selectedColor,
     type: "string",
     size: "noStyle"
   })), /*#__PURE__*/React$1.createElement(Input, {
-    onChange: setInputS1,
-    value: inputS1,
-    setValue: setInputS1,
+    onChange: strokeWidth => {
+      setStrokeSWidth(strokeWidth);
+      onChange({
+        id,
+        color: selectedColor,
+        strokeWidth: parseFloat(strokeWidth),
+        opacity: parseFloat(selectedOpacity)
+      });
+    },
+    value: strokeWidthS,
     dir: "right",
-    label: input[0].label,
+    label: 'px',
     className: strokeInput1
   }), /*#__PURE__*/React$1.createElement(Input, {
-    onChange: setInputS2,
-    value: inputS2,
-    setValue: setInputS2,
+    onChange: opacity => {
+      setSelectedOpacity(opacity);
+      onChange({
+        id,
+        color: selectedColor,
+        strokeWidth: parseFloat(strokeWidth),
+        opacity: parseFloat(opacity)
+      });
+    },
+    value: selectedOpacity,
     dir: "right",
-    label: input[1].label,
+    label: '%',
     className: strokeInput2
   }), /*#__PURE__*/React$1.createElement(IconButton, {
-    onClick: () => removeRow(row),
+    onClick: () => onRemoveClick(row),
     className: btnRow
   }, /*#__PURE__*/React$1.createElement(MinusIcon$1, null)));
 };
@@ -6241,14 +6281,17 @@ const _cases = [{
 const Stroke = ({
   type = 'white',
   textColor = 'black',
-  strokes = [],
+  options,
+  onChange = () => {},
+  onAddClick = () => {},
+  onRemoveClick = () => {},
+  addDisabled = false,
   capOptionValues = _cap,
   caseOptionValues = _cases,
   trimOptionValues = _trim,
   start = 0,
   end = 100,
-  offset = 0,
-  onChange = () => {}
+  offset = 0
 }) => {
   const {
     stroke,
@@ -6264,7 +6307,6 @@ const Stroke = ({
     option,
     input
   } = style$6;
-  const [strokesState, setStrokeState] = useState(strokes);
   const [toggleMoreItems, setToggleMoreItems] = useState(false);
   const [capOption] = useState(capOptionValues);
   const [capOptionSelected, setCapOptionSelected] = useState({});
@@ -6279,39 +6321,28 @@ const Stroke = ({
   const setValue = (data, index) => {
     onChange({
       index,
-      data
+      id: data.id,
+      color: data.color,
+      strokeWidth: data.strokeWidth
     });
-  };
-
-  useEffect(() => {
-    onChange({
-      cap: 'value' in capOptionSelected ? capOptionSelected.value : null,
-      case: caseSelected,
-      trim: 'value' in capOptionSelected ? trimOptionSelected.value : null,
-      start: startS,
-      end: endS,
-      offset: offsetS
-    });
-  }, [capOptionSelected, trimOptionSelected, caseSelected, startS, endS, offsetS]);
-
-  const addRow = () => {
-    let row = {
-      id: getUnique(),
-      color: getRandomColor(),
-      input: [{
-        label: 'px',
-        value: 10
-      }, {
-        label: '%',
-        value: 100
-      }]
-    };
-    setStrokeState([...strokesState, row]);
-  };
-
-  const removeRow = ({
-    id
-  }) => setStrokeState(strokesState.filter(item => item.id !== id)); // close menu by click outside.
+  }; // useEffect(() => {
+  //   onChange({
+  //     cap: 'value' in capOptionSelected ? capOptionSelected.value : null,
+  //     case: caseSelected,
+  //     trim: 'value' in capOptionSelected ? trimOptionSelected.value : null,
+  //     start: startS,
+  //     end: endS,
+  //     offset: offsetS,
+  //   });
+  // }, [
+  //   capOptionSelected,
+  //   trimOptionSelected,
+  //   caseSelected,
+  //   startS,
+  //   endS,
+  //   offsetS,
+  // ]);
+  // close menu by click outside.
 
 
   const moreMenuRef = /*#__PURE__*/createRef();
@@ -6335,17 +6366,18 @@ const Stroke = ({
     className: `${layerText} ${style$6[textColor]}`
   }, "Stroke"), /*#__PURE__*/React$1.createElement("div", {
     className: `${layerBtnAction}`
-  }, /*#__PURE__*/React$1.createElement(IconButton, {
+  }, !addDisabled ? /*#__PURE__*/React$1.createElement(IconButton, {
     onClick: () => setToggleMoreItems(!toggleMoreItems)
-  }, /*#__PURE__*/React$1.createElement(TreeDotsIcon$1, null)), /*#__PURE__*/React$1.createElement(IconButton, {
-    onClick: () => addRow()
+  }, /*#__PURE__*/React$1.createElement(TreeDotsIcon$1, null)) : null, /*#__PURE__*/React$1.createElement(IconButton, {
+    onClick: onAddClick,
+    disabled: addDisabled
   }, /*#__PURE__*/React$1.createElement(PlusIcon$1, null)))), /*#__PURE__*/React$1.createElement("div", {
     className: strokeItems
-  }, strokesState.map((item, key) => /*#__PURE__*/React$1.createElement(StrokeRow, {
+  }, options.map((item, key) => /*#__PURE__*/React$1.createElement(StrokeRow, {
     key: `${item.id}`,
     row: item,
     onChange: _res => setValue(_res, key),
-    removeRow: removeRow
+    onRemoveClick: onRemoveClick
   }))), toggleMoreItems && /*#__PURE__*/React$1.createElement("div", {
     className: moreMenu
   }, /*#__PURE__*/React$1.createElement("div", {
