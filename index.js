@@ -6220,7 +6220,7 @@ const StrokeRow = ({
       onChange({
         id,
         color: selectedColor,
-        strokeWidth: parseFloat(strokeWidth),
+        strokeWidth: parseFloat(strokeWidthS),
         opacity: parseFloat(opacity)
       });
     },
@@ -6323,7 +6323,8 @@ const Stroke = ({
       index,
       id: data.id,
       color: data.color,
-      strokeWidth: data.strokeWidth
+      strokeWidth: data.strokeWidth,
+      opacity: data.opacity
     });
   }; // useEffect(() => {
   //   onChange({
