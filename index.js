@@ -1,4 +1,4 @@
-import React$1, { useState, useEffect, Fragment, Component, createRef } from 'react';
+import React$1, { useRef, useState, useEffect, Fragment, Component, createRef } from 'react';
 import { v4 } from 'uuid';
 import Scrollbars, { Scrollbars as Scrollbars$1 } from 'react-custom-scrollbars';
 import { Tooltip } from 'react-tippy';
@@ -69,7 +69,7 @@ function styleInject(css, ref) {
   }
 }
 
-var css_248z$O = ".input-module_input__3k4oC {\n  border: 1px solid #e8ebed;\n  box-sizing: border-box;\n  border-radius: 8px;\n  display: flex;\n  justify-content: left;\n  align-items: center;\n  overflow: hidden;\n  background-color: #f5f5f5; }\n  .input-module_input__3k4oC * {\n    font-family: Aktiv Grotesk, sans-serif;\n    box-sizing: border-box;\n    user-select: none; }\n  .input-module_input__3k4oC.input-module_right__3AGuV input {\n    text-align: left; }\n  .input-module_input__3k4oC.input-module_left__29lN4 {\n    flex-direction: row-reverse; }\n    .input-module_input__3k4oC.input-module_left__29lN4 input {\n      padding-left: 2px; }\n  .input-module_input__3k4oC input {\n    border: 0;\n    color: #31363a;\n    background: transparent; }\n    .input-module_input__3k4oC input:focus {\n      outline: 0; }\n  .input-module_input__3k4oC label {\n    font-family: Aktiv Grotesk, sans-serif;\n    width: 24px;\n    height: 32px;\n    font-size: 12px;\n    line-height: 32px;\n    color: #b6babd;\n    display: flex;\n    align-items: center;\n    justify-content: center; }\n    .input-module_input__3k4oC label > svg {\n      margin-left: 3px; }\n  .input-module_input__3k4oC.input-module_normal__3iBT3 {\n    width: 64px;\n    height: 32px; }\n    .input-module_input__3k4oC.input-module_normal__3iBT3 input {\n      width: 40px;\n      height: 32px;\n      font-size: 12px;\n      line-height: 24px;\n      padding-left: 8px; }\n  .input-module_input__3k4oC:hover {\n    border: 1px solid #b6babd;\n    box-sizing: border-box; }\n  .input-module_input__3k4oC [type='text']:focus,\n  .input-module_input__3k4oC [type='password']:focus,\n  .input-module_input__3k4oC [type='number']:focus,\n  .input-module_input__3k4oC [type='email']:focus,\n  .input-module_input__3k4oC [type='search']:focus {\n    color: #31363a; }\n  .input-module_input__3k4oC:focus-within {\n    border: 1px solid #3399ff; }\n    .input-module_input__3k4oC:focus-within label {\n      color: #3399ff; }\n";
+var css_248z$O = ".input-module_input__3k4oC {\n  border: 1px solid #e8ebed;\n  box-sizing: border-box;\n  border-radius: 8px;\n  display: flex;\n  justify-content: left;\n  align-items: center;\n  overflow: hidden;\n  background-color: #f5f5f5; }\n  .input-module_input__3k4oC * {\n    font-family: Aktiv Grotesk, sans-serif;\n    box-sizing: border-box;\n    user-select: none; }\n  .input-module_input__3k4oC input {\n    padding: 0; }\n  .input-module_input__3k4oC.input-module_right__3AGuV input {\n    text-align: left; }\n  .input-module_input__3k4oC.input-module_left__29lN4 {\n    flex-direction: row-reverse; }\n  .input-module_input__3k4oC input {\n    border: 0;\n    color: #31363a;\n    background: transparent; }\n    .input-module_input__3k4oC input:focus {\n      outline: 0; }\n  .input-module_input__3k4oC label {\n    font-family: Aktiv Grotesk, sans-serif;\n    width: 16px;\n    height: 32px;\n    color: #b6babd;\n    display: flex;\n    justify-content: flex-start;\n    align-items: center; }\n    .input-module_input__3k4oC label div {\n      width: 12px;\n      height: 12px;\n      font-size: 11px; }\n      .input-module_input__3k4oC label div > svg {\n        margin-left: 3px; }\n  .input-module_input__3k4oC.input-module_normal__3iBT3 {\n    width: 64px;\n    height: 32px;\n    padding-left: 6px; }\n    .input-module_input__3k4oC.input-module_normal__3iBT3 input {\n      width: 40px;\n      height: 32px;\n      font-size: 12px;\n      line-height: 24px; }\n  .input-module_input__3k4oC:hover {\n    border: 1px solid #b6babd;\n    box-sizing: border-box; }\n  .input-module_input__3k4oC [type='text']:focus,\n  .input-module_input__3k4oC [type='password']:focus,\n  .input-module_input__3k4oC [type='number']:focus,\n  .input-module_input__3k4oC [type='email']:focus,\n  .input-module_input__3k4oC [type='search']:focus {\n    color: #31363a; }\n  .input-module_input__3k4oC:focus-within {\n    border: 1px solid #3399ff; }\n    .input-module_input__3k4oC:focus-within label {\n      color: #3399ff; }\n";
 var style$K = {"input":"input-module_input__3k4oC","right":"input-module_right__3AGuV","left":"input-module_left__29lN4","normal":"input-module_normal__3iBT3"};
 styleInject(css_248z$O);
 
@@ -92,6 +92,7 @@ const Input = ({
   const {
     input
   } = style$K;
+  const inputRef = useRef(null);
 
   const ArrowKeyUpDown = event => {
     const {
@@ -145,8 +146,10 @@ const Input = ({
     } else onChange(parseFloat(val));
   };
 
-  return /*#__PURE__*/React$1.createElement(React$1.Fragment, null, size === 'noStyle' ? /*#__PURE__*/React$1.createElement("input", {
-    ref: ref,
+  return /*#__PURE__*/React$1.createElement(React$1.Fragment, null, size === 'noStyle' ? /*#__PURE__*/React$1.createElement("div", {
+    ref: ref
+  }, /*#__PURE__*/React$1.createElement("input", {
+    ref: inputRef,
     type: "text",
     onFocus: event => event.target.select(),
     onKeyUp: ArrowKeyUpDown,
@@ -155,18 +158,21 @@ const Input = ({
     className: `${className ? className : ''}`,
     placeholder: placeholder,
     onChange: e => setValue(e.target.value)
-  }) : /*#__PURE__*/React$1.createElement("div", {
+  })) : /*#__PURE__*/React$1.createElement("div", {
     ref: ref,
     className: `${className ? className : ''} ${input} ${style$K[size]} ${style$K[direction]}`
   }, label || children ? /*#__PURE__*/React$1.createElement("input", {
     id: id,
+    ref: inputRef,
     type: "text",
     onFocus: event => event.target.select(),
     onKeyDown: ArrowKeyUpDown,
     value: value,
     onBlur: calcInput,
     onChange: e => setValue(e.target.value)
-  }) : null, /*#__PURE__*/React$1.createElement("label", null, children ? children : label)));
+  }) : null, /*#__PURE__*/React$1.createElement("label", {
+    onClick: () => inputRef.current.focus()
+  }, /*#__PURE__*/React$1.createElement("div", null, children ? children : label))));
 };
 
 var css_248z$N = ".iconButton-module_btn__1Xikn {\n  font-family: aktiv-grotesk, sans-serif;\n  box-sizing: border-box;\n  outline: none;\n  border-radius: 6px;\n  display: flex;\n  align-items: center;\n  justify-content: center;\n  border: 0;\n  cursor: pointer;\n  border: 1px solid transparent; }\n  .iconButton-module_btn__1Xikn.iconButton-module_enabled__z0B1G.iconButton-module_white__6dVau {\n    background-color: #ffffff; }\n  .iconButton-module_btn__1Xikn.iconButton-module_enabled__z0B1G.iconButton-module_gray__1lziB {\n    background-color: #f7f9fa; }\n  .iconButton-module_btn__1Xikn.iconButton-module_enabled__z0B1G:hover, .iconButton-module_btn__1Xikn.iconButton-module_enabled__z0B1G.iconButton-module_active__3ZrO_ {\n    background: #f2f4f5; }\n  .iconButton-module_btn__1Xikn.iconButton-module_enabled__z0B1G.iconButton-module_active__3ZrO_ {\n    border: 1px solid #3399ff; }\n    .iconButton-module_btn__1Xikn.iconButton-module_enabled__z0B1G.iconButton-module_active__3ZrO_ svg rect {\n      fill: #333333; }\n  .iconButton-module_btn__1Xikn.iconButton-module_enabled__z0B1G:active {\n    border: 1px solid #3399ff; }\n  .iconButton-module_btn__1Xikn.iconButton-module_disable__2qvG7 {\n    background-color: transparent !important;\n    pointer-events: none; }\n    .iconButton-module_btn__1Xikn.iconButton-module_disable__2qvG7 svg {\n      opacity: 0.5; }\n  .iconButton-module_btn__1Xikn.iconButton-module_normal__1YN9Y {\n    width: 32px;\n    height: 32px; }\n  .iconButton-module_btn__1Xikn.iconButton-module_small__1eSuR {\n    width: 24px;\n    height: 24px; }\n";
@@ -4409,7 +4415,7 @@ const Alignment = ({
   })), /*#__PURE__*/React$1.createElement("label", null, "Distribute Horizontal Spacing")))));
 };
 
-var css_248z$i = ".dropdown-module_dropdown__22lKQ {\n  display: flex;\n  align-items: center;\n  border: 1px solid #e8ebed;\n  border-radius: 8px;\n  position: relative;\n  background-color: #f5f5f5; }\n  .dropdown-module_dropdown__22lKQ * {\n    font-family: aktiv-grotesk, sans-serif;\n    box-sizing: border-box;\n    user-select: none; }\n  .dropdown-module_dropdown__22lKQ input {\n    border: none;\n    outline: none;\n    background: transparent;\n    padding: 0;\n    margin: 0; }\n  .dropdown-module_dropdown__22lKQ.dropdown-module_ddlOption__mBVs1 {\n    border: 0; }\n    .dropdown-module_dropdown__22lKQ.dropdown-module_ddlOption__mBVs1 .dropdown-module_selectedItem__2-QsG {\n      display: flex;\n      justify-content: left;\n      padding: 8px 0 8px 8px; }\n      .dropdown-module_dropdown__22lKQ.dropdown-module_ddlOption__mBVs1 .dropdown-module_selectedItem__2-QsG label {\n        font-family: Aktiv Grotesk, sans-serif;\n        font-style: normal;\n        font-weight: 700;\n        font-size: 12px;\n        line-height: 20px;\n        display: flex;\n        align-items: center;\n        color: #000408;\n        margin-right: 4px; }\n      .dropdown-module_dropdown__22lKQ.dropdown-module_ddlOption__mBVs1 .dropdown-module_selectedItem__2-QsG span {\n        font-size: 11px;\n        user-select: none; }\n    .dropdown-module_dropdown__22lKQ.dropdown-module_ddlOption__mBVs1:hover {\n      border: 0; }\n    .dropdown-module_dropdown__22lKQ.dropdown-module_ddlOption__mBVs1.dropdown-module_open__zFsbX {\n      border: 0; }\n    .dropdown-module_dropdown__22lKQ.dropdown-module_ddlOption__mBVs1 ul {\n      width: 177px;\n      top: 34px;\n      left: -72px; }\n      .dropdown-module_dropdown__22lKQ.dropdown-module_ddlOption__mBVs1 ul li {\n        width: 164px; }\n        .dropdown-module_dropdown__22lKQ.dropdown-module_ddlOption__mBVs1 ul li button {\n          font-size: 11px;\n          line-height: 16px; }\n        .dropdown-module_dropdown__22lKQ.dropdown-module_ddlOption__mBVs1 ul li:hover {\n          background: #e8ebed; }\n          .dropdown-module_dropdown__22lKQ.dropdown-module_ddlOption__mBVs1 ul li:hover button {\n            color: #000408; }\n            .dropdown-module_dropdown__22lKQ.dropdown-module_ddlOption__mBVs1 ul li:hover button svg path {\n              fill: #000408; }\n  .dropdown-module_dropdown__22lKQ.dropdown-module_small__2V6t9 {\n    width: 108px;\n    height: 24px; }\n    .dropdown-module_dropdown__22lKQ.dropdown-module_small__2V6t9 input {\n      width: 85px;\n      font-size: 11px;\n      padding-left: 8px; }\n    .dropdown-module_dropdown__22lKQ.dropdown-module_small__2V6t9 ul.dropdown-module_search__1mXOx {\n      top: 23px;\n      min-height: 24px; }\n  .dropdown-module_dropdown__22lKQ.dropdown-module_medium__1pXzE {\n    width: 128px;\n    height: 32px; }\n    .dropdown-module_dropdown__22lKQ.dropdown-module_medium__1pXzE input {\n      width: 100%;\n      font-size: 12px;\n      padding-left: 8px; }\n    .dropdown-module_dropdown__22lKQ.dropdown-module_medium__1pXzE button {\n      padding-right: 3px; }\n    .dropdown-module_dropdown__22lKQ.dropdown-module_medium__1pXzE ul.dropdown-module_search__1mXOx {\n      top: 31px; }\n  .dropdown-module_dropdown__22lKQ.dropdown-module_large__3Mmct {\n    width: 136px;\n    height: 32px; }\n    .dropdown-module_dropdown__22lKQ.dropdown-module_large__3Mmct input {\n      width: 105px;\n      font-size: 14px;\n      line-height: 24px; }\n    .dropdown-module_dropdown__22lKQ.dropdown-module_large__3Mmct ul.dropdown-module_search__1mXOx {\n      top: 39px;\n      min-height: 24px; }\n  .dropdown-module_dropdown__22lKQ .dropdown-module_selectedItem__2-QsG {\n    width: 100%;\n    display: flex;\n    justify-content: space-between; }\n    .dropdown-module_dropdown__22lKQ .dropdown-module_selectedItem__2-QsG button {\n      width: 24px;\n      height: 32px;\n      display: flex;\n      justify-content: center;\n      align-items: center; }\n      .dropdown-module_dropdown__22lKQ .dropdown-module_selectedItem__2-QsG button svg {\n        stroke: #999999; }\n    .dropdown-module_dropdown__22lKQ .dropdown-module_selectedItem__2-QsG span {\n      font-size: 11px;\n      user-select: none; }\n  .dropdown-module_dropdown__22lKQ button {\n    border: 0;\n    background: transparent;\n    outline: none;\n    padding: 0;\n    margin: 0;\n    display: flex;\n    justify-content: space-between;\n    align-items: center;\n    cursor: pointer; }\n  .dropdown-module_dropdown__22lKQ ul {\n    list-style: none;\n    margin: 0;\n    padding: 0;\n    display: flex;\n    flex-direction: column;\n    padding: 4px;\n    position: absolute;\n    width: 140px;\n    background: #ffffff;\n    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.06), 0px 0.5px 1px rgba(0, 0, 0, 0.24);\n    border-radius: 8px;\n    top: -1px;\n    left: -2px;\n    z-index: 1;\n    overflow: hidden; }\n    .dropdown-module_dropdown__22lKQ ul > div > div:nth-child(3) {\n      width: 4px !important;\n      right: 0 !important; }\n      .dropdown-module_dropdown__22lKQ ul > div > div:nth-child(3) > div:hover {\n        background-color: #3399ff !important; }\n    .dropdown-module_dropdown__22lKQ ul li {\n      display: flex;\n      flex-direction: row;\n      align-items: center;\n      padding: 4px 4px 4px 8px;\n      position: static;\n      width: 132px;\n      height: 24px;\n      border-radius: 4px;\n      align-self: stretch; }\n      .dropdown-module_dropdown__22lKQ ul li button {\n        width: 100%;\n        padding-right: 4px;\n        height: 32px; }\n        .dropdown-module_dropdown__22lKQ ul li button span {\n          font-size: 11px;\n          user-select: none; }\n          .dropdown-module_dropdown__22lKQ ul li button span > span {\n            color: #b6babd; }\n      .dropdown-module_dropdown__22lKQ ul li:hover {\n        background: #3399ff; }\n        .dropdown-module_dropdown__22lKQ ul li:hover button {\n          color: #ffffff; }\n          .dropdown-module_dropdown__22lKQ ul li:hover button > span > span {\n            color: #63676c; }\n          .dropdown-module_dropdown__22lKQ ul li:hover button svg path {\n            fill: #63676c; }\n    .dropdown-module_dropdown__22lKQ ul button {\n      text-align: left; }\n  .dropdown-module_dropdown__22lKQ.dropdown-module_withOutLabel__2GjCn.dropdown-module_ddlOption__mBVs1 {\n    border: 0;\n    width: auto;\n    background-color: transparent; }\n    .dropdown-module_dropdown__22lKQ.dropdown-module_withOutLabel__2GjCn.dropdown-module_ddlOption__mBVs1 .dropdown-module_selectedItem__2-QsG {\n      width: auto;\n      padding: 0; }\n      .dropdown-module_dropdown__22lKQ.dropdown-module_withOutLabel__2GjCn.dropdown-module_ddlOption__mBVs1 .dropdown-module_selectedItem__2-QsG button:hover {\n        background-color: #f5f5f5;\n        border-radius: 8px; }\n  .dropdown-module_dropdown__22lKQ:hover {\n    border: 1px solid #b6babd; }\n  .dropdown-module_dropdown__22lKQ.dropdown-module_open__zFsbX {\n    border: 1px solid #3399ff; }\n  .dropdown-module_dropdown__22lKQ [type='text']:focus,\n  .dropdown-module_dropdown__22lKQ [type='password']:focus,\n  .dropdown-module_dropdown__22lKQ [type='number']:focus,\n  .dropdown-module_dropdown__22lKQ [type='email']:focus,\n  .dropdown-module_dropdown__22lKQ [type='search']:focus {\n    color: #333333; }\n";
+var css_248z$i = ".dropdown-module_dropdown__22lKQ {\n  display: flex;\n  align-items: center;\n  border: 1px solid #e8ebed;\n  border-radius: 8px;\n  position: relative;\n  background-color: #f5f5f5; }\n  .dropdown-module_dropdown__22lKQ * {\n    font-family: aktiv-grotesk, sans-serif;\n    box-sizing: border-box;\n    user-select: none; }\n  .dropdown-module_dropdown__22lKQ input {\n    border: none;\n    outline: none;\n    background: transparent;\n    padding: 0;\n    margin: 0; }\n  .dropdown-module_dropdown__22lKQ.dropdown-module_ddlOption__mBVs1 {\n    border: 0; }\n    .dropdown-module_dropdown__22lKQ.dropdown-module_ddlOption__mBVs1 .dropdown-module_selectedItem__2-QsG {\n      display: flex;\n      justify-content: left;\n      padding: 8px 0 8px 8px; }\n      .dropdown-module_dropdown__22lKQ.dropdown-module_ddlOption__mBVs1 .dropdown-module_selectedItem__2-QsG label {\n        font-family: Aktiv Grotesk, sans-serif;\n        font-style: normal;\n        font-weight: 700;\n        font-size: 12px;\n        line-height: 20px;\n        display: flex;\n        align-items: center;\n        color: #000408;\n        margin-right: 4px; }\n      .dropdown-module_dropdown__22lKQ.dropdown-module_ddlOption__mBVs1 .dropdown-module_selectedItem__2-QsG span {\n        font-size: 11px;\n        user-select: none; }\n    .dropdown-module_dropdown__22lKQ.dropdown-module_ddlOption__mBVs1:hover {\n      border: 0; }\n    .dropdown-module_dropdown__22lKQ.dropdown-module_ddlOption__mBVs1.dropdown-module_open__zFsbX {\n      border: 0; }\n    .dropdown-module_dropdown__22lKQ.dropdown-module_ddlOption__mBVs1 ul {\n      width: 177px;\n      top: 34px;\n      left: -72px; }\n      .dropdown-module_dropdown__22lKQ.dropdown-module_ddlOption__mBVs1 ul li {\n        width: 164px; }\n        .dropdown-module_dropdown__22lKQ.dropdown-module_ddlOption__mBVs1 ul li button {\n          font-size: 11px;\n          line-height: 16px; }\n        .dropdown-module_dropdown__22lKQ.dropdown-module_ddlOption__mBVs1 ul li:hover {\n          background: #e8ebed; }\n          .dropdown-module_dropdown__22lKQ.dropdown-module_ddlOption__mBVs1 ul li:hover button {\n            color: #000408; }\n            .dropdown-module_dropdown__22lKQ.dropdown-module_ddlOption__mBVs1 ul li:hover button svg path {\n              fill: #000408; }\n  .dropdown-module_dropdown__22lKQ.dropdown-module_small__2V6t9 {\n    width: 108px;\n    height: 24px; }\n    .dropdown-module_dropdown__22lKQ.dropdown-module_small__2V6t9 input {\n      width: 85px;\n      font-size: 11px;\n      padding-left: 8px; }\n    .dropdown-module_dropdown__22lKQ.dropdown-module_small__2V6t9 ul.dropdown-module_search__1mXOx {\n      top: 23px;\n      min-height: 24px; }\n  .dropdown-module_dropdown__22lKQ.dropdown-module_medium__1pXzE {\n    width: 128px;\n    height: 32px; }\n    .dropdown-module_dropdown__22lKQ.dropdown-module_medium__1pXzE input {\n      width: 100%;\n      font-size: 12px;\n      padding-left: 8px; }\n    .dropdown-module_dropdown__22lKQ.dropdown-module_medium__1pXzE button {\n      padding-right: 3px; }\n    .dropdown-module_dropdown__22lKQ.dropdown-module_medium__1pXzE ul.dropdown-module_search__1mXOx {\n      top: 31px; }\n  .dropdown-module_dropdown__22lKQ.dropdown-module_large__3Mmct {\n    width: 136px;\n    height: 32px; }\n    .dropdown-module_dropdown__22lKQ.dropdown-module_large__3Mmct input {\n      width: 105px;\n      font-size: 14px;\n      line-height: 24px; }\n    .dropdown-module_dropdown__22lKQ.dropdown-module_large__3Mmct ul.dropdown-module_search__1mXOx {\n      top: 39px;\n      min-height: 24px; }\n  .dropdown-module_dropdown__22lKQ .dropdown-module_selectedItem__2-QsG {\n    width: 100%;\n    display: flex;\n    justify-content: space-between; }\n    .dropdown-module_dropdown__22lKQ .dropdown-module_selectedItem__2-QsG button {\n      width: 32px;\n      height: 32px;\n      display: flex;\n      justify-content: center;\n      align-items: center; }\n      .dropdown-module_dropdown__22lKQ .dropdown-module_selectedItem__2-QsG button svg {\n        stroke: #999999; }\n    .dropdown-module_dropdown__22lKQ .dropdown-module_selectedItem__2-QsG span {\n      font-size: 11px;\n      user-select: none; }\n  .dropdown-module_dropdown__22lKQ button {\n    border: 0;\n    background: transparent;\n    outline: none;\n    padding: 0;\n    margin: 0;\n    display: flex;\n    justify-content: space-between;\n    align-items: center;\n    cursor: pointer; }\n  .dropdown-module_dropdown__22lKQ ul {\n    list-style: none;\n    margin: 0;\n    padding: 0;\n    display: flex;\n    flex-direction: column;\n    padding: 4px;\n    position: absolute;\n    width: 140px;\n    background: #ffffff;\n    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.06), 0px 0.5px 1px rgba(0, 0, 0, 0.24);\n    border-radius: 8px;\n    top: -1px;\n    left: -2px;\n    z-index: 1;\n    overflow: hidden; }\n    .dropdown-module_dropdown__22lKQ ul > div > div:nth-child(3) {\n      width: 4px !important;\n      right: 0 !important; }\n      .dropdown-module_dropdown__22lKQ ul > div > div:nth-child(3) > div:hover {\n        background-color: #3399ff !important; }\n    .dropdown-module_dropdown__22lKQ ul li {\n      display: flex;\n      flex-direction: row;\n      align-items: center;\n      padding: 4px 4px 4px 8px;\n      position: static;\n      width: 132px;\n      height: 24px;\n      border-radius: 4px;\n      align-self: stretch; }\n      .dropdown-module_dropdown__22lKQ ul li button {\n        width: 100%;\n        padding-right: 4px;\n        height: 32px; }\n        .dropdown-module_dropdown__22lKQ ul li button span {\n          font-size: 11px;\n          user-select: none; }\n          .dropdown-module_dropdown__22lKQ ul li button span > span {\n            color: #b6babd; }\n      .dropdown-module_dropdown__22lKQ ul li:hover {\n        background: #3399ff; }\n        .dropdown-module_dropdown__22lKQ ul li:hover button {\n          color: #ffffff; }\n          .dropdown-module_dropdown__22lKQ ul li:hover button > span > span {\n            color: #63676c; }\n          .dropdown-module_dropdown__22lKQ ul li:hover button svg path {\n            fill: #63676c; }\n    .dropdown-module_dropdown__22lKQ ul button {\n      text-align: left; }\n  .dropdown-module_dropdown__22lKQ.dropdown-module_withOutLabel__2GjCn.dropdown-module_ddlOption__mBVs1 {\n    border: 0;\n    width: auto;\n    background-color: transparent; }\n    .dropdown-module_dropdown__22lKQ.dropdown-module_withOutLabel__2GjCn.dropdown-module_ddlOption__mBVs1 .dropdown-module_selectedItem__2-QsG {\n      width: auto;\n      padding: 0; }\n      .dropdown-module_dropdown__22lKQ.dropdown-module_withOutLabel__2GjCn.dropdown-module_ddlOption__mBVs1 .dropdown-module_selectedItem__2-QsG button:hover {\n        background-color: #f5f5f5;\n        border-radius: 8px; }\n  .dropdown-module_dropdown__22lKQ:hover {\n    border: 1px solid #b6babd; }\n  .dropdown-module_dropdown__22lKQ.dropdown-module_open__zFsbX {\n    border: 1px solid #3399ff; }\n  .dropdown-module_dropdown__22lKQ [type='text']:focus,\n  .dropdown-module_dropdown__22lKQ [type='password']:focus,\n  .dropdown-module_dropdown__22lKQ [type='number']:focus,\n  .dropdown-module_dropdown__22lKQ [type='email']:focus,\n  .dropdown-module_dropdown__22lKQ [type='search']:focus {\n    color: #333333; }\n";
 var style$h = {"dropdown":"dropdown-module_dropdown__22lKQ","ddlOption":"dropdown-module_ddlOption__mBVs1","selectedItem":"dropdown-module_selectedItem__2-QsG","open":"dropdown-module_open__zFsbX","small":"dropdown-module_small__2V6t9","search":"dropdown-module_search__1mXOx","medium":"dropdown-module_medium__1pXzE","large":"dropdown-module_large__3Mmct","withOutLabel":"dropdown-module_withOutLabel__2GjCn"};
 styleInject(css_248z$i);
 
@@ -5841,7 +5847,7 @@ const DropdownOption = ({
   }, !children ? /*#__PURE__*/React$1.createElement(ChevronArrowIcon$1, null) : children)));
 };
 
-var css_248z$a = ".fill-row-module_fillRow__3AiSV {\n  position: relative;\n  width: 224px;\n  height: 32px;\n  display: flex;\n  align-items: center;\n  justify-content: space-between;\n  border-radius: 4px;\n  margin: 8px 0; }\n  .fill-row-module_fillRow__3AiSV * {\n    box-sizing: border-box;\n    font-family: Aktiv Grotesk, sans-serif;\n    user-select: none; }\n  .fill-row-module_fillRow__3AiSV .fill-row-module_colorActionWrapper__XD7Wi {\n    display: flex;\n    width: 104px;\n    height: 32px;\n    border: 1px solid #e8ebed;\n    border-radius: 8px;\n    align-items: center;\n    padding: 8px; }\n    .fill-row-module_fillRow__3AiSV .fill-row-module_colorActionWrapper__XD7Wi:hover {\n      border: 1px solid #3399ff; }\n    .fill-row-module_fillRow__3AiSV .fill-row-module_colorActionWrapper__XD7Wi:focus-within {\n      border: 1px solid #3399ff; }\n    .fill-row-module_fillRow__3AiSV .fill-row-module_colorActionWrapper__XD7Wi input {\n      font-size: 11px;\n      border: 0;\n      outline: none;\n      width: 64px;\n      padding-left: 8px; }\n    .fill-row-module_fillRow__3AiSV .fill-row-module_colorActionWrapper__XD7Wi .fill-row-module_colorPicker__15Lpx {\n      width: 16px;\n      height: 16px;\n      border-radius: 50%; }\n  .fill-row-module_fillRow__3AiSV.fill-row-module_active__29zYK {\n    border: 1px solid #3399ff; }\n  .fill-row-module_fillRow__3AiSV .fill-row-module_fillText__2rXs8 {\n    width: 52px;\n    height: 32px;\n    justify-content: flex-end; }\n    .fill-row-module_fillRow__3AiSV .fill-row-module_fillText__2rXs8 input {\n      width: 20px;\n      padding: 0;\n      line-height: 16px;\n      font-size: 11px; }\n  .fill-row-module_fillRow__3AiSV.fill-row-module_withOutBlendMode__3vDyP {\n    justify-content: flex-start; }\n    .fill-row-module_fillRow__3AiSV.fill-row-module_withOutBlendMode__3vDyP .fill-row-module_colorActionWrapper__XD7Wi,\n    .fill-row-module_fillRow__3AiSV.fill-row-module_withOutBlendMode__3vDyP .fill-row-module_fillText__2rXs8 {\n      margin-right: 8px; }\n  .fill-row-module_fillRow__3AiSV .fill-row-module_btnRow__1FtV2 {\n    width: 24px;\n    height: 32px; }\n  .fill-row-module_fillRow__3AiSV .fill-row-module_colorPickerModal__3sRG0 {\n    position: fixed;\n    right: 240px;\n    z-index: 1; }\n    .fill-row-module_fillRow__3AiSV .fill-row-module_colorPickerModal__3sRG0 > div {\n      border: 0 !important;\n      border-radius: 8px !important;\n      background: #f7f9fa !important;\n      box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.06), 0px 0.5px 1px rgba(0, 0, 0, 0.24) !important; }\n  .fill-row-module_fillRow__3AiSV.fill-row-module_white__1nKau {\n    background: #ffffff; }\n  .fill-row-module_fillRow__3AiSV.fill-row-module_gray__CHWab {\n    background: #f7f9fa; }\n  .fill-row-module_fillRow__3AiSV.fill-row-module_silver__spEV6 {\n    background: #f2f4f5; }\n  .fill-row-module_fillRow__3AiSV .fill-row-module_layerText__1SiPB {\n    font-size: 12px;\n    line-height: 24px;\n    font-weight: 600;\n    display: flex;\n    align-items: center;\n    margin: 0px 8px;\n    width: 188px;\n    height: 24px;\n    cursor: text; }\n    .fill-row-module_fillRow__3AiSV .fill-row-module_layerText__1SiPB.fill-row-module_purple__1o4db {\n      color: #b555e5; }\n    .fill-row-module_fillRow__3AiSV .fill-row-module_layerText__1SiPB.fill-row-module_black__80Yjk {\n      color: #31363a; }\n  .fill-row-module_fillRow__3AiSV [type='text']:focus,\n  .fill-row-module_fillRow__3AiSV [type='password']:focus,\n  .fill-row-module_fillRow__3AiSV [type='number']:focus,\n  .fill-row-module_fillRow__3AiSV [type='email']:focus,\n  .fill-row-module_fillRow__3AiSV [type='search']:focus {\n    color: #333333; }\n";
+var css_248z$a = ".fill-row-module_fillRow__3AiSV {\n  position: relative;\n  width: 224px;\n  height: 32px;\n  display: flex;\n  align-items: center;\n  justify-content: space-between;\n  border-radius: 4px;\n  margin: 8px 0; }\n  .fill-row-module_fillRow__3AiSV * {\n    box-sizing: border-box;\n    font-family: Aktiv Grotesk, sans-serif;\n    user-select: none; }\n  .fill-row-module_fillRow__3AiSV .fill-row-module_colorActionWrapper__XD7Wi {\n    display: flex;\n    width: 104px;\n    height: 32px;\n    border: 1px solid #e8ebed;\n    border-radius: 8px;\n    align-items: center;\n    padding: 8px; }\n    .fill-row-module_fillRow__3AiSV .fill-row-module_colorActionWrapper__XD7Wi:hover {\n      border: 1px solid #3399ff; }\n    .fill-row-module_fillRow__3AiSV .fill-row-module_colorActionWrapper__XD7Wi:focus-within {\n      border: 1px solid #3399ff; }\n    .fill-row-module_fillRow__3AiSV .fill-row-module_colorActionWrapper__XD7Wi input {\n      font-size: 11px;\n      border: 0;\n      outline: none;\n      width: 64px;\n      padding-left: 8px; }\n    .fill-row-module_fillRow__3AiSV .fill-row-module_colorActionWrapper__XD7Wi .fill-row-module_colorPicker__15Lpx {\n      width: 16px;\n      height: 16px;\n      border-radius: 50%; }\n  .fill-row-module_fillRow__3AiSV.fill-row-module_active__29zYK {\n    border: 1px solid #3399ff; }\n  .fill-row-module_fillRow__3AiSV .fill-row-module_fillText__2rXs8 {\n    width: 52px;\n    height: 32px;\n    justify-content: flex-start; }\n    .fill-row-module_fillRow__3AiSV .fill-row-module_fillText__2rXs8 input {\n      width: 28px;\n      padding: 0;\n      line-height: 16px;\n      font-size: 11px; }\n  .fill-row-module_fillRow__3AiSV.fill-row-module_withOutBlendMode__3vDyP {\n    justify-content: flex-start; }\n    .fill-row-module_fillRow__3AiSV.fill-row-module_withOutBlendMode__3vDyP .fill-row-module_colorActionWrapper__XD7Wi,\n    .fill-row-module_fillRow__3AiSV.fill-row-module_withOutBlendMode__3vDyP .fill-row-module_fillText__2rXs8 {\n      margin-right: 4px; }\n    .fill-row-module_fillRow__3AiSV.fill-row-module_withOutBlendMode__3vDyP .fill-row-module_colorActionWrapper__XD7Wi {\n      width: 140px; }\n  .fill-row-module_fillRow__3AiSV .fill-row-module_btnRow__1FtV2 {\n    width: 24px;\n    height: 32px; }\n  .fill-row-module_fillRow__3AiSV .fill-row-module_colorPickerModal__3sRG0 {\n    position: fixed;\n    right: 240px;\n    z-index: 1; }\n    .fill-row-module_fillRow__3AiSV .fill-row-module_colorPickerModal__3sRG0 > div {\n      border: 0 !important;\n      border-radius: 8px !important;\n      background: #f7f9fa !important;\n      box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.06), 0px 0.5px 1px rgba(0, 0, 0, 0.24) !important; }\n  .fill-row-module_fillRow__3AiSV.fill-row-module_white__1nKau {\n    background: #ffffff; }\n  .fill-row-module_fillRow__3AiSV.fill-row-module_gray__CHWab {\n    background: #f7f9fa; }\n  .fill-row-module_fillRow__3AiSV.fill-row-module_silver__spEV6 {\n    background: #f2f4f5; }\n  .fill-row-module_fillRow__3AiSV .fill-row-module_layerText__1SiPB {\n    font-size: 12px;\n    line-height: 24px;\n    font-weight: 600;\n    display: flex;\n    align-items: center;\n    margin: 0px 8px;\n    width: 188px;\n    height: 24px;\n    cursor: text; }\n    .fill-row-module_fillRow__3AiSV .fill-row-module_layerText__1SiPB.fill-row-module_purple__1o4db {\n      color: #b555e5; }\n    .fill-row-module_fillRow__3AiSV .fill-row-module_layerText__1SiPB.fill-row-module_black__80Yjk {\n      color: #31363a; }\n  .fill-row-module_fillRow__3AiSV [type='text']:focus,\n  .fill-row-module_fillRow__3AiSV [type='password']:focus,\n  .fill-row-module_fillRow__3AiSV [type='number']:focus,\n  .fill-row-module_fillRow__3AiSV [type='email']:focus,\n  .fill-row-module_fillRow__3AiSV [type='search']:focus {\n    color: #333333; }\n";
 var style$9 = {"fillRow":"fill-row-module_fillRow__3AiSV","colorActionWrapper":"fill-row-module_colorActionWrapper__XD7Wi","colorPicker":"fill-row-module_colorPicker__15Lpx","active":"fill-row-module_active__29zYK","fillText":"fill-row-module_fillText__2rXs8","withOutBlendMode":"fill-row-module_withOutBlendMode__3vDyP","btnRow":"fill-row-module_btnRow__1FtV2","colorPickerModal":"fill-row-module_colorPickerModal__3sRG0","white":"fill-row-module_white__1nKau","gray":"fill-row-module_gray__CHWab","silver":"fill-row-module_silver__spEV6","layerText":"fill-row-module_layerText__1SiPB","purple":"fill-row-module_purple__1o4db","black":"fill-row-module_black__80Yjk"};
 styleInject(css_248z$a);
 
@@ -6113,7 +6119,7 @@ const defaultOption = [{
   value: 'XOR'
 }];
 
-var css_248z$8 = ".stroke-row-module_strokeRow__SpWBF {\n  position: relative;\n  width: 224px;\n  height: 32px;\n  display: flex;\n  align-items: center;\n  justify-content: space-between;\n  border-radius: 4px;\n  margin: 8px 0; }\n  .stroke-row-module_strokeRow__SpWBF * {\n    box-sizing: border-box;\n    font-family: Aktiv Grotesk, sans-serif;\n    user-select: none; }\n  .stroke-row-module_strokeRow__SpWBF .stroke-row-module_strokeInput1__3AjaJ {\n    width: 44px;\n    height: 32px;\n    justify-content: flex-end;\n    align-items: center; }\n    .stroke-row-module_strokeRow__SpWBF .stroke-row-module_strokeInput1__3AjaJ input {\n      width: 12px;\n      padding: 0;\n      font-size: 11px; }\n    .stroke-row-module_strokeRow__SpWBF .stroke-row-module_strokeInput1__3AjaJ label {\n      width: 24px;\n      height: 32px; }\n  .stroke-row-module_strokeRow__SpWBF .stroke-row-module_strokeInput2__2D5ze {\n    width: 52px;\n    height: 32px;\n    justify-content: flex-end;\n    align-items: center; }\n    .stroke-row-module_strokeRow__SpWBF .stroke-row-module_strokeInput2__2D5ze input {\n      width: 20px;\n      padding: 0;\n      font-size: 11px; }\n    .stroke-row-module_strokeRow__SpWBF .stroke-row-module_strokeInput2__2D5ze label {\n      width: 24px;\n      height: 32px; }\n  .stroke-row-module_strokeRow__SpWBF .stroke-row-module_btnRow__3o45S {\n    width: 24px;\n    height: 32px; }\n  .stroke-row-module_strokeRow__SpWBF .stroke-row-module_colorActionWrapper__33veL {\n    display: flex;\n    width: 92px;\n    height: 32px;\n    border: 1px solid #e8ebed;\n    box-sizing: border-box;\n    border-radius: 8px;\n    align-items: center;\n    justify-content: flex-start;\n    padding: 8px; }\n    .stroke-row-module_strokeRow__SpWBF .stroke-row-module_colorActionWrapper__33veL .stroke-row-module_colorPicker__33Cir {\n      width: 16px;\n      height: 16px;\n      border-radius: 50%; }\n    .stroke-row-module_strokeRow__SpWBF .stroke-row-module_colorActionWrapper__33veL input {\n      border: 0;\n      outline: none;\n      width: 58px;\n      height: 16px;\n      font-size: 11px;\n      line-height: 16px;\n      padding-left: 8px; }\n    .stroke-row-module_strokeRow__SpWBF .stroke-row-module_colorActionWrapper__33veL:hover {\n      border: 1px solid #3399ff; }\n    .stroke-row-module_strokeRow__SpWBF .stroke-row-module_colorActionWrapper__33veL:focus-within {\n      border: 1px solid #3399ff; }\n  .stroke-row-module_strokeRow__SpWBF .stroke-row-module_colorPickerModal__25b0p {\n    position: absolute;\n    top: 40px;\n    z-index: 1; }\n    .stroke-row-module_strokeRow__SpWBF .stroke-row-module_colorPickerModal__25b0p > div {\n      border: 0 !important;\n      border-radius: 8px !important;\n      background: #f7f9fa !important;\n      box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.06), 0px 0.5px 1px rgba(0, 0, 0, 0.24) !important; }\n  .stroke-row-module_strokeRow__SpWBF.stroke-row-module_white__8e02Q {\n    background: #ffffff; }\n  .stroke-row-module_strokeRow__SpWBF.stroke-row-module_gray__1-1Ec {\n    background: #f7f9fa; }\n  .stroke-row-module_strokeRow__SpWBF.stroke-row-module_silver__2YY7i {\n    background: #f2f4f5; }\n  .stroke-row-module_strokeRow__SpWBF [type='text']:focus,\n  .stroke-row-module_strokeRow__SpWBF [type='password']:focus,\n  .stroke-row-module_strokeRow__SpWBF [type='number']:focus,\n  .stroke-row-module_strokeRow__SpWBF [type='email']:focus,\n  .stroke-row-module_strokeRow__SpWBF [type='search']:focus {\n    color: #333333; }\n";
+var css_248z$8 = ".stroke-row-module_strokeRow__SpWBF {\n  position: relative;\n  width: 224px;\n  height: 32px;\n  display: flex;\n  align-items: center;\n  justify-content: space-between;\n  border-radius: 4px;\n  margin: 8px 0; }\n  .stroke-row-module_strokeRow__SpWBF * {\n    box-sizing: border-box;\n    font-family: Aktiv Grotesk, sans-serif;\n    user-select: none; }\n  .stroke-row-module_strokeRow__SpWBF .stroke-row-module_strokeInput1__3AjaJ {\n    width: 44px;\n    height: 32px;\n    align-items: center; }\n    .stroke-row-module_strokeRow__SpWBF .stroke-row-module_strokeInput1__3AjaJ input {\n      width: 20px;\n      font-size: 11px; }\n  .stroke-row-module_strokeRow__SpWBF .stroke-row-module_strokeInput2__2D5ze {\n    width: 52px;\n    height: 32px;\n    align-items: center; }\n    .stroke-row-module_strokeRow__SpWBF .stroke-row-module_strokeInput2__2D5ze input {\n      width: 28px;\n      padding: 0;\n      font-size: 11px; }\n  .stroke-row-module_strokeRow__SpWBF .stroke-row-module_btnRow__3o45S {\n    width: 24px;\n    height: 32px; }\n  .stroke-row-module_strokeRow__SpWBF .stroke-row-module_colorActionWrapper__33veL {\n    display: flex;\n    width: 92px;\n    height: 32px;\n    border: 1px solid #e8ebed;\n    box-sizing: border-box;\n    border-radius: 8px;\n    align-items: center;\n    justify-content: flex-start;\n    padding: 8px; }\n    .stroke-row-module_strokeRow__SpWBF .stroke-row-module_colorActionWrapper__33veL .stroke-row-module_colorPicker__33Cir {\n      width: 16px;\n      height: 16px;\n      border-radius: 50%; }\n    .stroke-row-module_strokeRow__SpWBF .stroke-row-module_colorActionWrapper__33veL input {\n      border: 0;\n      outline: none;\n      width: 58px;\n      height: 16px;\n      font-size: 11px;\n      line-height: 16px;\n      padding-left: 8px; }\n    .stroke-row-module_strokeRow__SpWBF .stroke-row-module_colorActionWrapper__33veL:hover {\n      border: 1px solid #3399ff; }\n    .stroke-row-module_strokeRow__SpWBF .stroke-row-module_colorActionWrapper__33veL:focus-within {\n      border: 1px solid #3399ff; }\n  .stroke-row-module_strokeRow__SpWBF .stroke-row-module_colorPickerModal__25b0p {\n    position: absolute;\n    top: 40px;\n    z-index: 1; }\n    .stroke-row-module_strokeRow__SpWBF .stroke-row-module_colorPickerModal__25b0p > div {\n      border: 0 !important;\n      border-radius: 8px !important;\n      background: #f7f9fa !important;\n      box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.06), 0px 0.5px 1px rgba(0, 0, 0, 0.24) !important; }\n  .stroke-row-module_strokeRow__SpWBF.stroke-row-module_white__8e02Q {\n    background: #ffffff; }\n  .stroke-row-module_strokeRow__SpWBF.stroke-row-module_gray__1-1Ec {\n    background: #f7f9fa; }\n  .stroke-row-module_strokeRow__SpWBF.stroke-row-module_silver__2YY7i {\n    background: #f2f4f5; }\n  .stroke-row-module_strokeRow__SpWBF [type='text']:focus,\n  .stroke-row-module_strokeRow__SpWBF [type='password']:focus,\n  .stroke-row-module_strokeRow__SpWBF [type='number']:focus,\n  .stroke-row-module_strokeRow__SpWBF [type='email']:focus,\n  .stroke-row-module_strokeRow__SpWBF [type='search']:focus {\n    color: #333333; }\n";
 var style$7 = {"strokeRow":"stroke-row-module_strokeRow__SpWBF","strokeInput1":"stroke-row-module_strokeInput1__3AjaJ","strokeInput2":"stroke-row-module_strokeInput2__2D5ze","btnRow":"stroke-row-module_btnRow__3o45S","colorActionWrapper":"stroke-row-module_colorActionWrapper__33veL","colorPicker":"stroke-row-module_colorPicker__33Cir","colorPickerModal":"stroke-row-module_colorPickerModal__25b0p","white":"stroke-row-module_white__8e02Q","gray":"stroke-row-module_gray__1-1Ec","silver":"stroke-row-module_silver__2YY7i"};
 styleInject(css_248z$8);
 
@@ -6238,7 +6244,88 @@ var css_248z$7 = ".stroke-module_stroke__3xznE {\n  width: 240px;\n  display: fl
 var style$6 = {"stroke":"stroke-module_stroke__3xznE","header":"stroke-module_header__PmbN-","strokeItems":"stroke-module_strokeItems__18zIM","white":"stroke-module_white__1EwvI","gray":"stroke-module_gray__1yxJA","silver":"stroke-module_silver__3Jf5m","moreMenu":"stroke-module_moreMenu__2r2_q","moreHeader":"stroke-module_moreHeader__T0nk1","moreBody":"stroke-module_moreBody__2c1Os","morMenuBodyRow":"stroke-module_morMenuBodyRow__3SjdX","morItemRadioButton":"stroke-module_morItemRadioButton__2-DkR","active":"stroke-module_active__TzwdW","option":"stroke-module_option__1JTwD","input":"stroke-module_input__oxlkz","layerText":"stroke-module_layerText__atHEa","purple":"stroke-module_purple__11RP4","black":"stroke-module_black__2Y9xL","layerBtnAction":"stroke-module_layerBtnAction__3nbXe"};
 styleInject(css_248z$7);
 
-/* eslint-disable react-hooks/exhaustive-deps */
+const Stroke = ({
+  type = 'white',
+  textColor = 'black',
+  options,
+  onChange = () => {},
+  onAddClick = () => {},
+  onRemoveClick = () => {},
+  addDisabled = false,
+  strokeOptionDisabled = false,
+  capOptionValues = _cap,
+  caseOptionValues = _cases,
+  trimOptionValues = _trim,
+  start = 0,
+  end = 100,
+  offset = 0
+}) => {
+  const {
+    stroke,
+    strokeItems,
+    layerBtnAction,
+    layerText,
+    header
+  } = style$6;
+  const [toggleMoreItems, setToggleMoreItems] = useState(false);
+
+  const setValue = (data, index) => {
+    onChange({
+      index,
+      id: data.id,
+      color: data.color,
+      strokeWidth: data.strokeWidth,
+      opacity: data.opacity
+    });
+  }; // close menu by click outside.
+
+
+  const moreMenuRef = /*#__PURE__*/createRef();
+  useEffect(() => {
+    function clickOutside(e) {
+      if (moreMenuRef.current && !moreMenuRef.current.contains(e.target)) {
+        setToggleMoreItems(false);
+      }
+    }
+
+    window.addEventListener('mousedown', clickOutside);
+    return () => window.removeEventListener('mousedown', clickOutside);
+  }, [moreMenuRef]); // more menu
+
+  return /*#__PURE__*/React$1.createElement("div", {
+    className: `${stroke} ${style$6[type]}`,
+    ref: moreMenuRef
+  }, /*#__PURE__*/React$1.createElement("div", {
+    className: header
+  }, /*#__PURE__*/React$1.createElement("label", {
+    className: `${layerText} ${style$6[textColor]}`
+  }, "Stroke"), /*#__PURE__*/React$1.createElement("div", {
+    className: `${layerBtnAction}`
+  }, !strokeOptionDisabled ? /*#__PURE__*/React$1.createElement(IconButton, {
+    onClick: () => setToggleMoreItems(!toggleMoreItems)
+  }, /*#__PURE__*/React$1.createElement(TreeDotsIcon$1, null)) : null, /*#__PURE__*/React$1.createElement(IconButton, {
+    onClick: onAddClick,
+    disabled: addDisabled
+  }, /*#__PURE__*/React$1.createElement(PlusIcon$1, null)))), /*#__PURE__*/React$1.createElement("div", {
+    className: strokeItems
+  }, options.map((item, key) => /*#__PURE__*/React$1.createElement(StrokeRow, {
+    key: `${item.id}`,
+    row: item,
+    onChange: _res => setValue(_res, key),
+    onRemoveClick: onRemoveClick
+  }))), toggleMoreItems && /*#__PURE__*/React$1.createElement(StrokeOption, _extends({
+    onChange: onchange
+  }, {
+    capOptionValues,
+    caseOptionValues,
+    trimOptionValues,
+    start,
+    end,
+    offset,
+    setToggleMoreItems,
+    toggleMoreItems
+  })));
+};
 const _cap = [{
   name: 'none',
   value: 'none'
@@ -6278,36 +6365,18 @@ const _cases = [{
     width: 10
   })
 }];
-const Stroke = ({
-  type = 'white',
-  textColor = 'black',
-  options,
-  onChange = () => {},
-  onAddClick = () => {},
-  onRemoveClick = () => {},
-  addDisabled = false,
-  capOptionValues = _cap,
-  caseOptionValues = _cases,
-  trimOptionValues = _trim,
-  start = 0,
-  end = 100,
-  offset = 0
+
+const StrokeOption = ({
+  capOptionValues,
+  caseOptionValues,
+  trimOptionValues,
+  start,
+  end,
+  offset,
+  setToggleMoreItems,
+  toggleMoreItems,
+  onChange = () => {}
 }) => {
-  const {
-    stroke,
-    strokeItems,
-    layerBtnAction,
-    layerText,
-    header,
-    moreMenu,
-    moreHeader,
-    moreBody,
-    morMenuBodyRow,
-    morItemRadioButton,
-    option,
-    input
-  } = style$6;
-  const [toggleMoreItems, setToggleMoreItems] = useState(false);
   const [capOption] = useState(capOptionValues);
   const [capOptionSelected, setCapOptionSelected] = useState({});
   const [trimOption] = useState(trimOptionValues);
@@ -6317,69 +6386,16 @@ const Stroke = ({
   const [startS, setStart] = useState(start);
   const [endS, setEnd] = useState(end);
   const [offsetS, setOffset] = useState(offset);
-
-  const setValue = (data, index) => {
-    onChange({
-      index,
-      id: data.id,
-      color: data.color,
-      strokeWidth: data.strokeWidth,
-      opacity: data.opacity
-    });
-  }; // useEffect(() => {
-  //   onChange({
-  //     cap: 'value' in capOptionSelected ? capOptionSelected.value : null,
-  //     case: caseSelected,
-  //     trim: 'value' in capOptionSelected ? trimOptionSelected.value : null,
-  //     start: startS,
-  //     end: endS,
-  //     offset: offsetS,
-  //   });
-  // }, [
-  //   capOptionSelected,
-  //   trimOptionSelected,
-  //   caseSelected,
-  //   startS,
-  //   endS,
-  //   offsetS,
-  // ]);
-  // close menu by click outside.
-
-
-  const moreMenuRef = /*#__PURE__*/createRef();
-  useEffect(() => {
-    function clickOutside(e) {
-      if (moreMenuRef.current && !moreMenuRef.current.contains(e.target)) {
-        setToggleMoreItems(false);
-      }
-    }
-
-    window.addEventListener('mousedown', clickOutside);
-    return () => window.removeEventListener('mousedown', clickOutside);
-  }, [moreMenuRef]); // more menu
-
+  const {
+    moreMenu,
+    moreHeader,
+    moreBody,
+    morMenuBodyRow,
+    morItemRadioButton,
+    option,
+    input
+  } = style$6;
   return /*#__PURE__*/React$1.createElement("div", {
-    className: `${stroke} ${style$6[type]}`,
-    ref: moreMenuRef
-  }, /*#__PURE__*/React$1.createElement("div", {
-    className: header
-  }, /*#__PURE__*/React$1.createElement("label", {
-    className: `${layerText} ${style$6[textColor]}`
-  }, "Stroke"), /*#__PURE__*/React$1.createElement("div", {
-    className: `${layerBtnAction}`
-  }, !addDisabled ? /*#__PURE__*/React$1.createElement(IconButton, {
-    onClick: () => setToggleMoreItems(!toggleMoreItems)
-  }, /*#__PURE__*/React$1.createElement(TreeDotsIcon$1, null)) : null, /*#__PURE__*/React$1.createElement(IconButton, {
-    onClick: onAddClick,
-    disabled: addDisabled
-  }, /*#__PURE__*/React$1.createElement(PlusIcon$1, null)))), /*#__PURE__*/React$1.createElement("div", {
-    className: strokeItems
-  }, options.map((item, key) => /*#__PURE__*/React$1.createElement(StrokeRow, {
-    key: `${item.id}`,
-    row: item,
-    onChange: _res => setValue(_res, key),
-    onRemoveClick: onRemoveClick
-  }))), toggleMoreItems && /*#__PURE__*/React$1.createElement("div", {
     className: moreMenu
   }, /*#__PURE__*/React$1.createElement("div", {
     className: moreHeader
@@ -6392,7 +6408,17 @@ const Stroke = ({
     className: morMenuBodyRow
   }, /*#__PURE__*/React$1.createElement("label", null, "Cap"), /*#__PURE__*/React$1.createElement(Dropdown, {
     option: capOption,
-    onChange: setCapOptionSelected,
+    onChange: _cap => {
+      setCapOptionSelected(_cap);
+      onChange({
+        cap: _cap.value,
+        case: caseSelected,
+        trim: trimOptionSelected.value,
+        start: startS,
+        end: endS,
+        offset: offsetS
+      });
+    },
     size: "medium",
     className: option,
     popupMenu: "left"
@@ -6401,43 +6427,87 @@ const Stroke = ({
   }, /*#__PURE__*/React$1.createElement("label", null, "Case"), /*#__PURE__*/React$1.createElement("div", null, /*#__PURE__*/React$1.createElement(RadioButton, {
     className: morItemRadioButton,
     row: caseOption,
-    onChange: setCaseSelected
+    onChange: _case => {
+      setCaseSelected(_case);
+      onChange({
+        cap: capOptionSelected.value,
+        case: _case,
+        trim: trimOptionSelected.value,
+        start: startS,
+        end: endS,
+        offset: offsetS
+      });
+    }
   }))), /*#__PURE__*/React$1.createElement("div", {
     className: morMenuBodyRow
   }, /*#__PURE__*/React$1.createElement("label", null, "Trim Path"), /*#__PURE__*/React$1.createElement(Dropdown, {
     option: trimOption,
-    onChange: setTrimOptionSelected,
+    onChange: _trim => {
+      setTrimOptionSelected(_trim);
+      onChange({
+        cap: capOptionSelected.value,
+        case: caseSelected,
+        trim: _trim.value,
+        start: startS,
+        end: endS,
+        offset: offsetS
+      });
+    },
     size: "medium",
     className: option,
     popupMenu: "left"
   })), /*#__PURE__*/React$1.createElement("div", {
     className: morMenuBodyRow
   }, /*#__PURE__*/React$1.createElement("label", null, "Start"), /*#__PURE__*/React$1.createElement(Input, {
-    onChange: setStart,
+    onChange: _start => {
+      setStart(_start);
+      onChange({
+        cap: capOptionSelected.value,
+        case: caseSelected,
+        trim: trimOptionSelected.value,
+        start: _start,
+        end: endS,
+        offset: offsetS
+      });
+    },
     value: startS,
-    setValue: setStart,
-    dir: "right",
     label: "%",
     className: input
   })), /*#__PURE__*/React$1.createElement("div", {
     className: morMenuBodyRow
   }, /*#__PURE__*/React$1.createElement("label", null, "End"), /*#__PURE__*/React$1.createElement(Input, {
-    onChange: setEnd,
+    onChange: _end => {
+      setEnd(_end);
+      onChange({
+        cap: capOptionSelected.value,
+        case: caseSelected,
+        trim: trimOptionSelected.value,
+        start: startS,
+        end: _end,
+        offset: offsetS
+      });
+    },
     value: endS,
-    setValue: setEnd,
-    dir: "right",
     label: "%",
     className: input
   })), /*#__PURE__*/React$1.createElement("div", {
     className: morMenuBodyRow
   }, /*#__PURE__*/React$1.createElement("label", null, "Offset"), /*#__PURE__*/React$1.createElement(Input, {
-    onChange: setOffset,
+    onChange: _offset => {
+      setOffset(_offset);
+      onChange({
+        cap: capOptionSelected.value,
+        case: caseSelected,
+        trim: trimOptionSelected.value,
+        start: startS,
+        end: endS,
+        offset: _offset
+      });
+    },
     value: offsetS,
-    setValue: setOffset,
-    dir: "right",
     label: "%",
     className: input
-  })))));
+  }))));
 };
 
 var css_248z$6 = ".text-background-row-module_textBackgroundRow__3hkTZ {\n  position: relative;\n  width: 224px;\n  height: 32px;\n  display: flex;\n  align-items: center;\n  justify-content: space-between;\n  border-radius: 4px;\n  margin: 8px 0;\n  cursor: pointer; }\n  .text-background-row-module_textBackgroundRow__3hkTZ * {\n    box-sizing: border-box;\n    font-family: Aktiv Grotesk, sans-serif;\n    user-select: none; }\n  .text-background-row-module_textBackgroundRow__3hkTZ .text-background-row-module_colorActionWrapper__3bj1g {\n    display: flex;\n    width: 104px;\n    height: 32px;\n    border: 1px solid #e8ebed;\n    border-radius: 8px;\n    align-items: center;\n    padding: 8px; }\n    .text-background-row-module_textBackgroundRow__3hkTZ .text-background-row-module_colorActionWrapper__3bj1g:hover {\n      border: 1px solid #3399ff; }\n    .text-background-row-module_textBackgroundRow__3hkTZ .text-background-row-module_colorActionWrapper__3bj1g:focus-within {\n      border: 1px solid #3399ff; }\n    .text-background-row-module_textBackgroundRow__3hkTZ .text-background-row-module_colorActionWrapper__3bj1g input {\n      font-size: 11px;\n      border: 0;\n      outline: none;\n      width: 64px;\n      padding-left: 8px; }\n    .text-background-row-module_textBackgroundRow__3hkTZ .text-background-row-module_colorActionWrapper__3bj1g .text-background-row-module_colorPicker__1Wg78 {\n      width: 16px;\n      height: 16px;\n      border-radius: 50%; }\n  .text-background-row-module_textBackgroundRow__3hkTZ.text-background-row-module_active__2t_91 {\n    border: 1px solid #3399ff; }\n  .text-background-row-module_textBackgroundRow__3hkTZ .text-background-row-module_fillText__3ei9u {\n    width: 52px;\n    height: 32px;\n    justify-content: flex-end; }\n    .text-background-row-module_textBackgroundRow__3hkTZ .text-background-row-module_fillText__3ei9u input {\n      width: 20px;\n      padding: 0;\n      line-height: 16px;\n      font-size: 11px; }\n  .text-background-row-module_textBackgroundRow__3hkTZ .text-background-row-module_btnRow__zbHCb {\n    width: 24px;\n    height: 32px; }\n  .text-background-row-module_textBackgroundRow__3hkTZ .text-background-row-module_colorPickerModal__1uVoC {\n    position: fixed;\n    right: 240px;\n    z-index: 1; }\n    .text-background-row-module_textBackgroundRow__3hkTZ .text-background-row-module_colorPickerModal__1uVoC > div {\n      border: 0 !important;\n      border-radius: 8px !important;\n      background: #f7f9fa !important;\n      box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.06), 0px 0.5px 1px rgba(0, 0, 0, 0.24) !important; }\n  .text-background-row-module_textBackgroundRow__3hkTZ.text-background-row-module_white__3ibiC {\n    background: #ffffff; }\n  .text-background-row-module_textBackgroundRow__3hkTZ.text-background-row-module_gray__9X32U {\n    background: #f7f9fa; }\n  .text-background-row-module_textBackgroundRow__3hkTZ.text-background-row-module_silver__IwsjR {\n    background: #f2f4f5; }\n  .text-background-row-module_textBackgroundRow__3hkTZ .text-background-row-module_layerText__2TVUb {\n    font-size: 12px;\n    line-height: 24px;\n    font-weight: 600;\n    display: flex;\n    align-items: center;\n    margin: 0px 8px;\n    width: 188px;\n    height: 24px;\n    cursor: text; }\n    .text-background-row-module_textBackgroundRow__3hkTZ .text-background-row-module_layerText__2TVUb.text-background-row-module_purple__1ZPPU {\n      color: #b555e5; }\n    .text-background-row-module_textBackgroundRow__3hkTZ .text-background-row-module_layerText__2TVUb.text-background-row-module_black__3v6xh {\n      color: #31363a; }\n  .text-background-row-module_textBackgroundRow__3hkTZ [type='text']:focus,\n  .text-background-row-module_textBackgroundRow__3hkTZ [type='password']:focus,\n  .text-background-row-module_textBackgroundRow__3hkTZ [type='number']:focus,\n  .text-background-row-module_textBackgroundRow__3hkTZ [type='email']:focus,\n  .text-background-row-module_textBackgroundRow__3hkTZ [type='search']:focus {\n    color: #333333; }\n";
