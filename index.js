@@ -6,8 +6,8 @@ import 'react-tippy/dist/tippy.css';
 import SortableTree, { isDescendant, changeNodeAtPath, addNodeUnderParent } from 'react-sortable-tree';
 import 'react-sortable-tree/style.css';
 import { isDescendant as isDescendant$1, changeNodeAtPath as changeNodeAtPath$1, removeNodeAtPath } from 'react-sortable-tree/dist/index.esm';
-import { SketchPicker } from 'react-color';
 import ReactHtmlParser from 'react-html-parser';
+import { SketchPicker } from 'react-color';
 
 const calculate = (val1, val2, operation) => {
   if (!val1) return parseFloat(operation + val2);
@@ -69,7 +69,7 @@ function styleInject(css, ref) {
   }
 }
 
-var css_248z$O = ".input-module_input__3k4oC {\n  border: 1px solid #e8ebed;\n  box-sizing: border-box;\n  border-radius: 8px;\n  display: flex;\n  justify-content: left;\n  align-items: center;\n  overflow: hidden;\n  background-color: #f5f5f5; }\n  .input-module_input__3k4oC * {\n    font-family: Aktiv Grotesk, sans-serif;\n    box-sizing: border-box;\n    user-select: none; }\n  .input-module_input__3k4oC input {\n    padding: 0; }\n  .input-module_input__3k4oC.input-module_right__3AGuV input {\n    text-align: left; }\n  .input-module_input__3k4oC.input-module_left__29lN4 {\n    flex-direction: row-reverse; }\n  .input-module_input__3k4oC input {\n    border: 0;\n    color: #31363a;\n    background: transparent; }\n    .input-module_input__3k4oC input:focus {\n      outline: 0; }\n  .input-module_input__3k4oC label {\n    font-family: Aktiv Grotesk, sans-serif;\n    width: 16px;\n    height: 32px;\n    color: #b6babd;\n    display: flex;\n    justify-content: flex-start;\n    align-items: center; }\n    .input-module_input__3k4oC label div {\n      width: 12px;\n      height: 12px;\n      font-size: 11px; }\n      .input-module_input__3k4oC label div > svg {\n        margin-left: 3px; }\n  .input-module_input__3k4oC.input-module_normal__3iBT3 {\n    width: 64px;\n    height: 32px;\n    padding-left: 6px; }\n    .input-module_input__3k4oC.input-module_normal__3iBT3 input {\n      width: 40px;\n      height: 32px;\n      font-size: 12px;\n      line-height: 24px; }\n  .input-module_input__3k4oC:hover {\n    border: 1px solid #b6babd;\n    box-sizing: border-box; }\n  .input-module_input__3k4oC [type='text']:focus,\n  .input-module_input__3k4oC [type='password']:focus,\n  .input-module_input__3k4oC [type='number']:focus,\n  .input-module_input__3k4oC [type='email']:focus,\n  .input-module_input__3k4oC [type='search']:focus {\n    color: #31363a; }\n  .input-module_input__3k4oC:focus-within {\n    border: 1px solid #3399ff; }\n    .input-module_input__3k4oC:focus-within label {\n      color: #3399ff; }\n";
+var css_248z$O = ".input-module_input__3k4oC {\n  box-sizing: border-box;\n  border-radius: 8px;\n  display: flex;\n  justify-content: left;\n  align-items: center;\n  overflow: hidden;\n  background-color: #f5f5f5; }\n  .input-module_input__3k4oC * {\n    font-family: Aktiv Grotesk, sans-serif;\n    box-sizing: border-box;\n    user-select: none; }\n  .input-module_input__3k4oC.input-module_right__3AGuV input {\n    text-align: left; }\n  .input-module_input__3k4oC.input-module_left__29lN4 {\n    flex-direction: row-reverse; }\n  .input-module_input__3k4oC input {\n    padding: 0;\n    border: 0;\n    color: #31363a;\n    background: transparent; }\n    .input-module_input__3k4oC input:focus {\n      outline: 0; }\n  .input-module_input__3k4oC label {\n    font-family: Aktiv Grotesk, sans-serif;\n    width: 16px;\n    height: 32px;\n    color: #b6babd;\n    display: flex;\n    justify-content: flex-start;\n    align-items: center; }\n    .input-module_input__3k4oC label div {\n      width: 12px;\n      height: 12px;\n      font-size: 11px; }\n      .input-module_input__3k4oC label div > svg {\n        margin-left: 3px; }\n  .input-module_input__3k4oC.input-module_normal__3iBT3 {\n    width: 64px;\n    height: 32px;\n    padding-left: 8px; }\n    .input-module_input__3k4oC.input-module_normal__3iBT3 input {\n      width: 40px;\n      height: 32px;\n      font-size: 12px;\n      line-height: 24px; }\n  .input-module_input__3k4oC [type='text']:focus,\n  .input-module_input__3k4oC [type='password']:focus,\n  .input-module_input__3k4oC [type='number']:focus,\n  .input-module_input__3k4oC [type='email']:focus,\n  .input-module_input__3k4oC [type='search']:focus {\n    color: #31363a; }\n  .input-module_input__3k4oC:focus-within {\n    box-shadow: 0 0 0 1px #3399ff; }\n    .input-module_input__3k4oC:focus-within label {\n      color: #3399ff; }\n";
 var style$K = {"input":"input-module_input__3k4oC","right":"input-module_right__3AGuV","left":"input-module_left__29lN4","normal":"input-module_normal__3iBT3"};
 styleInject(css_248z$O);
 
@@ -5847,9 +5847,73 @@ const DropdownOption = ({
   }, !children ? /*#__PURE__*/React$1.createElement(ChevronArrowIcon$1, null) : children)));
 };
 
-var css_248z$a = ".fill-row-module_fillRow__3AiSV {\n  position: relative;\n  width: 224px;\n  height: 32px;\n  display: flex;\n  align-items: center;\n  justify-content: space-between;\n  border-radius: 4px;\n  margin: 8px 0; }\n  .fill-row-module_fillRow__3AiSV * {\n    box-sizing: border-box;\n    font-family: Aktiv Grotesk, sans-serif;\n    user-select: none; }\n  .fill-row-module_fillRow__3AiSV .fill-row-module_colorActionWrapper__XD7Wi {\n    display: flex;\n    width: 104px;\n    height: 32px;\n    border: 1px solid #e8ebed;\n    border-radius: 8px;\n    align-items: center;\n    padding: 8px; }\n    .fill-row-module_fillRow__3AiSV .fill-row-module_colorActionWrapper__XD7Wi:hover {\n      border: 1px solid #3399ff; }\n    .fill-row-module_fillRow__3AiSV .fill-row-module_colorActionWrapper__XD7Wi:focus-within {\n      border: 1px solid #3399ff; }\n    .fill-row-module_fillRow__3AiSV .fill-row-module_colorActionWrapper__XD7Wi input {\n      font-size: 11px;\n      border: 0;\n      outline: none;\n      width: 64px;\n      padding-left: 8px; }\n    .fill-row-module_fillRow__3AiSV .fill-row-module_colorActionWrapper__XD7Wi .fill-row-module_colorPicker__15Lpx {\n      width: 16px;\n      height: 16px;\n      border-radius: 50%; }\n  .fill-row-module_fillRow__3AiSV.fill-row-module_active__29zYK {\n    border: 1px solid #3399ff; }\n  .fill-row-module_fillRow__3AiSV .fill-row-module_fillText__2rXs8 {\n    width: 52px;\n    height: 32px;\n    justify-content: flex-start; }\n    .fill-row-module_fillRow__3AiSV .fill-row-module_fillText__2rXs8 input {\n      width: 28px;\n      padding: 0;\n      line-height: 16px;\n      font-size: 11px; }\n  .fill-row-module_fillRow__3AiSV.fill-row-module_withOutBlendMode__3vDyP {\n    justify-content: flex-start; }\n    .fill-row-module_fillRow__3AiSV.fill-row-module_withOutBlendMode__3vDyP .fill-row-module_colorActionWrapper__XD7Wi,\n    .fill-row-module_fillRow__3AiSV.fill-row-module_withOutBlendMode__3vDyP .fill-row-module_fillText__2rXs8 {\n      margin-right: 4px; }\n    .fill-row-module_fillRow__3AiSV.fill-row-module_withOutBlendMode__3vDyP .fill-row-module_colorActionWrapper__XD7Wi {\n      width: 140px; }\n  .fill-row-module_fillRow__3AiSV .fill-row-module_btnRow__1FtV2 {\n    width: 24px;\n    height: 32px; }\n  .fill-row-module_fillRow__3AiSV .fill-row-module_colorPickerModal__3sRG0 {\n    position: fixed;\n    right: 240px;\n    z-index: 1; }\n    .fill-row-module_fillRow__3AiSV .fill-row-module_colorPickerModal__3sRG0 > div {\n      border: 0 !important;\n      border-radius: 8px !important;\n      background: #f7f9fa !important;\n      box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.06), 0px 0.5px 1px rgba(0, 0, 0, 0.24) !important; }\n  .fill-row-module_fillRow__3AiSV.fill-row-module_white__1nKau {\n    background: #ffffff; }\n  .fill-row-module_fillRow__3AiSV.fill-row-module_gray__CHWab {\n    background: #f7f9fa; }\n  .fill-row-module_fillRow__3AiSV.fill-row-module_silver__spEV6 {\n    background: #f2f4f5; }\n  .fill-row-module_fillRow__3AiSV .fill-row-module_layerText__1SiPB {\n    font-size: 12px;\n    line-height: 24px;\n    font-weight: 600;\n    display: flex;\n    align-items: center;\n    margin: 0px 8px;\n    width: 188px;\n    height: 24px;\n    cursor: text; }\n    .fill-row-module_fillRow__3AiSV .fill-row-module_layerText__1SiPB.fill-row-module_purple__1o4db {\n      color: #b555e5; }\n    .fill-row-module_fillRow__3AiSV .fill-row-module_layerText__1SiPB.fill-row-module_black__80Yjk {\n      color: #31363a; }\n  .fill-row-module_fillRow__3AiSV [type='text']:focus,\n  .fill-row-module_fillRow__3AiSV [type='password']:focus,\n  .fill-row-module_fillRow__3AiSV [type='number']:focus,\n  .fill-row-module_fillRow__3AiSV [type='email']:focus,\n  .fill-row-module_fillRow__3AiSV [type='search']:focus {\n    color: #333333; }\n";
-var style$9 = {"fillRow":"fill-row-module_fillRow__3AiSV","colorActionWrapper":"fill-row-module_colorActionWrapper__XD7Wi","colorPicker":"fill-row-module_colorPicker__15Lpx","active":"fill-row-module_active__29zYK","fillText":"fill-row-module_fillText__2rXs8","withOutBlendMode":"fill-row-module_withOutBlendMode__3vDyP","btnRow":"fill-row-module_btnRow__1FtV2","colorPickerModal":"fill-row-module_colorPickerModal__3sRG0","white":"fill-row-module_white__1nKau","gray":"fill-row-module_gray__CHWab","silver":"fill-row-module_silver__spEV6","layerText":"fill-row-module_layerText__1SiPB","purple":"fill-row-module_purple__1o4db","black":"fill-row-module_black__80Yjk"};
+var css_248z$a = ".color-picker-module_colorPickerWrapper__3P_kF {\n  position: relative;\n  align-items: center;\n  justify-content: space-between;\n  border-radius: 4px; }\n  .color-picker-module_colorPickerWrapper__3P_kF * {\n    box-sizing: border-box;\n    font-family: Aktiv Grotesk, sans-serif;\n    user-select: none; }\n  .color-picker-module_colorPickerWrapper__3P_kF .color-picker-module_colorActionWrapper__31kSX {\n    display: flex;\n    width: 88px;\n    height: 24px;\n    background-color: #f5f5f5;\n    padding: 4px 0;\n    border-radius: 8px;\n    align-items: center;\n    box-sizing: border-box;\n    justify-content: flex-start; }\n    .color-picker-module_colorPickerWrapper__3P_kF .color-picker-module_colorActionWrapper__31kSX:focus-within {\n      box-shadow: 0 0 0 1px #3399ff; }\n    .color-picker-module_colorPickerWrapper__3P_kF .color-picker-module_colorActionWrapper__31kSX input {\n      font-size: 11px;\n      border: 0;\n      outline: none;\n      width: 54px;\n      line-height: 18px;\n      background-color: #f5f5f5; }\n    .color-picker-module_colorPickerWrapper__3P_kF .color-picker-module_colorActionWrapper__31kSX .color-picker-module_colorPicker__2HbFF {\n      width: 16px;\n      height: 16px;\n      border-radius: 4px;\n      margin: 0 8px; }\n  .color-picker-module_colorPickerWrapper__3P_kF.color-picker-module_active__3ZwGl {\n    border: 1px solid #3399ff; }\n  .color-picker-module_colorPickerWrapper__3P_kF .color-picker-module_fillText__oihp8 {\n    width: 52px;\n    height: 24px;\n    justify-content: flex-end; }\n    .color-picker-module_colorPickerWrapper__3P_kF .color-picker-module_fillText__oihp8 input {\n      width: 44px;\n      padding: 0;\n      line-height: 18px;\n      font-size: 11px; }\n  .color-picker-module_colorPickerWrapper__3P_kF .color-picker-module_btnRow__211CU {\n    width: 24px;\n    height: 32px; }\n  .color-picker-module_colorPickerWrapper__3P_kF .color-picker-module_colorPickerModal__3JI8z {\n    position: fixed;\n    right: 240px;\n    z-index: 1; }\n    .color-picker-module_colorPickerWrapper__3P_kF .color-picker-module_colorPickerModal__3JI8z > div {\n      border: 0 !important;\n      border-radius: 8px !important;\n      background: #f7f9fa !important;\n      box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.06), 0px 0.5px 1px rgba(0, 0, 0, 0.24) !important; }\n  .color-picker-module_colorPickerWrapper__3P_kF [type='text']:focus,\n  .color-picker-module_colorPickerWrapper__3P_kF [type='password']:focus,\n  .color-picker-module_colorPickerWrapper__3P_kF [type='number']:focus,\n  .color-picker-module_colorPickerWrapper__3P_kF [type='email']:focus,\n  .color-picker-module_colorPickerWrapper__3P_kF [type='search']:focus {\n    color: #333333; }\n";
+var style$9 = {"colorPickerWrapper":"color-picker-module_colorPickerWrapper__3P_kF","colorActionWrapper":"color-picker-module_colorActionWrapper__31kSX","colorPicker":"color-picker-module_colorPicker__2HbFF","active":"color-picker-module_active__3ZwGl","fillText":"color-picker-module_fillText__oihp8","btnRow":"color-picker-module_btnRow__211CU","colorPickerModal":"color-picker-module_colorPickerModal__3JI8z"};
 styleInject(css_248z$a);
+
+/* eslint-disable react-hooks/exhaustive-deps */
+const ColorPicker = ({
+  color = 'black',
+  opacity = 100,
+  onChange,
+  className = null
+}) => {
+  const {
+    colorPickerWrapper,
+    colorActionWrapper,
+    colorPicker,
+    colorPickerModal
+  } = style$9;
+  const [toggleColorPicker, setToggleColorPicker] = useState(false);
+  const [colorPickerStyle, setColorPickerStyle] = useState({
+    backgroundColor: color,
+    opacity: opacity / 100
+  });
+  useEffect(() => {
+    setColorPickerStyle({
+      backgroundColor: color,
+      opacity: opacity / 100
+    });
+  }, [color, opacity]); // close color picker by click outside.
+
+  const colorPickerWrapperRef = /*#__PURE__*/createRef();
+  useEffect(() => {
+    function clickOutside(e) {
+      if (colorPickerWrapperRef.current && !colorPickerWrapperRef.current.contains(e.target)) {
+        setToggleColorPicker(false);
+      }
+    }
+
+    window.addEventListener('mousedown', clickOutside);
+    return () => window.removeEventListener('mousedown', clickOutside);
+  }, [colorPickerWrapperRef]);
+  return /*#__PURE__*/React$1.createElement("div", {
+    className: `${colorPickerWrapper} ${className ? className : ''}`
+  }, toggleColorPicker && /*#__PURE__*/React$1.createElement("div", {
+    className: colorPickerModal,
+    ref: colorPickerWrapperRef
+  }, /*#__PURE__*/React$1.createElement(SketchPicker, {
+    color: color,
+    onChange: color => {
+      onChange(color.hex);
+    }
+  })), /*#__PURE__*/React$1.createElement("div", {
+    className: `colorWrapper ${colorActionWrapper}`
+  }, /*#__PURE__*/React$1.createElement("div", {
+    onClick: () => setToggleColorPicker(!toggleColorPicker),
+    className: colorPicker,
+    style: colorPickerStyle
+  }), /*#__PURE__*/React$1.createElement(Input, {
+    onChange: color => onChange(color),
+    value: color,
+    type: "string",
+    size: "noStyle"
+  })));
+};
+
+var css_248z$9 = ".fill-row-module_fillRow__3AiSV {\n  position: relative;\n  width: 224px;\n  height: 32px;\n  display: flex;\n  align-items: center;\n  justify-content: space-between;\n  border-radius: 4px;\n  margin-bottom: 4px; }\n  .fill-row-module_fillRow__3AiSV * {\n    box-sizing: border-box;\n    font-family: Aktiv Grotesk, sans-serif;\n    user-select: none; }\n  .fill-row-module_fillRow__3AiSV .fill-row-module_fillWrapper__3sR-d {\n    height: 32px; }\n    .fill-row-module_fillRow__3AiSV .fill-row-module_fillWrapper__3sR-d > div {\n      height: 32px !important;\n      width: 104px; }\n  .fill-row-module_fillRow__3AiSV.fill-row-module_active__29zYK {\n    border: 1px solid #3399ff; }\n  .fill-row-module_fillRow__3AiSV .fill-row-module_fillText__2rXs8 {\n    width: 52px;\n    height: 32px;\n    justify-content: flex-start; }\n    .fill-row-module_fillRow__3AiSV .fill-row-module_fillText__2rXs8 input {\n      width: 28px;\n      padding: 0;\n      line-height: 16px;\n      font-size: 11px; }\n  .fill-row-module_fillRow__3AiSV.fill-row-module_withOutBlendMode__3vDyP {\n    justify-content: flex-start; }\n    .fill-row-module_fillRow__3AiSV.fill-row-module_withOutBlendMode__3vDyP .fill-row-module_fillWrapper__3sR-d,\n    .fill-row-module_fillRow__3AiSV.fill-row-module_withOutBlendMode__3vDyP .fill-row-module_fillText__2rXs8 {\n      margin-right: 4px; }\n    .fill-row-module_fillRow__3AiSV.fill-row-module_withOutBlendMode__3vDyP .fill-row-module_fillWrapper__3sR-d > div {\n      width: 140px; }\n  .fill-row-module_fillRow__3AiSV .fill-row-module_btnRow__1FtV2 {\n    width: 24px;\n    height: 32px; }\n  .fill-row-module_fillRow__3AiSV .fill-row-module_colorPickerModal__3sRG0 {\n    position: fixed;\n    right: 240px;\n    z-index: 1; }\n    .fill-row-module_fillRow__3AiSV .fill-row-module_colorPickerModal__3sRG0 > div {\n      border: 0 !important;\n      border-radius: 8px !important;\n      background: #f7f9fa !important;\n      box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.06), 0px 0.5px 1px rgba(0, 0, 0, 0.24) !important; }\n  .fill-row-module_fillRow__3AiSV.fill-row-module_white__1nKau {\n    background: #ffffff; }\n  .fill-row-module_fillRow__3AiSV.fill-row-module_gray__CHWab {\n    background: #f7f9fa; }\n  .fill-row-module_fillRow__3AiSV.fill-row-module_silver__spEV6 {\n    background: #f2f4f5; }\n  .fill-row-module_fillRow__3AiSV .fill-row-module_layerText__1SiPB {\n    font-size: 12px;\n    line-height: 24px;\n    font-weight: 600;\n    display: flex;\n    align-items: center;\n    margin: 0px 8px;\n    width: 188px;\n    height: 24px;\n    cursor: text; }\n    .fill-row-module_fillRow__3AiSV .fill-row-module_layerText__1SiPB.fill-row-module_purple__1o4db {\n      color: #b555e5; }\n    .fill-row-module_fillRow__3AiSV .fill-row-module_layerText__1SiPB.fill-row-module_black__80Yjk {\n      color: #31363a; }\n  .fill-row-module_fillRow__3AiSV [type='text']:focus,\n  .fill-row-module_fillRow__3AiSV [type='password']:focus,\n  .fill-row-module_fillRow__3AiSV [type='number']:focus,\n  .fill-row-module_fillRow__3AiSV [type='email']:focus,\n  .fill-row-module_fillRow__3AiSV [type='search']:focus {\n    color: #333333; }\n";
+var style$8 = {"fillRow":"fill-row-module_fillRow__3AiSV","fillWrapper":"fill-row-module_fillWrapper__3sR-d","active":"fill-row-module_active__29zYK","fillText":"fill-row-module_fillText__2rXs8","withOutBlendMode":"fill-row-module_withOutBlendMode__3vDyP","btnRow":"fill-row-module_btnRow__1FtV2","colorPickerModal":"fill-row-module_colorPickerModal__3sRG0","white":"fill-row-module_white__1nKau","gray":"fill-row-module_gray__CHWab","silver":"fill-row-module_silver__spEV6","layerText":"fill-row-module_layerText__1SiPB","purple":"fill-row-module_purple__1o4db","black":"fill-row-module_black__80Yjk"};
+styleInject(css_248z$9);
 
 /* eslint-disable react-hooks/exhaustive-deps */
 const FillRow = ({
@@ -5863,13 +5927,11 @@ const FillRow = ({
 }) => {
   const {
     fillRow,
-    colorActionWrapper,
-    colorPicker,
-    colorPickerModal,
+    fillWrapper,
     fillText,
     btnRow,
     withOutBlendMode
-  } = style$9;
+  } = style$8;
   const {
     color,
     opacity = 100,
@@ -5879,71 +5941,22 @@ const FillRow = ({
   const [selectedColor, setSelectedColor] = useState(color);
   const [blendModeState, setBlendModeState] = useState(blendMode);
   const [selectedOpacity, setSelectedOpacity] = useState(opacity);
-  const [toggleColorPicker, setToggleColorPicker] = useState(false);
-  const [colorPickerStyle, setColorPickerStyle] = useState({
-    backgroundColor: selectedColor,
-    opacity: selectedOpacity / 100
-  });
-  useEffect(() => {
-    setColorPickerStyle({
-      backgroundColor: selectedColor,
-      opacity: selectedOpacity / 100
-    });
-  }, [selectedColor, selectedOpacity]);
-  useEffect(() => {
-    setColorPickerStyle({
-      backgroundColor: selectedColor,
-      opacity: selectedOpacity / 100
-    });
-  }, [row]); // close color picker by click outside.
-
-  const colorPickerWrapper = /*#__PURE__*/createRef();
-  useEffect(() => {
-    function clickOutside(e) {
-      if (colorPickerWrapper.current && !colorPickerWrapper.current.contains(e.target)) {
-        setToggleColorPicker(false);
-      }
-    }
-
-    window.addEventListener('mousedown', clickOutside);
-    return () => window.removeEventListener('mousedown', clickOutside);
-  }, [colorPickerWrapper]);
   return /*#__PURE__*/React$1.createElement("div", {
-    className: `${fillRow} ${style$9[type]} ${blendModeDisabled ? withOutBlendMode : ''}`
-  }, toggleColorPicker && /*#__PURE__*/React$1.createElement("div", {
-    className: colorPickerModal,
-    ref: colorPickerWrapper
-  }, /*#__PURE__*/React$1.createElement(SketchPicker, {
+    className: `${fillRow} ${style$8[type]} ${blendModeDisabled ? withOutBlendMode : ''}`
+  }, /*#__PURE__*/React$1.createElement(ColorPicker, {
+    className: fillWrapper,
     color: selectedColor,
-    onChange: color => {
-      setSelectedColor(color.hex);
-      onChange({
-        id,
-        color: color.hex,
-        opacity: parseFloat(selectedOpacity),
-        blendMode: blendModeState
-      });
-    }
-  })), /*#__PURE__*/React$1.createElement("div", {
-    className: colorActionWrapper
-  }, /*#__PURE__*/React$1.createElement("div", {
-    onClick: () => setToggleColorPicker(!toggleColorPicker),
-    className: colorPicker,
-    style: colorPickerStyle
-  }), /*#__PURE__*/React$1.createElement(Input, {
+    opacity: selectedOpacity,
     onChange: color => {
       setSelectedColor(color);
       onChange({
         id,
-        color,
+        color: color,
         opacity: parseFloat(selectedOpacity),
         blendMode: blendModeState
       });
-    },
-    value: selectedColor,
-    type: "string",
-    size: "noStyle"
-  })), !blendModeDisabled ? /*#__PURE__*/React$1.createElement(DropdownOption, {
+    }
+  }), !blendModeDisabled ? /*#__PURE__*/React$1.createElement(DropdownOption, {
     options: blendModeOptions,
     value: blendModeState,
     type: 'withOutLabel',
@@ -5979,9 +5992,9 @@ const FillRow = ({
   }, /*#__PURE__*/React$1.createElement(MinusIcon$1, null)));
 };
 
-var css_248z$9 = ".fill-module_fill__s6n7N {\n  width: 240px;\n  display: flex;\n  flex-direction: column;\n  align-items: center;\n  justify-content: space-between;\n  box-sizing: border-box;\n  padding: 8px; }\n  .fill-module_fill__s6n7N .fill-module_header__GMBXs {\n    display: flex; }\n    .fill-module_fill__s6n7N .fill-module_header__GMBXs button {\n      width: 24px;\n      height: 24px; }\n  .fill-module_fill__s6n7N .fill-module_fillItems__1yysb {\n    display: flex;\n    flex-direction: column;\n    width: 224px; }\n  .fill-module_fill__s6n7N.fill-module_white__2KTz0 {\n    background: #ffffff; }\n  .fill-module_fill__s6n7N.fill-module_gray__26J6h {\n    background: #f7f9fa; }\n  .fill-module_fill__s6n7N.fill-module_silver__39Gtg {\n    background: #f2f4f5; }\n  .fill-module_fill__s6n7N .fill-module_header__GMBXs {\n    width: 224px;\n    height: 32px;\n    display: flex;\n    align-items: center;\n    justify-content: space-between; }\n    .fill-module_fill__s6n7N .fill-module_header__GMBXs .fill-module_layerText__3Pa6k {\n      font-family: Aktiv Grotesk, sans-serif;\n      font-size: 12px;\n      line-height: 24px;\n      font-weight: 600;\n      display: flex;\n      align-items: center;\n      cursor: text; }\n      .fill-module_fill__s6n7N .fill-module_header__GMBXs .fill-module_layerText__3Pa6k.fill-module_purple__11PKi {\n        color: #b555e5; }\n      .fill-module_fill__s6n7N .fill-module_header__GMBXs .fill-module_layerText__3Pa6k.fill-module_black__gqKeu {\n        color: #31363a; }\n  .fill-module_fill__s6n7N .fill-module_layerBtnAction__Tu2kH {\n    display: flex;\n    justify-content: flex-end;\n    align-items: center;\n    vertical-align: middle; }\n";
-var style$8 = {"fill":"fill-module_fill__s6n7N","header":"fill-module_header__GMBXs","fillItems":"fill-module_fillItems__1yysb","white":"fill-module_white__2KTz0","gray":"fill-module_gray__26J6h","silver":"fill-module_silver__39Gtg","layerText":"fill-module_layerText__3Pa6k","purple":"fill-module_purple__11PKi","black":"fill-module_black__gqKeu","layerBtnAction":"fill-module_layerBtnAction__Tu2kH"};
-styleInject(css_248z$9);
+var css_248z$8 = ".fill-module_fill__s6n7N {\n  width: 240px;\n  display: flex;\n  flex-direction: column;\n  align-items: center;\n  justify-content: space-between;\n  box-sizing: border-box;\n  padding: 8px; }\n  .fill-module_fill__s6n7N .fill-module_header__GMBXs {\n    display: flex; }\n    .fill-module_fill__s6n7N .fill-module_header__GMBXs button {\n      width: 24px;\n      height: 24px; }\n  .fill-module_fill__s6n7N .fill-module_fillItems__1yysb {\n    display: flex;\n    flex-direction: column;\n    width: 224px; }\n  .fill-module_fill__s6n7N.fill-module_white__2KTz0 {\n    background: #ffffff; }\n  .fill-module_fill__s6n7N.fill-module_gray__26J6h {\n    background: #f7f9fa; }\n  .fill-module_fill__s6n7N.fill-module_silver__39Gtg {\n    background: #f2f4f5; }\n  .fill-module_fill__s6n7N .fill-module_header__GMBXs {\n    width: 224px;\n    height: 32px;\n    display: flex;\n    align-items: center;\n    justify-content: space-between; }\n    .fill-module_fill__s6n7N .fill-module_header__GMBXs .fill-module_layerText__3Pa6k {\n      font-family: Aktiv Grotesk, sans-serif;\n      font-size: 12px;\n      line-height: 24px;\n      font-weight: 600;\n      display: flex;\n      align-items: center;\n      cursor: text; }\n      .fill-module_fill__s6n7N .fill-module_header__GMBXs .fill-module_layerText__3Pa6k.fill-module_purple__11PKi {\n        color: #b555e5; }\n      .fill-module_fill__s6n7N .fill-module_header__GMBXs .fill-module_layerText__3Pa6k.fill-module_black__gqKeu {\n        color: #31363a; }\n  .fill-module_fill__s6n7N .fill-module_layerBtnAction__Tu2kH {\n    display: flex;\n    justify-content: flex-end;\n    align-items: center;\n    vertical-align: middle; }\n";
+var style$7 = {"fill":"fill-module_fill__s6n7N","header":"fill-module_header__GMBXs","fillItems":"fill-module_fillItems__1yysb","white":"fill-module_white__2KTz0","gray":"fill-module_gray__26J6h","silver":"fill-module_silver__39Gtg","layerText":"fill-module_layerText__3Pa6k","purple":"fill-module_purple__11PKi","black":"fill-module_black__gqKeu","layerBtnAction":"fill-module_layerBtnAction__Tu2kH"};
+styleInject(css_248z$8);
 
 /* eslint-disable react-hooks/exhaustive-deps */
 const Fill = ({
@@ -6002,7 +6015,7 @@ const Fill = ({
     layerText,
     header,
     fillItems
-  } = style$8;
+  } = style$7;
 
   const setValue = (data, index) => {
     onChange({
@@ -6015,11 +6028,11 @@ const Fill = ({
   };
 
   return /*#__PURE__*/React$1.createElement("div", {
-    className: `${fill} ${style$8[type]}`
+    className: `${fill} ${style$7[type]}`
   }, /*#__PURE__*/React$1.createElement("div", {
     className: header
   }, /*#__PURE__*/React$1.createElement("label", {
-    className: `${layerText} ${style$8[textColor]}`
+    className: `${layerText} ${style$7[textColor]}`
   }, "Fill"), /*#__PURE__*/React$1.createElement("div", {
     className: `${layerBtnAction}`
   }, /*#__PURE__*/React$1.createElement(IconButton, {
@@ -6118,9 +6131,9 @@ const defaultOption = [{
   value: 'XOR'
 }];
 
-var css_248z$8 = ".stroke-row-module_strokeRow__SpWBF {\n  position: relative;\n  width: 224px;\n  height: 32px;\n  display: flex;\n  align-items: center;\n  justify-content: space-between;\n  border-radius: 4px;\n  margin: 8px 0; }\n  .stroke-row-module_strokeRow__SpWBF * {\n    box-sizing: border-box;\n    font-family: Aktiv Grotesk, sans-serif;\n    user-select: none; }\n  .stroke-row-module_strokeRow__SpWBF .stroke-row-module_strokeInput1__3AjaJ {\n    width: 44px;\n    height: 32px;\n    align-items: center; }\n    .stroke-row-module_strokeRow__SpWBF .stroke-row-module_strokeInput1__3AjaJ input {\n      width: 20px;\n      font-size: 11px; }\n  .stroke-row-module_strokeRow__SpWBF .stroke-row-module_strokeInput2__2D5ze {\n    width: 52px;\n    height: 32px;\n    align-items: center; }\n    .stroke-row-module_strokeRow__SpWBF .stroke-row-module_strokeInput2__2D5ze input {\n      width: 28px;\n      padding: 0;\n      font-size: 11px; }\n  .stroke-row-module_strokeRow__SpWBF .stroke-row-module_btnRow__3o45S {\n    width: 24px;\n    height: 32px; }\n  .stroke-row-module_strokeRow__SpWBF .stroke-row-module_colorActionWrapper__33veL {\n    display: flex;\n    width: 92px;\n    height: 32px;\n    border: 1px solid #e8ebed;\n    box-sizing: border-box;\n    border-radius: 8px;\n    align-items: center;\n    justify-content: flex-start;\n    padding: 8px; }\n    .stroke-row-module_strokeRow__SpWBF .stroke-row-module_colorActionWrapper__33veL .stroke-row-module_colorPicker__33Cir {\n      width: 16px;\n      height: 16px;\n      border-radius: 50%; }\n    .stroke-row-module_strokeRow__SpWBF .stroke-row-module_colorActionWrapper__33veL input {\n      border: 0;\n      outline: none;\n      width: 58px;\n      height: 16px;\n      font-size: 11px;\n      line-height: 16px;\n      padding-left: 8px; }\n    .stroke-row-module_strokeRow__SpWBF .stroke-row-module_colorActionWrapper__33veL:hover {\n      border: 1px solid #3399ff; }\n    .stroke-row-module_strokeRow__SpWBF .stroke-row-module_colorActionWrapper__33veL:focus-within {\n      border: 1px solid #3399ff; }\n  .stroke-row-module_strokeRow__SpWBF .stroke-row-module_colorPickerModal__25b0p {\n    position: absolute;\n    top: 40px;\n    z-index: 1; }\n    .stroke-row-module_strokeRow__SpWBF .stroke-row-module_colorPickerModal__25b0p > div {\n      border: 0 !important;\n      border-radius: 8px !important;\n      background: #f7f9fa !important;\n      box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.06), 0px 0.5px 1px rgba(0, 0, 0, 0.24) !important; }\n  .stroke-row-module_strokeRow__SpWBF.stroke-row-module_white__8e02Q {\n    background: #ffffff; }\n  .stroke-row-module_strokeRow__SpWBF.stroke-row-module_gray__1-1Ec {\n    background: #f7f9fa; }\n  .stroke-row-module_strokeRow__SpWBF.stroke-row-module_silver__2YY7i {\n    background: #f2f4f5; }\n  .stroke-row-module_strokeRow__SpWBF [type='text']:focus,\n  .stroke-row-module_strokeRow__SpWBF [type='password']:focus,\n  .stroke-row-module_strokeRow__SpWBF [type='number']:focus,\n  .stroke-row-module_strokeRow__SpWBF [type='email']:focus,\n  .stroke-row-module_strokeRow__SpWBF [type='search']:focus {\n    color: #333333; }\n";
-var style$7 = {"strokeRow":"stroke-row-module_strokeRow__SpWBF","strokeInput1":"stroke-row-module_strokeInput1__3AjaJ","strokeInput2":"stroke-row-module_strokeInput2__2D5ze","btnRow":"stroke-row-module_btnRow__3o45S","colorActionWrapper":"stroke-row-module_colorActionWrapper__33veL","colorPicker":"stroke-row-module_colorPicker__33Cir","colorPickerModal":"stroke-row-module_colorPickerModal__25b0p","white":"stroke-row-module_white__8e02Q","gray":"stroke-row-module_gray__1-1Ec","silver":"stroke-row-module_silver__2YY7i"};
-styleInject(css_248z$8);
+var css_248z$7 = ".stroke-row-module_strokeRow__SpWBF {\n  position: relative;\n  width: 224px;\n  height: 32px;\n  display: flex;\n  align-items: center;\n  justify-content: space-between;\n  border-radius: 4px;\n  margin-bottom: 4px; }\n  .stroke-row-module_strokeRow__SpWBF * {\n    box-sizing: border-box;\n    font-family: Aktiv Grotesk, sans-serif;\n    user-select: none; }\n  .stroke-row-module_strokeRow__SpWBF .stroke-row-module_strokeInput1__3AjaJ {\n    width: 44px;\n    height: 32px;\n    align-items: center; }\n    .stroke-row-module_strokeRow__SpWBF .stroke-row-module_strokeInput1__3AjaJ input {\n      width: 20px;\n      font-size: 11px; }\n  .stroke-row-module_strokeRow__SpWBF .stroke-row-module_strokeInput2__2D5ze {\n    width: 52px;\n    height: 32px;\n    align-items: center; }\n    .stroke-row-module_strokeRow__SpWBF .stroke-row-module_strokeInput2__2D5ze input {\n      width: 28px;\n      padding: 0;\n      font-size: 11px; }\n  .stroke-row-module_strokeRow__SpWBF .stroke-row-module_btnRow__3o45S {\n    width: 24px;\n    height: 32px; }\n  .stroke-row-module_strokeRow__SpWBF .stroke-row-module_colorWrapper__1D5X0 {\n    height: 32px; }\n    .stroke-row-module_strokeRow__SpWBF .stroke-row-module_colorWrapper__1D5X0 > div {\n      height: 32px !important;\n      width: 92px; }\n  .stroke-row-module_strokeRow__SpWBF.stroke-row-module_white__8e02Q {\n    background: #ffffff; }\n  .stroke-row-module_strokeRow__SpWBF.stroke-row-module_gray__1-1Ec {\n    background: #f7f9fa; }\n  .stroke-row-module_strokeRow__SpWBF.stroke-row-module_silver__2YY7i {\n    background: #f2f4f5; }\n  .stroke-row-module_strokeRow__SpWBF [type='text']:focus,\n  .stroke-row-module_strokeRow__SpWBF [type='password']:focus,\n  .stroke-row-module_strokeRow__SpWBF [type='number']:focus,\n  .stroke-row-module_strokeRow__SpWBF [type='email']:focus,\n  .stroke-row-module_strokeRow__SpWBF [type='search']:focus {\n    color: #333333; }\n";
+var style$6 = {"strokeRow":"stroke-row-module_strokeRow__SpWBF","strokeInput1":"stroke-row-module_strokeInput1__3AjaJ","strokeInput2":"stroke-row-module_strokeInput2__2D5ze","btnRow":"stroke-row-module_btnRow__3o45S","colorWrapper":"stroke-row-module_colorWrapper__1D5X0","white":"stroke-row-module_white__8e02Q","gray":"stroke-row-module_gray__1-1Ec","silver":"stroke-row-module_silver__2YY7i"};
+styleInject(css_248z$7);
 
 /* eslint-disable react-hooks/exhaustive-deps */
 const StrokeRow = ({
@@ -6133,11 +6146,11 @@ const StrokeRow = ({
     strokeRow,
     colorActionWrapper,
     colorPicker,
-    colorPickerModal,
+    colorWrapper,
     strokeInput1,
     strokeInput2,
     btnRow
-  } = style$7;
+  } = style$6;
   const {
     id,
     color,
@@ -6171,41 +6184,21 @@ const StrokeRow = ({
     return () => window.removeEventListener('mousedown', clickOutside);
   }, [colorPickerWrapper]);
   return /*#__PURE__*/React$1.createElement("div", {
-    className: `${strokeRow} ${style$7[type]}`
-  }, toggleColorPicker && /*#__PURE__*/React$1.createElement("div", {
-    className: colorPickerModal,
-    ref: colorPickerWrapper
-  }, /*#__PURE__*/React$1.createElement(SketchPicker, {
+    className: `${strokeRow} ${style$6[type]}`
+  }, /*#__PURE__*/React$1.createElement(ColorPicker, {
+    className: colorWrapper,
     color: selectedColor,
-    onChange: color => {
-      setSelectedColor(color.hex);
-      onChange({
-        id,
-        color: color.hex,
-        strokeWidth: parseFloat(strokeWidthS),
-        opacity: parseFloat(selectedOpacity)
-      });
-    }
-  })), /*#__PURE__*/React$1.createElement("div", {
-    className: colorActionWrapper
-  }, /*#__PURE__*/React$1.createElement("div", {
-    onClick: () => setToggleColorPicker(!toggleColorPicker),
-    className: colorPicker,
-    style: colorPickerStyle
-  }), /*#__PURE__*/React$1.createElement(Input, {
+    opacity: selectedOpacity,
     onChange: color => {
       setSelectedColor(color);
       onChange({
         id,
-        color,
+        color: color,
         strokeWidth: parseFloat(strokeWidthS),
         opacity: parseFloat(selectedOpacity)
       });
-    },
-    value: selectedColor,
-    type: "string",
-    size: "noStyle"
-  })), /*#__PURE__*/React$1.createElement(Input, {
+    }
+  }), /*#__PURE__*/React$1.createElement(Input, {
     onChange: strokeWidth => {
       setStrokeSWidth(strokeWidth);
       onChange({
@@ -6229,6 +6222,8 @@ const StrokeRow = ({
         opacity: parseFloat(opacity)
       });
     },
+    min: 0,
+    max: 100,
     value: selectedOpacity,
     dir: "right",
     label: '%',
@@ -6239,9 +6234,9 @@ const StrokeRow = ({
   }, /*#__PURE__*/React$1.createElement(MinusIcon$1, null)));
 };
 
-var css_248z$7 = ".stroke-module_stroke__3xznE {\n  width: 240px;\n  display: flex;\n  flex-direction: column;\n  align-items: center;\n  justify-content: space-between;\n  padding: 8px 0; }\n  .stroke-module_stroke__3xznE .stroke-module_header__PmbN- {\n    display: flex; }\n    .stroke-module_stroke__3xznE .stroke-module_header__PmbN- button {\n      width: 24px;\n      height: 24px; }\n  .stroke-module_stroke__3xznE .stroke-module_strokeItems__18zIM {\n    display: flex;\n    flex-direction: column; }\n  .stroke-module_stroke__3xznE.stroke-module_white__1EwvI {\n    background: #ffffff; }\n  .stroke-module_stroke__3xznE.stroke-module_gray__1yxJA {\n    background: #f7f9fa; }\n  .stroke-module_stroke__3xznE.stroke-module_silver__3Jf5m {\n    background: #f2f4f5; }\n  .stroke-module_stroke__3xznE .stroke-module_moreMenu__2r2_q {\n    width: 200px;\n    min-height: 104px;\n    padding: 4px;\n    border-radius: 8px;\n    box-shadow: 0px 2px 4px rgba(51, 51, 51, 0.12), 0px 0px 1px #999999, 0px 12px 24px -8px rgba(51, 51, 51, 0.08);\n    position: absolute;\n    background-color: #ffffff;\n    right: 240px;\n    z-index: 1; }\n    .stroke-module_stroke__3xznE .stroke-module_moreMenu__2r2_q .stroke-module_moreHeader__T0nk1 {\n      width: 192px;\n      height: 32px;\n      border-bottom: 1px solid #f5f5f5;\n      display: flex;\n      align-items: center;\n      justify-content: space-between;\n      font-size: 11px;\n      font-weight: 600;\n      padding: 4px; }\n    .stroke-module_stroke__3xznE .stroke-module_moreMenu__2r2_q .stroke-module_moreBody__2c1Os {\n      display: flex;\n      justify-content: center;\n      align-items: center;\n      border-radius: 8px;\n      flex-direction: column;\n      padding-top: 4px; }\n      .stroke-module_stroke__3xznE .stroke-module_moreMenu__2r2_q .stroke-module_moreBody__2c1Os .stroke-module_morMenuBodyRow__3SjdX {\n        width: 184px;\n        height: 32px;\n        display: flex;\n        justify-content: space-between;\n        align-items: center; }\n        .stroke-module_stroke__3xznE .stroke-module_moreMenu__2r2_q .stroke-module_moreBody__2c1Os .stroke-module_morMenuBodyRow__3SjdX label {\n          color: #999999;\n          font-size: 11px;\n          font-weight: 600; }\n        .stroke-module_stroke__3xznE .stroke-module_moreMenu__2r2_q .stroke-module_moreBody__2c1Os .stroke-module_morMenuBodyRow__3SjdX .stroke-module_morItemRadioButton__2-DkR {\n          height: 24px; }\n          .stroke-module_stroke__3xznE .stroke-module_moreMenu__2r2_q .stroke-module_moreBody__2c1Os .stroke-module_morMenuBodyRow__3SjdX .stroke-module_morItemRadioButton__2-DkR button {\n            background-color: transparent;\n            border-radius: 8px;\n            border: 0 !important; }\n            .stroke-module_stroke__3xznE .stroke-module_moreMenu__2r2_q .stroke-module_moreBody__2c1Os .stroke-module_morMenuBodyRow__3SjdX .stroke-module_morItemRadioButton__2-DkR button:hover, .stroke-module_stroke__3xznE .stroke-module_moreMenu__2r2_q .stroke-module_moreBody__2c1Os .stroke-module_morMenuBodyRow__3SjdX .stroke-module_morItemRadioButton__2-DkR button.stroke-module_active__TzwdW {\n              background-color: #ebebeb !important; }\n        .stroke-module_stroke__3xznE .stroke-module_moreMenu__2r2_q .stroke-module_moreBody__2c1Os .stroke-module_morMenuBodyRow__3SjdX .stroke-module_option__1JTwD {\n          width: 90px;\n          height: 24px; }\n        .stroke-module_stroke__3xznE .stroke-module_moreMenu__2r2_q .stroke-module_moreBody__2c1Os .stroke-module_morMenuBodyRow__3SjdX .stroke-module_input__oxlkz {\n          width: 90px;\n          height: 24px;\n          justify-content: flex-end; }\n          .stroke-module_stroke__3xznE .stroke-module_moreMenu__2r2_q .stroke-module_moreBody__2c1Os .stroke-module_morMenuBodyRow__3SjdX .stroke-module_input__oxlkz input {\n            width: calc(100% - 32px);\n            padding: 0; }\n  .stroke-module_stroke__3xznE .stroke-module_header__PmbN- {\n    width: 224px;\n    height: 32px;\n    display: flex;\n    align-items: center;\n    justify-content: space-between; }\n    .stroke-module_stroke__3xznE .stroke-module_header__PmbN- .stroke-module_layerText__atHEa {\n      width: 188px;\n      font-family: Aktiv Grotesk, sans-serif;\n      font-size: 12px;\n      line-height: 24px;\n      font-weight: 600;\n      display: flex;\n      align-items: center;\n      cursor: text; }\n      .stroke-module_stroke__3xznE .stroke-module_header__PmbN- .stroke-module_layerText__atHEa.stroke-module_purple__11RP4 {\n        color: #b555e5; }\n      .stroke-module_stroke__3xznE .stroke-module_header__PmbN- .stroke-module_layerText__atHEa.stroke-module_black__2Y9xL {\n        color: #31363a; }\n  .stroke-module_stroke__3xznE .stroke-module_layerBtnAction__3nbXe {\n    display: flex;\n    justify-content: flex-end;\n    align-items: center;\n    vertical-align: middle; }\n";
-var style$6 = {"stroke":"stroke-module_stroke__3xznE","header":"stroke-module_header__PmbN-","strokeItems":"stroke-module_strokeItems__18zIM","white":"stroke-module_white__1EwvI","gray":"stroke-module_gray__1yxJA","silver":"stroke-module_silver__3Jf5m","moreMenu":"stroke-module_moreMenu__2r2_q","moreHeader":"stroke-module_moreHeader__T0nk1","moreBody":"stroke-module_moreBody__2c1Os","morMenuBodyRow":"stroke-module_morMenuBodyRow__3SjdX","morItemRadioButton":"stroke-module_morItemRadioButton__2-DkR","active":"stroke-module_active__TzwdW","option":"stroke-module_option__1JTwD","input":"stroke-module_input__oxlkz","layerText":"stroke-module_layerText__atHEa","purple":"stroke-module_purple__11RP4","black":"stroke-module_black__2Y9xL","layerBtnAction":"stroke-module_layerBtnAction__3nbXe"};
-styleInject(css_248z$7);
+var css_248z$6 = ".stroke-module_stroke__3xznE {\n  width: 240px;\n  display: flex;\n  flex-direction: column;\n  align-items: center;\n  justify-content: space-between;\n  padding: 8px 0; }\n  .stroke-module_stroke__3xznE .stroke-module_header__PmbN- {\n    display: flex; }\n    .stroke-module_stroke__3xznE .stroke-module_header__PmbN- button {\n      width: 24px;\n      height: 24px; }\n  .stroke-module_stroke__3xznE .stroke-module_strokeItems__18zIM {\n    display: flex;\n    flex-direction: column; }\n  .stroke-module_stroke__3xznE.stroke-module_white__1EwvI {\n    background: #ffffff; }\n  .stroke-module_stroke__3xznE.stroke-module_gray__1yxJA {\n    background: #f7f9fa; }\n  .stroke-module_stroke__3xznE.stroke-module_silver__3Jf5m {\n    background: #f2f4f5; }\n  .stroke-module_stroke__3xznE .stroke-module_moreMenu__2r2_q {\n    width: 200px;\n    min-height: 104px;\n    padding: 4px;\n    border-radius: 8px;\n    box-shadow: 0px 2px 4px rgba(51, 51, 51, 0.12), 0px 0px 1px #999999, 0px 12px 24px -8px rgba(51, 51, 51, 0.08);\n    position: absolute;\n    background-color: #ffffff;\n    right: 240px;\n    z-index: 1; }\n    .stroke-module_stroke__3xznE .stroke-module_moreMenu__2r2_q .stroke-module_moreHeader__T0nk1 {\n      width: 192px;\n      height: 32px;\n      border-bottom: 1px solid #f5f5f5;\n      display: flex;\n      align-items: center;\n      justify-content: space-between;\n      font-size: 11px;\n      font-weight: 600;\n      padding: 4px; }\n    .stroke-module_stroke__3xznE .stroke-module_moreMenu__2r2_q .stroke-module_moreBody__2c1Os {\n      display: flex;\n      justify-content: center;\n      align-items: center;\n      border-radius: 8px;\n      flex-direction: column;\n      padding-top: 4px; }\n      .stroke-module_stroke__3xznE .stroke-module_moreMenu__2r2_q .stroke-module_moreBody__2c1Os .stroke-module_morMenuBodyRow__3SjdX {\n        width: 184px;\n        height: 32px;\n        display: flex;\n        justify-content: space-between;\n        align-items: center; }\n        .stroke-module_stroke__3xznE .stroke-module_moreMenu__2r2_q .stroke-module_moreBody__2c1Os .stroke-module_morMenuBodyRow__3SjdX label {\n          color: #999999;\n          font-size: 11px;\n          font-weight: 600; }\n        .stroke-module_stroke__3xznE .stroke-module_moreMenu__2r2_q .stroke-module_moreBody__2c1Os .stroke-module_morMenuBodyRow__3SjdX .stroke-module_morItemRadioButton__2-DkR {\n          height: 24px; }\n          .stroke-module_stroke__3xznE .stroke-module_moreMenu__2r2_q .stroke-module_moreBody__2c1Os .stroke-module_morMenuBodyRow__3SjdX .stroke-module_morItemRadioButton__2-DkR button {\n            background-color: transparent;\n            border-radius: 8px;\n            border: 0 !important; }\n            .stroke-module_stroke__3xznE .stroke-module_moreMenu__2r2_q .stroke-module_moreBody__2c1Os .stroke-module_morMenuBodyRow__3SjdX .stroke-module_morItemRadioButton__2-DkR button:hover, .stroke-module_stroke__3xznE .stroke-module_moreMenu__2r2_q .stroke-module_moreBody__2c1Os .stroke-module_morMenuBodyRow__3SjdX .stroke-module_morItemRadioButton__2-DkR button.stroke-module_active__TzwdW {\n              background-color: #ebebeb !important; }\n        .stroke-module_stroke__3xznE .stroke-module_moreMenu__2r2_q .stroke-module_moreBody__2c1Os .stroke-module_morMenuBodyRow__3SjdX .stroke-module_option__1JTwD {\n          width: 90px;\n          height: 24px; }\n        .stroke-module_stroke__3xznE .stroke-module_moreMenu__2r2_q .stroke-module_moreBody__2c1Os .stroke-module_morMenuBodyRow__3SjdX .stroke-module_input__oxlkz {\n          width: 90px;\n          height: 24px;\n          justify-content: flex-end; }\n          .stroke-module_stroke__3xznE .stroke-module_moreMenu__2r2_q .stroke-module_moreBody__2c1Os .stroke-module_morMenuBodyRow__3SjdX .stroke-module_input__oxlkz input {\n            width: calc(100% - 32px);\n            padding: 0; }\n  .stroke-module_stroke__3xznE .stroke-module_header__PmbN- {\n    width: 224px;\n    height: 32px;\n    display: flex;\n    align-items: center;\n    justify-content: space-between; }\n    .stroke-module_stroke__3xznE .stroke-module_header__PmbN- .stroke-module_layerText__atHEa {\n      width: 188px;\n      font-family: Aktiv Grotesk, sans-serif;\n      font-size: 12px;\n      line-height: 24px;\n      font-weight: 600;\n      display: flex;\n      align-items: center;\n      cursor: text; }\n      .stroke-module_stroke__3xznE .stroke-module_header__PmbN- .stroke-module_layerText__atHEa.stroke-module_purple__11RP4 {\n        color: #b555e5; }\n      .stroke-module_stroke__3xznE .stroke-module_header__PmbN- .stroke-module_layerText__atHEa.stroke-module_black__2Y9xL {\n        color: #31363a; }\n  .stroke-module_stroke__3xznE .stroke-module_layerBtnAction__3nbXe {\n    display: flex;\n    justify-content: flex-end;\n    align-items: center;\n    vertical-align: middle; }\n";
+var style$5 = {"stroke":"stroke-module_stroke__3xznE","header":"stroke-module_header__PmbN-","strokeItems":"stroke-module_strokeItems__18zIM","white":"stroke-module_white__1EwvI","gray":"stroke-module_gray__1yxJA","silver":"stroke-module_silver__3Jf5m","moreMenu":"stroke-module_moreMenu__2r2_q","moreHeader":"stroke-module_moreHeader__T0nk1","moreBody":"stroke-module_moreBody__2c1Os","morMenuBodyRow":"stroke-module_morMenuBodyRow__3SjdX","morItemRadioButton":"stroke-module_morItemRadioButton__2-DkR","active":"stroke-module_active__TzwdW","option":"stroke-module_option__1JTwD","input":"stroke-module_input__oxlkz","layerText":"stroke-module_layerText__atHEa","purple":"stroke-module_purple__11RP4","black":"stroke-module_black__2Y9xL","layerBtnAction":"stroke-module_layerBtnAction__3nbXe"};
+styleInject(css_248z$6);
 
 const Stroke = ({
   type = 'white',
@@ -6265,7 +6260,7 @@ const Stroke = ({
     layerBtnAction,
     layerText,
     header
-  } = style$6;
+  } = style$5;
   const [toggleMoreItems, setToggleMoreItems] = useState(false);
 
   const setValue = (data, index) => {
@@ -6292,12 +6287,12 @@ const Stroke = ({
   }, [moreMenuRef]); // more menu
 
   return /*#__PURE__*/React$1.createElement("div", {
-    className: `${stroke} ${style$6[type]}`,
+    className: `${stroke} ${style$5[type]}`,
     ref: moreMenuRef
   }, /*#__PURE__*/React$1.createElement("div", {
     className: header
   }, /*#__PURE__*/React$1.createElement("label", {
-    className: `${layerText} ${style$6[textColor]}`
+    className: `${layerText} ${style$5[textColor]}`
   }, "Stroke"), /*#__PURE__*/React$1.createElement("div", {
     className: `${layerBtnAction}`
   }, !strokeOptionDisabled ? /*#__PURE__*/React$1.createElement(IconButton, {
@@ -6393,7 +6388,7 @@ const StrokeOption = ({
     morItemRadioButton,
     option,
     input
-  } = style$6;
+  } = style$5;
   return /*#__PURE__*/React$1.createElement("div", {
     className: moreMenu
   }, /*#__PURE__*/React$1.createElement("div", {
@@ -6509,9 +6504,9 @@ const StrokeOption = ({
   }))));
 };
 
-var css_248z$6 = ".text-background-row-module_textBackgroundRow__3hkTZ {\n  position: relative;\n  width: 224px;\n  height: 32px;\n  display: flex;\n  align-items: center;\n  justify-content: space-between;\n  border-radius: 4px;\n  margin: 8px 0;\n  cursor: pointer; }\n  .text-background-row-module_textBackgroundRow__3hkTZ * {\n    box-sizing: border-box;\n    font-family: Aktiv Grotesk, sans-serif;\n    user-select: none; }\n  .text-background-row-module_textBackgroundRow__3hkTZ .text-background-row-module_colorActionWrapper__3bj1g {\n    display: flex;\n    width: 104px;\n    height: 32px;\n    border: 1px solid #e8ebed;\n    border-radius: 8px;\n    align-items: center;\n    padding: 8px; }\n    .text-background-row-module_textBackgroundRow__3hkTZ .text-background-row-module_colorActionWrapper__3bj1g:hover {\n      border: 1px solid #3399ff; }\n    .text-background-row-module_textBackgroundRow__3hkTZ .text-background-row-module_colorActionWrapper__3bj1g:focus-within {\n      border: 1px solid #3399ff; }\n    .text-background-row-module_textBackgroundRow__3hkTZ .text-background-row-module_colorActionWrapper__3bj1g input {\n      font-size: 11px;\n      border: 0;\n      outline: none;\n      width: 64px;\n      padding-left: 8px; }\n    .text-background-row-module_textBackgroundRow__3hkTZ .text-background-row-module_colorActionWrapper__3bj1g .text-background-row-module_colorPicker__1Wg78 {\n      width: 16px;\n      height: 16px;\n      border-radius: 50%; }\n  .text-background-row-module_textBackgroundRow__3hkTZ.text-background-row-module_active__2t_91 {\n    border: 1px solid #3399ff; }\n  .text-background-row-module_textBackgroundRow__3hkTZ .text-background-row-module_fillText__3ei9u {\n    width: 52px;\n    height: 32px;\n    justify-content: flex-end; }\n    .text-background-row-module_textBackgroundRow__3hkTZ .text-background-row-module_fillText__3ei9u input {\n      width: 20px;\n      padding: 0;\n      line-height: 16px;\n      font-size: 11px; }\n  .text-background-row-module_textBackgroundRow__3hkTZ .text-background-row-module_btnRow__zbHCb {\n    width: 24px;\n    height: 32px; }\n  .text-background-row-module_textBackgroundRow__3hkTZ .text-background-row-module_colorPickerModal__1uVoC {\n    position: fixed;\n    right: 240px;\n    z-index: 1; }\n    .text-background-row-module_textBackgroundRow__3hkTZ .text-background-row-module_colorPickerModal__1uVoC > div {\n      border: 0 !important;\n      border-radius: 8px !important;\n      background: #f7f9fa !important;\n      box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.06), 0px 0.5px 1px rgba(0, 0, 0, 0.24) !important; }\n  .text-background-row-module_textBackgroundRow__3hkTZ.text-background-row-module_white__3ibiC {\n    background: #ffffff; }\n  .text-background-row-module_textBackgroundRow__3hkTZ.text-background-row-module_gray__9X32U {\n    background: #f7f9fa; }\n  .text-background-row-module_textBackgroundRow__3hkTZ.text-background-row-module_silver__IwsjR {\n    background: #f2f4f5; }\n  .text-background-row-module_textBackgroundRow__3hkTZ .text-background-row-module_layerText__2TVUb {\n    font-size: 12px;\n    line-height: 24px;\n    font-weight: 600;\n    display: flex;\n    align-items: center;\n    margin: 0px 8px;\n    width: 188px;\n    height: 24px;\n    cursor: text; }\n    .text-background-row-module_textBackgroundRow__3hkTZ .text-background-row-module_layerText__2TVUb.text-background-row-module_purple__1ZPPU {\n      color: #b555e5; }\n    .text-background-row-module_textBackgroundRow__3hkTZ .text-background-row-module_layerText__2TVUb.text-background-row-module_black__3v6xh {\n      color: #31363a; }\n  .text-background-row-module_textBackgroundRow__3hkTZ [type='text']:focus,\n  .text-background-row-module_textBackgroundRow__3hkTZ [type='password']:focus,\n  .text-background-row-module_textBackgroundRow__3hkTZ [type='number']:focus,\n  .text-background-row-module_textBackgroundRow__3hkTZ [type='email']:focus,\n  .text-background-row-module_textBackgroundRow__3hkTZ [type='search']:focus {\n    color: #333333; }\n";
-var style$5 = {"textBackgroundRow":"text-background-row-module_textBackgroundRow__3hkTZ","colorActionWrapper":"text-background-row-module_colorActionWrapper__3bj1g","colorPicker":"text-background-row-module_colorPicker__1Wg78","active":"text-background-row-module_active__2t_91","fillText":"text-background-row-module_fillText__3ei9u","btnRow":"text-background-row-module_btnRow__zbHCb","colorPickerModal":"text-background-row-module_colorPickerModal__1uVoC","white":"text-background-row-module_white__3ibiC","gray":"text-background-row-module_gray__9X32U","silver":"text-background-row-module_silver__IwsjR","layerText":"text-background-row-module_layerText__2TVUb","purple":"text-background-row-module_purple__1ZPPU","black":"text-background-row-module_black__3v6xh"};
-styleInject(css_248z$6);
+var css_248z$5 = ".text-background-row-module_textBackgroundRow__3hkTZ {\n  position: relative;\n  width: 224px;\n  height: 32px;\n  display: flex;\n  align-items: center;\n  justify-content: space-between;\n  border-radius: 4px;\n  margin: 8px 0;\n  cursor: pointer; }\n  .text-background-row-module_textBackgroundRow__3hkTZ * {\n    box-sizing: border-box;\n    font-family: Aktiv Grotesk, sans-serif;\n    user-select: none; }\n  .text-background-row-module_textBackgroundRow__3hkTZ .text-background-row-module_colorActionWrapper__3bj1g {\n    display: flex;\n    width: 104px;\n    height: 32px;\n    border: 1px solid #e8ebed;\n    border-radius: 8px;\n    align-items: center;\n    padding: 8px; }\n    .text-background-row-module_textBackgroundRow__3hkTZ .text-background-row-module_colorActionWrapper__3bj1g:hover {\n      border: 1px solid #3399ff; }\n    .text-background-row-module_textBackgroundRow__3hkTZ .text-background-row-module_colorActionWrapper__3bj1g:focus-within {\n      border: 1px solid #3399ff; }\n    .text-background-row-module_textBackgroundRow__3hkTZ .text-background-row-module_colorActionWrapper__3bj1g input {\n      font-size: 11px;\n      border: 0;\n      outline: none;\n      width: 64px;\n      padding-left: 8px; }\n    .text-background-row-module_textBackgroundRow__3hkTZ .text-background-row-module_colorActionWrapper__3bj1g .text-background-row-module_colorPicker__1Wg78 {\n      width: 16px;\n      height: 16px;\n      border-radius: 50%; }\n  .text-background-row-module_textBackgroundRow__3hkTZ.text-background-row-module_active__2t_91 {\n    border: 1px solid #3399ff; }\n  .text-background-row-module_textBackgroundRow__3hkTZ .text-background-row-module_fillText__3ei9u {\n    width: 52px;\n    height: 32px;\n    justify-content: flex-end; }\n    .text-background-row-module_textBackgroundRow__3hkTZ .text-background-row-module_fillText__3ei9u input {\n      width: 20px;\n      padding: 0;\n      line-height: 16px;\n      font-size: 11px; }\n  .text-background-row-module_textBackgroundRow__3hkTZ .text-background-row-module_btnRow__zbHCb {\n    width: 24px;\n    height: 32px; }\n  .text-background-row-module_textBackgroundRow__3hkTZ .text-background-row-module_colorPickerModal__1uVoC {\n    position: fixed;\n    right: 240px;\n    z-index: 1; }\n    .text-background-row-module_textBackgroundRow__3hkTZ .text-background-row-module_colorPickerModal__1uVoC > div {\n      border: 0 !important;\n      border-radius: 8px !important;\n      background: #f7f9fa !important;\n      box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.06), 0px 0.5px 1px rgba(0, 0, 0, 0.24) !important; }\n  .text-background-row-module_textBackgroundRow__3hkTZ.text-background-row-module_white__3ibiC {\n    background: #ffffff; }\n  .text-background-row-module_textBackgroundRow__3hkTZ.text-background-row-module_gray__9X32U {\n    background: #f7f9fa; }\n  .text-background-row-module_textBackgroundRow__3hkTZ.text-background-row-module_silver__IwsjR {\n    background: #f2f4f5; }\n  .text-background-row-module_textBackgroundRow__3hkTZ .text-background-row-module_layerText__2TVUb {\n    font-size: 12px;\n    line-height: 24px;\n    font-weight: 600;\n    display: flex;\n    align-items: center;\n    margin: 0px 8px;\n    width: 188px;\n    height: 24px;\n    cursor: text; }\n    .text-background-row-module_textBackgroundRow__3hkTZ .text-background-row-module_layerText__2TVUb.text-background-row-module_purple__1ZPPU {\n      color: #b555e5; }\n    .text-background-row-module_textBackgroundRow__3hkTZ .text-background-row-module_layerText__2TVUb.text-background-row-module_black__3v6xh {\n      color: #31363a; }\n  .text-background-row-module_textBackgroundRow__3hkTZ [type='text']:focus,\n  .text-background-row-module_textBackgroundRow__3hkTZ [type='password']:focus,\n  .text-background-row-module_textBackgroundRow__3hkTZ [type='number']:focus,\n  .text-background-row-module_textBackgroundRow__3hkTZ [type='email']:focus,\n  .text-background-row-module_textBackgroundRow__3hkTZ [type='search']:focus {\n    color: #333333; }\n";
+var style$4 = {"textBackgroundRow":"text-background-row-module_textBackgroundRow__3hkTZ","colorActionWrapper":"text-background-row-module_colorActionWrapper__3bj1g","colorPicker":"text-background-row-module_colorPicker__1Wg78","active":"text-background-row-module_active__2t_91","fillText":"text-background-row-module_fillText__3ei9u","btnRow":"text-background-row-module_btnRow__zbHCb","colorPickerModal":"text-background-row-module_colorPickerModal__1uVoC","white":"text-background-row-module_white__3ibiC","gray":"text-background-row-module_gray__9X32U","silver":"text-background-row-module_silver__IwsjR","layerText":"text-background-row-module_layerText__2TVUb","purple":"text-background-row-module_purple__1ZPPU","black":"text-background-row-module_black__3v6xh"};
+styleInject(css_248z$5);
 
 /* eslint-disable react-hooks/exhaustive-deps */
 const TextBackgroundRow = ({
@@ -6527,7 +6522,7 @@ const TextBackgroundRow = ({
     colorPickerModal,
     fillText,
     btnRow
-  } = style$5;
+  } = style$4;
   const {
     color,
     opacity = 100
@@ -6562,7 +6557,7 @@ const TextBackgroundRow = ({
     return () => window.removeEventListener('mousedown', clickOutside);
   }, [colorPickerWrapper]);
   return /*#__PURE__*/React$1.createElement("div", {
-    className: `${textBackgroundRow} ${style$5[type]}`
+    className: `${textBackgroundRow} ${style$4[type]}`
   }, toggleColorPicker && /*#__PURE__*/React$1.createElement("div", {
     className: colorPickerModal,
     ref: colorPickerWrapper
@@ -6594,9 +6589,9 @@ const TextBackgroundRow = ({
   }, /*#__PURE__*/React$1.createElement(MinusIcon$1, null)));
 };
 
-var css_248z$5 = ".text-background-module_fill__27w5d {\n  width: 240px;\n  display: flex;\n  flex-direction: column;\n  align-items: center;\n  justify-content: space-between;\n  box-sizing: border-box;\n  padding: 8px;\n  cursor: pointer; }\n  .text-background-module_fill__27w5d .text-background-module_header__2T8Aw {\n    display: flex; }\n    .text-background-module_fill__27w5d .text-background-module_header__2T8Aw button {\n      width: 24px;\n      height: 24px; }\n  .text-background-module_fill__27w5d .text-background-module_fillItems__RB0x4 {\n    display: flex;\n    flex-direction: column;\n    width: 224px; }\n  .text-background-module_fill__27w5d.text-background-module_white__1zeD1 {\n    background: #ffffff; }\n  .text-background-module_fill__27w5d.text-background-module_gray__HehSe {\n    background: #f7f9fa; }\n  .text-background-module_fill__27w5d.text-background-module_silver__2A-zz {\n    background: #f2f4f5; }\n  .text-background-module_fill__27w5d .text-background-module_header__2T8Aw {\n    width: 224px;\n    height: 32px;\n    display: flex;\n    align-items: center;\n    justify-content: space-between; }\n    .text-background-module_fill__27w5d .text-background-module_header__2T8Aw .text-background-module_layerText__36qv- {\n      font-family: Aktiv Grotesk, sans-serif;\n      font-size: 12px;\n      line-height: 24px;\n      font-weight: 600;\n      display: flex;\n      align-items: center;\n      cursor: text; }\n      .text-background-module_fill__27w5d .text-background-module_header__2T8Aw .text-background-module_layerText__36qv-.text-background-module_purple__2tWos {\n        color: #b555e5; }\n      .text-background-module_fill__27w5d .text-background-module_header__2T8Aw .text-background-module_layerText__36qv-.text-background-module_black__3UNAP {\n        color: #31363a; }\n  .text-background-module_fill__27w5d .text-background-module_layerBtnAction__shJOe {\n    display: flex;\n    justify-content: flex-end;\n    align-items: center;\n    vertical-align: middle; }\n";
-var style$4 = {"fill":"text-background-module_fill__27w5d","header":"text-background-module_header__2T8Aw","fillItems":"text-background-module_fillItems__RB0x4","white":"text-background-module_white__1zeD1","gray":"text-background-module_gray__HehSe","silver":"text-background-module_silver__2A-zz","layerText":"text-background-module_layerText__36qv-","purple":"text-background-module_purple__2tWos","black":"text-background-module_black__3UNAP","layerBtnAction":"text-background-module_layerBtnAction__shJOe"};
-styleInject(css_248z$5);
+var css_248z$4 = ".text-background-module_fill__27w5d {\n  width: 240px;\n  display: flex;\n  flex-direction: column;\n  align-items: center;\n  justify-content: space-between;\n  box-sizing: border-box;\n  padding: 8px;\n  cursor: pointer; }\n  .text-background-module_fill__27w5d .text-background-module_header__2T8Aw {\n    display: flex; }\n    .text-background-module_fill__27w5d .text-background-module_header__2T8Aw button {\n      width: 24px;\n      height: 24px; }\n  .text-background-module_fill__27w5d .text-background-module_fillItems__RB0x4 {\n    display: flex;\n    flex-direction: column;\n    width: 224px; }\n  .text-background-module_fill__27w5d.text-background-module_white__1zeD1 {\n    background: #ffffff; }\n  .text-background-module_fill__27w5d.text-background-module_gray__HehSe {\n    background: #f7f9fa; }\n  .text-background-module_fill__27w5d.text-background-module_silver__2A-zz {\n    background: #f2f4f5; }\n  .text-background-module_fill__27w5d .text-background-module_header__2T8Aw {\n    width: 224px;\n    height: 32px;\n    display: flex;\n    align-items: center;\n    justify-content: space-between; }\n    .text-background-module_fill__27w5d .text-background-module_header__2T8Aw .text-background-module_layerText__36qv- {\n      font-family: Aktiv Grotesk, sans-serif;\n      font-size: 12px;\n      line-height: 24px;\n      font-weight: 600;\n      display: flex;\n      align-items: center;\n      cursor: text; }\n      .text-background-module_fill__27w5d .text-background-module_header__2T8Aw .text-background-module_layerText__36qv-.text-background-module_purple__2tWos {\n        color: #b555e5; }\n      .text-background-module_fill__27w5d .text-background-module_header__2T8Aw .text-background-module_layerText__36qv-.text-background-module_black__3UNAP {\n        color: #31363a; }\n  .text-background-module_fill__27w5d .text-background-module_layerBtnAction__shJOe {\n    display: flex;\n    justify-content: flex-end;\n    align-items: center;\n    vertical-align: middle; }\n";
+var style$3 = {"fill":"text-background-module_fill__27w5d","header":"text-background-module_header__2T8Aw","fillItems":"text-background-module_fillItems__RB0x4","white":"text-background-module_white__1zeD1","gray":"text-background-module_gray__HehSe","silver":"text-background-module_silver__2A-zz","layerText":"text-background-module_layerText__36qv-","purple":"text-background-module_purple__2tWos","black":"text-background-module_black__3UNAP","layerBtnAction":"text-background-module_layerBtnAction__shJOe"};
+styleInject(css_248z$4);
 
 /* eslint-disable react-hooks/exhaustive-deps */
 const TextBackground = ({
@@ -6612,7 +6607,7 @@ const TextBackground = ({
     layerText,
     header,
     fillItems
-  } = style$4;
+  } = style$3;
   const [optionsState, setOptionsState] = useState(options);
   const [titleS] = useState(title);
 
@@ -6637,11 +6632,11 @@ const TextBackground = ({
   }) => setOptionsState(optionsState.filter(item => item.id !== id));
 
   return /*#__PURE__*/React$1.createElement("div", {
-    className: `${fill} ${style$4[type]}`
+    className: `${fill} ${style$3[type]}`
   }, /*#__PURE__*/React$1.createElement("div", {
     className: header
   }, /*#__PURE__*/React$1.createElement("label", {
-    className: `${layerText} ${style$4[textColor]}`
+    className: `${layerText} ${style$3[textColor]}`
   }, titleS), /*#__PURE__*/React$1.createElement("div", {
     className: `${layerBtnAction}`,
     onClick: () => addRow()
@@ -6654,89 +6649,6 @@ const TextBackground = ({
     onChange: _res => setValue(_res, key),
     removeRow: removeRow
   }))));
-};
-
-var css_248z$4 = ".color-picker-module_colorPickerWrapper__3P_kF {\n  position: relative;\n  width: 224px;\n  height: 24px;\n  display: flex;\n  align-items: center;\n  justify-content: space-between;\n  border-radius: 4px;\n  margin: 8px 0;\n  cursor: pointer; }\n  .color-picker-module_colorPickerWrapper__3P_kF * {\n    box-sizing: border-box;\n    font-family: Aktiv Grotesk, sans-serif;\n    user-select: none; }\n  .color-picker-module_colorPickerWrapper__3P_kF .color-picker-module_colorActionWrapper__31kSX {\n    display: flex;\n    width: 88px;\n    height: 24px;\n    border: 1px solid #ebebeb;\n    background-color: #ebebeb;\n    padding: 4px;\n    border-radius: 8px;\n    align-items: center;\n    box-sizing: border-box;\n    justify-content: space-between; }\n    .color-picker-module_colorPickerWrapper__3P_kF .color-picker-module_colorActionWrapper__31kSX:hover {\n      border: 1px solid #b6babd; }\n    .color-picker-module_colorPickerWrapper__3P_kF .color-picker-module_colorActionWrapper__31kSX:focus-within {\n      border: 1px solid #3399ff; }\n    .color-picker-module_colorPickerWrapper__3P_kF .color-picker-module_colorActionWrapper__31kSX input {\n      font-size: 11px;\n      border: 0;\n      outline: none;\n      width: 54px; }\n    .color-picker-module_colorPickerWrapper__3P_kF .color-picker-module_colorActionWrapper__31kSX .color-picker-module_colorPicker__2HbFF {\n      width: 16px;\n      height: 16px;\n      border-radius: 50%; }\n  .color-picker-module_colorPickerWrapper__3P_kF.color-picker-module_active__3ZwGl {\n    border: 1px solid #3399ff; }\n  .color-picker-module_colorPickerWrapper__3P_kF .color-picker-module_fillText__oihp8 {\n    width: 52px;\n    height: 24px;\n    justify-content: flex-end; }\n    .color-picker-module_colorPickerWrapper__3P_kF .color-picker-module_fillText__oihp8 input {\n      width: 20px;\n      padding: 0;\n      line-height: 16px;\n      font-size: 11px; }\n  .color-picker-module_colorPickerWrapper__3P_kF .color-picker-module_btnRow__211CU {\n    width: 24px;\n    height: 32px; }\n  .color-picker-module_colorPickerWrapper__3P_kF .color-picker-module_colorPickerModal__3JI8z {\n    position: fixed;\n    right: 240px;\n    z-index: 1; }\n    .color-picker-module_colorPickerWrapper__3P_kF .color-picker-module_colorPickerModal__3JI8z > div {\n      border: 0 !important;\n      border-radius: 8px !important;\n      background: #f7f9fa !important;\n      box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.06), 0px 0.5px 1px rgba(0, 0, 0, 0.24) !important; }\n  .color-picker-module_colorPickerWrapper__3P_kF [type='text']:focus,\n  .color-picker-module_colorPickerWrapper__3P_kF [type='password']:focus,\n  .color-picker-module_colorPickerWrapper__3P_kF [type='number']:focus,\n  .color-picker-module_colorPickerWrapper__3P_kF [type='email']:focus,\n  .color-picker-module_colorPickerWrapper__3P_kF [type='search']:focus {\n    color: #333333; }\n";
-var style$3 = {"colorPickerWrapper":"color-picker-module_colorPickerWrapper__3P_kF","colorActionWrapper":"color-picker-module_colorActionWrapper__31kSX","colorPicker":"color-picker-module_colorPicker__2HbFF","active":"color-picker-module_active__3ZwGl","fillText":"color-picker-module_fillText__oihp8","btnRow":"color-picker-module_btnRow__211CU","colorPickerModal":"color-picker-module_colorPickerModal__3JI8z"};
-styleInject(css_248z$4);
-
-/* eslint-disable react-hooks/exhaustive-deps */
-const ColorPicker = ({
-  row,
-  onChange
-}) => {
-  const {
-    colorPickerWrapper,
-    colorActionWrapper,
-    colorPicker,
-    colorPickerModal,
-    fillText
-  } = style$3;
-  const {
-    color = 'black',
-    opacity = 100
-  } = row;
-  const [selectedColor, setSelectedColor] = useState(color);
-  const [selectedOpacity, setSelectedOpacity] = useState(opacity);
-  const [toggleColorPicker, setToggleColorPicker] = useState(false);
-  const [colorPickerStyle, setColorPickerStyle] = useState({
-    backgroundColor: selectedColor,
-    opacity: selectedOpacity / 100
-  });
-  useEffect(() => {
-    onChange({
-      color: selectedColor,
-      value: parseFloat(selectedOpacity)
-    });
-  }, [selectedColor, selectedOpacity]);
-  useEffect(() => {
-    setSelectedColor(color);
-    setSelectedOpacity(opacity);
-    setColorPickerStyle({
-      backgroundColor: selectedColor,
-      opacity: selectedOpacity / 100
-    });
-  }, [row]); // close color picker by click outside.
-
-  const colorPickerWrapperRef = /*#__PURE__*/createRef();
-  useEffect(() => {
-    function clickOutside(e) {
-      if (colorPickerWrapperRef.current && !colorPickerWrapperRef.current.contains(e.target)) {
-        setToggleColorPicker(false);
-      }
-    }
-
-    window.addEventListener('mousedown', clickOutside);
-    return () => window.removeEventListener('mousedown', clickOutside);
-  }, [colorPickerWrapperRef]);
-  return /*#__PURE__*/React$1.createElement("div", {
-    className: `${colorPickerWrapper}`
-  }, toggleColorPicker && /*#__PURE__*/React$1.createElement("div", {
-    className: colorPickerModal,
-    ref: colorPickerWrapperRef
-  }, /*#__PURE__*/React$1.createElement(SketchPicker, {
-    color: selectedColor,
-    onChange: color => setSelectedColor(color.hex)
-  })), /*#__PURE__*/React$1.createElement("div", {
-    className: colorActionWrapper
-  }, /*#__PURE__*/React$1.createElement("div", {
-    onClick: () => setToggleColorPicker(!toggleColorPicker),
-    className: colorPicker,
-    style: colorPickerStyle
-  }), /*#__PURE__*/React$1.createElement(Input, {
-    onChange: setSelectedColor,
-    setValue: setSelectedColor,
-    value: selectedColor,
-    type: "string",
-    size: "noStyle"
-  })), /*#__PURE__*/React$1.createElement(Input, {
-    onChange: setSelectedOpacity,
-    value: selectedOpacity,
-    setValue: setSelectedOpacity,
-    dir: "right",
-    label: "%",
-    className: fillText
-  }));
 };
 
 var css_248z$3 = ".switch-module_switchWrapper__2E1Ui {\n  width: 28px;\n  height: 16px;\n  background: #ebebeb;\n  border-radius: 12px;\n  position: relative; }\n  .switch-module_switchWrapper__2E1Ui * {\n    box-sizing: border-box; }\n  .switch-module_switchWrapper__2E1Ui.switch-module_unchecked__9INjE .switch-module_circleSwitch__2QxBy {\n    animation: switch-module_slideLeft__3MrmJ 0.2s both; }\n  .switch-module_switchWrapper__2E1Ui.switch-module_isChecked__3OWbm {\n    animation: switch-module_colorChange__2zbDx 0.2s linear both; }\n    .switch-module_switchWrapper__2E1Ui.switch-module_isChecked__3OWbm .switch-module_circleSwitch__2QxBy {\n      animation: switch-module_slideRight__35kYT 0.2s both; }\n  .switch-module_switchWrapper__2E1Ui .switch-module_circleSwitch__2QxBy {\n    position: absolute;\n    width: 14px;\n    height: 14px;\n    top: 1px;\n    background: #ffffff;\n    box-shadow: 0px 0px 1px rgba(51, 51, 51, 0.5);\n    border-radius: 9px; }\n\n@keyframes switch-module_slideRight__35kYT {\n  0% {\n    transform: translateX(1); }\n  100% {\n    transform: translateX(13px); } }\n\n@keyframes switch-module_slideLeft__3MrmJ {\n  0% {\n    transform: translateX(13px); }\n  100% {\n    transform: translateX(1px); } }\n\n@keyframes switch-module_colorChange__2zbDx {\n  0% {\n    background: #ebebeb; }\n  100% {\n    background: #3399ff; } }\n\n@keyframes switch-module_colorChangeReverse__XidUM {\n  0% {\n    background: #3399ff; }\n  100% {\n    background: #ebebeb; } }\n";
@@ -7137,20 +7049,7 @@ const DropShadow = ({
     className: amountInput
   })), /*#__PURE__*/React$1.createElement("div", {
     className: row
-  }, /*#__PURE__*/React$1.createElement(ColorPicker, {
-    onChange: ({
-      color,
-      value
-    }) => {
-      setColor(color);
-      setOpacity(value);
-    },
-    setColor: setColor,
-    row: {
-      color: color,
-      opacity: opacity
-    }
-  }))));
+  })));
 };
 
 var css_248z$1 = ".fx-row-module_fxRow__3FjF6 {\n  position: relative;\n  width: 224px;\n  display: flex;\n  align-items: center;\n  justify-content: space-between;\n  margin-bottom: 8px;\n  cursor: pointer; }\n  .fx-row-module_fxRow__3FjF6 * {\n    box-sizing: border-box;\n    font-family: Aktiv Grotesk, sans-serif;\n    user-select: none; }\n  .fx-row-module_fxRow__3FjF6 .fx-row-module_fxText__1p2cR {\n    font-size: 11px;\n    width: 168px;\n    height: 24px;\n    background: #f5f5f5;\n    border-radius: 8px;\n    align-items: center;\n    display: flex;\n    padding-left: 8px; }\n    .fx-row-module_fxRow__3FjF6 .fx-row-module_fxText__1p2cR.fx-row-module_active__wFj_v {\n      border: 1px solid #3399ff; }\n  .fx-row-module_fxRow__3FjF6 .fx-row-module_btn__2fwCg {\n    width: 24px;\n    height: 24px; }\n    .fx-row-module_fxRow__3FjF6 .fx-row-module_btn__2fwCg.fx-row-module_minus__3Acv6 svg path {\n      stroke: #999999; }\n    .fx-row-module_fxRow__3FjF6 .fx-row-module_btn__2fwCg svg path {\n      fill: #999999; }\n";
