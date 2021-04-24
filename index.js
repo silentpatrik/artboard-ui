@@ -8134,128 +8134,48 @@ const ToolsPanelPenToolsIcon = ({
     fill: "#333333"
   }));
 };
-const ToolsPanelTextsIcon = ({
-  width = 19,
-  height = 19
+const ToolsPanelTextIcon = ({
+  width = 13,
+  height = 12
 }) => {
   return /*#__PURE__*/React$1.createElement("svg", {
     width: width,
     height: height,
-    viewBox: "0 0 19 19",
+    viewBox: "0 0 13 12",
     fill: "none"
   }, /*#__PURE__*/React$1.createElement("path", {
-    d: "M0.5 4C0.5 2.067 2.067 0.5 4 0.5H12C13.933 0.5 15.5 2.067 15.5 4V9V12C15.5 13.933 13.933 15.5 12 15.5H10H4C2.067 15.5 0.5 13.933 0.5 12V4Z",
-    stroke: "#333333"
-  }), /*#__PURE__*/React$1.createElement("path", {
-    d: "M6 9.5H10V8.5H6V9.5Z",
-    fill: "#333333"
-  }), /*#__PURE__*/React$1.createElement("path", {
-    fillRule: "evenodd",
-    clipRule: "evenodd",
-    d: "M8.46233 4.30962C8.38519 4.12227 8.20261 4 8 4C7.79738 4 7.6148 4.12227 7.53766 4.30963L4.37103 12H5.45249L8 5.8132L10.5475 12H11.629L8.46233 4.30962Z",
-    fill: "#333333"
-  }), /*#__PURE__*/React$1.createElement("path", {
-    d: "M16.5 18.5H18.5V16.5",
-    stroke: "#333333",
+    d: "M.5 2.5v-2h12v2M6.5.5v11m0 0h-2m2 0h2",
+    stroke: "#333",
     strokeLinecap: "round"
   }));
 };
-const ToolsPanelTextIcon = ({
-  width = 16,
+const ToolsPanelPathText1Icon = ({
+  width = 18,
   height = 16
 }) => {
   return /*#__PURE__*/React$1.createElement("svg", {
     width: width,
     height: height,
-    viewBox: "0 0 16 16",
+    viewBox: "0 0 18 16",
     fill: "none"
   }, /*#__PURE__*/React$1.createElement("path", {
-    d: "M0.5 4C0.5 2.067 2.067 0.5 4 0.5H12C13.933 0.5 15.5 2.067 15.5 4V9V12C15.5 13.933 13.933 15.5 12 15.5H10H4C2.067 15.5 0.5 13.933 0.5 12V4Z",
-    stroke: "#333333"
-  }), /*#__PURE__*/React$1.createElement("path", {
-    d: "M6 9.5H10V8.5H6V9.5Z",
-    fill: "#333333"
-  }), /*#__PURE__*/React$1.createElement("path", {
-    fillRule: "evenodd",
-    clipRule: "evenodd",
-    d: "M8.46233 4.30962C8.38519 4.12227 8.20261 4 8 4C7.79738 4 7.6148 4.12227 7.53766 4.30963L4.37103 12H5.45249L8 5.8132L10.5475 12H11.629L8.46233 4.30962Z",
-    fill: "#333333"
-  }));
-};
-const ToolsPanelPathText1Icon = ({
-  width = 18,
-  height = 14
-}) => {
-  return /*#__PURE__*/React$1.createElement("svg", {
-    width: width,
-    height: height,
-    viewBox: "0 0 18 14",
-    fill: "none"
-  }, /*#__PURE__*/React$1.createElement("path", {
-    d: "M7 5.5H11V4.5H7V5.5Z",
-    fill: "#333333"
-  }), /*#__PURE__*/React$1.createElement("path", {
-    fillRule: "evenodd",
-    clipRule: "evenodd",
-    d: "M9.46234 0.309625C9.38519 0.122274 9.20261 0 9 0C8.79738 0 8.6148 0.122274 8.53766 0.309625L5.37103 8H6.45249L9 1.8132L11.5475 8H12.629L9.46234 0.309625Z",
-    fill: "#333333"
-  }), /*#__PURE__*/React$1.createElement("path", {
-    d: "M2.5 13.5C2.5 13.5 5.5 10.5 9 10.5C12.5 10.5 15.5 13.5 15.5 13.5",
-    stroke: "#333333",
-    strokeLinecap: "round"
-  }), /*#__PURE__*/React$1.createElement("path", {
-    d: "M15.5 13.5L17 12",
-    stroke: "#333333",
-    strokeLinecap: "round"
-  }), /*#__PURE__*/React$1.createElement("path", {
-    d: "M2.5 13.5L1 12",
-    stroke: "#333333",
+    d: "M2.5 15.5s3-3 6.5-3 6.5 3 6.5 3M15.5 15.5L17 14M2.5 15.5L1 14M5.5 2.5v-2h8v2M9.5.5v8m0 0H8m1.5 0H11",
+    stroke: "#333",
     strokeLinecap: "round"
   }));
 };
 const ToolsPanelPathText2Icon = ({
-  width = 16,
-  height = 14
-}) => {
-  return /*#__PURE__*/React$1.createElement("svg", {
-    width: width,
-    height: height,
-    viewBox: "0 0 16 14",
-    fill: "none"
-  }, /*#__PURE__*/React$1.createElement("path", {
-    d: "M6 5.5H10V4.5H6V5.5Z",
-    fill: "#333333"
-  }), /*#__PURE__*/React$1.createElement("path", {
-    fillRule: "evenodd",
-    clipRule: "evenodd",
-    d: "M8.46234 0.309625C8.38519 0.122274 8.20261 0 8 0C7.79738 0 7.6148 0.122274 7.53766 0.309625L4.37103 8H5.45249L8 1.8132L10.5475 8H11.629L8.46234 0.309625Z",
-    fill: "#333333"
-  }), /*#__PURE__*/React$1.createElement("path", {
-    d: "M0.5 14V14C0.5 12.067 2.067 10.5 4 10.5H12C13.933 10.5 15.5 8.933 15.5 7V7",
-    stroke: "#333333",
-    strokeLinecap: "round"
-  }));
-};
-const ToolsPanelPathText3Icon = ({
   width = 19,
-  height = 20
+  height = 17
 }) => {
   return /*#__PURE__*/React$1.createElement("svg", {
     width: width,
     height: height,
-    viewBox: "0 0 19 20",
+    viewBox: "0 0 19 17",
     fill: "none"
   }, /*#__PURE__*/React$1.createElement("path", {
-    d: "M10.5251 5.64644L13.3536 8.47487L14.0607 7.76776L11.2322 4.93933L10.5251 5.64644Z",
-    fill: "#333333"
-  }), /*#__PURE__*/React$1.createElement("path", {
-    fillRule: "evenodd",
-    clipRule: "evenodd",
-    d: "M15.9364 3.71742C16.0143 3.5304 15.9717 3.31483 15.8284 3.17156C15.6852 3.0283 15.4696 2.98565 15.2826 3.06358L7.60551 6.26235L8.37021 7.02706L14.5463 4.45369L11.9729 10.6298L12.7376 11.3945L15.9364 3.71742Z",
-    fill: "#333333"
-  }), /*#__PURE__*/React$1.createElement("path", {
-    d: "M1.22182 9.67158V9.67158C2.58866 8.30474 4.80473 8.30474 6.17157 9.67158L10.8284 14.3284C12.1953 15.6953 14.4113 15.6953 15.7782 14.3284V14.3284",
-    stroke: "#333333",
+    d: "M1.2218 10.6716v0c1.3669-1.3669 3.583-1.3669 4.9498 0l4.6568 4.6568c1.3669 1.3669 3.5829 1.3669 4.9498 0v0M11.0858 2.2574L12.5.843 18.1569 6.5l-1.4143 1.4142M15.3284 3.6716L9.6716 9.3284m0 0L8.6109 8.2678m1.0607 1.0606l1.0606 1.0607",
+    stroke: "#333",
     strokeLinecap: "round"
   }));
 };
@@ -9907,4 +9827,4 @@ const ArrowMoreIcon = ({
   }));
 };
 
-export { AddEmojiIcon, AddMenu, Adjustment, AlignBottomIcon, AlignCenterIcon, AlignCenterVIcon, AlignDistributeHorizontalSpacingIcon, AlignDistributeVerticalSpacingIcon, AlignLeftIcon, AlignRightIcon, AlignTopIcon, Alignment, AlignmentLetterSpacingIcon, AlignmentLineHeightIcon, AlignmentRadiusLabelIcon, ArcIcon, ArrowLeftIcon, ArrowMoreIcon, ArrowRightSecondIcon, BlendIcon, BlendedIcon, CheckIcon, ChevronArrowIcon, ColorPickerIcon, CommandKeyIcon, ComponentIcon, ComponentOptionsIcon, ControlKeyIcon, CopyIcon, CrossIcon, DeleteKeyIcon, Divider, EaseIcon, EdgeAlignBottomIcon, EdgeAlignCenterHorizontalIcon, EdgeAlignCenterIcon, EdgeAlignCenterVerticalIcon, EdgeAlignLeftIcon, EdgeAlignRightIcon, EdgeAlignTopIcon, EditIcon, EyeCloseIcon, EyeIcon, Fill, Fx, GridIcon, HamburgerIcon, HelpIcon, Icon, IconButton, InfoIcon, Input, Item, LayerArtboardIcon, LayerComponentIcon, LayerFXIcon, LayerFileIcon, LayerFilterIcon, LayerFolderIcon, LayerImageIcon, LayerItemIcon, LayerMaskIcon, LayerRectangleIcon, LayerShapeModeExcludeIcon, LayerShapeModeIntersectIcon, LayerShapeModeSubtractIcon, LayerShapeModeUnionIcon, LayerSmartObjectIcon, LayerTextIcon, LayerVectorIcon, LayerVideoIcon, Layers, LinkIcon, LinkedIcon, ListIcon, LockIcon, LockedIcon, MaskIcon, Menu, MiniPlusIcon, MinusIcon, NewTabIcon, OptionKeyIcon, Pages, PerspectiveIcon, PlusIcon, Properties, RadiusIcon, RecentIcon, RemoveBGIcon, ResetIcon, SearchIcon, ShapeExcludeIcon, ShapeIntersectIcon, ShapeModesIcon, ShapeSubtractIcon, ShareButton, ShiftKeyIcon, SmallChevronArrowIcon, SmartLayout, SmartObjectsIcon, Stroke, Stroke1Icon, Stroke2Icon, Stroke3Icon, Text, TextBackground, ThumbnailIcon, ToolbarZoom, ToolsPanelArtboardIcon, ToolsPanelBrushIcon, ToolsPanelBrushesIcon, ToolsPanelCrayonBrushIcon, ToolsPanelFillIcon, ToolsPanelInkBrushIcon, ToolsPanelLayersIcon, ToolsPanelMenuIcon, ToolsPanelNoteIcon, ToolsPanelPathText1Icon, ToolsPanelPathText2Icon, ToolsPanelPathText3Icon, ToolsPanelPenToolsIcon, ToolsPanelPencilIcon, ToolsPanelPlusIcon, ToolsPanelRulerIcon, ToolsPanelSelectionToolsIcon, ToolsPanelShapeEllipseIcon, ToolsPanelShapeLineArrowIcon, ToolsPanelShapeLineIcon, ToolsPanelShapePolygonIcon, ToolsPanelShapeRectangleIcon, ToolsPanelShapeRectanglesIcon, ToolsPanelShapeStarIcon, ToolsPanelShareIcon, ToolsPanelSprayBrushIcon, ToolsPanelTextIcon, ToolsPanelTextsIcon, TopMenu, Transition3DIcon, TrashIcon, TreeDotsIcon, Visibility, VolumeOffIcon, VolumeOnIcon, WrapIcon };
+export { AddEmojiIcon, AddMenu, Adjustment, AlignBottomIcon, AlignCenterIcon, AlignCenterVIcon, AlignDistributeHorizontalSpacingIcon, AlignDistributeVerticalSpacingIcon, AlignLeftIcon, AlignRightIcon, AlignTopIcon, Alignment, AlignmentLetterSpacingIcon, AlignmentLineHeightIcon, AlignmentRadiusLabelIcon, ArcIcon, ArrowLeftIcon, ArrowMoreIcon, ArrowRightSecondIcon, BlendIcon, BlendedIcon, CheckIcon, ChevronArrowIcon, ColorPickerIcon, CommandKeyIcon, ComponentIcon, ComponentOptionsIcon, ControlKeyIcon, CopyIcon, CrossIcon, DeleteKeyIcon, Divider, EaseIcon, EdgeAlignBottomIcon, EdgeAlignCenterHorizontalIcon, EdgeAlignCenterIcon, EdgeAlignCenterVerticalIcon, EdgeAlignLeftIcon, EdgeAlignRightIcon, EdgeAlignTopIcon, EditIcon, EyeCloseIcon, EyeIcon, Fill, Fx, GridIcon, HamburgerIcon, HelpIcon, Icon, IconButton, InfoIcon, Input, Item, LayerArtboardIcon, LayerComponentIcon, LayerFXIcon, LayerFileIcon, LayerFilterIcon, LayerFolderIcon, LayerImageIcon, LayerItemIcon, LayerMaskIcon, LayerRectangleIcon, LayerShapeModeExcludeIcon, LayerShapeModeIntersectIcon, LayerShapeModeSubtractIcon, LayerShapeModeUnionIcon, LayerSmartObjectIcon, LayerTextIcon, LayerVectorIcon, LayerVideoIcon, Layers, LinkIcon, LinkedIcon, ListIcon, LockIcon, LockedIcon, MaskIcon, Menu, MiniPlusIcon, MinusIcon, NewTabIcon, OptionKeyIcon, Pages, PerspectiveIcon, PlusIcon, Properties, RadiusIcon, RecentIcon, RemoveBGIcon, ResetIcon, SearchIcon, ShapeExcludeIcon, ShapeIntersectIcon, ShapeModesIcon, ShapeSubtractIcon, ShareButton, ShiftKeyIcon, SmallChevronArrowIcon, SmartLayout, SmartObjectsIcon, Stroke, Stroke1Icon, Stroke2Icon, Stroke3Icon, Text, TextBackground, ThumbnailIcon, ToolbarZoom, ToolsPanelArtboardIcon, ToolsPanelBrushIcon, ToolsPanelBrushesIcon, ToolsPanelCrayonBrushIcon, ToolsPanelFillIcon, ToolsPanelInkBrushIcon, ToolsPanelLayersIcon, ToolsPanelMenuIcon, ToolsPanelNoteIcon, ToolsPanelPathText1Icon, ToolsPanelPathText2Icon, ToolsPanelPenToolsIcon, ToolsPanelPencilIcon, ToolsPanelPlusIcon, ToolsPanelRulerIcon, ToolsPanelSelectionToolsIcon, ToolsPanelShapeEllipseIcon, ToolsPanelShapeLineArrowIcon, ToolsPanelShapeLineIcon, ToolsPanelShapePolygonIcon, ToolsPanelShapeRectangleIcon, ToolsPanelShapeRectanglesIcon, ToolsPanelShapeStarIcon, ToolsPanelShareIcon, ToolsPanelSprayBrushIcon, ToolsPanelTextIcon, TopMenu, Transition3DIcon, TrashIcon, TreeDotsIcon, Visibility, VolumeOffIcon, VolumeOnIcon, WrapIcon };
