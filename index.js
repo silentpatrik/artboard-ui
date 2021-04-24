@@ -4422,7 +4422,7 @@ styleInject(css_248z$i);
 /* eslint-disable react-hooks/exhaustive-deps */
 const Dropdown = ({
   option = [],
-  size = 'small',
+  size = 'medium',
   onChange = () => {},
   selectedValue = option[0],
   className = null,
