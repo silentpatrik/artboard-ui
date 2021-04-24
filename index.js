@@ -5930,8 +5930,7 @@ const FillRow = ({
     onClick: () => setToggleColorPicker(!toggleColorPicker),
     className: colorPicker,
     style: colorPickerStyle
-  }), /*#__PURE__*/React$1.createElement(Input // onChange={setSelectedColor}
-  , {
+  }), /*#__PURE__*/React$1.createElement(Input, {
     onChange: color => {
       setSelectedColor(color);
       onChange({
@@ -5958,7 +5957,7 @@ const FillRow = ({
         blendMode
       });
     }
-  }, blendModeState && blendModeState.value.toLowerCase() === 'normal' ? /*#__PURE__*/React$1.createElement(BlendIcon$1, null) : /*#__PURE__*/React$1.createElement(BlendedIcon$1, null)) : null, /*#__PURE__*/React$1.createElement(Input, {
+  }, blendModeState && blendModeState.name.toLowerCase() === 'normal' ? /*#__PURE__*/React$1.createElement(BlendIcon$1, null) : /*#__PURE__*/React$1.createElement(BlendedIcon$1, null)) : null, /*#__PURE__*/React$1.createElement(Input, {
     min: 0,
     max: 100,
     onChange: opacity => {
@@ -6314,7 +6313,7 @@ const Stroke = ({
     onChange: _res => setValue(_res, key),
     onRemoveClick: onRemoveClick
   }))), toggleMoreItems && /*#__PURE__*/React$1.createElement(StrokeOption, _extends({
-    onChange: onchange
+    onChange: onChange
   }, {
     capOptionValues,
     caseOptionValues,
