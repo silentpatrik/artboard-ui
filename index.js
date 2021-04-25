@@ -109,16 +109,16 @@ const Input = ({
 
     if (type !== 'string') {
       validateNumber(val);
-      if (code === 'ArrowUp') setValue(max !== null && parseFloat(val) + (shiftKey ? 10 : 1) > max ? max : parseFloat(val) + (shiftKey ? 10 : 1));
-      if (code === 'ArrowDown') setValue(min !== null && parseFloat(val) - (shiftKey ? 10 : 1) < min ? min : parseFloat(val) - (shiftKey ? 10 : 1));
+      if (code === 'ArrowUp') setValue(max !== null && parseFloat(val) + (shiftKey ? 10 : 1) > max ? max : parseFloat(val) + (shiftKey ? 10 : 1), event);
+      if (code === 'ArrowDown') setValue(min !== null && parseFloat(val) - (shiftKey ? 10 : 1) < min ? min : parseFloat(val) - (shiftKey ? 10 : 1), event);
 
       if (code === 'Enter' || code === 'NumpadEnter') {
-        calcInput();
+        calcInput(event);
       }
     }
   };
 
-  const calcInput = () => {
+  const calcInput = event => {
     if (value && type !== 'string') {
       const inputVal = value.toString();
       const operations = ['+', '-', '*', '/'];
@@ -128,7 +128,7 @@ const Input = ({
           let _res = inputVal.split(_value);
 
           if (!_res[0]) setValue(parseFloat(_value + _res[1]));
-          setValue(calculate(_res[0], _res[1], _value));
+          setValue(calculate(_res[0], _res[1], _value), event);
         }
 
         return value;
@@ -140,16 +140,16 @@ const Input = ({
     if (isCharacterALetter(data)) setValue(0);
   };
 
-  const setValue = val => {
+  const setValue = (val, e) => {
     if (size === 'noStyle') {
-      onChange(val);
+      onChange(val, e);
     } else if (!val === null || val === undefined || val === '') {
-      onChange(0);
+      onChange(0, e);
     } else if (max !== null && val > max) {
-      onChange(max);
+      onChange(max, e);
     } else if (min !== null && val < min) {
-      onChange(min);
-    } else onChange(parseFloat(val));
+      onChange(min, e);
+    } else onChange(parseFloat(val), e);
   };
 
   return /*#__PURE__*/React$1.createElement(React$1.Fragment, null, size === 'noStyle' ? /*#__PURE__*/React$1.createElement("div", {
@@ -175,9 +175,9 @@ const Input = ({
     value: value,
     onBlur: e => {
       onBlur(e);
-      calcInput();
+      calcInput(e);
     },
-    onChange: e => onChange(e.target.value)
+    onChange: e => onChange(e.target.value, e)
   })) : /*#__PURE__*/React$1.createElement("div", {
     ref: ref,
     className: `${className ? className : ''} ${input} ${style$K[size]} ${style$K[direction]}`
@@ -202,9 +202,9 @@ const Input = ({
     value: value,
     onBlur: e => {
       onBlur(e);
-      calcInput();
+      calcInput(e);
     },
-    onChange: e => onChange(e.target.value)
+    onChange: e => onChange(e.target.value, e)
   }) : null, /*#__PURE__*/React$1.createElement("label", {
     onClick: () => inputRef.current.focus()
   }, /*#__PURE__*/React$1.createElement("div", null, children ? children : label))));
