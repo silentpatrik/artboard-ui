@@ -109,7 +109,10 @@ const Input = ({
 
     if (type !== 'string') {
       validateNumber(val);
-      if (code === 'ArrowUp') setValue(max !== null && parseFloat(val) + (shiftKey ? 10 : 1) > max ? max : parseFloat(val) + (shiftKey ? 10 : 1));else if (code === 'ArrowDown') setValue(min !== null && parseFloat(val) - (shiftKey ? 10 : 1) < min ? min : parseFloat(val) - (shiftKey ? 10 : 1));else if (code === 'Enter' || code === 'NumpadEnter') {
+      if (code === 'ArrowUp') setValue(max !== null && parseFloat(val) + (shiftKey ? 10 : 1) > max ? max : parseFloat(val) + (shiftKey ? 10 : 1));
+      if (code === 'ArrowDown') setValue(min !== null && parseFloat(val) - (shiftKey ? 10 : 1) < min ? min : parseFloat(val) - (shiftKey ? 10 : 1));
+
+      if (code === 'Enter' || code === 'NumpadEnter') {
         calcInput();
       }
     }
@@ -160,25 +163,24 @@ const Input = ({
     type: "text",
     placeholder: placeholder,
     readOnly: readOnly,
-    onFocus: event => {
-      onFocus(event);
-      event.target.select();
+    onFocus: e => {
+      onFocus(e);
+      e.target.select();
     },
-    onKeyUp: event => {
-      onKeyUp(event);
-      ArrowKeyUpDown(event);
+    onKeyUp: e => {
+      onKeyUp(e);
     },
     onInput: onInput,
-    onKeyDown: event => {
-      onKeyDown(event);
-      ArrowKeyUpDown(event);
+    onKeyDown: e => {
+      onKeyDown(e);
+      ArrowKeyUpDown(e);
     },
     value: value,
-    onBlur: event => {
-      onBlur(event);
+    onBlur: e => {
+      onBlur(e);
       calcInput();
     },
-    onChange: e => setValue(e.target.value)
+    onChange: e => onChange(e.target.value)
   })) : /*#__PURE__*/React$1.createElement("div", {
     ref: ref,
     className: `${className ? className : ''} ${input} ${style$K[size]} ${style$K[direction]}`
@@ -188,25 +190,24 @@ const Input = ({
     type: "text",
     placeholder: placeholder,
     readOnly: readOnly,
-    onFocus: event => {
-      onFocus(event);
-      event.target.select();
+    onFocus: e => {
+      onFocus(e);
+      e.target.select();
     },
-    onKeyUp: event => {
-      onKeyUp(event);
-      ArrowKeyUpDown(event);
+    onKeyUp: e => {
+      onKeyUp(e);
     },
     onInput: onInput,
-    onKeyDown: event => {
-      onKeyDown(event);
-      ArrowKeyUpDown(event);
+    onKeyDown: e => {
+      onKeyDown(e);
+      ArrowKeyUpDown(e);
     },
     value: value,
-    onBlur: event => {
-      onBlur(event);
+    onBlur: e => {
+      onBlur(e);
       calcInput();
     },
-    onChange: e => setValue(e.target.value)
+    onChange: e => onChange(e.target.value)
   }) : null, /*#__PURE__*/React$1.createElement("label", {
     onClick: () => inputRef.current.focus()
   }, /*#__PURE__*/React$1.createElement("div", null, children ? children : label))));
