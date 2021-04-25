@@ -127,7 +127,7 @@ const Input = ({
         if (inputVal && inputVal.split(_value).length === 2) {
           let _res = inputVal.split(_value);
 
-          if (!_res[0]) setValue(parseFloat(_value + _res[1]));
+          if (!_res[0]) setValue(parseFloat(_value + _res[1]), event);
           setValue(calculate(_res[0], _res[1], _value), event);
         }
 
