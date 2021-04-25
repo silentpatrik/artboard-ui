@@ -122,7 +122,7 @@ const Input = ({
     if (value && type !== 'string') {
       const inputVal = value.toString();
       const operations = ['+', '-', '*', '/'];
-      validateNumber(inputVal);
+      validateNumber(inputVal, event);
       operations.map(_value => {
         if (inputVal && inputVal.split(_value).length === 2) {
           let _res = inputVal.split(_value);
@@ -136,8 +136,8 @@ const Input = ({
     }
   };
 
-  const validateNumber = data => {
-    if (isCharacterALetter(data)) setValue(0);
+  const validateNumber = (data, event) => {
+    if (isCharacterALetter(data)) setValue(0, event);
   };
 
   const setValue = (val, e) => {
