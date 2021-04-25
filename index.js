@@ -108,7 +108,7 @@ const Input = ({
     const val = value;
 
     if (type !== 'string') {
-      validateNumber(val);
+      validateNumber(val, event);
       if (code === 'ArrowUp') setValue(max !== null && parseFloat(val) + (shiftKey ? 10 : 1) > max ? max : parseFloat(val) + (shiftKey ? 10 : 1), event);
       if (code === 'ArrowDown') setValue(min !== null && parseFloat(val) - (shiftKey ? 10 : 1) < min ? min : parseFloat(val) - (shiftKey ? 10 : 1), event);
 
