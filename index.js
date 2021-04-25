@@ -158,6 +158,7 @@ const Input = ({
     id: id,
     ref: inputRef,
     type: "text",
+    placeholder: placeholder,
     readOnly: readOnly,
     onFocus: event => {
       onFocus(event);
@@ -185,6 +186,7 @@ const Input = ({
     id: id,
     ref: inputRef,
     type: "text",
+    placeholder: placeholder,
     readOnly: readOnly,
     onFocus: event => {
       onFocus(event);
