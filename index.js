@@ -143,14 +143,11 @@ const Input = ({
   const setValue = val => {
     if (size === 'noStyle') {
       onChange(val);
-    } else if (!val || val === '') {
-      setValue(0);
+    } else if (!val === null || val === undefined || val === '') {
       onChange(0);
     } else if (max !== null && val > max) {
-      setValue(max);
       onChange(max);
     } else if (min !== null && val < min) {
-      setValue(min);
       onChange(min);
     } else onChange(parseFloat(val));
   };
