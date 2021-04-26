@@ -6703,7 +6703,7 @@ const IosSwitch = ({
     unchecked
   } = styles;
   return /*#__PURE__*/React$1.createElement("div", {
-    className: `${switchWrapper} ${checked ? isChecked : unchecked}`,
+    className: `${switchWrapper} ${checkedS ? isChecked : unchecked}`,
     onClick: () => {
       setCheckedS(!checkedS);
       onChange(!checkedS);
@@ -6731,8 +6731,7 @@ const FxMenu = ({
   activeFilters,
   setActiveFilters,
   setActiveFilter,
-  activeFilter,
-  onChange = () => {}
+  activeFilter
 }) => {
   const {
     fxMenu,
@@ -6937,11 +6936,11 @@ const InvertColor = ({
   }, /*#__PURE__*/React$1.createElement(IosSwitch, _extends({
     checked
   }, {
-    onChange: () => {
+    onChange: res => {
       updateRow({
         field: 'amount',
         key: activeFilter.key,
-        value: checked
+        value: res
       });
     }
   }))));
@@ -7250,6 +7249,7 @@ const Fx = ({
   type = 'white',
   textColor = 'black',
   values = [],
+  addDisabled = false,
   onChange = () => {}
 }) => {
   const {
@@ -7317,11 +7317,12 @@ const Fx = ({
     className: `${layerText} ${style[textColor]}`
   }, title), /*#__PURE__*/React$1.createElement("div", {
     ref: fxCloseMenuBtn,
-    className: `${layerBtnAction}`,
+    className: `${layerBtnAction}`
+  }, /*#__PURE__*/React$1.createElement(IconButton, {
+    disabled: addDisabled,
     onClick: () => setToggleFxMenu(!toggleFxMenu)
-  }, /*#__PURE__*/React$1.createElement(IconButton, null, /*#__PURE__*/React$1.createElement(PlusIcon$1, null))), toggleFxMenu && /*#__PURE__*/React$1.createElement(FxMenu, {
-    closeMenu: setToggleFxMenu // onChange={onChange}
-    ,
+  }, /*#__PURE__*/React$1.createElement(PlusIcon$1, null))), toggleFxMenu && /*#__PURE__*/React$1.createElement(FxMenu, {
+    closeMenu: setToggleFxMenu,
     closeBtnRef: fxCloseMenuBtn,
     activeFiltersRef: activeFiltersRef,
     setActiveFilters: onChangeActiveFilters,
