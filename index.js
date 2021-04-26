@@ -6769,7 +6769,6 @@ const FxMenu = ({
       if (JSON.stringify(DROP_SHADOW_VALUES) === JSON.stringify(value)) _activeFilters[key]['amount'] = DROP_SHADOW_VALUES;
     } else if (Number.isInteger(parseInt(value))) _activeFilters[key]['selected'] = parseInt(value) > 0;else _activeFilters[key]['selected'] = value !== 'original';
     setActiveFilters(_activeFilters);
-    console.log('updateRow');
   };
 
   const restFilter = () => {
