@@ -4386,9 +4386,9 @@ const Alignment = ({
     width: 12,
     height: 12
   })), /*#__PURE__*/React$1.createElement(IconButton, {
-    onClick: () => onChange('centerV'),
+    onClick: () => onChange('centerH'),
     disabled: disabled
-  }, /*#__PURE__*/React$1.createElement(AlignCenterIcon$1, {
+  }, /*#__PURE__*/React$1.createElement(AlignCenterVIcon$1, {
     width: 12,
     height: 12
   })), /*#__PURE__*/React$1.createElement(IconButton, {
@@ -4404,9 +4404,9 @@ const Alignment = ({
     width: 12,
     height: 12
   })), /*#__PURE__*/React$1.createElement(IconButton, {
-    onClick: () => onChange('centerH'),
+    onClick: () => onChange('centerV'),
     disabled: disabled
-  }, /*#__PURE__*/React$1.createElement(AlignCenterVIcon$1, {
+  }, /*#__PURE__*/React$1.createElement(AlignCenterIcon$1, {
     width: 12,
     height: 12
   })), /*#__PURE__*/React$1.createElement(IconButton, {
