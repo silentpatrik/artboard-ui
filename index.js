@@ -6901,7 +6901,6 @@ const Presents = ({
         value: item.value,
         key: 0
       });
-      console.log(item.value);
     }
   }, /*#__PURE__*/React$1.createElement("div", {
     className: imageBox,
@@ -7046,13 +7045,6 @@ const DropShadow = ({
     _color = color,
     _opacity = opacity
   }) => {
-    console.log({
-      _y,
-      _x,
-      _blur,
-      _color,
-      _opacity
-    });
     updateRow({
       field: 'amount',
       key: activeFilter.key,
@@ -7302,7 +7294,6 @@ const Fx = ({
 
       setActiveFilters(_tmpActiveFilters);
       onChange(_tmpActiveFilters.filter(item => item.selected));
-      console.log('updateActiveFilter else');
     }
   };
 
