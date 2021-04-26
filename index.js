@@ -6689,12 +6689,13 @@ var styles = {"switchWrapper":"switch-module_switchWrapper__2E1Ui","unchecked":"
 styleInject(css_248z$3);
 
 const IosSwitch = ({
-  setChecked,
+  checked = false,
   style,
   className,
-  checked,
-  disabled
+  disabled,
+  onChange = () => {}
 }) => {
+  const [checkedS, setCheckedS] = useState(checked);
   const {
     switchWrapper,
     circleSwitch,
@@ -6703,7 +6704,10 @@ const IosSwitch = ({
   } = styles;
   return /*#__PURE__*/React$1.createElement("div", {
     className: `${switchWrapper} ${checked ? isChecked : unchecked}`,
-    onClick: () => setChecked(!checked)
+    onClick: () => {
+      setCheckedS(!checkedS);
+      onChange(!checkedS);
+    }
   }, /*#__PURE__*/React$1.createElement("div", {
     className: `${circleSwitch}`
   }));
@@ -6713,7 +6717,6 @@ var css_248z$2 = ".fx-menu-module_fxMenu__1ZkG5 {\n  position: fixed;\n  top: 50
 var style$2 = {"fxMenu":"fx-menu-module_fxMenu__1ZkG5","header":"fx-menu-module_header__1_Rts","resetBtn":"fx-menu-module_resetBtn__17z7k","body":"fx-menu-module_body__1X6N9","left":"fx-menu-module_left__2iYbK","row":"fx-menu-module_row__3k6rq","presets":"fx-menu-module_presets__20GPf","rowItem":"fx-menu-module_rowItem__2AF_i","right":"fx-menu-module_right__2_BRT","presents":"fx-menu-module_presents__3gjeJ","column":"fx-menu-module_column__3WqPp","active":"fx-menu-module_active__1dUB1","imageBox":"fx-menu-module_imageBox__3vL2V","OtherFilter":"fx-menu-module_OtherFilter__JNpSr","filterName":"fx-menu-module_filterName__Iu_2A","amountBody":"fx-menu-module_amountBody___0vYS","amountInput":"fx-menu-module_amountInput__28C7V","dropShadow":"fx-menu-module_dropShadow__3ONx3","blurLabel":"fx-menu-module_blurLabel__2aq9E","dropShadowInput":"fx-menu-module_dropShadowInput__fNjCF"};
 styleInject(css_248z$2);
 
-/* eslint-disable react-hooks/exhaustive-deps */
 const DROP_SHADOW_VALUES = {
   y: 0,
   x: 0,
@@ -6767,6 +6770,7 @@ const FxMenu = ({
       if (JSON.stringify(DROP_SHADOW_VALUES) === JSON.stringify(value)) _activeFilters[key]['amount'] = DROP_SHADOW_VALUES;
     } else if (Number.isInteger(parseInt(value))) _activeFilters[key]['selected'] = parseInt(value) > 0;else _activeFilters[key]['selected'] = value !== 'original';
     setActiveFilters(_activeFilters);
+    console.log('updateRow');
   };
 
   const restFilter = () => {
@@ -6899,6 +6903,7 @@ const Presents = ({
         value: item.value,
         key: 0
       });
+      console.log(item.value);
     }
   }, /*#__PURE__*/React$1.createElement("div", {
     className: imageBox,
@@ -6921,14 +6926,6 @@ const InvertColor = ({
     amountBody
   } = style$2;
   useEffect(() => {
-    const update = {
-      field: 'amount',
-      key: activeFilter.key,
-      value: checked
-    };
-    updateRow(update);
-  }, [checked]);
-  useEffect(() => {
     setChecked(defaultValue);
   }, [defaultValue]);
   return /*#__PURE__*/React$1.createElement("div", {
@@ -6937,10 +6934,17 @@ const InvertColor = ({
     className: filterName
   }, activeFilter.name), /*#__PURE__*/React$1.createElement("div", {
     className: amountBody
-  }, /*#__PURE__*/React$1.createElement(IosSwitch, {
-    setChecked,
+  }, /*#__PURE__*/React$1.createElement(IosSwitch, _extends({
     checked
-  })));
+  }, {
+    onChange: () => {
+      updateRow({
+        field: 'amount',
+        key: activeFilter.key,
+        value: checked
+      });
+    }
+  }))));
 };
 
 const Mode = ({
@@ -6984,14 +6988,6 @@ const OtherFilters = ({
     amountInput
   } = style$2;
   useEffect(() => {
-    const update = {
-      field: 'amount',
-      key: activeFilter.key,
-      value: input
-    };
-    updateRow(update);
-  }, [input]);
-  useEffect(() => {
     setInput(defaultValue);
   }, [defaultValue]);
   return /*#__PURE__*/React$1.createElement("div", {
@@ -7001,7 +6997,15 @@ const OtherFilters = ({
   }, activeFilter.name), /*#__PURE__*/React$1.createElement("div", {
     className: amountBody
   }, /*#__PURE__*/React$1.createElement("label", null, "Amount"), /*#__PURE__*/React$1.createElement(Input, {
-    onChange: setInput,
+    onChange: value => {
+      setInput(value);
+      const update = {
+        field: 'amount',
+        key: activeFilter.key,
+        value
+      };
+      updateRow(update);
+    },
     value: input,
     label: "%",
     size: "normal",
@@ -7036,20 +7040,34 @@ const DropShadow = ({
     setColor(defaultValue.color);
     setOpacity(defaultValue.opacity);
   }, [activeFilters]);
-  useEffect(() => {
-    const update = {
+
+  const onUpdateRow = ({
+    _y = y,
+    _x = x,
+    _blur = blur,
+    _color = color,
+    _opacity = opacity
+  }) => {
+    console.log({
+      _y,
+      _x,
+      _blur,
+      _color,
+      _opacity
+    });
+    updateRow({
       field: 'amount',
       key: activeFilter.key,
       value: {
-        y: parseInt(y),
-        x: parseFloat(x),
-        blur: parseInt(blur),
-        color,
-        opacity: parseInt(opacity)
+        y: parseInt(_y),
+        x: parseFloat(_x),
+        blur: parseInt(_blur),
+        color: _color,
+        opacity: parseInt(_opacity)
       }
-    };
-    updateRow(update);
-  }, [y, x, blur, color, opacity]);
+    });
+  };
+
   return /*#__PURE__*/React$1.createElement("div", {
     className: dropShadow
   }, /*#__PURE__*/React$1.createElement("label", {
@@ -7059,13 +7077,23 @@ const DropShadow = ({
   }, /*#__PURE__*/React$1.createElement("div", {
     className: row
   }, /*#__PURE__*/React$1.createElement(Input, {
-    onChange: setX,
+    onChange: _x => {
+      setX(_x);
+      onUpdateRow({
+        _x
+      });
+    },
     value: x,
     label: "x",
     size: "normal",
     className: amountInput
   }), /*#__PURE__*/React$1.createElement(Input, {
-    onChange: setY,
+    onChange: _y => {
+      setY(_y);
+      onUpdateRow({
+        _y
+      });
+    },
     value: y,
     label: "y",
     size: "normal",
@@ -7075,7 +7103,12 @@ const DropShadow = ({
   }, /*#__PURE__*/React$1.createElement("label", {
     className: blurLabel
   }, "Blur"), /*#__PURE__*/React$1.createElement(Input, {
-    onChange: setBlur,
+    onChange: _blur => {
+      setBlur(_blur);
+      onUpdateRow({
+        _blur
+      });
+    },
     value: blur,
     label: "px",
     size: "normal",
@@ -7083,21 +7116,22 @@ const DropShadow = ({
   })), /*#__PURE__*/React$1.createElement("div", {
     className: row
   }, /*#__PURE__*/React$1.createElement(ColorPicker, {
-    onChange: ({
-      color,
-      value
-    }) => {
-      setColor(color);
-      setOpacity(value);
+    onChange: _color => {
+      setColor(_color);
+      onUpdateRow({
+        _color
+      });
     },
-    setColor: setColor,
-    row: {
-      color: color,
-      opacity: opacity
-    },
+    opacity: opacity,
+    color: color,
     size: "small"
   }), /*#__PURE__*/React$1.createElement(Input, {
-    onChange: setOpacity,
+    onChange: _opacity => {
+      setOpacity(_opacity);
+      onUpdateRow({
+        _opacity
+      });
+    },
     value: opacity,
     label: "%",
     size: "normal",
@@ -7212,9 +7246,10 @@ const _activeFilters = [{
   visible: true
 }];
 const Fx = ({
-  text = 'Fx',
+  title = 'Fx',
   type = 'white',
   textColor = 'black',
+  values = [],
   onChange = () => {}
 }) => {
   const {
@@ -7225,14 +7260,21 @@ const Fx = ({
     activeFillItems
   } = style;
   const [toggleFxMenu, setToggleFxMenu] = useState(false);
-  const [activeFilters, setActiveFilters] = useState(_activeFilters);
+  const [activeFilters, setActiveFilters] = useState();
   const [activeFilter, setActiveFilter] = useState({
     value: 'presents',
     key: null
   });
-  useEffect(() => {
+
+  const onChangeActiveFilters = activeFilters => {
+    setActiveFilters(activeFilters);
     onChange(activeFilters.filter(item => item.selected));
-  }, [activeFilters]); //Remove or On/Off filter in FX Component => right menu.
+  };
+
+  useEffect(() => {
+    values.map(activeValue => _activeFilters.map((item, key) => item.value === activeValue.value && (_activeFilters[key] = activeValue)));
+    setActiveFilters(_activeFilters);
+  }, [values]); //Remove or On/Off filter in FX Component => right menu.
 
   const updateActiveFilter = ({
     field,
@@ -7260,6 +7302,8 @@ const Fx = ({
       }
 
       setActiveFilters(_tmpActiveFilters);
+      onChange(_tmpActiveFilters.filter(item => item.selected));
+      console.log('updateActiveFilter else');
     }
   };
 
@@ -7271,16 +7315,16 @@ const Fx = ({
     className: header
   }, /*#__PURE__*/React$1.createElement("label", {
     className: `${layerText} ${style[textColor]}`
-  }, text), /*#__PURE__*/React$1.createElement("div", {
+  }, title), /*#__PURE__*/React$1.createElement("div", {
     ref: fxCloseMenuBtn,
     className: `${layerBtnAction}`,
     onClick: () => setToggleFxMenu(!toggleFxMenu)
   }, /*#__PURE__*/React$1.createElement(IconButton, null, /*#__PURE__*/React$1.createElement(PlusIcon$1, null))), toggleFxMenu && /*#__PURE__*/React$1.createElement(FxMenu, {
-    closeMenu: setToggleFxMenu,
-    onChange: onChange,
+    closeMenu: setToggleFxMenu // onChange={onChange}
+    ,
     closeBtnRef: fxCloseMenuBtn,
     activeFiltersRef: activeFiltersRef,
-    setActiveFilters: setActiveFilters,
+    setActiveFilters: onChangeActiveFilters,
     setActiveFilter: setActiveFilter,
     activeFilters: activeFilters,
     activeFilter: activeFilter
