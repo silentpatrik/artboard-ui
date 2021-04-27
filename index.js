@@ -7353,6 +7353,62 @@ const RadiusIcon = ({
     fill: "#333333"
   }));
 };
+const RadiusLabelLeftIcon = ({
+  width = 8,
+  height = 8
+}) => {
+  return /*#__PURE__*/React$1.createElement("svg", {
+    width: width,
+    height: height,
+    viewBox: "0 0 8 8",
+    fill: "none"
+  }, /*#__PURE__*/React$1.createElement("path", {
+    d: "M.5 8V5.5c0-2.7614 2.2386-5 5-5H8",
+    stroke: "#999"
+  }));
+};
+const RadiusLabelRightTopIcon = ({
+  width = 9,
+  height = 8
+}) => {
+  return /*#__PURE__*/React$1.createElement("svg", {
+    width: width,
+    height: height,
+    viewBox: "0 0 9 8",
+    fill: "none"
+  }, /*#__PURE__*/React$1.createElement("path", {
+    d: "M8 8V5.5c0-2.7614-2.2386-5-5-5H.5",
+    stroke: "#999"
+  }));
+};
+const RadiusLabelLeftBottomIcon = ({
+  width = 9,
+  height = 8
+}) => {
+  return /*#__PURE__*/React$1.createElement("svg", {
+    width: width,
+    height: height,
+    viewBox: "0 0 8 9",
+    fill: "none"
+  }, /*#__PURE__*/React$1.createElement("path", {
+    d: "M.5.5V3c0 2.7614 2.2386 5 5 5H8",
+    stroke: "#999"
+  }));
+};
+const RadiusLabelRightBottomIcon = ({
+  width = 9,
+  height = 8
+}) => {
+  return /*#__PURE__*/React$1.createElement("svg", {
+    width: width,
+    height: height,
+    viewBox: "0 0 9 9",
+    fill: "none"
+  }, /*#__PURE__*/React$1.createElement("path", {
+    d: "M8 .5V3c0 2.7614-2.2386 5-5 5H.5",
+    stroke: "#999"
+  }));
+};
 const LinkIcon = ({
   width = 14,
   height = 5
@@ -9815,4 +9871,4 @@ const ArrowMoreIcon = ({
   }));
 };
 
-export { AddEmojiIcon, AddMenu, Adjustment, AlignBottomIcon, AlignCenterIcon, AlignCenterVIcon, AlignDistributeHorizontalSpacingIcon, AlignDistributeVerticalSpacingIcon, AlignLeftIcon, AlignRightIcon, AlignTopIcon, Alignment, AlignmentLetterSpacingIcon, AlignmentLineHeightIcon, AlignmentRadiusLabelIcon, ArcIcon, ArrowLeftIcon, ArrowMoreIcon, ArrowRightSecondIcon, BlendIcon, BlendedIcon, CheckIcon, ChevronArrowIcon, ColorPickerIcon, CommandKeyIcon, ComponentIcon, ComponentOptionsIcon, ControlKeyIcon, CopyIcon, CrossIcon, DeleteKeyIcon, Divider, EaseIcon, EdgeAlignBottomIcon, EdgeAlignCenterHorizontalIcon, EdgeAlignCenterIcon, EdgeAlignCenterVerticalIcon, EdgeAlignLeftIcon, EdgeAlignRightIcon, EdgeAlignTopIcon, EditIcon, EyeCloseIcon, EyeIcon, Fill, Fx, GridIcon, HamburgerIcon, HelpIcon, Icon, IconButton, InfoIcon, Input, Item, LayerArtboardIcon, LayerComponentIcon, LayerFXIcon, LayerFileIcon, LayerFilterIcon, LayerFolderIcon, LayerImageIcon, LayerItemIcon, LayerMaskIcon, LayerRectangleIcon, LayerShapeModeExcludeIcon, LayerShapeModeIntersectIcon, LayerShapeModeSubtractIcon, LayerShapeModeUnionIcon, LayerSmartObjectIcon, LayerTextIcon, LayerVectorIcon, LayerVideoIcon, Layers, LinkIcon, LinkedIcon, ListIcon, LockIcon, LockedIcon, MaskIcon, Menu, MiniPlusIcon, MinusIcon, NewTabIcon, OptionKeyIcon, Pages, PerspectiveIcon, PlusIcon, Properties, RadiusIcon, RecentIcon, RemoveBGIcon, ResetIcon, SearchIcon, ShapeExcludeIcon, ShapeIntersectIcon, ShapeModesIcon, ShapeSubtractIcon, ShareButton, ShiftKeyIcon, SmallChevronArrowIcon, SmartLayout, SmartObjectsIcon, Stroke, Stroke1Icon, Stroke2Icon, Stroke3Icon, Text, TextBackground, ThumbnailIcon, ToolbarZoom, ToolsPanelArtboardIcon, ToolsPanelBrushIcon, ToolsPanelBrushesIcon, ToolsPanelCrayonBrushIcon, ToolsPanelFillIcon, ToolsPanelInkBrushIcon, ToolsPanelLayersIcon, ToolsPanelMenuIcon, ToolsPanelNoteIcon, ToolsPanelPathText1Icon, ToolsPanelPathText2Icon, ToolsPanelPenToolsIcon, ToolsPanelPencilIcon, ToolsPanelPlusIcon, ToolsPanelRulerIcon, ToolsPanelSelectionToolsIcon, ToolsPanelShapeEllipseIcon, ToolsPanelShapeLineArrowIcon, ToolsPanelShapeLineIcon, ToolsPanelShapePolygonIcon, ToolsPanelShapeRectangleIcon, ToolsPanelShapeRectanglesIcon, ToolsPanelShapeStarIcon, ToolsPanelShareIcon, ToolsPanelSprayBrushIcon, ToolsPanelTextIcon, TopMenu, Transition3DIcon, TrashIcon, TreeDotsIcon, Visibility, VolumeOffIcon, VolumeOnIcon, WrapIcon };
+export { AddEmojiIcon, AddMenu, Adjustment, AlignBottomIcon, AlignCenterIcon, AlignCenterVIcon, AlignDistributeHorizontalSpacingIcon, AlignDistributeVerticalSpacingIcon, AlignLeftIcon, AlignRightIcon, AlignTopIcon, Alignment, AlignmentLetterSpacingIcon, AlignmentLineHeightIcon, AlignmentRadiusLabelIcon, ArcIcon, ArrowLeftIcon, ArrowMoreIcon, ArrowRightSecondIcon, BlendIcon, BlendedIcon, CheckIcon, ChevronArrowIcon, ColorPickerIcon, CommandKeyIcon, ComponentIcon, ComponentOptionsIcon, ControlKeyIcon, CopyIcon, CrossIcon, DeleteKeyIcon, Divider, EaseIcon, EdgeAlignBottomIcon, EdgeAlignCenterHorizontalIcon, EdgeAlignCenterIcon, EdgeAlignCenterVerticalIcon, EdgeAlignLeftIcon, EdgeAlignRightIcon, EdgeAlignTopIcon, EditIcon, EyeCloseIcon, EyeIcon, Fill, Fx, GridIcon, HamburgerIcon, HelpIcon, Icon, IconButton, InfoIcon, Input, Item, LayerArtboardIcon, LayerComponentIcon, LayerFXIcon, LayerFileIcon, LayerFilterIcon, LayerFolderIcon, LayerImageIcon, LayerItemIcon, LayerMaskIcon, LayerRectangleIcon, LayerShapeModeExcludeIcon, LayerShapeModeIntersectIcon, LayerShapeModeSubtractIcon, LayerShapeModeUnionIcon, LayerSmartObjectIcon, LayerTextIcon, LayerVectorIcon, LayerVideoIcon, Layers, LinkIcon, LinkedIcon, ListIcon, LockIcon, LockedIcon, MaskIcon, Menu, MiniPlusIcon, MinusIcon, NewTabIcon, OptionKeyIcon, Pages, PerspectiveIcon, PlusIcon, Properties, RadiusIcon, RadiusLabelLeftBottomIcon, RadiusLabelLeftIcon, RadiusLabelRightBottomIcon, RadiusLabelRightTopIcon, RecentIcon, RemoveBGIcon, ResetIcon, SearchIcon, ShapeExcludeIcon, ShapeIntersectIcon, ShapeModesIcon, ShapeSubtractIcon, ShareButton, ShiftKeyIcon, SmallChevronArrowIcon, SmartLayout, SmartObjectsIcon, Stroke, Stroke1Icon, Stroke2Icon, Stroke3Icon, Text, TextBackground, ThumbnailIcon, ToolbarZoom, ToolsPanelArtboardIcon, ToolsPanelBrushIcon, ToolsPanelBrushesIcon, ToolsPanelCrayonBrushIcon, ToolsPanelFillIcon, ToolsPanelInkBrushIcon, ToolsPanelLayersIcon, ToolsPanelMenuIcon, ToolsPanelNoteIcon, ToolsPanelPathText1Icon, ToolsPanelPathText2Icon, ToolsPanelPenToolsIcon, ToolsPanelPencilIcon, ToolsPanelPlusIcon, ToolsPanelRulerIcon, ToolsPanelSelectionToolsIcon, ToolsPanelShapeEllipseIcon, ToolsPanelShapeLineArrowIcon, ToolsPanelShapeLineIcon, ToolsPanelShapePolygonIcon, ToolsPanelShapeRectangleIcon, ToolsPanelShapeRectanglesIcon, ToolsPanelShapeStarIcon, ToolsPanelShareIcon, ToolsPanelSprayBrushIcon, ToolsPanelTextIcon, TopMenu, Transition3DIcon, TrashIcon, TreeDotsIcon, Visibility, VolumeOffIcon, VolumeOnIcon, WrapIcon };
