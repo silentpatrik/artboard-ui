@@ -208,7 +208,7 @@ const Input = ({
       calcInput(e);
     },
     onChange: e => {
-      setValue(e.target.value, e);
+      onChange(e.target.value, e);
     }
   }) : null, /*#__PURE__*/React$1.createElement("label", null, /*#__PURE__*/React$1.createElement("div", null, children ? children : label))));
 };
