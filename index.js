@@ -150,7 +150,7 @@ const Input = ({
     } else if (min !== null && val < min) {
       onChange(min, e);
     } else {
-      onChange(val);
+      onChange(val, e);
     }
   };
 
