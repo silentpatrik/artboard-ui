@@ -4713,7 +4713,7 @@ const SmartLayout = ({
     v: 'Scale',
     h: 'Scale'
   },
-  dropDownMenuMaxHeight = 123,
+  dropDownMenuMaxHeight = [200, 200],
   dropDownMenuSearchable = [false, false]
 }) => {
   const {
@@ -4833,7 +4833,7 @@ const SmartLayout = ({
     },
     selectedValue: optionH.filter(item => item.value === h)[0],
     size: "small",
-    dropDownMenuMaxHeight: dropDownMenuMaxHeight,
+    dropDownMenuMaxHeight: dropDownMenuMaxHeight[0],
     searchable: dropDownMenuSearchable[0]
   }), /*#__PURE__*/React$1.createElement(Dropdown, {
     option: optionV,
@@ -4848,7 +4848,7 @@ const SmartLayout = ({
       });
     },
     size: "small",
-    dropDownMenuMaxHeight: dropDownMenuMaxHeight,
+    dropDownMenuMaxHeight: dropDownMenuMaxHeight[1],
     searchable: dropDownMenuSearchable[1]
   }))));
 };
