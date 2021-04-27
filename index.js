@@ -4462,7 +4462,8 @@ const Dropdown = ({
   selectedValue = option[0],
   className = null,
   popupMenu = 'right',
-  dropDownMenuMaxHeight = 104
+  dropDownMenuMaxHeight = 104,
+  searchable = true
 }) => {
   const [optionValueState, setOptionValueState] = useState(selectedValue);
   const [toggleOption, setToggleOption] = useState(false);
@@ -4548,6 +4549,7 @@ const Dropdown = ({
   }, /*#__PURE__*/React$1.createElement("span", null, option.name), optionValueState && optionValueState.value === option.value && /*#__PURE__*/React$1.createElement(CheckIcon$1, null)))))), /*#__PURE__*/React$1.createElement("div", {
     className: `${selectedItem}`
   }, optionValueState && /*#__PURE__*/React$1.createElement("input", {
+    disabled: searchable,
     type: "text",
     value: searchState,
     onClick: e => inputOnChangeHandler(e.target),
@@ -4670,7 +4672,8 @@ const Visibility = ({
   onOpacityChange = () => {},
   onBlendModeChange = () => {},
   label = '%',
-  dropDownMenuMaxHeight = 144
+  dropDownMenuMaxHeight = 144,
+  dropDownMenuSearchable = true
 }) => {
   const {
     visibility
@@ -4683,8 +4686,9 @@ const Visibility = ({
     onChange: ({
       value
     }) => onBlendModeChange(value),
-    size: "medium",
-    dropDownMenuMaxHeight: dropDownMenuMaxHeight
+    dropDownMenuMaxHeight: dropDownMenuMaxHeight,
+    searchable: dropDownMenuSearchable,
+    size: "medium"
   }), /*#__PURE__*/React$1.createElement(Input, {
     min: 0,
     max: 100,
@@ -4707,7 +4711,8 @@ const SmartLayout = ({
     v: 'Scale',
     h: 'Scale'
   },
-  dropDownMenuMaxHeight = 123
+  dropDownMenuMaxHeight = 123,
+  dropDownMenuSearchable = [true, true]
 }) => {
   const {
     smartLayout,
@@ -4826,7 +4831,8 @@ const SmartLayout = ({
     },
     selectedValue: optionH.filter(item => item.value === h)[0],
     size: "small",
-    dropDownMenuMaxHeight: dropDownMenuMaxHeight
+    dropDownMenuMaxHeight: dropDownMenuMaxHeight,
+    searchable: dropDownMenuSearchable[0]
   }), /*#__PURE__*/React$1.createElement(Dropdown, {
     option: optionV,
     selectedValue: optionV.filter(item => item.value === v)[0],
@@ -4840,7 +4846,8 @@ const SmartLayout = ({
       });
     },
     size: "small",
-    dropDownMenuMaxHeight: dropDownMenuMaxHeight
+    dropDownMenuMaxHeight: dropDownMenuMaxHeight,
+    searchable: dropDownMenuSearchable[1]
   }))));
 };
 const optionH = [{
