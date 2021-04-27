@@ -4549,11 +4549,11 @@ const Dropdown = ({
   }, /*#__PURE__*/React$1.createElement("span", null, option.name), optionValueState && optionValueState.value === option.value && /*#__PURE__*/React$1.createElement(CheckIcon$1, null)))))), /*#__PURE__*/React$1.createElement("div", {
     className: `${selectedItem}`
   }, optionValueState && /*#__PURE__*/React$1.createElement("input", {
-    readOnly: searchable,
+    readOnly: !searchable,
     type: "text",
     value: searchState,
     onClick: e => {
-      if (!searchable) inputOnChangeHandler(e.target);else setToggleOption(!toggleOption);
+      if (searchable) inputOnChangeHandler(e.target);else setToggleOption(!toggleOption);
     },
     onChange: e => inputOnChangeHandler(e.target)
   }), /*#__PURE__*/React$1.createElement("button", {
@@ -4714,7 +4714,7 @@ const SmartLayout = ({
     h: 'Scale'
   },
   dropDownMenuMaxHeight = 123,
-  dropDownMenuSearchable = [true, true]
+  dropDownMenuSearchable = [false, false]
 }) => {
   const {
     smartLayout,
