@@ -4549,10 +4549,12 @@ const Dropdown = ({
   }, /*#__PURE__*/React$1.createElement("span", null, option.name), optionValueState && optionValueState.value === option.value && /*#__PURE__*/React$1.createElement(CheckIcon$1, null)))))), /*#__PURE__*/React$1.createElement("div", {
     className: `${selectedItem}`
   }, optionValueState && /*#__PURE__*/React$1.createElement("input", {
-    disabled: searchable,
+    readOnly: searchable,
     type: "text",
     value: searchState,
-    onClick: e => inputOnChangeHandler(e.target),
+    onClick: e => {
+      if (!searchable) inputOnChangeHandler(e.target);else setToggleOption(!toggleOption);
+    },
     onChange: e => inputOnChangeHandler(e.target)
   }), /*#__PURE__*/React$1.createElement("button", {
     type: "button",
