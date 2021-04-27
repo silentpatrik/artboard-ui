@@ -4739,6 +4739,7 @@ const SmartLayout = ({
   useEffect(() => {
     setV(value.v);
     setH(value.h);
+    if (value && (value.h !== 'Scale' || value.v !== 'Scale') && toggleDetails === false) setToggleDetail(true);
   }, [value]);
   return /*#__PURE__*/React$1.createElement("div", {
     className: `${smartLayout} ${style$f[type]}`
