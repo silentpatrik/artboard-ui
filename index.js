@@ -4713,7 +4713,7 @@ const SmartLayout = ({
     v: 'Scale',
     h: 'Scale'
   },
-  dropDownMenuMaxHeight = [200, 200],
+  dropDownMenuMaxHeight = [124, 124],
   dropDownMenuSearchable = [false, false]
 }) => {
   const {
