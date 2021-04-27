@@ -149,7 +149,9 @@ const Input = ({
       onChange(max, e);
     } else if (min !== null && val < min) {
       onChange(min, e);
-    } else onChange(parseFloat(val), e);
+    } else {
+      onChange(val);
+    }
   };
 
   return /*#__PURE__*/React$1.createElement(React$1.Fragment, null, size === 'noStyle' ? /*#__PURE__*/React$1.createElement("div", {
@@ -204,7 +206,9 @@ const Input = ({
       onBlur(e);
       calcInput(e);
     },
-    onChange: e => onChange(e.target.value, e)
+    onChange: e => {
+      setValue(e.target.value, e);
+    }
   }) : null, /*#__PURE__*/React$1.createElement("label", {
     onClick: () => inputRef.current.focus()
   }, /*#__PURE__*/React$1.createElement("div", null, children ? children : label))));
