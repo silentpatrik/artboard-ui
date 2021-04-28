@@ -5895,10 +5895,10 @@ const DropdownOption = ({
     return () => window.removeEventListener('mousedown', clickOutside);
   }, [menuWrapper]);
 
-  const onClickOptionHandler = optionValue => {
+  const onClickOptionHandler = (optionValue, e) => {
     setToggleOption(false);
     setOptionValueState(optionValue);
-    onChange(optionValue);
+    onChange(optionValue, e);
   };
 
   return /*#__PURE__*/React$1.createElement("div", {
@@ -5916,7 +5916,7 @@ const DropdownOption = ({
     key: key
   }, /*#__PURE__*/React$1.createElement("button", {
     type: "button",
-    onClick: () => onClickOptionHandler(option)
+    onClick: e => onClickOptionHandler(option, e)
   }, /*#__PURE__*/React$1.createElement("span", null, ReactHtmlParser(option.name)), optionValueState && optionValueState.name === option.name && /*#__PURE__*/React$1.createElement(CheckIcon$1, null)))))), /*#__PURE__*/React$1.createElement("div", {
     className: `${selectedItem}`
   }, optionValueState && type === 'withLabel' && /*#__PURE__*/React$1.createElement("label", null, ReactHtmlParser(optionValueState.name)), /*#__PURE__*/React$1.createElement("button", {
@@ -6048,14 +6048,14 @@ const FillRow = ({
     value: blendModeState,
     type: 'withOutLabel',
     dropDownMaxHeight: dropDownMaxHeight,
-    onChange: blendMode => {
+    onChange: (blendMode, e) => {
       setBlendModeState(blendMode);
       onChange({
         id,
         color: selectedColor,
         opacity: parseFloat(opacity),
         blendMode
-      });
+      }, e);
     }
   }, blendModeState && blendModeState.name.toLowerCase() === 'normal' ? /*#__PURE__*/React$1.createElement(BlendIcon$1, null) : /*#__PURE__*/React$1.createElement(BlendedIcon$1, null)) : null, /*#__PURE__*/React$1.createElement(Input, {
     min: 0,
