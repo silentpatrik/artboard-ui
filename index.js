@@ -5945,8 +5945,8 @@ const ColorPicker = ({
     ref: colorPickerWrapperRef
   }, /*#__PURE__*/React$1.createElement(SketchPicker, {
     color: color,
-    onChange: color => {
-      onChange(color.hex);
+    onChange: (color, e) => {
+      onChange(color.hex, e);
     }
   })), /*#__PURE__*/React$1.createElement("div", {
     className: `colorWrapper ${colorActionWrapper}`
@@ -6078,14 +6078,14 @@ const Fill = ({
     fillItems
   } = style$7;
 
-  const setValue = (data, index) => {
+  const setValue = (data, index, e) => {
     onChange({
       index,
       id: data.id,
       color: data.color,
       opacity: data.opacity,
       blendMode: !blendModeDisabled ? data.blendMode : null
-    });
+    }, e);
   };
 
   return /*#__PURE__*/React$1.createElement("div", {
@@ -6105,7 +6105,7 @@ const Fill = ({
     key: key,
     label: "%",
     row: item,
-    onChange: _res => setValue(_res, key),
+    onChange: (_res, e) => setValue(_res, key, e),
     onRemoveClick: onRemoveClick,
     onKeyDown: onKeyDown,
     onBlur: onBlur,
