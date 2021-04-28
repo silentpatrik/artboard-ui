@@ -139,16 +139,19 @@ const Input = ({
   const validateNumber = (data, event) => {
     if (isCharacterALetter(data)) setValue(0, event);
   };
+  /* this function used for onChange and onBlur
+  if is isChange === true return in onChange else return in onBlur */
 
-  const setValue = (val, e) => {
+
+  const setValue = (val, e, isChange = true) => {
     if (size === 'noStyle') {
-      onChange(val, e);
+      isChange ? onChange(val, e) : onBlur(onChange(val, e));
     } else if (!val === null || val === undefined || val === '') {
-      onChange(0, e);
+      isChange ? onChange(0, e) : onBlur(onChange(0, e));
     } else if (max !== null && val > max) {
-      onChange(max, e);
+      isChange ? onChange(max, e) : onBlur(onChange(max, e));
     } else if (min !== null && val < min) {
-      onChange(min, e);
+      isChange ? onChange(min, e) : onBlur(onChange(min, e));
     } else {
       onChange(val, e);
     }
@@ -176,10 +179,10 @@ const Input = ({
     },
     value: value,
     onBlur: e => {
-      onBlur(e);
+      setValue(e.target.value, e, false);
       calcInput(e);
     },
-    onChange: e => onChange(e.target.value, e)
+    onChange: e => setValue(e.target.value, e)
   })) : /*#__PURE__*/React$1.createElement("div", {
     onClick: () => inputRef.current.focus(),
     ref: ref,
@@ -204,7 +207,7 @@ const Input = ({
     },
     value: value,
     onBlur: e => {
-      onBlur(e);
+      setValue(e.target.value, e, false);
       calcInput(e);
     },
     onChange: e => {
@@ -4889,8 +4892,8 @@ const optionV = [{
   value: 'Scale'
 }];
 
-var css_248z$f = "* {\n  box-sizing: border-box;\n  font-family: Aktiv Grotesk, sans-serif; }\n\n.text-module_textComp__1YJsp {\n  width: 240px;\n  display: flex;\n  flex-direction: column;\n  align-items: center;\n  justify-content: space-between;\n  box-sizing: border-box;\n  padding: 8px;\n  cursor: pointer; }\n  .text-module_textComp__1YJsp .text-module_textControlWrapper__18OLP {\n    display: flex;\n    flex-direction: column;\n    width: 224px; }\n    .text-module_textComp__1YJsp .text-module_textControlWrapper__18OLP .text-module_textWrapper__2bJ4r {\n      width: 224px;\n      background: #ffffff;\n      border-radius: 4px;\n      display: flex;\n      flex-direction: column;\n      align-items: center; }\n      .text-module_textComp__1YJsp .text-module_textControlWrapper__18OLP .text-module_textWrapper__2bJ4r .text-module_fontListOption__3Z7yn {\n        width: 224px;\n        height: 32px;\n        display: flex;\n        justify-content: space-between; }\n        .text-module_textComp__1YJsp .text-module_textControlWrapper__18OLP .text-module_textWrapper__2bJ4r .text-module_fontListOption__3Z7yn .text-module_fontSizes__34JoY {\n          width: 64px;\n          height: 32px; }\n        .text-module_textComp__1YJsp .text-module_textControlWrapper__18OLP .text-module_textWrapper__2bJ4r .text-module_fontListOption__3Z7yn .text-module_fontListStyle__2ZCs5 {\n          width: 156px;\n          height: 32px; }\n      .text-module_textComp__1YJsp .text-module_textControlWrapper__18OLP .text-module_textWrapper__2bJ4r .text-module_row__2eioI {\n        width: 224px;\n        height: 32px;\n        margin-top: 12px;\n        display: flex;\n        justify-content: space-between;\n        align-items: center; }\n        .text-module_textComp__1YJsp .text-module_textControlWrapper__18OLP .text-module_textWrapper__2bJ4r .text-module_row__2eioI .text-module_lineHeightSpace__ql2h6 {\n          width: 88px;\n          height: 32px;\n          display: flex;\n          justify-content: space-between;\n          align-items: center; }\n        .text-module_textComp__1YJsp .text-module_textControlWrapper__18OLP .text-module_textWrapper__2bJ4r .text-module_row__2eioI .text-module_lineHeightSpaceButtons__1U7Ki {\n          width: 80px;\n          height: 32px;\n          box-sizing: border-box;\n          display: flex; }\n        .text-module_textComp__1YJsp .text-module_textControlWrapper__18OLP .text-module_textWrapper__2bJ4r .text-module_row__2eioI .text-module_alignButtons__2F0BL {\n          width: 80px; }\n        .text-module_textComp__1YJsp .text-module_textControlWrapper__18OLP .text-module_textWrapper__2bJ4r .text-module_row__2eioI .text-module_alignButtons2__1JRbx {\n          width: 80px;\n          margin-right: 8px; }\n        .text-module_textComp__1YJsp .text-module_textControlWrapper__18OLP .text-module_textWrapper__2bJ4r .text-module_row__2eioI .text-module_alignButtons3__245BR {\n          width: 80px;\n          margin-right: 8px; }\n  .text-module_textComp__1YJsp .text-module_moreMenu__1Y2-e {\n    width: 200px;\n    min-height: 104px;\n    padding: 4px;\n    border-radius: 8px;\n    box-shadow: 0px 2px 4px rgba(51, 51, 51, 0.12), 0px 0px 1px #999999, 0px 12px 24px -8px rgba(51, 51, 51, 0.08);\n    position: fixed;\n    background-color: #ffffff;\n    right: 240px; }\n    .text-module_textComp__1YJsp .text-module_moreMenu__1Y2-e .text-module_moreHeader__1JJI- {\n      width: 192px;\n      height: 32px;\n      border-bottom: 1px solid #f5f5f5;\n      display: flex;\n      align-items: center;\n      justify-content: space-between;\n      font-size: 11px;\n      font-weight: 600;\n      padding: 4px; }\n    .text-module_textComp__1YJsp .text-module_moreMenu__1Y2-e .text-module_moreBody__119Uk {\n      display: flex;\n      justify-content: center;\n      align-items: center;\n      border-radius: 8px;\n      flex-direction: column;\n      padding-top: 4px; }\n      .text-module_textComp__1YJsp .text-module_moreMenu__1Y2-e .text-module_moreBody__119Uk .text-module_morMenuBodyRow__1y-B- {\n        width: 184px;\n        height: 32px;\n        display: flex;\n        justify-content: space-between;\n        align-items: center; }\n        .text-module_textComp__1YJsp .text-module_moreMenu__1Y2-e .text-module_moreBody__119Uk .text-module_morMenuBodyRow__1y-B- label {\n          color: #999999;\n          font-size: 11px;\n          font-weight: 600; }\n        .text-module_textComp__1YJsp .text-module_moreMenu__1Y2-e .text-module_moreBody__119Uk .text-module_morMenuBodyRow__1y-B- .text-module_morItemRadioButton__2hdHK {\n          height: 24px; }\n          .text-module_textComp__1YJsp .text-module_moreMenu__1Y2-e .text-module_moreBody__119Uk .text-module_morMenuBodyRow__1y-B- .text-module_morItemRadioButton__2hdHK button {\n            background-color: transparent;\n            border-radius: 8px;\n            border: 0 !important; }\n            .text-module_textComp__1YJsp .text-module_moreMenu__1Y2-e .text-module_moreBody__119Uk .text-module_morMenuBodyRow__1y-B- .text-module_morItemRadioButton__2hdHK button:hover, .text-module_textComp__1YJsp .text-module_moreMenu__1Y2-e .text-module_moreBody__119Uk .text-module_morMenuBodyRow__1y-B- .text-module_morItemRadioButton__2hdHK button.text-module_active__3fs_m {\n              background-color: #ebebeb !important; }\n  .text-module_textComp__1YJsp.text-module_white__FFMVg {\n    background: #ffffff; }\n  .text-module_textComp__1YJsp .text-module_header__77oI3 {\n    width: 224px;\n    height: 32px;\n    margin-bottom: 8px;\n    display: flex;\n    align-items: center;\n    justify-content: space-between; }\n    .text-module_textComp__1YJsp .text-module_header__77oI3 .text-module_layerText__ailJB {\n      font-family: Aktiv Grotesk, sans-serif;\n      font-size: 12px;\n      line-height: 24px;\n      font-weight: 600;\n      display: flex;\n      align-items: center;\n      cursor: text; }\n      .text-module_textComp__1YJsp .text-module_header__77oI3 .text-module_layerText__ailJB.text-module_purple__1cJZj {\n        color: #b555e5; }\n      .text-module_textComp__1YJsp .text-module_header__77oI3 .text-module_layerText__ailJB.text-module_black__X88TG {\n        color: #31363a; }\n";
-var style$e = {"textComp":"text-module_textComp__1YJsp","textControlWrapper":"text-module_textControlWrapper__18OLP","textWrapper":"text-module_textWrapper__2bJ4r","fontListOption":"text-module_fontListOption__3Z7yn","fontSizes":"text-module_fontSizes__34JoY","fontListStyle":"text-module_fontListStyle__2ZCs5","row":"text-module_row__2eioI","lineHeightSpace":"text-module_lineHeightSpace__ql2h6","lineHeightSpaceButtons":"text-module_lineHeightSpaceButtons__1U7Ki","alignButtons":"text-module_alignButtons__2F0BL","alignButtons2":"text-module_alignButtons2__1JRbx","alignButtons3":"text-module_alignButtons3__245BR","moreMenu":"text-module_moreMenu__1Y2-e","moreHeader":"text-module_moreHeader__1JJI-","moreBody":"text-module_moreBody__119Uk","morMenuBodyRow":"text-module_morMenuBodyRow__1y-B-","morItemRadioButton":"text-module_morItemRadioButton__2hdHK","active":"text-module_active__3fs_m","white":"text-module_white__FFMVg","header":"text-module_header__77oI3","layerText":"text-module_layerText__ailJB","purple":"text-module_purple__1cJZj","black":"text-module_black__X88TG"};
+var css_248z$f = "* {\n  box-sizing: border-box;\n  font-family: Aktiv Grotesk, sans-serif; }\n\n.text-module_textComp__1YJsp {\n  width: 240px;\n  display: flex;\n  flex-direction: column;\n  align-items: center;\n  justify-content: space-between;\n  box-sizing: border-box;\n  padding: 8px;\n  cursor: pointer; }\n  .text-module_textComp__1YJsp .text-module_input__1bRts input {\n    width: 36px; }\n  .text-module_textComp__1YJsp .text-module_textControlWrapper__18OLP {\n    display: flex;\n    flex-direction: column;\n    width: 224px; }\n    .text-module_textComp__1YJsp .text-module_textControlWrapper__18OLP .text-module_textWrapper__2bJ4r {\n      width: 224px;\n      background: #ffffff;\n      border-radius: 4px;\n      display: flex;\n      flex-direction: column;\n      align-items: center; }\n      .text-module_textComp__1YJsp .text-module_textControlWrapper__18OLP .text-module_textWrapper__2bJ4r .text-module_fontListOption__3Z7yn {\n        width: 224px;\n        height: 32px;\n        display: flex;\n        justify-content: space-between; }\n        .text-module_textComp__1YJsp .text-module_textControlWrapper__18OLP .text-module_textWrapper__2bJ4r .text-module_fontListOption__3Z7yn .text-module_fontSizes__34JoY {\n          width: 64px;\n          height: 32px; }\n        .text-module_textComp__1YJsp .text-module_textControlWrapper__18OLP .text-module_textWrapper__2bJ4r .text-module_fontListOption__3Z7yn .text-module_fontListStyle__2ZCs5 {\n          width: 156px;\n          height: 32px; }\n      .text-module_textComp__1YJsp .text-module_textControlWrapper__18OLP .text-module_textWrapper__2bJ4r .text-module_row__2eioI {\n        width: 224px;\n        height: 32px;\n        margin-top: 12px;\n        display: flex;\n        justify-content: space-between;\n        align-items: center; }\n        .text-module_textComp__1YJsp .text-module_textControlWrapper__18OLP .text-module_textWrapper__2bJ4r .text-module_row__2eioI .text-module_lineHeightSpace__ql2h6 {\n          width: 88px;\n          height: 32px;\n          display: flex;\n          justify-content: space-between;\n          align-items: center; }\n        .text-module_textComp__1YJsp .text-module_textControlWrapper__18OLP .text-module_textWrapper__2bJ4r .text-module_row__2eioI .text-module_lineHeightSpaceButtons__1U7Ki {\n          width: 80px;\n          height: 32px;\n          box-sizing: border-box;\n          display: flex; }\n        .text-module_textComp__1YJsp .text-module_textControlWrapper__18OLP .text-module_textWrapper__2bJ4r .text-module_row__2eioI .text-module_alignButtons__2F0BL {\n          width: 80px; }\n        .text-module_textComp__1YJsp .text-module_textControlWrapper__18OLP .text-module_textWrapper__2bJ4r .text-module_row__2eioI .text-module_alignButtons2__1JRbx {\n          width: 80px;\n          margin-right: 8px; }\n        .text-module_textComp__1YJsp .text-module_textControlWrapper__18OLP .text-module_textWrapper__2bJ4r .text-module_row__2eioI .text-module_alignButtons3__245BR {\n          width: 80px;\n          margin-right: 8px; }\n  .text-module_textComp__1YJsp .text-module_moreMenu__1Y2-e {\n    width: 200px;\n    min-height: 104px;\n    padding: 4px;\n    border-radius: 8px;\n    box-shadow: 0px 2px 4px rgba(51, 51, 51, 0.12), 0px 0px 1px #999999, 0px 12px 24px -8px rgba(51, 51, 51, 0.08);\n    position: fixed;\n    background-color: #ffffff;\n    right: 240px; }\n    .text-module_textComp__1YJsp .text-module_moreMenu__1Y2-e .text-module_moreHeader__1JJI- {\n      width: 192px;\n      height: 32px;\n      border-bottom: 1px solid #f5f5f5;\n      display: flex;\n      align-items: center;\n      justify-content: space-between;\n      font-size: 11px;\n      font-weight: 600;\n      padding: 4px; }\n    .text-module_textComp__1YJsp .text-module_moreMenu__1Y2-e .text-module_moreBody__119Uk {\n      display: flex;\n      justify-content: center;\n      align-items: center;\n      border-radius: 8px;\n      flex-direction: column;\n      padding-top: 4px; }\n      .text-module_textComp__1YJsp .text-module_moreMenu__1Y2-e .text-module_moreBody__119Uk .text-module_morMenuBodyRow__1y-B- {\n        width: 184px;\n        height: 32px;\n        display: flex;\n        justify-content: space-between;\n        align-items: center; }\n        .text-module_textComp__1YJsp .text-module_moreMenu__1Y2-e .text-module_moreBody__119Uk .text-module_morMenuBodyRow__1y-B- label {\n          color: #999999;\n          font-size: 11px;\n          font-weight: 600; }\n        .text-module_textComp__1YJsp .text-module_moreMenu__1Y2-e .text-module_moreBody__119Uk .text-module_morMenuBodyRow__1y-B- .text-module_morItemRadioButton__2hdHK {\n          height: 24px; }\n          .text-module_textComp__1YJsp .text-module_moreMenu__1Y2-e .text-module_moreBody__119Uk .text-module_morMenuBodyRow__1y-B- .text-module_morItemRadioButton__2hdHK button {\n            background-color: transparent;\n            border-radius: 8px;\n            border: 0 !important; }\n            .text-module_textComp__1YJsp .text-module_moreMenu__1Y2-e .text-module_moreBody__119Uk .text-module_morMenuBodyRow__1y-B- .text-module_morItemRadioButton__2hdHK button:hover, .text-module_textComp__1YJsp .text-module_moreMenu__1Y2-e .text-module_moreBody__119Uk .text-module_morMenuBodyRow__1y-B- .text-module_morItemRadioButton__2hdHK button.text-module_active__3fs_m {\n              background-color: #ebebeb !important; }\n  .text-module_textComp__1YJsp.text-module_white__FFMVg {\n    background: #ffffff; }\n  .text-module_textComp__1YJsp .text-module_header__77oI3 {\n    width: 224px;\n    height: 32px;\n    margin-bottom: 8px;\n    display: flex;\n    align-items: center;\n    justify-content: space-between; }\n    .text-module_textComp__1YJsp .text-module_header__77oI3 .text-module_layerText__ailJB {\n      font-family: Aktiv Grotesk, sans-serif;\n      font-size: 12px;\n      line-height: 24px;\n      font-weight: 600;\n      display: flex;\n      align-items: center;\n      cursor: text; }\n      .text-module_textComp__1YJsp .text-module_header__77oI3 .text-module_layerText__ailJB.text-module_purple__1cJZj {\n        color: #b555e5; }\n      .text-module_textComp__1YJsp .text-module_header__77oI3 .text-module_layerText__ailJB.text-module_black__X88TG {\n        color: #31363a; }\n";
+var style$e = {"textComp":"text-module_textComp__1YJsp","input":"text-module_input__1bRts","textControlWrapper":"text-module_textControlWrapper__18OLP","textWrapper":"text-module_textWrapper__2bJ4r","fontListOption":"text-module_fontListOption__3Z7yn","fontSizes":"text-module_fontSizes__34JoY","fontListStyle":"text-module_fontListStyle__2ZCs5","row":"text-module_row__2eioI","lineHeightSpace":"text-module_lineHeightSpace__ql2h6","lineHeightSpaceButtons":"text-module_lineHeightSpaceButtons__1U7Ki","alignButtons":"text-module_alignButtons__2F0BL","alignButtons2":"text-module_alignButtons2__1JRbx","alignButtons3":"text-module_alignButtons3__245BR","moreMenu":"text-module_moreMenu__1Y2-e","moreHeader":"text-module_moreHeader__1JJI-","moreBody":"text-module_moreBody__119Uk","morMenuBodyRow":"text-module_morMenuBodyRow__1y-B-","morItemRadioButton":"text-module_morItemRadioButton__2hdHK","active":"text-module_active__3fs_m","white":"text-module_white__FFMVg","header":"text-module_header__77oI3","layerText":"text-module_layerText__ailJB","purple":"text-module_purple__1cJZj","black":"text-module_black__X88TG"};
 styleInject(css_248z$f);
 
 const AlignHorizontalIcon = ({
@@ -4909,57 +4912,40 @@ const AlignHorizontalIcon = ({
     clipRule: "evenodd"
   }));
 };
-const AlignLineHeightIcon = ({
-  width = 12,
-  height = 11
-}) => {
-  return /*#__PURE__*/React$1.createElement("svg", {
-    width: width,
-    height: height,
-    fill: "none",
-    viewBox: "0 0 12 11"
-  }, /*#__PURE__*/React$1.createElement("path", {
-    fill: "#F7F9FA",
-    d: "M0 1h12v8H0z"
-  }), /*#__PURE__*/React$1.createElement("path", {
-    fillRule: "evenodd",
-    clipRule: "evenodd",
-    d: "M6 1.5a.5.5 0 01.468.324L9.158 9H8.092l-.75-2H4.659l-.75 2H2.84l2.69-7.176A.5.5 0 016 1.5zM5.034 6h1.932L6 3.424 5.034 6z",
-    fill: "#B6BABD"
-  }), /*#__PURE__*/React$1.createElement("path", {
-    stroke: "#B6BABD",
-    strokeLinecap: "round",
-    d: "M9.5.5h-7M2.5 10.5h7"
-  }));
-};
-const AlignLineSpaceIcon = ({
-  width = 12,
-  height = 10
-}) => {
-  return /*#__PURE__*/React$1.createElement("svg", {
-    width: width,
-    height: height,
-    fill: "none",
-    viewBox: "0 0 12 10"
-  }, /*#__PURE__*/React$1.createElement("path", {
-    fill: "#F7F9FA",
-    d: "M0 1h12v8H0z"
-  }), /*#__PURE__*/React$1.createElement("path", {
-    fillRule: "evenodd",
-    clipRule: "evenodd",
-    d: "M6 1.5a.5.5 0 01.468.324L9.158 9H8.092l-.75-2H4.659l-.75 2H2.84l2.69-7.176A.5.5 0 016 1.5zM5.034 6h1.932L6 3.424 5.034 6z",
-    fill: "#B6BABD"
-  }), /*#__PURE__*/React$1.createElement("path", {
-    stroke: "#B6BABD",
-    strokeLinecap: "round",
-    d: "M1.5.5v9"
-  }), /*#__PURE__*/React$1.createElement("path", {
-    transform: "matrix(0 1 1 0 11 0)",
-    stroke: "#B6BABD",
-    strokeLinecap: "round",
-    d: "M.5-.5h9"
-  }));
-};
+//   return (
+//     <svg width={width} height={height} fill='none' viewBox='0 0 12 11'>
+//       <path fill='#F7F9FA' d='M0 1h12v8H0z' />
+//       <path
+//         fillRule='evenodd'
+//         clipRule='evenodd'
+//         d='M6 1.5a.5.5 0 01.468.324L9.158 9H8.092l-.75-2H4.659l-.75 2H2.84l2.69-7.176A.5.5 0 016 1.5zM5.034 6h1.932L6 3.424 5.034 6z'
+//         fill='#B6BABD'
+//       />
+//       <path stroke='#B6BABD' strokeLinecap='round' d='M9.5.5h-7M2.5 10.5h7' />
+//     </svg>
+//   );
+// };
+// export const AlignLineSpaceIcon = ({ width = 12, height = 10 }) => {
+//   return (
+//     <svg width={width} height={height} fill='none' viewBox='0 0 12 10'>
+//       <path fill='#F7F9FA' d='M0 1h12v8H0z' />
+//       <path
+//         fillRule='evenodd'
+//         clipRule='evenodd'
+//         d='M6 1.5a.5.5 0 01.468.324L9.158 9H8.092l-.75-2H4.659l-.75 2H2.84l2.69-7.176A.5.5 0 016 1.5zM5.034 6h1.932L6 3.424 5.034 6z'
+//         fill='#B6BABD'
+//       />
+//       <path stroke='#B6BABD' strokeLinecap='round' d='M1.5.5v9' />
+//       <path
+//         transform='matrix(0 1 1 0 11 0)'
+//         stroke='#B6BABD'
+//         strokeLinecap='round'
+//         d='M.5-.5h9'
+//       />
+//     </svg>
+//   );
+// };
+
 const AlignAutoHeightIcon = ({
   width = 12,
   height = 9
@@ -5234,6 +5220,35 @@ const TextStrikeThroughDecorationIcon = ({
     clipRule: "evenodd"
   }));
 };
+const AlignLineHeightIcon = ({
+  width = 6,
+  height = 8
+}) => {
+  return /*#__PURE__*/React$1.createElement("svg", {
+    width: width,
+    height: height,
+    fill: "none"
+  }, /*#__PURE__*/React$1.createElement("path", {
+    stroke: "#999",
+    "stroke-linecap": "round",
+    d: "M5.5.5h-5M.5 7.5h5"
+  }));
+};
+const AlignLineSpaceIcon = ({
+  width = 8,
+  height = 6
+}) => {
+  return /*#__PURE__*/React$1.createElement("svg", {
+    width: width,
+    height: height,
+    viewBox: "0 0 8 6",
+    fill: "none"
+  }, /*#__PURE__*/React$1.createElement("path", {
+    stroke: "#999",
+    "stroke-linecap": "round",
+    d: "M.5.5v5M7.5 5.5v-5"
+  }));
+};
 
 var css_248z$e = ".radio-module_radioButton__2_3sh {\n  min-width: 32px;\n  height: 32px;\n  background-color: #ffffff;\n  border: 1px solid #e8ebed;\n  border-radius: 8px;\n  display: flex;\n  align-items: center;\n  justify-content: center; }\n  .radio-module_radioButton__2_3sh * {\n    box-sizing: border-box; }\n  .radio-module_radioButton__2_3sh .radio-module_resetBtn__28xi1.radio-module_active__3wKuC {\n    background-color: #ebebeb !important; }\n";
 var style$d = {"radioButton":"radio-module_radioButton__2_3sh","resetBtn":"radio-module_resetBtn__28xi1","active":"radio-module_active__3wKuC"};
@@ -5273,7 +5288,11 @@ const Text = ({
   type = 'white',
   textColor = 'black',
   text = 'Text',
-  onChange = () => {}
+  onChange = () => {},
+  onKeyDown = () => {},
+  onBlur = () => {},
+  dropDownMenuMaxHeight = [140, 10],
+  dropDownMenuSearchable = [true, false]
 }) => {
   const {
     textComp,
@@ -5282,6 +5301,7 @@ const Text = ({
     textControlWrapper,
     textWrapper,
     row,
+    input,
     alignInputLineHeight,
     alignInputLineSpace,
     lineHeightSpaceButtons,
@@ -5469,48 +5489,58 @@ const Text = ({
   }, /*#__PURE__*/React$1.createElement(Dropdown, {
     option: fontList,
     className: fontListStyle,
-    onChangeValue: setFontState,
+    onChange: setFontState,
     selectedValue: fontState,
-    size: "medium"
+    size: "medium",
+    dropDownMenuMaxHeight: dropDownMenuMaxHeight[0],
+    searchable: dropDownMenuSearchable[0]
   }), /*#__PURE__*/React$1.createElement(Dropdown, {
     option: fontSizesList,
     className: fontSizes,
-    onChangeValue: setSizeState,
+    onChange: setSizeState,
     selectedValue: sizeState,
     size: "medium",
-    popupMenu: "left"
+    popupMenu: "left",
+    dropDownMenuMaxHeight: dropDownMenuMaxHeight[0],
+    searchable: dropDownMenuSearchable[1]
   })), /*#__PURE__*/React$1.createElement("div", {
     className: row
   }, /*#__PURE__*/React$1.createElement("div", {
     className: alignInputLineHeight
   }, /*#__PURE__*/React$1.createElement(Input, {
+    className: input,
     label: /*#__PURE__*/React$1.createElement(AlignLineHeightIcon, null),
-    dir: "left",
+    direction: "left",
     value: state1,
-    setValue: setState1
+    onChange: setState1,
+    onKeyDown: onKeyDown,
+    onBlur: onBlur
   })), /*#__PURE__*/React$1.createElement("div", {
     className: alignInputLineSpace
   }, /*#__PURE__*/React$1.createElement(Input, {
+    className: input,
     label: /*#__PURE__*/React$1.createElement(AlignLineSpaceIcon, null),
-    dir: "left",
+    direction: "left",
     value: state2,
-    setValue: setState2
+    onChange: setState2,
+    onKeyDown: onKeyDown,
+    onBlur: onBlur
   })), /*#__PURE__*/React$1.createElement("div", {
     className: lineHeightSpaceButtons
   }, /*#__PURE__*/React$1.createElement(RadioButton, {
     className: alignButtons,
     row: radioButton1,
-    onChangeValues: onChange
+    onChange: onChange
   }))), /*#__PURE__*/React$1.createElement("div", {
     className: row
   }, /*#__PURE__*/React$1.createElement(RadioButton, {
     className: alignButtons2,
     row: radioButton2,
-    onChangeValues: onChange
+    onChange: onChange
   }), /*#__PURE__*/React$1.createElement(RadioButton, {
     className: alignButtons3,
     row: radioButton3,
-    onChangeValues: onChange
+    onChange: onChange
   }), /*#__PURE__*/React$1.createElement(IconButton, {
     onClick: () => setToggleMoreItems(!toggleMoreItems),
     isActive: toggleMoreItems
@@ -5528,13 +5558,13 @@ const Text = ({
   }, /*#__PURE__*/React$1.createElement("label", null, "Case"), /*#__PURE__*/React$1.createElement("div", null, /*#__PURE__*/React$1.createElement(RadioButton, {
     className: morItemRadioButton,
     row: morMenuCaseOptions,
-    onChangeValues: onChange
+    onChange: onChange
   }))), /*#__PURE__*/React$1.createElement("div", {
     className: morMenuBodyRow
   }, /*#__PURE__*/React$1.createElement("label", null, "Decoration"), /*#__PURE__*/React$1.createElement("div", null, /*#__PURE__*/React$1.createElement(RadioButton, {
     className: morItemRadioButton,
     row: morMenuDecorationOptions,
-    onChangeValues: onChange
+    onChange: onChange
   })))))));
 };
 
