@@ -145,15 +145,15 @@ const Input = ({
 
   const setValue = (val, e, isChange = true) => {
     if (size === 'noStyle') {
-      isChange ? onChange(val, e) : onBlur(onChange(val, e));
+      isChange ? onChange(val, e) : onBlur(val, e);
     } else if (!val === null || val === undefined || val === '') {
-      isChange ? onChange(0, e) : onBlur(onChange(0, e));
+      isChange ? onChange(0, e) : onBlur(0, e);
     } else if (max !== null && val > max) {
-      isChange ? onChange(max, e) : onBlur(onChange(max, e));
+      isChange ? onChange(max, e) : onBlur(max, e);
     } else if (min !== null && val < min) {
-      isChange ? onChange(min, e) : onBlur(onChange(min, e));
+      isChange ? onChange(min, e) : onBlur(min, e);
     } else {
-      onChange(val, e);
+      isChange ? onChange(val, e) : onBlur(val, e);
     }
   };
 
