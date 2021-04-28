@@ -6002,15 +6002,17 @@ const FillRow = ({
     className: fillWrapper,
     color: selectedColor,
     opacity: selectedOpacity,
-    onChange: color => {
+    onChange: (color, e) => {
       setSelectedColor(color);
       onChange({
         id,
         color: color,
         opacity: parseFloat(selectedOpacity),
         blendMode: blendModeState
-      });
-    }
+      }, e);
+    },
+    onKeyDown: onKeyDown,
+    onBlur: onBlur
   }), !blendModeDisabled ? /*#__PURE__*/React$1.createElement(DropdownOption, {
     options: blendModeOptions,
     value: blendModeState,
@@ -6059,6 +6061,8 @@ const Fill = ({
   textColor = 'black',
   options = [],
   onChange = () => {},
+  onKeyDown = () => {},
+  onBlur = () => {},
   onAddClick = () => {},
   onRemoveClick = () => {},
   addDisabled = false,
@@ -6103,6 +6107,8 @@ const Fill = ({
     row: item,
     onChange: _res => setValue(_res, key),
     onRemoveClick: onRemoveClick,
+    onKeyDown: onKeyDown,
+    onBlur: onBlur,
     dropDownMaxHeight: dropDownMaxHeight,
     blendModeOptions: blendModeOptions,
     blendModeDisabled: blendModeDisabled
@@ -6198,12 +6204,8 @@ const StrokeRow = ({
   row,
   onChange = () => {},
   onRemoveClick = () => {},
-  onColorKeyDown = () => {},
-  onColorBlur = () => {},
-  onStrokeWidthKeyDown = () => {},
-  onStrokeWidthBlur = () => {},
-  onOpacityKeyDown = () => {},
-  onOpacityBlur = () => {}
+  onKeyDown = () => {},
+  onBlur = () => {}
 }) => {
   const {
     strokeRow,
@@ -6259,8 +6261,8 @@ const StrokeRow = ({
         opacity: parseFloat(selectedOpacity)
       }, e);
     },
-    onKeyDown: onColorKeyDown,
-    onBlur: onColorBlur
+    onKeyDown: onKeyDown,
+    onBlur: onBlur
   }), /*#__PURE__*/React$1.createElement(Input, {
     onChange: (strokeWidth, e) => {
       setStrokeSWidth(strokeWidth);
@@ -6271,8 +6273,8 @@ const StrokeRow = ({
         opacity: parseFloat(selectedOpacity)
       }, e);
     },
-    onKeyDown: onStrokeWidthKeyDown,
-    onBlur: onStrokeWidthBlur,
+    onKeyDown: onKeyDown,
+    onBlur: onBlur,
     value: strokeWidthS,
     dir: "right",
     label: 'px',
@@ -6287,8 +6289,8 @@ const StrokeRow = ({
         opacity: parseFloat(opacity)
       }, e);
     },
-    onKeyDown: onOpacityKeyDown,
-    onBlur: onOpacityBlur,
+    onKeyDown: onKeyDown,
+    onBlur: onBlur,
     min: 0,
     max: 100,
     value: selectedOpacity,
@@ -6320,12 +6322,8 @@ const Stroke = ({
   onChange = () => {},
   onAddClick = () => {},
   onRemoveClick = () => {},
-  onColorKeyDown = () => {},
-  onColorBlur = () => {},
-  onStrokeWidthKeyDown = () => {},
-  onStrokeWidthBlur = () => {},
-  onOpacityKeyDown = () => {},
-  onOpacityBlur = () => {}
+  onKeyDown = () => {},
+  onBlur = () => {}
 }) => {
   const {
     stroke,
@@ -6380,12 +6378,8 @@ const Stroke = ({
     row: item,
     onChange: (_res, e) => setValue(_res, key, e),
     onRemoveClick: onRemoveClick,
-    onColorKeyDown: onColorKeyDown,
-    onColorBlur: onColorBlur,
-    onStrokeWidthKeyDown: onStrokeWidthKeyDown,
-    onStrokeWidthBlur: onStrokeWidthBlur,
-    onOpacityKeyDown: onOpacityKeyDown,
-    onOpacityBlur: onOpacityBlur
+    onKeyDown: onKeyDown,
+    onBlur: onBlur
   }))), toggleMoreItems && /*#__PURE__*/React$1.createElement(StrokeOption, _extends({
     onChange: onChange
   }, {
