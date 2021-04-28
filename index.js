@@ -6202,8 +6202,8 @@ const StrokeRow = ({
   onColorBlur = () => {},
   onStrokeWidthKeyDown = () => {},
   onStrokeWidthBlur = () => {},
-  onOpacityWidthKeyDown = () => {},
-  onOpacityWidthBlur = () => {}
+  onOpacityKeyDown = () => {},
+  onOpacityBlur = () => {}
 }) => {
   const {
     strokeRow,
@@ -6287,8 +6287,8 @@ const StrokeRow = ({
         opacity: parseFloat(opacity)
       }, e);
     },
-    onKeyDown: onOpacityWidthKeyDown,
-    onBlur: onOpacityWidthBlur,
+    onKeyDown: onOpacityKeyDown,
+    onBlur: onOpacityBlur,
     min: 0,
     max: 100,
     value: selectedOpacity,
@@ -6309,9 +6309,6 @@ const Stroke = ({
   type = 'white',
   textColor = 'black',
   options,
-  onChange = () => {},
-  onAddClick = () => {},
-  onRemoveClick = () => {},
   addDisabled = false,
   strokeOptionDisabled = false,
   capOptionValues = _cap,
@@ -6319,7 +6316,16 @@ const Stroke = ({
   trimOptionValues = _trim,
   start = 0,
   end = 100,
-  offset = 0
+  offset = 0,
+  onChange = () => {},
+  onAddClick = () => {},
+  onRemoveClick = () => {},
+  onColorKeyDown = () => {},
+  onColorBlur = () => {},
+  onStrokeWidthKeyDown = () => {},
+  onStrokeWidthBlur = () => {},
+  onOpacityKeyDown = () => {},
+  onOpacityBlur = () => {}
 }) => {
   const {
     stroke,
@@ -6330,14 +6336,14 @@ const Stroke = ({
   } = style$5;
   const [toggleMoreItems, setToggleMoreItems] = useState(false);
 
-  const setValue = (data, index) => {
+  const setValue = (data, index, e) => {
     onChange({
       index,
       id: data.id,
       color: data.color,
       strokeWidth: data.strokeWidth,
       opacity: data.opacity
-    });
+    }, e);
   }; // close menu by click outside.
 
 
@@ -6372,8 +6378,14 @@ const Stroke = ({
   }, options.map((item, key) => /*#__PURE__*/React$1.createElement(StrokeRow, {
     key: `${item.id}`,
     row: item,
-    onChange: _res => setValue(_res, key),
-    onRemoveClick: onRemoveClick
+    onChange: (_res, e) => setValue(_res, key, e),
+    onRemoveClick: onRemoveClick,
+    onColorKeyDown: onColorKeyDown,
+    onColorBlur: onColorBlur,
+    onStrokeWidthKeyDown: onStrokeWidthKeyDown,
+    onStrokeWidthBlur: onStrokeWidthBlur,
+    onOpacityKeyDown: onOpacityKeyDown,
+    onOpacityBlur: onOpacityBlur
   }))), toggleMoreItems && /*#__PURE__*/React$1.createElement(StrokeOption, _extends({
     onChange: onChange
   }, {
