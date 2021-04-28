@@ -208,7 +208,7 @@ const Input = ({
       calcInput(e);
     },
     onChange: e => {
-      onChange(e.target.value, e);
+      setValue(e.target.value, e);
     }
   }) : null, /*#__PURE__*/React$1.createElement("label", null, /*#__PURE__*/React$1.createElement("div", null, children ? children : label))));
 };
@@ -5903,9 +5903,11 @@ styleInject(css_248z$a);
 const ColorPicker = ({
   color = 'black',
   opacity = 100,
-  onChange,
   className = null,
-  size = 'normal'
+  size = 'normal',
+  onChange = () => {},
+  onKeyDown = () => {},
+  onBlur = () => {}
 }) => {
   const {
     colorPickerWrapper,
@@ -5953,7 +5955,9 @@ const ColorPicker = ({
     className: colorPicker,
     style: colorPickerStyle
   }), /*#__PURE__*/React$1.createElement(Input, {
-    onChange: color => onChange(color),
+    onChange: (color, e) => onChange(color, e),
+    onKeyDown: onKeyDown,
+    onBlur: onBlur,
     value: color,
     type: "string",
     size: "noStyle"
@@ -5971,6 +5975,8 @@ const FillRow = ({
   row,
   onChange = () => {},
   onRemoveClick = () => {},
+  onKeyDown = () => {},
+  onBlur = () => {},
   blendModeDisabled,
   dropDownMaxHeight
 }) => {
@@ -6022,15 +6028,17 @@ const FillRow = ({
   }, blendModeState && blendModeState.name.toLowerCase() === 'normal' ? /*#__PURE__*/React$1.createElement(BlendIcon$1, null) : /*#__PURE__*/React$1.createElement(BlendedIcon$1, null)) : null, /*#__PURE__*/React$1.createElement(Input, {
     min: 0,
     max: 100,
-    onChange: opacity => {
+    onChange: (opacity, e) => {
       setSelectedOpacity(opacity);
       onChange({
         id,
         color: selectedColor,
         opacity: parseFloat(opacity),
         blendMode: blendModeState
-      });
+      }, e);
     },
+    onKeyDown: onKeyDown,
+    onBlur: onBlur,
     value: selectedOpacity,
     dir: "right",
     label: "%",
@@ -6189,12 +6197,16 @@ const StrokeRow = ({
   type = 'white',
   row,
   onChange = () => {},
-  onRemoveClick = () => {}
+  onRemoveClick = () => {},
+  onColorKeyDown = () => {},
+  onColorBlur = () => {},
+  onStrokeWidthKeyDown = () => {},
+  onStrokeWidthBlur = () => {},
+  onOpacityWidthKeyDown = () => {},
+  onOpacityWidthBlur = () => {}
 }) => {
   const {
     strokeRow,
-    colorActionWrapper,
-    colorPicker,
     colorWrapper,
     strokeInput1,
     strokeInput2,
@@ -6207,10 +6219,10 @@ const StrokeRow = ({
     opacity
   } = row;
   const [selectedColor, setSelectedColor] = useState(color);
-  const [toggleColorPicker, setToggleColorPicker] = useState(false);
+  const [, setToggleColorPicker] = useState(false);
   const [strokeWidthS, setStrokeSWidth] = useState(strokeWidth);
   const [selectedOpacity, setSelectedOpacity] = useState(opacity);
-  const [colorPickerStyle, setColorPickerStyle] = useState({
+  const [, setColorPickerStyle] = useState({
     backgroundColor: selectedColor,
     opacity: selectedOpacity / 100
   });
@@ -6238,39 +6250,45 @@ const StrokeRow = ({
     className: colorWrapper,
     color: selectedColor,
     opacity: selectedOpacity,
-    onChange: color => {
+    onChange: (color, e) => {
       setSelectedColor(color);
       onChange({
         id,
         color: color,
         strokeWidth: parseFloat(strokeWidthS),
         opacity: parseFloat(selectedOpacity)
-      });
-    }
+      }, e);
+    },
+    onKeyDown: onColorKeyDown,
+    onBlur: onColorBlur
   }), /*#__PURE__*/React$1.createElement(Input, {
-    onChange: strokeWidth => {
+    onChange: (strokeWidth, e) => {
       setStrokeSWidth(strokeWidth);
       onChange({
         id,
         color: selectedColor,
         strokeWidth: parseFloat(strokeWidth),
         opacity: parseFloat(selectedOpacity)
-      });
+      }, e);
     },
+    onKeyDown: onStrokeWidthKeyDown,
+    onBlur: onStrokeWidthBlur,
     value: strokeWidthS,
     dir: "right",
     label: 'px',
     className: strokeInput1
   }), /*#__PURE__*/React$1.createElement(Input, {
-    onChange: opacity => {
+    onChange: (opacity, e) => {
       setSelectedOpacity(opacity);
       onChange({
         id,
         color: selectedColor,
         strokeWidth: parseFloat(strokeWidthS),
         opacity: parseFloat(opacity)
-      });
+      }, e);
     },
+    onKeyDown: onOpacityWidthKeyDown,
+    onBlur: onOpacityWidthBlur,
     min: 0,
     max: 100,
     value: selectedOpacity,
