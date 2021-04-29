@@ -1516,6 +1516,22 @@ const ThumbnailIcon$1 = ({
     d: "M1 4.5h7M4.5 8V1"
   }));
 };
+const NaNIcon$1 = ({
+  width = 2,
+  height = 2
+}) => {
+  return /*#__PURE__*/React$1.createElement("svg", {
+    width: width,
+    height: height,
+    viewBox: "0 0 2 2",
+    fill: "none"
+  }, /*#__PURE__*/React$1.createElement("circle", {
+    cx: "1",
+    cy: "1",
+    r: "1",
+    fill: "#333"
+  }));
+};
 
 var css_248z$M = ".shareButton-module_shareBtn__bxF0X {\n  width: 24px;\n  height: 24px;\n  background-color: #3399ff;\n  box-sizing: border-box;\n  outline: none;\n  border-radius: 8px;\n  display: flex;\n  align-items: center;\n  justify-content: center;\n  border: 0;\n  cursor: pointer; }\n  .shareButton-module_shareBtn__bxF0X svg path:nth-child(1) {\n    fill: #ffffff; }\n  .shareButton-module_shareBtn__bxF0X svg path:nth-child(2) {\n    stroke: #ffffff; }\n";
 var style$I = {"shareBtn":"shareButton-module_shareBtn__bxF0X"};
@@ -5230,7 +5246,7 @@ const AlignLineHeightIcon = ({
     fill: "none"
   }, /*#__PURE__*/React$1.createElement("path", {
     stroke: "#999",
-    "stroke-linecap": "round",
+    strokeLinecap: "round",
     d: "M5.5.5h-5M.5 7.5h5"
   }));
 };
@@ -5245,7 +5261,7 @@ const AlignLineSpaceIcon = ({
     fill: "none"
   }, /*#__PURE__*/React$1.createElement("path", {
     stroke: "#999",
-    "stroke-linecap": "round",
+    strokeLinecap: "round",
     d: "M.5.5v5M7.5 5.5v-5"
   }));
 };
@@ -5266,28 +5282,159 @@ const RadioButton = ({
     active
   } = style$d;
   const [state, setState] = useState('AlignHorizontalIcon');
-  useEffect(() => {
-    onChange(state);
-  }, [state]);
 
   const isActivated = type => state === type;
 
   return /*#__PURE__*/React$1.createElement("div", {
     className: `${radioButton} ${className ? className : ''}`
-  }, row.map(item => /*#__PURE__*/React$1.createElement(IconButton, {
-    key: item.id,
+  }, row.map((item, key) => /*#__PURE__*/React$1.createElement(IconButton, {
+    key: key,
     size: "small",
     className: `${resetBtn} ${isActivated(item.name) ? active : ''}`,
     isActive: isActivated(item.name),
-    onClick: () => setState(item.name)
+    onClick: e => {
+      onChange(state, e);
+      setState(item.name);
+    }
   }, item.icon)));
 };
 
 /* eslint-disable react-hooks/exhaustive-deps */
+const radioButton1 = [{
+  name: 'horizontal',
+  icon: /*#__PURE__*/React$1.createElement(AlignHorizontalIcon, {
+    width: 10
+  })
+}, {
+  name: 'autoHeight',
+  icon: /*#__PURE__*/React$1.createElement(AlignAutoHeightIcon, {
+    width: 10
+  })
+}, {
+  name: 'rectangle',
+  icon: /*#__PURE__*/React$1.createElement(AlignRectangleIcon, {
+    width: 10
+  })
+}];
+const radioButton2 = [{
+  name: 'left',
+  icon: /*#__PURE__*/React$1.createElement(AlignTextLeftIcon, {
+    width: 10
+  })
+}, {
+  name: 'center',
+  icon: /*#__PURE__*/React$1.createElement(AlignTextCenterIcon, {
+    width: 10
+  })
+}, {
+  name: 'right',
+  icon: /*#__PURE__*/React$1.createElement(AlignTextRightIcon, {
+    width: 10
+  })
+}];
+const radioButton3 = [{
+  name: 'top',
+  icon: /*#__PURE__*/React$1.createElement(AlignTextTopIcon, {
+    width: 10
+  })
+}, {
+  name: 'middle',
+  icon: /*#__PURE__*/React$1.createElement(AlignTextMiddleIcon, {
+    width: 10
+  })
+}, {
+  name: 'bottom',
+  icon: /*#__PURE__*/React$1.createElement(AlignTextBottomIcon, {
+    width: 10
+  })
+}];
+const morMenuCaseOptions = [{
+  name: null,
+  icon: /*#__PURE__*/React$1.createElement(NaNIcon$1, {
+    width: 10
+  })
+}, {
+  name: 'camel',
+  icon: /*#__PURE__*/React$1.createElement(TextCamelCaseIcon, {
+    width: 10
+  })
+}, {
+  name: 'capital',
+  icon: /*#__PURE__*/React$1.createElement(TextCapitalCaseIcon, {
+    width: 10
+  })
+}, {
+  name: 'lower',
+  icon: /*#__PURE__*/React$1.createElement(TextLowerCaseIcon, {
+    width: 10
+  })
+}];
+const morMenuDecorationOptions = [{
+  name: null,
+  icon: /*#__PURE__*/React$1.createElement(NaNIcon$1, {
+    width: 10
+  })
+}, {
+  name: 'underLine',
+  icon: /*#__PURE__*/React$1.createElement(TextUnderLineDecorationIcon, {
+    width: 10
+  })
+}, {
+  name: 'strikeThrough',
+  icon: /*#__PURE__*/React$1.createElement(TextStrikeThroughDecorationIcon, {
+    width: 10
+  })
+}];
+const _fontList = [{
+  value: 'aktivGrotesk',
+  name: 'Aktiv Grotesk'
+}, {
+  value: 'frances',
+  name: 'Frances'
+}, {
+  value: 'arial',
+  name: 'Arial '
+}];
+const _fontSizesList = [{
+  value: 18,
+  name: 18
+}, {
+  value: 22,
+  name: 22
+}, {
+  value: 27,
+  name: 27
+}, {
+  value: 29,
+  name: 29
+}, {
+  value: 30,
+  name: 30
+}, {
+  value: 50,
+  name: 50
+}];
 const Text = ({
   type = 'white',
   textColor = 'black',
   text = 'Text',
+  fontList = _fontList,
+  fontSizesList = _fontSizesList,
+  value = {
+    fontName: {
+      value: 'aktivGrotesk',
+      name: 'Aktiv Grotesk'
+    },
+    fontSize: {
+      value: 18,
+      name: 18
+    },
+    lineHeight: 1,
+    letterSpacing: 1,
+    alignment: 'horizontal',
+    caseOption: 'camel',
+    direction: 'strikeThrough'
+  },
   onChange = () => {},
   onKeyDown = () => {},
   onBlur = () => {},
@@ -5317,150 +5464,16 @@ const Text = ({
     morMenuBodyRow,
     morItemRadioButton
   } = style$e;
-  const [state1, setState1] = useState(20);
-  const [state2, setState2] = useState(0);
-  const [sizeState, setSizeState] = useState();
-  const [fontState, setFontState] = useState();
-  const [align, setAlign] = useState();
-  const [toggleMoreItems, setToggleMoreItems] = useState(false);
-  const radioButton1 = [{
-    id: getUnique(),
-    name: 'AlignHorizontalIcon',
-    icon: /*#__PURE__*/React$1.createElement(AlignHorizontalIcon, {
-      width: 10
-    })
-  }, {
-    id: getUnique(),
-    name: 'AlignAutoHeight',
-    icon: /*#__PURE__*/React$1.createElement(AlignAutoHeightIcon, {
-      width: 10
-    })
-  }, {
-    id: getUnique(),
-    name: 'AlignRectangle',
-    icon: /*#__PURE__*/React$1.createElement(AlignRectangleIcon, {
-      width: 10
-    })
-  }];
-  const radioButton2 = [{
-    id: getUnique(),
-    name: 'AlignTextLeftIcon',
-    icon: /*#__PURE__*/React$1.createElement(AlignTextLeftIcon, {
-      width: 10
-    })
-  }, {
-    id: getUnique(),
-    name: 'AlignTextCenterIcon',
-    icon: /*#__PURE__*/React$1.createElement(AlignTextCenterIcon, {
-      width: 10
-    })
-  }, {
-    id: getUnique(),
-    name: 'AlignTextRightIcon',
-    icon: /*#__PURE__*/React$1.createElement(AlignTextRightIcon, {
-      width: 10
-    })
-  }];
-  const radioButton3 = [{
-    id: getUnique(),
-    name: 'AlignTextTopIcon',
-    icon: /*#__PURE__*/React$1.createElement(AlignTextTopIcon, {
-      width: 10
-    })
-  }, {
-    id: getUnique(),
-    name: 'AlignTextMiddleIcon',
-    icon: /*#__PURE__*/React$1.createElement(AlignTextMiddleIcon, {
-      width: 10
-    })
-  }, {
-    id: getUnique(),
-    name: 'AlignTextBottomIcon',
-    icon: /*#__PURE__*/React$1.createElement(AlignTextBottomIcon, {
-      width: 10
-    })
-  }];
-  const morMenuCaseOptions = [{
-    id: getUnique(),
-    name: 'MinusIcon',
-    icon: /*#__PURE__*/React$1.createElement(MinusIcon$1, {
-      width: 10
-    })
-  }, {
-    id: getUnique(),
-    name: 'TextCamelCaseIcon',
-    icon: /*#__PURE__*/React$1.createElement(TextCamelCaseIcon, {
-      width: 10
-    })
-  }, {
-    id: getUnique(),
-    name: 'TextCapitalCaseIcon',
-    icon: /*#__PURE__*/React$1.createElement(TextCapitalCaseIcon, {
-      width: 10
-    })
-  }, {
-    id: getUnique(),
-    name: 'TextLowerCaseIcon',
-    icon: /*#__PURE__*/React$1.createElement(TextLowerCaseIcon, {
-      width: 10
-    })
-  }];
-  const morMenuDecorationOptions = [{
-    id: getUnique(),
-    name: 'MinusIcon',
-    icon: /*#__PURE__*/React$1.createElement(MinusIcon$1, {
-      width: 10
-    })
-  }, {
-    id: getUnique(),
-    name: 'TextUnderLineDecorationIcon',
-    icon: /*#__PURE__*/React$1.createElement(TextUnderLineDecorationIcon, {
-      width: 10
-    })
-  }, {
-    id: getUnique(),
-    name: 'TextStrikeThroughDecorationIcon',
-    icon: /*#__PURE__*/React$1.createElement(TextStrikeThroughDecorationIcon, {
-      width: 10
-    })
-  }];
-  const fontList = [{
-    value: getUnique(),
-    name: 'Aktiv Grotesk'
-  }, {
-    value: getUnique(),
-    name: 'Fraunces'
-  }, {
-    value: getUnique(),
-    name: 'Variable '
-  }];
-  const fontSizesList = [{
-    value: 18,
-    name: 18
-  }, {
-    value: 22,
-    name: 22
-  }, {
-    value: 27,
-    name: 27
-  }, {
-    value: 29,
-    name: 29
-  }, {
-    value: 30,
-    name: 30
-  }, {
-    value: 50,
-    name: 50
-  }];
-  useEffect(() => {
-    if (onChange) onChange({
-      state1,
-      state2,
-      sizeState,
-      fontState
-    });
-  }, [state1, state2, sizeState, fontState, align]); // close menu by click outside.
+  const [fontName, setFontName] = useState(value.fontName);
+  const [fontSize, setFontSize] = useState(value.fontSize);
+  const [lineHeight, setLineHeight] = useState(value.lineHeight);
+  const [letterSpacing, setLetterSpacing] = useState(value.letterSpacing);
+  const [alignment, setAlignment] = useState(value.alignment);
+  const [caseOption, setCaseOption] = useState(value.caseOption);
+  const [direction, setDirection] = useState(value.direction);
+  const [fontListS] = useState(fontList);
+  const [fontSizesListS] = useState(fontSizesList);
+  const [toggleMoreItems, setToggleMoreItems] = useState(false); // close menu by click outside.
 
   const moreMenuRef = /*#__PURE__*/createRef();
   useEffect(() => {
@@ -5473,6 +5486,15 @@ const Text = ({
     window.addEventListener('mousedown', clickOutside);
     return () => window.removeEventListener('mousedown', clickOutside);
   }, [moreMenuRef]);
+  useEffect(() => {
+    setFontName(value.fontName);
+    setFontSize(value.fontSize);
+    setLineHeight(value.lineHeight);
+    setLetterSpacing(value.letterSpacing);
+    setAlignment(value.alignment);
+    setCaseOption(value.caseOption);
+    setDirection(value.direction);
+  }, [value]);
   return /*#__PURE__*/React$1.createElement("div", {
     className: `${textComp} ${style$e[type]}`,
     ref: moreMenuRef
@@ -5487,18 +5509,40 @@ const Text = ({
   }, /*#__PURE__*/React$1.createElement("div", {
     className: fontListOption
   }, /*#__PURE__*/React$1.createElement(Dropdown, {
-    option: fontList,
+    option: fontListS,
     className: fontListStyle,
-    onChange: setFontState,
-    selectedValue: fontState,
+    onChange: (fontName, e) => {
+      setFontName(fontName);
+      onChange({
+        fontName: fontName.value,
+        fontSize: fontSize.value,
+        lineHeight,
+        letterSpacing,
+        alignment,
+        caseOption,
+        direction
+      }, e);
+    },
+    selectedValue: fontName,
     size: "medium",
     dropDownMenuMaxHeight: dropDownMenuMaxHeight[0],
     searchable: dropDownMenuSearchable[0]
   }), /*#__PURE__*/React$1.createElement(Dropdown, {
-    option: fontSizesList,
+    option: fontSizesListS,
     className: fontSizes,
-    onChange: setSizeState,
-    selectedValue: sizeState,
+    onChange: (fontSize, e) => {
+      setFontSize(fontSize);
+      onChange({
+        fontName: fontName.value,
+        fontSize: fontSize.value,
+        lineHeight,
+        letterSpacing,
+        alignment,
+        caseOption,
+        direction
+      }, e);
+    },
+    selectedValue: fontSize,
     size: "medium",
     popupMenu: "left",
     dropDownMenuMaxHeight: dropDownMenuMaxHeight[0],
@@ -5511,8 +5555,19 @@ const Text = ({
     className: input,
     label: /*#__PURE__*/React$1.createElement(AlignLineHeightIcon, null),
     direction: "left",
-    value: state1,
-    onChange: setState1,
+    value: lineHeight,
+    onChange: (lineHeight, e) => {
+      setLineHeight(lineHeight);
+      onChange({
+        fontName: fontName.value,
+        fontSize: fontSize.value,
+        lineHeight,
+        letterSpacing,
+        alignment,
+        caseOption,
+        direction
+      }, e);
+    },
     onKeyDown: onKeyDown,
     onBlur: onBlur
   })), /*#__PURE__*/React$1.createElement("div", {
@@ -5521,8 +5576,19 @@ const Text = ({
     className: input,
     label: /*#__PURE__*/React$1.createElement(AlignLineSpaceIcon, null),
     direction: "left",
-    value: state2,
-    onChange: setState2,
+    value: letterSpacing,
+    onChange: (letterSpacing, e) => {
+      setLetterSpacing(letterSpacing);
+      onChange({
+        fontName: fontName.value,
+        fontSize: fontSize.value,
+        lineHeight,
+        letterSpacing,
+        alignment,
+        caseOption,
+        direction
+      }, e);
+    },
     onKeyDown: onKeyDown,
     onBlur: onBlur
   })), /*#__PURE__*/React$1.createElement("div", {
@@ -5530,17 +5596,50 @@ const Text = ({
   }, /*#__PURE__*/React$1.createElement(RadioButton, {
     className: alignButtons,
     row: radioButton1,
-    onChange: onChange
+    onChange: (alignment, e) => {
+      setAlignment(alignment);
+      onChange({
+        fontName: fontName.value,
+        fontSize: fontSize.value,
+        lineHeight,
+        letterSpacing,
+        alignment,
+        caseOption,
+        direction
+      }, e);
+    }
   }))), /*#__PURE__*/React$1.createElement("div", {
     className: row
   }, /*#__PURE__*/React$1.createElement(RadioButton, {
     className: alignButtons2,
     row: radioButton2,
-    onChange: onChange
+    onChange: (alignment, e) => {
+      setAlignment(alignment);
+      onChange({
+        fontName: fontName.value,
+        fontSize: fontSize.value,
+        lineHeight,
+        letterSpacing,
+        alignment,
+        caseOption,
+        direction
+      }, e);
+    }
   }), /*#__PURE__*/React$1.createElement(RadioButton, {
     className: alignButtons3,
     row: radioButton3,
-    onChange: onChange
+    onChange: (alignment, e) => {
+      setAlignment(alignment);
+      onChange({
+        fontName: fontName.value,
+        fontSize: fontSize.value,
+        lineHeight,
+        letterSpacing,
+        alignment,
+        caseOption,
+        direction
+      }, e);
+    }
   }), /*#__PURE__*/React$1.createElement(IconButton, {
     onClick: () => setToggleMoreItems(!toggleMoreItems),
     isActive: toggleMoreItems
@@ -5558,13 +5657,35 @@ const Text = ({
   }, /*#__PURE__*/React$1.createElement("label", null, "Case"), /*#__PURE__*/React$1.createElement("div", null, /*#__PURE__*/React$1.createElement(RadioButton, {
     className: morItemRadioButton,
     row: morMenuCaseOptions,
-    onChange: onChange
+    onChange: (caseOption, e) => {
+      setCaseOption(caseOption);
+      onChange({
+        fontName: fontName.value,
+        fontSize: fontSize.value,
+        lineHeight,
+        letterSpacing,
+        alignment,
+        case: caseOption,
+        direction
+      }, e);
+    }
   }))), /*#__PURE__*/React$1.createElement("div", {
     className: morMenuBodyRow
   }, /*#__PURE__*/React$1.createElement("label", null, "Decoration"), /*#__PURE__*/React$1.createElement("div", null, /*#__PURE__*/React$1.createElement(RadioButton, {
     className: morItemRadioButton,
     row: morMenuDecorationOptions,
-    onChange: onChange
+    onChange: (direction, e) => {
+      setDirection(direction);
+      onChange({
+        fontName: fontName.value,
+        fontSize: fontSize.value,
+        lineHeight,
+        letterSpacing,
+        alignment,
+        case: caseOption,
+        direction
+      }, e);
+    }
   })))))));
 };
 
@@ -6132,7 +6253,7 @@ const Fill = ({
   }, /*#__PURE__*/React$1.createElement(PlusIcon$1, null)))), /*#__PURE__*/React$1.createElement("div", {
     className: fillItems
   }, options.map((item, key) => /*#__PURE__*/React$1.createElement(FillRow, {
-    key: key,
+    key: item.id,
     label: "%",
     row: item,
     onChange: (_res, e) => setValue(_res, key, e),
@@ -9940,5 +10061,21 @@ const ArrowMoreIcon = ({
     strokeLinecap: "round"
   }));
 };
+const NaNIcon = ({
+  width = 2,
+  height = 2
+}) => {
+  return /*#__PURE__*/React$1.createElement("svg", {
+    width: width,
+    height: height,
+    viewBox: "0 0 2 2",
+    fill: "none"
+  }, /*#__PURE__*/React$1.createElement("circle", {
+    cx: "1",
+    cy: "1",
+    r: "1",
+    fill: "#333"
+  }));
+};
 
-export { AddEmojiIcon, AddMenu, Adjustment, AlignBottomIcon, AlignCenterIcon, AlignCenterVIcon, AlignDistributeHorizontalSpacingIcon, AlignDistributeVerticalSpacingIcon, AlignLeftIcon, AlignRightIcon, AlignTopIcon, Alignment, AlignmentLetterSpacingIcon, AlignmentLineHeightIcon, AlignmentRadiusLabelIcon, ArcIcon, ArrowLeftIcon, ArrowMoreIcon, ArrowRightSecondIcon, BlendIcon, BlendedIcon, CheckIcon, ChevronArrowIcon, ColorPickerIcon, CommandKeyIcon, ComponentIcon, ComponentOptionsIcon, ControlKeyIcon, CopyIcon, CrossIcon, DeleteKeyIcon, Divider, EaseIcon, EdgeAlignBottomIcon, EdgeAlignCenterHorizontalIcon, EdgeAlignCenterIcon, EdgeAlignCenterVerticalIcon, EdgeAlignLeftIcon, EdgeAlignRightIcon, EdgeAlignTopIcon, EditIcon, EyeCloseIcon, EyeIcon, Fill, Fx, GridIcon, HamburgerIcon, HelpIcon, Icon, IconButton, InfoIcon, Input, Item, LayerArtboardIcon, LayerComponentIcon, LayerFXIcon, LayerFileIcon, LayerFilterIcon, LayerFolderIcon, LayerImageIcon, LayerItemIcon, LayerMaskIcon, LayerRectangleIcon, LayerShapeModeExcludeIcon, LayerShapeModeIntersectIcon, LayerShapeModeSubtractIcon, LayerShapeModeUnionIcon, LayerSmartObjectIcon, LayerTextIcon, LayerVectorIcon, LayerVideoIcon, Layers, LinkIcon, LinkedIcon, ListIcon, LockIcon, LockedIcon, MaskIcon, Menu, MiniPlusIcon, MinusIcon, NewTabIcon, OptionKeyIcon, Pages, PerspectiveIcon, PlusIcon, Properties, RadiusIcon, RadiusLabelLeftBottomIcon, RadiusLabelLeftIcon, RadiusLabelRightBottomIcon, RadiusLabelRightTopIcon, RecentIcon, RemoveBGIcon, ResetIcon, SearchIcon, ShapeExcludeIcon, ShapeIntersectIcon, ShapeModesIcon, ShapeSubtractIcon, ShareButton, ShiftKeyIcon, SmallChevronArrowIcon, SmartLayout, SmartObjectsIcon, Stroke, Stroke1Icon, Stroke2Icon, Stroke3Icon, Text, TextBackground, ThumbnailIcon, ToolbarZoom, ToolsPanelArtboardIcon, ToolsPanelBrushIcon, ToolsPanelBrushesIcon, ToolsPanelCrayonBrushIcon, ToolsPanelFillIcon, ToolsPanelInkBrushIcon, ToolsPanelLayersIcon, ToolsPanelMenuIcon, ToolsPanelNoteIcon, ToolsPanelPathText1Icon, ToolsPanelPathText2Icon, ToolsPanelPenToolsIcon, ToolsPanelPencilIcon, ToolsPanelPlusIcon, ToolsPanelRulerIcon, ToolsPanelSelectionToolsIcon, ToolsPanelShapeEllipseIcon, ToolsPanelShapeLineArrowIcon, ToolsPanelShapeLineIcon, ToolsPanelShapePolygonIcon, ToolsPanelShapeRectangleIcon, ToolsPanelShapeRectanglesIcon, ToolsPanelShapeStarIcon, ToolsPanelShareIcon, ToolsPanelSprayBrushIcon, ToolsPanelTextIcon, TopMenu, Transition3DIcon, TrashIcon, TreeDotsIcon, Visibility, VolumeOffIcon, VolumeOnIcon, WrapIcon };
+export { AddEmojiIcon, AddMenu, Adjustment, AlignBottomIcon, AlignCenterIcon, AlignCenterVIcon, AlignDistributeHorizontalSpacingIcon, AlignDistributeVerticalSpacingIcon, AlignLeftIcon, AlignRightIcon, AlignTopIcon, Alignment, AlignmentLetterSpacingIcon, AlignmentLineHeightIcon, AlignmentRadiusLabelIcon, ArcIcon, ArrowLeftIcon, ArrowMoreIcon, ArrowRightSecondIcon, BlendIcon, BlendedIcon, CheckIcon, ChevronArrowIcon, ColorPickerIcon, CommandKeyIcon, ComponentIcon, ComponentOptionsIcon, ControlKeyIcon, CopyIcon, CrossIcon, DeleteKeyIcon, Divider, EaseIcon, EdgeAlignBottomIcon, EdgeAlignCenterHorizontalIcon, EdgeAlignCenterIcon, EdgeAlignCenterVerticalIcon, EdgeAlignLeftIcon, EdgeAlignRightIcon, EdgeAlignTopIcon, EditIcon, EyeCloseIcon, EyeIcon, Fill, Fx, GridIcon, HamburgerIcon, HelpIcon, Icon, IconButton, InfoIcon, Input, Item, LayerArtboardIcon, LayerComponentIcon, LayerFXIcon, LayerFileIcon, LayerFilterIcon, LayerFolderIcon, LayerImageIcon, LayerItemIcon, LayerMaskIcon, LayerRectangleIcon, LayerShapeModeExcludeIcon, LayerShapeModeIntersectIcon, LayerShapeModeSubtractIcon, LayerShapeModeUnionIcon, LayerSmartObjectIcon, LayerTextIcon, LayerVectorIcon, LayerVideoIcon, Layers, LinkIcon, LinkedIcon, ListIcon, LockIcon, LockedIcon, MaskIcon, Menu, MiniPlusIcon, MinusIcon, NaNIcon, NewTabIcon, OptionKeyIcon, Pages, PerspectiveIcon, PlusIcon, Properties, RadiusIcon, RadiusLabelLeftBottomIcon, RadiusLabelLeftIcon, RadiusLabelRightBottomIcon, RadiusLabelRightTopIcon, RecentIcon, RemoveBGIcon, ResetIcon, SearchIcon, ShapeExcludeIcon, ShapeIntersectIcon, ShapeModesIcon, ShapeSubtractIcon, ShareButton, ShiftKeyIcon, SmallChevronArrowIcon, SmartLayout, SmartObjectsIcon, Stroke, Stroke1Icon, Stroke2Icon, Stroke3Icon, Text, TextBackground, ThumbnailIcon, ToolbarZoom, ToolsPanelArtboardIcon, ToolsPanelBrushIcon, ToolsPanelBrushesIcon, ToolsPanelCrayonBrushIcon, ToolsPanelFillIcon, ToolsPanelInkBrushIcon, ToolsPanelLayersIcon, ToolsPanelMenuIcon, ToolsPanelNoteIcon, ToolsPanelPathText1Icon, ToolsPanelPathText2Icon, ToolsPanelPenToolsIcon, ToolsPanelPencilIcon, ToolsPanelPlusIcon, ToolsPanelRulerIcon, ToolsPanelSelectionToolsIcon, ToolsPanelShapeEllipseIcon, ToolsPanelShapeLineArrowIcon, ToolsPanelShapeLineIcon, ToolsPanelShapePolygonIcon, ToolsPanelShapeRectangleIcon, ToolsPanelShapeRectanglesIcon, ToolsPanelShapeStarIcon, ToolsPanelShareIcon, ToolsPanelSprayBrushIcon, ToolsPanelTextIcon, TopMenu, Transition3DIcon, TrashIcon, TreeDotsIcon, Visibility, VolumeOffIcon, VolumeOnIcon, WrapIcon };
